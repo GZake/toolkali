@@ -1306,8 +1306,9 @@ sudo apt-get install -f -y nvidia*
 alias journalctl="sudo journalctl"
 
 
-#sudo dpkg -i --force-hold,confnew,depends,bad-verify,bad-version *
+sudo dpkg -i --force-hold,confnew,depends,bad-verify,bad-version *
 cd 
+sudo bash update.sh
 if [ $choose1 -eq 5 ]
 then
 	goto uptab
