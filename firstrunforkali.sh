@@ -1313,7 +1313,7 @@ alias journalctl="sudo journalctl"
 
 
 #sudo dpkg -i --force-hold,confnew,depends,bad-verify,bad-version *
-cd 
+cd ~/toolkali/ 
 #sudo bash update.sh
 if [ $choose1 -eq 5 ]
 then
