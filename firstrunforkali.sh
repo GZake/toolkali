@@ -680,10 +680,7 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt
 #sudo chown -Rv root:root / &
 #echo"
 #"
-if [ $choose1 -eq 3 ]
-then
-	goto uptab
-fi
+
 
 
 key:
@@ -1334,3 +1331,7 @@ sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/
+if [ $choose1 -eq 3 ]
+then
+	goto uptab
+fi
