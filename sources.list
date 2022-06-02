@@ -88,25 +88,25 @@ deb [trusted=yes] https://dl.winehq.org/wine-builds/android/
 deb [trusted=yes] https://dl.winehq.org/wine-builds/macosx/ pool
 
 deb [trusted=yes] http://deb.playonlinux.com/ etch main
-deb http://deb.playonlinux.com/ maverick main
-deb http://deb.playonlinux.com/ bionic main
-deb http://deb.playonlinux.com/ jaunty main
-deb http://deb.playonlinux.com/ wheezy main
-deb http://deb.playonlinux.com/ squeeze main
-deb http://deb.playonlinux.com/ precise main
-deb http://deb.playonlinux.com/ raring main
-deb http://deb.playonlinux.com/ jessie main
-deb http://deb.playonlinux.com/ natty main
-deb http://deb.playonlinux.com/ xenial main
-deb http://deb.playonlinux.com/ xenial main
-deb http://deb.playonlinux.com/ karmic main
-deb http://deb.playonlinux.com/ cosmic main
-deb http://deb.playonlinux.com/ stretch main
-deb http://deb.playonlinux.com/ lucid main
-deb http://deb.playonlinux.com/ oneiric main
-deb http://deb.playonlinux.com/ saucy main
-deb http://deb.playonlinux.com/ hardy main
-deb http://deb.playonlinux.com/ intrepid main
+deb [trusted=yes] http://deb.playonlinux.com/ maverick main
+deb [trusted=yes] http://deb.playonlinux.com/ bionic main
+deb [trusted=yes] http://deb.playonlinux.com/ jaunty main
+deb [trusted=yes] http://deb.playonlinux.com/ wheezy main
+deb [trusted=yes] http://deb.playonlinux.com/ squeeze main
+deb [trusted=yes] http://deb.playonlinux.com/ precise main
+deb [trusted=yes] http://deb.playonlinux.com/ raring main
+deb [trusted=yes] http://deb.playonlinux.com/ jessie main
+deb [trusted=yes] http://deb.playonlinux.com/ natty main
+deb [trusted=yes] http://deb.playonlinux.com/ xenial main
+deb [trusted=yes] http://deb.playonlinux.com/ xenial main
+deb [trusted=yes] http://deb.playonlinux.com/ karmic main
+deb [trusted=yes] http://deb.playonlinux.com/ cosmic main
+deb [trusted=yes] http://deb.playonlinux.com/ stretch main
+deb [trusted=yes] http://deb.playonlinux.com/ lucid main
+deb [trusted=yes] http://deb.playonlinux.com/ oneiric main
+deb [trusted=yes] http://deb.playonlinux.com/ saucy main
+deb [trusted=yes] http://deb.playonlinux.com/ hardy main
+deb [trusted=yes] http://deb.playonlinux.com/ intrepid main
 
 deb [arch=amd64,i386,ppc64el] http://ftp.nluug.nl/db/mariadb/repo/10.3/debian buster main contrib non-free
 deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ focal main main/debug
