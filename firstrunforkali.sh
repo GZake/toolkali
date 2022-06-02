@@ -1320,12 +1320,12 @@ fi
 reboot
 
 bak:
-sudo cp $HOME/.bashrc $HOME/.bashrc.bak
-sudo cp /etc/skel/.bashrc $HOME/.bashrc.bak1
-sudo cp /etc/sysctl.conf /etc/sysctl.conf.bak
-sudo cp /etc/fstab /etc/fstab.bak
-sudo cp /etc/crontab /etc/crontab.bak
-sudo cp /etc/rc.local /etc/rc.local.bak
+sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
+sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
+sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
+sudo cp -f /etc/fstab /etc/fstab.bak
+sudo cp -f /etc/crontab /etc/crontab.bak
+sudo cp -f /etc/rc.local /etc/rc.local.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
