@@ -25,7 +25,7 @@ echo "  ███    ███     ███    ███ ███    ███
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
 echo "                                         ▀                                                                            ▀         ";                         
 
-echo -e "${BLUE}                                    https://github.com/Z4nzu/hackingtool ${NC}"
+echo -e "${BLUE}                                    https://github.com/GZake/toolkali.git ${NC}"
 
 echo -e "${RED}                                   [!] This Tool Must Run As ROOT [!]${NC}"
 echo ""
@@ -34,7 +34,7 @@ echo ""
 echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "Z4nzu >> "
-read choice
+choice=1
 INSTALL_DIR="/usr/share/doc/hackingtool"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then 
@@ -47,7 +47,7 @@ if [ $choice == 1 ]; then
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
 	        echo "[!] A Directory hackingtool Was Found.. Do You Want To Replace It ? [y/n]:" ;
-	        read input
+	        input=y
 	        if [ "$input" = "y" ]; then
 	            rm -R "$INSTALL_DIR"
 	        else
@@ -56,7 +56,7 @@ if [ $choice == 1 ]; then
 	    fi
     		echo "[✔] Installing ...";
 		echo "";
-		git clone https://github.com/Z4nzu/hackingtool.git "$INSTALL_DIR";
+		git clone https://github.com/GZake/toolkali.git "$INSTALL_DIR";
 		echo "#!/bin/bash
 		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
 		sudo chmod +x hackingtool;
