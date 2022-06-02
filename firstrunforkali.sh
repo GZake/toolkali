@@ -4,7 +4,7 @@ sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
 
 cd ..
 sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
-cd ~
+cd ~/toolkali/
 #!/bin/bash
 # include this boilerplate
 function goto
