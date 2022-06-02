@@ -1,6 +1,7 @@
 sudo apt-get -f -y install parallel* #status=progress
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
+
 cd ..
 sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 cd ~
@@ -105,7 +106,7 @@ clear
 echo "                       UPDATE
 1 for all
 2 for add repo, other,...
-3 for up permission
+3 for create backup
 4 for up key
 5 for GUI
 6 for Necessary application
@@ -121,7 +122,7 @@ then
 	goto all
 elif [ $choose1 -eq 3 ]
 then
-	goto per
+	goto bak
 elif [ $choose1 -eq 4 ]
 then
 	goto key
@@ -584,18 +585,19 @@ echo q| gdb  | grep 'Reading symbols from '| if ; then cat; else grep 'no debugg
 " | sudo tee ~/list-symbols-packages-v2.1.sh
 ###################################
 
-sudo cp $HOME/.bashrc $HOME/.bashrc.bak
-sudo cp /etc/skel/.bashrc $HOME/.bashrc.bak1
 
+sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
 echo "
 #ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 " | sudo tee -a $HOME/.bashrc
+sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf
 echo "
 vm.swappiness=100
 " | sudo tee -a /etc/sysctl.conf
+sudo cp -f /etc/fstab.bak /etc/fstab
 echo "
 /dev/nvme* none swap sw 0 0
 /dev/sd* none swap sw 0 0
@@ -631,9 +633,11 @@ sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo chmod 777 -R -v update.sh
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
+sudo cp -f /etc/crontab.bak /etc/crontab
 echo "
 @reboot sudo bash /root/update.sh &
 " | tee -a /etc/crontab
+sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
@@ -1317,3 +1321,16 @@ then
 fi
 
 reboot
+
+bak:
+sudo cp $HOME/.bashrc $HOME/.bashrc.bak
+sudo cp /etc/skel/.bashrc $HOME/.bashrc.bak1
+sudo cp /etc/sysctl.conf /etc/sysctl.conf.bak
+sudo cp /etc/fstab /etc/fstab.bak
+sudo cp /etc/crontab /etc/crontab.bak
+sudo cp /etc/rc.local /etc/rc.local.bak
+sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/
