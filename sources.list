@@ -1,4 +1,94 @@
 
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ wheezy main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bookworm main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bullseye main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ buster main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ jessie main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ oldstable main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ sid main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stable main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stretch main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ testing main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
+
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ wheezy main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bookworm main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bullseye main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ buster main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ jessie main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ oldstable main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ sid main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stable main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stretch main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ testing main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
+
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ eoan main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ zesty main
+
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ eoan main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ zesty main
+
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 24
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 25
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 26
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 27
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 28
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 29
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 30
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 31
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 32
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 33
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 34
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 35
+deb [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 36
+
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 24
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 25
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 26
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 27
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 28
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 29
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 30
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 31
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 32
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 33
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 34
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 35
+deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 36
+
+deb [trusted=yes] https://dl.winehq.org/wine-builds/android/
+
+deb [trusted=yes] https://dl.winehq.org/wine-builds/macosx/ pool
+
+
+
 deb [arch=amd64,i386,ppc64el] http://ftp.nluug.nl/db/mariadb/repo/10.3/debian buster main contrib non-free
 deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ focal main main/debug
 deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contrib non-free
