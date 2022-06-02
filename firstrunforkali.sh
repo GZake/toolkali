@@ -659,7 +659,7 @@ per:
 #sudo chmod -Rv 777 /var/cache/apt/archives/partial/ &
 #echo"
 #"
-sudo chown -Rv root:root /var/cache/apt/archives/ 
+#sudo chown -Rv root:root /var/cache/apt/archives/ 
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt 
