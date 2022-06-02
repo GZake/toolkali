@@ -16,22 +16,21 @@ function goto
 }
 swapon /dev/nvme*
 swapon /dev/sd*
-swapon /dev/nvme0n1p5
-swapon /dev/sda4
-swapon /dev/sdb4
-swapon /dev/sdc4
-swapon /dev/sda5
-swapon /dev/sdb5
-swapon /dev/sdc5
-swapon /dev/sda1
-swapon /dev/sdb1
-swapon /dev/sdc1
-swapon /dev/sda2
-swapon /dev/sdb2
-swapon /dev/sdc2
-swapon /dev/sda3
-swapon /dev/sdb3
-swapon /dev/sdc3
+#swapon /dev/nvme0n1p5
+#swapon /dev/sda4
+#swapon /dev/sdb4
+#swapon /dev/sdc4
+#swapon /dev/sda5
+#swapon /dev/sdb5
+#swapon /dev/sdc5
+#swapon /dev/sda1
+#swapon /dev/sdb1
+#swapon /dev/sdc1
+#swapon /dev/sda2
+#wapon /dev/sdc2
+#swapon /dev/sda3
+#swapon /dev/sdb3
+#swapon /dev/sdc3
 sysctl vm.swappiness=100
 sysctl -p
 choose:
@@ -601,13 +600,13 @@ sudo cp -f /etc/fstab.bak /etc/fstab
 echo "
 /dev/nvme* none swap sw 0 0
 /dev/sd* none swap sw 0 0
-#/dev/nvme0n1p5 none swap sw 0 0
-#/dev/sda4 none swap sw 0 0
-#/dev/sdb4 none swap sw 0 0
-#/dev/sdc4 none swap sw 0 0
-#/dev/sda5 none swap sw 0 0
-#/dev/sdb5 none swap sw 0 0
-#/dev/sdc5 none swap sw 0 0
+/dev/nvme0n1p5 none swap sw 0 0
+/dev/sda4 none swap sw 0 0
+/dev/sdb4 none swap sw 0 0
+/dev/sdc4 none swap sw 0 0
+/dev/sda5 none swap sw 0 0
+/dev/sdb5 none swap sw 0 0
+/dev/sdc5 none swap sw 0 0
 " | sudo tee -a /etc/fstab
 
 
