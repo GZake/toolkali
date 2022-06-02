@@ -1,9 +1,9 @@
-sudo apt-get -f -y install parallel* #status=progress
-sudo apt-get -f -y install parallel
-sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
+sudo apt-get -f -y install parallel* #status=progress > $HOME/Desktop/log.txt
+sudo apt-get -f -y install parallel >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
 
 cd ..
-sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
 cd ~/toolkali/
 #!/bin/bash
 # include this boilerplate
@@ -14,8 +14,8 @@ function goto
     eval "$cmd"
     exit
 }
-swapon /dev/nvme*
-swapon /dev/sd*
+swapon /dev/nvme* >> $HOME/Desktop/log.txt
+swapon /dev/sd* >> $HOME/Desktop/log.txt
 #swapon /dev/nvme0n1p5
 #swapon /dev/sda4
 #swapon /dev/sdb4
@@ -95,7 +95,7 @@ sudo umount ${usb}$num
 reboot
 
 root:
-sudo apt-get install -f -y kali-root-login
+sudo apt-get install -f -y kali-root-login >> $HOME/Desktop/log.txt
 passwd <<< $(printf "Admin@123\nAdmin@123\n")
 goto choose
 
@@ -484,119 +484,20 @@ deb-src [trusted=yes] http://security.debian.org/* * *
 
 " | sudo tee /etc/apt/sources.list
 ###################################
-sudo echo 
-"
-
-#-x
-# Michele Bini, the author of this script, disclaims copyright to it
-# thus placing it in the public domain.
-
-progname=zsh
-
-explain() {
-    cat <<EOF
-Usage:  [-adt] [-p pid]|[executable]
-
-You must specify a pid (-p) or an executable name/path.
-
-This script lists the debug symbols packages you need to install for a complete
-dump of the given executable (which must be a full pathname). Already installed
-symbols packages are not shown.
-
-Options are:
-  -p pid  uses the running process with the given pid to get the list.
-          If specified, you may omit the executable name.
-  -a      show all the required symbol packages (not only the not-installed
-          ones)
-  -d      prefer XXX-dbg symbol packages over XXX-dbgsym ones
-  -t      terse: print the packages names only (no package description).
-          Useful to pass output directly to apt-get install.
-
-NOTE: in some cases  may report already installed
-packages. This currently happens with binaries using libpthread.so as
-libc6-i686-dbgsym apparently doesn't contain debug symbols for it.
-
-To examine a running server process by pid, you will need to run this script
-using sudo.
-EOF
-    exit -1
-# Hidden option:  -g      enable debugging output for the script
-}
-
-all=false
-preferred=dbgsym dbg
-debug=false
-terse=false
-pid=
-while getopts :adgp:t opt; do
-    case  in
-        a)
-            all=true
-            ;;
-        d)
-            preferred=dbg dbgsym
-            ;;
-        g)
-            debug=true
-            ;;
-        p)
-            pid=
-            binary=
-            [ -z  ] && echo Unable to get binary path for pid  && exit -1
-            ;;
-        t)
-            terse=true
-            ;;
-        \?)
-            explain
-            ;;
-    esac
-done
-
-if [ -z  ]; then
-    shift 0
-    [ 0 -ne 1 ] && explain
-    binary=
-    [ ! -x  -a @ = @ -a -n  ] && binary=
-fi
-
-find-debug() {
-    while read i; do
-        for ext in ; do
-            i= #remove the architecture suffix
-            apt-cache search ^-$
-        done |head -1
-    done
-}
-
-if [ ! -z  ]; then
-   Args=--pid=
-else
-   Args=
-fi
-
-echo q| gdb  | grep 'Reading symbols from '| if ; then cat; else grep 'no debugging symbols found'; fi | sed -e 's/^Reading symbols from \(.*\)\.\.\.\((\|Reading \).*$/\1/' | while read i; do     #dpkg -S  |while read j; do if ; then echo '!'  '-->'  1>&2; fi; echo ; done
-    ( if ! dpkg -S  2>/dev/null; then [ -L  ] && dpkg -S ; fi ) |     while read j; do if ; then echo '!'  '-->'  1>&2; fi; echo ; done done| sed -e 's/^\(.*\): .*$/\1/' | sort -u | find-debug | if ; then sed -e 's/ - .*$//'; else cat; fi |sort -u
 
 
-
-
-" | sudo tee $HOME/toolkali/list-symbols-packages-v2.1.sh
-###################################
-
-
-sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
+sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc >> $HOME/Desktop/log.txt
 echo "
 #ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 " | sudo tee -a $HOME/.bashrc
-sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf
+sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf >> $HOME/Desktop/log.txt
 echo "
 vm.swappiness=100
 " | sudo tee -a /etc/sysctl.conf
-sudo cp -f /etc/fstab.bak /etc/fstab
+sudo cp -f /etc/fstab.bak /etc/fstab >> $HOME/Desktop/log.txt
 echo "
 /dev/nvme* none swap sw 0 0
 /dev/sd* none swap sw 0 0
@@ -615,28 +516,28 @@ echo 100 >> /proc/sys/vm/swappiness
 
 echo "
 
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/updatelog.txt 
-sudo apt update --fix-missing -y | tee -a $HOME/Desktop/updatelog.txt 
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt 
-sudo apt-get update -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-#sudo apt-get autoremove -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo timedatectl set-ntp on | tee -a  $HOME/Desktop/updatelog.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt 
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt 
+sudo apt-get update -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get upgrade -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/log.txt
+#sudo apt-get autoremove -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/log.txt
+sudo timedatectl set-ntp on | tee -a  $HOME/Desktop/log.txt
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 
 " | tee ~/update.sh
-sudo chmod 777 -R -v update.sh
+sudo chmod 777 -R -v update.sh  >> $HOME/Desktop/log.txt
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
-sudo cp -f /etc/crontab.bak /etc/crontab
+sudo cp -f /etc/crontab.bak /etc/crontab  >> $HOME/Desktop/log.txt
 echo "
 @reboot sudo bash /root/update.sh &
 " | tee -a /etc/crontab
-sudo cp -f /etc/rc.local.bak /etc/rc.local
+sudo cp -f /etc/rc.local.bak /etc/rc.local >> $HOME/Desktop/log.txt
 echo "
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
@@ -660,9 +561,9 @@ per:
 #echo"
 #"
 #sudo chown -Rv root:root /var/cache/apt/archives/ 
-sudo chmod -Rv 777 /var/cache/apt/archives/ 
-sudo chown -Rv _apt:root /var/cache/apt/archives/
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt 
+sudo chmod -Rv 777 /var/cache/apt/archives/  >> $HOME/Desktop/log.txt
+sudo chown -Rv _apt:root /var/cache/apt/archives/ >> $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 
 
 #sudo chmod -Rv 775 ~ &
@@ -684,131 +585,131 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt
 
 
 key:
-sudo apt-get install -f -y launchpad-getkeys
-sudo launchpad-getkeys
-sudo add-apt-repository ppa:webupd8team/y-ppa-manager
-sudo apt-get install y-ppa-manager
-gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 9BDB3D89CE49EC21
-gpg --export --armor 9BDB3D89CE49EC21 | sudo apt-key add -
-gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 1ABC2D34EF56GH78
-gpg --export --armor 1ABC2D34EF56GH78 | sudo apt-key add -
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3BDB3D89CE49EC24
-gpg --export --armor 3BDB3D89CE49EC24 | sudo apt-key add -
+sudo apt-get install -f -y launchpad-getkeys >> $HOME/Desktop/log.txt
+sudo launchpad-getkeys >> $HOME/Desktop/log.txt
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager >> $HOME/Desktop/log.txt
+sudo apt-get install y-ppa-manager >> $HOME/Desktop/log.txt
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 9BDB3D89CE49EC21 >> $HOME/Desktop/log.txt
+gpg --export --armor 9BDB3D89CE49EC21 | sudo apt-key add - >> $HOME/Desktop/log.txt
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 1ABC2D34EF56GH78 >> $HOME/Desktop/log.txt
+gpg --export --armor 1ABC2D34EF56GH78 | sudo apt-key add - >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3BDB3D89CE49EC24 >> $HOME/Desktop/log.txt
+gpg --export --armor 3BDB3D89CE49EC24 | sudo apt-key add - >> $HOME/Desktop/log.txt
 
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6AF0E1940624A220
-sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6AF0E1940624A220
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6AF0E1940624A220 >> $HOME/Desktop/log.txt
+sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6AF0E1940624A220 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E >> $HOME/Desktop/log.txt
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add - >> $HOME/Desktop/log.txt
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4C1CBC1B69B0E2F4
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9578539176BAFBC6
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 517590D9A8492E35 A6A19B38D3D831EF CEC384A8BF1700F8 A040830F7FAC5991 FC918B335044912E E131728675254D99 40C18E9EC07EE05F E0F72778C4676186
-sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 363A96A5CEA9EA27
-gpg --keyserver keys.gnupg.net --recv-key A25BAE09
-gpg --keyserver keyserver.ubuntu.com --recv-keys 16126D3A3E5C1192 7274A4DAE80D6BF5 A80C8DFE23A187B2
-gpg --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8
-curl https://www.ports.debian.org/archive_2022.key | apt-key add -
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-cat winehq.key | gpg --dearmor  > winehq.gpg
-sudo install -o root -g root -m 644 winehq.gpg /etc/apt/trusted.gpg.d/
-cat winehq.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/winehq.gpg  >/dev/null
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-wget -O- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/sublimehq-archive-keyring.gpg
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4C1CBC1B69B0E2F4 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9578539176BAFBC6 >> $HOME/Desktop/log.txt
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 517590D9A8492E35 A6A19B38D3D831EF CEC384A8BF1700F8 A040830F7FAC5991 FC918B335044912E E131728675254D99 40C18E9EC07EE05F E0F72778C4676186 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 363A96A5CEA9EA27 >> $HOME/Desktop/log.txt
+gpg --keyserver keys.gnupg.net --recv-key A25BAE09 >> $HOME/Desktop/log.txt
+gpg --keyserver keyserver.ubuntu.com --recv-keys 16126D3A3E5C1192 7274A4DAE80D6BF5 A80C8DFE23A187B2 >> $HOME/Desktop/log.txt
+gpg --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C >> $HOME/Desktop/log.txt
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8 >> $HOME/Desktop/log.txt
+curl https://www.ports.debian.org/archive_2022.key | apt-key add - >> $HOME/Desktop/log.txt
+wget -nc https://dl.winehq.org/wine-builds/winehq.key >> $HOME/Desktop/log.txt
+cat winehq.key | gpg --dearmor  > winehq.gpg >> $HOME/Desktop/log.txt
+sudo install -o root -g root -m 644 winehq.gpg /etc/apt/trusted.gpg.d/ >> $HOME/Desktop/log.txt
+cat winehq.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/winehq.gpg  >/dev/null >> $HOME/Desktop/log.txt
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null >> $HOME/Desktop/log.txt
+wget -O- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/sublimehq-archive-keyring.gpg >> $HOME/Desktop/log.txt
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - >> $HOME/Desktop/log.txt
+curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add - >> $HOME/Desktop/log.txt
 
 
-apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }'
-sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt
+apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1 >> $HOME/Desktop/log.txt
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - >> $HOME/Desktop/log.txt
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' >> $HOME/Desktop/log.txt
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt >> $HOME/Desktop/log.txt
 
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
 
-sudo apt-get reinstall -f -y kali-archive-keyring
+sudo apt-get reinstall -f -y kali-archive-keyring >> $HOME/Desktop/log.txt
 
-sudo apt install apt-transport-https curl -y -f
+sudo apt install apt-transport-https curl -y -f >> $HOME/Desktop/log.txt
 
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg https://brave-browser-apt-nightly.s3.brave.com/brave-browser-nightly-archive-keyring.gpg
-sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
-
-
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg https://brave-browser-apt-nightly.s3.brave.com/brave-browser-nightly-archive-keyring.gpg >> $HOME/Desktop/log.txt
+sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg >> $HOME/Desktop/log.txt
 
 
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -  >> $HOME/Desktop/log.txt
 
 
-##########
 
-sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver pgp.mit.edu -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver keyring.debian.org -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver attester.flowcrypt.com -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver zimmermann.mayfirst.org -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver pgp.surf.nl -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver gozer.rediris.es -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver pgp.zdv.uni-mainz.de -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver keyserver-01.2ndquadrant.com -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver keyserver.dcc.sib.swiss -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver pgp.benny-baumann.de -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver the.earth.li -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver keyserver.pgp.com -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver pool.sks-keyservers.net -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver certserver.pgp.com -update-trustdb &
-sudo apt-key adv --refresh-keys --keyserver hkp://keys.gnupg.net:80 -update-trustdb
 
 ##########
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EB3E94ADBE1229CF
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7FCC7D46ACCC4CF8
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C2518248EEA14886
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 73F0D6E88E3D6C3A
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2B3F92F902D65EFF
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 883E8688397576B6C509DF495A9A06AEF9CB8DB0
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv CBF8D6FD518E17E1
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EXPKEYSIG
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv CBF8D6FD518E17E1
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7638D0442B90D010
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 818A435C5FCBF54A
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 300F846BA25BAE09
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 6ABA455AA25BAE09
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A80C8DFE23A187B2
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7274A4DAE80D6BF5
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 16126D3A3E5C1192
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF35C
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117
-sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
-sudo apt-key adv --keyserver hkp://keys.gnupg.net:80 --recv-keys EB3E94ADBE1229CF
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5A9A06AEF9CB8DB0
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9CB8DB0
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8
+
+sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb  >> $HOME/Desktop/log.txt
+sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb  >> $HOME/Desktop/log.txt
+#sudo apt-key adv --refresh-keys --keyserver pgp.mit.edu -update-trustdb & >> $HOME/Desktop/log.txt
+#sudo apt-key adv --refresh-keys --keyserver keyring.debian.org -update-trustdb & >> $HOME/Desktop/log.txt
+#sudo apt-key adv --refresh-keys --keyserver attester.flowcrypt.com -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver zimmermann.mayfirst.org -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver pgp.surf.nl -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver gozer.rediris.es -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver pgp.zdv.uni-mainz.de -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver keyserver-01.2ndquadrant.com -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver keyserver.dcc.sib.swiss -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver pgp.benny-baumann.de -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver the.earth.li -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver keyserver.pgp.com -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver pool.sks-keyservers.net -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver certserver.pgp.com -update-trustdb & >> $HOME/Desktop/log.txt
+#udo apt-key adv --refresh-keys --keyserver hkp://keys.gnupg.net:80 -update-trustdb >> $HOME/Desktop/log.txt
+
+##########
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv * >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EB3E94ADBE1229CF >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7FCC7D46ACCC4CF8 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C2518248EEA14886 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 73F0D6E88E3D6C3A >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2B3F92F902D65EFF >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 883E8688397576B6C509DF495A9A06AEF9CB8DB0 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv CBF8D6FD518E17E1 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EXPKEYSIG >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv CBF8D6FD518E17E1 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7638D0442B90D010 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 818A435C5FCBF54A >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 300F846BA25BAE09 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 6ABA455AA25BAE09 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A80C8DFE23A187B2 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7274A4DAE80D6BF5 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 16126D3A3E5C1192 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF35C >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6  >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver hkp://keys.gnupg.net:80 --recv-keys EB3E94ADBE1229CF >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5A9A06AEF9CB8DB0 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9CB8DB0 >> $HOME/Desktop/log.txt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8 >> $HOME/Desktop/log.txt
 if [ $choose1 -eq 4 ]
 then
 	goto uptab
 fi
 
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/updatelog.txt
-sudo apt update --fix-missing -y | tee -a $HOME/Desktop/updatelog.txt
-dpkg --configure -a | tee -a $HOME/Desktop/updatelog.txt
-apt-get update -y | tee -a $HOME/Desktop/updatelog.txt
-apt-get upgrade -y | tee -a $HOME/Desktop/updatelog.txt
-apt-get dist-upgrade -y | tee -a $HOME/Desktop/updatelog.txt
-/usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt
+dpkg --configure -a | tee -a $HOME/Desktop/log.txt
+apt-get update -y | tee -a $HOME/Desktop/log.txt
+apt-get upgrade -y | tee -a $HOME/Desktop/log.txt
+apt-get dist-upgrade -y | tee -a $HOME/Desktop/log.txt
+/usr/sbin/update-initramfs.orig.initramfs-tools -u >> $HOME/Desktop/log.txt
 
 #sudo apt-get remove debian-edu-config -y
 #sudo apt-get remove --auto-remove debian-edu-config -y
@@ -825,64 +726,64 @@ apt-get dist-upgrade -y | tee -a $HOME/Desktop/updatelog.txt
 
 ###################################################
 need:
-sudo apt-get install -f -y snap
-sudo apt-get install -f -y snap*
-sudo apt-get install -f -y *snap*
-sudo apt-get install -f -y snapd
-sudo apt-get install -f -y snapd*
-apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo apt-get install -f -y synaptic*
-sudo systemctl enable snapd.socket snapd apparmor
-sudo systemctl start snapd.socket snapd apparmor
-sudo snap install snap-store
-apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo apt-get install -f -y gnome-software
-sudo apt-get install -f -y gnome-software*
-sudo apt-get install -f -y software-center
-sudo apt-get install -f -y software-center*
-sudo apt-get install -f -y *spotify*
-sudo apt-get install -f -y spotify-client
-sudo apt-get install -f -y *brave-browser*
-sudo apt-get install -f -y brave-browser-nightly
-sudo apt-get install -f -y *grub-efi*
-sudo apt-get install -f -y grub-efi*
-sudo apt-get install -f -y grub-efi
-sudo apt-get install -f -y packaging-dev sbuild apt-file gitk git-lfs myrepos
-sudo apt-get install -f -y flameshot*
-sudo apt-get install -f -y dnf*
-sudo apt-get install -f -y kali-root-login*
-sudo apt-get install -f -y flameshot 
-sudo apt-get install -f -y dnf
-sudo apt-get install -f -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
-sudo apt-get install -f -y kmix
-sudo apt-get install -f -y kmix*
-sudo apt-get install -f -y pulseaudio
-sudo apt-get install -f -y pulseaudio*
-sudo apt-get install -f -y gnome-core
-sudo apt-get install -f -y gnome-core*
-sudo apt-get install -f -y gnome-tweak
-sudo apt-get install -f -y gnome-tweak*
-sudo apt-get install -f -y gnome-tweak-tool
-sudo apt-get install -f -y gnome-tweak-tool*
-sudo apt-get install -f -y xserver-xorg-core-dbg
-sudo apt-get install -f -y xserver-xorg*
-sudo apt-get install -f -y debian-goodies
-sudo apt-get install -f -y debian-goodies*
-sudo apt-get install -f -y gnupg2 curl
-sudo apt-get install -f -y gnupg2 curl*
-sudo apt-get install -f -y gnupg*
-sudo apt-get install -f -y anydesk
-sudo apt-get install -f -y anydesk*
-find-dbgsym-packages [core_path|running_pid|binary_path]
-curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
-tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
-sudo cp /usr/lib/libicu*.so.61* /usr/lib
-sudo apt-get install -f -y ibus-unikey*
-sudo apt-get install -f -y ibus-unikey
+sudo apt-get install -f -y snap >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y snap* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *snap* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y snapd >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y snapd* >> $HOME/Desktop/log.txt
+apparmor_parser -r /var/lib/snapd/apparmor/profiles/* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y synaptic* >> $HOME/Desktop/log.txt
+sudo systemctl enable snapd.socket snapd apparmor >> $HOME/Desktop/log.txt
+sudo systemctl start snapd.socket snapd apparmor >> $HOME/Desktop/log.txt
+sudo snap install snap-store >> $HOME/Desktop/log.txt
+apparmor_parser -r /var/lib/snapd/apparmor/profiles/* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-software >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-software* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y software-center >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y software-center* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *spotify* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y spotify-client >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *brave-browser* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y brave-browser-nightly >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *grub-efi* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y grub-efi* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y grub-efi >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y packaging-dev sbuild apt-file gitk git-lfs myrepos >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y flameshot* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dnf* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-root-login* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y flameshot  >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dnf >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0 >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kmix >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kmix* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y pulseaudio >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y pulseaudio* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-core >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-core* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-tweak >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-tweak* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-tweak-tool >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome-tweak-tool* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xserver-xorg-core-dbg >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xserver-xorg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y debian-goodies >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y debian-goodies* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnupg2 curl >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnupg2 curl* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnupg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y anydesk >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y anydesk* >> $HOME/Desktop/log.txt
+find-dbgsym-packages [core_path|running_pid|binary_path] >> $HOME/Desktop/log.txt
+curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz >> $HOME/Desktop/log.txt
+tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61* >> $HOME/Desktop/log.txt
+sudo cp /usr/lib/libicu*.so.61* /usr/lib >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y ibus-unikey* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y ibus-unikey >> $HOME/Desktop/log.txt
 #sudo bash install.sh
-sudo bash update.sh
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh
-sudo timedatectl set-ntp on
+sudo bash update.sh >> $HOME/Desktop/log.txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/Desktop/log.txt
+sudo timedatectl set-ntp on >> $HOME/Desktop/log.txt
 
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
@@ -894,19 +795,19 @@ then
 fi
 
 fulup:
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/updatelog.txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get update -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/updatelog.txt
-sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt-get update -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get upgrade -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/log.txt
+sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/log.txt
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u >> $HOME/Desktop/log.txt
 ##################################
  
 
-sudo bash ./list-symbols-packages-v2* -p $(pidof yelp)
-sudo bash ./list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
+sudo bash ./list-symbols-packages-v2* -p $(pidof yelp) >> $HOME/Desktop/log.txt
+sudo bash ./list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install  >> $HOME/Desktop/log.txt
 
 if [ $choose1 -eq 7 ]
 then
@@ -915,402 +816,402 @@ fi
 ###################################################
 ###sudo dpkg -P [packet]
 gui:
-sudo apt-get install -f -y kali-desktop-kde
-sudo apt-get install -f -y kali-desktop-mate
-sudo apt-get install -f -y kali-desktop-i3
-sudo apt-get install -f -y kali-desktop-i3-gaps
-sudo apt-get install -f -y kali-desktop-e17
-sudo apt-get install -f -y kali-desktop-gnome
-sudo apt-get install -f -y kali-desktop-lxde
+sudo apt-get install -f -y kali-desktop-kde >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-mate >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3 >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3-gaps >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-e17 >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-gnome >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-lxde >> $HOME/Desktop/log.txt
 
-sudo apt-get install -f -y kali-linux-default
-sudo apt-get install -f -y kali-linux-arm
-sudo apt-get install -f -y kali-linux-headless
-sudo apt-get install -f -y kali-linux-nethunter
-sudo apt-get install -f -y kali-tools-gpu
-sudo apt-get install -f -y kali-tools-hardware
-sudo apt-get install -f -y kali-tools-crypto-stego
-sudo apt-get install -f -y kali-tools-fuzzing
-sudo apt-get install -f -y kali-tools-802-11
-sudo apt-get install -f -y kali-tools-bluetooth
-sudo apt-get install -f -y kali-tools-rfid
-sudo apt-get install -f -y kali-tools-sdr
-sudo apt-get install -f -y kali-tools-voip
-sudo apt-get install -f -y kali-tools-windows-resources
-sudo apt-get install -f -y kali-tools-information-gathering
-sudo apt-get install -f -y kali-tools-vulnerability
-sudo apt-get install -f -y kali-tools-web
-sudo apt-get install -f -y kali-tools-database
-sudo apt-get install -f -y kali-tools-passwords
-sudo apt-get install -f -y kali-tools-wireless
-sudo apt-get install -f -y kali-tools-reverse-engineering
-sudo apt-get install -f -y kali-tools-exploitation
-sudo apt-get install -f -y kali-tools-social-engineering
-sudo apt-get install -f -y kali-tools-sniffing-spoofing
-sudo apt-get install -f -y kali-tools-post-exploitation
-sudo apt-get install -f -y kali-linux-large
-sudo apt-get install -f -y kali-linux-everything
-sudo apt-get install -f -y kali-tools-forensics
-sudo apt-get install -f -y kali-tools-reporting
-sudo apt-get install -f -y kali-desktop-live
-sudo apt-get install -f -y kali-desktop-xfce
-sudo apt-get install -f -y nvidia*
+sudo apt-get install -f -y kali-linux-default >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-arm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-headless >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-nethunter >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-gpu >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-hardware >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-crypto-stego >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-fuzzing >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-802-11 >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-bluetooth >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-rfid >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sdr >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-voip >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-windows-resources >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-information-gathering >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-vulnerability >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-web >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-database >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-passwords >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-wireless >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reverse-engineering >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-exploitation >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-social-engineering >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sniffing-spoofing >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-post-exploitation >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-large >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-everything >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-forensics >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reporting >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-live >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-xfce >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nvidia* >> $HOME/Desktop/log.txt
 
-sudo apt-get install -f -y gdm
-sudo apt-get install -f -y cinnamon
-sudo apt-get install -f -y slim
-sudo apt-get install -f -y lightdm
-sudo apt-get install -f -y gnome
-sudo apt-get install -f -y cdm
-sudo apt-get install -f -y xdm
-sudo apt-get install -f -y sddm
-sudo apt-get install -f -y lxdm
-sudo apt-get install -f -y mdm
-sudo apt-get install -f -y brzdm
-sudo apt-get install -f -y kde
-sudo apt-get install -f -y qingy
-sudo apt-get install -f -y mlogind
-sudo apt-get install -f -y tbsm
-sudo apt-get install -f -y wayland
-sudo apt-get install -f -y xorg
-sudo apt-get install -f -y weston
-sudo apt-get install -f -y kwin
-sudo apt-get install -f -y openbox
-sudo apt-get install -f -y mir
-sudo apt-get install -f -y dwm
-sudo apt-get install -f -y wdm
-sudo apt-get install -f -y nodm
-sudo apt-get install -f -y ldm
-sudo apt-get install -f -y kdm
-sudo apt-get install -f -y greetd
-sudo apt-get install -f -y dm
-sudo apt-get install -f -y i3wm
-curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf
-wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf
-
-
-sudo apt-get install -f -y kali*
-sudo apt-get install -f -y kali-desktop*
-sudo apt-get install -f -y kali-desktop-kde*
-sudo apt-get install -f -y kali-desktop-mate*
-sudo apt-get install -f -y kali-desktop-i3*
-sudo apt-get install -f -y kali-desktop-i3-gaps*
-sudo apt-get install -f -y kali-desktop-e17*
-sudo apt-get install -f -y kali-desktop-gnome*
-sudo apt-get install -f -y kali-desktop-lxde*
-
-sudo apt-get install -f -y kali-linux-default*
-sudo apt-get install -f -y kali-linux-arm*
-sudo apt-get install -f -y kali-linux-headless*
-sudo apt-get install -f -y kali-linux-nethunter*
-sudo apt-get install -f -y kali-tools-gpu*
-sudo apt-get install -f -y kali-tools-hardware*
-sudo apt-get install -f -y kali-tools-crypto-stego*
-sudo apt-get install -f -y kali-tools-fuzzing*
-sudo apt-get install -f -y kali-tools-802-11*
-sudo apt-get install -f -y kali-tools-bluetooth*
-sudo apt-get install -f -y kali-tools-rfid*
-sudo apt-get install -f -y kali-tools-sdr*
-sudo apt-get install -f -y kali-tools-voip*
-sudo apt-get install -f -y kali-tools-windows-resources*
-sudo apt-get install -f -y kali-tools-information-gathering*
-sudo apt-get install -f -y kali-tools-vulnerability*
-sudo apt-get install -f -y kali-tools-web*
-sudo apt-get install -f -y kali-tools-database*
-sudo apt-get install -f -y kali-tools-passwords*
-sudo apt-get install -f -y kali-tools-wireless*
-sudo apt-get install -f -y kali-tools-reverse-engineering*
-sudo apt-get install -f -y kali-tools-exploitation*
-sudo apt-get install -f -y kali-tools-social-engineering*
-sudo apt-get install -f -y kali-tools-sniffing-spoofing*
-sudo apt-get install -f -y kali-tools-post-exploitation*
-sudo apt-get install -f -y kali-tools-forensics*
-sudo apt-get install -f -y kali-tools-reporting*
-sudo apt-get install -f -y kali-linux-large*
-sudo apt-get install -f -y kali-linux-everything*
-sudo apt-get install -f -y kali-desktop-live*
-sudo apt-get install -f -y kali-desktop-xfce*
-sudo apt-get install -f -y nvidia*
-
-sudo apt-get install -f -y gdm*
-sudo apt-get install -f -y cinnamon*
-sudo apt-get install -f -y slim*
-sudo apt-get install -f -y lightdm*
-sudo apt-get install -f -y gnome*
-sudo apt-get install -f -y cdm*
-sudo apt-get install -f -y xdm*
-sudo apt-get install -f -y sddm*
-sudo apt-get install -f -y lxdm*
-sudo apt-get install -f -y mdm*
-sudo apt-get install -f -y brzdm*
-sudo apt-get install -f -y kde*
-sudo apt-get install -f -y qingy*
-sudo apt-get install -f -y mlogind*
-sudo apt-get install -f -y tbsm*
-sudo apt-get install -f -y wayland*
-sudo apt-get install -f -y xorg*
-sudo apt-get install -f -y weston*
-sudo apt-get install -f -y kwin*
-sudo apt-get install -f -y openbox*
-sudo apt-get install -f -y mir*
-sudo apt-get install -f -y dwm*
-sudo apt-get install -f -y wdm*
-sudo apt-get install -f -y nodm*
-sudo apt-get install -f -y ldm*
-sudo apt-get install -f -y kdm*
-sudo apt-get install -f -y greetd*
-sudo apt-get install -f -y dm*
-sudo apt-get install -f -y i3wm*
-
-sudo apt-get install -f -y *gdm*
-sudo apt-get install -f -y *cinnamon*
-sudo apt-get install -f -y *slim*
-sudo apt-get install -f -y *lightdm*
-sudo apt-get install -f -y *gnome*
-sudo apt-get install -f -y *cdm*
-sudo apt-get install -f -y *xdm*
-sudo apt-get install -f -y *sddm*
-sudo apt-get install -f -y *lxdm*
-sudo apt-get install -f -y *mdm*
-sudo apt-get install -f -y *brzdm*
-sudo apt-get install -f -y *kde*
-sudo apt-get install -f -y *qingy*
-sudo apt-get install -f -y *mlogind*
-sudo apt-get install -f -y *tbsm*
-sudo apt-get install -f -y *wayland*
-sudo apt-get install -f -y *xorg*
-sudo apt-get install -f -y *weston*
-sudo apt-get install -f -y *kwin*
-sudo apt-get install -f -y *openbox*
-sudo apt-get install -f -y *mir*
-sudo apt-get install -f -y *dwm*
-sudo apt-get install -f -y *wdm*
-sudo apt-get install -f -y *nodm*
-sudo apt-get install -f -y *ldm*
-sudo apt-get install -f -y *kdm*
-sudo apt-get install -f -y *greetd*
-sudo apt-get install -f -y *dm*
-sudo apt-get install -f -y *i3wm*
+sudo apt-get install -f -y gdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cinnamon >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y slim >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lightdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y sddm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lxdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y brzdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kde >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y qingy >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mlogind >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y tbsm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wayland >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xorg >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y weston >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kwin >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y openbox >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mir >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dwm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nodm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y ldm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kdm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y greetd >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dm >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y i3wm >> $HOME/Desktop/log.txt
+curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf >> $HOME/Desktop/log.txt
+wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf >> $HOME/Desktop/log.txt
 
 
+sudo apt-get install -f -y kali* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-mate* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3-gaps* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-e17* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-lxde* >> $HOME/Desktop/log.txt
 
-cd /var/cache/apt/archives/ ###########################################################
-sudo apt-get download -y gdm*
-sudo apt-get download -y cinnamon*
-sudo apt-get download -y slim*
-sudo apt-get download -y lightdm*
-sudo apt-get download -y gnome*
-sudo apt-get download -y cdm*
-sudo apt-get download -y xdm*
-sudo apt-get download -y sddm*
-sudo apt-get download -y lxdm*
-sudo apt-get download -y mdm*
-sudo apt-get download -y brzdm*
-sudo apt-get download -y kde*
-sudo apt-get download -y qingy*
-sudo apt-get download -y mlogind*
-sudo apt-get download -y tbsm*
-sudo apt-get download -y wayland*
-sudo apt-get download -y xorg*
-sudo apt-get download -y weston*
-sudo apt-get download -y kwin*
-sudo apt-get download -y openbox*
-sudo apt-get download -y mir*
-sudo apt-get download -y dwm*
-sudo apt-get download -y wdm*
-sudo apt-get download -y nodm*
-sudo apt-get download -y ldm*
-sudo apt-get download -y kdm*
-sudo apt-get download -y greetd*
-sudo apt-get download -y dm*
-sudo apt-get download -y i3wm*
+sudo apt-get install -f -y kali-linux-default* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-arm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-headless* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-nethunter* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-gpu* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-hardware* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-crypto-stego* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-fuzzing* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-802-11* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-bluetooth* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-rfid* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sdr* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-voip* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-windows-resources* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-information-gathering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-vulnerability* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-web* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-database* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-passwords* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-wireless* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reverse-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-social-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sniffing-spoofing* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-post-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-forensics* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reporting* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-large* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-everything* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-live* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-xfce* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nvidia* >> $HOME/Desktop/log.txt
+
+sudo apt-get install -f -y gdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y slim* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y sddm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y qingy* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wayland* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xorg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y weston* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kwin* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y openbox* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mir* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dwm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nodm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y ldm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y greetd* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y i3wm* >> $HOME/Desktop/log.txt
+
+sudo apt-get install -f -y *gdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *slim* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *cdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *xdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *sddm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *qingy* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *wayland* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *xorg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *weston* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kwin* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *openbox* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mir* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *dwm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *wdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *nodm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *ldm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *greetd* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *dm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *i3wm* >> $HOME/Desktop/log.txt
+
+
+
+cd /var/cache/apt/archives/ ########################################################### >> $HOME/Desktop/log.txt
+sudo apt-get download -y gdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get download -y slim* >> $HOME/Desktop/log.txt
+sudo apt-get download -y lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y gnome* >> $HOME/Desktop/log.txt
+sudo apt-get download -y cdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y xdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y sddm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y mdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kde* >> $HOME/Desktop/log.txt
+sudo apt-get download -y qingy* >> $HOME/Desktop/log.txt
+sudo apt-get download -y mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get download -y tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y wayland* >> $HOME/Desktop/log.txt
+sudo apt-get download -y xorg* >> $HOME/Desktop/log.txt
+sudo apt-get download -y weston* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kwin* >> $HOME/Desktop/log.txt
+sudo apt-get download -y openbox* >> $HOME/Desktop/log.txt
+sudo apt-get download -y mir* >> $HOME/Desktop/log.txt
+sudo apt-get download -y dwm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y wdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y nodm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y ldm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y greetd* >> $HOME/Desktop/log.txt
+sudo apt-get download -y dm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y i3wm* >> $HOME/Desktop/log.txt
 
 
 
 #sudo mkdir /root/Downloads/update/
 
-sudo apt-get download -y *gdm*
-sudo apt-get download -y *cinnamon*
-sudo apt-get download -y *slim*
-sudo apt-get download -y *lightdm*
-sudo apt-get download -y *gnome*
-sudo apt-get download -y *cdm*
-sudo apt-get download -y *xdm*
-sudo apt-get download -y *sddm*
-sudo apt-get download -y *lxdm*
-sudo apt-get download -y *mdm*
-sudo apt-get download -y *brzdm*
-sudo apt-get download -y *kde*
-sudo apt-get download -y *qingy*
-sudo apt-get download -y *mlogind*
-sudo apt-get download -y *tbsm*
-sudo apt-get download -y *wayland*
-sudo apt-get download -y *xorg*
-sudo apt-get download -y *weston*
-sudo apt-get download -y *kwin*
-sudo apt-get download -y *openbox*
-sudo apt-get download -y *mir*
-sudo apt-get download -y *dwm*
-sudo apt-get download -y *wdm*
-sudo apt-get download -y *nodm*
-sudo apt-get download -y *ldm*
-sudo apt-get download -y *kdm*
-sudo apt-get download -y *greetd*
-sudo apt-get download -y *dm*
-sudo apt-get download -y *i3wm*
+sudo apt-get download -y *gdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *slim* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *gnome* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *cdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *xdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *sddm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *mdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *kde* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *qingy* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *wayland* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *xorg* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *weston* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *kwin* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *openbox* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *mir* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *dwm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *wdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *nodm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *ldm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *kdm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *greetd* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *dm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y *i3wm* >> $HOME/Desktop/log.txt
 
 
-sudo apt-get install -f -y *gdm*
-sudo apt-get install -f -y *cinnamon*
-sudo apt-get install -f -y *slim*
-sudo apt-get install -f -y *lightdm*
-sudo apt-get install -f -y *gnome*
-sudo apt-get install -f -y *cdm*
-sudo apt-get install -f -y *xdm*
-sudo apt-get install -f -y *sddm*
-sudo apt-get install -f -y *lxdm*
-sudo apt-get install -f -y *mdm*
-sudo apt-get install -f -y *brzdm*
-sudo apt-get install -f -y *kde*
-sudo apt-get install -f -y *qingy*
-sudo apt-get install -f -y *mlogind*
-sudo apt-get install -f -y *tbsm*
-sudo apt-get install -f -y *wayland*
-sudo apt-get install -f -y *xorg*
-sudo apt-get install -f -y *weston*
-sudo apt-get install -f -y *kwin*
-sudo apt-get install -f -y *openbox*
-sudo apt-get install -f -y *mir*
-sudo apt-get install -f -y *dwm*
-sudo apt-get install -f -y *wdm*
-sudo apt-get install -f -y *nodm*
-sudo apt-get install -f -y *ldm*
-sudo apt-get install -f -y *kdm*
-sudo apt-get install -f -y *greetd*
-sudo apt-get install -f -y *dm*
-sudo apt-get install -f -y *i3wm*
+sudo apt-get install -f -y *gdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *slim* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *cdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *xdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *sddm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *qingy* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *wayland* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *xorg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *weston* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kwin* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *openbox* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *mir* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *dwm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *wdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *nodm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *ldm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *kdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *greetd* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *dm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y *i3wm* >> $HOME/Desktop/log.txt
 
-sudo apt-get install -f -y gdm*
-sudo apt-get install -f -y cinnamon*
-sudo apt-get install -f -y slim*
-sudo apt-get install -f -y lightdm*
-sudo apt-get install -f -y gnome*
-sudo apt-get install -f -y cdm*
-sudo apt-get install -f -y xdm*
-sudo apt-get install -f -y sddm*
-sudo apt-get install -f -y lxdm*
-sudo apt-get install -f -y mdm*
-sudo apt-get install -f -y brzdm*
-sudo apt-get install -f -y kde*
-sudo apt-get install -f -y qingy*
-sudo apt-get install -f -y mlogind*
-sudo apt-get install -f -y tbsm*
-sudo apt-get install -f -y wayland*
-sudo apt-get install -f -y xorg*
-sudo apt-get install -f -y weston*
-sudo apt-get install -f -y kwin*
-sudo apt-get install -f -y openbox*
-sudo apt-get install -f -y mir*
-sudo apt-get install -f -y dwm*
-sudo apt-get install -f -y wdm*
-sudo apt-get install -f -y nodm*
-sudo apt-get install -f -y ldm*
-sudo apt-get install -f -y kdm*
-sudo apt-get install -f -y greetd*
-sudo apt-get install -f -y dm*
-sudo apt-get install -f -y i3wm*
+sudo apt-get install -f -y gdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cinnamon* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y slim* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lightdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y cdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y sddm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y lxdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y brzdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y qingy* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mlogind* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y tbsm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wayland* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y xorg* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y weston* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kwin* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y openbox* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y mir* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dwm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y wdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nodm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y ldm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kdm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y greetd* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y dm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y i3wm* >> $HOME/Desktop/log.txt
 
-sudo apt-get download -y kali*
-sudo apt-get download -y kali-desktop*
-sudo apt-get download -y kali-desktop-kde*
-sudo apt-get download -y kali-desktop-mate*
-sudo apt-get download -y kali-desktop-i3*
-sudo apt-get download -y kali-desktop-i3-gaps*
-sudo apt-get download -y kali-desktop-e17*
-sudo apt-get download -y kali-desktop-gnome*
-sudo apt-get download -y kali-desktop-lxde*
+sudo apt-get download -y kali* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-kde* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-mate* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-i3* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-i3-gaps* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-e17* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-gnome* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-lxde* >> $HOME/Desktop/log.txt
 
-sudo apt-get download -y kali-linux-default*
-sudo apt-get download -y kali-linux-arm*
-sudo apt-get download -y kali-linux-headless*
-sudo apt-get download -y kali-linux-nethunter*
-sudo apt-get download -y kali-tools-gpu*
-sudo apt-get download -y kali-tools-hardware*
-sudo apt-get download -y kali-tools-crypto-stego*
-sudo apt-get download -y kali-tools-fuzzing*
-sudo apt-get download -y kali-tools-802-11*
-sudo apt-get download -y kali-tools-bluetooth*
-sudo apt-get download -y kali-tools-rfid*
-sudo apt-get download -y kali-tools-sdr*
-sudo apt-get download -y kali-tools-voip*
-sudo apt-get download -y kali-tools-windows-resources*
-sudo apt-get download -y kali-tools-information-gathering*
-sudo apt-get download -y kali-tools-vulnerability*
-sudo apt-get download -y kali-tools-web*
-sudo apt-get download -y kali-tools-database*
-sudo apt-get download -y kali-tools-passwords*
-sudo apt-get download -y kali-tools-wireless*
-sudo apt-get download -y kali-tools-reverse-engineering*
-sudo apt-get download -y kali-tools-exploitation*
-sudo apt-get download -y kali-tools-social-engineering*
-sudo apt-get download -y kali-tools-sniffing-spoofing*
-sudo apt-get download -y kali-tools-post-exploitation*
-sudo apt-get download -y kali-tools-forensics*
-sudo apt-get download -y kali-tools-reporting*
-sudo apt-get download -y kali-linux-large*
-sudo apt-get download -y kali-linux-everything*
-sudo apt-get download -y kali-desktop-live*
-sudo apt-get download -y kali-desktop-xfce*
-sudo apt-get download -y nvidia*
+sudo apt-get download -y kali-linux-default* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-linux-arm* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-linux-headless* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-linux-nethunter* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-gpu* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-hardware* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-crypto-stego* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-fuzzing* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-802-11* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-bluetooth* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-rfid* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-sdr* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-voip* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-windows-resources* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-information-gathering* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-vulnerability* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-web* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-database* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-passwords* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-wireless* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-reverse-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-social-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-sniffing-spoofing* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-post-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-forensics* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-tools-reporting* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-linux-large* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-linux-everything* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-live* >> $HOME/Desktop/log.txt
+sudo apt-get download -y kali-desktop-xfce* >> $HOME/Desktop/log.txt
+sudo apt-get download -y nvidia* >> $HOME/Desktop/log.txt
 
-sudo apt-get install -f -y kali*
-sudo apt-get install -f -y kali-desktop*
-sudo apt-get install -f -y kali-desktop-kde*
-sudo apt-get install -f -y kali-desktop-mate*
-sudo apt-get install -f -y kali-desktop-i3*
-sudo apt-get install -f -y kali-desktop-i3-gaps*
-sudo apt-get install -f -y kali-desktop-e17*
-sudo apt-get install -f -y kali-desktop-gnome*
-sudo apt-get install -f -y kali-desktop-lxde*
+sudo apt-get install -f -y kali* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-kde* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-mate* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-i3-gaps* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-e17* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-gnome* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-lxde* >> $HOME/Desktop/log.txt
 
-sudo apt-get install -f -y kali-linux-default*
-sudo apt-get install -f -y kali-linux-arm*
-sudo apt-get install -f -y kali-linux-headless*
-sudo apt-get install -f -y kali-linux-nethunter*
-sudo apt-get install -f -y kali-tools-gpu*
-sudo apt-get install -f -y kali-tools-hardware*
-sudo apt-get install -f -y kali-tools-crypto-stego*
-sudo apt-get install -f -y kali-tools-fuzzing*
-sudo apt-get install -f -y kali-tools-802-11*
-sudo apt-get install -f -y kali-tools-bluetooth*
-sudo apt-get install -f -y kali-tools-rfid*
-sudo apt-get install -f -y kali-tools-sdr*
-sudo apt-get install -f -y kali-tools-voip*
-sudo apt-get install -f -y kali-tools-windows-resources*
-sudo apt-get install -f -y kali-tools-information-gathering*
-sudo apt-get install -f -y kali-tools-vulnerability*
-sudo apt-get install -f -y kali-tools-web*
-sudo apt-get install -f -y kali-tools-database*
-sudo apt-get install -f -y kali-tools-passwords*
-sudo apt-get install -f -y kali-tools-wireless*
-sudo apt-get install -f -y kali-tools-reverse-engineering*
-sudo apt-get install -f -y kali-tools-exploitation*
-sudo apt-get install -f -y kali-tools-social-engineering*
-sudo apt-get install -f -y kali-tools-sniffing-spoofing*
-sudo apt-get install -f -y kali-tools-post-exploitation*
-sudo apt-get install -f -y kali-tools-forensics*
-sudo apt-get install -f -y kali-tools-reporting*
-sudo apt-get install -f -y kali-linux-large*
-sudo apt-get install -f -y kali-linux-everything*
-sudo apt-get install -f -y kali-desktop-live*
-sudo apt-get install -f -y kali-desktop-xfce*
-sudo apt-get install -f -y nvidia*
+sudo apt-get install -f -y kali-linux-default* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-arm* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-headless* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-nethunter* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-gpu* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-hardware* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-crypto-stego* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-fuzzing* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-802-11* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-bluetooth* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-rfid* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sdr* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-voip* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-windows-resources* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-information-gathering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-vulnerability* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-web* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-database* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-passwords* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-wireless* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reverse-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-social-engineering* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-sniffing-spoofing* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-post-exploitation* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-forensics* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-tools-reporting* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-large* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-linux-everything* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-live* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y kali-desktop-xfce* >> $HOME/Desktop/log.txt
+sudo apt-get install -f -y nvidia* >> $HOME/Desktop/log.txt
 
-alias journalctl="sudo journalctl"
+alias journalctl="sudo journalctl" >> $HOME/Desktop/log.txt
 
 
 #sudo dpkg -i --force-hold,confnew,depends,bad-verify,bad-version *
-cd ~/toolkali/ 
+cd ~/toolkali/  >> $HOME/Desktop/log.txt
 #sudo bash update.sh
 if [ $choose1 -eq 5 ]
 then
@@ -1320,17 +1221,17 @@ fi
 reboot
 
 bak:
-sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
-sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
-sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
-sudo cp -f /etc/fstab /etc/fstab.bak
-sudo cp -f /etc/crontab /etc/crontab.bak
-sudo cp -f /etc/rc.local /etc/rc.local.bak
-sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
-sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
-sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
-sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/
-sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/
+sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak >> $HOME/Desktop/log.txt
+sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1 >> $HOME/Desktop/log.txt
+sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak >> $HOME/Desktop/log.txt
+sudo cp -f /etc/fstab /etc/fstab.bak >> $HOME/Desktop/log.txt
+sudo cp -f /etc/crontab /etc/crontab.bak >> $HOME/Desktop/log.txt
+sudo cp -f /etc/rc.local /etc/rc.local.bak >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
+sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
 if [ $choose1 -eq 3 ]
 then
 	goto uptab
