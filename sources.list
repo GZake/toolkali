@@ -108,6 +108,29 @@ deb [trusted=yes] http://deb.playonlinux.com/ saucy main
 deb [trusted=yes] http://deb.playonlinux.com/ hardy main
 deb [trusted=yes] http://deb.playonlinux.com/ intrepid main
 
+deb-src [trusted=yes] http://deb.playonlinux.com/ etch main
+deb-src [trusted=yes] http://deb.playonlinux.com/ maverick main
+deb-src [trusted=yes] http://deb.playonlinux.com/ bionic main
+deb-src [trusted=yes] http://deb.playonlinux.com/ jaunty main
+deb-src [trusted=yes] http://deb.playonlinux.com/ wheezy main
+deb-src [trusted=yes] http://deb.playonlinux.com/ squeeze main
+deb-src [trusted=yes] http://deb.playonlinux.com/ precise main
+deb-src [trusted=yes] http://deb.playonlinux.com/ raring main
+deb-src [trusted=yes] http://deb.playonlinux.com/ jessie main
+deb-src [trusted=yes] http://deb.playonlinux.com/ natty main
+deb-src [trusted=yes] http://deb.playonlinux.com/ xenial main
+deb-src [trusted=yes] http://deb.playonlinux.com/ xenial main
+deb-src [trusted=yes] http://deb.playonlinux.com/ karmic main
+deb-src [trusted=yes] http://deb.playonlinux.com/ cosmic main
+deb-src [trusted=yes] http://deb.playonlinux.com/ stretch main
+deb-src [trusted=yes] http://deb.playonlinux.com/ lucid main
+deb-src [trusted=yes] http://deb.playonlinux.com/ oneiric main
+deb-src [trusted=yes] http://deb.playonlinux.com/ saucy main
+deb-src [trusted=yes] http://deb.playonlinux.com/ hardy main
+deb-src [trusted=yes] http://deb.playonlinux.com/ intrepid main
+
+
+
 deb [arch=amd64,i386,ppc64el] http://ftp.nluug.nl/db/mariadb/repo/10.3/debian buster main contrib non-free
 deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ focal main main/debug
 deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contrib non-free
