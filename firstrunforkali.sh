@@ -1,4 +1,4 @@
-sudo apt-get -f -y install parallel*  $HOME/Desktop/log.txt #status=progress >
+sudo apt-get -f -y install parallel* > $HOME/Desktop/log.txt #status=progress >
 sudo apt-get -f -y install parallel >> $HOME/Desktop/log.txt
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/ >> $HOME/Desktop/log.txt
 
