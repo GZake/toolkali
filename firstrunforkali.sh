@@ -582,7 +582,7 @@ echo q| gdb  | grep 'Reading symbols from '| if ; then cat; else grep 'no debugg
 
 
 
-" | sudo tee ~/list-symbols-packages-v2.1.sh
+" | sudo tee $HOME/toolkali/list-symbols-packages-v2.1.sh
 ###################################
 
 
