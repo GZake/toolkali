@@ -276,6 +276,7 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8
 curl https://www.ports.debian.org/archive_2022.key | apt-key add -
+curl http://deb.playonlinux.com/public.gpg | apt-key add -
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 cat winehq.key | gpg --dearmor  > winehq.gpg
 sudo install -o root -g root -m 644 winehq.gpg /etc/apt/trusted.gpg.d/
@@ -284,6 +285,8 @@ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /us
 wget -O- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/sublimehq-archive-keyring.gpg
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
+
 
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
