@@ -1,6 +1,8 @@
 sudo apt-get -f -y install parallel* #status=progress
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: ~ /media/kali/*/ /media/*/*/
+cd ..
+sudo parallel cp -vfxR toolkali/ ::: ~ /media/kali/*/ /media/*/*/
 cd ~
 #!/bin/bash
 # include this boilerplate
