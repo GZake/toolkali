@@ -14,25 +14,25 @@ function goto
     eval "$cmd"
     exit
 }
-swapon /dev/nvme* | sudo tee -a $HOME/Desktop/log.txt
-swapon /dev/sd* | sudo tee -a $HOME/Desktop/log.txt
-#swapon /dev/nvme0n1p5
-#swapon /dev/sda4
-#swapon /dev/sdb4
-#swapon /dev/sdc4
-#swapon /dev/sda5
-#swapon /dev/sdb5
-#swapon /dev/sdc5
-#swapon /dev/sda1
-#swapon /dev/sdb1
-#swapon /dev/sdc1
-#swapon /dev/sda2
-#wapon /dev/sdc2
-#swapon /dev/sda3
-#swapon /dev/sdb3
-#swapon /dev/sdc3
-sysctl vm.swappiness=100
-sysctl -p
+sudo swapon /dev/nvme* | sudo tee -a $HOME/Desktop/log.txt
+sudo swapon /dev/sd* | sudo tee -a $HOME/Desktop/log.txt
+#sudo swapon /dev/nvme0n1p5
+#sudo swapon /dev/sda4
+#sudo swapon /dev/sdb4
+#sudo swapon /dev/sdc4
+#sudo swapon /dev/sda5
+#sudo swapon /dev/sdb5
+#sudo swapon /dev/sdc5
+#sudo swapon /dev/sda1
+#sudo swapon /dev/sdb1
+#sudo swapon /dev/sdc1
+#sudo swapon /dev/sda2
+#sudo swapon /dev/sdc2
+#sudo swapon /dev/sda3
+#sudo swapon /dev/sdb3
+#sudo swapon /dev/sdc3
+sudo sysctl vm.swappiness=100
+sudo sysctl -p
 choose:
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
