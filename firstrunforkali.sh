@@ -554,7 +554,8 @@ sudo apt-get install -f -y dm
 sudo apt-get install -f -y i3wm
 curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf
 wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf
-
+sudo dpkg -P i3-lock
+sudo apt --fix-broken install -y
 
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
