@@ -182,6 +182,9 @@ echo 100 >> /proc/sys/vm/swappiness
 echo "
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt  
 sudo apt-get update -y | tee -a  $HOME/Desktop/log.txt
 sudo apt-get upgrade -y | tee -a  $HOME/Desktop/log.txt
