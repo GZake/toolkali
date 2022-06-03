@@ -95,4 +95,3 @@ then
 else 
     echo -e $RED "[!] Select Valid Option [!]"
 fi
-exit(0)
