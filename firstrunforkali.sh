@@ -559,6 +559,7 @@ sudo apt --fix-broken install -y
 sudo dpkg --configure -a
 sudo apt-get install -f -y i3wm
 
+
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
@@ -892,6 +893,7 @@ reboot
 bak:
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
+sudo cp -f /etc/skel/.bashrc /etc/skel/.bashrc.bak1
 sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
 sudo cp -f /etc/fstab /etc/fstab.bak
 sudo cp -f /etc/crontab /etc/crontab.bak
