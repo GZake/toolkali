@@ -147,11 +147,10 @@ fi
 all:
 sudo cat sources.list | sudo tee /etc/apt/sources.list	
 #########################################################################################
-
-
 #########################################################################################
 
-sudo cp -Rf sources.list /etc/apt/sources.list	
+#sudo cp -f sources.list /etc/apt/sources.list	
+
 sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
 echo "
 #ibus
@@ -179,7 +178,7 @@ echo "
 
 echo 100 >> /proc/sys/vm/swappiness
 
-sudo cp -Rf sources.list /etc/apt/sources.list	
+#sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt 
@@ -212,7 +211,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.g
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
-echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 
 if [ $choose1 -eq 2 ]
