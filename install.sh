@@ -81,7 +81,7 @@ if [ $choice == 1 ]; then
         echo "";
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
         echo 		"		[+]						      		[+]"
-        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔ 	[+]"
+        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔	     [+]"
         echo 		"		[+]						      		[+]"
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
     else
@@ -95,3 +95,4 @@ then
 else 
     echo -e $RED "[!] Select Valid Option [!]"
 fi
+exit(0)
