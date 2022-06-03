@@ -145,12 +145,13 @@ fi
 
 
 all:
-#########################################################################################
-sudo cat sources.list | sudo tee /etc/apt/sources.list					#
-sudo cp -Rf sources.list /etc/apt/sources.list						#
+sudo cat sources.list | sudo tee /etc/apt/sources.list	
 #########################################################################################
 
 
+#########################################################################################
+
+sudo cp -Rf sources.list /etc/apt/sources.list	
 sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
 echo "
 #ibus
@@ -178,7 +179,7 @@ echo "
 
 echo 100 >> /proc/sys/vm/swappiness
 
-
+sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt 
