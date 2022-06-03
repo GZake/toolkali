@@ -66,7 +66,7 @@ deb [trusted=yes] http://deb.playonlinux.com/ raring main
 deb [trusted=yes] http://deb.playonlinux.com/ jessie main
 deb [trusted=yes] http://deb.playonlinux.com/ natty main
 deb [trusted=yes] http://deb.playonlinux.com/ xenial main
-deb [trusted=yes] http://deb.playonlinux.com/ xenial main
+
 deb [trusted=yes] http://deb.playonlinux.com/ karmic main
 deb [trusted=yes] http://deb.playonlinux.com/ cosmic main
 deb [trusted=yes] http://deb.playonlinux.com/ stretch main
@@ -87,7 +87,7 @@ deb-src [trusted=yes] http://deb.playonlinux.com/ raring main
 deb-src [trusted=yes] http://deb.playonlinux.com/ jessie main
 deb-src [trusted=yes] http://deb.playonlinux.com/ natty main
 deb-src [trusted=yes] http://deb.playonlinux.com/ xenial main
-deb-src [trusted=yes] http://deb.playonlinux.com/ xenial main
+
 deb-src [trusted=yes] http://deb.playonlinux.com/ karmic main
 deb-src [trusted=yes] http://deb.playonlinux.com/ cosmic main
 deb-src [trusted=yes] http://deb.playonlinux.com/ stretch main
@@ -147,14 +147,14 @@ deb-src [trusted=yes] http://httpredir.debian.org/debian jessie main contrib non
 deb [trusted=yes] http://deb.debian.org/debian/ jessie main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ jessie main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ jessie main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ jessie main contrib non-free
+
 ##############################
 deb [trusted=yes] http://httpredir.debian.org/debian buster main contrib non-free
 deb-src [trusted=yes] http://httpredir.debian.org/debian buster main contrib non-free
 deb [trusted=yes] http://deb.debian.org/debian/ buster main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ buster main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ buster main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ buster main contrib non-free
+
 ##############################
 deb-src [trusted=yes] http://deb.debian.org/debian/ experimental main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ experimental main contrib non-free
@@ -188,17 +188,17 @@ deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bullseye-updates main
 ##############################
 deb [trusted=yes] http://security.debian.org/debian-security/ bullseye-security main contrib non-free
 deb [trusted=yes] http://deb.debian.org/debian/ bullseye-backports main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bullseye main contrib non-free
+
 ##############################
 deb [trusted=yes] http://deb.debian.org/debian/ wheezy main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ wheezy main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ wheezy main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ wheezy main contrib non-free
+
 ##############################
 deb [trusted=yes] http://deb.debian.org/debian/ stretch main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ stretch main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ stretch main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stretch main contrib non-free
+
 ##############################
 deb [trusted=yes] http://deb.debian.org/debian/ squeeze main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ squeeze main contrib non-free
@@ -225,14 +225,14 @@ deb-src [trusted=yes] http://httpredir.debian.org/debian sid main contrib non-fr
 deb [trusted=yes] http://deb.debian.org/debian/ sid main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian sid main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ sid main contrib non-free
+
 ##############################
 deb [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
 deb-src [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
 deb [trusted=yes] http://deb.debian.org/debian/ unstable main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian unstable main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ unstable main contrib non-free
+
 ##############################
 deb [trusted=yes] http://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
 deb-src [trusted=yes] http://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
