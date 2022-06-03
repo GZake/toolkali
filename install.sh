@@ -59,15 +59,15 @@ if [ $choice == 1 ]; then
 		git clone https://github.com/GZake/toolkali.git "$INSTALL_DIR";
 		echo "#!/bin/bash
 		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
-		sudo chmod +x hackingtool;
+		sudo chmod 777 hackingtool;
 		sudo cp hackingtool /usr/bin/;
 		rm hackingtool;
 		echo ""; 
 		echo "[✔] Trying to installing Requirements ..."
 		sudo pip3 install lolcat
-		sudo apt-get install -y figlet
+		sudo apt-get install -f -y figlet
 		sudo pip3 install boxes
-		sudo apt-get install boxes
+		sudo apt-get install -f -y boxes
 		sudo pip3 install flask
 		sudo pip3 install requests
 	else 
