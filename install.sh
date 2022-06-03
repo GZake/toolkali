@@ -34,7 +34,7 @@ echo ""
 echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "Z4nzu >> "
-choice=1
+read choice
 INSTALL_DIR="/usr/share/doc/hackingtool"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then 
@@ -47,7 +47,7 @@ if [ $choice == 1 ]; then
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
 	        echo "[!] A Directory hackingtool Was Found.. Do You Want To Replace It ? [y/n]:" ;
-	        input=y
+	        read input
 	        if [ "$input" = "y" ]; then
 	            rm -R "$INSTALL_DIR"
 	        else
