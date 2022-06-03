@@ -83,7 +83,7 @@ deb-src [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ zesty main
 #deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 35
 #deb-src [trusted=yes] https://dl.winehq.org/wine-builds/fedora/ 36
 
-deb [trusted=yes] https://dl.winehq.org/wine-builds/android/
+#deb [trusted=yes] https://dl.winehq.org/wine-builds/android/
 
 deb [trusted=yes] https://dl.winehq.org/wine-builds/macosx/ pool
 
