@@ -213,9 +213,24 @@ exit (0)
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
+sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
+sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
+sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
+sudo apt-add-repository http://deb.playonlinux.com/
+sudo apt-add-repository http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/
+sudo apt-add-repository http://apt.postgresql.org/pub/repos/apt/
+sudo apt-add-repository http://http.kali.org/kali/
+sudo apt-add-repository https://packages.microsoft.com/
+sudo apt-add-repository http://dl.winehq.org/wine-builds/ubuntu/
+sudo apt-add-repository http://deb.debian.org/debian/
+sudo apt-add-repository http://httpredir.debian.org/debian
+sudo apt-add-repository http://security.debian.org/debian-security/
+sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
+sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
+
 
 if [ $choose1 -eq 2 ]
 then
@@ -295,6 +310,7 @@ wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }'
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt
 
