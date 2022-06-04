@@ -1,15 +1,4 @@
 
-deb [arch=amd64] https://packages.microsoft.com/debian/8/prod/ jessie main
-deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/debian/8/prod/ insiders-fast main
-deb [arch=amd64] https://packages.microsoft.com/debian/9/prod/ stretch main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/debian/9/prod/ insiders-slow main
-deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/debian/9/prod/ insiders-fast main
-deb [arch=amd64] https://packages.microsoft.com/debian/10/prod/ buster main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/debian/10/prod/ insiders-slow main
-deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/debian/10/prod/ insiders-fast main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/debian/11/prod/ bullseye main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/debian/11/prod/ insiders-slow main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/debian/11/prod/ insiders-fast main
 
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ wheezy main
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bookworm main
