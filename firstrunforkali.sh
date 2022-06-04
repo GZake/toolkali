@@ -180,21 +180,26 @@ echo 100 >> /proc/sys/vm/swappiness
 
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
-sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt 
-sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt  
-sudo apt-get update -y | tee -a  $HOME/Desktop/log.txt
-sudo apt-get upgrade -y | tee -a  $HOME/Desktop/log.txt
-sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/log.txt
-#sudo apt-get autoremove -y | tee -a  $HOME/Desktop/log.txt
-sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/log.txt
-sudo timedatectl set-ntp on | tee -a  $HOME/Desktop/log.txt
+
+sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt  
+sudo apt-get update -y | tee -a  /root/Desktop/log.txt
+sudo apt-get upgrade -y | tee -a  /root/Desktop/log.txt
+sudo apt-get full-upgrade -y | tee -a  /root/Desktop/log.txt
+sudo apt-get dist-upgrade -y | tee -a  /root/Desktop/log.txt
+sudo timedatectl set-ntp on | tee -a  /root/Desktop/log.txt
+sudo apt-get autoremove -y | tee -a  /root/Desktop/log.txt
+sudo apt-get autoclean -y | tee -a  /root/Desktop/log.txt
+sudo apt-get clean -y | tee -a  /root/Desktop/log.txt
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+
+
 " | tee $HOME/update.sh
 sudo chmod 777 -R -v update.sh 
 
@@ -215,8 +220,8 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
-find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
 sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
 sudo apt-add-repository http://deb.playonlinux.com/
@@ -231,6 +236,7 @@ sudo apt-add-repository http://security.debian.org/debian-security/
 sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
 
+find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 
 if [ $choose1 -eq 2 ]
 then
@@ -311,6 +317,10 @@ wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
+curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
+curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }'
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt
 
