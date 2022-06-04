@@ -469,6 +469,9 @@ sudo apt-get install -f -y gnupg2 curl*
 sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
+sudo apt-get install -f -y libc++
+wget https://discord.com/api/download?platform=linux&format=deb
+sudo dpkg -i download?platform=linux&format=deb
 find-dbgsym-packages [core_path|running_pid|binary_path]
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
