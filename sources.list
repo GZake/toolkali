@@ -4,7 +4,6 @@ deb https://packages.microsoft.com/ kali-rolling main
 deb-src https://packages.microsoft.com/ kali-rolling main
 deb http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
-deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/ubuntu/20.04/prod focal main
 
 
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ wheezy main
