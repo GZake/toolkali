@@ -1,8 +1,6 @@
 cd /var/cache/apt/archives/
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
-sudo apt-get install -f -y kali-desktop-i3
-sudo apt-get install -f -y kali-desktop-i3-gaps
 sudo apt-get install -f -y kali-desktop-e17
 sudo apt-get install -f -y kali-desktop-gnome
 sudo apt-get install -f -y kali-desktop-lxde
@@ -11,7 +9,7 @@ sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a
-sudo apt-get install -f -y i3wm
+
 
 sudo apt-get install -f -y kali-linux-default
 sudo apt-get install -f -y kali-linux-arm
@@ -74,22 +72,18 @@ sudo apt-get install -f -y ldm
 sudo apt-get install -f -y kdm
 sudo apt-get install -f -y greetd
 sudo apt-get install -f -y dm
-sudo apt-get install -f -y i3wm
 curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf
 wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf
-sudo dpkg -P i3lock
 sudo dpkg -P i3lock*
+sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a
-sudo apt-get install -f -y i3wm
 
 
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
 sudo apt-get install -f -y kali-desktop-mate*
-sudo apt-get install -f -y kali-desktop-i3*
-sudo apt-get install -f -y kali-desktop-i3-gaps*
 sudo apt-get install -f -y kali-desktop-e17*
 sudo apt-get install -f -y kali-desktop-gnome*
 sudo apt-get install -f -y kali-desktop-lxde*
@@ -155,7 +149,6 @@ sudo apt-get install -f -y ldm*
 sudo apt-get install -f -y kdm*
 sudo apt-get install -f -y greetd*
 sudo apt-get install -f -y dm*
-sudo apt-get install -f -y i3wm*
 
 sudo apt-get install -f -y *gdm*
 sudo apt-get install -f -y *cinnamon*
@@ -185,8 +178,9 @@ sudo apt-get install -f -y *ldm*
 sudo apt-get install -f -y *kdm*
 sudo apt-get install -f -y *greetd*
 sudo apt-get install -f -y *dm*
-sudo apt-get install -f -y *i3wm*
 
+sudo dpkg -P i3lock*
+sudo dpkg -P i3lock
 
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
@@ -222,7 +216,6 @@ sudo apt-get download -y ldm*
 sudo apt-get download -y kdm*
 sudo apt-get download -y greetd*
 sudo apt-get download -y dm*
-sudo apt-get download -y i3wm*
 
 
 
@@ -256,7 +249,6 @@ sudo apt-get download -y *ldm*
 sudo apt-get download -y *kdm*
 sudo apt-get download -y *greetd*
 sudo apt-get download -y *dm*
-sudo apt-get download -y *i3wm*
 
 
 sudo apt-get install -f -y *gdm*
@@ -287,7 +279,6 @@ sudo apt-get install -f -y *ldm*
 sudo apt-get install -f -y *kdm*
 sudo apt-get install -f -y *greetd*
 sudo apt-get install -f -y *dm*
-sudo apt-get install -f -y *i3wm*
 
 sudo apt-get install -f -y gdm*
 sudo apt-get install -f -y cinnamon*
@@ -317,14 +308,11 @@ sudo apt-get install -f -y ldm*
 sudo apt-get install -f -y kdm*
 sudo apt-get install -f -y greetd*
 sudo apt-get install -f -y dm*
-sudo apt-get install -f -y i3wm*
 
 sudo apt-get download -y kali*
 sudo apt-get download -y kali-desktop*
 sudo apt-get download -y kali-desktop-kde*
 sudo apt-get download -y kali-desktop-mate*
-sudo apt-get download -y kali-desktop-i3*
-sudo apt-get download -y kali-desktop-i3-gaps*
 sudo apt-get download -y kali-desktop-e17*
 sudo apt-get download -y kali-desktop-gnome*
 sudo apt-get download -y kali-desktop-lxde*
@@ -366,8 +354,6 @@ sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
 sudo apt-get install -f -y kali-desktop-mate*
-sudo apt-get install -f -y kali-desktop-i3*
-sudo apt-get install -f -y kali-desktop-i3-gaps*
 sudo apt-get install -f -y kali-desktop-e17*
 sudo apt-get install -f -y kali-desktop-gnome*
 sudo apt-get install -f -y kali-desktop-lxde*
@@ -514,4 +500,25 @@ sudo apt-get download -y anydesk*
 sudo apt-get download -y libc++
 sudo apt-get download -y kali-desktop-xfce xorg xrdp
 sudo apt-get download -y kali-desktop-xfce * 
+
+sudo apt-get install -f -y i3wm*
+sudo apt-get install -f -y *i3wm*
+sudo apt-get download -y i3wm*
+sudo apt-get download -y *i3wm*
+sudo apt-get install -f -y *i3wm*
+sudo apt-get install -f -y kali-desktop-i3
+sudo apt-get install -f -y kali-desktop-i3-gaps
+sudo apt-get install -f -y i3wm*
+sudo apt-get download -y kali-desktop-i3*
+sudo apt-get download -y kali-desktop-i3-gaps*
+sudo apt-get install -f -y kali-desktop-i3*
+sudo apt-get install -f -y kali-desktop-i3-gaps*
+sudo apt-get install -f -y i3wm
+sudo apt-get install -f -y i3wm
+sudo apt-get install -f -y i3wm
+sudo apt-get install -f -y kali-desktop-i3*
+sudo apt-get install -f -y kali-desktop-i3-gaps*
+
+
+
 cd $HOME/toolkali/ 
