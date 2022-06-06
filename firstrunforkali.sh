@@ -1,3 +1,7 @@
+
+#####
+#measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
+#####
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
@@ -544,9 +548,6 @@ sudo bash install.sh
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
-#####
-#measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
-#####
 
 if [ $choose1 -eq 6 ]
 then
