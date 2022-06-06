@@ -587,7 +587,7 @@ fi
 ###################################################
 ###sudo dpkg -P [packet]
 gui:
-cd /var/cache/apt/archives/
+
 sudo bash gui.sh
 
 alias journalctl="sudo journalctl"
