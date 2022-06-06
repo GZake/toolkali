@@ -316,7 +316,7 @@ wget -O- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | su
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
 wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
-
+wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
