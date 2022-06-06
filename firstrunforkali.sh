@@ -326,8 +326,12 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/
 curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }'
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }'
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }'
+sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv
 
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
