@@ -373,7 +373,6 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EB3E94ADBE1229CF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7FCC7D46ACCC4CF8
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C2518248EEA14886
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
@@ -399,7 +398,6 @@ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117
 sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
-sudo apt-key adv --keyserver hkp://keys.gnupg.net:80 --recv-keys EB3E94ADBE1229CF
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5A9A06AEF9CB8DB0
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9CB8DB0
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8
