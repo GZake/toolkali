@@ -180,6 +180,10 @@ sudo apt-get install -f -y *dm*
 sudo apt-get install -f -y *i3wm*
 
 
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+
 
 cd /var/cache/apt/archives/ ###########################################################
 sudo apt-get download -y gdm*
@@ -392,3 +396,113 @@ sudo apt-get install -f -y kali-linux-everything*
 sudo apt-get install -f -y kali-desktop-live*
 sudo apt-get install -f -y kali-desktop-xfce*
 sudo apt-get install -f -y nvidia*
+
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+
+sudo apt-get download -y ibus-unikey*
+sudo apt-get download -y ibus-unikey
+sudo apt-get download -y snap
+sudo apt-get download -y snap*
+sudo apt-get download -y *snap*
+sudo apt-get download -y snapd
+sudo apt-get download -y snapd*
+apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
+sudo apt-get download -y synaptic*
+sudo systemctl enable snapd.socket snapd apparmor
+sudo systemctl start snapd.socket snapd apparmor
+sudo apt-get download -y gnome-software
+sudo apt-get download -y gnome-software*
+sudo apt-get download -y software-center
+sudo apt-get download -y software-center*
+sudo apt-get download -y *spotify*
+sudo apt-get download -y spotify-client
+sudo apt-get download -y *brave-browser*
+sudo apt-get download -y brave-browser-nightly
+sudo apt-get download -y *grub-efi*
+sudo apt-get download -y grub-efi*
+sudo apt-get download -y grub-efi
+sudo apt-get download -y packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get download -y flameshot*
+sudo apt-get download -y dnf*
+sudo apt-get download -y kali-root-login*
+sudo apt-get download -y flameshot 
+sudo apt-get download -y dnf
+sudo apt-get download -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get download -y kmix
+sudo apt-get download -y kmix*
+sudo apt-get download -y pulseaudio
+sudo apt-get download -y pulseaudio*
+sudo apt-get download -y gnome-core
+sudo apt-get download -y gnome-core*
+sudo apt-get download -y gnome-tweak
+sudo apt-get download -y gnome-tweak*
+sudo apt-get download -y gnome-tweak-tool
+sudo apt-get download -y gnome-tweak-tool*
+sudo apt-get download -y xserver-xorg-core-dbg
+sudo apt-get download -y xserver-xorg*
+sudo apt-get download -y debian-goodies
+sudo apt-get download -y debian-goodies*
+sudo apt-get download -y gnupg2 curl
+sudo apt-get download -y gnupg2 curl*
+sudo apt-get download -y gnupg*
+sudo apt-get download -y anydesk
+sudo apt-get download -y anydesk*
+sudo apt-get download -y libc++
+find-dbgsym-packages [core_path|running_pid|binary_path]
+sudo apt-get download -y ibus-unikey*
+sudo apt-get download -y ibus-unikey
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt-get download -y snap
+sudo apt-get download -y snap*
+sudo apt-get download -y *snap*
+sudo apt-get download -y snapd
+sudo apt-get download -y snapd*
+sudo apt-get download -y synaptic*
+sudo snap install snap-store
+sudo apt-get download -y gnome-software
+sudo apt-get download -y gnome-software*
+sudo apt-get download -y software-center
+sudo apt-get download -y software-center*
+sudo apt-get download -y *spotify*
+sudo apt-get download -y spotify-client
+sudo apt-get download -y *brave-browser*
+sudo apt-get download -y brave-browser-nightly
+sudo apt-get download -y *grub-efi*
+sudo apt-get download -y grub-efi*
+sudo apt-get download -y grub-efi
+sudo apt-get download -y packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get download -y flameshot*
+sudo apt-get download -y dnf*
+sudo apt-get download -y kali-root-login*
+sudo apt-get download -y flameshot 
+sudo apt-get download -y dnf
+sudo apt-get download -y dbus-x11
+sudo apt-get download -y dbus-*
+sudo apt-get download -y *dbus*
+sudo apt-get download -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get download -y kmix
+sudo apt-get download -y kmix*
+sudo apt-get download -y pulseaudio
+sudo apt-get download -y pulseaudio*
+sudo apt-get download -y gnome-core
+sudo apt-get download -y gnome-core*
+sudo apt-get download -y gnome-tweak
+sudo apt-get download -y gnome-tweak*
+sudo apt-get download -y gnome-tweak-tool
+sudo apt-get download -y gnome-tweak-tool*
+sudo apt-get download -y xserver-xorg-core-dbg
+sudo apt-get download -y xserver-xorg*
+sudo apt-get download -y debian-goodies
+sudo apt-get download -y debian-goodies*
+sudo apt-get download -y gnupg2 curl
+sudo apt-get download -y gnupg2 curl*
+sudo apt-get download -y gnupg*
+sudo apt-get download -y anydesk
+sudo apt-get download -y anydesk*
+sudo apt-get download -y libc++
+sudo apt-get download -y kali-desktop-xfce xorg xrdp
+sudo apt-get download -y kali-desktop-xfce * 
