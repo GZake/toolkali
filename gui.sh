@@ -1,3 +1,4 @@
+cd /var/cache/apt/archives/
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-i3
@@ -506,3 +507,4 @@ sudo apt-get download -y anydesk*
 sudo apt-get download -y libc++
 sudo apt-get download -y kali-desktop-xfce xorg xrdp
 sudo apt-get download -y kali-desktop-xfce * 
+cd $HOME/toolkali/ 
