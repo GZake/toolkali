@@ -239,6 +239,7 @@ sudo apt-add-repository http://httpredir.debian.org/debian
 sudo apt-add-repository http://security.debian.org/debian-security/
 sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
+sudo apt-add-repository http://kali.download/kali/
 
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
