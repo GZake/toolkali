@@ -25,7 +25,7 @@ echo "  ███    ███     ███    ███ ███    ███
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
 echo "                                         ▀                                                                            ▀         ";                         
 
-echo -e "${BLUE}                                    https://github.com/GZake/toolkali.git ${NC}"
+echo -e "${BLUE}                                    https://github.com/Z4nzu/hackingtool.git ${NC}"
 
 echo -e "${RED}                                   [!] This Tool Must Run As ROOT [!]${NC}"
 echo ""
@@ -56,7 +56,7 @@ if [ $choice == 1 ]; then
 	    fi
     		echo "[✔] Installing ...";
 		echo "";
-		git clone https://github.com/GZake/toolkali.git "$INSTALL_DIR";
+		git clone https://github.com/Z4nzu/hackingtool.git "$INSTALL_DIR";
 		echo "#!/bin/bash
 		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
 		sudo chmod 777 hackingtool;
