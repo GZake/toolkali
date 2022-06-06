@@ -541,6 +541,7 @@ sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
+sudo apt-get install -f -y kali-desktop-xfce xorg xrdp
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 find-dbgsym-packages [core_path|running_pid|binary_path]
