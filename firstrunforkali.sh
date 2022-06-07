@@ -19,7 +19,6 @@ dpkg --add-architecture amzn2.5
 dpkg --add-architecture aarch64
 dpkg --add-architecture i586
 dpkg --add-architecture noarch
-dpkg --add-architecture x86_64
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
