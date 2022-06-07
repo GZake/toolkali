@@ -1,16 +1,13 @@
-cd /var/cache/apt/archives/
+sudo cd /var/cache/apt/archives/
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-e17
 sudo apt-get install -f -y kali-desktop-gnome
 sudo apt-get install -f -y kali-desktop-lxde
-
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a
-
-
 sudo apt-get install -f -y kali-linux-default
 sudo apt-get install -f -y kali-linux-arm
 sudo apt-get install -f -y kali-linux-headless
@@ -43,7 +40,6 @@ sudo apt-get install -f -y kali-tools-reporting
 sudo apt-get install -f -y kali-desktop-live
 sudo apt-get install -f -y kali-desktop-xfce
 sudo apt-get install -f -y nvidia*
-
 sudo apt-get install -f -y gdm
 sudo apt-get install -f -y cinnamon
 sudo apt-get install -f -y slim
@@ -74,12 +70,10 @@ sudo apt-get install -f -y greetd
 sudo apt-get install -f -y dm
 curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf
 wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf
-sudo dpkg -P i3lock*
+sudo dpkg  -P i3lock
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a
-
-
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
@@ -87,7 +81,6 @@ sudo apt-get install -f -y kali-desktop-mate*
 sudo apt-get install -f -y kali-desktop-e17*
 sudo apt-get install -f -y kali-desktop-gnome*
 sudo apt-get install -f -y kali-desktop-lxde*
-
 sudo apt-get install -f -y kali-linux-default*
 sudo apt-get install -f -y kali-linux-arm*
 sudo apt-get install -f -y kali-linux-headless*
@@ -120,7 +113,6 @@ sudo apt-get install -f -y kali-linux-everything*
 sudo apt-get install -f -y kali-desktop-live*
 sudo apt-get install -f -y kali-desktop-xfce*
 sudo apt-get install -f -y nvidia*
-
 sudo apt-get install -f -y gdm*
 sudo apt-get install -f -y cinnamon*
 sudo apt-get install -f -y slim*
@@ -149,7 +141,6 @@ sudo apt-get install -f -y ldm*
 sudo apt-get install -f -y kdm*
 sudo apt-get install -f -y greetd*
 sudo apt-get install -f -y dm*
-
 sudo apt-get install -f -y *gdm*
 sudo apt-get install -f -y *cinnamon*
 sudo apt-get install -f -y *slim*
@@ -178,15 +169,11 @@ sudo apt-get install -f -y *ldm*
 sudo apt-get install -f -y *kdm*
 sudo apt-get install -f -y *greetd*
 sudo apt-get install -f -y *dm*
-
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
-
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-
-
 cd /var/cache/apt/archives/ ###########################################################
 sudo apt-get download -y gdm*
 sudo apt-get download -y cinnamon*
@@ -216,11 +203,7 @@ sudo apt-get download -y ldm*
 sudo apt-get download -y kdm*
 sudo apt-get download -y greetd*
 sudo apt-get download -y dm*
-
-
-
 #sudo mkdir /root/Downloads/update/
-
 sudo apt-get download -y *gdm*
 sudo apt-get download -y *cinnamon*
 sudo apt-get download -y *slim*
@@ -249,8 +232,6 @@ sudo apt-get download -y *ldm*
 sudo apt-get download -y *kdm*
 sudo apt-get download -y *greetd*
 sudo apt-get download -y *dm*
-
-
 sudo apt-get install -f -y *gdm*
 sudo apt-get install -f -y *cinnamon*
 sudo apt-get install -f -y *slim*
@@ -279,7 +260,6 @@ sudo apt-get install -f -y *ldm*
 sudo apt-get install -f -y *kdm*
 sudo apt-get install -f -y *greetd*
 sudo apt-get install -f -y *dm*
-
 sudo apt-get install -f -y gdm*
 sudo apt-get install -f -y cinnamon*
 sudo apt-get install -f -y slim*
@@ -308,7 +288,6 @@ sudo apt-get install -f -y ldm*
 sudo apt-get install -f -y kdm*
 sudo apt-get install -f -y greetd*
 sudo apt-get install -f -y dm*
-
 sudo apt-get download -y kali*
 sudo apt-get download -y kali-desktop*
 sudo apt-get download -y kali-desktop-kde*
@@ -316,7 +295,6 @@ sudo apt-get download -y kali-desktop-mate*
 sudo apt-get download -y kali-desktop-e17*
 sudo apt-get download -y kali-desktop-gnome*
 sudo apt-get download -y kali-desktop-lxde*
-
 sudo apt-get download -y kali-linux-default*
 sudo apt-get download -y kali-linux-arm*
 sudo apt-get download -y kali-linux-headless*
@@ -349,7 +327,6 @@ sudo apt-get download -y kali-linux-everything*
 sudo apt-get download -y kali-desktop-live*
 sudo apt-get download -y kali-desktop-xfce*
 sudo apt-get download -y nvidia*
-
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
@@ -357,7 +334,6 @@ sudo apt-get install -f -y kali-desktop-mate*
 sudo apt-get install -f -y kali-desktop-e17*
 sudo apt-get install -f -y kali-desktop-gnome*
 sudo apt-get install -f -y kali-desktop-lxde*
-
 sudo apt-get install -f -y kali-linux-default*
 sudo apt-get install -f -y kali-linux-arm*
 sudo apt-get install -f -y kali-linux-headless*
@@ -390,11 +366,9 @@ sudo apt-get install -f -y kali-linux-everything*
 sudo apt-get install -f -y kali-desktop-live*
 sudo apt-get install -f -y kali-desktop-xfce*
 sudo apt-get install -f -y nvidia*
-
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-
 sudo apt-get download -y ibus-unikey*
 sudo apt-get download -y ibus-unikey
 sudo apt-get download -y snap
