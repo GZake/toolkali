@@ -9,6 +9,11 @@ sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt  
+dpkg --add-architecture armhf
+dpkg --add-architecture armel
+dpkg --add-architecture i386
+dpkg --add-architecture amd64
+dpkg --add-architecture *
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
