@@ -2,6 +2,13 @@
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
+
+sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt  
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
