@@ -1,4 +1,8 @@
 cd /var/cache/apt/archives/
+sudo apt-get install -f -y wine32
+sudo apt-get install -f -y wine64
+sudo apt-get install -f -y wine*
+sudo apt-get install -f -y *wine*
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-e17
@@ -175,6 +179,10 @@ sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 cd /var/cache/apt/archives/ ###########################################################
+sudo apt-get download -y wine32
+sudo apt-get download -y wine64
+sudo apt-get download -y wine*
+sudo apt-get download -y *wine*
 sudo apt-get download -y gdm*
 sudo apt-get download -y cinnamon*
 sudo apt-get download -y slim*
