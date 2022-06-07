@@ -6,18 +6,19 @@
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
-dpkg --add-architecture armhf
-dpkg --add-architecture armel
-dpkg --add-architecture i386
-dpkg --add-architecture amd64
-dpkg --add-architecture arm64
-dpkg --add-architecture ppc64el
-dpkg --add-architecture amzn2
-dpkg --add-architecture aarch64
-dpkg --add-architecture i586
-dpkg --add-architecture noarch
-dpkg --add-architecture DEP-11
-dpkg --add-architecture all
+sudo dpkg --add-architecture armhf
+sudo dpkg --add-architecture armel
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture ppc64el
+sudo dpkg --add-architecture amzn2
+sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture noarch
+sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture more
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
