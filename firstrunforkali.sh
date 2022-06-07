@@ -15,6 +15,39 @@ sudo dpkg --add-architecture noarch
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture all
 sudo dpkg --add-architecture more
+sudo dpkg --add-architecture avr32
+sudo dpkg --add-architecture alpha
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture hppa
+sudo dpkg --add-architecture armeb
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture m32r
+sudo dpkg --add-architecture m68k
+sudo dpkg --add-architecture mips
+sudo dpkg --add-architecture mips64
+sudo dpkg --add-architecture mips64el
+sudo dpkg --add-architecture mips64r6
+sudo dpkg --add-architecture mips64r6el
+sudo dpkg --add-architecture mipsel
+sudo dpkg --add-architecture mipsr6
+sudo dpkg --add-architecture mipsr6el
+sudo dpkg --add-architecture nios2
+sudo dpkg --add-architecture or1k 
+sudo dpkg --add-architecture powerpc 
+sudo dpkg --add-architecture powerpcel
+sudo dpkg --add-architecture ppc64
+sudo dpkg --add-architecture riscv64
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture sh3
+sudo dpkg --add-architecture sh3eb 
+sudo dpkg --add-architecture sh4
+sudo dpkg --add-architecture sh4eb
+sudo dpkg --add-architecture sparc
+sudo dpkg --add-architecture sparc64
+sudo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture arm
+
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
