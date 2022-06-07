@@ -206,6 +206,7 @@ sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 
 " | tee $HOME/update.sh
 sudo chmod 777 -R -v update.sh 
+cp $HOME/update.sh $HOME/toolkali/update.sh
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
