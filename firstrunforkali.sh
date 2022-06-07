@@ -13,6 +13,7 @@ dpkg --add-architecture armhf
 dpkg --add-architecture armel
 dpkg --add-architecture i386
 dpkg --add-architecture amd64
+dpkg --add-architecture arm64
 dpkg --add-architecture ppc64el
 dpkg --add-architecture amzn2
 dpkg --add-architecture aarch64
