@@ -47,7 +47,7 @@ sudo dpkg --add-architecture sparc
 sudo dpkg --add-architecture sparc64
 sudo dpkg --add-architecture tilegx
 sudo dpkg --add-architecture arm
-
+clear
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
@@ -58,6 +58,7 @@ sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
 cd ..
 sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 cd $HOME/toolkali/
+
 #!/bin/bash
 # include this boilerplate
 function goto
