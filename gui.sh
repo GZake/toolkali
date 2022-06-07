@@ -1,4 +1,4 @@
-sudo cd /var/cache/apt/archives/
+cd /var/cache/apt/archives/
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-e17
