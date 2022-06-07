@@ -15,7 +15,6 @@ dpkg --add-architecture i386
 dpkg --add-architecture amd64
 dpkg --add-architecture ppc64el
 dpkg --add-architecture amzn2
-dpkg --add-architecture amzn2.5
 dpkg --add-architecture aarch64
 dpkg --add-architecture i586
 dpkg --add-architecture noarch
