@@ -482,6 +482,13 @@ sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
+dpkg --add-architecture i386
+dpkg --add-architecture amd64
+apt-get update
+sudo apt-get install -f -y wine32
+sudo apt-get install -f -y wine64
+sudo apt-get install -f -y wine*
+sudo apt-get install -f -y *wine*
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 find-dbgsym-packages [core_path|running_pid|binary_path]
