@@ -537,6 +537,7 @@ sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
 sudo apt-get install -f -y nvidia-kernel-dkms
 sudo apt-get install -f -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
+sudo apt-get install -f -y nvidia-driver nvidia-xconfig
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
@@ -673,11 +674,13 @@ sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
 sudo cp -f /etc/fstab /etc/fstab.bak
 sudo cp -f /etc/crontab /etc/crontab.bak
 sudo cp -f /etc/rc.local /etc/rc.local.bak
+sudo cp -f /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/modprobe.d/nvidia-blacklists-nouveau.conf ::: $HOME /media/kali/*/ /media/*/*/
 if [ $choose1 -eq 3 ]
 then
 	goto uptab
