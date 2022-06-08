@@ -168,6 +168,7 @@ passwd <<< $(printf "Admin@123\nAdmin@123\n")
 goto choose
 
 uptool:
+cd
 sudo rm -fR $HOME/toolkali 
 sudo rm -fR /media/root/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
@@ -176,6 +177,7 @@ git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/root/01D85B1D2CBD6AE0/toolkali/
+cd $HOME/toolkali/
 goto choose
 
 
