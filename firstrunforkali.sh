@@ -537,7 +537,9 @@ sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
 sudo apt-get install -f -y nvidia-kernel-dkms
 sudo apt-get install -f -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
-apt-get update
+sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
 sudo apt-get install -f -y wine32
 sudo apt-get install -f -y wine64
 sudo apt-get install -f -y wine*
