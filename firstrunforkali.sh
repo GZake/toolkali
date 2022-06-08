@@ -98,7 +98,8 @@ echo "
 3 for update
 4 for turn on root account
 5 for restart
-6 for 
+6 for shutdown 
+7 for update tool
 0 for exit
 "
 read -p "Your choose: " choose 
@@ -120,6 +121,9 @@ then
 elif [ $choose -eq 6 ]
 then
 	poweroff
+elif [ $choose -eq 7 ]
+then
+	uptool	
 elif [ $choose -eq 0 ]
 then
 	exit
@@ -161,6 +165,17 @@ reboot
 root:
 sudo apt-get install -f -y kali-root-login
 passwd <<< $(printf "Admin@123\nAdmin@123\n")
+goto choose
+
+uptool:
+sudo rm -fR $HOME/toolkali 
+sudo rm -fR /media/root/*/toolkali
+sudo rm -fR /media/*/*/toolkali 
+sudo rm -fR /media/root/01D85B1D2CBD6AE0/toolkali/
+git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
+git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
+git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
+git clone https://github.com/GZake/toolkali.git /media/root/01D85B1D2CBD6AE0/toolkali/
 goto choose
 
 
