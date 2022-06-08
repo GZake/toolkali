@@ -47,6 +47,7 @@ sudo dpkg --add-architecture sparc
 sudo dpkg --add-architecture sparc64
 sudo dpkg --add-architecture tilegx
 sudo dpkg --add-architecture arm
+sudo dpkg --add-architecture $(uname -r)
 clear
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
