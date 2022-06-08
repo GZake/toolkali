@@ -534,9 +534,8 @@ sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
+sudo apt-get install -f -y nvidia-kernel-dkms
 sudo apt-get install -f -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
-dpkg --add-architecture i386
-dpkg --add-architecture amd64
 apt-get update
 sudo apt-get install -f -y wine32
 sudo apt-get install -f -y wine64
