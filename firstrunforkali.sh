@@ -54,6 +54,7 @@ sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
+sudo apt-get install -f -y linux-headers-$(uname -r)
 
 cd ..
 sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
@@ -533,6 +534,7 @@ sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
+sudo apt-get install -f -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 dpkg --add-architecture i386
 dpkg --add-architecture amd64
 apt-get update
