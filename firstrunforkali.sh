@@ -2,6 +2,7 @@
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
+clear
 sudo dpkg --add-architecture armhf
 sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture i386
@@ -123,7 +124,7 @@ then
 	poweroff
 elif [ $choose -eq 7 ]
 then
-	uptool	
+	goto uptool	
 elif [ $choose -eq 0 ]
 then
 	exit
