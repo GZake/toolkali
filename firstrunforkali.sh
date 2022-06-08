@@ -97,6 +97,8 @@ echo "
 2 for None
 3 for update
 4 for turn on root account
+5 for restart
+6 for 
 0 for exit
 "
 read -p "Your choose: " choose 
@@ -112,6 +114,12 @@ then
 elif [ $choose -eq 4 ]
 then
 	goto root
+elif [ $choose -eq 5 ]
+then
+	reboot
+elif [ $choose -eq 6 ]
+then
+	poweroff
 elif [ $choose -eq 0 ]
 then
 	exit
