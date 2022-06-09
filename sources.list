@@ -13,16 +13,16 @@ deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artf
 deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artful main
 deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu bionic main
 deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu bionic main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic  main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic  main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel  main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel  main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco  main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco  main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan  main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan  main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal  main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal  main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal main
 deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu groovy main
 deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu groovy main
 deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu hirsute main
@@ -393,8 +393,6 @@ deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restri
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
 #Addedby software-center
 deb-src [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
-deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu/ precise main
-deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu/ precise main
 deb [trusted=yes] http://deb.playonlinux.com/ quantal main
 #Addedby software-center; credentials stored in /etc/apt/auth.conf
 deb [trusted=yes] https://private-ppa.launchpad.net/commercial-ppa-uploaders/intellij-idea-ce/ubuntu/ precise main
@@ -569,3 +567,5 @@ deb [trusted=yes] http://httpredir.debian.org/* * *
 deb-src [trusted=yes] http://httpredir.debian.org/* * *
 deb [trusted=yes] http://security.debian.org/* * *
 deb-src [trusted=yes] http://security.debian.org/* * *
+
+
