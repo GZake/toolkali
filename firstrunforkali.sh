@@ -577,6 +577,9 @@ sudo apt-get install -f -y wine*
 sudo apt-get install -f -y *wine*
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
+wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
+sudo apt install ./viber.sh
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 find-dbgsym-packages [core_path|running_pid|binary_path]
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
@@ -639,8 +642,6 @@ sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
 sudo apt-get install -f -y kali-desktop-xfce xorg xrdp
-wget "https://discord.com/api/download?platform=linux&format=deb"
-sudo dpkg -i "download?platform=linux&format=deb"
 find-dbgsym-packages [core_path|running_pid|binary_path]
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
