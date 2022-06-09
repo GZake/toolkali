@@ -15,7 +15,6 @@ sudo dpkg --add-architecture i586
 sudo dpkg --add-architecture noarch
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture all
-sudo dpkg --add-architecture more
 sudo dpkg --add-architecture avr32
 sudo dpkg --add-architecture alpha
 sudo dpkg --add-architecture arc
