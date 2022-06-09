@@ -692,7 +692,7 @@ then
 	goto uptab
 fi
 
-reboot
+exit
 
 bak:
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
