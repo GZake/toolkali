@@ -178,6 +178,8 @@ git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/root/01D85B1D2CBD6AE0/toolkali/
 cd $HOME/toolkali/
+exit
+sudo bash firstrunforkali.sh
 goto choose
 
 
