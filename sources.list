@@ -1,5 +1,4 @@
 
-
 deb [trusted=yes] https://packages.microsoft.com/ kali-rolling main
 deb-src [trusted=yes] https://packages.microsoft.com/ kali-rolling main
 deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
