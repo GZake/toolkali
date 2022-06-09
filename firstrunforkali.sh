@@ -71,7 +71,7 @@ function goto
     eval "$cmd"
     exit
 }
-sudo swapon /dev/nvme*
+sudo swapon /dev/nvm*
 sudo swapon /dev/sd*
 #sudo swapon /dev/nvme0n1p5
 #sudo swapon /dev/sda4
@@ -295,6 +295,10 @@ echo "
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
+sudo swapon /dev/nvm*
+sudo swapon /dev/sd*
+sudo sysctl vm.swappiness=100
+sudo sysctl -p
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
