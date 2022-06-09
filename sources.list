@@ -21,6 +21,7 @@ deb [trusted=yes] http://ddebs.ubuntu.com impish-updates main restricted univers
 deb [trusted=yes] http://ddebs.ubuntu.com jammy-updates main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com xenial-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic-updates main restricted universe multiverse
 
 deb [trusted=yes] http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com focal-proposed main restricted universe multiverse
@@ -29,6 +30,7 @@ deb [trusted=yes] http://ddebs.ubuntu.com impish-proposed main restricted univer
 deb [trusted=yes] http://ddebs.ubuntu.com jammy-proposed main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com trusty-proposed main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com xenial-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic-proposed main restricted universe multiverse
 
 deb [trusted=yes] http://ddebs.ubuntu.com bionic main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com focal main restricted universe multiverse
@@ -37,6 +39,7 @@ deb [trusted=yes] http://ddebs.ubuntu.com impish main restricted universe multiv
 deb [trusted=yes] http://ddebs.ubuntu.com jammy main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com trusty main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com xenial main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic main restricted universe multiverse
 
 deb [trusted=yes] http://ddebs.ubuntu.com trusty-security main restricted universe multiverse
 
