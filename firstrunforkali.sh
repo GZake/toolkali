@@ -502,7 +502,6 @@ dpkg --configure -a | tee -a $HOME/Desktop/log.txt
 apt-get update -y | tee -a $HOME/Desktop/log.txt
 apt-get upgrade -y | tee -a $HOME/Desktop/log.txt
 apt-get dist-upgrade -y | tee -a $HOME/Desktop/log.txt
-update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
 
 #sudo apt-get remove debian-edu-config -y
@@ -700,7 +699,7 @@ if [ $choose1 -eq 5 ]
 then
 	goto uptab
 fi
-
+update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 logout
 
 bak:
