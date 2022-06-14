@@ -446,9 +446,8 @@ wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
 curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
@@ -590,6 +589,7 @@ sudo apt-get install -f -y wine32
 sudo apt-get install -f -y wine64
 sudo apt-get install -f -y wine*
 sudo apt-get install -f -y *wine*
+sudo apt-get install -f -y lib32z1 lib32ncurses5
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
