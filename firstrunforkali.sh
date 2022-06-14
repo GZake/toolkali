@@ -20,7 +20,7 @@ sudo dpkg --add-architecture all
 #sudo dpkg --add-architecture arc
 #sudo dpkg --add-architecture hppa
 #sudo dpkg --add-architecture armeb
-#sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture ia64
 #sudo dpkg --add-architecture m32r
 #sudo dpkg --add-architecture m68k
 #sudo dpkg --add-architecture mips
@@ -37,8 +37,8 @@ sudo dpkg --add-architecture all
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
-#sudo dpkg --add-architecture s390
-#sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture sh3
 #sudo dpkg --add-architecture sh3eb 
 #sudo dpkg --add-architecture sh4
