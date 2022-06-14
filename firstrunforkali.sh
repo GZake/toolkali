@@ -10,11 +10,11 @@ sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
 #sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture amzn2
-sudo dpkg --add-architecture aarch64
+#sudo dpkg --add-architecture aarch64
 sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture noarch
 sudo dpkg --add-architecture DEP-11
-sudo dpkg --add-architecture all
+#sudo dpkg --add-architecture all
 #sudo dpkg --add-architecture avr32
 #sudo dpkg --add-architecture alpha
 #sudo dpkg --add-architecture arc
@@ -37,8 +37,8 @@ sudo dpkg --add-architecture ia64
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
-sudo dpkg --add-architecture s390
-sudo dpkg --add-architecture s390x
+#sudo dpkg --add-architecture s390
+#sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture sh3
 #sudo dpkg --add-architecture sh3eb 
 #sudo dpkg --add-architecture sh4
@@ -46,8 +46,8 @@ sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture sparc
 #sudo dpkg --add-architecture sparc64
 #sudo dpkg --add-architecture tilegx
-sudo dpkg --add-architecture arm
-sudo dpkg --add-architecture $(uname -r)
+#sudo dpkg --add-architecture arm
+#sudo dpkg --add-architecture $(uname -r)
 clear
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
