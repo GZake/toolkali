@@ -8,7 +8,7 @@ clear
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
-sudo dpkg --add-architecture ppc64el
+#sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture amzn2
 sudo dpkg --add-architecture aarch64
 sudo dpkg --add-architecture i586
