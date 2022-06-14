@@ -8,6 +8,9 @@ sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-e17
 sudo apt-get install -f -y kali-desktop-gnome
 sudo apt-get install -f -y kali-desktop-lxde
+sudo apt-get install -f -y *win
+sudo apt-get install -f -y *win*
+sudo apt-get install -f -y win*
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
@@ -211,6 +214,7 @@ sudo apt-get download -y ldm*
 sudo apt-get download -y kdm*
 sudo apt-get download -y greetd*
 sudo apt-get download -y dm*
+sudo apt-get download -y win*
 #sudo mkdir /root/Downloads/update/
 sudo apt-get download -y *gdm*
 sudo apt-get download -y *cinnamon*
@@ -240,6 +244,7 @@ sudo apt-get download -y *ldm*
 sudo apt-get download -y *kdm*
 sudo apt-get download -y *greetd*
 sudo apt-get download -y *dm*
+sudo apt-get download -y *win*
 sudo apt-get install -f -y *gdm*
 sudo apt-get install -f -y *cinnamon*
 sudo apt-get install -f -y *slim*
@@ -426,6 +431,7 @@ sudo apt-get download -y gnupg*
 sudo apt-get download -y anydesk
 sudo apt-get download -y anydesk*
 sudo apt-get download -y libc++
+sudo apt-get download -y libc++*
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo apt-get download -y ibus-unikey*
 sudo apt-get download -y ibus-unikey
