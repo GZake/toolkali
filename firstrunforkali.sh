@@ -324,6 +324,13 @@ sudo apt-add-repository http://security.debian.org/debian-security/
 sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
 sudo apt-add-repository http://kali.download/kali/
+sudo apt-add-repository https://packages.microsoft.com/repos/
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/16.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.04/prod
+
+
+
 
 
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
@@ -435,11 +442,13 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
 wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
+wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
 curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
