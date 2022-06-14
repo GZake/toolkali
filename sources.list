@@ -534,7 +534,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.mi
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/dotnet-release/ trusty main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/dotnet-release/ xenial main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/dotnet-release/ yakkety main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/edge/ stable main contrib non-free
+deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/git/ bionic main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/griffin/ trusty main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/griffin/ xenial main contrib non-free
