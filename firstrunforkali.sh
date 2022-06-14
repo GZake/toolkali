@@ -529,6 +529,8 @@ update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 
 ###################################################
 need:
+sudo apt-get install -f -y microsoft-edge-stable
+sudo apt-get install -f -y microsoft*
 sudo apt-get install -f -y snap
 sudo apt-get install -f -y snap*
 sudo apt-get install -f -y *snap*
