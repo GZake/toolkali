@@ -657,6 +657,9 @@ sudo apt-get install -f -y anydesk
 sudo apt-get install -f -y anydesk*
 sudo apt-get install -f -y libc++
 sudo apt-get install -f -y kali-desktop-xfce xorg xrdp
+sudo apt-get install -f -y xrdp
+sudo apt-get install -f -y xrdp*
+sudo apt-get install -f -y *xrdp
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo dpkg -i "download?platform=linux&format=deb"
 sudo dpkg -i viber.deb
