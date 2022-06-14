@@ -689,6 +689,19 @@ fi
 gui:
 
 sudo bash gui.sh
+echo "Dơ you want to install all deb?"
+read -p "Your choose: " choose2 
+if [ $choose2 -eq y ]
+then
+	goto yup
+elif [ $choose2 -eq n ]
+then
+	goto non
+fi
+
+yup:
+sudo dpkg -i /var/cache/apt/archives/*
+non:
 
 alias journalctl="sudo journalctl"
 
