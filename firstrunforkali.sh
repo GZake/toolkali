@@ -452,6 +452,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/
 curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
+sudo rm -f microsoft.gpg
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt 
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }'
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg
