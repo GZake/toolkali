@@ -325,11 +325,34 @@ sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
 sudo apt-add-repository http://kali.download/kali/
 sudo apt-add-repository https://packages.microsoft.com/repos/
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/14.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/15.10/prod
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/16.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/16.10/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/17.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/17.10/prod
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.10/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/19.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/19.10/prod
 sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.04/prod
-
-
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.10/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/21.04/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/21.10/prod
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/22.04/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/11/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/9/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/8/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/8/multiarch
+sudo apt-add-repository https://packages.microsoft.com/debian/stretch/multiarch/prod
+sudo apt-add-repository https://packages.microsoft.com/centos/6/
+sudo apt-add-repository https://packages.microsoft.com/centos/7/
+sudo apt-add-repository https://packages.microsoft.com/centos/8/
+sudo apt-add-repository https://packages.microsoft.com/config/
+sudo apt-add-repository https://packages.microsoft.com/fedora/26/prod/
+sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-fast/
+sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-slow/
 
 
 
@@ -529,6 +552,9 @@ update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 
 ###################################################
 need:
+sudo apt-get install -f -y alien
+sudo apt-get install -f -y alien*
+sudo apt-get install -f -y *alien
 sudo apt-get install -f -y microsoft-edge-stable
 sudo apt-get install -f -y microsoft*
 sudo apt-get install -f -y snap
