@@ -315,7 +315,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
-curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
 #sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
@@ -462,7 +462,6 @@ wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
 curl https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add -
