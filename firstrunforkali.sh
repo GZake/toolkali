@@ -308,7 +308,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
-curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
 sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
@@ -325,21 +325,6 @@ sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
 sudo apt-add-repository http://kali.download/kali/
 sudo apt-add-repository https://packages.microsoft.com/repos/
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/14.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/15.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/16.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/16.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/17.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/17.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/19.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/19.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/21.04/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/21.10/prod
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/22.04/prod
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo apt-add-repository https://packages.microsoft.com/debian/11/prod
 sudo apt-add-repository https://packages.microsoft.com/debian/9/prod
