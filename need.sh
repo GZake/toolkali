@@ -156,7 +156,6 @@ tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *
 sudo cp /usr/lib/libicu*.so.61* /usr/lib
 sudo apt-get install -f -y ibus-unikey*
 sudo apt-get install -f -y ibus-unikey
-sudo bash install.sh
 #sudo bash update.sh
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
