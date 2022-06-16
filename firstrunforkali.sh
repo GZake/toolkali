@@ -3,6 +3,8 @@
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
 clear
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh
+sudo timedatectl set-ntp on
 #sudo dpkg --add-architecture armhf
 #sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture i386
@@ -194,6 +196,7 @@ echo "                       UPDATE
 5 for GUI
 6 for Necessary application
 7 for Full update
+8 for new tool from git Hacktool
 0 for back
 "
 read -p "Your choose: " choose1 
@@ -218,6 +221,9 @@ then
 elif [ $choose1 -eq 7 ]
 then
 	goto fulup
+elif [ $choose1 -eq 8 ]
+then
+	goto hckgit
 elif [ $choose1 -eq 0 ]
 then
 	goto choose
@@ -302,6 +308,7 @@ sudo sysctl -p
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
+exit(0)
 " | tee -a /etc/rc.local
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
@@ -559,6 +566,54 @@ sudo bash ./list-symbols-packages-v2* -p $(pidof yelp)
 sudo bash ./list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
 
 if [ $choose1 -eq 7 ]
+then
+	goto uptab
+fi
+###############################hack tool###############
+
+hckgit:
+echo -e "${ORANGE} "
+echo ""
+echo "   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄           ███      ▄██████▄   ▄██████▄   ▄█       ";
+echo "  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███      ▀█████████▄ ███    ███ ███    ███ ███       ";
+echo "  ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀          ▀███▀▀██ ███    ███ ███    ███ ███       ";
+echo " ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                 ███   ▀ ███    ███ ███    ███ ███       ";
+echo "▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄           ███     ███    ███ ███    ███ ███       ";
+echo "  ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███       ";
+echo "  ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███▌    ▄ ";
+echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
+echo "                                         ▀                                                                            ▀         ";                         
+
+echo "
+1 for Install
+2 for Update
+0 for back
+"
+read -p "Your choose: " choosehk 
+if [ $choosehk -eq 1 ]
+then
+	goto inhk
+elif [ $choosehk -eq 2 ]
+then
+	goto uphk
+elif [ $choosehk -eq 0 ]
+then
+	goto uptab
+fi
+inhk:
+sudo bash install.sh
+if [ $choosehk -eq 1 ]
+then
+	goto hckgit
+fi
+uphk:
+sudo bash update.sh
+if [ $choosehk -eq 2 ]
+then
+	goto hckgit
+fi
+
+if [ $choose1 -eq 8 ]
 then
 	goto uptab
 fi
