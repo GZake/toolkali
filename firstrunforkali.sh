@@ -1,6 +1,7 @@
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
+#pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
