@@ -881,13 +881,13 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.mi
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/19.10/prod/ eoan main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/19.10/prod/ testing main
 
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/prod/ focal main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/prod/ insiders-fast main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/prod/ insiders-slow main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/prod/ testing main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/mssql-server-2019/ focal main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.04/mssql-server-preview/ focal main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/prod/ focal main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/prod/ insiders-fast main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/prod/ insiders-slow main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/prod/ nightly main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/prod/ testing main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/mssql-server-2019/ focal main
+deb [arch=amd64 ] https://packages.microsoft.com/ubuntu/20.04/mssql-server-preview/ focal main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/20.10/prod/ groovy main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/21.04/prod/ hirsute main
