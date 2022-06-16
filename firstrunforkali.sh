@@ -318,7 +318,7 @@ sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list
 curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
-sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
+#sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
 sudo apt-add-repository http://deb.playonlinux.com/
 sudo apt-add-repository http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/
 sudo apt-add-repository http://apt.postgresql.org/pub/repos/apt/
