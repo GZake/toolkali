@@ -593,8 +593,12 @@ then
 fi
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 logout
+exit(0)
+reboot
 
 bak:
+#cd $HOME/toolkali/
+#git add
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
 sudo cp -f /etc/skel/.bashrc /etc/skel/.bashrc.bak1
