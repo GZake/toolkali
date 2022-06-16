@@ -537,6 +537,12 @@ update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 
 ###################################################
 need:
+sudo apt-get install -f -y wakeonlan
+sudo apt-get install -f -y wakeonlan*
+sudo apt-get install -f -y *wakeonlan*
+sudo apt-get install -f -y freerdp
+sudo apt-get install -f -y freerdp*
+sudo apt-get install -f -y *freerdp*
 sudo apt-get install -f -y alien
 sudo apt-get install -f -y alien*
 sudo apt-get install -f -y *alien
@@ -671,7 +677,11 @@ sudo apt-get install -f -y libc++
 sudo apt-get install -f -y kali-desktop-xfce xorg xrdp
 sudo apt-get install -f -y xrdp
 sudo apt-get install -f -y xrdp*
-sudo apt-get install -f -y *xrdp
+sudo apt-get install -f -y *xrdp*
+sudo systemctl start xrdp
+sudo systemctl start xrdp-sesman
+sudo systemctl enable xrdp
+sudo systemctl enable xrdp-sesman
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo dpkg -i "download?platform=linux&format=deb"
 sudo dpkg -i viber.deb
