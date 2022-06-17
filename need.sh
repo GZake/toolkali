@@ -43,10 +43,11 @@ sudo apt-get install -f -y grub-efi*
 sudo apt-get install -f -y grub-efi
 sudo apt-get install -f -y packaging-dev sbuild apt-file gitk git-lfs myrepos
 sudo apt-get install -f -y flameshot*
+sudo apt-get install -f -y dnf
 sudo apt-get install -f -y dnf*
+sudo apt-get install -f -y *dnf*
 sudo apt-get install -f -y kali-root-login*
 sudo apt-get install -f -y flameshot
-sudo apt-get install -f -y dnf
 sudo apt-get install -f -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
 sudo apt-get install -f -y kmix
 sudo apt-get install -f -y kmix*
