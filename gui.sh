@@ -1,4 +1,7 @@
 cd /var/cache/apt/archives/
+sudo apt-get install -f -y yadm
+sudo apt-get install -f -y yadm*
+sudo apt-get install -f -y *yadm*
 sudo apt-get install -f -y wine32
 sudo apt-get install -f -y wine64
 sudo apt-get install -f -y wine*
@@ -182,6 +185,9 @@ sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 cd /var/cache/apt/archives/ ###########################################################
+sudo apt-get download -y yadm
+sudo apt-get download -y yadm*
+sudo apt-get download -y *yadm*
 sudo apt-get download -y wine32
 sudo apt-get download -y wine64
 sudo apt-get download -y wine*
