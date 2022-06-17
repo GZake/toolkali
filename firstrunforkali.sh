@@ -314,12 +314,13 @@ exit(0)
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-#sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
+sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
-#curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
-#sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
+sudo apt-add-repository http://ftp.nluug.nl/db/mariadb/repo/10.3/debian
+echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | tee -a /etc/apt/sources.list
 sudo apt-add-repository http://deb.playonlinux.com/
 sudo apt-add-repository http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/
 sudo apt-add-repository http://apt.postgresql.org/pub/repos/apt/
