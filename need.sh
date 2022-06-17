@@ -5,6 +5,9 @@ sudo timedatectl set-ntp on
 sudo apt-get install -f -y zypper
 sudo apt-get install -f -y zypper*
 sudo apt-get install -f -y *zypper*
+sudo apt-get install -f -y eopkg
+sudo apt-get install -f -y eopkg*
+sudo apt-get install -f -y *eopkg*
 sudo apt-get install -f -y wakeonlan
 sudo apt-get install -f -y wakeonlan*
 sudo apt-get install -f -y *wakeonlan*
