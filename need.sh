@@ -85,6 +85,8 @@ sudo apt-get install -f -y wine64
 sudo apt-get install -f -y wine*
 sudo apt-get install -f -y *wine*
 sudo apt-get install -f -y lib32z1 lib32ncurses5
+wget "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x64.deb"
+sudo dpkg -i "VNC-Viewer-6.22.315-Linux-x64.deb"
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
