@@ -1,7 +1,12 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
-
+sudo apt-get install -f -y remmina
+sudo apt-get install -f -y remmina*
+sudo apt-get install -f -y *remmina*
+sudo apt-get install -f -y tigervnc
+sudo apt-get install -f -y tigervnc*
+sudo apt-get install -f -y *tigervnc*
 sudo apt-get install -f -y zypper
 sudo apt-get install -f -y zypper*
 sudo apt-get install -f -y *zypper*
