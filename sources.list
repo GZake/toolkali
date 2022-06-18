@@ -901,10 +901,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.mi
 ####for x####
 deb [trusted=yes] http://cz.archive.ubuntu.com/ x main universe by-hash multiverse restricted x
 deb [trusted=yes] http://ftp.debian.org/debian/ x contrib main non-free
-deb [trusted=yes] http://ftp.debian.org/debian/ stable main contrib non-free
 deb [trusted=yes] http://ftp.debian.org/x/ x contrib main non-free
-deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
 deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ x main multiverse restricted universe
 deb [trusted=yes] http://security.debian.org/debian-security/ x main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ x main contrib non-free
@@ -993,5 +990,8 @@ deb [trusted=yes] http://httpredir.debian.org/* * *
 deb-src [trusted=yes] http://httpredir.debian.org/* * *
 deb [trusted=yes] http://security.debian.org/* * *
 deb-src [trusted=yes] http://security.debian.org/* * *
+
+
+
 
 
