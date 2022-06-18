@@ -1,12 +1,21 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
-sudo apt-get install -f -y software-properties-kde
-sudo apt-get install -f -y software-properties-kde*
-sudo apt-get install -f -y *software-properties-kde*
 sudo apt-get install -f -y software-properties-common
 sudo apt-get install -f -y software-properties-common*
 sudo apt-get install -f -y *software-properties-common*
+sudo apt-get install -f -y software-properties-kde
+sudo apt-get install -f -y software-properties-kde*
+sudo apt-get install -f -y *software-properties-kde*
+sudo apt-get install -f -y python-software-properties
+sudo apt-get install -f -y python-software-properties*
+sudo apt-get install -f -y *python-software-properties*
+sudo apt-get install -f -y python3-software-properties
+sudo apt-get install -f -y python3-software-properties*
+sudo apt-get install -f -y *python3-software-properties*
+sudo apt-get install -f -y software-properties-gtk
+sudo apt-get install -f -y software-properties-gtk*
+sudo apt-get install -f -y *software-properties-gtk*
 sudo apt-get install -f -y software-properties*
 sudo apt-get install -f -y software*
 sudo apt-get install -f -y *properties-common
