@@ -1,12 +1,12 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
-sudo apt-get install -f -y software-properties-common
-sudo apt-get install -f -y software-properties-common*
-sudo apt-get install -f -y *software-properties-common*
 sudo apt-get install -f -y software-properties-kde
 sudo apt-get install -f -y software-properties-kde*
 sudo apt-get install -f -y *software-properties-kde*
+sudo apt-get install -f -y software-properties-common
+sudo apt-get install -f -y software-properties-common*
+sudo apt-get install -f -y *software-properties-common*
 sudo apt-get install -f -y software-properties*
 sudo apt-get install -f -y software*
 sudo apt-get install -f -y *properties-common
