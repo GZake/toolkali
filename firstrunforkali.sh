@@ -5,6 +5,8 @@
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
+sudo apt-get install -f -y software-properties-common
+sudo apt-get install -f -y software-properties-common*
 #sudo dpkg --add-architecture armhf
 #sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture i386
