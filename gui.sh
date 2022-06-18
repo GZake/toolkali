@@ -1,4 +1,5 @@
 cd /var/cache/apt/archives/
+sudo apt-get install -f -y survex-aven
 sudo apt-get install -f -y yadm
 sudo apt-get install -f -y yadm*
 sudo apt-get install -f -y *yadm*
