@@ -4,9 +4,13 @@ sudo timedatectl set-ntp on
 sudo apt-get install -f -y software-properties-common
 sudo apt-get install -f -y software-properties-common*
 sudo apt-get install -f -y *software-properties-common*
+sudo apt-get install -f -y software-properties-kde
+sudo apt-get install -f -y software-properties-kde*
+sudo apt-get install -f -y *software-properties-kde*
 sudo apt-get install -f -y software-properties*
 sudo apt-get install -f -y software*
 sudo apt-get install -f -y *properties-common
+sudo apt-get install -f -y *properties-kde
 sudo apt-get install -f -y remmina
 sudo apt-get install -f -y remmina*
 sudo apt-get install -f -y *remmina*
