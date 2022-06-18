@@ -349,6 +349,8 @@ sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-fast/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-slow/
 sudo apt-add-repository ppa:blue-shell/sddm
 sudo apt-add-repository ppa:blue-shell/gdm3
+sudo apt-add-repository ppa:blue-shell/kde
+sudo apt-add-repository ppa:blue-shell/xdm
 
 
 
