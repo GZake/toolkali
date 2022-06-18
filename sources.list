@@ -103,7 +103,7 @@ deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ sid main
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stable main
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stretch main
 deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ testing main
-deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
+#deb [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
 
 deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ wheezy main
 deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ bookworm main
@@ -115,7 +115,7 @@ deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ sid main
 deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stable main
 deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ stretch main
 deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ testing main
-deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
+#deb-src [trusted=yes] https://dl.winehq.org/wine-builds/debian/ unstable main
 
 deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ artful main
 deb [trusted=yes] https://dl.winehq.org/wine-builds/ubuntu/ bionic main
@@ -320,11 +320,11 @@ deb-src [trusted=yes] http://deb.debian.org/debian sid main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
 
 ##############################
-deb [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
-deb-src [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian/ unstable main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian unstable main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
+#deb [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
+#deb-src [trusted=yes] http://httpredir.debian.org/debian unstable main contrib non-free
+#deb [trusted=yes] http://deb.debian.org/debian/ unstable main contrib non-free
+#deb-src [trusted=yes] http://deb.debian.org/debian unstable main contrib non-free
+#deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
 
 ##############################
 deb [trusted=yes] http://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
@@ -947,8 +947,8 @@ deb [trusted=yes] http://cz.archive.ubuntu.com/ * main universe by-hash multiver
 deb [trusted=yes] http://ftp.debian.org/debian/ * contrib main non-free
 deb [trusted=yes] http://ftp.debian.org/debian/ stable main contrib non-free
 deb [trusted=yes] http://ftp.debian.org/*/ * contrib main non-free
-deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
+#deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
+#deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
 deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ * main multiverse restricted universe
 deb [trusted=yes] http://security.debian.org/debian-security/ * main contrib non-free
 deb-src [trusted=yes] http://deb.debian.org/debian/ * main contrib non-free
