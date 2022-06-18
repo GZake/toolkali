@@ -12,6 +12,9 @@ sudo timedatectl set-ntp on
 sudo apt-get reinstall -f -y software-properties-common
 sudo apt-get reinstall -f -y software-properties-common*
 sudo apt-get reinstall -f -y *software-properties-common*
+sudo apt-get install -f -y software-properties-kde
+sudo apt-get install -f -y software-properties-kde*
+sudo apt-get install -f -y *software-properties-kde*
 #sudo dpkg --add-architecture armhf
 #sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture i386
