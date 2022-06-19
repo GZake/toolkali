@@ -23,7 +23,7 @@ sudo apt-get install -f -y *python-software-properties*
 sudo apt-get install -f -y python3-software-properties
 
 sudo apt-get install -f -y python3-software-properties*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y *python3-software-properties*
 
 sudo apt-get install -f -y software-properties-gtk
@@ -43,7 +43,7 @@ sudo apt-get install -f -y *properties-kde
 sudo apt-get install -f -y remmina
 
 sudo apt-get install -f -y remmina*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y *remmina*
 
 sudo apt-get install -f -y tigervnc
@@ -63,7 +63,7 @@ sudo apt-get install -f -y eopkg
 sudo apt-get install -f -y eopkg*
 
 sudo apt-get install -f -y *eopkg*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y wakeonlan
 
 sudo apt-get install -f -y wakeonlan*
@@ -83,7 +83,7 @@ sudo apt-get install -f -y alien*
 sudo apt-get install -f -y *alien
 
 sudo apt-get install -f -y microsoft-edge-stable
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y microsoft*
 
 sudo apt-get install -f -y snap
@@ -103,7 +103,7 @@ sudo apt-get install -f -y synaptic*
 sudo systemctl enable snapd.socket snapd apparmor
 
 sudo systemctl start snapd.socket snapd apparmor
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo snap install snap-store
 
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
@@ -123,7 +123,7 @@ sudo apt-get install -f -y spotify-client
 sudo apt-get install -f -y *brave-browser*
 
 sudo apt-get install -f -y brave-browser-nightly
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y *grub-efi*
 
 sudo apt-get install -f -y grub-efi*
@@ -143,7 +143,7 @@ sudo apt-get install -f -y *dnf*
 sudo apt-get install -f -y kali-root-login*
 
 sudo apt-get install -f -y flameshot
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
 
 sudo apt-get install -f -y kmix
@@ -163,7 +163,7 @@ sudo apt-get install -f -y gnome-tweak
 sudo apt-get install -f -y gnome-tweak*
 
 sudo apt-get install -f -y gnome-tweak-tool
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y gnome-tweak-tool*
 
 sudo apt-get install -f -y xserver-xorg-core-dbg
@@ -183,7 +183,7 @@ sudo apt-get install -f -y gnupg*
 sudo apt-get install -f -y anydesk
 
 sudo apt-get install -f -y anydesk*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y libc++
 
 sudo apt-get install -f -y nvidia-kernel-dkms
@@ -210,7 +210,7 @@ wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 
 wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo dpkg -i viber.deb
 sudo apt --fix-broken install -y | tee -a  $HOME/Desktop/log.txt
 find-dbgsym-packages [core_path|running_pid|binary_path]
@@ -236,7 +236,7 @@ sudo apt-get install -f -y *snap*
 sudo apt-get install -f -y snapd
 
 sudo apt-get install -f -y snapd*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 
 sudo apt-get install -f -y synaptic*
@@ -256,7 +256,7 @@ sudo apt-get install -f -y gnome-software*
 sudo apt-get install -f -y software-center
 
 sudo apt-get install -f -y software-center*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y *spotify*
 
 sudo apt-get install -f -y spotify-client
@@ -276,7 +276,7 @@ sudo apt-get install -f -y packaging-dev sbuild apt-file gitk git-lfs myrepos
 sudo apt-get install -f -y flameshot*
 
 sudo apt-get install -f -y dnf*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y kali-root-login*
 
 sudo apt-get install -f -y flameshot
@@ -296,7 +296,7 @@ sudo apt-get install -f -y kmix
 sudo apt-get install -f -y kmix*
 
 sudo apt-get install -f -y pulseaudio
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y pulseaudio*
 
 sudo apt-get install -f -y gnome-core
@@ -316,7 +316,7 @@ sudo apt-get install -f -y xserver-xorg-core-dbg
 sudo apt-get install -f -y xserver-xorg*
 
 sudo apt-get install -f -y debian-goodies
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo apt-get install -f -y debian-goodies*
 
 sudo apt-get install -f -y gnupg2 curl
@@ -338,7 +338,7 @@ sudo apt-get install -f -y xrdp
 sudo apt-get install -f -y xrdp*
 
 sudo apt-get install -f -y *xrdp*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 sudo systemctl start xrdp
 
 sudo systemctl start xrdp-sesman
@@ -362,7 +362,7 @@ sudo cp /usr/lib/libicu*.so.61* /usr/lib
 sudo apt-get install -f -y ibus-unikey*
 
 sudo apt-get install -f -y ibus-unikey
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+
 #sudo bash update.sh
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
