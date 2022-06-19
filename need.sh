@@ -99,10 +99,10 @@ sudo apt-get install -f -y nvidia-driver nvidia-xconfig
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
-sudo apt-get install -f -y wine32
-sudo apt-get install -f -y wine64
-sudo apt-get install -f -y wine*
-sudo apt-get install -f -y *wine*
+#sudo apt-get install -f -y wine32
+#sudo apt-get install -f -y wine64
+#sudo apt-get install -f -y wine*
+#sudo apt-get install -f -y *wine*
 sudo apt-get install -f -y lib32z1 lib32ncurses5
 wget "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x64.deb"
 sudo dpkg -i "VNC-Viewer-6.22.315-Linux-x64.deb"
