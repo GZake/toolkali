@@ -1,6 +1,32 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
+sudo apt-get install -f -y sysvinit-core
+sudo apt-get install -f -y sysvinit-core*
+sudo apt-get install -f -y *sysvinit-core*
+sudo apt-get install -f -y systemd-sysv
+sudo apt-get install -f -y systemd-sysv*
+sudo apt-get install -f -y *systemd-sysv*
+sudo apt-get install -f -y runit-init
+sudo apt-get install -f -y runit-init*
+sudo apt-get install -f -y *runit-init*
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt-get install -f -y progress-linux-container
+sudo apt-get install -f -y progress-linux-container*
+sudo apt-get install -f -y *progress-linux-container*
+sudo apt-get install -f -y molly-guard
+sudo apt-get install -f -y molly-guard*
+sudo apt-get install -f -y *molly-guard*
+sudo apt-get install -f -y finit-sysv
+sudo apt-get install -f -y finit-sysv*
+sudo apt-get install -f -y *finit-sysv*
+sudo apt-get install -f -y bfh-container
+sudo apt-get install -f -y bfh-container*
+sudo apt-get install -f -y *bfh-container*
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt-get install -f -y bootlogd
+sudo apt-get install -f -y bootlogd*
+sudo apt-get install -f -y *bootlogd*
 sudo apt-get install -f -y software-properties-common
 
 sudo apt-get install -f -y software-properties-common*
