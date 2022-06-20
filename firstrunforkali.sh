@@ -264,6 +264,9 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 " | sudo tee -a $HOME/.bashrc
+sudo chmod 700 dolroot
+sudo chmod 700 kateroot
+sudo chmod 700 kwriteroot
 sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf
 echo "
 vm.swappiness=100
