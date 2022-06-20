@@ -910,6 +910,7 @@ then
 	goto uptab
 fi
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
+poweroff
 logout
 exit(0)
 reboot
