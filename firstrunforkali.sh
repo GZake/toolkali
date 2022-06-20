@@ -60,6 +60,7 @@ sudo dpkg --add-architecture sparc64
 sudo dpkg --add-architecture tilegx
 sudo dpkg --add-architecture arm
 sudo dpkg --add-architecture $(uname -r)
+dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
