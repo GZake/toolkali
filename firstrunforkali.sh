@@ -9,9 +9,9 @@ sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
-sudo apt-get reinstall -f -y software-properties-common
-sudo apt-get reinstall -f -y software-properties-common*
-sudo apt-get reinstall -f -y *software-properties-common*
+sudo apt-get install -f -y software-properties-common
+sudo apt-get install -f -y software-properties-common*
+sudo apt-get install -f -y *software-properties-common*
 sudo apt-get install -f -y software-properties-kde
 sudo apt-get install -f -y software-properties-kde*
 sudo apt-get install -f -y *software-properties-kde*
