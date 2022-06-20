@@ -1,4 +1,5 @@
 cd /var/cache/apt/archives/
+
 sudo apt-get install -f -y survex-aven
 sudo apt-get install -f -y yadm
 sudo apt-get install -f -y yadm*
@@ -64,6 +65,7 @@ sudo apt-get install -f -y lxdm
 sudo apt-get install -f -y mdm
 sudo apt-get install -f -y brzdm
 sudo apt-get install -f -y kde
+sudo apt-get install -f -y plasma-framework
 sudo apt-get install -f -y kirigami
 sudo apt-get install -f -y qingy
 sudo apt-get install -f -y mlogind
@@ -138,6 +140,7 @@ sudo apt-get install -f -y lxdm*
 sudo apt-get install -f -y mdm*
 sudo apt-get install -f -y brzdm*
 sudo apt-get install -f -y kde*
+sudo apt-get install -f -y plasma-framework*
 sudo apt-get install -f -y kirigami*
 sudo apt-get install -f -y qingy*
 sudo apt-get install -f -y mlogind*
@@ -209,6 +212,7 @@ sudo apt-get download -y lxdm*
 sudo apt-get download -y mdm*
 sudo apt-get download -y brzdm*
 sudo apt-get download -y kde*
+sudo apt-get download -y plasma-framework
 sudo apt-get download -y kirigami*
 sudo apt-get download -y qingy*
 sudo apt-get download -y mlogind*
@@ -240,6 +244,7 @@ sudo apt-get download -y *lxdm*
 sudo apt-get download -y *mdm*
 sudo apt-get download -y *brzdm*
 sudo apt-get download -y *kde*
+sudo apt-get download -y *plasma-framework*
 sudo apt-get download -y *kirigami*
 sudo apt-get download -y *qingy*
 sudo apt-get download -y *mlogind*
@@ -270,6 +275,7 @@ sudo apt-get install -f -y *lxdm*
 sudo apt-get install -f -y *mdm*
 sudo apt-get install -f -y *brzdm*
 sudo apt-get install -f -y *kde*
+sudo apt-get install -f -y *plasma-framework*
 sudo apt-get install -f -y *kirigami*
 sudo apt-get install -f -y *qingy*
 sudo apt-get install -f -y *mlogind*
@@ -299,6 +305,7 @@ sudo apt-get install -f -y lxdm*
 sudo apt-get install -f -y mdm*
 sudo apt-get install -f -y brzdm*
 sudo apt-get install -f -y kde*
+sudo apt-get install -f -y plasma-framework*
 sudo apt-get install -f -y kirigami*
 sudo apt-get install -f -y qingy*
 sudo apt-get install -f -y mlogind*
