@@ -3,10 +3,10 @@ sudo apt-get install -f -y survex-aven
 sudo apt-get install -f -y yadm
 sudo apt-get install -f -y yadm*
 sudo apt-get install -f -y *yadm*
-sudo apt-get install -f -y wine32
-sudo apt-get install -f -y wine64
-sudo apt-get install -f -y wine*
-sudo apt-get install -f -y *wine*
+#sudo apt-get install -f -y wine32
+#sudo apt-get install -f -y wine64
+#sudo apt-get install -f -y wine*
+#sudo apt-get install -f -y *wine*
 sudo apt-get install -f -y kali-desktop-kde
 sudo apt-get install -f -y kali-desktop-mate
 sudo apt-get install -f -y kali-desktop-e17
