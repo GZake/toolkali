@@ -193,6 +193,13 @@ sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 cd /var/cache/apt/archives/ ###########################################################
+
+sudo apt-get install -f -y kubuntu-desktop
+sudo apt-get install -f -y kubuntu-desktop*
+sudo apt-get install -f -y *kubuntu-desktop*
+sudo apt-get download -y kubuntu-desktop
+sudo apt-get download -y kubuntu-desktop*
+sudo apt-get download -y *kubuntu-desktop*
 sudo apt-get download -y yadm
 sudo apt-get download -y yadm*
 sudo apt-get download -y *yadm*
