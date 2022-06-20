@@ -15,51 +15,51 @@ sudo apt-get install -f -y *software-properties-common*
 sudo apt-get install -f -y software-properties-kde
 sudo apt-get install -f -y software-properties-kde*
 sudo apt-get install -f -y *software-properties-kde*
-#sudo dpkg --add-architecture armhf
-#sudo dpkg --add-architecture armel
+sudo dpkg --add-architecture armhf
+sudo dpkg --add-architecture armel
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
-#sudo dpkg --add-architecture ppc64el
-#sudo dpkg --add-architecture amzn2
-#sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture ppc64el
+sudo dpkg --add-architecture amzn2
+sudo dpkg --add-architecture aarch64
 sudo dpkg --add-architecture i586
-#sudo dpkg --add-architecture noarch
+sudo dpkg --add-architecture noarch
 sudo dpkg --add-architecture DEP-11
-#sudo dpkg --add-architecture all
-#sudo dpkg --add-architecture avr32
-#sudo dpkg --add-architecture alpha
-#sudo dpkg --add-architecture arc
-#sudo dpkg --add-architecture hppa
-#sudo dpkg --add-architecture armeb
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture avr32
+sudo dpkg --add-architecture alpha
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture hppa
+sudo dpkg --add-architecture armeb
 sudo dpkg --add-architecture ia64
-#sudo dpkg --add-architecture m32r
-#sudo dpkg --add-architecture m68k
-#sudo dpkg --add-architecture mips
-#sudo dpkg --add-architecture mips64
-#sudo dpkg --add-architecture mips64el
-#sudo dpkg --add-architecture mips64r6
-#sudo dpkg --add-architecture mips64r6el
-#sudo dpkg --add-architecture mipsel
-#sudo dpkg --add-architecture mipsr6
-#sudo dpkg --add-architecture mipsr6el
-#sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
-#sudo dpkg --add-architecture powerpcel
-#sudo dpkg --add-architecture ppc64
-#sudo dpkg --add-architecture riscv64
-#sudo dpkg --add-architecture s390
-#sudo dpkg --add-architecture s390x
-#sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
-#sudo dpkg --add-architecture sh4
-#sudo dpkg --add-architecture sh4eb
-#sudo dpkg --add-architecture sparc
-#sudo dpkg --add-architecture sparc64
-#sudo dpkg --add-architecture tilegx
-#sudo dpkg --add-architecture arm
-#sudo dpkg --add-architecture $(uname -r)
+sudo dpkg --add-architecture m32r
+sudo dpkg --add-architecture m68k
+sudo dpkg --add-architecture mips
+sudo dpkg --add-architecture mips64
+sudo dpkg --add-architecture mips64el
+sudo dpkg --add-architecture mips64r6
+sudo dpkg --add-architecture mips64r6el
+sudo dpkg --add-architecture mipsel
+sudo dpkg --add-architecture mipsr6
+sudo dpkg --add-architecture mipsr6el
+sudo dpkg --add-architecture nios2
+sudo dpkg --add-architecture or1k 
+sudo dpkg --add-architecture powerpc 
+sudo dpkg --add-architecture powerpcel
+sudo dpkg --add-architecture ppc64
+sudo dpkg --add-architecture riscv64
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture sh3
+sudo dpkg --add-architecture sh3eb 
+sudo dpkg --add-architecture sh4
+sudo dpkg --add-architecture sh4eb
+sudo dpkg --add-architecture sparc
+sudo dpkg --add-architecture sparc64
+sudo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture arm
+sudo dpkg --add-architecture $(uname -r)
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
@@ -289,7 +289,51 @@ echo 100 >> /proc/sys/vm/swappiness
 
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
-
+sudo dpkg --remove-architecture armhf
+sudo dpkg --remove-architecture armel
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture amd64
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture ppc64el
+sudo dpkg --remove-architecture amzn2
+sudo dpkg --remove-architecture aarch64
+sudo dpkg --remove-architecture i586
+sudo dpkg --remove-architecture noarch
+sudo dpkg --remove-architecture DEP-11
+sudo dpkg --remove-architecture all
+sudo dpkg --remove-architecture avr32
+sudo dpkg --remove-architecture alpha
+sudo dpkg --remove-architecture arc
+sudo dpkg --remove-architecture hppa
+sudo dpkg --remove-architecture armeb
+sudo dpkg --remove-architecture ia64
+sudo dpkg --remove-architecture m32r
+sudo dpkg --remove-architecture m68k
+sudo dpkg --remove-architecture mips
+sudo dpkg --remove-architecture mips64
+sudo dpkg --remove-architecture mips64el
+sudo dpkg --remove-architecture mips64r6
+sudo dpkg --remove-architecture mips64r6el
+sudo dpkg --remove-architecture mipsel
+sudo dpkg --remove-architecture mipsr6
+sudo dpkg --remove-architecture mipsr6el
+sudo dpkg --remove-architecture nios2
+sudo dpkg --remove-architecture or1k 
+sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture powerpcel
+sudo dpkg --remove-architecture ppc64
+sudo dpkg --remove-architecture riscv64
+sudo dpkg --remove-architecture s390
+sudo dpkg --remove-architecture s390x
+sudo dpkg --remove-architecture sh3
+sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh4
+sudo dpkg --remove-architecture sh4eb
+sudo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc64
+sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture arm
+sudo dpkg --remove-architecture $(uname -r)
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
@@ -307,7 +351,51 @@ sudo apt-get clean -y | tee -a  /root/Desktop/log.txt
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
-
+sudo dpkg --add-architecture armhf
+sudo dpkg --add-architecture armel
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture ppc64el
+sudo dpkg --add-architecture amzn2
+sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture noarch
+sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture avr32
+sudo dpkg --add-architecture alpha
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture hppa
+sudo dpkg --add-architecture armeb
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture m32r
+sudo dpkg --add-architecture m68k
+sudo dpkg --add-architecture mips
+sudo dpkg --add-architecture mips64
+sudo dpkg --add-architecture mips64el
+sudo dpkg --add-architecture mips64r6
+sudo dpkg --add-architecture mips64r6el
+sudo dpkg --add-architecture mipsel
+sudo dpkg --add-architecture mipsr6
+sudo dpkg --add-architecture mipsr6el
+sudo dpkg --add-architecture nios2
+sudo dpkg --add-architecture or1k 
+sudo dpkg --add-architecture powerpc 
+sudo dpkg --add-architecture powerpcel
+sudo dpkg --add-architecture ppc64
+sudo dpkg --add-architecture riscv64
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture sh3
+sudo dpkg --add-architecture sh3eb 
+sudo dpkg --add-architecture sh4
+sudo dpkg --add-architecture sh4eb
+sudo dpkg --add-architecture sparc
+sudo dpkg --add-architecture sparc64
+sudo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture arm
+sudo dpkg --add-architecture $(uname -r)
 
 " | tee $HOME/update.sh
 sudo chmod 777 -R -v update.sh 
@@ -544,6 +632,51 @@ then
 	goto uptab
 fi
 
+sudo dpkg --remove-architecture armhf
+sudo dpkg --remove-architecture armel
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture amd64
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture ppc64el
+sudo dpkg --remove-architecture amzn2
+sudo dpkg --remove-architecture aarch64
+sudo dpkg --remove-architecture i586
+sudo dpkg --remove-architecture noarch
+sudo dpkg --remove-architecture DEP-11
+sudo dpkg --remove-architecture all
+sudo dpkg --remove-architecture avr32
+sudo dpkg --remove-architecture alpha
+sudo dpkg --remove-architecture arc
+sudo dpkg --remove-architecture hppa
+sudo dpkg --remove-architecture armeb
+sudo dpkg --remove-architecture ia64
+sudo dpkg --remove-architecture m32r
+sudo dpkg --remove-architecture m68k
+sudo dpkg --remove-architecture mips
+sudo dpkg --remove-architecture mips64
+sudo dpkg --remove-architecture mips64el
+sudo dpkg --remove-architecture mips64r6
+sudo dpkg --remove-architecture mips64r6el
+sudo dpkg --remove-architecture mipsel
+sudo dpkg --remove-architecture mipsr6
+sudo dpkg --remove-architecture mipsr6el
+sudo dpkg --remove-architecture nios2
+sudo dpkg --remove-architecture or1k 
+sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture powerpcel
+sudo dpkg --remove-architecture ppc64
+sudo dpkg --remove-architecture riscv64
+sudo dpkg --remove-architecture s390
+sudo dpkg --remove-architecture s390x
+sudo dpkg --remove-architecture sh3
+sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh4
+sudo dpkg --remove-architecture sh4eb
+sudo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc64
+sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture arm
+sudo dpkg --remove-architecture $(uname -r)
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt
 dpkg --configure -a | tee -a $HOME/Desktop/log.txt
@@ -552,6 +685,51 @@ apt-get upgrade -y | tee -a $HOME/Desktop/log.txt
 apt-get dist-upgrade -y | tee -a $HOME/Desktop/log.txt
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo dpkg --add-architecture armhf
+sudo dpkg --add-architecture armel
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture ppc64el
+sudo dpkg --add-architecture amzn2
+sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture noarch
+sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture avr32
+sudo dpkg --add-architecture alpha
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture hppa
+sudo dpkg --add-architecture armeb
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture m32r
+sudo dpkg --add-architecture m68k
+sudo dpkg --add-architecture mips
+sudo dpkg --add-architecture mips64
+sudo dpkg --add-architecture mips64el
+sudo dpkg --add-architecture mips64r6
+sudo dpkg --add-architecture mips64r6el
+sudo dpkg --add-architecture mipsel
+sudo dpkg --add-architecture mipsr6
+sudo dpkg --add-architecture mipsr6el
+sudo dpkg --add-architecture nios2
+sudo dpkg --add-architecture or1k 
+sudo dpkg --add-architecture powerpc 
+sudo dpkg --add-architecture powerpcel
+sudo dpkg --add-architecture ppc64
+sudo dpkg --add-architecture riscv64
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture sh3
+sudo dpkg --add-architecture sh3eb 
+sudo dpkg --add-architecture sh4
+sudo dpkg --add-architecture sh4eb
+sudo dpkg --add-architecture sparc
+sudo dpkg --add-architecture sparc64
+sudo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture arm
+sudo dpkg --add-architecture $(uname -r)
 
 #sudo apt-get remove debian-edu-config -y
 #sudo apt-get remove --auto-remove debian-edu-config -y
@@ -575,6 +753,51 @@ then
 fi
 #######################################################
 fulup:
+sudo dpkg --remove-architecture armhf
+sudo dpkg --remove-architecture armel
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture amd64
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture ppc64el
+sudo dpkg --remove-architecture amzn2
+sudo dpkg --remove-architecture aarch64
+sudo dpkg --remove-architecture i586
+sudo dpkg --remove-architecture noarch
+sudo dpkg --remove-architecture DEP-11
+sudo dpkg --remove-architecture all
+sudo dpkg --remove-architecture avr32
+sudo dpkg --remove-architecture alpha
+sudo dpkg --remove-architecture arc
+sudo dpkg --remove-architecture hppa
+sudo dpkg --remove-architecture armeb
+sudo dpkg --remove-architecture ia64
+sudo dpkg --remove-architecture m32r
+sudo dpkg --remove-architecture m68k
+sudo dpkg --remove-architecture mips
+sudo dpkg --remove-architecture mips64
+sudo dpkg --remove-architecture mips64el
+sudo dpkg --remove-architecture mips64r6
+sudo dpkg --remove-architecture mips64r6el
+sudo dpkg --remove-architecture mipsel
+sudo dpkg --remove-architecture mipsr6
+sudo dpkg --remove-architecture mipsr6el
+sudo dpkg --remove-architecture nios2
+sudo dpkg --remove-architecture or1k 
+sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture powerpcel
+sudo dpkg --remove-architecture ppc64
+sudo dpkg --remove-architecture riscv64
+sudo dpkg --remove-architecture s390
+sudo dpkg --remove-architecture s390x
+sudo dpkg --remove-architecture sh3
+sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh4
+sudo dpkg --remove-architecture sh4eb
+sudo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc64
+sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture arm
+sudo dpkg --remove-architecture $(uname -r)
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
@@ -583,6 +806,51 @@ sudo apt-get upgrade -y | tee -a  $HOME/Desktop/log.txt
 sudo apt-get full-upgrade -y | tee -a  $HOME/Desktop/log.txt
 sudo apt-get dist-upgrade -y | tee -a  $HOME/Desktop/log.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo dpkg --add-architecture armhf
+sudo dpkg --add-architecture armel
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture ppc64el
+sudo dpkg --add-architecture amzn2
+sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture noarch
+sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture avr32
+sudo dpkg --add-architecture alpha
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture hppa
+sudo dpkg --add-architecture armeb
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture m32r
+sudo dpkg --add-architecture m68k
+sudo dpkg --add-architecture mips
+sudo dpkg --add-architecture mips64
+sudo dpkg --add-architecture mips64el
+sudo dpkg --add-architecture mips64r6
+sudo dpkg --add-architecture mips64r6el
+sudo dpkg --add-architecture mipsel
+sudo dpkg --add-architecture mipsr6
+sudo dpkg --add-architecture mipsr6el
+sudo dpkg --add-architecture nios2
+sudo dpkg --add-architecture or1k 
+sudo dpkg --add-architecture powerpc 
+sudo dpkg --add-architecture powerpcel
+sudo dpkg --add-architecture ppc64
+sudo dpkg --add-architecture riscv64
+sudo dpkg --add-architecture s390
+sudo dpkg --add-architecture s390x
+sudo dpkg --add-architecture sh3
+sudo dpkg --add-architecture sh3eb 
+sudo dpkg --add-architecture sh4
+sudo dpkg --add-architecture sh4eb
+sudo dpkg --add-architecture sparc
+sudo dpkg --add-architecture sparc64
+sudo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture arm
+sudo dpkg --add-architecture $(uname -r)
 ##################################
  
 
@@ -696,3 +964,5 @@ if [ $choose1 -eq 3 ]
 then
 	goto uptab
 fi
+
+
