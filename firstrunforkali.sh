@@ -388,14 +388,14 @@ sudo dpkg --add-architecture tilegx
 sudo dpkg --add-architecture arm
 sudo dpkg --add-architecture $(uname -r)
 
-" | tee $HOME/update.sh
-sudo chmod 777 -R -v update.sh 
-cp $HOME/update.sh $HOME/toolkali/update.sh
+" | tee $HOME/updatekali.sh
+sudo chmod 777 -R -v updatekali.sh 
+cp $HOME/updatekali.sh $HOME/toolkali/updatekali.sh
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
-@reboot sudo bash /root/update.sh &
+@reboot sudo bash /root/updatekali.sh &
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
