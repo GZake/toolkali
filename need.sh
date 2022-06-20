@@ -13,9 +13,6 @@ sudo apt-get install -f -y *debconf*
 sudo apt-get install -f -y debianutils
 sudo apt-get install -f -y debianutils*
 sudo apt-get install -f -y *debianutils*
-sudo apt-get install -f -y libselinux1
-sudo apt-get install -f -y libselinux1*
-sudo apt-get install -f -y *libselinux1*
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 #sudo apt-get install -f -y sysvinit-core
 #sudo apt-get install -f -y sysvinit-core*
