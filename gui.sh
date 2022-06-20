@@ -15,6 +15,7 @@ sudo apt-get install -f -y kali-desktop-lxde
 sudo apt-get install -f -y *win
 sudo apt-get install -f -y *win*
 sudo apt-get install -f -y win*
+
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
@@ -63,6 +64,7 @@ sudo apt-get install -f -y lxdm
 sudo apt-get install -f -y mdm
 sudo apt-get install -f -y brzdm
 sudo apt-get install -f -y kde
+sudo apt-get install -f -y kirigami
 sudo apt-get install -f -y qingy
 sudo apt-get install -f -y mlogind
 sudo apt-get install -f -y tbsm
@@ -136,6 +138,7 @@ sudo apt-get install -f -y lxdm*
 sudo apt-get install -f -y mdm*
 sudo apt-get install -f -y brzdm*
 sudo apt-get install -f -y kde*
+sudo apt-get install -f -y kirigami*
 sudo apt-get install -f -y qingy*
 sudo apt-get install -f -y mlogind*
 sudo apt-get install -f -y tbsm*
@@ -164,6 +167,7 @@ sudo apt-get install -f -y *lxdm*
 sudo apt-get install -f -y *mdm*
 sudo apt-get install -f -y *brzdm*
 sudo apt-get install -f -y *kde*
+sudo apt-get install -f -y *kirigami*
 sudo apt-get install -f -y *qingy*
 sudo apt-get install -f -y *mlogind*
 sudo apt-get install -f -y *tbsm*
@@ -205,6 +209,7 @@ sudo apt-get download -y lxdm*
 sudo apt-get download -y mdm*
 sudo apt-get download -y brzdm*
 sudo apt-get download -y kde*
+sudo apt-get download -y kirigami*
 sudo apt-get download -y qingy*
 sudo apt-get download -y mlogind*
 sudo apt-get download -y tbsm*
@@ -235,6 +240,7 @@ sudo apt-get download -y *lxdm*
 sudo apt-get download -y *mdm*
 sudo apt-get download -y *brzdm*
 sudo apt-get download -y *kde*
+sudo apt-get download -y *kirigami*
 sudo apt-get download -y *qingy*
 sudo apt-get download -y *mlogind*
 sudo apt-get download -y *tbsm*
@@ -264,6 +270,7 @@ sudo apt-get install -f -y *lxdm*
 sudo apt-get install -f -y *mdm*
 sudo apt-get install -f -y *brzdm*
 sudo apt-get install -f -y *kde*
+sudo apt-get install -f -y *kirigami*
 sudo apt-get install -f -y *qingy*
 sudo apt-get install -f -y *mlogind*
 sudo apt-get install -f -y *tbsm*
@@ -292,6 +299,7 @@ sudo apt-get install -f -y lxdm*
 sudo apt-get install -f -y mdm*
 sudo apt-get install -f -y brzdm*
 sudo apt-get install -f -y kde*
+sudo apt-get install -f -y kirigami*
 sudo apt-get install -f -y qingy*
 sudo apt-get install -f -y mlogind*
 sudo apt-get install -f -y tbsm*
@@ -388,6 +396,96 @@ sudo apt-get install -f -y kali-desktop-xfce*
 sudo apt-get install -f -y nvidia*
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+
+
+sudo apt-get download -y debconf
+sudo apt-get download -y debconf*
+sudo apt-get download -y *debconf*
+sudo apt-get download -y sysvinit-core
+sudo apt-get download -y sysvinit-core*
+sudo apt-get download -y *sysvinit-core*
+sudo apt-get download -y systemd-sysv
+sudo apt-get download -y systemd-sysv*
+sudo apt-get download -y *systemd-sysv*
+sudo apt-get download -y runit-init
+sudo apt-get download -y runit-init*
+sudo apt-get download -y *runit-init*
+sudo apt-get download -y progress-linux-container
+sudo apt-get download -y progress-linux-container*
+sudo apt-get download -y *progress-linux-container*
+sudo apt-get download -y molly-guard
+sudo apt-get download -y molly-guard*
+sudo apt-get download -y *molly-guard*
+sudo apt-get download -y finit-sysv
+sudo apt-get download -y finit-sysv*
+sudo apt-get download -y *finit-sysv*
+sudo apt-get download -y bfh-container
+sudo apt-get download -y bfh-container*
+sudo apt-get download -y *bfh-container*
+sudo apt-get download -y bootlogd
+sudo apt-get download -y bootlogd*
+sudo apt-get download -y *bootlogd*
+
+sudo apt-get download -y software-properties-common
+
+sudo apt-get download -y software-properties-common*
+
+
+sudo apt-get download -y *software-properties-common*
+
+sudo apt-get download -y software-properties-kde
+
+sudo apt-get download -y software-properties-kde*
+
+sudo apt-get download -y *software-properties-kde*
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt-get download -y python-software-properties
+
+sudo apt-get download -y python-software-properties*
+
+sudo apt-get download -y *python-software-properties*
+
+sudo apt-get download -y python3-software-properties
+
+sudo apt-get download -y python3-software-properties*
+
+sudo apt-get download -y *python3-software-properties*
+
+sudo apt-get download -y software-properties-gtk
+
+sudo apt-get download -y software-properties-gtk*
+
+sudo apt-get download -y *software-properties-gtk*
+
+sudo apt-get download -y software-properties*
+sudo apt-get download -y software*
+sudo apt-get download -y *properties-common
+sudo apt-get download -y *properties-kde
+sudo apt-get download -y remmina
+sudo apt-get download -y remmina*
+sudo apt-get download -y *remmina*
+sudo apt-get download -y tigervnc
+sudo apt-get download -y tigervnc*
+sudo apt-get download -y *tigervnc*
+sudo apt-get download -y zypper
+sudo apt-get download -y zypper*
+sudo apt-get download -y *zypper*
+sudo apt-get download -y eopkg
+sudo apt-get download -y eopkg*
+sudo apt-get download -y *eopkg*
+sudo apt-get download -y wakeonlan
+sudo apt-get download -y wakeonlan*
+sudo apt-get download -y *wakeonlan*
+sudo apt-get download -y freerdp
+sudo apt-get download -y freerdp*
+sudo apt-get download -y *freerdp*
+sudo apt-get download -y alien
+sudo apt-get download -y alien*
+sudo apt-get download -y *alien
+sudo apt-get download -y microsoft-edge-stable
+sudo apt-get download -y microsoft*
+
+
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt-get download -y ibus-unikey*
 sudo apt-get download -y ibus-unikey
