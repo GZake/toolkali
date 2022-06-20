@@ -14,9 +14,9 @@ sudo apt-get install -f -y *gdm3*
 #sudo apt-get install -f -y systemd-sysv
 #sudo apt-get install -f -y systemd-sysv*
 #sudo apt-get install -f -y *systemd-sysv*
-sudo apt-get install -f -y runit-init
-sudo apt-get install -f -y runit-init*
-sudo apt-get install -f -y *runit-init*
+#sudo apt-get install -f -y runit-init
+#sudo apt-get install -f -y runit-init*
+#sudo apt-get install -f -y *runit-init*
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt-get install -f -y progress-linux-container
 sudo apt-get install -f -y progress-linux-container*
