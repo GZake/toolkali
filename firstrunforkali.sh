@@ -291,22 +291,15 @@ echo 100 >> /proc/sys/vm/swappiness
 echo "
 sudo dpkg --remove-architecture armhf
 sudo dpkg --remove-architecture armel
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture amd64
-sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture ppc64el
 sudo dpkg --remove-architecture amzn2
 sudo dpkg --remove-architecture aarch64
-sudo dpkg --remove-architecture i586
 sudo dpkg --remove-architecture noarch
-sudo dpkg --remove-architecture DEP-11
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture avr32
 sudo dpkg --remove-architecture alpha
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture hppa
 sudo dpkg --remove-architecture armeb
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture m32r
 sudo dpkg --remove-architecture m68k
 sudo dpkg --remove-architecture mips
@@ -323,8 +316,6 @@ sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
-sudo dpkg --remove-architecture s390
-sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
@@ -332,7 +323,6 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture arm
 sudo dpkg --remove-architecture $(uname -r)
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
@@ -634,22 +624,15 @@ fi
 
 sudo dpkg --remove-architecture armhf
 sudo dpkg --remove-architecture armel
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture amd64
-sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture ppc64el
 sudo dpkg --remove-architecture amzn2
 sudo dpkg --remove-architecture aarch64
-sudo dpkg --remove-architecture i586
 sudo dpkg --remove-architecture noarch
-sudo dpkg --remove-architecture DEP-11
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture avr32
 sudo dpkg --remove-architecture alpha
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture hppa
 sudo dpkg --remove-architecture armeb
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture m32r
 sudo dpkg --remove-architecture m68k
 sudo dpkg --remove-architecture mips
@@ -666,8 +649,6 @@ sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
-sudo dpkg --remove-architecture s390
-sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
@@ -675,7 +656,6 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture arm
 sudo dpkg --remove-architecture $(uname -r)
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a $HOME/Desktop/log.txt
@@ -755,22 +735,15 @@ fi
 fulup:
 sudo dpkg --remove-architecture armhf
 sudo dpkg --remove-architecture armel
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture amd64
-sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture ppc64el
 sudo dpkg --remove-architecture amzn2
 sudo dpkg --remove-architecture aarch64
-sudo dpkg --remove-architecture i586
 sudo dpkg --remove-architecture noarch
-sudo dpkg --remove-architecture DEP-11
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture avr32
 sudo dpkg --remove-architecture alpha
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture hppa
 sudo dpkg --remove-architecture armeb
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture m32r
 sudo dpkg --remove-architecture m68k
 sudo dpkg --remove-architecture mips
@@ -787,8 +760,6 @@ sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
-sudo dpkg --remove-architecture s390
-sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
@@ -796,7 +767,6 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture arm
 sudo dpkg --remove-architecture $(uname -r)
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
@@ -964,5 +934,4 @@ if [ $choose1 -eq 3 ]
 then
 	goto uptab
 fi
-
 
