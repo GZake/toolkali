@@ -194,6 +194,7 @@ git clone https://github.com/GZake/toolkali.git /media/root/01D85B1D2CBD6AE0/too
 cd
 cd $HOME/toolkali/
 exit
+clear
 sudo bash firstrunforkali.sh
 goto choose
 
