@@ -1,6 +1,10 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 
+sudo apt-get install -f -y debconf
+sudo apt-get install -f -y debconf*
+sudo apt-get install -f -y *debconf*
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt-get install -f -y sysvinit-core
 sudo apt-get install -f -y sysvinit-core*
 sudo apt-get install -f -y *sysvinit-core*
