@@ -617,6 +617,7 @@ echo "                                         ▀                              
 echo "
 1 for Install
 2 for Update
+3 for Continue
 0 for back
 "
 read -p "Your choose: " choosehk 
@@ -626,6 +627,9 @@ then
 elif [ $choosehk -eq 2 ]
 then
 	goto uphk
+elif [ $choosehk -eq 2 ]
+then
+	goto gui
 elif [ $choosehk -eq 0 ]
 then
 	goto uptab
