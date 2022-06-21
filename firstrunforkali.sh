@@ -55,9 +55,9 @@ sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture sh3eb 
 #sudo dpkg --add-architecture sh4
 #sudo dpkg --add-architecture sh4eb
-s#udo dpkg --add-architecture sparc
-su#do dpkg --add-architecture sparc64
-sud#o dpkg --add-architecture tilegx
+#udo dpkg --add-architecture sparc
+#sudo dpkg --add-architecture sparc64
+#sudo dpkg --add-architecture tilegx
 sudo dpkg --add-architecture arm
 sudo dpkg --add-architecture $(uname -r)
 dpkg --print-foreign-architectures
