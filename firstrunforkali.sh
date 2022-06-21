@@ -291,15 +291,15 @@ echo 100 >> /proc/sys/vm/swappiness
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a /root/Desktop/log.txt 
-sudo apt update --fix-missing -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a /root/Desktop/log.txt 
-sudo apt update --fix-missing -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt  | tee -a /root/Desktop/log.txt  
-sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  /root/Desktop/log.txt
-sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  /root/Desktop/log.txt
-sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  /root/Desktop/log.txt
-sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  /root/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get update -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get full-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt 
+sudo apt-get dist-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
 sudo timedatectl set-ntp on | tee -a  /root/Desktop/log.txt
 sudo apt-get autoremove -y | tee -a  /root/Desktop/log.txt
 sudo apt-get autoclean -y | tee -a  /root/Desktop/log.txt
@@ -544,16 +544,16 @@ then
 	goto uptab
 fi
 
-
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a $HOME/Desktop/log.txt
+echo "UPDATING..."
+sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 dpkg --configure -a | tee -a $HOME/Desktop/log.txt
-apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a $HOME/Desktop/log.txt
-apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a $HOME/Desktop/log.txt
-apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a $HOME/Desktop/log.txt
+apt-get update -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+apt-get upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+apt-get dist-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
-
+echo"DONE"
 #sudo apt-get remove debian-edu-config -y
 #sudo apt-get remove --auto-remove debian-edu-config -y
 #sudo apt-get purge debian-edu-config -y
@@ -576,17 +576,18 @@ then
 fi
 #######################################################
 fulup:
-
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee  $HOME/Desktop/log.txt
+echo "UPDATING..."
+sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee  $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  $HOME/Desktop/log.txt
-sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  $HOME/Desktop/log.txt
-sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  $HOME/Desktop/log.txt
-sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | tee -a  $HOME/Desktop/log.txt
+sudo apt-get update -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get full-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get dist-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+echo"DONE"
 
 ##################################
  
