@@ -165,7 +165,7 @@ sudo cp /usr/lib/libicu*.so.61* /usr/lib
 sudo apt-get install -f -y ibus-unikey*
 sudo apt-get install -f -y ibus-unikey
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
-sudo bash updatekali.sh
+#sudo bash updatekali.sh
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt-get install -f -y snap
 sudo apt-get install -f -y snap*
