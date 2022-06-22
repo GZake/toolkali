@@ -457,6 +457,7 @@ sudo apt-add-repository ppa:blue-shell/sddm
 sudo apt-add-repository ppa:blue-shell/gdm3
 sudo apt-add-repository ppa:blue-shell/kde
 sudo apt-add-repository ppa:blue-shell/xdm
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 
 
 
@@ -570,7 +571,7 @@ curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
 wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
-
+wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
