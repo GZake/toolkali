@@ -1,6 +1,6 @@
 
-deb [trusted=yes] http://packages.microsoft.com/ kali-rolling main
-deb-src [trusted=yes] http://packages.microsoft.com/ kali-rolling main
+#deb [trusted=yes] http://packages.microsoft.com/ kali-rolling main
+#deb-src [trusted=yes] http://packages.microsoft.com/ kali-rolling main
 deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
