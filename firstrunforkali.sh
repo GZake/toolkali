@@ -1010,6 +1010,7 @@ then
 fi
 
 yup:
+rm -fRvd /var/lib/apt/lists/partial/
 sudo dpkg -i /var/cache/apt/archives/*
 non:
 
