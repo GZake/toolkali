@@ -325,7 +325,7 @@ sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
-udo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
@@ -664,7 +664,7 @@ sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
-udo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
@@ -780,7 +780,7 @@ sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
-udo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
@@ -888,7 +888,7 @@ sudo dpkg --remove-architecture sh3
 sudo dpkg --remove-architecture sh3eb 
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
-udo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
