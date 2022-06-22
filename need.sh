@@ -169,6 +169,7 @@ sudo apt-get install -f -y snap*
 sudo apt-get install -f -y *snap*
 sudo apt-get install -f -y snapd
 sudo apt-get install -f -y snapd*
+sudo apt-get install -f -y  --install-recommends winehq-stable
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo apt-get install -f -y synaptic*
 sudo systemctl enable snapd.socket snapd apparmor
