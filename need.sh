@@ -170,12 +170,23 @@ sudo apt-get install -f -y *snap*
 sudo apt-get install -f -y snapd
 sudo apt-get install -f -y snapd*
 sudo apt-get install -f -y  --install-recommends winehq-stable
+export WINEARCH=win64
+export WINEPREFIX=~/.wine32
+sudo winecfg
+sudo apt-get install -f -y cabextract
+sudo apt-get install -f -y winetricks
+sudo winetricks corefonts gdiplus riched20 riched30
+wget https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe
+sudo wine WineChatSetup.exe
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo apt-get install -f -y synaptic*
 sudo systemctl enable snapd.socket snapd apparmor
 sudo systemctl start snapd.socket snapd apparmor
 sudo snap install snap-store
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
+sudo apt-get install -f -y snapd snapd-xdg-open
+sudo snap install electronic-chat
+#tar xvf linux-x64.tar.gz
 sudo apt-get install -f -y gnome-software
 sudo apt-get install -f -y gnome-software*
 sudo apt-get install -f -y software-center
