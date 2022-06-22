@@ -1,6 +1,6 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
-rm -fRv /var/lib/apt/lists/partial/*
+rm -fRv /var/lib/apt/lists/partial/
 sudo apt-get install -f -y libsepol1
 sudo apt-get install -f -y libsepol1*
 sudo apt-get install -f -y *libsepol1*
