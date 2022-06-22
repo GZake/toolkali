@@ -5,6 +5,7 @@ sudo timedatectl set-ntp on
 #####
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
+rm -fRv /var/lib/apt/lists/partial/*
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
