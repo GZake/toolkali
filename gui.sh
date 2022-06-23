@@ -1,32 +1,18 @@
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common*
-
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-common*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-kde*
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python-software-properties*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python3-software-properties*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk*
-
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-gtk*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop*
@@ -69,7 +55,6 @@ sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 i
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install greetd*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dm*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install win*
-#sudo mkdir /root/Downloads/update/
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *gdm*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *cinnamon*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *slim*
@@ -194,8 +179,6 @@ sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 i
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *alien
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft-edge-stable
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft*
-
-
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey
