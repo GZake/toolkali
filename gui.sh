@@ -361,8 +361,8 @@ sudo apt-get install -f -y ldm
 sudo apt-get install -f -y kdm
 sudo apt-get install -f -y greetd
 sudo apt-get install -f -y dm
-curl https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -o - | sudo tee -a /etc/pacman.conf
-wget https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt -O - | sudo tee -a /etc/pacman.conf
+curl "https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt" -o - | sudo tee -a /etc/pacman.conf
+wget "https://download.enlightenment.org/distros/arch/archlinux/arch/repo.txt" -O - | sudo tee -a /etc/pacman.conf
 sudo dpkg  -P i3lock
 sudo dpkg -P i3lock
 sudo apt --fix-broken install -y
