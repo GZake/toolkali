@@ -1,5 +1,13 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
+sudo chmod -Rv 777 /var/cache/apt/archives/ 
+sudo chown -Rv _apt:root /var/cache/apt/archives/
+sudo chmod -Rv 777 /var/lib/apt/lists/
+sudo chown -Rv _apt:root /var/lib/apt/lists/
+sudo chmod -Rv 777 /var/cache/apt/archives/* 
+sudo chown -Rv _apt:root /var/cache/apt/archives/*
+sudo chmod -Rv 777 /var/lib/apt/lists/*
+sudo chown -Rv _apt:root /var/lib/apt/lists/*
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
