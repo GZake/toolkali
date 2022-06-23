@@ -181,7 +181,7 @@ reboot
 
 root:
 sudo apt-get install -f -y kali-root-login
-passwd <<< $(printf "Admin@123\nAdmin@123\n")
+passwd <<< $(printf "113006\n113006\n")
 goto choose
 
 uptool:
