@@ -6,284 +6,284 @@ sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-common*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-kde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-common
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-common*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *software-properties-common*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-kde
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-kde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *software-properties-kde*
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python-software-properties*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python3-software-properties*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-gtk*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kubuntu-desktop*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install yadm
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install yadm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *yadm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine32
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine64
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wine*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install cinnamon*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install slim*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install lightdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install cdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sddm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install lxdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brzdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kde*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install plasma-framework
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kirigami*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install qingy*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mlogind*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tbsm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wayland*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xorg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install weston*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kwin*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install openbox*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mir*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dwm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install nodm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ldm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install greetd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install win*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *gdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *cinnamon*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *slim*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *lightdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *gnome*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *cdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *xdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *sddm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *lxdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brzdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kde*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *plasma-framework*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kirigami*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *qingy*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mlogind*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *tbsm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wayland*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *xorg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *weston*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kwin*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *openbox*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mir*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dwm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *nodm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *ldm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kdm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *greetd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *win*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-kde*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-mate*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-e17*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-gnome*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-lxde*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-default*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-arm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-headless*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-nethunter*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-gpu*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-hardware*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-crypto-stego*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-fuzzing*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-802-11*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-bluetooth*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-rfid*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-sdr*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-voip*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-windows-resources*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-information-gathering*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-vulnerability*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-web*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-database*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-passwords*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-wireless*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-reverse-engineering*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-exploitation*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-social-engineering*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-sniffing-spoofing*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-post-exploitation*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-forensics*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-reporting*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-large*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-everything*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-live*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install nvidia*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debconf
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debconf*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *debconf*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sysvinit-core
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sysvinit-core*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *sysvinit-core*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install systemd-sysv
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install systemd-sysv*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *systemd-sysv*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install runit-init
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install runit-init*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *runit-init*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install progress-linux-container
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install progress-linux-container*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *progress-linux-container*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install molly-guard
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install molly-guard*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *molly-guard*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install finit-sysv
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install finit-sysv*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *finit-sysv*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bfh-container
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bfh-container*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *bfh-container*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bootlogd
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bootlogd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *bootlogd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *properties-common
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *properties-kde
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install remmina
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install remmina*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *remmina*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tigervnc
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tigervnc*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *tigervnc*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install zypper
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install zypper*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *zypper*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install eopkg
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install eopkg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *eopkg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wakeonlan
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wakeonlan*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wakeonlan*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install freerdp
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install freerdp*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *freerdp*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alien
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alien*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *alien
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft-edge-stable
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y python-software-properties
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y python-software-properties*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *python-software-properties*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y python3-software-properties
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y python3-software-properties*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *python3-software-properties*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-gtk
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties-gtk*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *software-properties-gtk*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kubuntu-desktop
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kubuntu-desktop*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *kubuntu-desktop*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y yadm
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y yadm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *yadm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wine32
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wine64
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wine*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *wine*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y cinnamon*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y slim*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y lightdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y cdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y sddm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y lxdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y mdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y brzdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y plasma-framework
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kirigami*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y qingy*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y mlogind*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y tbsm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wayland*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xorg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y weston*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kwin*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y openbox*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y mir*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dwm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y nodm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ldm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y greetd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y win*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *gdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *cinnamon*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *slim*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *lightdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *gnome*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *cdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *xdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *sddm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *lxdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *mdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *brzdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *kde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *plasma-framework*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *kirigami*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *qingy*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *mlogind*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *tbsm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *wayland*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *xorg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *weston*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *kwin*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *openbox*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *mir*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *dwm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *wdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *nodm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *ldm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *kdm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *greetd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *dm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *win*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-kde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-mate*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-e17*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-gnome*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-lxde*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-default*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-arm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-headless*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-nethunter*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-gpu*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-hardware*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-crypto-stego*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-fuzzing*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-802-11*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-bluetooth*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-rfid*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-sdr*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-voip*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-windows-resources*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-information-gathering*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-vulnerability*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-web*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-database*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-passwords*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-wireless*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-reverse-engineering*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-exploitation*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-social-engineering*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-sniffing-spoofing*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-post-exploitation*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-forensics*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-tools-reporting*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-large*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-linux-everything*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-live*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-xfce*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y nvidia*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debconf
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debconf*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *debconf*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y sysvinit-core
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y sysvinit-core*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *sysvinit-core*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y systemd-sysv
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y systemd-sysv*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *systemd-sysv*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y runit-init
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y runit-init*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *runit-init*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y progress-linux-container
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y progress-linux-container*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *progress-linux-container*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y molly-guard
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y molly-guard*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *molly-guard*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y finit-sysv
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y finit-sysv*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *finit-sysv*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y bfh-container
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y bfh-container*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *bfh-container*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y bootlogd
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y bootlogd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *bootlogd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-properties*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *properties-common
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *properties-kde
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y remmina
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y remmina*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *remmina*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y tigervnc
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y tigervnc*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *tigervnc*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y zypper
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y zypper*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *zypper*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y eopkg
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y eopkg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *eopkg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wakeonlan
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y wakeonlan*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *wakeonlan*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y freerdp
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y freerdp*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *freerdp*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y alien
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y alien*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *alien
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y microsoft-edge-stable
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y microsoft*
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *snap*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *spotify*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install spotify-client
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brave-browser*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brave-browser-nightly
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *grub-efi*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install packaging-dev sbuild apt-file gitk git-lfs myrepos
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-root-login*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot 
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg-core-dbg
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *snap*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install synaptic*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snap
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snap*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *snap*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snapd
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snapd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-software
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-software*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-center
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-center*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *spotify*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y spotify-client
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *brave-browser*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y brave-browser-nightly
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *grub-efi*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y grub-efi*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y grub-efi
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y flameshot*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dnf*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-root-login*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y flameshot 
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dnf
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kmix
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kmix*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y pulseaudio
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y pulseaudio*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-core
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-core*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak-tool
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak-tool*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xserver-xorg-core-dbg
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xserver-xorg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debian-goodies
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debian-goodies*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg2 curl
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg2 curl*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y anydesk
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y anydesk*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y libc++
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y libc++*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snap
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snap*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *snap*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snapd
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y snapd*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y synaptic*
 sudo snap install snap-store
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *spotify*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install spotify-client
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brave-browser*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brave-browser-nightly
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *grub-efi*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install packaging-dev sbuild apt-file gitk git-lfs myrepos
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-root-login*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot 
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dbus-x11
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dbus-*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dbus*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg-core-dbg
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce xorg xrdp
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce * 
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-software
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-software*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-center
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y software-center*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *spotify*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y spotify-client
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *brave-browser*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y brave-browser-nightly
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *grub-efi*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y grub-efi*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y grub-efi
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y flameshot*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dnf*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-root-login*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y flameshot 
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dnf
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dbus-x11
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y dbus-*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *dbus*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kmix
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kmix*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y pulseaudio
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y pulseaudio*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-core
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-core*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak-tool
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnome-tweak-tool*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xserver-xorg-core-dbg
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y xserver-xorg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debian-goodies
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y debian-goodies*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg2 curl
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg2 curl*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y gnupg*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y anydesk
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y anydesk*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y libc++
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-xfce xorg xrdp
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-xfce * 
 
 
 sudo apt-get install -f -y survex-aven
@@ -593,27 +593,27 @@ sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 
 
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install synaptic*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y synaptic*
 sudo systemctl enable snapd.socket snapd apparmor
 sudo systemctl start snapd.socket snapd apparmor
 
 find-dbgsym-packages [core_path|running_pid|binary_path]
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 
 sudo apt-get install -f -y i3wm*
 sudo apt-get install -f -y *i3wm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install i3wm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *i3wm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y i3wm*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y *i3wm*
 sudo apt-get install -f -y *i3wm*
 sudo apt-get install -f -y kali-desktop-i3
 sudo apt-get install -f -y kali-desktop-i3-gaps
 sudo apt-get install -f -y i3wm*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-i3*
-sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-i3-gaps*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-i3*
+sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y kali-desktop-i3-gaps*
 sudo apt-get install -f -y kali-desktop-i3*
 sudo apt-get install -f -y kali-desktop-i3-gaps*
 sudo apt-get install -f -y i3wm
