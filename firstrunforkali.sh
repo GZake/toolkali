@@ -10,12 +10,12 @@ sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt 
-sudo apt-get install -f -y software-properties-common
-sudo apt-get install -f -y software-properties-common*
-sudo apt-get install -f -y *software-properties-common*
-sudo apt-get install -f -y software-properties-kde
-sudo apt-get install -f -y software-properties-kde*
-sudo apt-get install -f -y *software-properties-kde*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties-common
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties-common*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *software-properties-common*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties-kde
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties-kde*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *software-properties-kde*
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -72,7 +72,7 @@ sudo apt --fix-broken install -y | tee -a /root/Desktop/log.txt
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
-sudo apt-get install -f -y linux-headers-$(uname -r)
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests linux-headers-$(uname -r)
 
 cd ..
 sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
@@ -180,7 +180,7 @@ sudo umount ${usb}$num
 reboot
 
 root:
-sudo apt-get install -f -y kali-root-login
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-root-login
 passwd <<< $(printf "113006\n113006\n")
 goto choose
 
@@ -503,7 +503,7 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 
 
 key:
-sudo apt-get install -f -y launchpad-getkeys
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests launchpad-getkeys
 sudo launchpad-getkeys
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 sudo apt-get install y-ppa-manager
@@ -598,7 +598,7 @@ rm -f /usr/share/keyrings/microsoft.gpg
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
 
-sudo apt-get reinstall -f -y kali-archive-keyring
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 reinstall -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-archive-keyring
 
 sudo apt install apt-transport-https curl -y -f
 
