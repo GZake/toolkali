@@ -1,4 +1,299 @@
-cd /var/cache/apt/archives/
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common*
+
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-common*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-kde*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-kde*
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python-software-properties*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python-software-properties*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install python3-software-properties*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *python3-software-properties*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-gtk*
+
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-gtk*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kubuntu-desktop*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kubuntu-desktop*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install yadm
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install yadm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *yadm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine32
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine64
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wine*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wine*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install cinnamon*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install slim*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install lightdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install cdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sddm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install lxdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brzdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kde*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install plasma-framework
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kirigami*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install qingy*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mlogind*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tbsm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wayland*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xorg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install weston*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kwin*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install openbox*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install mir*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dwm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install nodm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ldm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install greetd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install win*
+#sudo mkdir /root/Downloads/update/
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *gdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *cinnamon*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *slim*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *lightdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *gnome*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *cdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *xdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *sddm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *lxdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brzdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kde*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *plasma-framework*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kirigami*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *qingy*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mlogind*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *tbsm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wayland*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *xorg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *weston*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kwin*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *openbox*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *mir*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dwm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *nodm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *ldm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *kdm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *greetd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *win*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-kde*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-mate*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-e17*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-gnome*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-lxde*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-default*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-arm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-headless*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-nethunter*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-gpu*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-hardware*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-crypto-stego*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-fuzzing*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-802-11*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-bluetooth*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-rfid*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-sdr*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-voip*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-windows-resources*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-information-gathering*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-vulnerability*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-web*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-database*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-passwords*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-wireless*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-reverse-engineering*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-exploitation*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-social-engineering*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-sniffing-spoofing*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-post-exploitation*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-forensics*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-tools-reporting*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-large*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-linux-everything*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-live*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install nvidia*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debconf
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debconf*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *debconf*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sysvinit-core
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install sysvinit-core*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *sysvinit-core*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install systemd-sysv
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install systemd-sysv*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *systemd-sysv*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install runit-init
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install runit-init*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *runit-init*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install progress-linux-container
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install progress-linux-container*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *progress-linux-container*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install molly-guard
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install molly-guard*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *molly-guard*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install finit-sysv
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install finit-sysv*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *finit-sysv*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bfh-container
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bfh-container*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *bfh-container*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bootlogd
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install bootlogd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *bootlogd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *properties-common
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *properties-kde
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install remmina
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install remmina*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *remmina*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tigervnc
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install tigervnc*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *tigervnc*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install zypper
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install zypper*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *zypper*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install eopkg
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install eopkg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *eopkg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wakeonlan
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install wakeonlan*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *wakeonlan*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install freerdp
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install freerdp*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *freerdp*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alien
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alien*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *alien
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft-edge-stable
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install microsoft*
+
+
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *snap*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *spotify*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install spotify-client
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brave-browser*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brave-browser-nightly
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *grub-efi*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-root-login*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot 
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg-core-dbg
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snap*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *snap*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install snapd*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install synaptic*
+sudo snap install snap-store
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-software*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-center*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *spotify*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install spotify-client
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *brave-browser*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install brave-browser-nightly
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *grub-efi*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install grub-efi
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install packaging-dev sbuild apt-file gitk git-lfs myrepos
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-root-login*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install flameshot 
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dnf
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dbus-x11
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install dbus-*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *dbus*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kmix*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install pulseaudio*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-core*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnome-tweak-tool*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg-core-dbg
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install xserver-xorg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install debian-goodies*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg2 curl*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install gnupg*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install anydesk*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install libc++
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce xorg xrdp
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-xfce * 
+
 
 sudo apt-get install -f -y survex-aven
 sudo apt-get install -f -y yadm
@@ -197,79 +492,7 @@ cd /var/cache/apt/archives/ ####################################################
 sudo apt-get install -f -y kubuntu-desktop
 sudo apt-get install -f -y kubuntu-desktop*
 sudo apt-get install -f -y *kubuntu-desktop*
-sudo apt-get download -y kubuntu-desktop
-sudo apt-get download -y kubuntu-desktop*
-sudo apt-get download -y *kubuntu-desktop*
-sudo apt-get download -y yadm
-sudo apt-get download -y yadm*
-sudo apt-get download -y *yadm*
-sudo apt-get download -y wine32
-sudo apt-get download -y wine64
-sudo apt-get download -y wine*
-sudo apt-get download -y *wine*
-sudo apt-get download -y gdm*
-sudo apt-get download -y cinnamon*
-sudo apt-get download -y slim*
-sudo apt-get download -y lightdm*
-sudo apt-get download -y gnome*
-sudo apt-get download -y cdm*
-sudo apt-get download -y xdm*
-sudo apt-get download -y sddm*
-sudo apt-get download -y lxdm*
-sudo apt-get download -y mdm*
-sudo apt-get download -y brzdm*
-sudo apt-get download -y kde*
-sudo apt-get download -y plasma-framework
-sudo apt-get download -y kirigami*
-sudo apt-get download -y qingy*
-sudo apt-get download -y mlogind*
-sudo apt-get download -y tbsm*
-sudo apt-get download -y wayland*
-sudo apt-get download -y xorg*
-sudo apt-get download -y weston*
-sudo apt-get download -y kwin*
-sudo apt-get download -y openbox*
-sudo apt-get download -y mir*
-sudo apt-get download -y dwm*
-sudo apt-get download -y wdm*
-sudo apt-get download -y nodm*
-sudo apt-get download -y ldm*
-sudo apt-get download -y kdm*
-sudo apt-get download -y greetd*
-sudo apt-get download -y dm*
-sudo apt-get download -y win*
-#sudo mkdir /root/Downloads/update/
-sudo apt-get download -y *gdm*
-sudo apt-get download -y *cinnamon*
-sudo apt-get download -y *slim*
-sudo apt-get download -y *lightdm*
-sudo apt-get download -y *gnome*
-sudo apt-get download -y *cdm*
-sudo apt-get download -y *xdm*
-sudo apt-get download -y *sddm*
-sudo apt-get download -y *lxdm*
-sudo apt-get download -y *mdm*
-sudo apt-get download -y *brzdm*
-sudo apt-get download -y *kde*
-sudo apt-get download -y *plasma-framework*
-sudo apt-get download -y *kirigami*
-sudo apt-get download -y *qingy*
-sudo apt-get download -y *mlogind*
-sudo apt-get download -y *tbsm*
-sudo apt-get download -y *wayland*
-sudo apt-get download -y *xorg*
-sudo apt-get download -y *weston*
-sudo apt-get download -y *kwin*
-sudo apt-get download -y *openbox*
-sudo apt-get download -y *mir*
-sudo apt-get download -y *dwm*
-sudo apt-get download -y *wdm*
-sudo apt-get download -y *nodm*
-sudo apt-get download -y *ldm*
-sudo apt-get download -y *kdm*
-sudo apt-get download -y *greetd*
-sudo apt-get download -y *dm*
-sudo apt-get download -y *win*
+
 sudo apt-get install -f -y *gdm*
 sudo apt-get install -f -y *cinnamon*
 sudo apt-get install -f -y *slim*
@@ -330,45 +553,7 @@ sudo apt-get install -f -y ldm*
 sudo apt-get install -f -y kdm*
 sudo apt-get install -f -y greetd*
 sudo apt-get install -f -y dm*
-sudo apt-get download -y kali*
-sudo apt-get download -y kali-desktop*
-sudo apt-get download -y kali-desktop-kde*
-sudo apt-get download -y kali-desktop-mate*
-sudo apt-get download -y kali-desktop-e17*
-sudo apt-get download -y kali-desktop-gnome*
-sudo apt-get download -y kali-desktop-lxde*
-sudo apt-get download -y kali-linux-default*
-sudo apt-get download -y kali-linux-arm*
-sudo apt-get download -y kali-linux-headless*
-sudo apt-get download -y kali-linux-nethunter*
-sudo apt-get download -y kali-tools-gpu*
-sudo apt-get download -y kali-tools-hardware*
-sudo apt-get download -y kali-tools-crypto-stego*
-sudo apt-get download -y kali-tools-fuzzing*
-sudo apt-get download -y kali-tools-802-11*
-sudo apt-get download -y kali-tools-bluetooth*
-sudo apt-get download -y kali-tools-rfid*
-sudo apt-get download -y kali-tools-sdr*
-sudo apt-get download -y kali-tools-voip*
-sudo apt-get download -y kali-tools-windows-resources*
-sudo apt-get download -y kali-tools-information-gathering*
-sudo apt-get download -y kali-tools-vulnerability*
-sudo apt-get download -y kali-tools-web*
-sudo apt-get download -y kali-tools-database*
-sudo apt-get download -y kali-tools-passwords*
-sudo apt-get download -y kali-tools-wireless*
-sudo apt-get download -y kali-tools-reverse-engineering*
-sudo apt-get download -y kali-tools-exploitation*
-sudo apt-get download -y kali-tools-social-engineering*
-sudo apt-get download -y kali-tools-sniffing-spoofing*
-sudo apt-get download -y kali-tools-post-exploitation*
-sudo apt-get download -y kali-tools-forensics*
-sudo apt-get download -y kali-tools-reporting*
-sudo apt-get download -y kali-linux-large*
-sudo apt-get download -y kali-linux-everything*
-sudo apt-get download -y kali-desktop-live*
-sudo apt-get download -y kali-desktop-xfce*
-sudo apt-get download -y nvidia*
+
 sudo apt-get install -f -y kali*
 sudo apt-get install -f -y kali-desktop*
 sudo apt-get install -f -y kali-desktop-kde*
@@ -412,212 +597,32 @@ sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 
 
-sudo apt-get download -y debconf
-sudo apt-get download -y debconf*
-sudo apt-get download -y *debconf*
-sudo apt-get download -y sysvinit-core
-sudo apt-get download -y sysvinit-core*
-sudo apt-get download -y *sysvinit-core*
-sudo apt-get download -y systemd-sysv
-sudo apt-get download -y systemd-sysv*
-sudo apt-get download -y *systemd-sysv*
-sudo apt-get download -y runit-init
-sudo apt-get download -y runit-init*
-sudo apt-get download -y *runit-init*
-sudo apt-get download -y progress-linux-container
-sudo apt-get download -y progress-linux-container*
-sudo apt-get download -y *progress-linux-container*
-sudo apt-get download -y molly-guard
-sudo apt-get download -y molly-guard*
-sudo apt-get download -y *molly-guard*
-sudo apt-get download -y finit-sysv
-sudo apt-get download -y finit-sysv*
-sudo apt-get download -y *finit-sysv*
-sudo apt-get download -y bfh-container
-sudo apt-get download -y bfh-container*
-sudo apt-get download -y *bfh-container*
-sudo apt-get download -y bootlogd
-sudo apt-get download -y bootlogd*
-sudo apt-get download -y *bootlogd*
-
-sudo apt-get download -y software-properties-common
-
-sudo apt-get download -y software-properties-common*
 
 
-sudo apt-get download -y *software-properties-common*
-
-sudo apt-get download -y software-properties-kde
-
-sudo apt-get download -y software-properties-kde*
-
-sudo apt-get download -y *software-properties-kde*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
-sudo apt-get download -y python-software-properties
-
-sudo apt-get download -y python-software-properties*
-
-sudo apt-get download -y *python-software-properties*
-
-sudo apt-get download -y python3-software-properties
-
-sudo apt-get download -y python3-software-properties*
-
-sudo apt-get download -y *python3-software-properties*
-
-sudo apt-get download -y software-properties-gtk
-
-sudo apt-get download -y software-properties-gtk*
-
-sudo apt-get download -y *software-properties-gtk*
-
-sudo apt-get download -y software-properties*
-sudo apt-get download -y software*
-sudo apt-get download -y *properties-common
-sudo apt-get download -y *properties-kde
-sudo apt-get download -y remmina
-sudo apt-get download -y remmina*
-sudo apt-get download -y *remmina*
-sudo apt-get download -y tigervnc
-sudo apt-get download -y tigervnc*
-sudo apt-get download -y *tigervnc*
-sudo apt-get download -y zypper
-sudo apt-get download -y zypper*
-sudo apt-get download -y *zypper*
-sudo apt-get download -y eopkg
-sudo apt-get download -y eopkg*
-sudo apt-get download -y *eopkg*
-sudo apt-get download -y wakeonlan
-sudo apt-get download -y wakeonlan*
-sudo apt-get download -y *wakeonlan*
-sudo apt-get download -y freerdp
-sudo apt-get download -y freerdp*
-sudo apt-get download -y *freerdp*
-sudo apt-get download -y alien
-sudo apt-get download -y alien*
-sudo apt-get download -y *alien
-sudo apt-get download -y microsoft-edge-stable
-sudo apt-get download -y microsoft*
 
 
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt-get download -y ibus-unikey*
-sudo apt-get download -y ibus-unikey
-sudo apt-get download -y snap
-sudo apt-get download -y snap*
-sudo apt-get download -y *snap*
-sudo apt-get download -y snapd
-sudo apt-get download -y snapd*
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo apt-get download -y synaptic*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install synaptic*
 sudo systemctl enable snapd.socket snapd apparmor
 sudo systemctl start snapd.socket snapd apparmor
-sudo apt-get download -y gnome-software
-sudo apt-get download -y gnome-software*
-sudo apt-get download -y software-center
-sudo apt-get download -y software-center*
-sudo apt-get download -y *spotify*
-sudo apt-get download -y spotify-client
-sudo apt-get download -y *brave-browser*
-sudo apt-get download -y brave-browser-nightly
-sudo apt-get download -y *grub-efi*
-sudo apt-get download -y grub-efi*
-sudo apt-get download -y grub-efi
-sudo apt-get download -y packaging-dev sbuild apt-file gitk git-lfs myrepos
-sudo apt-get download -y flameshot*
-sudo apt-get download -y dnf*
-sudo apt-get download -y kali-root-login*
-sudo apt-get download -y flameshot 
-sudo apt-get download -y dnf
-sudo apt-get download -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
-sudo apt-get download -y kmix
-sudo apt-get download -y kmix*
-sudo apt-get download -y pulseaudio
-sudo apt-get download -y pulseaudio*
-sudo apt-get download -y gnome-core
-sudo apt-get download -y gnome-core*
-sudo apt-get download -y gnome-tweak
-sudo apt-get download -y gnome-tweak*
-sudo apt-get download -y gnome-tweak-tool
-sudo apt-get download -y gnome-tweak-tool*
-sudo apt-get download -y xserver-xorg-core-dbg
-sudo apt-get download -y xserver-xorg*
-sudo apt-get download -y debian-goodies
-sudo apt-get download -y debian-goodies*
-sudo apt-get download -y gnupg2 curl
-sudo apt-get download -y gnupg2 curl*
-sudo apt-get download -y gnupg*
-sudo apt-get download -y anydesk
-sudo apt-get download -y anydesk*
-sudo apt-get download -y libc++
-sudo apt-get download -y libc++*
+
 find-dbgsym-packages [core_path|running_pid|binary_path]
-sudo apt-get download -y ibus-unikey*
-sudo apt-get download -y ibus-unikey
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install ibus-unikey
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt-get download -y snap
-sudo apt-get download -y snap*
-sudo apt-get download -y *snap*
-sudo apt-get download -y snapd
-sudo apt-get download -y snapd*
-sudo apt-get download -y synaptic*
-sudo snap install snap-store
-sudo apt-get download -y gnome-software
-sudo apt-get download -y gnome-software*
-sudo apt-get download -y software-center
-sudo apt-get download -y software-center*
-sudo apt-get download -y *spotify*
-sudo apt-get download -y spotify-client
-sudo apt-get download -y *brave-browser*
-sudo apt-get download -y brave-browser-nightly
-sudo apt-get download -y *grub-efi*
-sudo apt-get download -y grub-efi*
-sudo apt-get download -y grub-efi
-sudo apt-get download -y packaging-dev sbuild apt-file gitk git-lfs myrepos
-sudo apt-get download -y flameshot*
-sudo apt-get download -y dnf*
-sudo apt-get download -y kali-root-login*
-sudo apt-get download -y flameshot 
-sudo apt-get download -y dnf
-sudo apt-get download -y dbus-x11
-sudo apt-get download -y dbus-*
-sudo apt-get download -y *dbus*
-sudo apt-get download -y alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
-sudo apt-get download -y kmix
-sudo apt-get download -y kmix*
-sudo apt-get download -y pulseaudio
-sudo apt-get download -y pulseaudio*
-sudo apt-get download -y gnome-core
-sudo apt-get download -y gnome-core*
-sudo apt-get download -y gnome-tweak
-sudo apt-get download -y gnome-tweak*
-sudo apt-get download -y gnome-tweak-tool
-sudo apt-get download -y gnome-tweak-tool*
-sudo apt-get download -y xserver-xorg-core-dbg
-sudo apt-get download -y xserver-xorg*
-sudo apt-get download -y debian-goodies
-sudo apt-get download -y debian-goodies*
-sudo apt-get download -y gnupg2 curl
-sudo apt-get download -y gnupg2 curl*
-sudo apt-get download -y gnupg*
-sudo apt-get download -y anydesk
-sudo apt-get download -y anydesk*
-sudo apt-get download -y libc++
-sudo apt-get download -y kali-desktop-xfce xorg xrdp
-sudo apt-get download -y kali-desktop-xfce * 
 
 sudo apt-get install -f -y i3wm*
 sudo apt-get install -f -y *i3wm*
-sudo apt-get download -y i3wm*
-sudo apt-get download -y *i3wm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install i3wm*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *i3wm*
 sudo apt-get install -f -y *i3wm*
 sudo apt-get install -f -y kali-desktop-i3
 sudo apt-get install -f -y kali-desktop-i3-gaps
 sudo apt-get install -f -y i3wm*
-sudo apt-get download -y kali-desktop-i3*
-sudo apt-get download -y kali-desktop-i3-gaps*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-i3*
+sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install kali-desktop-i3-gaps*
 sudo apt-get install -f -y kali-desktop-i3*
 sudo apt-get install -f -y kali-desktop-i3-gaps*
 sudo apt-get install -f -y i3wm
@@ -625,7 +630,6 @@ sudo apt-get install -f -y i3wm
 sudo apt-get install -f -y i3wm
 sudo apt-get install -f -y kali-desktop-i3*
 sudo apt-get install -f -y kali-desktop-i3-gaps*
-
 
 
 cd $HOME/toolkali/ 
