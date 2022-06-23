@@ -1,3 +1,7 @@
+sudo chmod -Rv 777 /var/cache/apt/archives/ 
+sudo chown -Rv _apt:root /var/cache/apt/archives/
+sudo chmod -Rv 777 /var/lib/apt/lists/
+sudo chown -Rv _apt:root /var/lib/apt/lists/
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install software-properties-common*
 sudo apt-get -d -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install *software-properties-common*
