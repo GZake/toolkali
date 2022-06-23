@@ -339,11 +339,11 @@ sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
+sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
+sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
 sudo apt-get update -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo apt-get upgrade -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo apt-get full-upgrade -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt 
