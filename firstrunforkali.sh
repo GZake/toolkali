@@ -339,19 +339,19 @@ sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt --fix-broken install -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt update --fix-missing -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt-get update -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt-get upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
-sudo apt-get full-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt 
-sudo apt-get dist-upgrade -y | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
+sudo apt --fix-broken install -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt update --fix-missing -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get update -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get upgrade -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-ap
+sudo apt-get full-upgrade -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt 
+sudo apt-get dist-upgrade -ym --ignore-hold | tee -a  /root/Desktop/log.txt | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt
 sudo timedatectl set-ntp on | tee -a  /root/Desktop/log.txt
-sudo apt-get autoremove -y | tee -a  /root/Desktop/log.txt
-sudo apt-get autoclean -y | tee -a  /root/Desktop/log.txt
-sudo apt-get clean -y | tee -a  /root/Desktop/log.txt
+sudo apt-get autoremove -y --ignore-hold | tee -a  /root/Desktop/log.txt
+sudo apt-get autoclean -y --ignore-hold | tee -a  /root/Desktop/log.txt
+sudo apt-get clean -y --ignore-hold | tee -a  /root/Desktop/log.txt
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
