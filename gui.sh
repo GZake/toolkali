@@ -1,3 +1,4 @@
+sudo service packagekit restart
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
