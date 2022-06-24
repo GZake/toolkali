@@ -31,10 +31,10 @@ sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y yadm &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y yadm* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *yadm* &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine32 &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine64 &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine* &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *wine* &
+#sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine32 &
+#sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine64 &
+#sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y wine* &
+#sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *wine* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y gdm* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y cinnamon* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y slim* &
@@ -65,7 +65,6 @@ sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y kdm* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y greetd* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y dm* &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y win* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *gdm* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *cinnamon* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *slim* &
@@ -96,7 +95,6 @@ sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *kdm* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *greetd* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *dm* &
-sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y *win* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y kali* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y kali-desktop* &
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/'  -o APT::Default-Release=1  -o Debug::NoLocking=1 install -y kali-desktop-kde* &
