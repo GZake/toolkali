@@ -425,6 +425,8 @@ sudo timedatectl set-ntp on
 exit(0)
 " | tee -a /etc/rc.local
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
@@ -460,12 +462,15 @@ sudo apt-add-repository https://packages.microsoft.com/config/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/prod/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-fast/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-slow/
-sudo apt-add-repository ppa:blue-shell/sddm
-sudo apt-add-repository ppa:blue-shell/gdm3
-sudo apt-add-repository ppa:blue-shell/kde
-sudo apt-add-repository ppa:blue-shell/xdm
+sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-sudo add-apt-repository ppa:micahflee/ppa
+sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
+
 
 
 
@@ -616,9 +621,10 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 rei
 sudo apt install apt-transport-https curl -y -f
 
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg https://brave-browser-apt-nightly.s3.brave.com/brave-browser-nightly-archive-keyring.gpg
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-beta-archive-keyring.gpg https://brave-browser-apt-beta.s3.brave.com/brave-browser-beta-archive-keyring.gpg
 sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
+
 
 
 curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
