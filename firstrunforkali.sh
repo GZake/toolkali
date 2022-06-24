@@ -470,6 +470,11 @@ sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal mai
 sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
+sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
+sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
+sudo bash listppa*
+sudo bash installppa*
+sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
 
 
