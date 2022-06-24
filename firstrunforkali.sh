@@ -465,6 +465,7 @@ sudo apt-add-repository ppa:blue-shell/gdm3
 sudo apt-add-repository ppa:blue-shell/kde
 sudo apt-add-repository ppa:blue-shell/xdm
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+sudo add-apt-repository ppa:micahflee/ppa
 
 
 
@@ -585,6 +586,9 @@ wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+curl -s https://openpgpkey.torproject.org/.well-known/openpgpkey/torproject.org/hu/kounek7zrdx745qydx6p59t9mqjpuhdf |gpg --import -
+
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
