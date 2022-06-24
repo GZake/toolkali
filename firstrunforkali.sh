@@ -584,6 +584,7 @@ wget -qO - http://deb.playonlinux.com/public.gpg  | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
