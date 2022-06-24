@@ -8,6 +8,7 @@ sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
+sudo service packagekit restart
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #####
@@ -300,6 +301,7 @@ echo 100 >> /proc/sys/vm/swappiness
 
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 echo "
+sudo service packagekit restart
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture ia64
@@ -664,6 +666,7 @@ then
 fi
 
 echo "UPDATING..."
+sudo service packagekit restart
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture ia64
@@ -781,6 +784,7 @@ fi
 #######################################################
 fulup:
 echo "UPDATING..."
+sudo service packagekit restart
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture ia64
