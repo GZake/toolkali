@@ -12,6 +12,7 @@ sudo apt-mark unhold *wayland*
 sudo apt-mark unhold *software*
 sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
+sudo apt-mark hold needrestart*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
