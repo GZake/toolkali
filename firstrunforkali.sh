@@ -1,5 +1,32 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
+sudo apt-mark unhold *plasma*
+sudo apt-mark unhold *kde*
+sudo apt-mark unhold *gnome*
+sudo apt-mark unhold *kali*
+sudo apt-mark unhold *nvidia*
+sudo apt-mark unhold *dm*
+sudo apt-mark unhold *cinnamon*
+sudo apt-mark unhold *slim*
+sudo apt-mark unhold *wayland*
+sudo apt-mark unhold *software*
+sudo apt-mark unhold *grub*
+sudo apt-mark unhold *spotify*
+sudo apt-mark unhold *debian*
+sudo apt-mark unhold *snap*
+sudo apt-mark unhold *flatpak*
+sudo apt-mark unhold *gnupg*
+sudo apt-mark unhold *ubuntu*
+sudo apt-mark unhold *xrdp*
+sudo apt-mark unhold *core*
+sudo apt-mark unhold *xserver*
+sudo apt-mark unhold *xorg*
+sudo apt-mark unhold *lib*
+sudo apt-mark unhold *dnf*
+sudo apt-mark unhold *any*
+sudo apt-mark unhold *tool*
+sudo apt-mark unhold *
+sudo apt-mark hold wine1.6*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
