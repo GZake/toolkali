@@ -31,6 +31,7 @@ sudo apt-mark unhold *linux*
 sudo apt-mark unhold *x*
 sudo apt-mark unhold *deb*
 sudo apt-mark unhold *alien*
+sudo apt-mark unhold *db*
 sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
