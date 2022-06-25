@@ -25,6 +25,7 @@ sudo apt-mark unhold *lib*
 sudo apt-mark unhold *dnf*
 sudo apt-mark unhold *any*
 sudo apt-mark unhold *tool*
+sudo apt-mark unhold *game*
 sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
