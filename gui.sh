@@ -320,7 +320,8 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-tools-windows-resources
 sudo rm -fRvd /tmp/apt-dpkg-install-QpG6h2/*wine*
 sudo rm -fRvd /var/cache/apt/archives/*wine*
-sudo rm -fRvd /usr/lib/x86_64-linux-gnu/*wine*/
+sudo rm -fRvd /usr/lib/x86_64-linux-gnu/*wine*
+sudo rm -fRvd /var/cache/apt/archives/libpng* 
 sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
 sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-tools-information-gathering
