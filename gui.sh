@@ -1,5 +1,16 @@
 sudo service packagekit restart
 sudo apt-mark hold wine1.6*
+sudo apt-mark unhold *plasma*
+sudo apt-mark unhold *kde*
+sudo apt-mark unhold *gnome*
+sudo apt-mark unhold *kali*
+sudo apt-mark unhold *nvidia*
+sudo apt-mark unhold *dm*
+sudo apt-mark unhold *cinamon*
+sudo apt-mark unhold *slim*
+sudo apt-mark unhold *wayland*
+sudo apt-mark unhold *
+sudo apt-mark hold wine1.6*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
