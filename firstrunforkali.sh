@@ -2,6 +2,7 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 sudo apt-mark unhold *plasma*
 sudo apt-mark unhold *kde*
+sudo apt-mark unhold *pkg*
 sudo apt-mark unhold *gnome*
 sudo apt-mark unhold *kali*
 sudo apt-mark unhold *nvidia*
