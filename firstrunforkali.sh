@@ -537,10 +537,11 @@ sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager <<< $(printf "\n")
 sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
 sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
 sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
-sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+sudo add-apt-repository ppa:jonathonf/ffmpeg-4 <<< $(printf "\n")
 sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n") <<< $(printf "\n")
 sudo add-ppa-repository ppa:*/ppa <<< $(printf "\n")
 sudo bash listppa*
@@ -595,8 +596,7 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 key:
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  launchpad-getkeys
 sudo launchpad-getkeys
-sudo add-apt-repository ppa:webupd8team/y-ppa-manager
-sudo apt-get install y-ppa-manager
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests y-ppa-manager
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
