@@ -530,6 +530,7 @@ sudo apt-add-repository https://packages.microsoft.com/config/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/prod/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-fast/
 sudo apt-add-repository https://packages.microsoft.com/fedora/26/insiders-slow/
+sudo add-apt-repository ppa:numix/ppa <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
