@@ -540,6 +540,9 @@ sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
 sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
 sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
+sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n") <<< $(printf "\n")
+sudo add-ppa-repository ppa:*/ppa <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
@@ -616,6 +619,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 16126D3A3E5C11
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF35C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117
 sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
@@ -636,7 +640,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6AF0E1940624A220
 sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6AF0E1940624A220
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-
+curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4C1CBC1B69B0E2F4
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9578539176BAFBC6
