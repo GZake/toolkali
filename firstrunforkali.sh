@@ -545,7 +545,7 @@ sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
 sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
 sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
 sudo add-apt-repository ppa:jonathonf/ffmpeg-4 <<< $(printf "\n")
-sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n") <<< $(printf "\n")
+sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n")
 sudo add-ppa-repository ppa:*/ppa <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
@@ -777,8 +777,8 @@ sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt update --fix-missing -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt --fix-broken install -y 
+sudo apt update --fix-missing -y 
 dpkg --configure -a | tee -a $HOME/Desktop/log.txt
 apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -895,10 +895,10 @@ sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt --fix-broken install -y 
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
-sudo apt --fix-broken install -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt update --fix-missing -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt --fix-broken install -y 
+sudo apt update --fix-missing -y 
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
