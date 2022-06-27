@@ -534,6 +534,8 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo apt-add-repository *:*/* <<< $(printf "\n")
+sudo apt-add-repository x:x/x <<< $(printf "\n")
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
