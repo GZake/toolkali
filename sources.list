@@ -355,37 +355,37 @@ deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stretch main
 deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ testing main
 #deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ unstable main
 
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ artful main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ bionic main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ disco main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ eoan main
-#deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ focal main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ groovy main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ impish main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ jammy main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ precise main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ trusty main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ xenial main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ zesty main
+deb http://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb http://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb http://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb http://dl.winehq.org/wine-builds/ubuntu/ eoan main
+#deb http://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb http://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb http://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb http://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb http://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb http://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb http://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb http://dl.winehq.org/wine-builds/ubuntu/ zesty main
 
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ artful main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ bionic main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ disco main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ eoan main
-#deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ focal main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ groovy main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ impish main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ jammy main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ precise main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ trusty main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ xenial main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ zesty main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ eoan main
+#deb-src http://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ zesty main
 
 deb [trusted=yes] http://deb.playonlinux.com/ etch main
 deb [trusted=yes] http://deb.playonlinux.com/ maverick main
