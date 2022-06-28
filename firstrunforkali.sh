@@ -1,68 +1,68 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
-sudo apt-mark unhold *plasma* &
-sudo apt-mark unhold *kde*&
-sudo apt-mark unhold *pkg*&
-sudo apt-mark unhold *gnome*&
-sudo apt-mark unhold *kali*&
-sudo apt-mark unhold *nvidia*&
-sudo apt-mark unhold *dm*&
-sudo apt-mark unhold *de*&
-sudo apt-mark unhold *ki*&
-sudo apt-mark unhold *cinnamon*&
-sudo apt-mark unhold *slim*&
-sudo apt-mark unhold *wayland*&
-sudo apt-mark unhold *software*&
-sudo apt-mark unhold *grub*&
-sudo apt-mark unhold *spotify*&
-sudo apt-mark unhold *debian*&
-sudo apt-mark unhold *snap*&
-sudo apt-mark unhold *flatpak*&
-sudo apt-mark unhold *gnupg*&
-sudo apt-mark unhold *ubuntu*&
-sudo apt-mark unhold *xrdp*&
-sudo apt-mark unhold *core*&
-sudo apt-mark unhold *xserver*&
-sudo apt-mark unhold *xorg*&
-sudo apt-mark unhold *lib*&
+sudo apt-mark unhold *plasma* 
+sudo apt-mark unhold *kde*
+sudo apt-mark unhold *pkg*
+sudo apt-mark unhold *gnome*
+sudo apt-mark unhold *kali*
+sudo apt-mark unhold *nvidia*
+sudo apt-mark unhold *dm*
+sudo apt-mark unhold *de*
+sudo apt-mark unhold *ki*
+sudo apt-mark unhold *cinnamon*
+sudo apt-mark unhold *slim*
+sudo apt-mark unhold *wayland*
+sudo apt-mark unhold *software*
+sudo apt-mark unhold *grub*
+sudo apt-mark unhold *spotify*
+sudo apt-mark unhold *debian*
+sudo apt-mark unhold *snap*
+sudo apt-mark unhold *flatpak*
+sudo apt-mark unhold *gnupg*
+sudo apt-mark unhold *ubuntu*
+sudo apt-mark unhold *xrdp*
+sudo apt-mark unhold *core*
+sudo apt-mark unhold *xserver*
+sudo apt-mark unhold *xorg*
+sudo apt-mark unhold *lib*
 sudo apt-mark unhold *dnf*&
-sudo apt-mark unhold *any*&
-sudo apt-mark unhold *tool*&
-sudo apt-mark unhold *game*&
-sudo apt-mark unhold *py*&
-sudo apt-mark unhold *linux*&
-sudo apt-mark unhold *deb*&
-sudo apt-mark unhold *alien*&
-sudo apt-mark unhold *db*&
-sudo apt-mark unhold *ui*&
-sudo apt-mark unhold *sm*&
-sudo apt-mark unhold *sy*&
-sudo apt-mark unhold *a*&
-sudo apt-mark unhold *b*&
-sudo apt-mark unhold *c*&
-sudo apt-mark unhold *d*&
-sudo apt-mark unhold *e*&
-sudo apt-mark unhold *f*&
-sudo apt-mark unhold *g*&
-sudo apt-mark unhold *h*&
-sudo apt-mark unhold *i*&
-sudo apt-mark unhold *j*&
-sudo apt-mark unhold *k*&
-sudo apt-mark unhold *l*&
-sudo apt-mark unhold *m*&
-sudo apt-mark unhold *n*&
-sudo apt-mark unhold *o*&
-sudo apt-mark unhold *p*&
-sudo apt-mark unhold *q*&
-sudo apt-mark unhold *r*&
-sudo apt-mark unhold *s*&
-sudo apt-mark unhold *t*&
-sudo apt-mark unhold *u*&
-sudo apt-mark unhold *v*&
-sudo apt-mark unhold *ư*&
-sudo apt-mark unhold *x*&
-sudo apt-mark unhold *y*&
-sudo apt-mark unhold *z*&
+sudo apt-mark unhold *any*
+sudo apt-mark unhold *tool*
+sudo apt-mark unhold *game*
+sudo apt-mark unhold *py*
+sudo apt-mark unhold *linux*
+sudo apt-mark unhold *deb*
+sudo apt-mark unhold *alien*
+sudo apt-mark unhold *db*
+sudo apt-mark unhold *ui*
+sudo apt-mark unhold *sm*
+sudo apt-mark unhold *sy*
+sudo apt-mark unhold *a*
+sudo apt-mark unhold *b*
+sudo apt-mark unhold *c*
+sudo apt-mark unhold *d*
+sudo apt-mark unhold *e*
+sudo apt-mark unhold *f*
+sudo apt-mark unhold *g*
+sudo apt-mark unhold *h*
+sudo apt-mark unhold *i*
+sudo apt-mark unhold *j*
+sudo apt-mark unhold *k*
+sudo apt-mark unhold *l*
+sudo apt-mark unhold *m*
+sudo apt-mark unhold *n*
+sudo apt-mark unhold *o*
+sudo apt-mark unhold *p*
+sudo apt-mark unhold *q*
+sudo apt-mark unhold *r*
+sudo apt-mark unhold *s*
+sudo apt-mark unhold *t*
+sudo apt-mark unhold *u*
+sudo apt-mark unhold *v*
+sudo apt-mark unhold *ư*
+sudo apt-mark unhold *x*
+sudo apt-mark unhold *y*
+sudo apt-mark unhold *z*
 
 sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
@@ -496,6 +496,7 @@ exit(0)
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
@@ -703,6 +704,7 @@ sudo apt install apt-transport-https curl -y -f
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg https://brave-browser-apt-nightly.s3.brave.com/brave-browser-nightly-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-beta-archive-keyring.gpg https://brave-browser-apt-beta.s3.brave.com/brave-browser-beta-archive-keyring.gpg
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-dev-archive-keyring.gpg https://brave-browser-apt-dev.s3.brave.com/brave-browser-dev-archive-keyring.gpg
 sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg <<< $(printf "y\n")
 
 
