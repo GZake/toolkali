@@ -576,7 +576,15 @@ sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
 sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
 sudo add-apt-repository ppa:jonathonf/ffmpeg-4 <<< $(printf "\n")
 sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n")
-sudo add-ppa-repository ppa:*/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:usarinheininga/ubuntu-plasma <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/kde-xenial <<< $(printf "\n")
+sudo add-ppa-repository ppa:*/* <<< $(printf "\n")
+sudo add-ppa-repository ppa:x/x <<< $(printf "\n")
+sudo add-apt-repository ppa:alexey-noskov/kde <<< $(printf "\n")
+sudo add-apt-repository ppa:plasmazilla/releases <<< $(printf "\n")
+sudo add-apt-repository ppa:oliver-traeger+launchpad/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:kubuntu-ppa/backports <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/kde-5-80 <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
