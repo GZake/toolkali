@@ -435,7 +435,7 @@ deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contri
 deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb https://http.kali.org/kali/ kali-last-snapshot contrib non-free
-deb https://http.kali.org/kali/ kali-rolling main contrib non-free
+deb [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
 deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
@@ -444,7 +444,7 @@ deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-last-snapshot contrib non-free
-deb-src https://http.kali.org/kali/ kali-rolling main contrib non-free
+deb-src [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
 deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
