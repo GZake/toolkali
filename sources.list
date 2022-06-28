@@ -331,29 +331,29 @@ deb [trusted=yes] http://ddebs.ubuntu.com kinetic main restricted universe multi
 
 deb [trusted=yes] http://ddebs.ubuntu.com trusty-security main restricted universe multiverse
 
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ wheezy main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bookworm main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bullseye main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ buster main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ jessie main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ oldstable main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ sid main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stable main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stretch main
-deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ testing main
-#deb [trusted=yes] http://dl.winehq.org/wine-builds/debian/ unstable main
+deb  http://dl.winehq.org/wine-builds/debian/ wheezy main
+deb  http://dl.winehq.org/wine-builds/debian/ bookworm main
+deb  http://dl.winehq.org/wine-builds/debian/ bullseye main
+deb  http://dl.winehq.org/wine-builds/debian/ buster main
+deb  http://dl.winehq.org/wine-builds/debian/ jessie main
+deb  http://dl.winehq.org/wine-builds/debian/ oldstable main
+deb  http://dl.winehq.org/wine-builds/debian/ sid main
+deb  http://dl.winehq.org/wine-builds/debian/ stable main
+deb  http://dl.winehq.org/wine-builds/debian/ stretch main
+deb  http://dl.winehq.org/wine-builds/debian/ testing main
+#deb  http://dl.winehq.org/wine-builds/debian/ unstable main
 
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ wheezy main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bookworm main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ bullseye main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ buster main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ jessie main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ oldstable main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ sid main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stable main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ stretch main
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ testing main
-#deb-src [trusted=yes] http://dl.winehq.org/wine-builds/debian/ unstable main
+deb-src  http://dl.winehq.org/wine-builds/debian/ wheezy main
+deb-src  http://dl.winehq.org/wine-builds/debian/ bookworm main
+deb-src  http://dl.winehq.org/wine-builds/debian/ bullseye main
+deb-src  http://dl.winehq.org/wine-builds/debian/ buster main
+deb-src  http://dl.winehq.org/wine-builds/debian/ jessie main
+deb-src  http://dl.winehq.org/wine-builds/debian/ oldstable main
+deb-src  http://dl.winehq.org/wine-builds/debian/ sid main
+deb-src  http://dl.winehq.org/wine-builds/debian/ stable main
+deb-src  http://dl.winehq.org/wine-builds/debian/ stretch main
+deb-src  http://dl.winehq.org/wine-builds/debian/ testing main
+#deb-src  http://dl.winehq.org/wine-builds/debian/ unstable main
 
 deb http://dl.winehq.org/wine-builds/ubuntu/ artful main
 deb http://dl.winehq.org/wine-builds/ubuntu/ bionic main
