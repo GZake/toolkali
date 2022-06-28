@@ -612,6 +612,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B05498B7
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7FCC7D46ACCC4CF8
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C2518248EEA14886
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
