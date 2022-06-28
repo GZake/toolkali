@@ -647,6 +647,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3BDB3D89CE49EC24
 gpg --export --armor 3BDB3D89CE49EC24 | sudo apt-key add -
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-beta-archive-keyring.gpg https://brave-browser-apt-beta.s3.brave.com/brave-browser-beta-archive-keyring.gpg
+sudo curl -fsSLo /usr/share/keyrings/steam.gpg http://repo.steampowered.com/steam/archive/stable/steam.gpg
 sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6AF0E1940624A220
 sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6AF0E1940624A220
