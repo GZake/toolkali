@@ -25,7 +25,7 @@ sudo apt-mark unhold *core*
 sudo apt-mark unhold *xserver*
 sudo apt-mark unhold *xorg*
 sudo apt-mark unhold *lib*
-sudo apt-mark unhold *dnf*&
+sudo apt-mark unhold *dnf*
 sudo apt-mark unhold *any*
 sudo apt-mark unhold *tool*
 sudo apt-mark unhold *game*
