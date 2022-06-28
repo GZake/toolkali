@@ -626,6 +626,7 @@ sudo add-apt-repository ppa:kelebek333/nvidia-legacy <<< $(printf "\n")
 sudo add-apt-repository ppa:universal/nvidia-updates <<< $(printf "\n")
 sudo apt-add-repository -ys ppa:system76-dev/stable <<< $(printf "\n")
 sudo add-apt-repository ppa:yavdr/main <<< $(printf "\n")
+sudo add-apt-repository ppa:netext/nvidia-stable <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
