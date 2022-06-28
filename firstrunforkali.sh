@@ -592,6 +592,8 @@ sudo add-apt-repository ppa:blue-shell/accounts <<< $(printf "\n")
 sudo add-apt-repository ppa:colin-duquesnoy/stable <<< $(printf "\n")
 sudo add-apt-repository ppa:jstaf/onedriver <<< $(printf "\n")
 sudo add-apt-repository ppa:tomtomtom/onedrive <<< $(printf "\n")
+sudo add-apt-repository ppa:jr/plasma-wayland <<< $(printf "\n")
+sudo add-apt-repository ppa:netrunner-os/enigma-1306 <<< $(printf "\n")
 
 sudo bash listppa*
 sudo bash installppa*
