@@ -585,6 +585,14 @@ sudo add-apt-repository ppa:plasmazilla/releases <<< $(printf "\n")
 sudo add-apt-repository ppa:oliver-traeger+launchpad/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:kubuntu-ppa/backports <<< $(printf "\n")
 sudo add-apt-repository ppa:savoury1/kde-5-80 <<< $(printf "\n")
+sudo add-apt-repository ppa:netrunner-os/netrunner-16-official <<< $(printf "\n")
+sudo add-apt-repository ppa:nrbrtx/xorg-hotkeys <<< $(printf "\n")
+sudo add-apt-repository ppa:blue-shell/kwallet <<< $(printf "\n")
+sudo add-apt-repository ppa:blue-shell/accounts <<< $(printf "\n")
+sudo add-apt-repository ppa:colin-duquesnoy/stable <<< $(printf "\n")
+sudo add-apt-repository ppa:jstaf/onedriver <<< $(printf "\n")
+sudo add-apt-repository ppa:tomtomtom/onedrive <<< $(printf "\n")
+
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
