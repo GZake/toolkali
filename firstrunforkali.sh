@@ -767,6 +767,9 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 #udo apt-key adv --refresh-keys --keyserver pool.sks-keyservers.net -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver certserver.pgp.com -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver hkp://keys.gnupg.net:80 -update-trustdb
+sudo cp -fRv *.gpg /usr/share/keyrings/
+sudo cp -fRv *.asc /usr/share/keyrings/
+sudo cp -fRv *.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 
