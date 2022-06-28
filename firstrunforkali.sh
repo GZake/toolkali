@@ -613,6 +613,9 @@ sudo add-apt-repository ppa:system76/pop <<< $(printf "\n")
 sudo add-apt-repository ppa:system76/proposed <<< $(printf "\n")
 sudo add-apt-repository ppa:alexlarsson/flatpak <<< $(printf "\n")
 sudo add-apt-repository ppa:henriqueluiz/wolf-app <<< $(printf "\n")
+sudo add-apt-repository ppa:ubuntu-mate-dev/welcome <<< $(printf "\n")
+sudo add-apt-repository ppa:snapcpp/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:ubuntu-desktop/gnome-3-26 <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
