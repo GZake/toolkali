@@ -59,7 +59,7 @@ sudo apt-mark unhold *s*
 sudo apt-mark unhold *t*
 sudo apt-mark unhold *u*
 sudo apt-mark unhold *v*
-sudo apt-mark unhold *ư*
+sudo apt-mark unhold *w*
 sudo apt-mark unhold *x*
 sudo apt-mark unhold *y*
 sudo apt-mark unhold *z*
