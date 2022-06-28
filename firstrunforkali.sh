@@ -620,6 +620,12 @@ sudo add-apt-repository ppa:ubuntu-desktop/gnome-3-26 <<< $(printf "\n")
 sudo add-apt-repository ppa:raharper/snapbuilds <<< $(printf "\n")
 sudo add-apt-repository ppa:hiweed-pkg/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:dajhorn/softether <<< $(printf "\n")
+sudo add-apt-repository ppa:garhuy/nvidia-lts <<< $(printf "\n")
+sudo add-apt-repository ppa:graphics-drivers/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:kelebek333/nvidia-legacy <<< $(printf "\n")
+sudo add-apt-repository ppa:universal/nvidia-updates <<< $(printf "\n")
+sudo apt-add-repository -ys ppa:system76-dev/stable <<< $(printf "\n")
+sudo add-apt-repository ppa:yavdr/main <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
