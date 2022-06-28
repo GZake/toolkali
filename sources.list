@@ -387,26 +387,26 @@ deb-src http://dl.winehq.org/wine-builds/ubuntu/ xenial main
 deb-src http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
 deb-src http://dl.winehq.org/wine-builds/ubuntu/ zesty main
 
-deb [trusted=yes] http://deb.playonlinux.com/ etch main
-deb [trusted=yes] http://deb.playonlinux.com/ maverick main
-deb [trusted=yes] http://deb.playonlinux.com/ bionic main
-deb [trusted=yes] http://deb.playonlinux.com/ jaunty main
-deb [trusted=yes] http://deb.playonlinux.com/ wheezy main
-deb [trusted=yes] http://deb.playonlinux.com/ squeeze main
-deb [trusted=yes] http://deb.playonlinux.com/ precise main
-deb [trusted=yes] http://deb.playonlinux.com/ raring main
-deb [trusted=yes] http://deb.playonlinux.com/ jessie main
-deb [trusted=yes] http://deb.playonlinux.com/ natty main
-deb [trusted=yes] http://deb.playonlinux.com/ xenial main
+deb http://deb.playonlinux.com/ etch main
+deb http://deb.playonlinux.com/ maverick main
+deb http://deb.playonlinux.com/ bionic main
+deb http://deb.playonlinux.com/ jaunty main
+deb http://deb.playonlinux.com/ wheezy main
+deb http://deb.playonlinux.com/ squeeze main
+deb http://deb.playonlinux.com/ precise main
+deb http://deb.playonlinux.com/ raring main
+deb http://deb.playonlinux.com/ jessie main
+deb http://deb.playonlinux.com/ natty main
+deb http://deb.playonlinux.com/ xenial main
 
-deb [trusted=yes] http://deb.playonlinux.com/ karmic main
-deb [trusted=yes] http://deb.playonlinux.com/ cosmic main
-deb [trusted=yes] http://deb.playonlinux.com/ stretch main
-deb [trusted=yes] http://deb.playonlinux.com/ lucid main
-deb [trusted=yes] http://deb.playonlinux.com/ oneiric main
-deb [trusted=yes] http://deb.playonlinux.com/ saucy main
-deb [trusted=yes] http://deb.playonlinux.com/ hardy main
-deb [trusted=yes] http://deb.playonlinux.com/ intrepid main
+deb http://deb.playonlinux.com/ karmic main
+deb http://deb.playonlinux.com/ cosmic main
+deb http://deb.playonlinux.com/ stretch main
+deb http://deb.playonlinux.com/ lucid main
+deb http://deb.playonlinux.com/ oneiric main
+deb http://deb.playonlinux.com/ saucy main
+deb http://deb.playonlinux.com/ hardy main
+deb http://deb.playonlinux.com/ intrepid main
 
 deb-src [trusted=yes] http://deb.playonlinux.com/ etch main
 deb-src [trusted=yes] http://deb.playonlinux.com/ maverick main
@@ -630,7 +630,7 @@ deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restri
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
 #Addedby software-center
 deb-src [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
-deb [trusted=yes] http://deb.playonlinux.com/ quantal main
+deb http://deb.playonlinux.com/ quantal main
 #Addedby software-center; credentials stored in /etc/apt/auth.conf
 deb [trusted=yes] http://private-ppa.launchpad.net/commercial-ppa-uploaders/intellij-idea-ce/ubuntu/ precise main
 deb [trusted=yes] http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu/ precise main
