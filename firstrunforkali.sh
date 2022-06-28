@@ -518,7 +518,7 @@ sudo apt-add-repository http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/
 sudo apt-add-repository http://apt.postgresql.org/pub/repos/apt/
 #sudo apt-add-repository http://http.kali.org/kali/
 sudo apt-add-repository https://packages.microsoft.com/
-sudo apt-add-repository http://dl.winehq.org/wine-builds/ubuntu/
+#sudo apt-add-repository http://dl.winehq.org/wine-builds/ubuntu/
 sudo apt-add-repository http://deb.debian.org/debian/
 sudo apt-add-repository http://httpredir.debian.org/debian
 sudo apt-add-repository http://security.debian.org/debian-security/
