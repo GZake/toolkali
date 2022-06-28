@@ -1,3 +1,9 @@
+deb http://http.kali.org/kali sana main non-free contrib
+deb http://security.kali.org/kali-security sana/updates main contrib non-free
+# Source repositories
+deb-src http://http.kali.org/kali sana main non-free contrib
+deb-src http://security.kali.org/kali-security sana/updates main contrib non-free
+
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports-sloppy main contrib non-free 
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports main contrib non-free 
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports-sloppy main contrib non-free 
