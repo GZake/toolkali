@@ -10,6 +10,10 @@ sudo apt-mark unhold *brave*
 sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
 sudo apt-mark hold needrestart*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *brave-browser*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser-nightly
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser-dev
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests kate
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests debconf-kde-dbg
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests debconf-kde*
@@ -260,8 +264,6 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-center*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *spotify*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests spotify-client
-sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *brave-browser*
-sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser-nightly
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *grub-efi*
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests grub-efi*
