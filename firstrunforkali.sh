@@ -619,6 +619,7 @@ sudo add-apt-repository ppa:snapcpp/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:ubuntu-desktop/gnome-3-26 <<< $(printf "\n")
 sudo add-apt-repository ppa:raharper/snapbuilds <<< $(printf "\n")
 sudo add-apt-repository ppa:hiweed-pkg/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:dajhorn/softether <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
