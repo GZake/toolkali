@@ -274,7 +274,7 @@ cd
 cd $HOME/toolkali/
 exit
 clear
-sudo bash firstrunforkali.sh
+sudo bash ~/toolkali/firstrunforkali.sh
 goto choose
 
 
