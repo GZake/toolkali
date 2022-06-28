@@ -568,6 +568,7 @@ sudo apt-add-repository x:x/x <<< $(printf "\n")
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ stretch main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ testing main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ wheezy main'
+#https://launchpad.net/
 sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager <<< $(printf "\n")
@@ -616,6 +617,8 @@ sudo add-apt-repository ppa:henriqueluiz/wolf-app <<< $(printf "\n")
 sudo add-apt-repository ppa:ubuntu-mate-dev/welcome <<< $(printf "\n")
 sudo add-apt-repository ppa:snapcpp/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:ubuntu-desktop/gnome-3-26 <<< $(printf "\n")
+sudo add-apt-repository ppa:raharper/snapbuilds <<< $(printf "\n")
+sudo add-apt-repository ppa:hiweed-pkg/ppa <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
@@ -693,6 +696,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF3
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16564973
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117
 sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
