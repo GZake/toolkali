@@ -243,6 +243,8 @@ deb [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
 deb-src [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
 deb [arch=amd64,i386] http://repo.steampowered.com/steam/ beta steam
 deb-src [arch=amd64,i386] http://repo.steampowered.com/steam/ beta steam
+deb [arch=amd64,i386] https://repo.steampowered.com/steam/ precise steam
+deb-src [arch=amd64,i386] https://repo.steampowered.com/steam/ precise steam
 
 deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artful main
 deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artful main
