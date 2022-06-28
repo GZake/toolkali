@@ -604,6 +604,15 @@ sudo add-apt-repository ppa:ingalex/super-boot-manager <<< $(printf "\n")
 sudo add-apt-repository ppa:donk/perso <<< $(printf "\n")
 sudo add-apt-repository ppa:darklordpaunik8880/darkminttrustytahr4 <<< $(printf "\n")
 sudo add-apt-repository ppa:ubuntu-sdk-team/staging <<< $(printf "\n")
+sudo add-apt-repository ppa:omniunit/patches <<< $(printf "\n")
+sudo add-apt-repository ppa:flatpak/stable <<< $(printf "\n")
+sudo add-apt-repository ppa:flatpak/development <<< $(printf "\n")
+sudo add-apt-repository ppa:mark-pcnetspec/mintinstall-no-flatpak <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/backports <<< $(printf "\n")
+sudo add-apt-repository ppa:system76/pop <<< $(printf "\n")
+sudo add-apt-repository ppa:system76/proposed <<< $(printf "\n")
+sudo add-apt-repository ppa:alexlarsson/flatpak <<< $(printf "\n")
+sudo add-apt-repository ppa:henriqueluiz/wolf-app <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
