@@ -600,6 +600,9 @@ sudo add-apt-repository ppa:nilarimogard/webupd8 <<< $(printf "\n")
 sudo add-apt-repository ppa:shemgp/gnome-40 <<< $(printf "\n")
 sudo add-apt-repository ppa:kamalmostafa/linux-kamal-mjgbacklight <<< $(printf "\n")
 sudo add-apt-repository ppa:janvitus/gnomestracciatella <<< $(printf "\n")
+sudo add-apt-repository ppa:ingalex/super-boot-manager <<< $(printf "\n")
+sudo add-apt-repository ppa:donk/perso <<< $(printf "\n")
+sudo add-apt-repository ppa:darklordpaunik8880/darkminttrustytahr4 <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
