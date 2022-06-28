@@ -603,6 +603,7 @@ sudo add-apt-repository ppa:janvitus/gnomestracciatella <<< $(printf "\n")
 sudo add-apt-repository ppa:ingalex/super-boot-manager <<< $(printf "\n")
 sudo add-apt-repository ppa:donk/perso <<< $(printf "\n")
 sudo add-apt-repository ppa:darklordpaunik8880/darkminttrustytahr4 <<< $(printf "\n")
+sudo add-apt-repository ppa:ubuntu-sdk-team/staging <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
