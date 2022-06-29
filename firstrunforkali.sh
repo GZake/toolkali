@@ -625,6 +625,10 @@ sudo add-apt-repository ppa:universal/nvidia-updates <<< $(printf "\n")
 sudo apt-add-repository -ys ppa:system76-dev/stable <<< $(printf "\n")
 sudo add-apt-repository ppa:yavdr/main <<< $(printf "\n")
 sudo add-apt-repository ppa:netext/nvidia-stable <<< $(printf "\n")
+sudo add-apt-repository ppa:gezakovacs/mono <<< $(printf "\n")
+sudo add-apt-repository ppa:swooshycueb/mono <<< $(printf "\n")
+sudo add-apt-repository ppa:mono-ubuntu/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:v-kukol/mono <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
