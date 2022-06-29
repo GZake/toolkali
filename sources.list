@@ -39,8 +39,6 @@ deb-src http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main c
 
 
 deb http://ftp-stud.hs-esslingen.de/debian/ Debian8.11 main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ Debian9.13 main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ Debian10.12 main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian/ Debian11.3 main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian/ bookworm-backports main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian/ bookworm-proposed-updates main contrib non-free
@@ -91,8 +89,6 @@ deb http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
 # deb http://ftp-stud.hs-esslingen.de/debian/ unstable main contrib non-free
 
 deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian8.11 main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian9.13 main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian10.12 main contrib non-free
 deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian11.3 main contrib non-free
 deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm-backports main contrib non-free
 deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm-proposed-updates main contrib non-free
