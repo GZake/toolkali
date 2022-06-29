@@ -816,7 +816,7 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo cp -fRv $HOME/toolkali/trusted/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
-sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/trusted/*
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/trusted/
 
 if [ $choose1 -eq 4 ]
 then
