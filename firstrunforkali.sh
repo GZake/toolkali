@@ -102,9 +102,6 @@ sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture aarch64
 #sudo dpkg --add-architecture DEP-11
-sudo dpkg --add-architecture all
-sudo dpkg --add-architecture arc
-sudo dpkg --add-architecture ia64
 #sudo dpkg --add-architecture s390
 #sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture arm
