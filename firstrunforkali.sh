@@ -78,14 +78,14 @@ sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
 ulimit -Sn unlimited
+ulimit -n unlimited
 ulimit -c unlimited
 ulimit -u unlimited
 ulimit -i unlimited
 ulimit -l unlimited
 ulimit -s unlimited
-sudo sysctl -w fs.file-max=2147483647
+sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo sysctl -p
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests apt-transport-https
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests apt*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *apt*
