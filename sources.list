@@ -401,7 +401,6 @@ deb http://deb.playonlinux.com/ xenial main
 
 deb http://deb.playonlinux.com/ karmic main
 deb http://deb.playonlinux.com/ cosmic main
-deb http://deb.playonlinux.com/ stretch main
 deb http://deb.playonlinux.com/ lucid main
 deb http://deb.playonlinux.com/ oneiric main
 deb http://deb.playonlinux.com/ saucy main
