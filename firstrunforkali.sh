@@ -77,6 +77,15 @@ sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
+ulimit -Sn unlimited
+ulimit -c unlimited
+ulimit -u unlimited
+ulimit -i unlimited
+ulimit -l unlimited
+ulimit -s unlimited
+sudo sysctl -w fs.file-max=2147483647
+fs.file-max = 2147483647
+sudo sysctl -p
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests apt-transport-https
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests apt*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *apt*
@@ -182,6 +191,7 @@ sudo swapon /dev/sd*
 #sudo swapon /dev/sdb3
 #sudo swapon /dev/sdc3
 sudo sysctl vm.swappiness=100
+sudo fs.file-max=2147483647
 sudo sysctl -p
 choose:
 clear
@@ -350,6 +360,7 @@ sudo chmod 700 kwriteroot
 sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf
 echo "
 vm.swappiness=100
+fs.file-max=2147483647
 " | sudo tee -a /etc/sysctl.conf
 sudo cp -f /etc/fstab.bak /etc/fstab
 echo "
