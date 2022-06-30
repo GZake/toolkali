@@ -419,7 +419,6 @@ sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-rm -fRv /var/lib/apt/lists/ftp-stud.hs-esslingen.de_debian-security_dists_*
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -ym --ignore-hold 
 sudo apt update --fix-missing -ym --ignore-hold 
@@ -844,7 +843,6 @@ then
 fi
 
 echo "UPDATING..."
-rm -fRv /var/lib/apt/lists/ftp-stud.hs-esslingen.de_debian-security_dists_*
 sudo service packagekit restart
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
@@ -965,7 +963,6 @@ fi
 #######################################################
 fulup:
 echo "UPDATING..."
-rm -fRv /var/lib/apt/lists/ftp-stud.hs-esslingen.de_debian-security_dists_*
 sudo service packagekit restart
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
