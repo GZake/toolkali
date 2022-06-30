@@ -15,24 +15,20 @@ deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports-slop
 deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports main contrib non-free
 
 deb http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
-deb http://ftp-stud.hs-esslingen.de/debian-security/ bullseye-security main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ jessie main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
-deb http://ftp-stud.hs-esslingen.de/debian-security/ stable-security main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
 
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
-deb-src http://ftp-stud.hs-esslingen.de/debian-security/ bullseye-security main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ jessie main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
-deb-src http://ftp-stud.hs-esslingen.de/debian-security/ stable-security main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
 
@@ -397,6 +393,7 @@ deb http://deb.playonlinux.com/ xenial main
 
 deb http://deb.playonlinux.com/ karmic main
 deb http://deb.playonlinux.com/ cosmic main
+
 deb http://deb.playonlinux.com/ lucid main
 deb http://deb.playonlinux.com/ oneiric main
 deb http://deb.playonlinux.com/ saucy main
