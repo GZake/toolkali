@@ -424,7 +424,8 @@ sudo apt --fix-broken install -ym --ignore-hold
 sudo apt update --fix-missing -ym --ignore-hold 
 sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
 sudo apt --fix-broken install -ym --ignore-hold 
-sudo apt update --fix-missing -ym --ignore-hold 
+sudo apt update --fix-missing -ym --ignore-hold
+firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-get update -ym --ignore-hold | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
 sudo apt-get upgrade -ym --ignore-hold | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
@@ -885,6 +886,7 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt update --fix-missing -y 
 dpkg --configure -a | tee -a $HOME/Desktop/log.txt
+firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
 apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
@@ -1007,6 +1009,7 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
 sudo apt --fix-broken install -y 
 sudo apt update --fix-missing -y 
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-get update -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
 sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
