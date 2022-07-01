@@ -777,7 +777,7 @@ wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
-gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290  <<< $(printf "y\n")
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290  <<< $(printf "\ny\n")
 curl -s https://openpgpkey.torproject.org/.well-known/openpgpkey/torproject.org/hu/kounek7zrdx745qydx6p59t9mqjpuhdf |gpg --import -
 
 
