@@ -860,13 +860,13 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 #udo apt-key adv --refresh-keys --keyserver pool.sks-keyservers.net -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver certserver.pgp.com -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver hkp://keys.gnupg.net:80 -update-trustdb
-sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/trusted/
-sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/trusted/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/trusted/
-sudo cp -fRv $HOME/toolkali/trusted/* /usr/share/keyrings/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv $HOME/toolkali/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
-sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/trusted/
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 
 if [ $choose1 -eq 4 ]
 then
