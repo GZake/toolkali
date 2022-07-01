@@ -95,10 +95,10 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt --fix-broken install -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt --fix-broken install -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  software-properties-common
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  software-properties-common*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  *software-properties-common*
@@ -151,10 +151,10 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt --fix-broken install -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt --fix-broken install -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
 sudo apt-get -f -y install parallel* #status=progress 
 sudo apt-get -f -y install parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
@@ -274,13 +274,13 @@ goto choose
 uptool:
 cd
 sudo rm -fR $HOME/toolkali 
-sudo rm -fR /media/root/*/toolkali
+sudo rm -fR /media/$HOME/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
-sudo rm -fR /media/root/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fR /media/$HOME/01D85B1D2CBD6AE0/toolkali/
 git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
+git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/root/01D85B1D2CBD6AE0/toolkali/
+git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
 cd
 cd $HOME/toolkali/
 exit
@@ -419,22 +419,22 @@ sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -ym --ignore-hold 
 sudo apt update --fix-missing -ym --ignore-hold 
-sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -ym --ignore-hold 
 sudo apt update --fix-missing -ym --ignore-hold
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
-sudo apt-get update -ym --ignore-hold | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get upgrade -ym --ignore-hold | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get full-upgrade -ym --ignore-hold | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get dist-upgrade -ym --ignore-hold | grep "NO_PUBKEY" | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo timedatectl set-ntp on | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt-get autoremove -y --ignore-hold | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt-get autoclean -y --ignore-hold | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt-get clean -y --ignore-hold | tee -a  /root/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo apt-get update -ym --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+sudo apt-get upgrade -ym --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+sudo apt-get full-upgrade -ym --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+sudo apt-get dist-upgrade -ym --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo timedatectl set-ntp on | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt-get autoremove -y --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt-get autoclean -y --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt-get clean -y --ignore-hold | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
@@ -494,7 +494,7 @@ cp $HOME/updatekali.sh $HOME/toolkali/updatekali.sh
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
-@reboot sudo bash /root/updatekali.sh &
+@reboot sudo bash /$HOME/updatekali.sh &
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
@@ -781,15 +781,15 @@ curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
 sudo rm -f microsoft.gpg
 rm -f /usr/share/keyrings/microsoft.gpg
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
+#sudo apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
@@ -888,9 +888,9 @@ sudo apt update --fix-missing -y
 dpkg --configure -a | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
-apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+apt-get upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+apt-get dist-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 telnet towel.blinkenlights.nl
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
@@ -1012,9 +1012,9 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-get update -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
-sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+sudo apt-get full-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'&
+sudo apt-get dist-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 telnet towel.blinkenlights.nl
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
