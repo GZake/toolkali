@@ -64,7 +64,6 @@ sudo apt-mark unhold *x*
 sudo apt-mark unhold *y*
 sudo apt-mark unhold *z*
 
-sudo apt-mark unhold *
 sudo apt-mark hold wine1.6*
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
@@ -161,7 +160,7 @@ sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  linux-headers-$(uname -r)
 
 cd ..
-sudo parallel cp -vfxR toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 cd $HOME/toolkali/
 
 #!/bin/bash
