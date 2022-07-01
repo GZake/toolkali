@@ -640,6 +640,14 @@ sudo add-apt-repository ppa:gezakovacs/mono <<< $(printf "\n")
 sudo add-apt-repository ppa:swooshycueb/mono <<< $(printf "\n")
 sudo add-apt-repository ppa:mono-ubuntu/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:v-kukol/mono <<< $(printf "\n")
+sudo add-apt-repository ppa:dvkbuntu/dvkbuntu-ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:guido-iodice/kubuntu-more-updates <<< $(printf "\n")
+sudo add-apt-repository ppa:kubuntu-ppa/staging-plasma <<< $(printf "\n")
+sudo add-apt-repository ppa:netrunner-os/enigma-1312 <<< $(printf "\n")
+sudo add-apt-repository ppa:icamargo/networkmanagement <<< $(printf "\n")
+sudo add-apt-repository ppa:bedouin/mawakit <<< $(printf "\n")
+sudo add-apt-repository ppa:mieszkoslusarczyk/kde-extras-snapshots <<< $(printf "\n")
+sudo add-apt-repository ppa:rohangarg/nightly <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
