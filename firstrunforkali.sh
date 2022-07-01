@@ -640,14 +640,6 @@ sudo add-apt-repository ppa:gezakovacs/mono <<< $(printf "\n")
 sudo add-apt-repository ppa:swooshycueb/mono <<< $(printf "\n")
 sudo add-apt-repository ppa:mono-ubuntu/ppa <<< $(printf "\n")
 sudo add-apt-repository ppa:v-kukol/mono <<< $(printf "\n")
-sudo add-apt-repository ppa:dvkbuntu/dvkbuntu-ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:guido-iodice/kubuntu-more-updates <<< $(printf "\n")
-sudo add-apt-repository ppa:kubuntu-ppa/staging-plasma <<< $(printf "\n")
-sudo add-apt-repository ppa:netrunner-os/enigma-1312 <<< $(printf "\n")
-sudo add-apt-repository ppa:icamargo/networkmanagement <<< $(printf "\n")
-sudo add-apt-repository ppa:bedouin/mawakit <<< $(printf "\n")
-sudo add-apt-repository ppa:mieszkoslusarczyk/kde-extras-snapshots <<< $(printf "\n")
-sudo add-apt-repository ppa:rohangarg/nightly <<< $(printf "\n")
 sudo bash listppa*
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
@@ -723,6 +715,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7274A4DAE80D6B
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 16126D3A3E5C1192
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 871920D1991BC93C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF35C
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B02C46DF417A0893
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
