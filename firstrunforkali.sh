@@ -155,8 +155,8 @@ sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo apt-get -f -y install parallel* #status=progress 
-sudo apt-get -f -y install parallel
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  parallel* #status=progress 
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  linux-headers-$(uname -r)
 
