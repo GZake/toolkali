@@ -648,7 +648,19 @@ sudo add-apt-repository ppa:icamargo/networkmanagement <<< $(printf "\n")
 sudo add-apt-repository ppa:bedouin/mawakit <<< $(printf "\n")
 sudo add-apt-repository ppa:mieszkoslusarczyk/kde-extras-snapshots <<< $(printf "\n")
 sudo add-apt-repository ppa:rohangarg/nightly <<< $(printf "\n")
-sudo bash listppa*
+sudo add-apt-repository ppa:pali/pali <<< $(printf "\n")
+sudo add-apt-repository ppa:mc3man/trusty-media <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/fonts <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/build-tools <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/backports <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/python <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/graphics <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/tex-xenial <<< $(printf "\n")
+sudo add-apt-repository ppa:savoury1/gtk-xenial <<< $(printf "\n")
+sudo add-apt-repository ppa:ubuntu-wine/pp <<< $(printf "\n")
+sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+sudo add-apt-repository ppa:mozgiii/wine-from-debian <<< $(printf "\n")
+sudo add-apt-repository ppa:pipelight/stable <<< $(printf "\n")
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
@@ -779,7 +791,10 @@ wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
 gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290  <<< $(printf "\ny\n")
 curl -s https://openpgpkey.torproject.org/.well-known/openpgpkey/torproject.org/hu/kounek7zrdx745qydx6p59t9mqjpuhdf |gpg --import -
-
+wget https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
