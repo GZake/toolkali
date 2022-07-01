@@ -863,7 +863,9 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
-sudo cp -fRv $HOME/toolkali/* /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
