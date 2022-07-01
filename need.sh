@@ -57,7 +57,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *debconf-kde-helper*
 
 
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests sysvinit-core
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests sysvinit-core*
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *sysvinit-core*
@@ -95,7 +95,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests bfh-container
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests bfh-container*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *bfh-container*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests playonlinux
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests playonlinux*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *playonlinux*
@@ -118,7 +118,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties-gtk*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *software-properties-gtk*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests software-properties*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests steam-devices
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests  \
   libgl1-mesa-dri:amd64 \
@@ -146,7 +146,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *wakeonlan*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests freerdp
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests freerdp*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *freerdp*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests alien
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests alien*
@@ -199,7 +199,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests dnf
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests dnf*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *dnf*
@@ -220,7 +220,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests xserver-xorg*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests debian-goodies
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests debian-goodies*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnupg2 curl
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnupg2 curl*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnupg*
@@ -237,7 +237,7 @@ sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests wine*
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *wine*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests lib32z1 lib32ncurses5
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 wget "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x64.deb"
 sudo dpkg -i "VNC-Viewer-6.22.315-Linux-x64.deb"
 wget "https://discord.com/api/download?platform=linux&format=deb"
@@ -275,7 +275,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *spotify*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests spotify-client
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *grub-efi*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests grub-efi*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests grub-efi
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests packaging-dev sbuild apt-file gitk git-lfs myrepos
@@ -296,7 +296,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnome-core*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnome-tweak
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnome-tweak*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnome-tweak-tool
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests gnome-tweak-tool*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests xserver-xorg-core-dbg
@@ -319,7 +319,7 @@ sudo systemctl enable xrdp
 sudo systemctl enable xrdp-sesman
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo dpkg -i "download?platform=linux&format=deb"
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo dpkg -i viber.deb
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
