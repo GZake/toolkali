@@ -64,7 +64,7 @@ sudo apt-mark unhold *x*
 sudo apt-mark unhold *y*
 sudo apt-mark unhold *z*
 
-sudo apt-mark hold wine1.6*
+sudo apt-mark hold wine1.6
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
