@@ -1173,6 +1173,8 @@ deb [trusted=yes] https://http.redir.debian.org/x x x
 deb-src [trusted=yes] https://http.redir.debian.org/x x x
 deb [trusted=yes] http://security.debian.org/x x x
 deb-src [trusted=yes] http://security.debian.org/x x x
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/x x x x x x
+
 deb [trusted=yes] http://cz.archive.ubuntu.com/ * main universe by-hash multiverse restricted *
 deb [trusted=yes] http://ftp.debian.org/debian/ * contrib main non-free
 deb [trusted=yes] http://ftp.debian.org/debian/ stable main contrib non-free
