@@ -1,15 +1,7 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on 
 sudo service packagekit restart
-sudo apt-mark unhold *plasma*
-sudo apt-mark unhold *kde*
-sudo apt-mark unhold *gnome*
-sudo apt-mark unhold *kali*
-sudo apt-mark unhold *nvidia*
-sudo apt-mark unhold *brave*
-sudo apt-mark unhold *
-sudo apt-mark hold wine1.6*
-sudo apt-mark hold needrestart*
+sudo apt-mark hold wine1.6
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *brave-browser*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser-nightly
