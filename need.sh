@@ -314,7 +314,9 @@ sudo systemctl start xrdp
 sudo systemctl start xrdp-sesman
 sudo systemctl enable xrdp
 sudo systemctl enable xrdp-sesman
-find-dbgsym-packages [core_path|running_pid|binary_path]
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests synergy
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests synergy*
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -fym --ignore-hold --install-recommends --show-progress --install-suggests *synergy*
 sudo dpkg -i "download?platform=linux&format=deb"
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo dpkg -i viber.deb
