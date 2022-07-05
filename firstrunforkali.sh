@@ -63,7 +63,7 @@ sudo apt-mark unhold *w*
 sudo apt-mark unhold *x*
 sudo apt-mark unhold *y*
 sudo apt-mark unhold *z*
-
+apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | xargs apt -y install
 sudo apt-mark hold wine1.6
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
 sudo chown -Rv _apt:root /var/cache/apt/archives/
