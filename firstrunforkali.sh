@@ -84,7 +84,7 @@ ulimit -l unlimited
 ulimit -s unlimited
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests xargs
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *xargs*
 apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | xargs apt -y install
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests apt-transport-https
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests apt*
@@ -825,7 +825,7 @@ rm -f /usr/share/keyrings/microsoft.gpg
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
 
-sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 reinstall -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-archive-keyring
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1  -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-archive-keyring
 
 sudo apt install apt-transport-https curl -y -f
 
