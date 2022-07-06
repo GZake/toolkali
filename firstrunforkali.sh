@@ -272,7 +272,7 @@ passwd <<< $(printf "113006\n113006\n")
 goto choose
 
 uptool:
-cd
+cd ..
 sudo rm -fR $HOME/toolkali 
 sudo rm -fR /media/$HOME/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
@@ -281,7 +281,7 @@ git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
-cd
+cd ..
 cd $HOME/toolkali/
 exit
 clear
