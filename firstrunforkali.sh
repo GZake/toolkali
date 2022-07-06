@@ -381,7 +381,7 @@ echo 100 >> /proc/sys/vm/swappiness
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 cp -vR updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh 
-cp $HOME/updatekali.sh
+
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
