@@ -1313,7 +1313,6 @@ deb-src https://ppa.launchpadcontent.net/ ./
 
 deb [trusted=yes] http://cz.archive.ubuntu.com/ * main universe by-hash multiverse restricted *
 deb [trusted=yes] http://ftp.debian.org/debian/ * contrib main non-free
-deb [trusted=yes] http://ftp.debian.org/debian/ stable main contrib non-free
 deb [trusted=yes] http://ftp.debian.org/*/ * contrib main non-free
 # deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
 # deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
