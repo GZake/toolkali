@@ -72,7 +72,6 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/ ./
 
 deb http://http.kali.org/kali sana main non-free contrib
 deb http://security.kali.org/kali-security sana/updates main contrib non-free
