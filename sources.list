@@ -34,6 +34,17 @@ deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plas
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 deb https://download.opensuse.org/ ./
 
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
@@ -72,6 +83,17 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 
 deb http://http.kali.org/kali sana main non-free contrib
 deb http://security.kali.org/kali-security sana/updates main contrib non-free
