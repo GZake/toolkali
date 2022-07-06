@@ -1274,6 +1274,7 @@ deb-src [trusted=yes] https://http.redir.debian.org/x x x
 deb [trusted=yes] http://security.debian.org/x x x
 deb-src [trusted=yes] http://security.debian.org/x x x
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/x x x x x x
+deb https://ppa.launchpadcontent.net/x/x/x  x x x
 
 deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
 deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
@@ -1358,3 +1359,4 @@ deb-src [trusted=yes] https://http.redir.debian.org/* * *
 deb [trusted=yes] http://security.debian.org/* * *
 deb-src [trusted=yes] http://security.debian.org/* * *
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/* * * * * *
+deb https://ppa.launchpadcontent.net/*/*/*  * * *
