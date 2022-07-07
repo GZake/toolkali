@@ -402,6 +402,15 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 exit(0)
 " | tee -a /etc/rc.local
+sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
