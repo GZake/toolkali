@@ -550,7 +550,7 @@ deb http://dl.winehq.org/wine-builds/debian/ Debian8.11 main contrib non-free
 ##############################
 deb https://http.redir.debian.org/debian Debian9.13 main contrib non-free
 deb-src https://http.redir.debian.org/debian Debian9.13 main contrib non-free
-deb  [trusted=yes]  http://deb.debian.org/debian/ Debian9.13 main contrib non-free
+deb http://deb.debian.org/debian/ Debian9.13 main contrib non-free
 deb-src http://deb.debian.org/debian/ Debian9.13 main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ Debian9.13 main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ Debian9.13 main contrib non-free
