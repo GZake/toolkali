@@ -1,7 +1,6 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-dev-archive-keyring.gpg https://brave-browser-apt-dev.s3.brave.com/brave-browser-dev-archive-keyring.gpg
+
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests brave-browser-dev
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
@@ -411,6 +410,7 @@ sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
@@ -812,6 +812,7 @@ gpg --export --armor 1ABC2D34EF56GH78 | sudo apt-key add -
 wget -q "http://deb.playonlinux.com/public.gpg" -O- | apt-key add -
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3BDB3D89CE49EC24
 gpg --export --armor 3BDB3D89CE49EC24 | sudo apt-key add -
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-dev-archive-keyring.gpg https://brave-browser-apt-dev.s3.brave.com/brave-browser-dev-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-beta-archive-keyring.gpg https://brave-browser-apt-beta.s3.brave.com/brave-browser-beta-archive-keyring.gpg
 sudo curl -fsSLo /usr/share/keyrings/steam.gpg http://repo.steampowered.com/steam/archive/stable/steam.gpg
