@@ -921,6 +921,7 @@ sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
+git remote add origin https://github.com/GZake/toolkali.git
 
 if [ $choose1 -eq 4 ]
 then
