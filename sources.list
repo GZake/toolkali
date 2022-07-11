@@ -1,4 +1,5 @@
 
+
 deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
 deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
 deb [trusted=yes] http://ftp.debian.org/ ./
@@ -21,13 +22,13 @@ deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
 deb [trusted=yes] http://deb.debian.org/ ./
 deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
 deb [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb [trusted=yes] https://http.kali.org/kali/ ./
-deb-src [trusted=yes] https://http.kali.org/kali/ ./
-deb-src [trusted=yes] https://http.kali.org/ ./
+deb  https://http.kali.org/kali/ ./
+deb-src  https://http.kali.org/kali/ ./
+deb-src  https://http.kali.org/ ./
 deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
 deb-src [trusted=yes] http://ppa.launchpad.net/ ./
 deb [trusted=yes] http://ppa.launchpad.net/ ./
-deb-src [trusted=yes] https://http.redir.debian.org/ ./
+deb-src https://http.redir.debian.org/ ./
 deb [trusted=yes] http://security.debian.org/ ./ 
 deb-src [trusted=yes] http://security.debian.org/ ./ 
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
@@ -766,8 +767,7 @@ deb http://dl.winehq.org/wine-builds/debian/ stable-updates main contrib non-fre
 # deb http://deb.debian.org/debian/ buster main buster-updates
 deb http://security.debian.org/debian-security/ buster/updates main contrib non-free
 deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
-deb [trusted=yes] http://ua.archive.ubuntu.com
-/ubuntu/ -security main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
@@ -1386,3 +1386,4 @@ deb [trusted=yes] http://security.debian.org/* * *
 deb-src [trusted=yes] http://security.debian.org/* * *
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/* * * * * *
 deb https://ppa.launchpadcontent.net/*/*/*  * * *
+
