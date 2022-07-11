@@ -1,4 +1,61 @@
 
+deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
+deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
+deb [trusted=yes] http://ftp.debian.org/ ./
+# deb [trusted=yes] http://deb.debian.org/debian-debug/ ./ 
+# deb [trusted=yes] http://deb.debian.org/debian-ports/ ./ 
+deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ ./ 
+deb [trusted=yes] http://security.debian.org/debian-security/ ./ 
+deb-src [trusted=yes] http://deb.debian.org/debian/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-debug/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-ports/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-security/ ./
+deb [trusted=yes] http://kali.download/ ./
+deb-src [trusted=yes] http://kali.download/ ./
+deb [trusted=yes] http://ua.archive.ubuntu.com/ ./
+deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ ./
+deb [trusted=yes] http://deb.debian.org/debian ./
+deb [trusted=yes] http://deb.debian.org/debian-debug ./
+deb-src [trusted=yes] http://security.debian.org/debian-security ./
+deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
+deb [trusted=yes] http://deb.debian.org/ ./
+deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
+deb [trusted=yes] http://deb.debian.org/debian-security/ ./
+deb [trusted=yes] https://http.kali.org/kali/ ./
+deb-src [trusted=yes] https://http.kali.org/kali/ ./
+deb-src [trusted=yes] https://http.kali.org/ ./
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
+deb-src [trusted=yes] http://ppa.launchpad.net/ ./
+deb [trusted=yes] http://ppa.launchpad.net/ ./
+deb-src [trusted=yes] https://http.redir.debian.org/ ./
+deb [trusted=yes] http://security.debian.org/ ./ 
+deb-src [trusted=yes] http://security.debian.org/ ./ 
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
+deb https://ppa.launchpadcontent.net/ ./
+deb-src https://ppa.launchpadcontent.net/ ./
+deb http://http.kali.org/ ./
+deb http://security.kali.org/ ./
+deb-src http://http.kali.org/ ./
+deb-src http://security.kali.org/ ./
+deb http://archive.mariadb.org/ ./
+deb [arch=amd64,i386] http://repo.steampowered.com/ ./
+deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
+deb [trusted=yes] http://ddebs.ubuntu.com/ ./
+deb http://dl.winehq.org/ ./
+deb-src http://dl.winehq.org/ ./
+deb http://deb.playonlinux.com/ ./
+deb-src http://deb.playonlinux.com/ ./
+deb [arch=amd64] http://apt.postgresql.org/ ./
+deb https://http.redir.debian.org/ ./
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ ./
+deb-src [trusted=yes] http://extras.ubuntu.com/ ./
+deb [trusted=yes] http://extras.ubuntu.com/ ./
+deb [trusted=yes] http://private-ppa.launchpad.net/ ./
+deb-src [trusted=yes] http://private-ppa.launchpad.net/ ./
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
+deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
+
+
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
@@ -709,7 +766,8 @@ deb http://dl.winehq.org/wine-builds/debian/ stable-updates main contrib non-fre
 # deb http://deb.debian.org/debian/ buster main buster-updates
 deb http://security.debian.org/debian-security/ buster/updates main contrib non-free
 deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com
+/ubuntu/ -security main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
@@ -1278,40 +1336,7 @@ deb-src [trusted=yes] http://security.debian.org/x x x
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/x x x x x x
 deb https://ppa.launchpadcontent.net/x/x/x  x x x
 
-deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
-deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
-deb [trusted=yes] http://ftp.debian.org/ ./
-# deb [trusted=yes] http://deb.debian.org/debian-debug/ ./ 
-# deb [trusted=yes] http://deb.debian.org/debian-ports/ ./ 
-deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ ./ 
-deb [trusted=yes] http://security.debian.org/debian-security/ ./ 
-deb-src [trusted=yes] http://deb.debian.org/debian/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-debug/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb [trusted=yes] http://kali.download/ ./
-deb-src [trusted=yes] http://kali.download/ ./
-deb [trusted=yes] http://ua.archive.ubuntu.com/ ./
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian ./
-deb [trusted=yes] http://deb.debian.org/debian-debug ./
-deb-src [trusted=yes] http://security.debian.org/debian-security ./
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
-deb [trusted=yes] http://deb.debian.org/ ./
-deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb [trusted=yes] https://http.kali.org/kali/ ./
-deb-src [trusted=yes] https://http.kali.org/kali/ ./
-deb-src [trusted=yes] https://http.kali.org/ ./
-deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
-deb-src [trusted=yes] http://ppa.launchpad.net/ ./
-deb [trusted=yes] http://ppa.launchpad.net/ ./
-deb-src [trusted=yes] https://http.redir.debian.org/ ./
-deb [trusted=yes] http://security.debian.org/ ./ 
-deb-src [trusted=yes] http://security.debian.org/ ./ 
-deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
-deb https://ppa.launchpadcontent.net/ ./
-deb-src https://ppa.launchpadcontent.net/ ./
+
 
 deb [trusted=yes] http://cz.archive.ubuntu.com/ * main universe by-hash multiverse restricted *
 deb [trusted=yes] http://ftp.debian.org/debian/ * contrib main non-free
@@ -1361,4 +1386,3 @@ deb [trusted=yes] http://security.debian.org/* * *
 deb-src [trusted=yes] http://security.debian.org/* * *
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/* * * * * *
 deb https://ppa.launchpadcontent.net/*/*/*  * * *
-
