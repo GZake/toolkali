@@ -482,101 +482,176 @@ sudo apt-add-repository x:x/x <<< $(printf "\n")
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ testing main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ wheezy main'
 #https://launchpad.net/
-sudo add-apt-repository ppa:micahflee/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:libreoffice/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:webupd8team/y-ppa-manager <<< $(printf "\n")
-sudo add-apt-repository ppa:dr-akulavich/lighttable <<< $(printf "\n")
-sudo apt-add-repository ppa:$USER/$PPA <<< $(printf "\n")
-sudo apt-add-repository \'${ENTRY}\' <<< $(printf "\n")
-sudo add-apt-repository ppa:jonathonf/ffmpeg-4 <<< $(printf "\n")
-sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games" <<< $(printf "\n")
-sudo add-apt-repository ppa:usarinheininga/ubuntu-plasma <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/kde-xenial <<< $(printf "\n")
-sudo add-apt-repository ppa:*/* <<< $(printf "\n")
-sudo add-apt-repository ppa:x/x <<< $(printf "\n")
-sudo add-apt-repository ppa:alexey-noskov/kde <<< $(printf "\n")
-sudo add-apt-repository ppa:plasmazilla/releases <<< $(printf "\n")
-sudo add-apt-repository ppa:oliver-traeger+launchpad/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:kubuntu-ppa/backports <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/kde-5-80 <<< $(printf "\n")
-sudo add-apt-repository ppa:netrunner-os/netrunner-16-official <<< $(printf "\n")
-sudo add-apt-repository ppa:nrbrtx/xorg-hotkeys <<< $(printf "\n")
-sudo add-apt-repository ppa:blue-shell/kwallet <<< $(printf "\n")
-sudo add-apt-repository ppa:blue-shell/accounts <<< $(printf "\n")
-sudo add-apt-repository ppa:colin-duquesnoy/stable <<< $(printf "\n")
-sudo add-apt-repository ppa:jstaf/onedriver <<< $(printf "\n")
-sudo add-apt-repository ppa:tomtomtom/onedrive <<< $(printf "\n")
-sudo add-apt-repository ppa:jr/plasma-wayland <<< $(printf "\n")
-sudo add-apt-repository ppa:netrunner-os/enigma-1306 <<< $(printf "\n")
-sudo add-apt-repository ppa:darxus/wayland-gtk <<< $(printf "\n")
-sudo add-apt-repository ppa:devacom/gnome-40 <<< $(printf "\n")
-sudo add-apt-repository ppa:nilarimogard/webupd8 <<< $(printf "\n")
-sudo add-apt-repository ppa:shemgp/gnome-40 <<< $(printf "\n")
-sudo add-apt-repository ppa:kamalmostafa/linux-kamal-mjgbacklight <<< $(printf "\n")
-sudo add-apt-repository ppa:janvitus/gnomestracciatella <<< $(printf "\n")
-sudo add-apt-repository ppa:ingalex/super-boot-manager <<< $(printf "\n")
-sudo add-apt-repository ppa:donk/perso <<< $(printf "\n")
-sudo add-apt-repository ppa:darklordpaunik8880/darkminttrustytahr4 <<< $(printf "\n")
-sudo add-apt-repository ppa:ubuntu-sdk-team/staging <<< $(printf "\n")
-sudo add-apt-repository ppa:omniunit/patches <<< $(printf "\n")
-sudo add-apt-repository ppa:flatpak/stable <<< $(printf "\n")
-sudo add-apt-repository ppa:flatpak/development <<< $(printf "\n")
-sudo add-apt-repository ppa:mark-pcnetspec/mintinstall-no-flatpak <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/backports <<< $(printf "\n")
-sudo add-apt-repository ppa:system76/pop <<< $(printf "\n")
-sudo add-apt-repository ppa:system76/proposed <<< $(printf "\n")
-sudo add-apt-repository ppa:alexlarsson/flatpak <<< $(printf "\n")
-sudo add-apt-repository ppa:henriqueluiz/wolf-app <<< $(printf "\n")
-sudo add-apt-repository ppa:ubuntu-mate-dev/welcome <<< $(printf "\n")
-sudo add-apt-repository ppa:snapcpp/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:ubuntu-desktop/gnome-3-26 <<< $(printf "\n")
-sudo add-apt-repository ppa:raharper/snapbuilds <<< $(printf "\n")
-sudo add-apt-repository ppa:hiweed-pkg/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:dajhorn/softether <<< $(printf "\n")
-sudo add-apt-repository ppa:garhuy/nvidia-lts <<< $(printf "\n")
-sudo add-apt-repository ppa:graphics-drivers/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:kelebek333/nvidia-legacy <<< $(printf "\n")
-sudo add-apt-repository ppa:universal/nvidia-updates <<< $(printf "\n")
-sudo apt-add-repository -ys ppa:system76-dev/stable <<< $(printf "\n")
-sudo add-apt-repository ppa:yavdr/main <<< $(printf "\n")
-sudo add-apt-repository ppa:netext/nvidia-stable <<< $(printf "\n")
-sudo add-apt-repository ppa:gezakovacs/mono <<< $(printf "\n")
-sudo add-apt-repository ppa:swooshycueb/mono <<< $(printf "\n")
-sudo add-apt-repository ppa:mono-ubuntu/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:v-kukol/mono <<< $(printf "\n")
-sudo add-apt-repository ppa:dvkbuntu/dvkbuntu-ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:guido-iodice/kubuntu-more-updates <<< $(printf "\n")
-sudo add-apt-repository ppa:kubuntu-ppa/staging-plasma <<< $(printf "\n")
-sudo add-apt-repository ppa:netrunner-os/enigma-1312 <<< $(printf "\n")
-sudo add-apt-repository ppa:icamargo/networkmanagement <<< $(printf "\n")
-sudo add-apt-repository ppa:bedouin/mawakit <<< $(printf "\n")
-sudo add-apt-repository ppa:mieszkoslusarczyk/kde-extras-snapshots <<< $(printf "\n")
-sudo add-apt-repository ppa:rohangarg/nightly <<< $(printf "\n")
-sudo add-apt-repository ppa:pali/pali <<< $(printf "\n")
-sudo add-apt-repository ppa:mc3man/trusty-media <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/fonts <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/build-tools <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/backports <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/python <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/graphics <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/tex-xenial <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/gtk-xenial <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/apt-xenial <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/toolchain <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/encryption <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/gpg <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/multimedia <<< $(printf "\n")
-sudo add-apt-repository ppa:savoury1/ffmpeg4 <<< $(printf "\n")
-sudo add-apt-repository ppa:ubuntu-wine/pp <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:micahflee/ppa
+sudo add-apt-repository -ys ppa:libreoffice/ppa
+sudo add-apt-repository -ys ppa:webupd8team/y-ppa-manager
+sudo add-apt-repository -ys ppa:dr-akulavich/lighttable
+sudo apt-add-repository -ys ppa:$USER/$PPA
+sudo apt-add-repository \'${ENTRY}\'
+sudo add-apt-repository -ys ppa:jonathonf/ffmpeg-4
+sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games"
+sudo add-apt-repository -ys ppa:usarinheininga/ubuntu-plasma
+sudo add-apt-repository -ys ppa:savoury1/kde-xenial
+sudo add-apt-repository -ys ppa:*/*
+sudo add-apt-repository -ys ppa:x/x
+sudo add-apt-repository -ys ppa:alexey-noskov/kde
+sudo add-apt-repository -ys ppa:plasmazilla/releases
+sudo add-apt-repository -ys ppa:oliver-traeger+launchpad/ppa
+sudo add-apt-repository -ys ppa:kubuntu-ppa/backports
+sudo add-apt-repository -ys ppa:savoury1/kde-5-80
+sudo add-apt-repository -ys ppa:netrunner-os/netrunner-16-official
+sudo add-apt-repository -ys ppa:nrbrtx/xorg-hotkeys
+sudo add-apt-repository -ys ppa:blue-shell/kwallet
+sudo add-apt-repository -ys ppa:blue-shell/accounts
+sudo add-apt-repository -ys ppa:colin-duquesnoy/stable
+sudo add-apt-repository -ys ppa:jstaf/onedriver
+sudo add-apt-repository -ys ppa:tomtomtom/onedrive
+sudo add-apt-repository -ys ppa:jr/plasma-wayland
+sudo add-apt-repository -ys ppa:netrunner-os/enigma-1306
+sudo add-apt-repository -ys ppa:darxus/wayland-gtk
+sudo add-apt-repository -ys ppa:devacom/gnome-40
+sudo add-apt-repository -ys ppa:nilarimogard/webupd8
+sudo add-apt-repository -ys ppa:shemgp/gnome-40
+sudo add-apt-repository -ys ppa:kamalmostafa/linux-kamal-mjgbacklight
+sudo add-apt-repository -ys ppa:janvitus/gnomestracciatella
+sudo add-apt-repository -ys ppa:ingalex/super-boot-manager
+sudo add-apt-repository -ys ppa:donk/perso
+sudo add-apt-repository -ys ppa:darklordpaunik8880/darkminttrustytahr4
+sudo add-apt-repository -ys ppa:ubuntu-sdk-team/staging
+sudo add-apt-repository -ys ppa:omniunit/patches
+sudo add-apt-repository -ys ppa:flatpak/stable
+sudo add-apt-repository -ys ppa:flatpak/development
+sudo add-apt-repository -ys ppa:mark-pcnetspec/mintinstall-no-flatpak
+sudo add-apt-repository -ys ppa:savoury1/backports
+sudo add-apt-repository -ys ppa:system76/pop
+sudo add-apt-repository -ys ppa:system76/proposed
+sudo add-apt-repository -ys ppa:alexlarsson/flatpak
+sudo add-apt-repository -ys ppa:henriqueluiz/wolf-app
+sudo add-apt-repository -ys ppa:ubuntu-mate-dev/welcome
+sudo add-apt-repository -ys ppa:snapcpp/ppa
+sudo add-apt-repository -ys ppa:ubuntu-desktop/gnome-3-26
+sudo add-apt-repository -ys ppa:raharper/snapbuilds
+sudo add-apt-repository -ys ppa:hiweed-pkg/ppa
+sudo add-apt-repository -ys ppa:dajhorn/softether
+sudo add-apt-repository -ys ppa:garhuy/nvidia-lts
+sudo add-apt-repository -ys ppa:graphics-drivers/ppa
+sudo add-apt-repository -ys ppa:kelebek333/nvidia-legacy
+sudo add-apt-repository -ys ppa:universal/nvidia-updates
+sudo apt-add-repository -ys ppa:system76-dev/stable
+sudo add-apt-repository -ys ppa:yavdr/main
+sudo add-apt-repository -ys ppa:netext/nvidia-stable
+sudo add-apt-repository -ys ppa:gezakovacs/mono
+sudo add-apt-repository -ys ppa:swooshycueb/mono
+sudo add-apt-repository -ys ppa:mono-ubuntu/ppa
+sudo add-apt-repository -ys ppa:v-kukol/mono
+sudo add-apt-repository -ys ppa:dvkbuntu/dvkbuntu-ppa
+sudo add-apt-repository -ys ppa:guido-iodice/kubuntu-more-updates
+sudo add-apt-repository -ys ppa:kubuntu-ppa/staging-plasma
+sudo add-apt-repository -ys ppa:netrunner-os/enigma-1312
+sudo add-apt-repository -ys ppa:icamargo/networkmanagement
+sudo add-apt-repository -ys ppa:bedouin/mawakit
+sudo add-apt-repository -ys ppa:mieszkoslusarczyk/kde-extras-snapshots
+sudo add-apt-repository -ys ppa:rohangarg/nightly
+sudo add-apt-repository -ys ppa:pali/pali
+sudo add-apt-repository -ys ppa:mc3man/trusty-media
+sudo add-apt-repository -ys ppa:savoury1/fonts
+sudo add-apt-repository -ys ppa:savoury1/build-tools
+sudo add-apt-repository -ys ppa:savoury1/backports
+sudo add-apt-repository -ys ppa:savoury1/python
+sudo add-apt-repository -ys ppa:savoury1/graphics
+sudo add-apt-repository -ys ppa:savoury1/tex-xenial
+sudo add-apt-repository -ys ppa:savoury1/gtk-xenial
+sudo add-apt-repository -ys ppa:savoury1/apt-xenial
+sudo add-apt-repository -ys ppa:savoury1/toolchain
+sudo add-apt-repository -ys ppa:savoury1/encryption
+sudo add-apt-repository -ys ppa:savoury1/gpg
+sudo add-apt-repository -ys ppa:savoury1/multimedia
+sudo add-apt-repository -ys ppa:savoury1/ffmpeg4
+sudo add-apt-repository -ys ppa:ubuntu-wine/pp
 sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
-sudo add-apt-repository ppa:mozgiii/wine-from-debian <<< $(printf "\n")
-sudo add-apt-repository ppa:pipelight/stable <<< $(printf "\n")
-sudo add-apt-repository ppa:gijzelaar/cuda <<< $(printf "\n")
-sudo add-apt-repository ppa:ankeoque/another-ibus-unikey <<< $(printf "\n")
-sudo add-apt-repository ppa:ubuntu-vn/ppa <<< $(printf "\n")
-sudo add-apt-repository ppa:gunnarhj/ibus-unikey2 <<< $(printf "\n")
-sudo add-apt-repository ppa:ibus-backporters/experimental <<< $(printf "\n")
-
+sudo add-apt-repository -ys ppa:mozgiii/wine-from-debian
+sudo add-apt-repository -ys ppa:pipelight/stable
+sudo add-apt-repository -ys ppa:gijzelaar/cuda
+sudo add-apt-repository -ys ppa:ankeoque/another-ibus-unikey
+sudo add-apt-repository -ys ppa:ubuntu-vn/ppa
+sudo add-apt-repository -ys ppa:gunnarhj/ibus-unikey2
+sudo add-apt-repository -ys ppa:ibus-backporters/experimental
+sudo add-apt-repository -ys ppa:micahflee/./.
+sudo add-apt-repository -ys ppa:libreoffice/./.
+sudo add-apt-repository -ys ppa:webupd8team/./.
+sudo add-apt-repository -ys ppa:dr-akulavich/./.
+sudo add-apt-repository -ys ppa:jonathonf/./.
+sudo add-apt-repository -ys ppa:usarinheininga/./.
+sudo add-apt-repository -ys ppa:savoury1/./.
+sudo add-apt-repository -ys ppa:alexey-noskov/./.
+sudo add-apt-repository -ys ppa:plasmazilla/./.
+sudo add-apt-repository -ys ppa:oliver-traeger+launchpad/./.
+sudo add-apt-repository -ys ppa:kubuntu-ppa/./.
+sudo add-apt-repository -ys ppa:savoury1/./.
+sudo add-apt-repository -ys ppa:netrunner-os/./.
+sudo add-apt-repository -ys ppa:nrbrtx/./.
+sudo add-apt-repository -ys ppa:blue-shell/./.
+sudo add-apt-repository -ys ppa:blue-shell/./.
+sudo add-apt-repository -ys ppa:colin-duquesnoy/./.
+sudo add-apt-repository -ys ppa:jstaf/./.
+sudo add-apt-repository -ys ppa:tomtomtom/./.
+sudo add-apt-repository -ys ppa:jr/./.
+sudo add-apt-repository -ys ppa:netrunner-os/./.
+sudo add-apt-repository -ys ppa:darxus/./.
+sudo add-apt-repository -ys ppa:devacom/./.
+sudo add-apt-repository -ys ppa:nilarimogard/./.
+sudo add-apt-repository -ys ppa:shemgp/./.
+sudo add-apt-repository -ys ppa:kamalmostafa/./.
+sudo add-apt-repository -ys ppa:janvitus/./.
+sudo add-apt-repository -ys ppa:ingalex/./.
+sudo add-apt-repository -ys ppa:donk/./.
+sudo add-apt-repository -ys ppa:darklordpaunik8880/./.
+sudo add-apt-repository -ys ppa:ubuntu-sdk-team/./.
+sudo add-apt-repository -ys ppa:omniunit/./.
+sudo add-apt-repository -ys ppa:flatpak/./.
+sudo add-apt-repository -ys ppa:flatpak/./.
+sudo add-apt-repository -ys ppa:mark-pcnetspec/./.
+sudo add-apt-repository -ys ppa:savoury1/./.
+sudo add-apt-repository -ys ppa:system76/./.
+sudo add-apt-repository -ys ppa:system76/./.
+sudo add-apt-repository -ys ppa:alexlarsson/./.
+sudo add-apt-repository -ys ppa:henriqueluiz/./.
+sudo add-apt-repository -ys ppa:ubuntu-mate-dev/./.
+sudo add-apt-repository -ys ppa:snapcpp/./.
+sudo add-apt-repository -ys ppa:ubuntu-desktop/./.
+sudo add-apt-repository -ys ppa:raharper/./.
+sudo add-apt-repository -ys ppa:hiweed-pkg/./.
+sudo add-apt-repository -ys ppa:dajhorn/./.
+sudo add-apt-repository -ys ppa:garhuy/./.
+sudo add-apt-repository -ys ppa:graphics-drivers/./.
+sudo add-apt-repository -ys ppa:kelebek333/./.
+sudo add-apt-repository -ys ppa:universal/./.
+sudo apt-add-repository -ys ppa:system76-dev/./.
+sudo add-apt-repository -ys ppa:yavdr/./.
+sudo add-apt-repository -ys ppa:netext/./.
+sudo add-apt-repository -ys ppa:gezakovacs/./.
+sudo add-apt-repository -ys ppa:swooshycueb/./.
+sudo add-apt-repository -ys ppa:mono-ubuntu/./.
+sudo add-apt-repository -ys ppa:v-kukol/./.
+sudo add-apt-repository -ys ppa:dvkbuntu/./.
+sudo add-apt-repository -ys ppa:guido-iodice/./.
+sudo add-apt-repository -ys ppa:kubuntu-ppa/./.
+sudo add-apt-repository -ys ppa:netrunner-os/./.
+sudo add-apt-repository -ys ppa:icamargo/./.
+sudo add-apt-repository -ys ppa:bedouin/./.
+sudo add-apt-repository -ys ppa:mieszkoslusarczyk/./.
+sudo add-apt-repository -ys ppa:rohangarg/./.
+sudo add-apt-repository -ys ppa:pali/./.
+sudo add-apt-repository -ys ppa:mc3man/./.
+sudo add-apt-repository -ys ppa:savoury1/./.
+sudo add-apt-repository -ys ppa:ubuntu-wine/./.
+sudo add-apt-repository -ys ppa:mozgiii/./.
+sudo add-apt-repository -ys ppa:pipelight/./.
+sudo add-apt-repository -ys ppa:gijzelaar/./.
+sudo add-apt-repository -ys ppa:ankeoque/./.
+sudo add-apt-repository -ys ppa:ubuntu-vn/./.
+sudo add-apt-repository -ys ppa:gunnarhj/./.
+sudo add-apt-repository -ys ppa:ibus-backporters/./.
 
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
