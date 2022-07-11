@@ -572,6 +572,11 @@ sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
 sudo add-apt-repository ppa:mozgiii/wine-from-debian <<< $(printf "\n")
 sudo add-apt-repository ppa:pipelight/stable <<< $(printf "\n")
 sudo add-apt-repository ppa:gijzelaar/cuda <<< $(printf "\n")
+sudo add-apt-repository ppa:ankeoque/another-ibus-unikey <<< $(printf "\n")
+sudo add-apt-repository ppa:ubuntu-vn/ppa <<< $(printf "\n")
+sudo add-apt-repository ppa:gunnarhj/ibus-unikey2 <<< $(printf "\n")
+sudo add-apt-repository ppa:ibus-backporters/experimental <<< $(printf "\n")
+
 
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
