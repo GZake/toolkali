@@ -925,6 +925,7 @@ cd ~/toolkali
 git init
 git add .
 git remote add origin https://github.com/GZake/toolkali.git
+git pull -u origin master
 git push -u origin master
 
 if [ $choose1 -eq 4 ]
