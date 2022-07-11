@@ -274,7 +274,7 @@ passwd <<< $(printf "113006\n113006\n")
 goto choose
 
 uptool:
-cd ..
+cd ~
 sudo rm -fR $HOME/toolkali 
 sudo rm -fR /media/$HOME/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
@@ -283,7 +283,7 @@ git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
-cd ..
+cd ~
 cd $HOME/toolkali/
 exit
 clear
@@ -921,7 +921,11 @@ sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
+cd ~/toolkali
+git init
+git add .
 git remote add origin https://github.com/GZake/toolkali.git
+git push -u origin master
 
 if [ $choose1 -eq 4 ]
 then
