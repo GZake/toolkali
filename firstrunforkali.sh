@@ -435,7 +435,6 @@ sudo apt-add-repository http://httpredir.debian.org/debian
 sudo apt-add-repository http://security.debian.org/debian-security/
 sudo apt-add-repository http://extras.ubuntu.com/ubuntu/
 sudo apt-add-repository http://ua.archive.ubuntu.com/ubuntu/
-sudo apt-add-repository http://kali.download/kali/
 sudo apt-add-repository https://packages.microsoft.com/repos/
 sudo apt-add-repository https://packages.microsoft.com/debian/10/prod
 sudo apt-add-repository https://packages.microsoft.com/debian/11/prod
