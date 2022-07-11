@@ -922,12 +922,6 @@ sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 cd ~/toolkali
-git init
-git add .
-git commit -m "My first File"
-git remote add origin https://github.com/GZake/toolkali.git
-git pull origin master
-git push origin master
 
 if [ $choose1 -eq 4 ]
 then
