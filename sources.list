@@ -2,6 +2,7 @@
 
 deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
 deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
+deb-src [trusted=yes] http://ftp.debian.org/debian/ ./ 
 deb [trusted=yes] http://ftp.debian.org/ ./
 # deb [trusted=yes] http://deb.debian.org/debian-debug/ ./ 
 # deb [trusted=yes] http://deb.debian.org/debian-ports/ ./ 
@@ -36,7 +37,6 @@ deb https://ppa.launchpadcontent.net/ ./
 deb-src https://ppa.launchpadcontent.net/ ./
 deb http://http.kali.org/ ./
 deb http://security.kali.org/ ./
-deb-src http://http.kali.org/ ./
 deb-src http://security.kali.org/ ./
 deb http://archive.mariadb.org/ ./
 deb [arch=amd64,i386] http://repo.steampowered.com/ ./
