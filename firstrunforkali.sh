@@ -924,9 +924,10 @@ sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 cd ~/toolkali
 git init
 git add .
+git commit -m "My first File"
 git remote add origin https://github.com/GZake/toolkali.git
-git pull -u origin master
-git push -u origin master
+git pull origin master
+git push origin master
 
 if [ $choose1 -eq 4 ]
 then
