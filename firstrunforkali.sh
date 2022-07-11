@@ -484,6 +484,7 @@ sudo apt-add-repository x:x/x <<< $(printf "\n")
 #https://launchpad.net/
 sudo add-apt-repository -ys ppa:micahflee/ppa
 sudo add-apt-repository -ys ppa:libreoffice/ppa
+sudo add-apt-repository -ys ppa:libreoffice/libreoffice-4-2
 sudo add-apt-repository -ys ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -ys ppa:dr-akulavich/lighttable
 sudo apt-add-repository -ys ppa:$USER/$PPA
