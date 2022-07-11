@@ -238,8 +238,8 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests nvidia-kernel-dkms
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests nvidia-driver nvidia-xconfig
-sudo dpkg --configure -a | tee -a  /root/Desktop/log.txt
-sudo apt update --fix-missing -y | tee -a /root/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  /root/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt update --fix-missing -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y").txt
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests wine32
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests wine64
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests wine*
@@ -252,16 +252,16 @@ wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
 sudo dpkg -i viber.deb
-sudo apt --fix-broken install -y | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 find-dbgsym-packages [core_path|running_pid|binary_path]
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
 sudo cp /usr/lib/libicu*.so.61* /usr/lib
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests ibus-unikey*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests ibus-unikey
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 #sudo bash updatekali.sh
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests snap
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests snap*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *snap*
@@ -283,7 +283,7 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *spotify*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests spotify-client
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *grub-efi*
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+#sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests grub-efi*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests grub-efi
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests packaging-dev sbuild apt-file gitk git-lfs myrepos
@@ -369,8 +369,8 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 #sudo rm -fRvd /tmp/apt-dpkg-install-QpG6h2/*wine*
 #sudo rm -fRvd /var/cache/apt/archives/*wine*
 #sudo rm -fRvd /usr/lib/x86_64-linux-gnu/*wine*/
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-tools-information-gathering
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-tools-vulnerability
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-tools-web
@@ -525,9 +525,9 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *dm*
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 cd /var/cache/apt/archives/ ###########################################################
 
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kubuntu-desktop
@@ -634,8 +634,8 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-desktop-live*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests kali-desktop-xfce*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests nvidia*
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 
 
 
@@ -650,9 +650,9 @@ sudo systemctl start snapd.socket snapd apparmor
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey*
 sudo apt-get -d --download-only -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -y ibus-unikey
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log.txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log.txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log.txt
+sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests i3wm*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *i3wm*
