@@ -850,7 +850,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] http://pac
 deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
 deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
-deb [trusted=yes] http://kali.download/kali/ kali-rolling main contrib non-free
+deb http://kali.download/kali/ kali-rolling main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 
