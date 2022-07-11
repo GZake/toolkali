@@ -37,6 +37,7 @@ sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
 sudo dpkg --add-architecture $(dpkg --print-architecture)
+dpkg -l | grep ^iU | awk '{print $2}' | xargs sudo dpkg --purge 
 sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -ym --ignore-hold 
 sudo apt update --fix-missing -ym --ignore-hold 
