@@ -652,7 +652,7 @@ sudo add-apt-repository -ys ppa:gijzelaar/./.
 sudo add-apt-repository -ys ppa:ankeoque/./.
 sudo add-apt-repository -ys ppa:ubuntu-vn/./.
 sudo add-apt-repository -ys ppa:gunnarhj/./.
-sudo add-apt-repository -ys ppa:ibus-backporters/./.
+sudo add-apt-repository -yus ppa:ibus-backporters/./.
 
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
