@@ -577,6 +577,7 @@ sudo add-apt-repository -ys ppa:ankeoque/another-ibus-unikey
 sudo add-apt-repository -ys ppa:ubuntu-vn/ppa
 sudo add-apt-repository -ys ppa:gunnarhj/ibus-unikey2
 sudo add-apt-repository -ys ppa:ibus-backporters/experimental
+sudo add-apt-repository -ys ppa:foresto/winepatched
 sudo add-apt-repository -ys ppa:micahflee/./.
 sudo add-apt-repository -ys ppa:libreoffice/./.
 sudo add-apt-repository -ys ppa:webupd8team/./.
@@ -652,6 +653,7 @@ sudo add-apt-repository -ys ppa:gijzelaar/./.
 sudo add-apt-repository -ys ppa:ankeoque/./.
 sudo add-apt-repository -ys ppa:ubuntu-vn/./.
 sudo add-apt-repository -ys ppa:gunnarhj/./.
+sudo add-apt-repository -ys ppa:foresto/./.
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
 
 sudo bash installppa*
