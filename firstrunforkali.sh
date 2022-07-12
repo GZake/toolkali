@@ -578,6 +578,12 @@ sudo add-apt-repository -ys ppa:ubuntu-vn/ppa
 sudo add-apt-repository -ys ppa:gunnarhj/ibus-unikey2
 sudo add-apt-repository -ys ppa:ibus-backporters/experimental
 sudo add-apt-repository -ys ppa:foresto/winepatched
+sudo add-apt-repository -ys ppa:samoilov-lex/retrogames
+sudo add-apt-repository -ys ppa:savoury1/games
+sudo add-apt-repository -ys ppa:phobie/ppa
+sudo add-apt-repository -ys ppa:phobie/./.
+sudo add-apt-repository -ys ppa:savoury1/./.
+sudo add-apt-repository -ys ppa:samoilov-lex/./.
 sudo add-apt-repository -ys ppa:micahflee/./.
 sudo add-apt-repository -ys ppa:libreoffice/./.
 sudo add-apt-repository -ys ppa:webupd8team/./.
