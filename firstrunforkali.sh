@@ -1130,7 +1130,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash need.sh
+sudo bash ~/toolkali/need.sh | tee   /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
