@@ -1,159 +1,6 @@
 
 
-deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
-deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
-deb-src [trusted=yes] http://ftp.debian.org/debian/ ./ 
-deb [trusted=yes] http://ftp.debian.org/ ./
-# deb [trusted=yes] http://deb.debian.org/debian-debug/ ./ 
-# deb [trusted=yes] http://deb.debian.org/debian-ports/ ./ 
-deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ ./ 
-deb [trusted=yes] http://security.debian.org/debian-security/ ./ 
-deb-src [trusted=yes] http://deb.debian.org/debian/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-debug/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb [trusted=yes] http://kali.download/ ./
-deb-src [trusted=yes] http://kali.download/ ./
-deb [trusted=yes] http://ua.archive.ubuntu.com/ ./
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian ./
-deb [trusted=yes] http://deb.debian.org/debian-debug ./
-deb-src [trusted=yes] http://security.debian.org/debian-security ./
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
-deb [trusted=yes] http://deb.debian.org/ ./
-deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb  https://http.kali.org/kali/ ./
-deb-src  https://http.kali.org/kali/ ./
-deb-src  https://http.kali.org/ ./
-deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
-deb-src [trusted=yes] http://ppa.launchpad.net/ ./
-deb [trusted=yes] http://ppa.launchpad.net/ ./
-deb-src https://http.redir.debian.org/ ./
-deb [trusted=yes] http://security.debian.org/ ./ 
-deb-src [trusted=yes] http://security.debian.org/ ./ 
-deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
-deb https://ppa.launchpadcontent.net/ ./
-deb-src https://ppa.launchpadcontent.net/ ./
-deb http://http.kali.org/ ./
-deb http://security.kali.org/ ./
-deb-src http://security.kali.org/ ./
-deb http://archive.mariadb.org/ ./
-deb [arch=amd64,i386] http://repo.steampowered.com/ ./
-deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
-deb [trusted=yes] http://ddebs.ubuntu.com/ ./
-deb http://dl.winehq.org/ ./
-deb-src http://dl.winehq.org/ ./
-deb http://deb.playonlinux.com/ ./
-deb-src http://deb.playonlinux.com/ ./
-deb [arch=amd64] http://apt.postgresql.org/ ./
-deb https://http.redir.debian.org/ ./
-deb-src [trusted=yes] http://ua.archive.ubuntu.com/ ./
-deb-src [trusted=yes] http://extras.ubuntu.com/ ./
-deb [trusted=yes] http://extras.ubuntu.com/ ./
-deb [trusted=yes] http://private-ppa.launchpad.net/ ./
-deb-src [trusted=yes] http://private-ppa.launchpad.net/ ./
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 
-
-
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
-deb https://download.opensuse.org/ ./
-
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 
 deb http://http.kali.org/kali sana main non-free contrib
 deb http://security.kali.org/kali-security sana/updates main contrib non-free
@@ -1285,5 +1132,158 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ nightly main
 #################
 
+deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
+deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
+deb-src [trusted=yes] http://ftp.debian.org/debian/ ./ 
+deb [trusted=yes] http://ftp.debian.org/ ./
+# deb [trusted=yes] http://deb.debian.org/debian-debug/ ./ 
+# deb [trusted=yes] http://deb.debian.org/debian-ports/ ./ 
+deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ ./ 
+deb [trusted=yes] http://security.debian.org/debian-security/ ./ 
+deb-src [trusted=yes] http://deb.debian.org/debian/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-debug/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-ports/ ./
+deb-src [trusted=yes] http://deb.debian.org/debian-security/ ./
+deb [trusted=yes] http://kali.download/ ./
+deb-src [trusted=yes] http://kali.download/ ./
+deb [trusted=yes] http://ua.archive.ubuntu.com/ ./
+deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ ./
+deb [trusted=yes] http://deb.debian.org/debian ./
+deb [trusted=yes] http://deb.debian.org/debian-debug ./
+deb-src [trusted=yes] http://security.debian.org/debian-security ./
+deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
+deb [trusted=yes] http://deb.debian.org/ ./
+deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
+deb [trusted=yes] http://deb.debian.org/debian-security/ ./
+deb  https://http.kali.org/kali/ ./
+deb-src  https://http.kali.org/kali/ ./
+deb-src  https://http.kali.org/ ./
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
+deb-src [trusted=yes] http://ppa.launchpad.net/ ./
+deb [trusted=yes] http://ppa.launchpad.net/ ./
+deb-src https://http.redir.debian.org/ ./
+deb [trusted=yes] http://security.debian.org/ ./ 
+deb-src [trusted=yes] http://security.debian.org/ ./ 
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
+deb https://ppa.launchpadcontent.net/ ./
+deb-src https://ppa.launchpadcontent.net/ ./
+deb http://http.kali.org/ ./
+deb http://security.kali.org/ ./
+deb-src http://security.kali.org/ ./
+deb http://archive.mariadb.org/ ./
+deb [arch=amd64,i386] http://repo.steampowered.com/ ./
+deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
+deb [trusted=yes] http://ddebs.ubuntu.com/ ./
+deb http://dl.winehq.org/ ./
+deb-src http://dl.winehq.org/ ./
+deb http://deb.playonlinux.com/ ./
+deb-src http://deb.playonlinux.com/ ./
+deb [arch=amd64] http://apt.postgresql.org/ ./
+deb https://http.redir.debian.org/ ./
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ ./
+deb-src [trusted=yes] http://extras.ubuntu.com/ ./
+deb [trusted=yes] http://extras.ubuntu.com/ ./
+deb [trusted=yes] http://private-ppa.launchpad.net/ ./
+deb-src [trusted=yes] http://private-ppa.launchpad.net/ ./
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
+deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 
+
+
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
+deb https://download.opensuse.org/ ./
+
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 
