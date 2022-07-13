@@ -1064,9 +1064,9 @@ sudo apt update --fix-missing -y
 dpkg --configure -a | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
-apt-get update -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-apt-get upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-apt-get dist-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get update -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get upgrade -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get dist-upgrade -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
@@ -1187,9 +1187,9 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-get update -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get full-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get dist-upgrade -y | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
