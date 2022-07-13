@@ -583,14 +583,14 @@ sudo add-apt-repository -ys ppa:foresto/winepatched
 sudo add-apt-repository -ys ppa:samoilov-lex/retrogames
 sudo add-apt-repository -ys ppa:savoury1/games
 sudo add-apt-repository -ys ppa:phobie/ppa
-sudo add-apt-repository ppa:elementaryos-fr-community/ppa
-sudo add-apt-repository ppa:versable/elementary-update
-sudo add-apt-repository ppa:tevo45/personal
-sudo add-apt-repository ppa:xtradeb/play
-sudo add-apt-repository ppa:xtradeb/./.
-sudo add-apt-repository ppa:tevo45/./.
-sudo add-apt-repository ppa:versable/./.
-sudo add-apt-repository ppa:elementaryos-fr-community/./.
+sudo add-apt-repository -ys ppa:elementaryos-fr-community/ppa
+sudo add-apt-repository -ys ppa:versable/elementary-update
+sudo add-apt-repository -ys ppa:tevo45/personal
+sudo add-apt-repository -ys ppa:xtradeb/play
+sudo add-apt-repository -ys ppa:xtradeb/./.
+sudo add-apt-repository -ys ppa:tevo45/./.
+sudo add-apt-repository -ys ppa:versable/./.
+sudo add-apt-repository -ys ppa:elementaryos-fr-community/./.
 sudo add-apt-repository -ys ppa:phobie/./.
 sudo add-apt-repository -ys ppa:savoury1/./.
 sudo add-apt-repository -ys ppa:samoilov-lex/./.
