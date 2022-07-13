@@ -271,6 +271,8 @@ reboot
 root:
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests  kali-root-login
 passwd <<< $(printf "113006\n113006\n")
+sudo userdel kali
+sudo deluser kali
 goto choose
 
 uptool:
