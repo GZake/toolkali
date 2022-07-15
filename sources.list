@@ -1,6 +1,25 @@
 
-
-
+deb https://http.kali.org/kali kali-rolling-only main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb https://http.kali.org/kali kali-rolling-only main/debian-installer
+deb [trusted=yes] http://packages.microsoft.com/ kali-rolling main
+deb-src [trusted=yes] http://packages.microsoft.com/ kali-rolling main
+deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
+deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
+deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
+deb-src [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
+deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
+deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
+deb http://kali.download/kali/ kali-rolling main contrib non-free
+deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
+deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 
 deb http://http.kali.org/kali sana main non-free contrib
 deb http://security.kali.org/kali-security sana/updates main contrib non-free
@@ -229,10 +248,7 @@ deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial main restri
 
 
 
-# deb [trusted=yes] http://packages.microsoft.com/ kali-rolling main
-# deb-src [trusted=yes] http://packages.microsoft.com/ kali-rolling main
-deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
-deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+
 deb [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
 deb-src [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
 deb [arch=amd64,i386] http://repo.steampowered.com/steam/ beta steam
@@ -431,19 +447,15 @@ deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contri
 deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb https://http.kali.org/kali/ kali-last-snapshot contrib non-free
-deb [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
-deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
 deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
 deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
 deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-last-snapshot contrib non-free
-deb-src [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
-# deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
-# deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
+
 deb http://deb.debian.org/debian/ experimental main contrib non-free
 ##############################
 deb https://http.redir.debian.org/debian Debian8.11 main contrib non-free
@@ -637,7 +649,6 @@ deb https://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 deb https://http.kali.org/kali debian-testing main contrib non-free
 deb https://http.kali.org/kali kali-debian-picks main contrib non-free
-deb https://http.kali.org/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/ /kali main contrib non-free
 deb https://http.kali.org/ /wheezy main contrib non-free
 deb http://mirror.anigil.com/kali debian-testing main contrib non-free
@@ -647,8 +658,6 @@ deb http://mirror.anigil.com/kali kali-dev main contrib non-free
 deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
-deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
-deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb-src https://http.kali.org/kali kali-experimental main contrib non-free
 deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
 deb-src https://http.kali.org/kali kali-dev main/debian-installer
@@ -657,7 +666,6 @@ deb https://http.kali.org/kali kali-experimental main/debian-installer
 deb https://http.kali.org/kali debian-testing main/debian-installer
 deb https://http.kali.org/kali kali-debian-picks main/debian-installer
 deb https://http.kali.org/kali kali-dev-only main/debian-installer
-deb https://http.kali.org/kali kali-rolling-only main/debian-installer
 deb https://http.kali.org/ /kali main/debian-installer
 deb https://http.kali.org/ /wheezy main/debian-installer
 deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
@@ -667,8 +675,6 @@ deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb http://security.kali.org/kali-security kali/updates main contrib non-free
 deb-src http://security.kali.org/kali-security kali/updates main contrib non-free
 deb [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
@@ -692,12 +698,6 @@ deb [trusted=yes] http://security.ubuntu.com/ubuntu xenial-security multiverse
 deb [trusted=yes] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse
 deb [trusted=yes] http://ppa.launchpad.net/linrunner/tlp/ubuntu xenial main
 deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] http://packages.microsoft.com/repos/vscode stable main
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
-deb http://kali.download/kali/ kali-rolling main contrib non-free
-deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
-deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 
 ####Microsoft#####
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/amlfs/ bionic main contrib non-free
