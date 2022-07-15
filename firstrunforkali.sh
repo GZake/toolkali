@@ -74,6 +74,15 @@ sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
+
+sudo chmod -Rv 777 /var/lib/apt/lists/ 
+sudo chown -Rv _apt:root /var/lib/apt/lists/
+sudo chmod -Rv 777 /var/lib/apt/lists/
+sudo chown -Rv _apt:root /var/lib/apt/lists/
+sudo chmod -Rv 777 /var/lib/apt/lists/* 
+sudo chown -Rv _apt:root /var/lib/apt/lists/*
+sudo chmod -Rv 777 /var/lib/apt/lists/*
+sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
