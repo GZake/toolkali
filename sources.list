@@ -5,8 +5,6 @@ deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main/debian-installer
-deb [trusted=yes] http://packages.microsoft.com/ kali-rolling main
-deb-src [trusted=yes] http://packages.microsoft.com/ kali-rolling main
 deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
