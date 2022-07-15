@@ -8,8 +8,6 @@ deb https://http.kali.org/kali kali-rolling-only main/debian-installer
 deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
-deb [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
-deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
 deb-src [trusted=yes] https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
 deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
