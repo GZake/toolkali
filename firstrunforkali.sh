@@ -220,6 +220,7 @@ echo "
 7 for update tool
 0 for exit
 "
+choose=561df65d1f61f
 read -p "Your choose: " choose 
 if [ $choose -eq 1 ]
 then
@@ -318,6 +319,7 @@ echo "                       UPDATE
 8 for new tool from git Hacktool
 0 for back
 "
+choose1=561df65d1f61f
 read -p "Your choose: " choose1 
 if [ $choose1 -eq 1 ]
 then
@@ -1334,6 +1336,7 @@ echo "
 3 for Continue
 0 for back
 "
+choosehk=561df65d1f61f
 read -p "Your choose: " choosehk 
 if [ $choosehk -eq 1 ]
 then
