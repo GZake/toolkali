@@ -1214,6 +1214,8 @@ sudo apt-get update -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xar
 sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get update -ym | grep "Ign:" | tee -a ~/Desktop/ign.txt
+apt-get full-upgrade -ym | grep "Ign:" | tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
