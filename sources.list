@@ -650,12 +650,102 @@ deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
 #Addedby software-center
 deb [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted universe multiverse
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
 #Addedby software-center
 deb-src [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
 deb http://deb.playonlinux.com/ quantal main
@@ -698,7 +788,6 @@ deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
 deb [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
-deb [trusted=yes] http://ftp.us.debian.org/ubuntu stable main contrib non-free
 deb-src [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
 deb http://ftp.debian.org/debian/ wheezy-updates main contrib non-free
 deb-src http://ftp.debian.org/debian/ wheezy-updates main contrib non-free
@@ -1409,5 +1498,4 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-uniso
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
-
 
