@@ -119,10 +119,10 @@ sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 ins
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests  software-properties-kde
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests  software-properties-kde*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests  *software-properties-kde*
-sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
-sudo dpkg --add-architecture arm64
-sudo dpkg --add-architecture i586
+#sudo dpkg --add-architecture i386
+#sudo dpkg --add-architecture arm64
+#sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture aarch64
 #sudo dpkg --add-architecture DEP-11
