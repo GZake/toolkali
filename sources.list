@@ -1498,4 +1498,3 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-uniso
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
-
