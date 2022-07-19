@@ -405,7 +405,7 @@ sudo chmod 777 -R -v updatekali.sh
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
-@reboot sudo bash /$HOME/updatekali.sh &
+@reboot sudo bash /$HOME/updatekali.sh
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
@@ -672,7 +672,7 @@ then
 fi
 
 per:
-#sudo chmod -Rv 777 /var/cache/apt/archives/partial/ &
+#sudo chmod -Rv 777 /var/cache/apt/archives/partial/
 #echo"
 #"
 #sudo chown -Rv root:root /var/cache/apt/archives/ 
