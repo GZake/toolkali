@@ -40,6 +40,15 @@ sudo dpkg --remove-architecture i386
 sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
+sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 dpkg -l | grep ^iU | awk '{print $2}' | xargs sudo dpkg --purge 
 sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -ym --ignore-hold 
@@ -61,6 +70,15 @@ update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
