@@ -36,6 +36,9 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 dpkg -l | grep ^iU | awk '{print $2}' | xargs sudo dpkg --purge 
 sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
