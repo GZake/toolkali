@@ -1054,6 +1054,9 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt update --fix-missing -y 
@@ -1174,6 +1177,9 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
@@ -1287,6 +1293,9 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 echo -e "${ORANGE} "
 echo ""
