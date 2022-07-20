@@ -28,7 +28,7 @@ deb-src  https://http.kali.org/ ./
 deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
 deb-src [trusted=yes] http://ppa.launchpad.net/ ./
 deb [trusted=yes] http://ppa.launchpad.net/ ./
-deb-src https://http.redir.debian.org/ ./
+deb-src https://httpredir.debian.org/ ./
 deb [trusted=yes] http://security.debian.org/ ./ 
 deb-src [trusted=yes] http://security.debian.org/ ./ 
 deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
@@ -47,7 +47,7 @@ deb-src http://dl.winehq.org/ ./
 deb http://deb.playonlinux.com/ ./
 deb-src http://deb.playonlinux.com/ ./
 deb [arch=amd64] http://apt.postgresql.org/ ./
-deb https://http.redir.debian.org/ ./
+deb https://httpredir.debian.org/ ./
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ ./
 deb-src [trusted=yes] http://extras.ubuntu.com/ ./
 deb [trusted=yes] http://extras.ubuntu.com/ ./
@@ -601,36 +601,36 @@ deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 # deb-src [trusted=yes] http://dl.winehq.org/wine-builds/ubuntu/ kali-rolling main contrib non-free
 deb http://deb.debian.org/debian/ experimental main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian Debian8.11 main contrib non-free
-deb-src https://http.redir.debian.org/debian Debian8.11 main contrib non-free
+deb https://httpredir.debian.org/debian Debian8.11 main contrib non-free
+deb-src https://httpredir.debian.org/debian Debian8.11 main contrib non-free
 deb http://deb.debian.org/debian/ Debian8.11 main contrib non-free
 deb-src http://deb.debian.org/debian/ Debian8.11 main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ Debian8.11 main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ Debian8.11 main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian Debian9.13 main contrib non-free
-deb-src https://http.redir.debian.org/debian Debian9.13 main contrib non-free
+deb https://httpredir.debian.org/debian Debian9.13 main contrib non-free
+deb-src https://httpredir.debian.org/debian Debian9.13 main contrib non-free
 deb http://deb.debian.org/debian/ Debian9.13 main contrib non-free
 deb-src http://deb.debian.org/debian/ Debian9.13 main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ Debian9.13 main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ Debian9.13 main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian jessie-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian jessie-updates main contrib non-free
+deb https://httpredir.debian.org/debian jessie-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian jessie-updates main contrib non-free
 deb http://deb.debian.org/debian/ jessie-updates main contrib non-free
 deb-src http://deb.debian.org/debian jessie-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ jessie-updates main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ jessie-updates main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian jessie main contrib non-free
-deb-src https://http.redir.debian.org/debian jessie main contrib non-free
+deb https://httpredir.debian.org/debian jessie main contrib non-free
+deb-src https://httpredir.debian.org/debian jessie main contrib non-free
 deb http://deb.debian.org/debian/ jessie main contrib non-free
 deb-src http://deb.debian.org/debian/ jessie main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ jessie main contrib non-free
 
 ##############################
-deb https://http.redir.debian.org/debian buster main contrib non-free
-deb-src https://http.redir.debian.org/debian buster main contrib non-free
+deb https://httpredir.debian.org/debian buster main contrib non-free
+deb-src https://httpredir.debian.org/debian buster main contrib non-free
 deb http://deb.debian.org/debian/ buster main contrib non-free
 deb-src http://deb.debian.org/debian/ buster main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ buster main contrib non-free
@@ -700,36 +700,36 @@ deb-src http://deb.debian.org/debian/ sarge main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ sarge main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ sarge main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian sid main contrib non-free
-deb-src https://http.redir.debian.org/debian sid main contrib non-free
+deb https://httpredir.debian.org/debian sid main contrib non-free
+deb-src https://httpredir.debian.org/debian sid main contrib non-free
 deb   http://deb.debian.org/debian/ sid main contrib non-free
 deb-src http://deb.debian.org/debian sid main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
 
 ##############################
-# deb https://http.redir.debian.org/debian unstable main contrib non-free
-# deb-src https://http.redir.debian.org/debian unstable main contrib non-free
+# deb https://httpredir.debian.org/debian unstable main contrib non-free
+# deb-src https://httpredir.debian.org/debian unstable main contrib non-free
 # deb   http://deb.debian.org/debian/ unstable main contrib non-free
 # deb-src http://deb.debian.org/debian unstable main contrib non-free
 # deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
 
 ##############################
-deb https://http.redir.debian.org/debian oldoldoldstable-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb https://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
 deb   http://deb.debian.org/debian/ oldoldoldstable-updates main contrib non-free
 deb-src http://deb.debian.org/debian oldoldoldstable-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable-updates main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ oldoldoldstable-updates main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian buster-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian buster-updates main contrib non-free
+deb https://httpredir.debian.org/debian buster-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian buster-updates main contrib non-free
 deb   http://deb.debian.org/debian/ buster-updates main contrib non-free
 deb-src http://deb.debian.org/debian buster-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ buster-updates main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ buster-updates main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian oldstable-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian oldstable-updates main contrib non-free
+deb https://httpredir.debian.org/debian oldstable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian oldstable-updates main contrib non-free
 deb   http://deb.debian.org/debian/ oldstable-updates main contrib non-free
 deb-src http://deb.debian.org/debian oldstable-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ oldstable-updates main contrib non-free
@@ -738,28 +738,28 @@ deb http://dl.winehq.org/wine-builds/debian/ oldstable-updates main contrib non-
 deb http://security.debian.org/ jessie/updates main contrib non-free
 deb-src http://security.debian.org/ jessie/updates main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian stable-backports-sloppy main contrib non-free
-deb-src https://http.redir.debian.org/debian stable-backports-sloppy main contrib non-free
+deb https://httpredir.debian.org/debian stable-backports-sloppy main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-backports-sloppy main contrib non-free
 deb   http://deb.debian.org/debian/ stable-backports-sloppy main contrib non-free
 deb-src http://deb.debian.org/debian/ stable-backports-sloppy main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports-sloppy main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ stable-backports-sloppy main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian stable-backports main contrib non-free
-deb-src https://http.redir.debian.org/debian stable-backports main contrib non-free
+deb https://httpredir.debian.org/debian stable-backports main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-backports main contrib non-free
 deb   http://deb.debian.org/debian/ stable-backports main contrib non-free
 deb-src http://deb.debian.org/debian/ stable-backports main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ stable-backports main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian stable-proposed-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian stable-proposed-updates main contrib non-free
+deb https://httpredir.debian.org/debian stable-proposed-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-proposed-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ stable-proposed-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-proposed-updates main contrib non-free
 deb http://dl.winehq.org/wine-builds/debian/ stable-proposed-updates main contrib non-free
 ##############################
-deb https://http.redir.debian.org/debian stable-updates main contrib non-free
-deb-src https://http.redir.debian.org/debian stable-updates main contrib non-free
+deb https://httpredir.debian.org/debian stable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-updates main contrib non-free
 deb   http://deb.debian.org/debian/ stable-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ stable-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-updates main contrib non-free
@@ -1283,107 +1283,4 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ testing main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ nightly main
-#################
-
-####for x####
-deb [trusted=yes] http://cz.archive.ubuntu.com/ x main universe by-hash multiverse restricted x
-deb [trusted=yes] http://ftp.debian.org/debian/ x contrib main non-free
-deb [trusted=yes] http://ftp.debian.org/debian/ stable main contrib non-free
-deb [trusted=yes] http://ftp.debian.org/x/ x contrib main non-free
-# deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
-# deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
-deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ x main multiverse restricted universe
-deb [trusted=yes] http://security.debian.org/debian-security/ x main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian/ x main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-debug/ x main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-ports/ x main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-security/ x main contrib non-free
-deb [trusted=yes] http://kali.download/x/ x main contrib non-free
-deb-src [trusted=yes] http://kali.download/x/ x main contrib non-free
-deb [trusted=yes] http://ua.archive.ubuntu.com/x/ x main restricted universe multiverse
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ x main non-free contrib
-deb [trusted=yes] http://deb.debian.org/debian x main/debian-installer
-deb [trusted=yes] http://deb.debian.org/debian-debug x main/debian-installer
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports x main/debian-installer
-deb [trusted=yes] http://security.debian.org/debian-security x main/debian-installer
-deb-src [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ x main non-free contrib
-deb-src [trusted=yes] http://security.debian.org/debian-security x main non-free contrib
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali x main non-free contrib
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali x ain/debian-installer
-deb-src [trusted=yes] http://kali.cs.nctu.edu.tw/kali x main non-free contrib
-deb [trusted=yes] http://deb.debian.org/x/ x main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian/ x main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-debug/ x main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-ports/ x main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-security/ x main contrib non-free
-deb [trusted=yes] https://http.kali.org/kali/x/ x main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/kali/x/ x main contrib non-free
-deb [trusted=yes] https://http.kali.org/x/ x main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/x/ x main contrib non-free
-deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ x x
-deb [trusted=yes] https://http.kali.org/kali x x
-deb [trusted=yes] https://http.kali.org/kali x main contrib non-free
-deb [trusted=yes] https://http.kali.org/kali x main/debian-installer
-deb-src [trusted=yes] https://http.kali.org/kali x main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/kali x x
-deb-src [trusted=yes] http://ppa.launchpad.net/x/x/x/ x x
-deb [trusted=yes] http://ppa.launchpad.net/x/x/x/ x x
-deb [trusted=yes] http://deb.debian.org/x/ x x
-deb [trusted=yes] https://http.redir.debian.org/x x x
-deb-src [trusted=yes] https://http.redir.debian.org/x x x
-deb [trusted=yes] http://security.debian.org/x x x
-deb-src [trusted=yes] http://security.debian.org/x x x
-deb [trusted=yes] http://ftp-stud.hs-esslingen.de/x x x x x x
-deb https://ppa.launchpadcontent.net/x/x/x  x x x
-
-
-
-deb [trusted=yes] http://cz.archive.ubuntu.com/ * main universe by-hash multiverse restricted *
-deb [trusted=yes] http://ftp.debian.org/debian/ * contrib main non-free
-deb [trusted=yes] http://ftp.debian.org/*/ * contrib main non-free
-# deb [trusted=yes] http://deb.debian.org/debian-debug/ unstable-debug main contrib non-free
-# deb [trusted=yes] http://deb.debian.org/debian-ports/ unstable main contrib non-free
-deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ * main multiverse restricted universe
-deb [trusted=yes] http://security.debian.org/debian-security/ * main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian/ * main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-debug/ * main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-ports/ * main contrib non-free
-deb-src [trusted=yes] http://deb.debian.org/debian-security/ * main contrib non-free
-deb [trusted=yes] http://kali.download/*/ * main contrib non-free
-deb-src [trusted=yes] http://kali.download/*/ * main contrib non-free
-deb [trusted=yes] http://ua.archive.ubuntu.com/*/ * main restricted universe multiverse
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ * main non-free contrib
-deb [trusted=yes] http://deb.debian.org/debian * main/debian-installer
-deb [trusted=yes] http://deb.debian.org/debian-debug * main/debian-installer
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports * main/debian-installer
-deb [trusted=yes] http://security.debian.org/debian-security * main/debian-installer
-deb-src [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ * main non-free contrib
-deb-src [trusted=yes] http://security.debian.org/debian-security * main non-free contrib
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali * main non-free contrib
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali * ain/debian-installer
-deb-src [trusted=yes] http://kali.cs.nctu.edu.tw/kali * main non-free contrib
-deb [trusted=yes] http://deb.debian.org/*/ * main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian/ * main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-debug/ * main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-ports/ * main contrib non-free
-deb [trusted=yes] http://deb.debian.org/debian-security/ * main contrib non-free
-deb [trusted=yes] https://http.kali.org/kali/*/ * main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/kali/*/ * main contrib non-free
-deb [trusted=yes] https://http.kali.org/*/ * main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/*/ * main contrib non-free
-deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ * *
-deb [trusted=yes] https://http.kali.org/kali * *
-deb [trusted=yes] https://http.kali.org/kali * main contrib non-free
-deb [trusted=yes] https://http.kali.org/kali * main/debian-installer
-deb-src [trusted=yes] https://http.kali.org/kali * main contrib non-free
-deb-src [trusted=yes] https://http.kali.org/kali * *
-deb-src [trusted=yes] http://ppa.launchpad.net/*/*/*/ * *
-deb [trusted=yes] http://ppa.launchpad.net/*/*/*/ * *
-deb [trusted=yes] http://deb.debian.org/*/ * *
-deb [trusted=yes] https://http.redir.debian.org/* * *
-deb-src [trusted=yes] https://http.redir.debian.org/* * *
-deb [trusted=yes] http://security.debian.org/* * *
-deb-src [trusted=yes] http://security.debian.org/* * *
-deb [trusted=yes] http://ftp-stud.hs-esslingen.de/* * * * * *
-deb https://ppa.launchpadcontent.net/*/*/*  * * *
 
