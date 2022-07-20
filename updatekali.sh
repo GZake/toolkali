@@ -39,7 +39,7 @@ sudo dpkg --remove-architecture tilegx
 sudo dpkg --remove-architecture i386
 sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
-sudo dpkg --add-architecture $(dpkg --print-architecture)
+#sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
@@ -87,8 +87,7 @@ sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture aarch64
 #sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture all
-sudo dpkg --add-architecture arc
-sudo dpkg --add-architecture ia64
+#sudo dpkg --add-architecture arc
 #sudo dpkg --add-architecture s390
 #sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture arm
