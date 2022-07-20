@@ -409,6 +409,16 @@ echo "
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
+ulimit -Sn unlimited
+ulimit -n unlimited
+ulimit -p unlimited
+ulimit -c unlimited
+ulimit -i unlimited
+ulimit -l unlimited
+ulimit -s unlimited
+ulimit -u unlimited -n 65536
+sysctl -w fs.file-max=2147483647
+fs.file-max = 2147483647
 sudo swapon /dev/nvm*
 sudo swapon /dev/sd*
 sudo sysctl vm.swappiness=100
