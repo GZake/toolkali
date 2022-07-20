@@ -1,4 +1,5 @@
 
+
 deb https://http.kali.org/kali kali-rolling-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
@@ -17,7 +18,7 @@ deb http://kali.download/kali/ kali-rolling main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 deb https://http.kali.org/kali debian-testing main contrib non-free
-deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
+
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports-sloppy main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports-sloppy main contrib non-free
@@ -1477,3 +1478,5 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-uniso
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
+
+
