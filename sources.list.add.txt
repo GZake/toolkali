@@ -1,0 +1,1306 @@
+
+deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports main contrib non-free
+
+deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ oldoldstable-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian-backports/ squeeze-backports main contrib non-free
+
+deb http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ jessie main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
+deb http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
+
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ jessie main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
+deb-src http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
+
+
+
+deb http://ftp-stud.hs-esslingen.de/debian/ Debian11.3 main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bookworm-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bookworm-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bookworm-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bookworm main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bullseye-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bullseye-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bullseye-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bullseye-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ bullseye main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ buster-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ buster-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ buster-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ buster-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ buster main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ experimental main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ jessie-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ jessie main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldoldstable-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldoldstable main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldoldstable main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldstable-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldstable-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldstable-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldstable-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ oldstable main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ rc-buggy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ sid main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stable-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stable-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stable-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stable-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stable main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stretch-backports-sloppy main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stretch-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stretch-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stretch-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ stretch main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
+deb http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
+# deb http://ftp-stud.hs-esslingen.de/debian/ unstable main contrib non-free
+
+deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian11.3 main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bookworm main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bullseye-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bullseye-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bullseye-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bullseye-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ bullseye main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ buster-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ buster-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ buster-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ buster-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ buster main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ experimental main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ jessie-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ jessie main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldoldstable-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldoldstable main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldstable-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldoldstable main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldstable-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldstable-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldstable-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldstable-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ oldstable main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ rc-buggy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ sid main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stable-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stable-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stable-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stable-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stable main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-backports-sloppy main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
+deb-src http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
+# deb-src http://ftp-stud.hs-esslingen.de/debian/ unstable main contrib non-free
+
+
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-backports main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-proposed main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-security main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-updates main restricted multiverse universe
+deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial main restricted multiverse universe
+
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ bionic main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ devel main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ focal main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ hirsute main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ impish main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ jammy main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ kinetic main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ trusty main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-backports main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-proposed main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-security main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial-updates main restricted multiverse universe
+deb-src [trusted=yes] http://ftp-stud.hs-esslingen.de/ubuntu/ xenial main restricted multiverse universe
+
+
+
+
+deb [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
+deb-src [arch=amd64,i386] http://repo.steampowered.com/steam/ stable steam
+deb [arch=amd64,i386] http://repo.steampowered.com/steam/ beta steam
+deb-src [arch=amd64,i386] http://repo.steampowered.com/steam/ beta steam
+deb [arch=amd64,i386] https://repo.steampowered.com/steam/ precise steam
+deb-src [arch=amd64,i386] https://repo.steampowered.com/steam/ precise steam
+
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artful main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu artful main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu bionic main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu bionic main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu cosmic main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu devel main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu disco main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu eoan main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu focal main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu groovy main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu groovy main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu hirsute main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu hirsute main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu impish main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu impish main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu karmic main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu karmic main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu lucid main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu lucid main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu maverick main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu maverick main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu natty main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu natty main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu oneiric main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu oneiric main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu precise main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu precise main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu quantal main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu quantal main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu raring main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu raring main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu saucy main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu saucy main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu trusty main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu trusty main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu utopic main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu utopic main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu vivid main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu vivid main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu wily main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu wily main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu xenial main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu xenial main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu yakkety main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu yakkety main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu zesty main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/y-ppa-manager/ubuntu zesty main
+
+# deb [trusted=yes] http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe multiverse
+# deb [trusted=yes] http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse
+
+deb [trusted=yes] http://ddebs.ubuntu.com bionic-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com focal-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com hirsute-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com impish-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com jammy-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com xenial-updates main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic-updates main restricted universe multiverse
+
+deb [trusted=yes] http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com focal-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com hirsute-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com impish-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com jammy-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com trusty-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com xenial-proposed main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic-proposed main restricted universe multiverse
+
+deb [trusted=yes] http://ddebs.ubuntu.com bionic main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com focal main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com hirsute main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com impish main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com jammy main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com trusty main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com xenial main restricted universe multiverse
+deb [trusted=yes] http://ddebs.ubuntu.com kinetic main restricted universe multiverse
+
+deb [trusted=yes] http://ddebs.ubuntu.com trusty-security main restricted universe multiverse
+
+deb http://dl.winehq.org/wine-builds/debian/ wheezy main
+deb http://dl.winehq.org/wine-builds/debian/ bookworm main
+deb http://dl.winehq.org/wine-builds/debian/ bullseye main
+deb http://dl.winehq.org/wine-builds/debian/ buster main
+deb http://dl.winehq.org/wine-builds/debian/ jessie main
+deb http://dl.winehq.org/wine-builds/debian/ oldstable main
+deb http://dl.winehq.org/wine-builds/debian/ sid main
+deb http://dl.winehq.org/wine-builds/debian/ stable main
+deb http://dl.winehq.org/wine-builds/debian/ stretch main
+deb http://dl.winehq.org/wine-builds/debian/ testing main
+# deb http://dl.winehq.org/wine-builds/debian/ unstable main
+
+deb-src http://dl.winehq.org/wine-builds/debian/ wheezy main
+deb-src http://dl.winehq.org/wine-builds/debian/ bookworm main
+deb-src http://dl.winehq.org/wine-builds/debian/ bullseye main
+deb-src http://dl.winehq.org/wine-builds/debian/ buster main
+deb-src http://dl.winehq.org/wine-builds/debian/ jessie main
+deb-src http://dl.winehq.org/wine-builds/debian/ oldstable main
+deb-src http://dl.winehq.org/wine-builds/debian/ sid main
+deb-src http://dl.winehq.org/wine-builds/debian/ stable main
+deb-src http://dl.winehq.org/wine-builds/debian/ stretch main
+deb-src http://dl.winehq.org/wine-builds/debian/ testing main
+# deb-src http://dl.winehq.org/wine-builds/debian/ unstable main
+
+deb http://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb http://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb http://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb http://dl.winehq.org/wine-builds/ubuntu/ eoan main
+# deb http://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb http://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb http://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb http://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb http://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb http://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb http://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb http://dl.winehq.org/wine-builds/ubuntu/ zesty main
+
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ artful main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ bionic main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ cosmic main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ disco main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ eoan main
+# deb-src http://dl.winehq.org/wine-builds/ubuntu/ focal main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ groovy main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ hirsute main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ impish main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ jammy main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ precise main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ trusty main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ xenial main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ yakkety main
+deb-src http://dl.winehq.org/wine-builds/ubuntu/ zesty main
+
+deb http://deb.playonlinux.com/ etch main
+deb http://deb.playonlinux.com/ maverick main
+deb http://deb.playonlinux.com/ bionic main
+deb http://deb.playonlinux.com/ jaunty main
+deb http://deb.playonlinux.com/ wheezy main
+deb http://deb.playonlinux.com/ squeeze main
+deb http://deb.playonlinux.com/ precise main
+deb http://deb.playonlinux.com/ raring main
+deb http://deb.playonlinux.com/ jessie main
+deb http://deb.playonlinux.com/ natty main
+deb http://deb.playonlinux.com/ xenial main
+
+deb http://deb.playonlinux.com/ karmic main
+deb http://deb.playonlinux.com/ cosmic main
+
+deb http://deb.playonlinux.com/ lucid main
+deb http://deb.playonlinux.com/ oneiric main
+deb http://deb.playonlinux.com/ saucy main
+deb http://deb.playonlinux.com/ hardy main
+deb http://deb.playonlinux.com/ intrepid main
+
+deb-src http://deb.playonlinux.com/ etch main
+deb-src http://deb.playonlinux.com/ maverick main
+deb-src http://deb.playonlinux.com/ bionic main
+deb-src http://deb.playonlinux.com/ jaunty main
+deb-src http://deb.playonlinux.com/ wheezy main
+deb-src http://deb.playonlinux.com/ squeeze main
+deb-src http://deb.playonlinux.com/ precise main
+deb-src http://deb.playonlinux.com/ raring main
+deb-src http://deb.playonlinux.com/ jessie main
+deb-src http://deb.playonlinux.com/ natty main
+deb-src http://deb.playonlinux.com/ xenial main
+
+deb-src http://deb.playonlinux.com/ karmic main
+deb-src http://deb.playonlinux.com/ cosmic main
+deb-src http://deb.playonlinux.com/ stretch main
+deb-src http://deb.playonlinux.com/ lucid main
+deb-src http://deb.playonlinux.com/ oneiric main
+deb-src http://deb.playonlinux.com/ saucy main
+deb-src http://deb.playonlinux.com/ hardy main
+deb-src http://deb.playonlinux.com/ intrepid main
+
+deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-security main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ bullseye-security main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ buster main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ jessie main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ oldoldstable main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ oldstable main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ stretch main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ testing-security main contrib non-free updates
+deb [trusted=yes] http://security.debian.org/debian-security/ stable-security main contrib non-free updates
+
+
+
+deb [arch=amd64,i386,ppc64el] http://ftp.nluug.nl/db/mariadb/repo/10.3/debian buster main contrib non-free
+deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ focal main main/debug
+deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contrib non-free
+deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
+deb https://http.kali.org/kali/ kali-last-snapshot contrib non-free
+deb https://http.kali.org/kali/ kali-dev main contrib non-free
+deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
+deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
+deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
+deb-src https://http.kali.org/kali/ kali-last-snapshot contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
+
+deb http://deb.debian.org/debian/ experimental main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian Debian8.11 main contrib non-free
+deb-src https://httpredir.debian.org/debian Debian8.11 main contrib non-free
+deb http://deb.debian.org/debian/ Debian8.11 main contrib non-free
+deb-src http://deb.debian.org/debian/ Debian8.11 main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ Debian8.11 main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian Debian9.13 main contrib non-free
+deb-src https://httpredir.debian.org/debian Debian9.13 main contrib non-free
+deb http://deb.debian.org/debian/ Debian9.13 main contrib non-free
+deb-src http://deb.debian.org/debian/ Debian9.13 main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ Debian9.13 main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ Debian9.13 main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian jessie-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian jessie-updates main contrib non-free
+deb http://deb.debian.org/debian/ jessie-updates main contrib non-free
+deb-src http://deb.debian.org/debian jessie-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ jessie-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ jessie-updates main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian jessie main contrib non-free
+deb-src https://httpredir.debian.org/debian jessie main contrib non-free
+deb http://deb.debian.org/debian/ jessie main contrib non-free
+deb-src http://deb.debian.org/debian/ jessie main contrib non-free
+
+
+##############################
+deb https://httpredir.debian.org/debian buster main contrib non-free
+deb-src https://httpredir.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian/ buster main contrib non-free
+deb-src http://deb.debian.org/debian/ buster main contrib non-free
+
+
+##############################
+deb-src http://deb.debian.org/debian/ experimental main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ experimental main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ experimental main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ bookworm-backports main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-backports main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-backports main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ bookworm-backports main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ bookworm-proposed-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-proposed-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-proposed-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ bookworm-proposed-updates main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ bookworm-updates main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ bullseye-backports-sloppy main contrib non-free
+deb-src http://deb.debian.org/debian/ bullseye-backports-sloppy main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ bullseye-backports-sloppy main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ bullseye-backports-sloppy main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb http://security.debian.org/debian-security/ bullseye-updates main contrib non-free
+deb-src http://security.debian.org/debian-security/ bullseye-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ bullseye-updates main contrib non-free
+##############################
+
+deb http://deb.debian.org/debian/ bullseye-backports main contrib non-free
+
+##############################
+deb   http://deb.debian.org/debian/ wheezy main contrib non-free
+deb-src http://deb.debian.org/debian/ wheezy main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ wheezy main contrib non-free
+
+##############################
+deb http://deb.debian.org/debian/ stretch main contrib non-free
+deb-src http://deb.debian.org/debian/ stretch main contrib non-free
+
+
+##############################
+deb   http://deb.debian.org/debian/ squeeze main contrib non-free
+deb-src http://deb.debian.org/debian/ squeeze main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ squeeze main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ squeeze main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ lenny main contrib non-free
+deb-src http://deb.debian.org/debian/ lenny main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ lenny main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ lenny main contrib non-free
+##############################
+deb   http://deb.debian.org/debian/ etch main contrib non-free
+deb-src http://deb.debian.org/debian/ etch main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ etch main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ etch main contrib non-free
+##############################
+deb http://deb.debian.org/debian/ sarge main contrib non-free
+deb-src http://deb.debian.org/debian/ sarge main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ sarge main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ sarge main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian sid main contrib non-free
+deb-src https://httpredir.debian.org/debian sid main contrib non-free
+deb   http://deb.debian.org/debian/ sid main contrib non-free
+deb-src http://deb.debian.org/debian sid main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
+
+##############################
+# deb https://httpredir.debian.org/debian unstable main contrib non-free
+# deb-src https://httpredir.debian.org/debian unstable main contrib non-free
+# deb   http://deb.debian.org/debian/ unstable main contrib non-free
+# deb-src http://deb.debian.org/debian unstable main contrib non-free
+# deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
+
+##############################
+deb https://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb   http://deb.debian.org/debian/ oldoldoldstable-updates main contrib non-free
+deb-src http://deb.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ oldoldoldstable-updates main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian buster-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian buster-updates main contrib non-free
+deb   http://deb.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://deb.debian.org/debian buster-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ buster-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ buster-updates main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian oldstable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian oldstable-updates main contrib non-free
+deb   http://deb.debian.org/debian/ oldstable-updates main contrib non-free
+deb-src http://deb.debian.org/debian oldstable-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ oldstable-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ oldstable-updates main contrib non-free
+##############################
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian stable-backports-sloppy main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-backports-sloppy main contrib non-free
+deb   http://deb.debian.org/debian/ stable-backports-sloppy main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-backports-sloppy main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports-sloppy main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ stable-backports-sloppy main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian stable-backports main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-backports main contrib non-free
+deb   http://deb.debian.org/debian/ stable-backports main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-backports main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ stable-backports main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian stable-proposed-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-proposed-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-proposed-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ stable-proposed-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ stable-proposed-updates main contrib non-free
+##############################
+deb https://httpredir.debian.org/debian stable-updates main contrib non-free
+deb-src https://httpredir.debian.org/debian stable-updates main contrib non-free
+deb   http://deb.debian.org/debian/ stable-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ stable-updates main contrib non-free
+deb [trusted=yes] http://security.debian.org/debian-security/ stable-updates main contrib non-free
+deb http://dl.winehq.org/wine-builds/debian/ stable-updates main contrib non-free
+# deb http://deb.debian.org/debian/ buster main buster-updates
+deb http://security.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
+deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
+#Addedby software-center
+deb [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -security main restricted universe multiverse
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -updates main restricted universe multiverse
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -proposed main restricted universe multiverse
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ -backports main restricted universe multiverse
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ hirsute main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
+deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
+#Addedby software-center
+deb-src [trusted=yes] http://extras.ubuntu.com/ubuntu/ precise main
+deb http://deb.playonlinux.com/ quantal main
+#Addedby software-center; credentials stored in /etc/apt/auth.conf
+deb [trusted=yes] http://private-ppa.launchpad.net/commercial-ppa-uploaders/intellij-idea-ce/ubuntu/ precise main
+deb [trusted=yes] http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu/ precise main
+deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu/ precise main
+deb [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main
+deb-src [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main contrib non-free
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+deb https://http.kali.org/kali kali-dev main/debian-installer
+deb https://http.kali.org/kali kali-experimental main contrib non-free
+deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
+
+deb https://http.kali.org/kali kali-debian-picks main contrib non-free
+deb https://http.kali.org/ /kali main contrib non-free
+deb https://http.kali.org/ /wheezy main contrib non-free
+deb http://mirror.anigil.com/kali debian-testing main contrib non-free
+deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
+deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+deb-src https://http.kali.org/kali kali-experimental main contrib non-free
+deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
+deb-src https://http.kali.org/kali kali-dev main/debian-installer
+deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
+deb https://http.kali.org/kali kali-experimental main/debian-installer
+deb https://http.kali.org/kali debian-testing main/debian-installer
+deb https://http.kali.org/kali kali-debian-picks main/debian-installer
+deb https://http.kali.org/kali kali-dev-only main/debian-installer
+deb https://http.kali.org/ /kali main/debian-installer
+deb https://http.kali.org/ /wheezy main/debian-installer
+deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+deb [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
+deb-src [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
+deb http://ftp.debian.org/debian/ wheezy-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ wheezy-updates main contrib non-free
+deb http://security.debian.org/ wheezy/updates main contrib non-free
+deb-src http://security.debian.org/ wheezy/updates main contrib non-free
+
+
+deb http://ftp.debian.org/debian Debian8.11 main contrib non-free
+deb http://ftp.debian.org/debian Debian9.13 main contrib non-free
+deb http://ftp.debian.org/debian Debian10.12 main contrib non-free
+deb http://ftp.debian.org/debian Debian11.4 main contrib non-free
+deb http://ftp.debian.org/debian bookworm-backports main contrib non-free
+deb http://ftp.debian.org/debian bookworm-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian bookworm-updates main contrib non-free
+deb http://ftp.debian.org/debian bookworm main contrib non-free
+deb http://ftp.debian.org/debian bullseye-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian bullseye-backports main contrib non-free
+deb http://ftp.debian.org/debian bullseye-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian bullseye-updates main contrib non-free
+deb http://ftp.debian.org/debian bullseye main contrib non-free
+deb http://ftp.debian.org/debian buster-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian buster-backports main contrib non-free
+deb http://ftp.debian.org/debian buster-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian buster-updates main contrib non-free
+deb http://ftp.debian.org/debian buster main contrib non-free
+deb http://ftp.debian.org/debian experimental main contrib non-free
+deb http://ftp.debian.org/debian jessie-updates main contrib non-free
+deb http://ftp.debian.org/debian jessie main contrib non-free
+deb http://ftp.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian oldoldoldstable main contrib non-free
+deb http://ftp.debian.org/debian oldoldstable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian oldoldstable-backports main contrib non-free
+deb http://ftp.debian.org/debian oldoldstable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian oldoldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian oldoldstable main contrib non-free
+deb http://ftp.debian.org/debian oldstable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian oldstable-backports main contrib non-free
+deb http://ftp.debian.org/debian oldstable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian oldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian oldstable main contrib non-free
+deb http://ftp.debian.org/debian proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian rc-buggy main contrib non-free
+deb http://ftp.debian.org/debian sid main contrib non-free
+deb http://ftp.debian.org/debian stable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian stable-backports main contrib non-free
+deb http://ftp.debian.org/debian stable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian stable-updates main contrib non-free
+deb http://ftp.debian.org/debian stable main contrib non-free
+deb http://ftp.debian.org/debian stretch-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian stretch-backports main contrib non-free
+deb http://ftp.debian.org/debian stretch-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian stretch-updates main contrib non-free
+deb http://ftp.debian.org/debian stretch main contrib non-free
+deb http://ftp.debian.org/debian testing-backports main contrib non-free
+deb http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian testing-updates main contrib non-free
+deb http://ftp.debian.org/debian testing main contrib non-free
+
+
+deb-src http://ftp.debian.org/debian Debian8.11 main contrib non-free
+deb-src http://ftp.debian.org/debian Debian9.13 main contrib non-free
+deb-src http://ftp.debian.org/debian Debian10.12 main contrib non-free
+deb-src http://ftp.debian.org/debian Debian11.4 main contrib non-free
+deb-src http://ftp.debian.org/debian bookworm-backports main contrib non-free
+deb-src http://ftp.debian.org/debian bookworm-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian bookworm-updates main contrib non-free
+deb-src http://ftp.debian.org/debian bookworm main contrib non-free
+deb-src http://ftp.debian.org/debian bullseye-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian bullseye-backports main contrib non-free
+deb-src http://ftp.debian.org/debian bullseye-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://ftp.debian.org/debian bullseye main contrib non-free
+deb-src http://ftp.debian.org/debian buster-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian buster-backports main contrib non-free
+deb-src http://ftp.debian.org/debian buster-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian buster-updates main contrib non-free
+deb-src http://ftp.debian.org/debian buster main contrib non-free
+deb-src http://ftp.debian.org/debian experimental main contrib non-free
+deb-src http://ftp.debian.org/debian jessie-updates main contrib non-free
+deb-src http://ftp.debian.org/debian jessie main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldoldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldoldstable main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldstable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldstable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldstable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian oldoldstable main contrib non-free
+deb-src http://ftp.debian.org/debian oldstable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian oldstable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian oldstable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian oldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian oldstable main contrib non-free
+deb-src http://ftp.debian.org/debian proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian rc-buggy main contrib non-free
+deb-src http://ftp.debian.org/debian sid main contrib non-free
+deb-src http://ftp.debian.org/debian stable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian stable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian stable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian stable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian stable main contrib non-free
+deb-src http://ftp.debian.org/debian stretch-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian stretch-backports main contrib non-free
+deb-src http://ftp.debian.org/debian stretch-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian stretch-updates main contrib non-free
+deb-src http://ftp.debian.org/debian stretch main contrib non-free
+deb-src http://ftp.debian.org/debian testing-backports main contrib non-free
+deb-src http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian testing-updates main contrib non-free
+deb-src http://ftp.debian.org/debian testing main contrib non-free
+
+########24/05/22###########
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial main restricted
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial universe
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial multiverse
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb [trusted=yes] http://security.ubuntu.com/ubuntu xenial-security main restricted
+deb [trusted=yes] http://security.ubuntu.com/ubuntu xenial-security universe
+deb [trusted=yes] http://security.ubuntu.com/ubuntu xenial-security multiverse
+deb [trusted=yes] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse
+deb [trusted=yes] http://ppa.launchpad.net/linrunner/tlp/ubuntu xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] http://packages.microsoft.com/repos/vscode stable main
+
+####Microsoft#####
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/amlfs/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/aplinux-dev/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/aplinux-prod/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ artful main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ bullseye main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ cosmic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ disco main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ eoan main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ groovy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ hirsute main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ impish main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ jammy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ wheezy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azure-cli/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ jammy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ sark main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-debian/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-debian-test/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-devel/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-devel/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-multiarch/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-multiarch/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-multiarch-test/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-multiarch-test/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-test/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-test/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-test/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/azurecore-test/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/cbl-d/ quinault main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/cbl-d/ quinault-universe main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-debian/ bullseye main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-debian/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-debian/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-debian/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-ubuntu/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-ubuntu/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/citus-ubuntu/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/cloudinit-debian-9/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/code/ stable main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/cyclecloud/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/cyclecloud-insiders/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ artful main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ yakkety main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet/ zesty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-dev/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-dev/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-rc/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-rc/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-release/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-release/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-release/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/dotnet-release/ yakkety main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/git/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/griffin/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/griffin/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/hdicomponentstest/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/iotedge-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/iotedge-buster/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/iotedge-stretch/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/iotedge-xenial/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/marooneel-dev/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/marooneel-dev/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/marooneel-prod/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ bullseye main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ artful main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ artful main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ cosmic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-prod/ cosmic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-multiarch-prod/ disco main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-mutiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-mutiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ disco main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ eoan main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-groovy-prod/ groovy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-hirsute-prod/ hirsute main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ impish main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ jammy main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-multiarch-prod/ wily main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ wily main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ yakkety main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ yakkety main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ zesty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ insiders-slow main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ insiders-fast main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ nightly main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ zesty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/ms-teams/ stable main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/msr-seccrypt/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/msr-seccrypt/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/msr-seccrypt/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/msr-seccrypt-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/msr-seccrypt-debian/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2017-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2017-gdr-xenial/ xenial  main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2017-xenial/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2019-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2019-focal/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2019-gdr-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2019-gdr-xenial/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-2019-xenial/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-preview-bionic/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-preview-focal/ focal main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-preview-xenial/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-server-preview-yakkety/ yakkety main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-preview/ wily main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-preview/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-test/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-vivid-preview/ vivid main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-vivid-release/ vivid main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-wily-release/ wily main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/mssql-ubuntu-xenial-release/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/openenclave/ bionic main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/openenclave/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/orcas-incubation-experimental/ zesty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/orcas-incubation-experimental/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/replywith-kale/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/replywith-kale/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sbid/ buster main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sbid/ stretch main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabric/ xenial main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabric/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabrickxm/ stable main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabrickxm/ testing main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic-dev/ jessie main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic-dev/ trusty main contrib non-free
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/xdb/ trusty main contrib non-free
+
+
+########################
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ stretch main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod jessie main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod jessie main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod nightly main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ stretch main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ stretch main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod buster main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ bullseye main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ bullseye main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ trusty main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ trusty main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ wily main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/prod/ wily main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/mssql-server-2017/ xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/mssql-server-2017-gdr/ xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/mssql-server-2019// xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/mssql-server-2019-gdr/ xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/mssql-server-preview/ xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ xenial main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/mssql-server-preview/ yakkety main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/multiarch/prod/ yakkety main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ yakkety main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ zesty main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ zesty main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ artful main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ artful main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-2017/ bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-2019// bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-2019-gdr/ bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-preview/ bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ testing main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ bionic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ cosmic main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ cosmic main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ disco main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ disco main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ testing main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ nightly main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ eoan main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ testing main
+
+# deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ focal main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ insiders-fast main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ insiders-slow main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ nightly main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ testing main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/mssql-server-2019/ focal main
+deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/mssql-server-preview/ focal main
+
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/20.10/prod/ groovy main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/21.04/prod/ hirsute main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ jammy main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ insiders-fast main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ insiders-slow main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ testing main
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ nightly main
+#################
+
