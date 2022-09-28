@@ -264,7 +264,7 @@ mount /dev/mapper/my_usb /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 umount /dev/mapper/my_usb
 cryptsetup luksClose /dev/mapper/my_usb
-sudo apt install -f -y cryptsetup-nuke-password
+sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests cryptsetup-nuke-password
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/$disk
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
@@ -1074,9 +1074,9 @@ sudo apt update --fix-missing -y
 dpkg --configure -a | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
-apt-get update -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-apt-get upgrade -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-apt-get dist-upgrade -y  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
@@ -1199,10 +1199,10 @@ sudo apt update --fix-missing -y
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
-sudo apt-get update -y| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get full-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get dist-upgrade -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get update -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get full-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get update -ym | grep "Ign:" | tee -a ~/Desktop/ign.txt
 apt-get full-upgrade -ym | grep "Ign:" | tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
