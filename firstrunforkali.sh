@@ -384,7 +384,7 @@ fs.file-max=2147483647
 " | sudo tee -a /etc/sysctl.conf
 sudo cp -f /etc/fstab.bak /etc/fstab
 echo "
-/dev/nvme* none swap sw 0 0
+/dev/nvm* none swap sw 0 0
 /dev/sd* none swap sw 0 0
 /dev/nvme0n1p5 none swap sw 0 0
 /dev/sda4 none swap sw 0 0
