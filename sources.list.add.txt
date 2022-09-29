@@ -72,10 +72,10 @@ deb http://ftp-stud.hs-esslingen.de/debian/ stretch-backports main contrib non-f
 deb http://ftp-stud.hs-esslingen.de/debian/ stretch-proposed-updates main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian/ stretch-updates main contrib non-free
 deb http://ftp-stud.hs-esslingen.de/debian/ stretch main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
-deb http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
+#deb http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
+#deb http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
+#deb http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
+#deb http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
 # deb http://ftp-stud.hs-esslingen.de/debian/ unstable main contrib non-free
 
 deb-src http://ftp-stud.hs-esslingen.de/debian/ Debian11.3 main contrib non-free
@@ -121,10 +121,10 @@ deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-backports main contrib n
 deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-proposed-updates main contrib non-free
 deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch-updates main contrib non-free
 deb-src http://ftp-stud.hs-esslingen.de/debian/ stretch main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
-deb-src http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
+#deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-backports main contrib non-free
+#deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-proposed-updates main contrib non-free
+#deb-src http://ftp-stud.hs-esslingen.de/debian/ testing-updates main contrib non-free
+#deb-src http://ftp-stud.hs-esslingen.de/debian/ testing main contrib non-free
 # deb-src http://ftp-stud.hs-esslingen.de/debian/ unstable main contrib non-free
 
 
@@ -322,7 +322,7 @@ deb http://dl.winehq.org/wine-builds/debian/ oldstable main
 deb http://dl.winehq.org/wine-builds/debian/ sid main
 deb http://dl.winehq.org/wine-builds/debian/ stable main
 deb http://dl.winehq.org/wine-builds/debian/ stretch main
-deb http://dl.winehq.org/wine-builds/debian/ testing main
+#deb http://dl.winehq.org/wine-builds/debian/ testing main
 # deb http://dl.winehq.org/wine-builds/debian/ unstable main
 
 deb-src http://dl.winehq.org/wine-builds/debian/ wheezy main
@@ -334,7 +334,7 @@ deb-src http://dl.winehq.org/wine-builds/debian/ oldstable main
 deb-src http://dl.winehq.org/wine-builds/debian/ sid main
 deb-src http://dl.winehq.org/wine-builds/debian/ stable main
 deb-src http://dl.winehq.org/wine-builds/debian/ stretch main
-deb-src http://dl.winehq.org/wine-builds/debian/ testing main
+#deb-src http://dl.winehq.org/wine-builds/debian/ testing main
 # deb-src http://dl.winehq.org/wine-builds/debian/ unstable main
 
 deb http://dl.winehq.org/wine-builds/ubuntu/ artful main
@@ -419,7 +419,7 @@ deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable ma
 deb [trusted=yes] http://security.debian.org/debian-security/ oldoldstable main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ oldstable main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ stretch main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ testing-security main contrib non-free updates
+#deb [trusted=yes] http://security.debian.org/debian-security/ testing-security main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-security main contrib non-free updates
 
 
@@ -431,7 +431,7 @@ deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb https://http.kali.org/kali/ kali-last-snapshot contrib non-free
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
-deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
+#deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
 deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
 deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
@@ -723,7 +723,7 @@ deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 deb https://http.kali.org/kali kali-debian-picks main contrib non-free
 deb https://http.kali.org/ /kali main contrib non-free
 deb https://http.kali.org/ /wheezy main contrib non-free
-deb http://mirror.anigil.com/kali debian-testing main contrib non-free
+#deb http://mirror.anigil.com/kali debian-testing main contrib non-free
 deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
 deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
 deb http://mirror.anigil.com/kali kali-dev main contrib non-free
@@ -735,12 +735,12 @@ deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
 deb-src https://http.kali.org/kali kali-dev main/debian-installer
 deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
 deb https://http.kali.org/kali kali-experimental main/debian-installer
-deb https://http.kali.org/kali debian-testing main/debian-installer
+#deb https://http.kali.org/kali debian-testing main/debian-installer
 deb https://http.kali.org/kali kali-debian-picks main/debian-installer
 deb https://http.kali.org/kali kali-dev-only main/debian-installer
 deb https://http.kali.org/ /kali main/debian-installer
 deb https://http.kali.org/ /wheezy main/debian-installer
-deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
+#deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
@@ -801,10 +801,10 @@ deb http://ftp.debian.org/debian stretch-backports main contrib non-free
 deb http://ftp.debian.org/debian stretch-proposed-updates main contrib non-free
 deb http://ftp.debian.org/debian stretch-updates main contrib non-free
 deb http://ftp.debian.org/debian stretch main contrib non-free
-deb http://ftp.debian.org/debian testing-backports main contrib non-free
-deb http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
-deb http://ftp.debian.org/debian testing-updates main contrib non-free
-deb http://ftp.debian.org/debian testing main contrib non-free
+#deb http://ftp.debian.org/debian testing-backports main contrib non-free
+#deb http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
+#deb http://ftp.debian.org/debian testing-updates main contrib non-free
+#deb http://ftp.debian.org/debian testing main contrib non-free
 
 
 deb-src http://ftp.debian.org/debian Debian8.11 main contrib non-free
@@ -853,10 +853,10 @@ deb-src http://ftp.debian.org/debian stretch-backports main contrib non-free
 deb-src http://ftp.debian.org/debian stretch-proposed-updates main contrib non-free
 deb-src http://ftp.debian.org/debian stretch-updates main contrib non-free
 deb-src http://ftp.debian.org/debian stretch main contrib non-free
-deb-src http://ftp.debian.org/debian testing-backports main contrib non-free
-deb-src http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
-deb-src http://ftp.debian.org/debian testing-updates main contrib non-free
-deb-src http://ftp.debian.org/debian testing main contrib non-free
+#deb-src http://ftp.debian.org/debian testing-backports main contrib non-free
+#deb-src http://ftp.debian.org/debian testing-proposed-updates main contrib non-free
+#deb-src http://ftp.debian.org/debian testing-updates main contrib non-free
+#deb-src http://ftp.debian.org/debian testing main contrib non-free
 
 ########24/05/22###########
 deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ xenial main restricted
@@ -955,12 +955,12 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-bullseye-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ buster main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-buster-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-multiarch-prod/ nightly main contrib non-free
@@ -969,17 +969,17 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ jessie main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-jessie-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ stretch main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-multiarch-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ stretch main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-debian-stretch-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ artful main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-multiarch-prod/ insiders-slow main contrib non-free
@@ -987,17 +987,17 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ artful main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ insiders-slow main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ bionic main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ insiders-fast main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-multiarch-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ bionic main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ insiders-fast main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ cosmic main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-cosmic-multiarch-prod/ insiders-slow main contrib non-free
@@ -1017,34 +1017,34 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-disco-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ eoan main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-eoan-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ focal main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-focal-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-groovy-prod/ groovy main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-hirsute-prod/ hirsute main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ impish main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-impish-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ jammy main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ nightly main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-jammy-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-multiarch-prod/ trusty main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod/ nightly main contrib non-free
@@ -1057,12 +1057,12 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-wily-prod/ wily main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-multiarch-prod/ xenial main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod/ nightly main contrib non-free
@@ -1071,7 +1071,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-multiarch-prod/ yakkety main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-yakkety-prod/ nightly main contrib non-free
@@ -1080,7 +1080,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ nightly main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-multiarch-prod/ zesty main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ insiders-slow main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ insiders-fast main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod/ nightly main contrib non-free
@@ -1122,7 +1122,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabric/ xenial main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabric/ trusty main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabrickxm/ stable main contrib non-free
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabrickxm/ testing main contrib non-free
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/servicefabrickxm/ testing main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic/ jessie main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic/ trusty main contrib non-free
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/repos/sonic-dev/ jessie main contrib non-free
@@ -1136,13 +1136,13 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/stretch/multiarch/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod jessie main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/prod testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod jessie main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/8/multiarch/prod insiders-fast main
@@ -1153,31 +1153,31 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ stretch main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/9/multiarch/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod buster main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/10/prod testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ bullseye main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/%28prod%2C/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ bullseye main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/debian/11/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/multiarch/prod/ insiders-slow main
@@ -1188,7 +1188,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ trusty main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/14.04/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/15.10/multiarch/prod/ insiders-slow main
@@ -1209,7 +1209,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.04/multiarch/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/mssql-server-preview/ yakkety main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/multiarch/prod/ yakkety main
@@ -1220,7 +1220,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/16.10/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/multiarch/prod/ insiders-slow main
@@ -1231,7 +1231,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ zesty main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.04/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/multiarch/prod/ insiders-slow main
@@ -1242,7 +1242,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ artful main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/17.10/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-2017/ bionic main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/mssql-server-2019// bionic main
@@ -1252,12 +1252,12 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/multiarch/prod/ testing main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ bionic main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ nightly main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.04/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/multiarch/prod/ insiders-slow main
@@ -1268,7 +1268,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ cosmic main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/18.10/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/multiarch/prod/ insiders-slow main
@@ -1279,19 +1279,19 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ disco main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.04/prod/ testing main
 
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ insiders-slow main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ nightly main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ eoan main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/19.10/prod/ testing main
 
 # deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ focal main
 deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ insiders-fast main
 deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ insiders-slow main
 deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ nightly main
-deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ testing main
+#deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/prod/ testing main
 deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/mssql-server-2019/ focal main
 deb [arch=amd64] http://packages.microsoft.com/ubuntu/20.04/mssql-server-preview/ focal main
 
@@ -1300,7 +1300,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.mic
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ jammy main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ insiders-fast main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ insiders-slow main
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ testing main
+#deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ testing main
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ubuntu/22.04/prod/ nightly main
 #################
 
