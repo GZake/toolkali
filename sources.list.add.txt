@@ -16,7 +16,7 @@ deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main contri
 deb http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
 deb http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
-deb http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
+#deb http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
 
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
@@ -25,7 +25,7 @@ deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldoldstable main co
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldoldstable main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
-deb-src http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
+#deb-src http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
 
 
 
