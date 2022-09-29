@@ -1,5 +1,7 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests ibus-unikey*
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests ibus-unikey
 sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests unikey*
