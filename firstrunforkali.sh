@@ -359,7 +359,8 @@ fi
 
 
 all:
-sudo cat sources.list | sudo tee /etc/apt/sources.list	
+sudo cat sources.list | sudo tee /etc/apt/sources.list
+sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 #########################################################################################
 #########################################################################################
 
