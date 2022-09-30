@@ -94,12 +94,12 @@ sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
 ulimit -Sn unlimited
-ulimit -n 65536
+ulimit -n 1048576
 ulimit -c unlimited
 ulimit -i unlimited
 ulimit -l unlimited
 ulimit -s unlimited
-ulimit -u unlimited -n 65536
+ulimit -u unlimited -n 1048576
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests *xargs*
@@ -426,13 +426,13 @@ echo "
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
 ulimit -Sn unlimited
-ulimit -n 65536
+ulimit -n 1048576
 ulimit -p unlimited
 ulimit -c unlimited
 ulimit -i unlimited
 ulimit -l unlimited
 ulimit -s unlimited
-ulimit -u unlimited -n 65536
+ulimit -u unlimited -n 1048576
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
 sudo swapon /dev/nvm*
