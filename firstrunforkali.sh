@@ -94,7 +94,6 @@ sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
 ulimit -s 1048576
-ulimit -c 1048576
 ulimit -u 1048576
 ulimit -l 1048576
 ulimit -i 1048576
@@ -432,7 +431,6 @@ echo "
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
 ulimit -s 1048576
-ulimit -c 1048576
 ulimit -u 1048576
 ulimit -l 1048576
 ulimit -i 1048576
