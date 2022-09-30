@@ -376,7 +376,7 @@ sudo cp -f limits.conf /etc/security/limits.conf
 
 sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
 echo "
-ulimit -u unlimited -n 65536
+ulimit -u unlimited -n 1048576
 alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin"
 alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate"
 alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite"
@@ -411,10 +411,10 @@ echo 100 >> /proc/sys/vm/swappiness
 
 sudo cp -f /etc/security/limits.conf.bak /etc/security/limits.conf
 echo "
-* hard nofile 65536
-* soft nofile 65536
-root hard nofile 65536
-root soft nofile 65536
+* hard nofile 1048576
+* soft nofile 1048576
+root hard nofile 1048576
+root soft nofile 1048576
 " | sudo tee -a /etc/security/limits.conf
 
 
