@@ -94,7 +94,7 @@ sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
 ulimit -Sn unlimited
-ulimit -n unlimited
+ulimit -n 65536
 ulimit -c unlimited
 ulimit -i unlimited
 ulimit -l unlimited
