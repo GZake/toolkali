@@ -93,6 +93,12 @@ sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
+ulimit -s 1048576
+ulimit -c 1048576
+ulimit -u 1048576
+ulimit -l 1048576
+ulimit -i 1048576
+ulimit -q 1048576
 ulimit -Sn unlimited
 ulimit -n 1048576
 ulimit -c unlimited
@@ -425,6 +431,12 @@ echo "
 " | tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
+ulimit -s 1048576
+ulimit -c 1048576
+ulimit -u 1048576
+ulimit -l 1048576
+ulimit -i 1048576
+ulimit -q 1048576
 ulimit -Sn unlimited
 ulimit -n 1048576
 ulimit -p unlimited
