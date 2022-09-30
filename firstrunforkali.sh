@@ -403,6 +403,15 @@ echo "
 
 echo 100 >> /proc/sys/vm/swappiness
 
+sudo cp -f /etc/security/limits.conf.bak /etc/security/limits.conf
+echo "
+* hard nofile 65536
+* soft nofile 65536
+root hard nofile 65536
+root soft nofile 65536
+" | sudo tee -a /etc/security/limits.conf
+
+
 #sudo cp -Rf sources.list /etc/apt/sources.list	
 cp -vR updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh 
@@ -1458,12 +1467,14 @@ sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
 sudo cp -f /etc/fstab /etc/fstab.bak
 sudo cp -f /etc/crontab /etc/crontab.bak
 sudo cp -f /etc/rc.local /etc/rc.local.bak
+sudo cp -f /etc/security/limits.conf /etc/security/limits.conf.bak
 sudo cp -f /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/crontab ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/rc.local ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR /etc/security/limits.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/modprobe.d/nvidia-blacklists-nouveau.conf ::: $HOME /media/kali/*/ /media/*/*/
 if [ $choose1 -eq 3 ]
 then
