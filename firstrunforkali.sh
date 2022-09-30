@@ -409,6 +409,7 @@ sudo chmod 777 -R -v updatekali.sh
 
 
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
+sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list.d/sourcesAdd.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
 @reboot sudo bash /$HOME/updatekali.sh
@@ -416,7 +417,7 @@ echo "
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
 ulimit -Sn unlimited
-ulimit -n unlimited
+ulimit -n 65536
 ulimit -p unlimited
 ulimit -c unlimited
 ulimit -i unlimited
