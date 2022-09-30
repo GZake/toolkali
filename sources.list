@@ -53,7 +53,8 @@ deb [trusted=yes] http://private-ppa.launchpad.net/ ./
 deb-src [trusted=yes] http://private-ppa.launchpad.net/ ./
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-
+deb-src [trusted=yes] http://http.kali.org/kali ./
+deb [trusted=yes] http://http.kali.org/kali ./
 
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
@@ -172,4 +173,12 @@ deb http://kali.download/kali/ kali-rolling main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 #deb https://http.kali.org/kali debian-testing main contrib non-free
-deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
+deb-src [trusted=yes] http://http.kali.org/kali kali-last-snapshot main non-free contrib
+deb [trusted=yes] http://http.kali.org/kali kali-rolling main contrib non-free
+deb-src [trusted=yes] http://http.kali.org/kali kali-rolling main contrib non-free
+deb [trusted=yes] http://http.kali.org/kali kali-last-snapshot main contrib non-free
+deb [trusted=yes] http://http.kali.org/kali kali-experimental main contrib non-free
+deb-src [trusted=yes] http://http.kali.org/kali kali-experimental main contrib non-free
+deb [trusted=yes] http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+deb-src [trusted=yes] http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+
