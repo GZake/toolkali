@@ -1,34 +1,34 @@
-deb [trusted=yes] http://cz.archive.ubuntu.com/ ./
-deb [trusted=yes] http://ftp.debian.org/debian/ ./ 
-deb-src [trusted=yes] http://ftp.debian.org/debian/ ./ 
-deb [trusted=yes] http://ftp.debian.org/ ./
-deb [trusted=yes] http://cz.archive.ubuntu.com/ubuntu/ ./ 
-deb [trusted=yes] http://security.debian.org/debian-security/ ./ 
-deb-src [trusted=yes] http://deb.debian.org/debian/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-debug/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb-src [trusted=yes] http://deb.debian.org/debian-security/ ./
-deb [trusted=yes] http://kali.download/ ./
-deb-src [trusted=yes] http://kali.download/ ./
-deb [trusted=yes] http://ua.archive.ubuntu.com/ ./
-deb [trusted=yes] http://cdn-fastly.deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian ./
-deb [trusted=yes] http://deb.debian.org/debian-debug ./
-deb-src [trusted=yes] http://security.debian.org/debian-security ./
-deb [trusted=yes] http://kali.cs.nctu.edu.tw/kali ./
-deb [trusted=yes] http://deb.debian.org/ ./
-deb [trusted=yes] http://deb.debian.org/debian-ports/ ./
-deb [trusted=yes] http://deb.debian.org/debian-security/ ./
+deb  http://cz.archive.ubuntu.com/ ./
+deb  http://ftp.debian.org/debian/ ./ 
+deb-src http://ftp.debian.org/debian/ ./ 
+deb  http://ftp.debian.org/ ./
+deb  http://cz.archive.ubuntu.com/ubuntu/ ./ 
+deb  http://security.debian.org/debian-security/ ./ 
+deb-src http://deb.debian.org/debian/ ./
+deb-src http://deb.debian.org/debian-debug/ ./
+deb-src http://deb.debian.org/debian-ports/ ./
+deb-src http://deb.debian.org/debian-security/ ./
+deb  http://kali.download/ ./
+deb-src http://kali.download/ ./
+deb  http://ua.archive.ubuntu.com/ ./
+deb  http://cdn-fastly.deb.debian.org/debian-ports/ ./
+deb  http://deb.debian.org/debian ./
+deb  http://deb.debian.org/debian-debug ./
+deb-src http://security.debian.org/debian-security ./
+deb  http://kali.cs.nctu.edu.tw/kali ./
+deb  http://deb.debian.org/ ./
+deb  http://deb.debian.org/debian-ports/ ./
+deb  http://deb.debian.org/debian-security/ ./
 deb  https://http.kali.org/kali/ ./
 deb-src  https://http.kali.org/kali/ ./
 deb-src  https://http.kali.org/ ./
-deb [trusted=yes] http://archive.ubuntu.com/ubuntu/ ./
-deb-src [trusted=yes] http://ppa.launchpad.net/ ./
-deb [trusted=yes] http://ppa.launchpad.net/ ./
+deb  http://archive.ubuntu.com/ubuntu/ ./
+deb-src http://ppa.launchpad.net/ ./
+deb  http://ppa.launchpad.net/ ./
 deb-src https://httpredir.debian.org/ ./
-deb [trusted=yes] http://security.debian.org/ ./ 
-deb-src [trusted=yes] http://security.debian.org/ ./ 
-deb [trusted=yes] http://ftp-stud.hs-esslingen.de/ ./
+deb  http://security.debian.org/ ./ 
+deb-src http://security.debian.org/ ./ 
+deb  http://ftp-stud.hs-esslingen.de/ ./
 deb https://ppa.launchpadcontent.net/ ./
 deb-src https://ppa.launchpadcontent.net/ ./
 deb http://http.kali.org/ ./
@@ -37,22 +37,22 @@ deb-src http://security.kali.org/ ./
 deb http://archive.mariadb.org/ ./
 deb [arch=amd64,i386] http://repo.steampowered.com/ ./
 deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
-deb [trusted=yes] http://ddebs.ubuntu.com/ ./
+deb  http://ddebs.ubuntu.com/ ./
 deb http://dl.winehq.org/ ./
 deb-src http://dl.winehq.org/ ./
 deb http://deb.playonlinux.com/ ./
 deb-src http://deb.playonlinux.com/ ./
 deb [arch=amd64] http://apt.postgresql.org/ ./
 deb https://httpredir.debian.org/ ./
-deb-src [trusted=yes] http://ua.archive.ubuntu.com/ ./
-deb-src [trusted=yes] http://extras.ubuntu.com/ ./
-deb [trusted=yes] http://extras.ubuntu.com/ ./
-deb [trusted=yes] http://private-ppa.launchpad.net/ ./
-deb-src [trusted=yes] http://private-ppa.launchpad.net/ ./
+deb-src http://ua.archive.ubuntu.com/ ./
+deb-src http://extras.ubuntu.com/ ./
+deb  http://extras.ubuntu.com/ ./
+deb  http://private-ppa.launchpad.net/ ./
+deb-src http://private-ppa.launchpad.net/ ./
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-deb-src [trusted=yes] http://http.kali.org/kali ./
-deb [trusted=yes] http://http.kali.org/kali ./
+deb-src http://http.kali.org/kali ./
+deb  http://http.kali.org/kali ./
 deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
 
 
@@ -165,23 +165,23 @@ deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main/debian-installer
-deb [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
-deb-src [trusted=yes] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb  http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
-deb [trusted=yes] http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
+deb  http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
+deb  http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
+deb  http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
 deb http://kali.download/kali/ kali-rolling main contrib non-free
-deb [trusted=yes] http://kali.download/kali/ kali-rolling-updates main contrib non-free
-deb [trusted=yes] http://kali.download/kali/ kali-rolling-proposed main contrib non-free
+deb  http://kali.download/kali/ kali-rolling-updates main contrib non-free
+deb  http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 #deb https://http.kali.org/kali debian-testing main contrib non-free
-deb-src [trusted=yes] http://http.kali.org/kali kali-last-snapshot main non-free contrib
-deb [trusted=yes] http://http.kali.org/kali kali-rolling main contrib non-free
-deb-src [trusted=yes] http://http.kali.org/kali kali-rolling main contrib non-free
-deb [trusted=yes] http://http.kali.org/kali kali-last-snapshot main contrib non-free
-deb [trusted=yes] http://http.kali.org/kali kali-experimental main contrib non-free
-deb-src [trusted=yes] http://http.kali.org/kali kali-experimental main contrib non-free
-deb [trusted=yes] http://http.kali.org/kali kali-bleeding-edge main contrib non-free
-deb-src [trusted=yes] http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
+deb  http://http.kali.org/kali kali-rolling main contrib non-free
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+deb  http://http.kali.org/kali kali-last-snapshot main contrib non-free
+deb  http://http.kali.org/kali kali-experimental main contrib non-free
+deb-src http://http.kali.org/kali kali-experimental main contrib non-free
+deb  http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+deb-src http://http.kali.org/kali kali-bleeding-edge main contrib non-free
