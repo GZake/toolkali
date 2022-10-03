@@ -51,8 +51,8 @@ deb  http://private-ppa.launchpad.net/ ./
 deb-src http://private-ppa.launchpad.net/ ./
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-deb-src http://http.kali.org/kali ./
-deb  http://http.kali.org/kali ./
+
+
 deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
 
 
@@ -178,8 +178,6 @@ deb  http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb  http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 #deb https://http.kali.org/kali debian-testing main contrib non-free
 deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
-deb  http://http.kali.org/kali kali-rolling main contrib non-free
-deb-src http://http.kali.org/kali kali-rolling main contrib non-free
 deb  http://http.kali.org/kali kali-last-snapshot main contrib non-free
 deb  http://http.kali.org/kali kali-experimental main contrib non-free
 deb-src http://http.kali.org/kali kali-experimental main contrib non-free
