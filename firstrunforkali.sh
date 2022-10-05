@@ -294,7 +294,11 @@ reboot
 
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --show-progress --install-suggests  kali-root-login
-passwd <<< $(printf "113006\n113006\n")
+sudo passwd <<< $(printf "113006\n113006\n")
+sudo useradd -m SUGirl
+sudo passwd SUGirl <<< $(printf "113006\n113006\n")
+sudo usermod -a -G sudo SUGirl
+sudo chsh -s /bin/bash SUGirl
 sudo userdel -f kali
 sudo deluser --remove-all-files kali
 goto choose
