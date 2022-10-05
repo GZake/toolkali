@@ -216,7 +216,7 @@ sudo swapon /dev/sd*
 #sudo swapon /dev/sdb3
 #sudo swapon /dev/sdc3
 sudo sysctl vm.swappiness=100
-sudo fs.file-max=2147483647
+sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
 choose:
 clear
