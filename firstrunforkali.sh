@@ -1,3 +1,4 @@
+choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
@@ -219,7 +220,6 @@ sudo swapon /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
-choose:
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
@@ -1456,7 +1456,7 @@ gui:
 
 sudo bash gui.sh
 echo "Dơ you want to install all deb?"
-read -p "Your choose: " choose2 
+read -p "Your choose (y/n): " choose2 
 if [ $choose2 -eq y ]
 then
 	goto yup
