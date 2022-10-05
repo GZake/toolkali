@@ -309,6 +309,8 @@ git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+git clone https://github.com/GZake/toolkali.git ~/toolkali/
+git clone https://github.com/GZake/toolkali.git /toolkali/
 cd ~
 cd $HOME/toolkali/
 exit
