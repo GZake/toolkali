@@ -1,4 +1,5 @@
 deb  http://cz.archive.ubuntu.com/ ./
+deb  https://archive.archlinux.org/ ./
 deb  http://ftp.debian.org/debian/ ./ 
 deb-src http://ftp.debian.org/debian/ ./ 
 deb  http://ftp.debian.org/ ./
