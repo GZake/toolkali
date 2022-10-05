@@ -1,3 +1,4 @@
+clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
