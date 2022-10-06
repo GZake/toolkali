@@ -124,10 +124,10 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg --configure -a | tee   /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >> /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >> /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -180,10 +180,10 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | >> $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >> $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | >> $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >> $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
