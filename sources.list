@@ -1,60 +1,60 @@
-deb  http://cz.archive.ubuntu.com/ ./
-deb  https://archive.archlinux.org/ ./
-deb  http://ftp.debian.org/debian/ ./ 
-deb-src http://ftp.debian.org/debian/ ./ 
-deb  http://ftp.debian.org/ ./
-deb  http://cz.archive.ubuntu.com/ubuntu/ ./ 
-deb  http://security.debian.org/debian-security/ ./ 
-deb-src http://deb.debian.org/debian/ ./
-deb-src http://deb.debian.org/debian-debug/ ./
-deb-src http://deb.debian.org/debian-ports/ ./
-deb-src http://deb.debian.org/debian-security/ ./
-deb  http://kali.download/ ./
-deb-src http://kali.download/ ./
-deb  http://ua.archive.ubuntu.com/ ./
-deb  http://cdn-fastly.deb.debian.org/debian-ports/ ./
-deb  http://deb.debian.org/debian ./
-deb  http://deb.debian.org/debian-debug ./
-deb-src http://security.debian.org/debian-security ./
-deb  http://kali.cs.nctu.edu.tw/kali ./
-deb  http://deb.debian.org/ ./
-deb  http://deb.debian.org/debian-ports/ ./
-deb  http://deb.debian.org/debian-security/ ./
-deb  https://http.kali.org/kali/ ./
+deb tor+http://cz.archive.ubuntu.com/ ./
+deb https://archive.archlinux.org/ ./
+deb tor+http://ftp.debian.org/debian/ ./ 
+deb-src tor+http://ftp.debian.org/debian/ ./ 
+deb tor+http://ftp.debian.org/ ./
+deb tor+http://cz.archive.ubuntu.com/ubuntu/ ./ 
+deb tor+http://security.debian.org/debian-security/ ./ 
+deb-src tor+http://deb.debian.org/debian/ ./
+deb-src tor+http://deb.debian.org/debian-debug/ ./
+deb-src tor+http://deb.debian.org/debian-ports/ ./
+deb-src tor+http://deb.debian.org/debian-security/ ./
+deb tor+http://kali.download/ ./
+deb-src tor+http://kali.download/ ./
+deb tor+http://ua.archive.ubuntu.com/ ./
+deb tor+http://cdn-fastly.deb.debian.org/debian-ports/ ./
+deb tor+http://deb.debian.org/debian ./
+deb tor+http://deb.debian.org/debian-debug ./
+deb-src tor+http://security.debian.org/debian-security ./
+deb tor+http://kali.cs.nctu.edu.tw/kali ./
+deb tor+http://deb.debian.org/ ./
+deb tor+http://deb.debian.org/debian-ports/ ./
+deb tor+http://deb.debian.org/debian-security/ ./
+deb https://http.kali.org/kali/ ./
 deb-src  https://http.kali.org/kali/ ./
 deb-src  https://http.kali.org/ ./
-deb  http://archive.ubuntu.com/ubuntu/ ./
-deb-src http://ppa.launchpad.net/ ./
-deb  http://ppa.launchpad.net/ ./
+deb tor+http://archive.ubuntu.com/ubuntu/ ./
+deb-src tor+http://ppa.launchpad.net/ ./
+deb tor+http://ppa.launchpad.net/ ./
 deb-src https://httpredir.debian.org/ ./
-deb  http://security.debian.org/ ./ 
-deb-src http://security.debian.org/ ./ 
-deb  http://ftp-stud.hs-esslingen.de/ ./
+deb tor+http://security.debian.org/ ./ 
+deb-src tor+http://security.debian.org/ ./ 
+deb tor+http://ftp-stud.hs-esslingen.de/ ./
 deb https://ppa.launchpadcontent.net/ ./
 deb-src https://ppa.launchpadcontent.net/ ./
-deb http://http.kali.org/ ./
-deb http://security.kali.org/ ./
-deb-src http://security.kali.org/ ./
-deb http://archive.mariadb.org/ ./
-deb [arch=amd64,i386] http://repo.steampowered.com/ ./
-deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
-deb  http://ddebs.ubuntu.com/ ./
-deb http://dl.winehq.org/ ./
-deb-src http://dl.winehq.org/ ./
-deb http://deb.playonlinux.com/ ./
-deb-src http://deb.playonlinux.com/ ./
-deb [arch=amd64] http://apt.postgresql.org/ ./
+deb tor+http://http.kali.org/ ./
+deb tor+http://security.kali.org/ ./
+deb-src tor+http://security.kali.org/ ./
+deb tor+http://archive.mariadb.org/ ./
+deb [arch=amd64,i386] tor+http://repo.steampowered.com/ ./
+deb-src [arch=amd64,i386] tor+http://repo.steampowered.com/ ./
+deb tor+http://ddebs.ubuntu.com/ ./
+deb tor+http://dl.winehq.org/ ./
+deb-src tor+http://dl.winehq.org/ ./
+deb tor+http://deb.playonlinux.com/ ./
+deb-src tor+http://deb.playonlinux.com/ ./
+deb [arch=amd64] tor+http://apt.postgresql.org/ ./
 deb https://httpredir.debian.org/ ./
-deb-src http://ua.archive.ubuntu.com/ ./
-deb-src http://extras.ubuntu.com/ ./
-deb  http://extras.ubuntu.com/ ./
-deb  http://private-ppa.launchpad.net/ ./
-deb-src http://private-ppa.launchpad.net/ ./
-deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
+deb-src tor+http://ua.archive.ubuntu.com/ ./
+deb-src tor+http://extras.ubuntu.com/ ./
+deb tor+http://extras.ubuntu.com/ ./
+deb tor+http://private-ppa.launchpad.net/ ./
+deb-src tor+http://private-ppa.launchpad.net/ ./
+deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] tor+http://packages.microsoft.com/ ./
+deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] tor+http://packages.microsoft.com/ ./
 
 
-deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
+deb tor+http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
 
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
@@ -105,10 +105,10 @@ deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/D
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 deb https://download.opensuse.org/ ./
-deb http://ftp-stud.hs-esslingen.de/debian-backports/ ./
-deb http://ftp-stud.hs-esslingen.de/debian-security/ ./
-deb http://ftp-stud.hs-esslingen.de/debian/ ./
-deb http://ftp-stud.hs-esslingen.de/ubuntu/ ./
+deb tor+http://ftp-stud.hs-esslingen.de/debian-backports/ ./
+deb tor+http://ftp-stud.hs-esslingen.de/debian-security/ ./
+deb tor+http://ftp-stud.hs-esslingen.de/debian/ ./
+deb tor+http://ftp-stud.hs-esslingen.de/ubuntu/ ./
 
 
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
@@ -161,26 +161,26 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-vario
 
 
 deb https://http.kali.org/kali kali-rolling-only main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
-deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
-deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb-src tor+http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb-src tor+http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb tor+http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb tor+http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main/debian-installer
-deb  http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
-deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb tor+http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb-src tor+http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
 deb https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
-deb  http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
-deb  http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
-deb  http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
-deb http://kali.download/kali/ kali-rolling main contrib non-free
-deb  http://kali.download/kali/ kali-rolling-updates main contrib non-free
-deb  http://kali.download/kali/ kali-rolling-proposed main contrib non-free
+deb tor+http://ddebs.ubuntu.com kali-rolling main restricted universe multiverse
+deb tor+http://ddebs.ubuntu.com kali-rolling-updates main restricted universe multiverse
+deb tor+http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multiverse
+deb tor+http://kali.download/kali/ kali-rolling main contrib non-free
+deb tor+http://kali.download/kali/ kali-rolling-updates main contrib non-free
+deb tor+http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 #deb https://http.kali.org/kali debian-testing main contrib non-free
-deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
-deb  http://http.kali.org/kali kali-last-snapshot main contrib non-free
-deb  http://http.kali.org/kali kali-experimental main contrib non-free
-deb-src http://http.kali.org/kali kali-experimental main contrib non-free
-deb  http://http.kali.org/kali kali-bleeding-edge main contrib non-free
-deb-src http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+deb-src tor+http://http.kali.org/kali kali-last-snapshot main non-free contrib
+deb tor+http://http.kali.org/kali kali-last-snapshot main contrib non-free
+deb tor+http://http.kali.org/kali kali-experimental main contrib non-free
+deb-src tor+http://http.kali.org/kali kali-experimental main contrib non-free
+deb tor+http://http.kali.org/kali kali-bleeding-edge main contrib non-free
+deb-src tor+http://http.kali.org/kali kali-bleeding-edge main contrib non-free
