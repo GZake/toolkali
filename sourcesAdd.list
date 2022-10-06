@@ -420,7 +420,7 @@ deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
 #deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
-deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
+
 deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
