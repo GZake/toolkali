@@ -97,7 +97,6 @@ sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo cp -f sources.list /etc/apt/sources.list
 sudo service packagekit restart
 sudo systemctl daemon-reload
 ulimit -s 1048576
@@ -487,6 +486,7 @@ sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -f sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
