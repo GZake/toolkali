@@ -178,8 +178,8 @@ deb http://kali.download/kali/ kali-rolling main contrib non-free
 deb http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 #deb https://http.kali.org/kali debian-testing main contrib non-free
-deb-src http://http.kali.org/kali kali-last-snapshot main non-free contrib
-deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
+deb-src https://http.kali.org/kali kali-last-snapshot main non-free contrib
+deb https://http.kali.org/kali kali-last-snapshot main contrib non-free
 deb https://http.kali.org/kali kali-experimental main contrib non-free
 deb-src http://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
