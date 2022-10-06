@@ -998,6 +998,7 @@ wget https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
 rm -vR Release.key
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
+wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --dearmor | tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null
 sudo apt-key add winehq.key
 
 apt-key adv --fetch-keys 'https://packages.sury.org/php/apt.gpg' > /dev/null 2>&1
