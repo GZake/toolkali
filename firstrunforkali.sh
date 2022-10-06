@@ -312,21 +312,21 @@ sudo rm -fR $HOME/toolkali
 sudo rm -fR /media/$HOME/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
 sudo rm -fR /media/$HOME/01D85B1D2CBD6AE0/toolkali/
-git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
-git clone https://github.com/GZake/toolkali.git ~/toolkali/
-git clone https://github.com/GZake/toolkali.git /toolkali/
+sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /toolkali/
 sudo cp  kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp  kaligittool.sh $HOME
 sudo cp  kaligittool.sh ~
 sudo cp  kaligittool.sh /
-git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
 sudo cp  kaligittool.sh /media/$HOME/*/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 sudo cp  kaligittool.sh /media/*/*/toolkali/
-git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/kali/*/toolkali/
 sudo cp  kaligittool.sh /media/$HOME/01D85B1D2CBD6AE0/toolkali/
