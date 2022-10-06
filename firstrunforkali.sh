@@ -1468,7 +1468,7 @@ then
 fi
 
 yup:
-rm -fRvd /var/lib/apt/lists/partial/
+sudo rm -fRvd /var/lib/apt/lists/partial/
 sudo dpkg -i /var/cache/apt/archives/*
 non:
 
@@ -1491,8 +1491,8 @@ reboot
 bak:
 #cd $HOME/toolkali/
 #git add
-cp -i /etc/skel/.zshrc $HOME/.zshrc.bak
-cp -i /etc/skel/.zshrc ~/.zshrc.bak
+sudo cp -i /etc/skel/.zshrc $HOME/.zshrc.bak
+sudo cp -i /etc/skel/.zshrc ~/.zshrc.bak
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
 sudo cp -f /etc/skel/.bashrc /etc/skel/.bashrc.bak1
