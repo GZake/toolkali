@@ -417,14 +417,14 @@ deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/r
 deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contrib non-free
 deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
-deb https://http.kali.org/kali/ kali-last-snapshot contrib non-free
+
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
 #deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
 deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
 deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
-deb-src https://http.kali.org/kali/ kali-last-snapshot contrib non-free
+
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 
 deb http://deb.debian.org/debian/ experimental main contrib non-free
