@@ -4,15 +4,15 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests apt-transport-tor
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests apt-transport-*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests software-properties-common
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 #sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests ibus-unikey
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests unikey*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests *unikey*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests brave-browser-dev
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests kate
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests unikey*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *unikey*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
@@ -113,11 +113,11 @@ ulimit -s unlimited
 ulimit -u unlimited -n 1048576
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests *xargs*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
 apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | xargs apt -y install
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests apt-transport-https
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests apt*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests *apt*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *apt*
 #####
 #measure enemy tattoo retire female nephew creek horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple aunt
 #####
@@ -128,12 +128,12 @@ sudo dpkg --configure -a | tee   /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  software-properties-common
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  software-properties-common*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  *software-properties-common*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  software-properties-kde
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  software-properties-kde*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  *software-properties-kde*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-kde
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-kde*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-kde*
 sudo dpkg --add-architecture amd64
 #sudo dpkg --add-architecture i386
 #sudo dpkg --add-architecture arm64
@@ -184,10 +184,10 @@ sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  parallel* #status=progress 
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  parallel
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  linux-headers-$(uname -r)
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
 
 cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
@@ -277,7 +277,7 @@ mount /dev/mapper/my_usb /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 umount /dev/mapper/my_usb
 cryptsetup luksClose /dev/mapper/my_usb
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests cryptsetup-nuke-password
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/$disk
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
@@ -296,7 +296,7 @@ sudo umount ${usb}$num
 reboot
 
 root:
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  kali-root-login
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
 sudo useradd -m SUGirl
 sudo passwd SUGirl <<< $(printf "113006\n113006\n")
@@ -911,9 +911,9 @@ rm -vR Release.gpg
 wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release.gpg | sudo apt-key add - 
 rm -vR Release.gpg
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests  launchpad-getkeys
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  launchpad-getkeys
 sudo launchpad-getkeys
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --allow-releaseinfo-change --install-suggests y-ppa-manager
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests y-ppa-manager
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
