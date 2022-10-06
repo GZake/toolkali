@@ -594,7 +594,7 @@ deb http://mirror.anigil.com/kali kali-dev main contrib non-free
 deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
-deb-src https://http.kali.org/kali kali-experimental main contrib non-free
+
 deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
 deb-src https://http.kali.org/kali kali-dev main/debian-installer
 deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
