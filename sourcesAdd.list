@@ -682,8 +682,6 @@ deb [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main
 deb-src [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main contrib non-free
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 deb https://http.kali.org/kali kali-dev main/debian-installer
-deb https://http.kali.org/kali kali-experimental main contrib non-free
-deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 
 deb https://http.kali.org/kali kali-debian-picks main contrib non-free
 deb https://http.kali.org/ /kali main contrib non-free
