@@ -1,10 +1,10 @@
 deb http://cz.archive.ubuntu.com/ ./
 deb https://archive.archlinux.org/ ./
-deb http://ftp.debian.org/debian/ ./ 
-deb-src http://ftp.debian.org/debian/ ./ 
+deb http://ftp.debian.org/debian/ ./
+deb-src http://ftp.debian.org/debian/ ./
 deb http://ftp.debian.org/ ./
-deb http://cz.archive.ubuntu.com/ubuntu/ ./ 
-deb http://security.debian.org/debian-security/ ./ 
+deb http://cz.archive.ubuntu.com/ubuntu/ ./
+deb http://security.debian.org/debian-security/ ./
 deb-src http://deb.debian.org/debian/ ./
 deb-src http://deb.debian.org/debian-debug/ ./
 deb-src http://deb.debian.org/debian-ports/ ./
@@ -21,14 +21,14 @@ deb http://deb.debian.org/ ./
 deb http://deb.debian.org/debian-ports/ ./
 deb http://deb.debian.org/debian-security/ ./
 deb https://http.kali.org/kali/ ./
-deb-src  https://http.kali.org/kali/ ./
-deb-src  https://http.kali.org/ ./
+deb-src https://http.kali.org/kali/ ./
+deb-src https://http.kali.org/ ./
 deb http://archive.ubuntu.com/ubuntu/ ./
 deb-src http://ppa.launchpad.net/ ./
 deb http://ppa.launchpad.net/ ./
 deb-src https://httpredir.debian.org/ ./
-deb http://security.debian.org/ ./ 
-deb-src http://security.debian.org/ ./ 
+deb http://security.debian.org/ ./
+deb-src http://security.debian.org/ ./
 deb http://ftp-stud.hs-esslingen.de/ ./
 deb https://ppa.launchpadcontent.net/ ./
 deb-src https://ppa.launchpadcontent.net/ ./
@@ -177,7 +177,7 @@ deb http://ddebs.ubuntu.com kali-rolling-proposed main restricted universe multi
 deb http://kali.download/kali/ kali-rolling main contrib non-free
 deb http://kali.download/kali/ kali-rolling-updates main contrib non-free
 deb http://kali.download/kali/ kali-rolling-proposed main contrib non-free
-#deb https://http.kali.org/kali debian-testing main contrib non-free
+# deb https://http.kali.org/kali debian-testing main contrib non-free
 deb-src https://http.kali.org/kali kali-last-snapshot main non-free contrib
 deb https://http.kali.org/kali kali-last-snapshot main contrib non-free
 deb https://http.kali.org/kali kali-experimental main contrib non-free
@@ -192,7 +192,6 @@ deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable ma
 deb [trusted=yes] http://security.debian.org/debian-security/ oldoldstable main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ oldstable main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ stretch main contrib non-free updates
-#deb [trusted=yes] http://security.debian.org/debian-security/ testing-security main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ stable-security main contrib non-free updates
 deb [trusted=yes] http://security.debian.org/debian-security/ sarge main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ etch main contrib non-free
@@ -213,7 +212,6 @@ deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports-s
 deb [trusted=yes] http://security.debian.org/debian-security/ oldstable-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ buster-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable-updates main contrib non-free
-# deb [trusted=yes] http://security.debian.org/debian-security/ unstable main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
 deb-src http://security.debian.org/debian-security/ bullseye-updates main contrib non-free
 deb [trusted=yes] http://security.debian.org/debian-security/ jessie-updates main contrib non-free
@@ -231,7 +229,6 @@ deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main rest
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
-#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
@@ -249,14 +246,10 @@ deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish-updates main restr
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ impish main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
-#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
-#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
@@ -323,7 +316,7 @@ deb https://http.kali.org/kali kali-dev main/debian-installer
 deb https://http.kali.org/kali kali-debian-picks main contrib non-free
 deb https://http.kali.org/ /kali main contrib non-free
 deb https://http.kali.org/ /wheezy main contrib non-free
-#deb http://mirror.anigil.com/kali debian-testing main contrib non-free
+# deb http://mirror.anigil.com/kali debian-testing main contrib non-free
 deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
 deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
 deb http://mirror.anigil.com/kali kali-dev main contrib non-free
@@ -331,16 +324,16 @@ deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
 
-deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
+deb [trusted=yes] http://deb.debian.org/debian oldstable main/debian-installer
 deb-src https://http.kali.org/kali kali-dev main/debian-installer
 deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
 deb https://http.kali.org/kali kali-experimental main/debian-installer
-#deb https://http.kali.org/kali debian-testing main/debian-installer
+# deb https://http.kali.org/kali debian-testing main/debian-installer
 deb https://http.kali.org/kali kali-debian-picks main/debian-installer
 deb https://http.kali.org/kali kali-dev-only main/debian-installer
 deb https://http.kali.org/ /kali main/debian-installer
 deb https://http.kali.org/ /wheezy main/debian-installer
-#deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
+# deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
@@ -351,7 +344,7 @@ deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
-#deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
+# deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
 
 deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
@@ -359,4 +352,5 @@ deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 
 #############################################
+
 
