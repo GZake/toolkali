@@ -1,6 +1,6 @@
 choose:
 clear
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >>   $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
@@ -124,10 +124,10 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg --configure -a | >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> /$HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | >>   $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | >>   $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -309,27 +309,27 @@ goto choose
 uptool:
 cd ~
 sudo rm -fR $HOME/toolkali 
-sudo rm -fR /media/$HOME/*/toolkali
+sudo rm -fR /media $HOME/*/toolkali
 sudo rm -fR /media/*/*/toolkali 
-sudo rm -fR /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fR /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /toolkali/
 sudo cp  kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp  kaligittool.sh $HOME
 sudo cp  kaligittool.sh ~
 sudo cp  kaligittool.sh /
-sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/*/toolkali/
-sudo cp  kaligittool.sh /media/$HOME/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
+sudo cp  kaligittool.sh /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 sudo cp  kaligittool.sh /media/*/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/kali/*/toolkali/
-sudo cp  kaligittool.sh /media/$HOME/01D85B1D2CBD6AE0/toolkali/
+sudo cp  kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
 cd ~
 cd $HOME/toolkali/
 exit
@@ -447,7 +447,7 @@ sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list.d/sourcesAdd.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
-@reboot sudo bash /$HOME/updatekali.sh
+@reboot sudo bash  $HOME/updatekali.sh
 " | sudo tee -a /etc/crontab
 sudo cp -f /etc/rc.local.bak /etc/rc.local
 echo "
@@ -1009,15 +1009,15 @@ curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
 sudo rm -f microsoft.gpg
 rm -f /usr/share/keyrings/microsoft.gpg
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
-#sudo apt-get update -y | sudo tee -a  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/Desktop/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
@@ -1192,7 +1192,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | sudo tee   /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo bash ~/toolkali/need.sh | >> $HOME/Desktop/log_$(date "+%d_%m_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
