@@ -415,17 +415,7 @@ deb-src http://deb.playonlinux.com/ intrepid main
 deb [arch=amd64,i386,ppc64el] http://ftp.nluug.nl/db/mariadb/repo/10.3/debian buster main contrib non-free
 deb [arch=amd64,arm64,ppc64el,s390x] http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ focal main main/debug
 deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main contrib non-free
-deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
-deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 
-deb https://http.kali.org/kali/ kali-dev main contrib non-free
-#deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
-
-deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
-deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
-deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
-
-deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 
 deb http://deb.debian.org/debian/ experimental main contrib non-free
 ##############################
@@ -582,35 +572,7 @@ deb-src [trusted=yes] http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu
 deb [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main
 deb-src [trusted=yes] http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu/ precise main contrib non-free
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
-deb https://http.kali.org/kali kali-dev main/debian-installer
 
-deb https://http.kali.org/kali kali-debian-picks main contrib non-free
-deb https://http.kali.org/ /kali main contrib non-free
-deb https://http.kali.org/ /wheezy main contrib non-free
-#deb http://mirror.anigil.com/kali debian-testing main contrib non-free
-deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
-deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
-deb http://mirror.anigil.com/kali kali-dev main contrib non-free
-deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
-deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
-deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
-
-deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
-deb-src https://http.kali.org/kali kali-dev main/debian-installer
-deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
-deb https://http.kali.org/kali kali-experimental main/debian-installer
-#deb https://http.kali.org/kali debian-testing main/debian-installer
-deb https://http.kali.org/kali kali-debian-picks main/debian-installer
-deb https://http.kali.org/kali kali-dev-only main/debian-installer
-deb https://http.kali.org/ /kali main/debian-installer
-deb https://http.kali.org/ /wheezy main/debian-installer
-#deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
-deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
 deb [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
 deb-src [trusted=yes] http://ftp.us.debian.org/debian stable main contrib non-free
 deb http://ftp.debian.org/debian/ wheezy-updates main contrib non-free
