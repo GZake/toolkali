@@ -1,6 +1,6 @@
 choose:
 clear
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >>  /$HOME/Desktop/log_$(date "+%d_%m_%y").txt
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
