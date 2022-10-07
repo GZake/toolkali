@@ -318,11 +318,45 @@ deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main 
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
-deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main
-deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main
-deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main
-deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main
-deb http://repository.spotify.com stable non-free
-deb http://deb.anydesk.com/ all main
-deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/
-deb https://packages.wazuh.com/4.x/apt/ stable main
+deb https://http.kali.org/kali kali-dev main/debian-installer
+
+deb https://http.kali.org/kali kali-debian-picks main contrib non-free
+deb https://http.kali.org/ /kali main contrib non-free
+deb https://http.kali.org/ /wheezy main contrib non-free
+#deb http://mirror.anigil.com/kali debian-testing main contrib non-free
+deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb http://mirror.anigil.com/kali kali-experimental main contrib non-free
+deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+
+deb  [trusted=yes]  http://deb.debian.org/debian oldstable main/debian-installer
+deb-src https://http.kali.org/kali kali-dev main/debian-installer
+deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
+deb https://http.kali.org/kali kali-experimental main/debian-installer
+#deb https://http.kali.org/kali debian-testing main/debian-installer
+deb https://http.kali.org/kali kali-debian-picks main/debian-installer
+deb https://http.kali.org/kali kali-dev-only main/debian-installer
+deb https://http.kali.org/ /kali main/debian-installer
+deb https://http.kali.org/ /wheezy main/debian-installer
+#deb-src http://mirror.anigil.com/kali debian-testing main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
+
+deb https://http.kali.org/kali/ kali-dev main contrib non-free
+#deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
+
+deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
+
+#############################################
+
