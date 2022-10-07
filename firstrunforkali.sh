@@ -486,7 +486,7 @@ sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
-sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
+#sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 sudo cp -f sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
