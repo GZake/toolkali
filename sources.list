@@ -231,7 +231,7 @@ deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-backports main rest
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-security main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel-updates main restricted universe multiverse by-hash
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
+#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ devel main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse by-hash
@@ -251,12 +251,12 @@ deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-backports main rest
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse by-hash
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
+#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-security main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic-updates main restricted universe multiverse by-hash
-deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
+#deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse by-hash
 deb [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse by-hash
@@ -318,3 +318,11 @@ deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-proposed main 
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse by-hash
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse by-hash
 deb-src [trusted=yes] http://ua.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse by-hash
+deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main
+deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main
+deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main
+deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main
+deb http://repository.spotify.com stable non-free
+deb http://deb.anydesk.com/ all main
+deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/
+deb https://packages.wazuh.com/4.x/apt/ stable main
