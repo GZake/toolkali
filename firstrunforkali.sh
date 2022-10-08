@@ -125,7 +125,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | >>  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
@@ -181,9 +181,9 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
 sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt 
+sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%m_%y" ).txt 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
