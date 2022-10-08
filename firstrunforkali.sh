@@ -479,8 +479,8 @@ exit(0)
 sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
-sudo cp -f sources.list /etc/apt/sources.list
-sudo cp -f /sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fRv sources.list /etc/apt/sources.list
+sudo cp -fRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
