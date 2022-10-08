@@ -183,39 +183,7 @@ deb https://http.kali.org/kali kali-last-snapshot main contrib non-free
 deb https://http.kali.org/kali kali-experimental main contrib non-free
 deb-src https://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
-deb-src https://http.kali.org/kali/ kali-bleeding-edge main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-security main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ bullseye-security main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ buster main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ jessie main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ oldoldstable main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ oldstable main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ stretch main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ stable-security main contrib non-free updates
-deb [trusted=yes] http://security.debian.org/debian-security/ sarge main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ etch main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ lenny main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ squeeze main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ wheezy main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ experimental main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-backports main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-proposed-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ bookworm-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ bullseye-backports-sloppy main contrib non-free
-deb http://security.debian.org/debian-security/ bullseye-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ stable-updates main contrib non-free
-deb http://security.debian.org/debian-security/ buster/updates main contrib non-free
-deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ stable-backports-sloppy main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ oldstable-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ buster-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ oldoldoldstable-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ sid main contrib non-free
-deb-src http://security.debian.org/debian-security/ bullseye-updates main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ Debian9.13 main contrib non-free
-deb [trusted=yes] http://security.debian.org/debian-security/ jessie-updates main contrib non-free
+
 
 deb https://http.kali.org/kali kali-dev main/debian-installer
 
