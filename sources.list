@@ -33,8 +33,8 @@ deb http://ftp-stud.hs-esslingen.de/ ./
 deb https://ppa.launchpadcontent.net/ ./
 deb-src https://ppa.launchpadcontent.net/ ./
 deb http://http.kali.org/ ./
-deb http://security.kali.org/ ./
-deb-src http://security.kali.org/ ./
+deb https://security.kali.org/ ./
+deb-src https://security.kali.org/ ./
 deb http://archive.mariadb.org/ ./
 deb [arch=amd64,i386] http://repo.steampowered.com/ ./
 deb-src [arch=amd64,i386] http://repo.steampowered.com/ ./
