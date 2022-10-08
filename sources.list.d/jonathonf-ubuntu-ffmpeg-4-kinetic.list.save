@@ -1,0 +1,2 @@
+deb http://ppa.launchpad.net/jonathonf/ffmpeg-4/ubuntu kinetic main
+deb-src http://ppa.launchpad.net/jonathonf/ffmpeg-4/ubuntu kinetic main
