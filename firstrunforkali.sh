@@ -7,7 +7,6 @@ sudo systemctl enable bluetooth.service
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests aptitude
 #sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey
@@ -487,6 +486,9 @@ sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
 #sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
+sudo apt-get --allow-releaseinfo-change update  -ym
+sudo apt-get --allow-releaseinfo-change upgrade  -ym
 sudo cp -f sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
@@ -939,6 +941,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 16126D3A3E5C11
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 871920D1991BC93C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv A684470CACCAF35C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B02C46DF417A0893
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 5FB20FDD4BB67011
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 83FBA1751378B444
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2836CB0A8AC93F7A
+sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 9BDB3D89CE49EC21
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
@@ -1247,6 +1253,7 @@ sudo apt --fix-broken install -y
 sudo dpkg --configure -a | sudo tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 sudo apt --fix-broken install -y 
 sudo apt-get --allow-releaseinfo-change update --fix-missing -y 
+sudo apt-get --allow-releaseinfo-change update  -ym
 sudo dpkg --configure -a | sudo tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
