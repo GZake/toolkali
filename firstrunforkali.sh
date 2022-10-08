@@ -499,11 +499,6 @@ sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list
 #curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
 echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee -a /etc/apt/sources.list
-sudo add-apt-repository ppa:numix/ppa <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ artful main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main'
@@ -530,6 +525,11 @@ sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ testing main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ wheezy main'
 #https://launchpad.net/
+sudo add-apt-repository ppa:numix/ppa <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
+sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
 sudo add-apt-repository -ys ppa:micahflee/ppa
 sudo add-apt-repository -ys ppa:libreoffice/ppa
 sudo add-apt-repository -ys ppa:libreoffice/libreoffice-4-2
