@@ -475,17 +475,7 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
 exit(0)
 " | sudo tee -a /etc/rc.local
-sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
-sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
-sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
-sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
-#sudo cat sources.list | sudo tee /etc/apt/sources.list
-#sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
+
 sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
@@ -729,6 +719,17 @@ sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
 sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
+sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+#sudo cat sources.list | sudo tee /etc/apt/sources.list
+#sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 
 if [ $choose1 -eq 2 ]
 then
