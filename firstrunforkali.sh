@@ -350,6 +350,7 @@ echo "                       UPDATE
 6 for Necessary application
 7 for Full update
 8 for new tool from git Hacktool
+9 for new install Github
 0 for back
 "
 choose1=561df65d1f61f
