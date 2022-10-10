@@ -526,6 +526,7 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:yann1ck/onedrive
 sudo add-apt-repository -ys ppa:micahflee/ppa
 sudo add-apt-repository -ys ppa:libreoffice/ppa
 sudo add-apt-repository -ys ppa:libreoffice/libreoffice-4-2
@@ -926,6 +927,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv B05498B7
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7FCC7D46ACCC4CF8
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C2518248EEA14886
