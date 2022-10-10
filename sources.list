@@ -55,7 +55,8 @@ deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages
 deb-src https://ftp.cn.debian.org/debian ./
 deb https://ftp.cn.debian.org/debian ./
 deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
-
+deb http://cdn-fastly.deb.debian.org/ ./
+deb-src http://cdn-fastly.deb.debian.org/ ./
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
@@ -98,11 +99,11 @@ deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-bac
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ocaml-backports/Debian_Unstable/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
+#deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Testing/ ./
+#deb https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_Unstable/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
+#deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
+#deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 deb https://download.opensuse.org/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
@@ -122,7 +123,7 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubunt
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/ ./
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
+#deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/ ./
@@ -232,3 +233,4 @@ deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
 #############################################
+
