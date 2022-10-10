@@ -52,8 +52,8 @@ deb http://private-ppa.launchpad.net/ ./
 deb-src http://private-ppa.launchpad.net/ ./
 deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
 deb-src [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] http://packages.microsoft.com/ ./
-
-
+deb-src https://ftp.cn.debian.org/debian ./
+deb https://ftp.cn.debian.org/debian ./
 deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
 
 
@@ -166,8 +166,8 @@ deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main/debian-installer
-deb http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
-deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main
+deb http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free
+deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free
 deb https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling-only main contrib non-free
@@ -180,7 +180,7 @@ deb http://kali.download/kali/ kali-rolling-proposed main contrib non-free
 # deb https://http.kali.org/kali debian-testing main contrib non-free
 deb-src https://http.kali.org/kali kali-last-snapshot main non-free contrib
 deb https://http.kali.org/kali kali-last-snapshot main contrib non-free
-deb https://http.kali.org/kali kali-experimental main contrib non-free
+deb https://http.kali.org/kali/ kali-experimental main contrib non-free
 deb-src https://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 
@@ -215,8 +215,7 @@ deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-experimental main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
 deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
-deb https://http.kali.org/kali/ kali-experimentalmain contrib non-free
-
+deb https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 deb https://http.kali.org/kali/ kali-dev main contrib non-free
 # deb-src https://http.kali.org/kali/ debian-testing main contrib non-free
 
@@ -224,6 +223,6 @@ deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
 deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
+deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
 #############################################
-
