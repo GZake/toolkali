@@ -104,6 +104,14 @@ deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/D
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 deb https://download.opensuse.org/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
+deb https://download.opensuse.org/repositories/ ./
+deb-src https://download.opensuse.org/repositories/ ./
+deb https://download.opensuse.org/repositories/home:/ ./
+deb-src https://download.opensuse.org/repositories/home:/ ./
+deb https://download.opensuse.org/repositories/home:/npreining:/ ./
+deb-src https://download.opensuse.org/repositories/home:/npreining:/ ./
 deb http://ftp-stud.hs-esslingen.de/debian-backports/ ./
 deb http://ftp-stud.hs-esslingen.de/debian-security/ ./
 deb http://ftp-stud.hs-esslingen.de/debian/ ./
