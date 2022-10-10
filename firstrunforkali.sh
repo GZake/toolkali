@@ -517,7 +517,7 @@ echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee -a /etc/ap
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ stretch main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ testing main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ wheezy main'
-#https://launchpad.net/
+#https://launchpad.net/ubuntu/+ppas
 sudo add-apt-repository ppa:numix/ppa <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
