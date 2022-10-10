@@ -857,7 +857,8 @@ sudo launchpad-getkeys
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests y-ppa-manager
 
 ##########
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv *
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys *
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ./
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys B05498B7
@@ -885,6 +886,11 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 83FBA1751
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2836CB0A8AC93F7A
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F1831DDAFC42E99D
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FB01CC26162506E7
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2CC98497A1231595
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 82BB6851C64F6880
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F9C79330C476DD6B
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FCAE110B1118213C
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F57D4F59BD3DF454
 sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9BDB3D89CE49EC21
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
