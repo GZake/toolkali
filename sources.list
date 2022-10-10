@@ -205,7 +205,21 @@ deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu wily main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu xenial main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu yakkety main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu zesty main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu main
+
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu artful main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu bionic main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu cosmic main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu devel main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu focal main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu jammy main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu trusty main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu vivid main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu wily main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu xenial main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu yakkety main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu zesty main
+
+
 
 deb https://http.kali.org/kali kali-dev main/debian-installer
 
@@ -248,4 +262,3 @@ deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
 #############################################
-
