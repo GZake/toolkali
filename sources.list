@@ -120,7 +120,6 @@ deb http://ftp-stud.hs-esslingen.de/debian-security/ ./
 deb http://ftp-stud.hs-esslingen.de/debian/ ./
 deb http://ftp-stud.hs-esslingen.de/ubuntu/ ./
 
-
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
@@ -194,6 +193,19 @@ deb-src https://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 deb http://apt.insync.io/debian bookworm non-free contrib main
 deb-src http://apt.insync.io/debian bookworm non-free contrib main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu artful main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu bionic main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu cosmic main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu devel main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu focal main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu jammy main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu trusty main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu vivid main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu wily main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu xenial main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu yakkety main
+deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu zesty main
+deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu main
 
 deb https://http.kali.org/kali kali-dev main/debian-installer
 
@@ -236,3 +248,4 @@ deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
 #############################################
+
