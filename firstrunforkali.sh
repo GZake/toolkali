@@ -128,7 +128,7 @@ awk '{print $1}' /proc/sys/fs/file-nr
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%m_%y" ).txt 
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%m_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -757,7 +757,7 @@ udo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%m_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -1068,7 +1068,7 @@ sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%m_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1190,11 +1190,11 @@ sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%m_%y").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y" ).txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%m_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
