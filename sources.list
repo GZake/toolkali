@@ -57,7 +57,6 @@ deb https://ftp.cn.debian.org/debian ./
 deb http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./
 
 
-deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
@@ -111,7 +110,6 @@ deb http://ftp-stud.hs-esslingen.de/debian/ ./
 deb http://ftp-stud.hs-esslingen.de/ubuntu/ ./
 
 
-deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/ ./
