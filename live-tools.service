@@ -1,0 +1,12 @@
+[Unit]
+Documentation=man:live-tools(7)
+Description=live-tools - System Support Scripts
+
+[Service]
+Type=oneshot
+# The purpose of this service file is just to hide the init.d script
+# The real job is done in /lib/systemd/system-shutdown/live-tools.shutdown
+ExecStart=/bin/true
+
+[Install]
+WantedBy=multi-user.target
