@@ -393,6 +393,7 @@ fi
 
 
 all:
+sudo cp -fRv /etc/systemd/system/* /systemServices/
 sudo cp -fRv /systemServices/* /etc/systemd/system/
 sudo cp -f limits.conf /etc/security/limits.conf
 #########################################################################################
