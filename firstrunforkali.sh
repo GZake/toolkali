@@ -14,8 +14,6 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *unikey*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
-sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb
-sudo dpkg -i  GitHubDesktop-linux-3.0.6-linux1.deb
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
@@ -351,6 +349,7 @@ echo "                       UPDATE
 6 for Necessary application
 7 for Full update
 8 for new tool from git Hacktool
+9 for install github
 0 for back
 "
 choose1=561df65d1f61f
@@ -379,6 +378,9 @@ then
 elif [ $choose1 -eq 8 ]
 then
 	goto hckgit
+elif [ $choose1 -eq 9 ]
+then
+	goto gitinstall
 elif [ $choose1 -eq 0 ]
 then
 	goto choose
@@ -598,6 +600,8 @@ sudo add-apt-repository -ys ppa:icamargo/networkmanagement
 sudo add-apt-repository -ys ppa:bedouin/mawakit
 sudo add-apt-repository -ys ppa:mieszkoslusarczyk/kde-extras-snapshots
 sudo add-apt-repository -ys ppa:rohangarg/nightly
+sudo add-apt-repository -ys ppa:rohangarg/kde-extra
+sudo add-apt-repository -ys ppa:rohangarg/experimental
 sudo add-apt-repository -ys ppa:pali/pali
 sudo add-apt-repository -ys ppa:mc3man/trusty-media
 sudo add-apt-repository -ys ppa:savoury1/fonts
@@ -1434,6 +1438,13 @@ logout
 exit(0)
 reboot
 
+gitinstall:
+sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb
+sudo dpkg -i  GitHubDesktop-linux-3.0.6-linux1.deb
+if [ $choose1 -eq 9 ]
+then
+	goto uptab
+fi
 bak:
 #cd $HOME/toolkali/
 #git add
