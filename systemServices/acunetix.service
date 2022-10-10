@@ -1,0 +1,14 @@
+
+[Unit]
+Description=Acunetix Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=20
+User=acunetix
+ExecStart=/home/acunetix/.acunetix/start.sh
+
+[Install]
+WantedBy=multi-user.target
