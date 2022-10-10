@@ -683,7 +683,7 @@ sudo add-apt-repository -ys ppa:alexlarsson/./.
 sudo add-apt-repository -ys ppa:henriqueluiz/./.
 sudo add-apt-repository -ys ppa:ubuntu-mate-dev/./.
 sudo add-apt-repository -ys ppa:snapcpp/./.
-sudo add-apt-repository -ys ppa:ubuntu-desktop/./.
+#sudo add-apt-repository -ys ppa:ubuntu-desktop/./.
 sudo add-apt-repository -ys ppa:raharper/./.
 sudo add-apt-repository -ys ppa:hiweed-pkg/./.
 sudo add-apt-repository -ys ppa:dajhorn/./.
