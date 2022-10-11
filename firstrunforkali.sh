@@ -3,8 +3,6 @@ choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
-sudo systemctl start bluetooth.service
-sudo systemctl enable bluetooth.service
 ulimit -s 1048576
 ulimit -u 1048576
 ulimit -l 1048576
@@ -229,6 +227,8 @@ sudo swapon /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
