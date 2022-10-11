@@ -129,6 +129,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
+sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/log_$(date "+%d_%h_%y").txt
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
 sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
