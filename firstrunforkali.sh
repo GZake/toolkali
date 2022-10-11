@@ -309,28 +309,37 @@ goto choose
 
 uptool:
 cd ~
-sudo rm -fR $HOME/toolkali 
-sudo rm -fR /media $HOME/*/toolkali
-sudo rm -fR /media/*/*/toolkali 
-sudo rm -fR /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fRdv $HOME/toolkali 
+sudo rm -fRdv /media $HOME/*/toolkali
+sudo rm -fRdv /media/*/*/toolkali 
+sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fRdv ~/toolkali/
+sudo rm -fRdv /toolkali/
+sudo rm -fRdv /media/*/*/toolkali/
+sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fRdv /media/root/*/toolkali/
+sudo rm -fRdv /media/kali/*/toolkali/
+sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /toolkali/
-sudo cp  kaligittool.sh $HOME/toolkali/kaligittool.sh
-sudo cp  kaligittool.sh $HOME
-sudo cp  kaligittool.sh ~
-sudo cp  kaligittool.sh /
+sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
+sudo cp -fRdv kaligittool.sh $HOME
+sudo cp -fRdv kaligittool.sh ~
+sudo cp -RdfRdvv kaligittool.sh /
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo cp  kaligittool.sh /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
-sudo cp  kaligittool.sh /media/*/*/toolkali/
+sudo cp -fRdv kaligittool.sh /media/*/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/kali/*/toolkali/
-sudo cp  kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/SUGirl/*/toolkali/
+
+sudo cp -fRdv kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
 cd ~
 cd $HOME/toolkali/
 exit
