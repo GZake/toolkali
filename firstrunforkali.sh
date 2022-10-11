@@ -304,7 +304,7 @@ reboot
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
-username=SUGirl_$(date "+%a_%h_%d_%y_%T")
+username=SUGirl_$(date "+%d%m%y")
 sudo useradd -m $username
 sudo passwd $username <<< $(printf "113006\n113006\n")
 sudo usermod -a -G sudo $username
