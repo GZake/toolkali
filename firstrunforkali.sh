@@ -1076,6 +1076,7 @@ fi
 
 echo "UPDATING..."
 sudo service packagekit restart
+sudo dpkg --remove-architecture DEP-11
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture ia64
@@ -1137,6 +1138,7 @@ sudo dpkg --add-architecture i586
 sudo dpkg --add-architecture all
 sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture DEP-11
 #sudo dpkg --add-architecture s390
 #sudo dpkg --add-architecture s390x
 #sudo dpkg --add-architecture arm
