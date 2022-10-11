@@ -1242,7 +1242,7 @@ sudo apt-get upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | 
 sudo apt-get full-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 #apt-get update -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
-#sudo echo kkjgjkhvbjhvhjhvk NO_PUBKEY A80C8DFE23A187B2 |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $3}'| sudo xargs apt-key adv --recv-keys
+#sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
 apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
