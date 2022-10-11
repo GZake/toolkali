@@ -995,15 +995,15 @@ curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
 sudo rm -f microsoft.gpg
 rm -f /usr/share/keyrings/microsoft.gpg
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | sudo xargs gpg | sudo xargs apt-key add - | sudo xargs addgpg-apt | sudo awk '{ system("gpg "$21) }' | sudo awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
@@ -1242,6 +1242,7 @@ sudo apt-get upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | 
 sudo apt-get full-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 #apt-get update -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
+#sudo echo kkjgjkhvbjhvhjhvk NO_PUBKEY A80C8DFE23A187B2 |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $3}'| sudo xargs apt-key adv --recv-keys
 apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
 sudo dpkg --add-architecture i386
