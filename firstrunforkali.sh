@@ -562,6 +562,7 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:legimet/abrowser-kde
 sudo add-apt-repository -ys ppa:yann1ck/onedrive
 sudo add-apt-repository -ys ppa:micahflee/ppa
 sudo add-apt-repository -ys ppa:libreoffice/ppa
