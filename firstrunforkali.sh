@@ -229,6 +229,7 @@ sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
@@ -1116,7 +1117,7 @@ apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs
 apt-get upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
-/usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -1246,7 +1247,7 @@ sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs g
 #apt-get update -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
 #sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
 apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
-sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
