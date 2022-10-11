@@ -564,6 +564,13 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
+sudo add-apt-repository -ys ppa:wagungs/kali-linux
+sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
+sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu1
+sudo add-apt-repository -ys ppa:wagungs/kali-linux2
+sudo add-apt-repository -ys ppa:wagungs/kali-linux1
+sudo add-apt-repository -ys ppa:nullport-govind/iht-147-mki
 sudo add-apt-repository -ys ppa:legimet/abrowser-kde
 sudo add-apt-repository -ys ppa:yann1ck/onedrive
 sudo add-apt-repository -ys ppa:micahflee/ppa
