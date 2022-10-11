@@ -279,7 +279,7 @@ cryptsetup --verbose --verify-passphrase luksFormat /dev/$disk
 cryptsetup luksOpen /dev/$disk my_usb
 mkfs.ext4 -L persistence /dev/mapper/my_usb
 e2label /dev/mapper/my_usb persistence
-read -p "" tmp
+#read -p "" tmp
 mkdir -p /mnt/my_usb
 mount /dev/mapper/my_usb /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
