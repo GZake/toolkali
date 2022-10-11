@@ -4,6 +4,26 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%m_%y").
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
+ulimit -s 1048576
+ulimit -u 1048576
+ulimit -l 1048576
+ulimit -i 1048576
+ulimit -q 1048576
+ulimit -Sn unlimited
+ulimit -n 1048576
+ulimit -p unlimited
+ulimit -c unlimited
+ulimit -i unlimited
+ulimit -l unlimited
+ulimit -s unlimited
+ulimit -u unlimited -n 1048576
+sudo sysctl -w fs.file-max=2147483647
+fs.file-max = 2147483647
+sudo swapon /dev/nvm*
+sudo swapon /dev/sd*
+sudo sysctl vm.swappiness=100
+sudo sysctl -p
+#############################3
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
@@ -100,21 +120,6 @@ sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo service packagekit restart
 sudo systemctl daemon-reload
-ulimit -s 1048576
-ulimit -u 1048576
-ulimit -l 1048576
-ulimit -i 1048576
-ulimit -q 1048576
-ulimit -Sn unlimited
-ulimit -n 1048576
-ulimit -c unlimited
-ulimit -i unlimited
-ulimit -l unlimited
-ulimit -s unlimited
-ulimit -u unlimited -n 1048576
-sudo sysctl -w fs.file-max=2147483647
-fs.file-max = 2147483647
-sudo sysctl -p
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
 apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | xargs apt -y install
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
@@ -421,6 +426,18 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 " | sudo tee -a $HOME/.bashrc
+echo "
+ulimit -u unlimited -n 1048576
+alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin"
+alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate"
+alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite"
+#ibus
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+" | sudo tee -a .bashrc
+
+
 sudo chmod 700 dolroot
 sudo chmod 700 kateroot
 sudo chmod 700 kwriteroot
@@ -494,6 +511,7 @@ exit(0)
 
 sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
+sudo apt-get dist-upgrade -ym
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo cp -fRv sources.list /etc/apt/sources.list
 sudo cp -fRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
@@ -1465,8 +1483,9 @@ fi
 bak:
 #cd $HOME/toolkali/
 #git add
-sudo cp -i /etc/skel/.zshrc $HOME/.zshrc.bak
-sudo cp -i /etc/skel/.zshrc ~/.zshrc.bak
+sudo cp -f .bashrc .bashrc.bak
+sudo cp -f /etc/skel/.zshrc $HOME/.zshrc.bak
+sudo cp -f /etc/skel/.zshrc ~/.zshrc.bak
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
 sudo cp -f /etc/skel/.bashrc /etc/skel/.bashrc.bak1
