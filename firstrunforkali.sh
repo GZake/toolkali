@@ -1,6 +1,6 @@
 choose:
 clear
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%m_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
@@ -130,10 +130,10 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
+sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -186,10 +186,10 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
-sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%m_%y" ).txt 
-sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%m_%y").txt
-sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%m_%y" ).txt 
+sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
+sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
@@ -304,10 +304,11 @@ reboot
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
-sudo useradd -m SUGirl
-sudo passwd SUGirl <<< $(printf "113006\n113006\n")
-sudo usermod -a -G sudo SUGirl
-sudo chsh -s /bin/bash SUGirl
+username=SUGirl_$(date "+%a_%h_%d_%y_%T")
+sudo useradd -m $username
+sudo passwd $username <<< $(printf "113006\n113006\n")
+sudo usermod -a -G sudo $username
+sudo chsh -s /bin/bash $username
 sudo userdel -f kali
 sudo deluser --remove-all-files kali
 goto choose
@@ -784,7 +785,7 @@ udo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%h_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -806,78 +807,78 @@ sudo dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%m_%y").txt
 
 
 key:
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#get -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).key | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add -
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
-#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release$(date "+%d_%m_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#get -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).key | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Testing/ Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add -
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
+#wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release$(date "+%d_%h_%y_%s" ).gpg | sudo apt-key add - 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  launchpad-getkeys
 sudo launchpad-getkeys
@@ -990,15 +991,15 @@ curl -sSL https://packages.microsoft.com/keys/msopentech.asc  | sudo apt-key add
 curl -sSL https://packages.microsoft.com/keys/msopentech.asc| sudo tee /etc/apt/trusted.gpg.d/msopentech.asc
 sudo rm -f microsoft.gpg
 rm -f /usr/share/keyrings/microsoft.gpg
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
-#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%m_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key adv &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ system("apt-key add - "$21) }' &
+#sudo apt-get update -y | sudo tee -a   $HOME/log_$(date "+%d_%h_%y").txt  | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs apt-key add -
 
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
@@ -1102,7 +1103,7 @@ sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%m_%y").txt
+dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1173,7 +1174,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | >> $HOME/log_$(date "+%d_%m_%y").txt
+sudo bash ~/toolkali/need.sh | >> $HOME/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1224,11 +1225,11 @@ sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
