@@ -3,10 +3,10 @@ smart_script(){
     # if there's no SCRIPT_LOG_FILE exported yet
     if [ -z "$SCRIPT_LOG_FILE" ]; then
         # make folder paths
-        logdirparent=~/Terminal_typescripts
-        logdirraw=raw/$(date +%F)
+        logdirparent=~/log_Tool
+        logdirraw=raw/$(date "+%d_%h_%y")
         logdir=$logdirparent/$logdirraw
-        logfile=$logdir/$(date +%F_%T).$$.rawlog
+        logfile=$logdir/$(date "+%d_%h_%y").$$.rawlog
 
         # if no folder exist - make one
         if [ ! -d $logdir ]; then
