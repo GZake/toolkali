@@ -1,3 +1,4 @@
+#!/bin/bash
 choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%h_%y").txt
@@ -411,6 +412,7 @@ all:
 sudo cp -fRv /etc/systemd/system/* /systemServices/
 sudo cp -fRv /systemServices/* /etc/systemd/system/
 sudo cp -f limits.conf /etc/security/limits.conf
+sudo cp -f .bash_aliases ~/.bash_aliases
 #########################################################################################
 #########################################################################################
 
@@ -426,6 +428,7 @@ alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
+smart_script
 " | sudo tee -a $HOME/.bashrc
 echo "
 ulimit -u unlimited -n 1048576
@@ -436,6 +439,7 @@ alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
+smart_script
 " | sudo tee -a .bashrc
 
 
