@@ -1,7 +1,7 @@
 #!/bin/bash
 choose:
 clear
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
 ulimit -s 1048576
 ulimit -u 1048576
@@ -33,7 +33,6 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *unikey*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
-
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
@@ -130,11 +129,11 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
-sudo dpkg --configure -a | >>   $HOME/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -187,9 +186,9 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
-sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
-sudo dpkg --configure -a | >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
@@ -231,7 +230,6 @@ sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
-sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
@@ -521,9 +519,12 @@ exit(0)
 sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
 sudo apt-get dist-upgrade -ym
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo cp -fRv sources.list /etc/apt/sources.list
 sudo cp -fRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $HOME/toolkali/sources.list.d/
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
@@ -662,7 +663,7 @@ sudo add-apt-repository -ys ppa:savoury1/gpg
 sudo add-apt-repository -ys ppa:savoury1/multimedia
 sudo add-apt-repository -ys ppa:savoury1/ffmpeg4
 sudo add-apt-repository -ys ppa:ubuntu-wine/pp
-sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+#sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
 sudo add-apt-repository -ys ppa:mozgiii/wine-from-debian
 sudo add-apt-repository -ys ppa:pipelight/stable
 sudo add-apt-repository -ys ppa:gijzelaar/cuda
@@ -769,7 +770,7 @@ sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
 
 
-sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
+#sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
@@ -777,6 +778,10 @@ sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
@@ -801,7 +806,7 @@ udo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -1058,6 +1063,10 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
@@ -1076,7 +1085,6 @@ fi
 
 echo "UPDATING..."
 sudo service packagekit restart
-sudo dpkg --remove-architecture DEP-11
 sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture ia64
@@ -1118,9 +1126,10 @@ sudo dpkg --remove-architecture i386
 sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
+sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a $HOME/log_$(date "+%d_%h_%y").txt
+dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1192,7 +1201,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | >> $HOME/log_$(date "+%d_%h_%y").txt
+sudo bash ~/toolkali/need.sh | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1243,11 +1252,11 @@ sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $HOME/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
@@ -1265,7 +1274,7 @@ sudo dpkg --add-architecture arm64
 sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture aarch64
-#sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture all
 sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
@@ -1412,7 +1421,7 @@ sudo dpkg --add-architecture arm64
 sudo dpkg --add-architecture i586
 #sudo dpkg --add-architecture ppc64el
 #sudo dpkg --add-architecture aarch64
-#sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture all
 sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
