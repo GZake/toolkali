@@ -1,7 +1,7 @@
 #!/bin/bash
 choose:
 clear
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
 ulimit -s 1048576
 ulimit -u 1048576
@@ -129,11 +129,11 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/toolkali/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a | >>   $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
-sudo dpkg --configure -a | >>   $HOME/toolkali/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y | >>  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
@@ -186,9 +186,9 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 clear
-sudo dpkg --configure -a | >> $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
-sudo dpkg --configure -a | >> $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y | >> $HOME/log_$(date "+%d_%h_%y" ).txt 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
@@ -806,7 +806,7 @@ udo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -1129,7 +1129,7 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1201,7 +1201,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | >> $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo bash ~/toolkali/need.sh | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1252,11 +1252,11 @@ sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
