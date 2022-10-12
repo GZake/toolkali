@@ -663,7 +663,7 @@ sudo add-apt-repository -ys ppa:savoury1/gpg
 sudo add-apt-repository -ys ppa:savoury1/multimedia
 sudo add-apt-repository -ys ppa:savoury1/ffmpeg4
 sudo add-apt-repository -ys ppa:ubuntu-wine/pp
-sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+#sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
 sudo add-apt-repository -ys ppa:mozgiii/wine-from-debian
 sudo add-apt-repository -ys ppa:pipelight/stable
 sudo add-apt-repository -ys ppa:gijzelaar/cuda
