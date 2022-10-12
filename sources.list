@@ -1,4 +1,4 @@
-###(sid/kali rolling/bookworm/Debian9.13/kali-dev)
+###(sid/kali rolling/bookworm/Debian9.13/kali-dev/Debian11.5)
 deb http://cz.archive.ubuntu.com/ ./
 deb https://archive.archlinux.org/ ./
 deb http://ftp.debian.org/debian/ ./
