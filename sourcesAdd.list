@@ -17,6 +17,234 @@ deb http://ftp-stud.hs-esslingen.de/debian-security/ oldstable main contrib non-
 deb http://ftp-stud.hs-esslingen.de/debian-security/ stretch main contrib non-free updates
 #deb http://ftp-stud.hs-esslingen.de/debian-security/ testing-security main contrib non-free updates
 
+##########################################################
+deb https://ftp.debian.org/debian/ Debian8.11  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ Debian9.13  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ Debian10.13  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ Debian11.5  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bookworm-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bookworm-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bookworm-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bookworm  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bullseye-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bullseye-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bullseye-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bullseye-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ bullseye  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ buster-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ buster-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ buster-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ buster-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ buster  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ experimental  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ jessie-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ jessie  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldoldstable-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldoldstable  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldstable-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldstable-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldstable-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldstable-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldoldstable  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldstable-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldstable-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldstable-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldstable-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ oldstable  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ rc-buggy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ sid  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stable-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stable-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stable-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stable-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stable  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stretch-backports-sloppy  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stretch-backports  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stretch-proposed-updates  main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stretch-updates main contrib non-free non-free-firmware
+deb https://ftp.debian.org/debian/ stretch main contrib non-free non-free-firmware
+
+deb-src https://ftp.debian.org/debian/ Debian8.11  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ Debian9.13  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ Debian10.13  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ Debian11.5  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bookworm-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bookworm-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bookworm-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bookworm  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bullseye-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bullseye-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bullseye-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bullseye-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ bullseye  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ buster-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ buster-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ buster-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ buster-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ buster  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ experimental  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ jessie-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ jessie  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldoldstable-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldoldstable  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldstable-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldstable-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldstable-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldoldstable-updates  main contrib non-free non-free-firmware626850
+deb-src https://ftp.debian.org/debian/ oldoldstable  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldstable-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldstable-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldstable-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldstable-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ oldstable  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ rc-buggy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ sid  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stable-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stable-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stable-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stable-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stable  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stretch-backports-sloppy  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stretch-backports  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stretch-proposed-updates  main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stretch-updates main contrib non-free non-free-firmware
+deb-src https://ftp.debian.org/debian/ stretch main contrib non-free non-free-firmware
+
+deb https://deb.torproject.org/torproject.org bionic main
+deb https://deb.torproject.org/torproject.org bookworm main
+deb https://deb.torproject.org/torproject.org bullseye main
+deb https://deb.torproject.org/torproject.org buster main
+deb https://deb.torproject.org/torproject.org focal main
+deb https://deb.torproject.org/torproject.org jammy main
+deb https://deb.torproject.org/torproject.org kinetic main
+deb https://deb.torproject.org/torproject.org oldoldstable main
+deb https://deb.torproject.org/torproject.org oldstable main
+deb https://deb.torproject.org/torproject.org proposed-updates main
+deb https://deb.torproject.org/torproject.org sid main
+deb https://deb.torproject.org/torproject.org stable main
+deb https://deb.torproject.org/torproject.org stretch main
+deb https://deb.torproject.org/torproject.org tor-experimental-bionic main
+deb https://deb.torproject.org/torproject.org tor-experimental-bookworm main
+deb https://deb.torproject.org/torproject.org tor-experimental-bullseye main
+deb https://deb.torproject.org/torproject.org tor-experimental-buster main
+deb https://deb.torproject.org/torproject.org tor-experimental-focal main
+deb https://deb.torproject.org/torproject.org tor-experimental-jammy main
+deb https://deb.torproject.org/torproject.org tor-experimental-kinetic main
+deb https://deb.torproject.org/torproject.org tor-experimental-sid main
+deb https://deb.torproject.org/torproject.org tor-experimental-stretch main
+deb https://deb.torproject.org/torproject.org tor-experimental-xenial main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bionic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bookworm main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bullseye main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-buster main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-focal main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-jammy main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-kinetic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-sid main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-stretch main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-xenial main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bionic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bookworm main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bullseye main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-buster main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-focal main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-jammy main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-kinetic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-sid main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-stretch main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-xenial main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bionic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bookworm main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bullseye main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-buster main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-focal main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-jammy main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-kinetic main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-sid main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-stretch main
+deb https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-xenial main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-bionic main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-bookworm main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-bullseye main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-buster main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-focal main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-jammy main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-kinetic main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-sid main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-stretch main
+deb https://deb.torproject.org/torproject.org tor-nightly-main-xenial main
+deb https://deb.torproject.org/torproject.org xenial main
+
+deb-src https://deb.torproject.org/torproject.org bionic main
+deb-src https://deb.torproject.org/torproject.org bookworm main
+deb-src https://deb.torproject.org/torproject.org bullseye main
+deb-src https://deb.torproject.org/torproject.org buster main
+deb-src https://deb.torproject.org/torproject.org focal main
+deb-src https://deb.torproject.org/torproject.org jammy main
+deb-src https://deb.torproject.org/torproject.org kinetic main
+deb-src https://deb.torproject.org/torproject.org oldoldstable main
+deb-src https://deb.torproject.org/torproject.org oldstable main
+deb-src https://deb.torproject.org/torproject.org proposed-updates main
+deb-src https://deb.torproject.org/torproject.org sid main
+deb-src https://deb.torproject.org/torproject.org stable main
+deb-src https://deb.torproject.org/torproject.org stretch main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-bionic main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-bookworm main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-bullseye main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-buster main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-focal main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-jammy main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-kinetic main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-sid main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-stretch main
+deb-src https://deb.torproject.org/torproject.org tor-experimental-xenial main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bionic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bookworm main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-bullseye main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-buster main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-focal main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-jammy main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-kinetic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-sid main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-stretch main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.3.5.x-xenial main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bionic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bookworm main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-bullseye main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-buster main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-focal main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-jammy main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-kinetic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-sid main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-stretch main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.5.x-xenial main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bionic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bookworm main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-bullseye main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-buster main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-focal main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-jammy main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-kinetic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-sid main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-stretch main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-0.4.6.x-xenial main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-bionic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-bookworm main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-bullseye main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-buster main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-focal main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-jammy main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-kinetic main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-sid main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-stretch main
+deb-src https://deb.torproject.org/torproject.org tor-nightly-main-xenial main
+deb-src https://deb.torproject.org/torproject.org xenial main
+
+
+##########################################################
+
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ bookworm-security main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ buster main contrib non-free updates
 deb-src http://ftp-stud.hs-esslingen.de/debian-security/ jessie main contrib non-free updates

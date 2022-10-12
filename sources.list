@@ -1,3 +1,4 @@
+###(sid/kali rolling/bookworm/Debian9.13/kali-dev)
 deb http://cz.archive.ubuntu.com/ ./
 deb https://archive.archlinux.org/ ./
 deb http://ftp.debian.org/debian/ ./
@@ -59,6 +60,8 @@ deb http://cdn-fastly.deb.debian.org/ ./
 deb-src http://cdn-fastly.deb.debian.org/ ./
 deb http://apt.insync.io/ ./
 deb-src http://apt.insync.io/ ./
+deb-src https://kali.itsec.am/ ./
+deb https://kali.itsec.am/ ./
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
@@ -119,6 +122,8 @@ deb http://ftp-stud.hs-esslingen.de/debian-backports/ ./
 deb http://ftp-stud.hs-esslingen.de/debian-security/ ./
 deb http://ftp-stud.hs-esslingen.de/debian/ ./
 deb http://ftp-stud.hs-esslingen.de/ubuntu/ ./
+deb https://deb.torproject.org/ ./
+deb-src https://deb.torproject.org/ ./
 
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
@@ -168,6 +173,10 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-vario
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 
 
+deb https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
@@ -261,4 +270,4 @@ deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
-#############################################
+####################################################################3
