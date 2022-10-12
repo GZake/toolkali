@@ -524,6 +524,8 @@ sudo apt-get dist-upgrade -ym
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo cp -fRv sources.list /etc/apt/sources.list
 sudo cp -fRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $HOME/toolkali/sources.list.d/
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
@@ -777,6 +779,10 @@ sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
@@ -1058,6 +1064,10 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
