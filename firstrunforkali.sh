@@ -230,7 +230,6 @@ sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
-sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
@@ -520,6 +519,7 @@ exit(0)
 sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
 sudo apt-get dist-upgrade -ym
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo cp -fRv sources.list /etc/apt/sources.list
 sudo cp -fRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
