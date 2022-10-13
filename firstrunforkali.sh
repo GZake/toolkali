@@ -236,7 +236,8 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
-echo "
+echo " $(cut -d: -f1 /etc/passwd) 
+
 1 for disk parted
 2 for Encrypted
 3 for None
@@ -324,7 +325,7 @@ goto choose
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
-username=SUGirl_$(date "+%d%m%y")
+username=SUGirl$(date "+%d%m%y")
 echo $username
 sudo useradd -m $username
 sudo passwd $username <<< $(printf "113006\n113006\n")
@@ -392,6 +393,7 @@ goto choose
 uptab:
 clear
 echo "                       UPDATE
+List user: $(cut -d: -f1 /etc/passwd) 
 1 for all
 2 for add repo, other,...
 3 for create backup
