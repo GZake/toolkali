@@ -970,7 +970,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5FB20FDD4
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 83FBA1751378B444
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2836CB0A8AC93F7A
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F1831DDAFC42E99D
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FB01CC26162506E7
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FB01CC26162506E7	
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2CC98497A1231595
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 82BB6851C64F6880
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F9C79330C476DD6B
@@ -1123,6 +1123,125 @@ if [ $choose1 -eq 4 ]
 then
 	goto uptab
 fi
+fulup:
+echo "UPDATING..."
+sudo service packagekit restart
+sudo dpkg --remove-architecture all
+sudo dpkg --remove-architecture arc
+sudo dpkg --remove-architecture ia64
+sudo dpkg --remove-architecture s390
+sudo dpkg --remove-architecture s390x
+sudo dpkg --remove-architecture arm
+sudo dpkg --remove-architecture noarch
+sudo dpkg --remove-architecture armhf
+sudo dpkg --remove-architecture armel
+sudo dpkg --remove-architecture amzn2
+sudo dpkg --remove-architecture avr32
+sudo dpkg --remove-architecture alpha
+sudo dpkg --remove-architecture hppa
+sudo dpkg --remove-architecture armeb
+sudo dpkg --remove-architecture m32r
+sudo dpkg --remove-architecture m68k
+sudo dpkg --remove-architecture mips
+sudo dpkg --remove-architecture mips64
+sudo dpkg --remove-architecture mips64el
+sudo dpkg --remove-architecture mips64r6
+sudo dpkg --remove-architecture mips64r6el
+sudo dpkg --remove-architecture mipsel
+sudo dpkg --remove-architecture mipsr6
+sudo dpkg --remove-architecture mipsr6el
+sudo dpkg --remove-architecture nios2
+sudo dpkg --remove-architecture or1k 
+sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture powerpcel
+sudo dpkg --remove-architecture ppc64
+sudo dpkg --remove-architecture riscv64
+sudo dpkg --remove-architecture sh3
+sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh4
+sudo dpkg --remove-architecture sh4eb
+sudo dpkg --remove-architecture sparc
+sudo dpkg --remove-architecture sparc64
+sudo dpkg --remove-architecture tilegx
+sudo dpkg --remove-architecture i386
+sudo dpkg --remove-architecture arm64
+sudo dpkg --remove-architecture i586
+sudo dpkg --add-architecture $(dpkg --print-architecture)
+sudo apt --fix-broken install -y 
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y 
+sudo apt-get update --fix-missing -y 
+sudo apt-get update  -ym
+sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
+telnet towel.blinkenlights.nl&
+sudo apt-key update -ym
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get full-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
+#apt-get update -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
+#sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
+apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
+sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture i586
+#sudo dpkg --add-architecture ppc64el
+#sudo dpkg --add-architecture aarch64
+sudo dpkg --add-architecture DEP-11
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture ia64
+#sudo dpkg --add-architecture s390
+#sudo dpkg --add-architecture s390x
+#sudo dpkg --add-architecture arm
+#sudo dpkg --add-architecture noarch
+#sudo dpkg --add-architecture armhf
+#sudo dpkg --add-architecture armel
+#sudo dpkg --add-architecture amzn2
+#sudo dpkg --add-architecture avr32
+#sudo dpkg --add-architecture alpha
+#sudo dpkg --add-architecture hppa
+#sudo dpkg --add-architecture armeb
+#sudo dpkg --add-architecture m32r
+#sudo dpkg --add-architecture m68k
+#sudo dpkg --add-architecture mips
+#sudo dpkg --add-architecture mips64
+#sudo dpkg --add-architecture mips64el
+#sudo dpkg --add-architecture mips64r6
+#sudo dpkg --add-architecture itanium
+#sudo dpkg --add-architecture mips64r6el
+#sudo dpkg --add-architecture mipsel
+#sudo dpkg --add-architecture mipsr6
+#sudo dpkg --add-architecture mipsr6el
+#sudo dpkg --add-architecture nios2
+#sudo dpkg --add-architecture or1k 
+#sudo dpkg --add-architecture powerpc 
+#sudo dpkg --add-architecture powerpcel
+#sudo dpkg --add-architecture ppc64
+#sudo dpkg --add-architecture riscv64
+#sudo dpkg --add-architecture sh3
+#sudo dpkg --add-architecture sh3eb 
+#sudo dpkg --add-architecture sh4
+#sudo dpkg --add-architecture sh4eb
+#sudo dpkg --add-architecture sparc
+#sudo dpkg --add-architecture sparc64
+#udo dpkg --add-architecture tilegx
+sudo dpkg --add-architecture $(dpkg --print-architecture)
+echo"DONE"
+
+##################################
+ 
+
+sudo bash ./list-symbols-packages-v2* -p $(pidof yelp)
+sudo bash ./list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
+
+if [ $choose1 -eq 7 ]
+then
+	goto uptab
+fi
 
 echo "UPDATING..."
 sudo service packagekit restart
@@ -1248,125 +1367,7 @@ then
 	goto uptab
 fi
 #######################################################
-fulup:
-echo "UPDATING..."
-sudo service packagekit restart
-sudo dpkg --remove-architecture all
-sudo dpkg --remove-architecture arc
-sudo dpkg --remove-architecture ia64
-sudo dpkg --remove-architecture s390
-sudo dpkg --remove-architecture s390x
-sudo dpkg --remove-architecture arm
-sudo dpkg --remove-architecture noarch
-sudo dpkg --remove-architecture armhf
-sudo dpkg --remove-architecture armel
-sudo dpkg --remove-architecture amzn2
-sudo dpkg --remove-architecture avr32
-sudo dpkg --remove-architecture alpha
-sudo dpkg --remove-architecture hppa
-sudo dpkg --remove-architecture armeb
-sudo dpkg --remove-architecture m32r
-sudo dpkg --remove-architecture m68k
-sudo dpkg --remove-architecture mips
-sudo dpkg --remove-architecture mips64
-sudo dpkg --remove-architecture mips64el
-sudo dpkg --remove-architecture mips64r6
-sudo dpkg --remove-architecture mips64r6el
-sudo dpkg --remove-architecture mipsel
-sudo dpkg --remove-architecture mipsr6
-sudo dpkg --remove-architecture mipsr6el
-sudo dpkg --remove-architecture nios2
-sudo dpkg --remove-architecture or1k 
-sudo dpkg --remove-architecture powerpc 
-sudo dpkg --remove-architecture powerpcel
-sudo dpkg --remove-architecture ppc64
-sudo dpkg --remove-architecture riscv64
-sudo dpkg --remove-architecture sh3
-sudo dpkg --remove-architecture sh3eb 
-sudo dpkg --remove-architecture sh4
-sudo dpkg --remove-architecture sh4eb
-sudo dpkg --remove-architecture sparc
-sudo dpkg --remove-architecture sparc64
-sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture arm64
-sudo dpkg --remove-architecture i586
-sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y 
-sudo apt-get update --fix-missing -y 
-sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
-firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
-telnet towel.blinkenlights.nl&
-sudo apt-key update -ym
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get full-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-#apt-get update -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
-#sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
-apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
-sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
-sudo dpkg --add-architecture i386
-sudo dpkg --add-architecture amd64
-sudo dpkg --add-architecture arm64
-sudo dpkg --add-architecture i586
-#sudo dpkg --add-architecture ppc64el
-#sudo dpkg --add-architecture aarch64
-sudo dpkg --add-architecture DEP-11
-sudo dpkg --add-architecture all
-sudo dpkg --add-architecture arc
-sudo dpkg --add-architecture ia64
-#sudo dpkg --add-architecture s390
-#sudo dpkg --add-architecture s390x
-#sudo dpkg --add-architecture arm
-#sudo dpkg --add-architecture noarch
-#sudo dpkg --add-architecture armhf
-#sudo dpkg --add-architecture armel
-#sudo dpkg --add-architecture amzn2
-#sudo dpkg --add-architecture avr32
-#sudo dpkg --add-architecture alpha
-#sudo dpkg --add-architecture hppa
-#sudo dpkg --add-architecture armeb
-#sudo dpkg --add-architecture m32r
-#sudo dpkg --add-architecture m68k
-#sudo dpkg --add-architecture mips
-#sudo dpkg --add-architecture mips64
-#sudo dpkg --add-architecture mips64el
-#sudo dpkg --add-architecture mips64r6
-#sudo dpkg --add-architecture itanium
-#sudo dpkg --add-architecture mips64r6el
-#sudo dpkg --add-architecture mipsel
-#sudo dpkg --add-architecture mipsr6
-#sudo dpkg --add-architecture mipsr6el
-#sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
-#sudo dpkg --add-architecture powerpcel
-#sudo dpkg --add-architecture ppc64
-#sudo dpkg --add-architecture riscv64
-#sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
-#sudo dpkg --add-architecture sh4
-#sudo dpkg --add-architecture sh4eb
-#sudo dpkg --add-architecture sparc
-#sudo dpkg --add-architecture sparc64
-#udo dpkg --add-architecture tilegx
-sudo dpkg --add-architecture $(dpkg --print-architecture)
-echo"DONE"
 
-##################################
- 
-
-sudo bash ./list-symbols-packages-v2* -p $(pidof yelp)
-sudo bash ./list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
-
-if [ $choose1 -eq 7 ]
-then
-	goto uptab
-fi
 ###############################hack tool###############
 
 hckgit:
@@ -1508,6 +1509,7 @@ then
 fi
 ###################################################
 ###sudo dpkg -P [packet]
+
 gui:
 
 sudo bash gui.sh
