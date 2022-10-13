@@ -288,9 +288,10 @@ sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+900G\nn\ne\n\n+10G\nn\n\n\nw")
 goto choose
 
 Encrypted:
-read -p "Encrypted disk (ex: sdb3): " disk
-cryptsetup --verbose --verify-passphrase luksFormat /dev/$disk 
-cryptsetup luksOpen /dev/$disk my_usb
+read -p "Encrypted disk (ex: sdb): " disk
+read -p "Num of encrypted disk (ex: sdb): " num
+cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
+cryptsetup luksOpen /dev/${disk}${num} my_usb
 mkfs.ext4 -L persistence /dev/mapper/my_usb
 e2label /dev/mapper/my_usb persistence
 #read -p "" tmp
@@ -301,16 +302,16 @@ umount /dev/mapper/my_usb
 cryptsetup luksClose /dev/mapper/my_usb
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
 dpkg-reconfigure cryptsetup-nuke-password
-cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/$disk
+cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${num}
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
 goto choose
 
 None:
-read -p "Encrypted disk (ex: sdb): " disk
-read -p "Encrypted num of disk (ex: sdb3): " num
-usb=/dev/$disk
-sudo mkfs.ext4 -L persistence ${usb}$num
-usb=/dev/$disk
+read -p "Disk (ex: sdb): " disk
+read -p "Num of disk (ex: sdb3): " num
+usb=/dev/${disk}${num}
+sudo mkfs.ext4 -L persistence ${usb}
+usb=/dev/${disk}${num}
 sudo mkdir -p /mnt/my_usb
 sudo mount ${usb}$num /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
