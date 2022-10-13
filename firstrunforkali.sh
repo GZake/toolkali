@@ -1,5 +1,7 @@
 #measure enemy tattoo retire female nephew creek  horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #!/bin/bash
+[[ -f $(pwd)/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb
+sudo dpkg -i  brave-browser-dev_1.45.96_amd64.deb
 choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
@@ -43,7 +45,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #sudo apt-mark unhold *dm*
 #sudo apt-mark unhold *de*
 #sudo apt-mark unhold *ki*
-#sudo apt-mark unhold *cinnamon*
+#sudo apt-mark unhold *cinnamon*GitHubDesktop-linux-3.0.6-linux1.deb
 #sudo apt-mark unhold *slim*
 #sudo apt-mark unhold *wayland*
 #sudo apt-mark unhold *software*
