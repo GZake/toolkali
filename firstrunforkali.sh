@@ -101,7 +101,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #sudo apt-mark unhold *y*
 #sudo apt-mark unhold *z*
 sudo apt-mark hold wine1.6
-git clone https://github.com/LionSec/katoolin.git
+[ ! -f $HOME/Documents/GitHub/toolkali/ ] || sudo git clone https://github.com/LionSec/katoolin.git $HOME/Documents/GitHub/toolkali/
 cp katoolin/katoolin.py /usr/bin/katoolin
 chmod +x /usr/bin/katoolin
 sudo chmod -Rv 777 /var/cache/apt/archives/ 
