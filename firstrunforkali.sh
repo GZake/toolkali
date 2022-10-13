@@ -2,9 +2,7 @@
 #!/bin/bash
 echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
-sudo dpkg -i  $HOME/Downloads/brave-browser-dev_*
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
-sudo dpkg -i  $HOME/Downloads/GitHubDesktop-linux*
 choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
@@ -1535,8 +1533,8 @@ exit(0)
 reboot
 
 gitinstall:
-sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb
-sudo dpkg -i  GitHubDesktop-linux-3.0.6-linux1.deb
+sudo dpkg -i  $HOME/Downloads/brave-browser-dev_*
+sudo dpkg -i  $HOME/Downloads/GitHubDesktop-linux*
 if [ $choose1 -eq 9 ]
 then
 	goto uptab
