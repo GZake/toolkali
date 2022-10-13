@@ -235,9 +235,9 @@ sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 clear
+echo "$(cut -d: -f1 /etc/passwd)"
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
-echo " $(cut -d: -f1 /etc/passwd) 
-
+echo " 
 1 for disk parted
 2 for Encrypted
 3 for None
@@ -396,7 +396,7 @@ goto choose
 uptab:
 clear
 echo "                       UPDATE
-List user: $(cut -d: -f1 /etc/passwd) 
+List user:
 1 for all
 2 for add repo, other,...
 3 for create backup
@@ -567,7 +567,6 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.g
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
-
 
 sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
 #curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
