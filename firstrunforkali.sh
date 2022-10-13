@@ -249,7 +249,8 @@ echo " $(cut -d: -f1 /etc/passwd)
 9 for terminal
 0 for exit
 "
-choose=xxx
+####################################
+choose=675464766456
 read -p "Your choose: " choose 
 if [ $choose -eq 1 ]
 then
