@@ -276,7 +276,7 @@ then
 elif [ $choose -eq 8 ]
 then
 	goto uptool
-elif [ $choose -eq  ]
+elif [ $choose -eq 9 ]
 then
 	goto terminal	
 elif [ $choose -eq 0 ]
