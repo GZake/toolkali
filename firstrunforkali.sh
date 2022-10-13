@@ -976,6 +976,11 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 82BB6851C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F9C79330C476DD6B
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FCAE110B1118213C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F57D4F59BD3DF454
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 96B3EE5F29111145
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0B31DBA06A8A26F9
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A8580BDC82D3DC6C
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 18DF3741CDFFDE29
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5E3C45D7B312C643
 sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9BDB3D89CE49EC21
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
