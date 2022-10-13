@@ -234,13 +234,15 @@ sudo systemctl enable bluetooth.service
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo "
-1 for Encrypted
-2 for None
-3 for update
-4 for turn on root account
-5 for restart
-6 for shutdown 
-7 for update tool
+1 for disk parted
+2 for Encrypted
+3 for None
+4 for update
+5 for turn on root account
+6 for restart
+7 for shutdown 
+8 for update tool
+9 for terminal
 0 for exit
 "
 choose=561df65d1f61f
