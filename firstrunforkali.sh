@@ -340,7 +340,7 @@ fi
 
 uptool:
 cd ~
-$(pwd)/toolkali/
+$(pwd)
 sudo rm -fRdv $HOME/toolkali 
 sudo rm -fRdv /media $HOME/*/toolkali
 sudo rm -fRdv /media/*/*/toolkali 
@@ -352,8 +352,8 @@ sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
-sudo rm -fRdv $(pwd)/
-sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
+sudo rm -fRdv $(pwd)/*
+sudo git clone https://github.com/GZake/toolkali.git $(pwd)
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
