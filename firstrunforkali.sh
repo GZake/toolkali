@@ -2,7 +2,7 @@
 #!/bin/bash
 echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
-[[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
+[[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 choose:
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
@@ -201,7 +201,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 
 cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
-cd $HOME/toolkali/
+cd $HOME/Documents/GitHub/toolkali/
 
 #!/bin/bash
 # include this boilerplate
@@ -359,6 +359,7 @@ sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/*
+sudo git clone https://github.com/GZake/toolkali.git $HOME/Documents/GitHub/toolkali
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
@@ -381,10 +382,10 @@ sudo git clone https://github.com/GZake/toolkali.git /media/SUGirl/*/toolkali/
 
 sudo cp -fRdv kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
 cd ~
-cd $HOME/toolkali/
+cd $HOME/Documents/GitHub/toolkali
 exit
 clear
-sudo bash ~/toolkali/firstrunforkali.sh
+sudo bash $HOME/Documents/GitHub/toolkali/firstrunforkali.sh
 goto choose
 
 
@@ -805,17 +806,17 @@ sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
-sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
-sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
 #sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 
@@ -837,7 +838,7 @@ udo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a $HOME/Documents/GitHub/toolkali/log/log_$(date "+%d_%h_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -1091,20 +1092,20 @@ sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 #udo apt-key adv --refresh-keys --keyserver pool.sks-keyservers.net -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver certserver.pgp.com -update-trustdb &
 #udo apt-key adv --refresh-keys --keyserver hkp://keys.gnupg.net:80 -update-trustdb
-sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
-sudo cp -fRv $HOME/toolkali/*.gpg /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.asc /usr/share/keyrings/
-sudo cp -fRv $HOME/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
-sudo cp -fRv /usr/share/keyrings/* $HOME/toolkali/
-cd ~/toolkali
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+cd $HOME/Documents/GitHub/toolkali/
 #git remote add origin https://github.com/GZake/toolkali.git
 #git branch -M main
 #git push -u origin main
@@ -1232,7 +1233,7 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo bash ~/toolkali/need.sh | sudo tee -a $HOME/Documents/GitHub/toolkali/log/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1520,7 +1521,7 @@ alias journalctl="sudo journalctl"
 
 
 #sudo dpkg -i --force-hold,confnew,depends,bad-verify,bad-version *
-cd $HOME/toolkali/ 
+cd $HOME/Documents/GitHub/toolkali/
 #sudo bash update.sh
 if [ $choose1 -eq 5 ]
 then
