@@ -289,7 +289,8 @@ fi
 ####################################
 diskpart:
 read -p "Disk parted(ex: sdb): " disk
-sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+800G\nn\n\n+100G\nn\n\n\nt\n\n82\nw\n")
+sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+10G\nn\n\n+100G\nn\n\n\nw\n")
+#t\n\n82\n
 goto choose
 ####################################
 Encrypted:
@@ -1548,7 +1549,7 @@ fi
 bak:
 #cd $HOME/toolkali/
 #git add
-sudo cp -fRdvx .bashrc $(pwd)/.bashrc.bak
+sudo cp -fRdvx .bashrc $(pwd)/	
 sudo cp -fRdvx .bashrc .bashrc.bak
 sudo cp -fRdvx /etc/skel/.zshrc $(pwd)/.zshrc.bak
 sudo cp -fRdvx /etc/skel/.zshrc $HOME/.zshrc.bak
