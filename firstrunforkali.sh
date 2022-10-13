@@ -1,3 +1,4 @@
+#measure enemy tattoo retire female nephew creek  horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #!/bin/bash
 choose:
 clear
