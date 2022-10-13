@@ -1,5 +1,6 @@
 #measure enemy tattoo retire female nephew creek  horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #!/bin/bash
+echo $(pwd)
 [[ -f $(pwd)/brave-browser-dev_* ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb
 sudo dpkg -i  brave-browser-dev_*
 [[ -f $(pwd)/GitHubDesktop-linux ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb
