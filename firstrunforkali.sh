@@ -249,7 +249,7 @@ echo " $(cut -d: -f1 /etc/passwd)
 9 for terminal
 0 for exit
 "
-choose=561df65d1f61f
+choose=xxx
 read -p "Your choose: " choose 
 if [ $choose -eq 1 ]
 then
@@ -285,12 +285,12 @@ else
 	echo Wrong
 	goto choose
 fi
-
+####################################
 diskpart:
 read -p "Disk parted(ex: sdb): " disk
 sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+800G\nn\n\n+100G\nn\n\n\nt\n\n82\nw\n")
 goto choose
-
+####################################
 Encrypted:
 read -p "Encrypted disk (ex: sdb): " disk
 read -p "Num of encrypted disk (ex: sdb): " num
@@ -309,7 +309,7 @@ dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${num}
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
 goto choose
-
+####################################
 None:
 read -p "Disk (ex: sdb): " disk
 read -p "Num of disk (ex: sdb3): " num
@@ -321,7 +321,7 @@ sudo mount ${usb}$num /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 sudo umount ${usb}$num
 goto choose
-
+#####################################
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
@@ -334,7 +334,7 @@ sudo chsh -s /bin/bash $username
 sudo userdel -f kali
 sudo deluser --remove-all-files kali
 goto choose
-
+####################################
 terminal:
 read -p "command (0 to exit): " terminal
 $terminal
@@ -344,7 +344,7 @@ then
 else
 	goto terminal
 fi
-
+####################################
 uptool:
 cd ~
 $(pwd)
@@ -389,7 +389,7 @@ clear
 sudo bash $HOME/Documents/GitHub/toolkali/firstrunforkali.sh
 goto choose
 
-
+####################################
 uptab:
 clear
 echo "                       UPDATE
