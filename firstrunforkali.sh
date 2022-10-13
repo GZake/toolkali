@@ -318,6 +318,7 @@ goto choose
 
 uptool:
 cd ~
+$(pwd)/toolkali/
 sudo rm -fRdv $HOME/toolkali 
 sudo rm -fRdv /media $HOME/*/toolkali
 sudo rm -fRdv /media/*/*/toolkali 
@@ -329,6 +330,8 @@ sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
+sudo rm -fRdv $(pwd)/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
@@ -1512,17 +1515,25 @@ fi
 bak:
 #cd $HOME/toolkali/
 #git add
+sudo cp -f .bashrc $(pwd)/.bashrc.bak
 sudo cp -f .bashrc .bashrc.bak
+sudo cp -f /etc/skel/.zshrc $(pwd)/.zshrc.bak
 sudo cp -f /etc/skel/.zshrc $HOME/.zshrc.bak
 sudo cp -f /etc/skel/.zshrc ~/.zshrc.bak
 sudo cp -f $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -f /etc/skel/.bashrc $HOME/.bashrc.bak1
 sudo cp -f /etc/skel/.bashrc /etc/skel/.bashrc.bak1
+sudo cp -f /etc/sysctl.conf $(pwd)/sysctl.conf.bak
 sudo cp -f /etc/sysctl.conf /etc/sysctl.conf.bak
+sudo cp -f /etc/fstab $(pwd)/fstab.bak
 sudo cp -f /etc/fstab /etc/fstab.bak
+sudo cp -f /etc/crontab $(pwd)/crontab.bak
 sudo cp -f /etc/crontab /etc/crontab.bak
+sudo cp -f /etc/rc.local $(pwd)/rc.local.bak
 sudo cp -f /etc/rc.local /etc/rc.local.bak
+sudo cp -f /etc/security/limits.conf $(pwd)/limits.conf.bak
 sudo cp -f /etc/security/limits.conf /etc/security/limits.conf.bak
+sudo cp -f /etc/modprobe.d/nvidia-blacklists-nouveau.conf $(pwd)/nvidia-blacklists-nouveau.conf.bak
 sudo cp -f /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
