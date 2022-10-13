@@ -268,7 +268,10 @@ then
 	poweroff
 elif [ $choose -eq 8 ]
 then
-	goto uptool	
+	goto uptool
+elif [ $choose -eq  ]
+then
+	goto terminal	
 elif [ $choose -eq 0 ]
 then
 	exit
@@ -325,6 +328,16 @@ sudo userdel -f kali
 sudo deluser --remove-all-files kali
 goto choose
 
+terminal:
+read -p "command (0 to exit): " terminal
+$terminal
+if [ $terminal -eq 0 ]
+then
+	goto choose
+else
+	goto terminal
+fi
+
 uptool:
 cd ~
 $(pwd)/toolkali/
@@ -339,7 +352,7 @@ sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
 sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
-sudo rm -fRdv $(pwd)/toolkali/
+sudo rm -fRdv $(pwd)/
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
