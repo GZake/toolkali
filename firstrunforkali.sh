@@ -247,23 +247,26 @@ choose=561df65d1f61f
 read -p "Your choose: " choose 
 if [ $choose -eq 1 ]
 then
-	goto Encrypted
+	goto diskpart
 elif [ $choose -eq 2 ]
 then
-	goto None
+	goto Encrypted
 elif [ $choose -eq 3 ]
 then
-	goto uptab
+	goto None
 elif [ $choose -eq 4 ]
 then
-	goto root
+	goto uptab
 elif [ $choose -eq 5 ]
 then
-	reboot
+	goto root
 elif [ $choose -eq 6 ]
 then
-	poweroff
+	reboot
 elif [ $choose -eq 7 ]
+then
+	poweroff
+elif [ $choose -eq 8 ]
 then
 	goto uptool	
 elif [ $choose -eq 0 ]
@@ -273,6 +276,11 @@ else
 	echo Wrong
 	goto choose
 fi
+
+diskpart:
+read -p "Disk parted(ex: sdb): " disk
+sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+900G\nn\ne\n\n+10G\nn\n\n\nw")
+goto choose
 
 Encrypted:
 read -p "Encrypted disk (ex: sdb3): " disk
