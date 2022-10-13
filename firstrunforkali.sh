@@ -337,6 +337,7 @@ sudo deluser --remove-all-files kali
 goto choose
 ####################################
 terminal:
+terminal=561df65d1f61f
 read -p "command (0 to exit): " terminal
 $terminal
 if [ $terminal -eq 0 ]
