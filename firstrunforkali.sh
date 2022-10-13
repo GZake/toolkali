@@ -284,7 +284,7 @@ fi
 
 diskpart:
 read -p "Disk parted(ex: sdb): " disk
-sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+900G\nn\ne\n\n+10G\nn\n\n\nw")
+sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+900G\nn\ne\n\n+10G\nn\n\n\nt\n\n82\nw\n")
 goto choose
 
 Encrypted:
@@ -356,7 +356,6 @@ sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/*
-sudo git clone https://github.com/GZake/toolkali.git $(pwd)
 sudo git clone https://github.com/GZake/toolkali.git $HOME/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
