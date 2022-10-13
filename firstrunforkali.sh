@@ -289,7 +289,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/$disk
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
-reboot
+goto choose
 
 None:
 read -p "Encrypted disk (ex: sdb): " disk
@@ -301,7 +301,7 @@ sudo mkdir -p /mnt/my_usb
 sudo mount ${usb}$num /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 sudo umount ${usb}$num
-reboot
+goto choose
 
 root:
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
