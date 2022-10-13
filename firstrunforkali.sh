@@ -284,7 +284,7 @@ fi
 
 diskpart:
 read -p "Disk parted(ex: sdb): " disk
-sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+900G\nn\ne\n\n+10G\nn\n\n\nt\n\n82\nw\n")
+sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+800G\nn\n\n+100G\nn\n\n\nt\n\n82\nw\n")
 goto choose
 
 Encrypted:
