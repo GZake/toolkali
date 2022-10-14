@@ -525,8 +525,6 @@ cp -vR updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh 
 
 
-sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
-sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list.d/sourcesAdd.list
 sudo cp -f /etc/crontab.bak /etc/crontab 
 echo "
 @reboot sudo bash  $HOME/updatekali.sh
@@ -813,6 +811,8 @@ sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
 
 #sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
+sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
+sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list.d/sourcesAdd.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
