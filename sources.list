@@ -270,4 +270,99 @@ deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
-####################################################################3
+
+################################ TEST ##############################
+deb http://ftp.debian.org/debian/ Debian8.11 main contrib non-free
+deb http://ftp.debian.org/debian/ Debian9.13 main contrib non-free
+deb http://ftp.debian.org/debian/ Debian10.13 main contrib non-free
+deb http://ftp.debian.org/debian/ Debian11.5 main contrib non-free
+deb http://ftp.debian.org/debian/ bookworm-backports main contrib non-free
+deb http://ftp.debian.org/debian/ bookworm-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ bookworm-updates main contrib non-free
+deb http://ftp.debian.org/debian/ bookworm main contrib non-free
+deb http://ftp.debian.org/debian/ bullseye-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ bullseye-backports main contrib non-free
+deb http://ftp.debian.org/debian/ bullseye-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ bullseye-updates main contrib non-free
+deb http://ftp.debian.org/debian/ bullseye main contrib non-free
+deb http://ftp.debian.org/debian/ buster-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ buster-backports main contrib non-free
+deb http://ftp.debian.org/debian/ buster-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ buster-updates main contrib non-free
+deb http://ftp.debian.org/debian/ buster main contrib non-free
+deb http://ftp.debian.org/debian/ experimental main contrib non-free
+deb http://ftp.debian.org/debian/ jessie-updates main contrib non-free
+deb http://ftp.debian.org/debian/ jessie main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldoldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldoldstable main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldstable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldstable-backports main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldstable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian/ oldoldstable main contrib non-free
+deb http://ftp.debian.org/debian/ oldstable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ oldstable-backports main contrib non-free
+deb http://ftp.debian.org/debian/ oldstable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ oldstable-updates main contrib non-free
+deb http://ftp.debian.org/debian/ oldstable main contrib non-free
+deb http://ftp.debian.org/debian/ proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ rc-buggy main contrib non-free
+deb http://ftp.debian.org/debian/ stable-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ stable-backports main contrib non-free
+deb http://ftp.debian.org/debian/ stable-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ stable-updates main contrib non-free
+deb http://ftp.debian.org/debian/ stable main contrib non-free
+deb http://ftp.debian.org/debian/ stretch-backports-sloppy main contrib non-free
+deb http://ftp.debian.org/debian/ stretch-backports main contrib non-free
+deb http://ftp.debian.org/debian/ stretch-proposed-updates main contrib non-free
+deb http://ftp.debian.org/debian/ stretch-updates main contrib non-free
+deb http://ftp.debian.org/debian/ stretch main contrib non-free
+
+deb-src http://ftp.debian.org/debian/ Debian8.11 main contrib non-free
+deb-src http://ftp.debian.org/debian/ Debian9.13 main contrib non-free
+deb-src http://ftp.debian.org/debian/ Debian10.13 main contrib non-free
+deb-src http://ftp.debian.org/debian/ Debian11.5 main contrib non-free
+deb-src http://ftp.debian.org/debian/ bookworm-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ bookworm-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ bookworm-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ bookworm main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye main contrib non-free
+deb-src http://ftp.debian.org/debian/ buster-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ buster-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ buster-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ buster main contrib non-free
+deb-src http://ftp.debian.org/debian/ experimental main contrib non-free
+deb-src http://ftp.debian.org/debian/ jessie-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ jessie main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldoldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldoldstable main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldstable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldstable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldstable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldoldstable main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldstable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldstable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldstable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldstable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ oldstable main contrib non-free
+deb-src http://ftp.debian.org/debian/ proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ rc-buggy main contrib non-free
+deb-src http://ftp.debian.org/debian/ stable-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ stable-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ stable-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ stable-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ stable main contrib non-free
+deb-src http://ftp.debian.org/debian/ stretch-backports-sloppy main contrib non-free
+deb-src http://ftp.debian.org/debian/ stretch-backports main contrib non-free
+deb-src http://ftp.debian.org/debian/ stretch-proposed-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ stretch-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ stretch main contrib non-free
+
+
+####################################################################
