@@ -52,3 +52,276 @@ The following packages were automatically installed and are no longer required:
   ruby2.7-doc sse3-support xprobe zeek-common
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  adequate apksigner appstream appstream-util apt-config-icons
+  apt-config-icons-hidpi apt-config-icons-large apt-config-icons-large-hidpi
+  at attr auctex augeas-doc augeas-lenses augeas-tools autodep8 avahi-utils
+  blends-common blends-doc blhc bolt bridge-utils brz-doc bsdgames buildah
+  caca-utils castxml catch2 cgroupfs-mount chktex cl-swank clisp clisp-doc
+  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
+  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
+  clisp-module-pcre clisp-module-postgresql clisp-module-zlib cm-super
+  cm-super-minimal comerr-dev conmon containerd containernetworking-plugins
+  containers-storage cowsay cowsay-off cramfsswap cvs cvs-buildpackage db-util
+  dc dctrl-tools deborphan devhelp-common dh-dkms disorderfs distro-info
+  distro-info-data docker-doc docker.io docutils-common dose-extra dvidvi
+  dvipng elpa-caml elpa-devscripts elpa-tuareg equivs espeak-ng-data exif
+  fakechroot fakemachine faketime figlet filters finger fish-common flatpak
+  fontforge fontforge-common fontforge-doc fontforge-extras
+  fonts-adf-accanthis fonts-adf-berenis fonts-adf-gillius
+  fonts-adf-universalis fonts-cabin fonts-comfortaa fonts-ebgaramond
+  fonts-ebgaramond-extra fonts-gfs-artemisia fonts-gfs-complutum
+  fonts-gfs-didot fonts-gfs-neohellenic fonts-gfs-olga fonts-gfs-solomos
+  fonts-go fonts-inconsolata fonts-junicode fonts-linuxlibertine fonts-lobster
+  fonts-lobstertwo fonts-lyx fonts-noto-core fonts-oflb-asana-math
+  fonts-open-sans fonts-roboto-unhinted fonts-sil-charis fonts-sil-gentium
+  fonts-sil-gentium-basic fonts-sil-gentiumplus fonts-sil-gentiumplus-compact
+  foomatic-db-engine fp-compiler-3.2.2 fp-docs-3.2.2 fp-units-rtl-3.2.2
+  fp-utils fp-utils-3.2.2 fpc-source-3.2.2 freeglut3 fuse-overlayfs fwupd
+  fwupd-amd64-signed g++-11 gdal-data gdal-plugins genext2fs ghc ghc-doc
+  ghc-prof giflib-tools gimp-gutenprint gir1.2-atspi-2.0
+  gir1.2-ayatanaappindicator3-0.1 gir1.2-fwupd-2.0 gir1.2-gsf-1
+  gir1.2-gstreamer-1.0 gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0
+  gir1.2-handy-1 gir1.2-javascriptcoregtk-4.0 gir1.2-json-1.0
+  gir1.2-malcontent-0 gir1.2-nm-1.0 gir1.2-notify-0.7
+  gir1.2-packagekitglib-1.0 gir1.2-polkit-1.0 gir1.2-secret-1 gir1.2-soup-2.4
+  gir1.2-vte-2.91 gir1.2-webkit2-4.0 gir1.2-wnck-3.0 gir1.2-xfconf-0
+  gir1.2-xmlb-2.0 git-lfs gnome-software-common gnumeric gnumeric-common
+  gnutls-doc golang-1.18-go golang-1.18-src
+  golang-github-containernetworking-plugin-dnsname
+  golang-github-containers-common golang-github-containers-image gpsd-tools
+  greenbone-security-assistant gutenprint-doc gutenprint-locales gvmd-common
+  hdf5-tools hfsplus hostapd how-can-i-help hplip-doc hwloc hyperspec icoutils
+  icu-devtools idn iputils-tracepath ir-keytable isa-support jq
+  jupyter-nbextension-jupyter-js-widgets kde-config-updates krb5-multidev
+  lacheck latexdiff latexmk lcdf-typetools ldap-utils ldmtool ledit
+  libad9361-0 libadns1 libaec0 libapache2-mod-php libapksig-java
+  libappstream-glib8 libappstream4 libappstreamqt2 libarchive-tools
+  libarmadillo11 libarpack2 libarray-intspan-perl libatk1.0-data libatk1.0-doc
+  libaugeas0 libbde1 libbit-vector-perl libblas-dev libblkid-dev libblosc1
+  libboolean-perl libboost-atomic1.74-dev libboost-atomic1.74.0
+  libboost-chrono1.74-dev libboost-context1.74.0 libboost-date-time1.74-dev
+  libboost-date-time1.74.0 libboost-dev libboost-filesystem1.74-dev
+  libboost-program-options1.74-dev libboost-python1.74.0
+  libboost-regex1.74-dev libboost-serialization1.74-dev
+  libboost-system1.74-dev libboost-system1.74.0 libboost-test1.74-dev
+  libboost-test1.74.0 libboost-thread1.74-dev libboost1.74-dev libbroker2
+  libbsd-dev libbz2-dev libcache-perl libcaf-core0.17 libcaf-io0.17
+  libcaf-openssl0.17 libcarp-clan-perl libcephfs2 libclang-cpp11
+  libclass-accessor-perl libclass-errorhandler-perl
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libconfig-simple-perl libcontextual-return-perl libcppunit-1.15-0
+  libcppunit-dev libcreg1 libcrypt-rc4-perl libcupsimage2 libcurl4-doc
+  libcurl4-gnutls-dev libdate-calc-perl libdate-calc-xs-perl
+  libdatetime-format-flexible-perl libdatetime-format-mail-perl
+  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
+  libdbd-pg-perl libdevhelp-3-6 libdigest-perl-md5-perl libdistorm3-3
+  libdistro-info-perl libdomain-publicsuffix-perl libdotconf0 libdqlite0
+  libeigen3-dev libemail-address-perl libemf1 libesedb1 libespeak-ng1 libevt1
+  libevtx1 libexpat1-dev libexporter-lite-perl libfakechroot libfaketime
+  libfeed-find-perl libffcall1b libffi-dev libfile-chdir-perl
+  libfile-dirlist-perl libfile-homedir-perl libfile-libmagic-perl
+  libfile-nfslock-perl libfile-touch-perl libfilesys-df-perl libflatpak0
+  libfmt-dev libfontbox-java libfontforge4 libfreexl1 libfsapfs1 libfsext1
+  libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2 libfvde1 libfwnt1 libfwsi1
+  libfwupd2 libfyba0 libgarcon-gtk3-1-0 libgcab-1.0-0 libgdal31 libgeos-c1v5
+  libgeos3.11.0 libgeotiff5 libgirepository1.0-doc libgit-wrapper-perl
+  libgitlab-api-v4-perl libglfw3 libglib2.0-doc libgnuradio-air-modes1
+  libgnuradio-analog3.10.3 libgnuradio-audio3.10.3 libgnuradio-blocks3.10.3
+  libgnuradio-channels3.10.3 libgnuradio-digital3.10.3 libgnuradio-dtv3.10.3
+  libgnuradio-fec3.10.3 libgnuradio-fft3.10.3 libgnuradio-filter3.10.3
+  libgnuradio-fosphor3.9.0 libgnuradio-iio3.10.3 libgnuradio-network3.10.3
+  libgnuradio-pdu3.10.3 libgnuradio-qtgui3.10.3 libgnuradio-soapy3.10.3
+  libgnuradio-trellis3.10.3 libgnuradio-uhd3.10.3 libgnuradio-video-sdl3.10.3
+  libgnuradio-vocoder3.10.3 libgnuradio-wavelet3.10.3 libgnuradio-zeromq3.10.3
+  libgnutls28-dev libgnutlsxx30 libgoffice-0.10-10 libgoffice-0.10-10-common
+  libgoogle-perftools4 libgps28 libgsm1-dev libgtk-3-doc libgtkspell3-3-0
+  libguestfs-hfsplus libguestfs-jfs libguestfs-nilfs libguestfs-reiserfs
+  libguestfs-rescue libguestfs-rsync libguestfs0 libgutenprint-common
+  libgutenprint9 libgutenprintui2-2 libgvm21 libhdf4-0-alt libhdf5-103-1
+  libhdf5-hl-100 libheap-perl libhfsp0 libhiredis0.14 libhpmud0
+  libhttp-server-simple-perl libhttp-tiny-multipart-perl libicu-dev libidn-dev
+  libidn11-dev libidn2-dev libiio0 libilmbase25 libimagequant0 libinih1
+  libiniparser1 libintl-perl libintl-xs-perl libio-prompter-perl
+  libio-pty-perl libio-sessiondata-perl libipc-run-perl libirman0
+  libjavaparser-java libjcat1 libjcode-pm-perl libjcommander-java
+  libjcommander-java-doc libjpeg-dev libjpeg62-turbo-dev libjq1 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-prettify
+  libjs-requirejs libjs-requirejs-text libjs-skeleton libjs-terser
+  libjs-text-encoding libjs-xterm libkdf5-2 libkeybinder-3.0-0 libkmlbase1
+  libkmldom1 libkmlengine1 libkrb5-dev liblapack-dev liblapack-doc liblbfgsb0
+  libldap-dev libldap2-dev libldm-1.0-0 liblerc3 libleveldb1d
+  liblimesuite20.10-1 liblirc0 libllvm11 liblnk1
+  liblog-any-adapter-screen-perl liblog-any-perl libluksde1
+  liblwp-authen-wsse-perl liblxc-common liblxc1 liblzf1 liblzma-dev
+  libmagick++-6.q16-8 libmalcontent-ui-1-1 libmbedtls-dev libmbedtls-doc
+  libmbedtls14 libmbedx509-1 libmd-dev libmodi1 libmodule-find-perl
+  libmodule-scandeps-perl libmodule-util-perl libmono-2.0-dev
+  libmono-cairo4.0-cil libmono-cecil-private-cil libmono-cil-dev
+  libmono-codecontracts4.0-cil libmono-compilerservices-symbolwriter4.0-cil
+  libmono-cscompmgd0.0-cil libmono-csharp4.0c-cil
+  libmono-custommarshalers4.0-cil libmono-data-tds4.0-cil libmono-db2-1.0-cil
+  libmono-debugger-soft4.0a-cil libmono-http4.0-cil libmono-management4.0-cil
+  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
+  libmono-microsoft-build-engine4.0-cil
+  libmono-microsoft-build-framework4.0-cil
+  libmono-microsoft-build-tasks-v4.0-4.0-cil
+  libmono-microsoft-build-utilities-v4.0-4.0-cil
+  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
+  libmono-microsoft-visualc10.0-cil
+  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
+  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
+  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
+  libmono-system-componentmodel-composition4.0-cil
+  libmono-system-configuration-install4.0-cil
+  libmono-system-data-datasetextensions4.0-cil
+  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
+  libmono-system-data-services-client4.0-cil
+  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
+  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
+  libmono-system-identitymodel-selectors4.0-cil
+  libmono-system-identitymodel4.0-cil
+  libmono-system-io-compression-filesystem4.0-cil
+  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
+  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
+  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
+  libmono-system-net-http-formatting4.0-cil
+  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
+  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
+  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
+  libmono-system-reactive-experimental2.2-cil
+  libmono-system-reactive-interfaces2.2-cil
+  libmono-system-reactive-linq2.2-cil
+  libmono-system-reactive-observable-aliases0.0-cil
+  libmono-system-reactive-platformservices2.2-cil
+  libmono-system-reactive-providers2.2-cil
+  libmono-system-reactive-runtime-remoting2.2-cil
+  libmono-system-reactive-windows-forms2.2-cil
+  libmono-system-reactive-windows-threading2.2-cil
+  libmono-system-reflection-context4.0-cil
+  libmono-system-runtime-caching4.0-cil
+  libmono-system-runtime-durableinstancing4.0-cil
+  libmono-system-runtime-serialization4.0-cil
+  libmono-system-servicemodel-activation4.0-cil
+  libmono-system-servicemodel-discovery4.0-cil
+  libmono-system-servicemodel-internals0.0-cil
+  libmono-system-servicemodel-routing4.0-cil
+  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
+  libmono-system-serviceprocess4.0-cil
+  libmono-system-threading-tasks-dataflow4.0-cil
+  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
+  libmono-system-web-extensions-design4.0-cil
+  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
+  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
+  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
+  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
+  libmono-system-web-routing4.0-cil
+  libmono-system-web-webpages-deployment2.0-cil
+  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
+  libmono-system-windows-forms-datavisualization4.0a-cil
+  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
+  libmono-system-workflow-componentmodel4.0-cil
+  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
+  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
+  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
+  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonoboehm-2.0-1
+  libmonosgen-2.0-1 libmonosgen-2.0-dev libmount-dev libmsiecf1
+  libnautilus-extension1a libncbi-vdb2 libncbi-wvdb2 libndpi4.2
+  libnet-jabber-perl libnet-smtps-perl libnet-xmpp-perl libnetcdf19
+  libnfsidmap1 libnode93 libnunit-cil-dev libnunit-console-runner2.6.3-cil
+  libnunit-core-interfaces2.6.3-cil libnunit-core2.6.3-cil
+  libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil libnunit-util2.6.3-cil
+  libnvpair3linux liboath0 libobject-pad-perl libodbcinst2 libodpic4
+  libogdi4.1 libole-storage-lite-perl libolecf1 libonig5 libopenblas-dev
+  libopenblas-pthread-dev libopenblas0 libopenexr25 libopenh264-6 libopusfile0
+  libossp-uuid-perl libossp-uuid16 libostree-1-1 libp11-kit-dev
+  libpackagekit-glib2-18 libpackagekitqt5-1 libpam-cgfs libpango1.0-doc
+  libpari-gmp-tls7 libparse-debcontrol-perl libparse-recdescent-perl
+  libpath-class-perl libpath-iterator-rule-perl libpcaudio0 libpcre16-3
+  libpcre2-32-0 libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3
+  libpcrecpp0v5 libpdfbox-java libpfm4 libplacebo192 libplot2c2 libpng-dev
+  libpng-tools libpod-constants-perl libpoppler118 libportmidi0
+  libprocyon-java libproj25 libpstoedit0c2a libpython3-all-dev libpython3-dbg
+  libpython3-dev libpython3.10-dbg libpython3.10-dev libpython3.9
+  libpython3.9-minimal libpython3.9-stdlib libqcow1 libqhull-r8.0
+  libqt5designer5 libqt5help5 libqt5test5 libqwt-qt5-6 libradcli4
+  libradosstriper1 libraft2 libraptor2-0 libraqm0 librasqal3
+  librdf-storage-mysql librdf-storage-postgresql librdf-storage-sqlite
+  librdf-storage-virtuoso librdf0 libre-engine-re2-perl libreadline-dev
+  libregexp-common-email-address-perl libregexp-pattern-license-perl
+  libregexp-pattern-perl libregf1 librgw2 librizin-common librizin0
+  librtmp-dev librttopo1 libsane-hpaio libsbuild-perl libscca1
+  libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libselinux1-dev
+  libsepol-dev libset-intspan-perl libsigscan1 libsmbios-c2 libsmbios-doc
+  libsmdev1 libsmraw1 libsoap-lite-perl libsort-naturally-perl
+  libsoup-gnome2.4-1 libsox-fmt-alsa libsox-fmt-base libsox3 libspatialite7
+  libspdlog-dev libspiro1 libspreadsheet-parseexcel-perl
+  libspreadsheet-writeexcel-perl libsquashfs1 libssh2-1-dev libssl-dev
+  libssl-doc libstdc++-11-dev libstring-copyright-perl libstring-escape-perl
+  libstring-shellquote-perl libstring-similarity-perl libsubid4 libsuperlu5
+  libsvm3 libsvn-perl libsvtav1enc0 libsybdb5 libsys-cpuaffinity-perl libsz2
+  libtasn1-6-dev libtasn1-doc libtbb12 libtbbbind-2-5 libtbbmalloc2
+  libtcmalloc-minimal4 libterm-size-perl libthrift-0.17.0 libthrift-dev
+  libtiff-opengl libtiff-tools libtinfo-dev libtomoyotools3 libtree-sitter0
+  libtype-tiny-perl libtype-tiny-xs-perl libuhd4.2.0 libunicode-map-perl
+  liburi-fetch-perl liburiparser1 libuutil3linux libvirt0 libvsgpt1
+  libvshadow1 libvslvm1 libwant-perl libwebsockets16 libwhereami0
+  libwireshark15 libwiretap12 libwsutil13 libwww-curl-perl libwxbase3.2-0
+  libwxgtk3.2-0 libxapian-dev libxdelta2 libxdo3 libxfce4ui-utils
+  libxml-atom-perl libxml-feed-perl libxml-libxslt-perl libxml-rss-perl
+  libxml-stream-perl libxml2-dev libxmlb-dev libxmlb2 libxmlbeans-java
+  libxmlrpc-lite-perl libxsimd-dev libyajl2 libyaml-syck-perl libyelp0
+  libz3-dev libzfs4linux libzpool5linux licensecheck light-locker
+  lirc-compat-remotes lirc-doc lirc-drv-irman llvm llvm-11
+  llvm-11-linker-tools llvm-11-runtime llvm-13 llvm-13-runtime llvm-14
+  llvm-14-runtime llvm-runtime lp-solve lsscsi lua-bitop lua-cjson lxc
+  lxc-templates lxcfs lxd lxd-agent lxd-client lxd-tools lz4 magicfilter
+  med-config mingw-w64-tools mksh mono-csharp-shell mono-devel mono-mcs
+  mono-utils mono-xbuild mscompress mtd-utils ncbi-vdb-data needrestart
+  nettle-dev node-ampproject-remapping node-jed node-normalize.css
+  node-source-map node-terser numba-doc nvme-cli ocaml ocaml-base
+  ocaml-compiler-libs ocaml-doc ocaml-interp ocaml-man ocaml-nox oggvideotools
+  openvas-scanner oracle-instantclient-basic oracle-instantclient-devel
+  osslsigncode ovmf-ia32 p11-kit-doc packagekit packagekit-tools pandoc
+  pandoc-data pbzip2 pdfminer-data pfb2t1c2pfb pgpdump php-json php-sqlite3
+  php8.1-sqlite3 pixz plasma-discover plasma-discover-backend-flatpak
+  plasma-discover-backend-fwupd plasma-discover-common podman postgresql
+  potrace preview-latex-style printer-driver-all printer-driver-brlaser
+  printer-driver-c2050 printer-driver-c2esp printer-driver-cjet
+  printer-driver-gutenprint printer-driver-hpcups printer-driver-hpijs
+  printer-driver-indexbraille printer-driver-min12xxw printer-driver-oki
+  printer-driver-pnm2ppa printer-driver-splix pristine-tar procmail
+  procyon-decompiler proj-bin proj-data proot proxmark3-firmwares ps2eps
+  pstoedit purifyeps pxlib1 pybind11-dev python-babel-localedata
+  python-gitlab-doc python-lockfile-doc python-matplotlib-data python-odf-doc
+  python-pastedeploy-tpl python-pecan-doc python-tables-data
+  python-testtools-doc python-tinycss2-common python-waitress-doc
+  python-webtest-doc python-zstandard-doc python3-pgpy-doc python3-wheel-whl
+  python3.10-dbg python3.10-dev python3.9 python3.9-minimal pyzor-doc
+  qml-module-org-kde-kcoreaddons qml-module-org-kde-qqc2desktopstyle
+  qml-module-org-kde-sonnet qtbase5-dev-tools qtchooser quilt quota
+  r-base-core r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-doc-info r-mathlib r-recommended
+  raptor2-utils rasqal-utils ratt rcs redis-server redis-tools redland-utils
+  reglookup-doc rinse rootlesskit rpcbind ruby-debian ruby2.7 ruby2.7-dev
+  ruby2.7-doc runc rwho rwhod samba-dsdb-modules samba-vfs-modules sbuild
+  schroot schroot-common scrub setserial shunit2 simple-scan slime slirp4netns
+  sng soapysdr-tools sound-icons sox speech-dispatcher
+  speech-dispatcher-audio-plugins speech-dispatcher-espeak-ng sphinx-common
+  sqsh squashfs-tools-ng sra-toolkit sse3-support sshpass strace supermin
+  syslinux tango-icon-theme tdb-tools texlive-font-utils texlive-fonts-extra
+  texlive-fonts-extra-doc texlive-fonts-extra-links texlive-metapost
+  texlive-metapost-doc tini toilet toilet-fonts tomoyo-tools
+  ubertooth-firmware uidmap unadf unicode-data unionfs-fuse unixodbc-common
+  unp uuid uuid-dev uwsgi-core uwsgi-plugin-python3 wabt xapian-doc
+  xapian-examples xbrlapi xdelta xdelta3 xdms xdotool xfce4-appfinder
+  xfce4-panel xfce4-pulseaudio-plugin xfdesktop4 xfdesktop4-data xiccd xindy
+  xindy-rules xkbset xmlbeans xprobe yelp-xsl zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.

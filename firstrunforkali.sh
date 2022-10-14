@@ -995,6 +995,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0B31DBA06
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A8580BDC82D3DC6C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 18DF3741CDFFDE29
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5E3C45D7B312C643
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys B8AC39B0876D807E
 sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9BDB3D89CE49EC21
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F2EDC64DC5AEE1F6B9C621F0C8CAB6595FDFF622
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -1128,7 +1129,19 @@ sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
-cd $HOME/Documents/GitHub/toolkali/
+
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/*.gpg /var/lib/apt/lists/
+sudo cp -fRv /usr/share/keyrings/*.asc /var/lib/apt/lists/
+sudo cp -fRv /usr/share/keyrings/*.keyring /var/lib/apt/lists/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
 #git remote add origin https://github.com/GZake/toolkali.git
 #git branch -M main
 #git push -u origin main
