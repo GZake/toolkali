@@ -172,11 +172,6 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-vario
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 
-
-deb https://kali.itsec.am/kali kali-rolling main contrib non-free
-deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free
-deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free
-deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free
 deb https://http.kali.org/kali kali-rolling-only main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
 deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
@@ -270,7 +265,10 @@ deb-src https://http.kali.org/kali/ kali-experimentalmain contrib non-free
 deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
 deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
 
-
+deb https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free
 ################################ TEST ##############################
 deb http://ftp.debian.org/debian/ Debian8.11 main contrib non-free
 deb http://ftp.debian.org/debian/ Debian9.13 main contrib non-free
