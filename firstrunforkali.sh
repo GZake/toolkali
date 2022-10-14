@@ -1292,7 +1292,6 @@ sudo dpkg --remove-architecture i386
 sudo dpkg --remove-architecture arm64
 sudo dpkg --remove-architecture i586
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 dpkg --configure -a | sudo tee -a $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
@@ -1553,6 +1552,7 @@ reboot
 gitinstall:
 sudo dpkg -i  $HOME/Downloads/brave-browser-dev_*
 sudo dpkg -i  $HOME/Downloads/GitHubDesktop-linux*
+sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 if [ $choose1 -eq 9 ]
 then
 	goto uptab
