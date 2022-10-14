@@ -830,6 +830,22 @@ sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
+
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
+sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
+sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
 #sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
