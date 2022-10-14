@@ -18,7 +18,7 @@ sudo dpkg-reconfigure libdvd-pkg
 sudo dpkg --configure -a 
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a 
-sudo apt --fix-broken install -y 
+sudo apt --fix-broken install -y
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
@@ -52,6 +52,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *unikey*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
