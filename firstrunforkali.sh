@@ -12,6 +12,11 @@ echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 choose:
+sudo dpkg-reconfigure libdvd-pkg 
+sudo dpkg --configure -a 
+sudo apt --fix-broken install -y
+sudo dpkg --configure -a 
+sudo apt --fix-broken install -y 
 clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
@@ -141,11 +146,11 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 clear
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg-reconfigure libdvd-pkg | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
-sudo dpkg --configure -a | >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y | >>  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg-reconfigure libdvd-pkg  >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >>  $HOME/log_$(date "+%d_%h_%y" ).txt 
+sudo dpkg --configure -a  >>   $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >>  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  software-properties-common*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  *software-properties-common*
