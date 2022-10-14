@@ -568,15 +568,15 @@ sudo cp -fdRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRv $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee -a /etc/apt/sources.list
-echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
-sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" >> /etc/apt/sources.list'
+sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list'
 #curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublimetext.list
 echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ artful main'
@@ -670,7 +670,7 @@ sudo add-apt-repository -ys ppa:snapcpp/ppa
 sudo add-apt-repository -ys ppa:ubuntu-desktop/gnome-3-26
 sudo add-apt-repository -ys ppa:raharper/snapbuilds
 sudo add-apt-repository -ys ppa:hiweed-pkg/ppa
-sudo add-apt-repository -ys ppa:dajhosudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'rn/softether
+sudo add-apt-repository -ys ppa:dajhorn/softether
 sudo add-apt-repository -ys ppa:garhuy/nvidia-lts
 sudo add-apt-repository -ys ppa:graphics-drivers/ppa
 sudo add-apt-repository -ys ppa:kelebek333/nvidia-legacy
