@@ -832,6 +832,11 @@ sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
 #sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
+sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
+sudo cp -fdRv $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+
 
 if [ $choose1 -eq 2 ]
 then
