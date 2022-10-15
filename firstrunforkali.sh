@@ -305,7 +305,7 @@ fi
 ####################################
 diskpart:
 read -p "Disk parted(ex: sdb): " disk
-sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+10G\nn\n\n+100G\nn\n\n\nw\n")
+sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+10G\nt\n\n82\nn\n\n+100G\nn\n\n\nw\n")
 #t\n\n82\n
 goto choose
 ####################################
