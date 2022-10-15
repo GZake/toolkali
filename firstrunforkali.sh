@@ -14,6 +14,7 @@ echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 choose:
+clear
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -27,7 +28,6 @@ sudo dpkg --configure -a
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a 
 sudo apt --fix-broken install -y
-clear
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
 ulimit -s 1048576
@@ -155,7 +155,6 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #####
 #####
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
-clear
 awk '{print $1}' /proc/sys/fs/file-nr
 sudo dpkg-reconfigure libdvd-pkg  >>   $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo dpkg --configure -a  >>   $(pwd)/log/log_$(date "+%d_%h_%y").txt
@@ -213,7 +212,6 @@ sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-clear
 sudo dpkg --configure -a  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo dpkg --configure -a  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
@@ -349,6 +347,7 @@ sudo umount ${usb}$num
 goto choose
 #####################################
 root:
+clear
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd <<< $(printf "113006\n113006\n")
 username=SUGirl$(date "+%d%m%y")
@@ -362,6 +361,7 @@ sudo deluser --remove-all-files kali
 goto choose
 ####################################
 terminal:
+clear
 terminal=561df65d1f61f
 read -p "command (0 to exit): " terminal
 sudo $terminal
@@ -373,6 +373,7 @@ else
 fi
 ####################################
 uptool:
+clear
 cd ~
 $(pwd)
 sudo rm -fRdv $HOME/toolkali 
@@ -479,6 +480,7 @@ fi
 
 
 all:
+clear
 sudo cp -fRv /etc/systemd/system/* /systemServices/
 sudo cp -fRv /systemServices/* /etc/systemd/system/
 sudo cp -f limits.conf /etc/security/limits.conf
@@ -884,6 +886,7 @@ then
 fi
 
 per:
+clear
 #sudo chmod -Rv 777 /var/cache/apt/archives/partial/
 #echo"
 #"
@@ -918,6 +921,7 @@ sudo dpkg --configure -a | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
 
 
 key:
+clear
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release.key | sudo apt-key add -
@@ -1194,6 +1198,7 @@ then
 	goto uptab
 fi
 fulup:
+clear
 echo "UPDATING..."
 sudo service packagekit restart
 sudo dpkg --remove-architecture arc
@@ -1436,7 +1441,8 @@ echo"DONE"
 
 #######################need############################
 need:
-sudo bash ~/toolkali/need.sh | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
+clear
+sudo bash ~/toolkali/need.sh #| sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1446,6 +1452,7 @@ fi
 ###############################hack tool###############
 
 hckgit:
+clear
 sudo dpkg --remove-architecture arc
 sudo dpkg --remove-architecture s390
 sudo dpkg --remove-architecture s390x
@@ -1589,7 +1596,7 @@ fi
 ###sudo dpkg -P [packet]
 
 gui:
-
+clear
 sudo bash gui.sh
 echo "Dơ you want to install all deb?"
 read -p "Your choose (y/n): " choose2 
@@ -1623,6 +1630,7 @@ exit(0)
 reboot
 
 gitinstall:
+clear
 sudo dpkg -i  $HOME/Downloads/brave-browser-dev_*
 sudo dpkg -i  $HOME/Downloads/GitHubDesktop-linux*
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3*
@@ -1630,6 +1638,7 @@ goto uptab
 
 
 bak:
+clear
 #cd $HOME/toolkali/
 #git add
 sudo cp -fRdvx .bashrc $(pwd)/	
