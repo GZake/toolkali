@@ -429,7 +429,7 @@ sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
 sudo cp -RdfRdvv kaligittool.sh /
-sudo git clone https://github.com/GZake/toolkali.git /media $HOME/*/toolkali/
+sudo git clone https://github.com/GZake/toolkali.git /media/*/toolkali/
 sudo cp  kaligittool.sh /media $HOME/*/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 sudo cp -fRdv kaligittool.sh /media/*/*/toolkali/
