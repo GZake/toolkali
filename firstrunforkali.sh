@@ -867,6 +867,12 @@ sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list.d/sourcesAdd.list
 find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}' \;
+#sudo cat sources.list | sudo tee /etc/apt/sources.list
+#sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
+sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
+sudo cp -fdRv $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
@@ -896,13 +902,6 @@ sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-#sudo cat sources.list | sudo tee /etc/apt/sources.list
-#sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
-sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
-sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
-sudo cp -fdRv $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
-#sudo cp -fdRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
-
 
 if [ $choose1 -eq 2 ]
 then
@@ -919,7 +918,7 @@ sudo chmod -Rv 777 /var/cache/apt/archives/
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
 sudo chown -Rv _apt:root /var/lib/apt/lists/
-udo chmod -Rv 777 /var/cache/apt/archives/*
+sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
@@ -946,6 +945,35 @@ sudo dpkg --configure -a | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
 
 key:
 clear
+sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $HOME/Documents/GitHub/toolkali/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
+
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
+sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
+sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
+sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
+sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release.key | sudo apt-key add -
@@ -1665,7 +1693,7 @@ bak:
 clear
 #cd $HOME/toolkali/
 #git add
-sudo cp -fRdvx .bashrc $(pwd)/	
+sudo cp -fRdvx .bashrc $(pwd)/.bashrc.bak
 sudo cp -fRdvx .bashrc .bashrc.bak
 sudo cp -fRdvx /etc/skel/.zshrc $(pwd)/.zshrc.bak
 sudo cp -fRdvx /etc/skel/.zshrc $HOME/.zshrc.bak
