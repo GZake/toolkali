@@ -452,18 +452,18 @@ goto choose
 uptab:
 clear
 echo "                       UPDATE
-List user:
-1 for all
-2 for add repo, other,...
-3 for create backup
-4 for up key
-5 for GUI
-6 for Necessary application
-7 for Full update
-8 for new tool from git Hacktool
-9 for new install Github
-0 for back
-"
+*========================================*
+||1 for all				||
+||2 for add repo, other,...		||
+||3 for create backup			||
+||4 for up key				||
+||5 for GUI				||
+||6 for Necessary application		||
+||7 for Full update			||
+||8 for new tool from git Hacktool	||
+||9 for new install Github		||
+||0 for back				||
+*========================================*
 choose1=561df65d1f61f
 read -p "Your choose: " choose1 
 if [ $choose1 -eq 1 ]
