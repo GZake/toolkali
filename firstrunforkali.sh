@@ -1685,7 +1685,7 @@ gitinstall:
 clear
 sudo dpkg -i  $HOME/Downloads/brave-browser-dev_*
 sudo dpkg -i  $HOME/Downloads/GitHubDesktop-linux*
-sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3*
+sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
 
