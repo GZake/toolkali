@@ -451,7 +451,7 @@ goto choose
 ####################################
 uptab:
 clear
-echo "                       UPDATE
+echo "             UPDATE
 *========================================*
 ||1 for all				||
 ||2 for add repo, other,...		||
