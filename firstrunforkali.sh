@@ -249,8 +249,7 @@ sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 clear
-echo "Welcome to application auto setting and upgrade for kali live -> persistence"
-echo " 
+echo "Welcome to application auto setting and upgrade for kali live -> persistence
 *_______________________________*
 | 1...for disk parted		|
 | 2...for Encrypted		|
@@ -265,6 +264,7 @@ echo "
 | 11..for show all user		|
 | 0...for exit			|
 *_______________________________*
+
 "
 ####################################
 choose=561df65d1f61f
@@ -279,7 +279,7 @@ elif [ $choose -eq 3 ]
 then
 	goto None
 elif [ $choose -eq 4 ]
-then
+then	
 	goto uptab
 elif [ $choose -eq 5 ]
 then
@@ -447,7 +447,6 @@ exit
 clear
 sudo bash $HOME/Documents/GitHub/toolkali/firstrunforkali.sh
 goto choose
-
 ####################################
 uptab:
 clear
@@ -464,6 +463,7 @@ echo "             UPDATE
 ||9 for new install Github		||
 ||0 for back				||
 *========================================*
+"
 choose1=561df65d1f61f
 read -p "Your choose: " choose1 
 if [ $choose1 -eq 1 ]
