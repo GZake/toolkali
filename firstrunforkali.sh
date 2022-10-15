@@ -311,7 +311,7 @@ goto choose
 ####################################
 Encrypted:
 read -p "Encrypted disk (ex: sdb): " disk
-read -p "Num of encrypted disk (ex: sdb): " num
+read -p "Num of encrypted disk (ex: sdb5): " num
 cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
 cryptsetup luksOpen /dev/${disk}${num} my_usb
 mkfs.ext4 -L persistence /dev/mapper/my_usb
