@@ -14,6 +14,14 @@ echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 choose:
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture DEP-11
 sudo dpkg-reconfigure libdvd-pkg 
 sudo dpkg --configure -a 
 sudo apt --fix-broken install -y
@@ -1173,17 +1181,7 @@ fi
 fulup:
 echo "UPDATING..."
 sudo service packagekit restart
-sudo dpkg --add-architecture i386
-sudo dpkg --add-architecture amd64
-sudo dpkg --add-architecture arm64
-sudo dpkg --add-architecture i586
-sudo dpkg --add-architecture all
-sudo dpkg --add-architecture arc
-sudo dpkg --add-architecture ia64
-sudo dpkg --add-architecture DEP-11
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture s390
 sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture arm
@@ -1218,9 +1216,14 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture arm64
-sudo dpkg --remove-architecture i586
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo dpkg --configure -a | sudo tee -a  $HOME/toolkali/log/log_$(date "+%d_%h_%y").txt
@@ -1300,17 +1303,7 @@ fi
 
 echo "UPDATING..."
 sudo service packagekit restart
-sudo dpkg --add-architecture i386
-sudo dpkg --add-architecture amd64
-sudo dpkg --add-architecture arm64
-sudo dpkg --add-architecture i586
-sudo dpkg --add-architecture all
-sudo dpkg --add-architecture arc
-sudo dpkg --add-architecture ia64
-sudo dpkg --add-architecture DEP-11
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture s390
 sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture arm
@@ -1345,9 +1338,14 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture arm64
-sudo dpkg --remove-architecture i586
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
@@ -1433,9 +1431,7 @@ fi
 ###############################hack tool###############
 
 hckgit:
-sudo dpkg --remove-architecture all
 sudo dpkg --remove-architecture arc
-sudo dpkg --remove-architecture ia64
 sudo dpkg --remove-architecture s390
 sudo dpkg --remove-architecture s390x
 sudo dpkg --remove-architecture arm
@@ -1470,9 +1466,14 @@ sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
 sudo dpkg --remove-architecture sparc64
 sudo dpkg --remove-architecture tilegx
-sudo dpkg --remove-architecture i386
-sudo dpkg --remove-architecture arm64
-sudo dpkg --remove-architecture i586
+sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture amd64
+sudo dpkg --add-architecture arm64
+sudo dpkg --add-architecture i586
+sudo dpkg --add-architecture all
+sudo dpkg --add-architecture arc
+sudo dpkg --add-architecture ia64
+sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 echo -e "${ORANGE} "
 echo ""
