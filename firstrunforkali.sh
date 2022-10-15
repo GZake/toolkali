@@ -252,15 +252,16 @@ clear
 echo "$(cut -d: -f1 /etc/passwd)"
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo " 
-1 for disk parted
-2 for Encrypted
-3 for None
-4 for update
-5 for turn on root account
-6 for restart
-7 for shutdown 
-8 for update tool
-9 for terminal
+1...for disk parted
+2...for Encrypted
+3...for None
+4...for update
+5...for turn on root account
+6...for restart
+7...for shutdown 
+8...for update tool
+9...for terminal
+10..for making swap
 0 for exit
 "
 ####################################
@@ -293,6 +294,9 @@ then
 elif [ $choose -eq 9 ]
 then
 	goto terminal	
+elif [ $choose -eq 10 ]
+then
+	goto mkswap
 elif [ $choose -eq 0 ]
 then
 	exit
@@ -306,6 +310,7 @@ clear
 sudo lsblk
 read -p "Disk parted(ex: sdb): " disk
 sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+10G\nt\n\n82\nn\n\n+100G\nn\n\n\nw\n")
+sudo partprobe /dev/$disk
 #t\n\n82\n
 goto choose
 ####################################
@@ -372,6 +377,14 @@ else
 	goto terminal
 fi
 ####################################
+mkswap:
+sudo lsblk
+read -p "Disk (ex: sdb): " disk
+read -p "Num of disk (ex: ${disk}3): " num
+echo "Choosing ${disk}${num}"
+sudo mkswap /dev/${disk}${num}
+goto choose
+#####################################
 uptool:
 clear
 cd ~
