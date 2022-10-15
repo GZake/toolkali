@@ -1693,26 +1693,26 @@ bak:
 clear
 #cd $HOME/toolkali/
 #git add
-sudo cp -fRdvx .bashrc $(pwd)/.bashrc.bak
-sudo cp -fRdvx .bashrc .bashrc.bak
-sudo cp -fRdvx /etc/skel/.zshrc $(pwd)/.zshrc.bak
-sudo cp -fRdvx /etc/skel/.zshrc $HOME/.zshrc.bak
-sudo cp -fRdvx /etc/skel/.zshrc ~/.zshrc.bak
-sudo cp -fRdvx $HOME/.bashrc $HOME/.bashrc.bak
-sudo cp -fRdvx /etc/skel/.bashrc $HOME/.bashrc.bak1
-sudo cp -fRdvx /etc/skel/.bashrc /etc/skel/.bashrc.bak1
-sudo cp -fRdvx /etc/sysctl.conf $(pwd)/sysctl.conf.bak
-sudo cp -fRdvx /etc/sysctl.conf /etc/sysctl.conf.bak
-sudo cp -fRdvx /etc/fstab $(pwd)/fstab.bak
-sudo cp -fRdvx /etc/fstab /etc/fstab.bak
-sudo cp -fRdvx /etc/crontab $(pwd)/crontab.bak
-sudo cp -fRdvx /etc/crontab /etc/crontab.bak
-sudo cp -fRdvx /etc/rc.local $(pwd)/rc.local.bak
-sudo cp -fRdvx /etc/rc.local /etc/rc.local.bak
-sudo cp -fRdvx /etc/security/limits.conf $(pwd)/limits.conf.bak
-sudo cp -fRdvx /etc/security/limits.conf /etc/security/limits.conf.bak
-sudo cp -fRdvx /etc/modprobe.d/nvidia-blacklists-nouveau.conf $(pwd)/nvidia-blacklists-nouveau.conf.bak
-sudo cp -fRdvx /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
+sudo cp -fRdv .bashrc $(pwd)/.bashrc.bak
+sudo cp -fRdv .bashrc .bashrc.bak
+sudo cp -fRdv /etc/skel/.zshrc $(pwd)/.zshrc.bak
+sudo cp -fRdv /etc/skel/.zshrc $HOME/.zshrc.bak
+sudo cp -fRdv /etc/skel/.zshrc ~/.zshrc.bak
+sudo cp -fRdv $HOME/.bashrc $HOME/.bashrc.bak
+sudo cp -fRdv /etc/skel/.bashrc $HOME/.bashrc.bak1
+sudo cp -fRdv /etc/skel/.bashrc /etc/skel/.bashrc.bak1
+sudo cp -fRdv /etc/sysctl.conf $(pwd)/sysctl.conf.bak
+sudo cp -fRdv /etc/sysctl.conf /etc/sysctl.conf.bak
+sudo cp -fRdv /etc/fstab $(pwd)/fstab.bak
+sudo cp -fRdv /etc/fstab /etc/fstab.bak
+sudo cp -fRdv /etc/crontab $(pwd)/crontab.bak
+sudo cp -fRdv /etc/crontab /etc/crontab.bak
+sudo cp -fRdv /etc/rc.local $(pwd)/rc.local.bak
+sudo cp -fRdv /etc/rc.local /etc/rc.local.bak
+sudo cp -fRdv /etc/security/limits.conf $(pwd)/limits.conf.bak
+sudo cp -fRdv /etc/security/limits.conf /etc/security/limits.conf.bak
+sudo cp -fRdv /etc/modprobe.d/nvidia-blacklists-nouveau.conf $(pwd)/nvidia-blacklists-nouveau.conf.bak
+sudo cp -fRdv /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/fstab ::: $HOME /media/kali/*/ /media/*/*/
