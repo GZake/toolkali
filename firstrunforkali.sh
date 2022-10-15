@@ -304,14 +304,19 @@ else
 fi
 ####################################
 diskpart:
+clear
+sudo lsblk
 read -p "Disk parted(ex: sdb): " disk
 sudo fdisk /dev/$disk <<< $(printf "n\ne\n\n\n\nY\nn\n\n+10G\nt\n\n82\nn\n\n+100G\nn\n\n\nw\n")
 #t\n\n82\n
 goto choose
 ####################################
 Encrypted:
+clear
+sudo lsblk
 read -p "Encrypted disk (ex: sdb): " disk
-read -p "Num of encrypted disk (ex: sdb5): " num
+read -p "Num of encrypted disk (ex: $(disk)7): " num
+echo "Choosing $(disk)$(num)"
 cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
 cryptsetup luksOpen /dev/${disk}${num} my_usb
 mkfs.ext4 -L persistence /dev/mapper/my_usb
@@ -329,8 +334,11 @@ openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
 goto choose
 ####################################
 None:
+clear
+sudo lsblk
 read -p "Disk (ex: sdb): " disk
-read -p "Num of disk (ex: sdb3): " num
+read -p "Num of disk (ex: $(disk)3): " num
+echo "Choosing $(disk)$(num)"
 usb=/dev/${disk}${num}
 sudo mkfs.ext4 -L persistence ${usb}
 usb=/dev/${disk}${num}
@@ -356,7 +364,7 @@ goto choose
 terminal:
 terminal=561df65d1f61f
 read -p "command (0 to exit): " terminal
-$terminal
+sudo $terminal
 if [ $terminal -eq 0 ]
 then
 	goto choose
