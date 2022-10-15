@@ -368,13 +368,13 @@ uptool:
 cd ~
 $(pwd)
 sudo rm -fRdv $HOME/toolkali 
-sudo rm -fRdv /media $HOME/*/toolkali
+sudo rm -fRdv /media/*/toolkali
 sudo rm -fRdv /media/*/*/toolkali 
-sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fRdv /media/01D85B1D2CBD6AE0/toolkali/
 sudo rm -fRdv ~/toolkali/
 sudo rm -fRdv /toolkali/
 sudo rm -fRdv /media/*/*/toolkali/
-sudo rm -fRdv /media $HOME/01D85B1D2CBD6AE0/toolkali/
+sudo rm -fRdv /media/01D85B1D2CBD6AE0/toolkali/
 sudo rm -fRdv /media/root/*/toolkali/
 sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
