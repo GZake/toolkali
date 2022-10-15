@@ -313,7 +313,7 @@ Encrypted:
 clear
 sudo lsblk
 read -p "Encrypted disk (ex: sdb): " disk
-read -p "Num of encrypted disk (ex: $(disk)7): " num
+read -p "Num of encrypted disk (ex: ${disk}7): " num
 echo "Choosing $(disk)$(num)"
 cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
 cryptsetup luksOpen /dev/${disk}${num} my_usb
@@ -335,8 +335,8 @@ None:
 clear
 sudo lsblk
 read -p "Disk (ex: sdb): " disk
-read -p "Num of disk (ex: $(disk)3): " num
-echo "Choosing $(disk)$(num)"
+read -p "Num of disk (ex: ${disk}3): " num
+echo "Choosing ${disk}${num}"
 usb=/dev/${disk}${num}
 sudo mkfs.ext4 -L persistence ${usb}
 usb=/dev/${disk}${num}
