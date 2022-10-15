@@ -391,7 +391,7 @@ goto choose
 #####################################
 showuser:
 clear
-echo "$(cut -d: -f1 /etc/passwd)"
+read -p "$(cut -d: -f1 /etc/passwd)" test
 goto choose
 #####################################
 uptool:
