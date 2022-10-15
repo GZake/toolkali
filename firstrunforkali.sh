@@ -249,7 +249,6 @@ sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 clear
-echo "$(cut -d: -f1 /etc/passwd)"
 echo "Welcome to application auto setting and upgrade for kali live -> persistence"
 echo " 
 1...for disk parted
@@ -262,6 +261,7 @@ echo "
 8...for update tool
 9...for terminal
 10..for making swap
+11..for show all user
 0 for exit
 "
 ####################################
@@ -297,6 +297,9 @@ then
 elif [ $choose -eq 10 ]
 then
 	goto mkswap
+elif [ $choose -eq 11 ]
+then
+	goto showuser
 elif [ $choose -eq 0 ]
 then
 	exit
@@ -378,11 +381,17 @@ else
 fi
 ####################################
 mkswap:
+clear
 sudo lsblk
 read -p "Disk (ex: sdb): " disk
 read -p "Num of disk (ex: ${disk}3): " num
 echo "Choosing ${disk}${num}"
 sudo mkswap /dev/${disk}${num}
+goto choose
+#####################################
+showuser:
+clear
+echo "$(cut -d: -f1 /etc/passwd)"
 goto choose
 #####################################
 uptool:
