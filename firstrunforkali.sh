@@ -49,7 +49,12 @@ sudo swapon /dev/nvm*
 sudo swapon /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
-#############################3
+#############################
+sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
+sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
