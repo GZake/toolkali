@@ -660,6 +660,7 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:savoury1/display
 sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
 sudo add-apt-repository -ys ppa:wagungs/kali-linux
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
