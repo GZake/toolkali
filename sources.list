@@ -62,8 +62,6 @@ deb http://apt.insync.io/ ./
 deb-src http://apt.insync.io/ ./
 deb-src https://kali.itsec.am/ ./
 deb https://kali.itsec.am/ ./
-deb https://download.opensuse.org/ ./
-deb-src https://download.opensuse.org/ ./
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
@@ -112,6 +110,7 @@ deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/D
 # deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Testing/ ./
 # deb https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_Unstable/ ./
 deb https://download.opensuse.org/ ./
+deb-src https://download.opensuse.org/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./
 deb https://download.opensuse.org/repositories/ ./
@@ -382,4 +381,3 @@ deb-src https://dl.winehq.org/wine-builds/debian/ stable main
 deb-src https://dl.winehq.org/wine-builds/debian/ stretch main
 deb-src https://dl.winehq.org/wine-builds/debian/ wheezy main
 ####################################################################
-
