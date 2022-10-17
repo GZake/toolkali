@@ -666,6 +666,7 @@ sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
 sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:hvr/ghc
 sudo add-apt-repository -ys ppa:savoury1/display
 sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
 sudo add-apt-repository -ys ppa:wagungs/kali-linux
@@ -681,8 +682,6 @@ sudo add-apt-repository -ys ppa:libreoffice/ppa
 sudo add-apt-repository -ys ppa:libreoffice/libreoffice-4-2
 sudo add-apt-repository -ys ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -ys ppa:dr-akulavich/lighttable
-sudo apt-add-repository -ys ppa:$USER/$PPA
-sudo apt-add-repository \'${ENTRY}\'
 sudo add-apt-repository -ys ppa:jonathonf/ffmpeg-4
 sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games"
 sudo add-apt-repository -ys ppa:usarinheininga/ubuntu-plasma
@@ -759,6 +758,7 @@ sudo add-apt-repository -ys ppa:savoury1/gtk-xenial
 sudo add-apt-repository -ys ppa:savoury1/apt-xenial
 sudo add-apt-repository -ys ppa:savoury1/toolchain
 sudo add-apt-repository -ys ppa:savoury1/encryption
+sudo add-apt-repository -ys ppa:savoury1/qt-xenial
 sudo add-apt-repository -ys ppa:savoury1/gpg
 sudo add-apt-repository -ys ppa:savoury1/multimedia
 sudo add-apt-repository -ys ppa:savoury1/ffmpeg4
@@ -863,7 +863,8 @@ sudo add-apt-repository -ys ppa:ubuntu-vn/./.
 sudo add-apt-repository -ys ppa:gunnarhj/./.
 sudo add-apt-repository -ys ppa:foresto/./.
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
-
+sudo apt-add-repository -ys ppa:$USER/$PPA
+sudo apt-add-repository \'${ENTRY}\'
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
