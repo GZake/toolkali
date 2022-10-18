@@ -125,6 +125,8 @@ deb http://ftp-stud.hs-esslingen.de/debian/ ./
 deb http://ftp-stud.hs-esslingen.de/ubuntu/ ./
 deb https://deb.torproject.org/ ./
 deb-src https://deb.torproject.org/ ./
+deb https://tracker.debian.org/ ./
+deb-src https://tracker.debian.org/ ./
 
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
