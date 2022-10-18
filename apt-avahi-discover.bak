@@ -4,13 +4,14 @@
 # a http proxy string suitable for apt
 
 import asyncore
+import asyncio
 import functools
 import os
 import socket
 import sys
 import time
 from subprocess	import Popen, PIPE, call
-
+from syslog import syslog, LOG_INFO, LOG_USER
 DEFAULT_CONNECT_TIMEOUT_SEC = 2
 
 def DEBUG(msg):
