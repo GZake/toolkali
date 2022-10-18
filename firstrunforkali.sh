@@ -156,7 +156,7 @@ sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo service packagekit restart
 sudo systemctl daemon-reload
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
-apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | xargs apt -y install
+sudo apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | sudo xargs apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *apt*

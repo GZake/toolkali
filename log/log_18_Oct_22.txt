@@ -214,3 +214,115 @@ The following packages were automatically installed and are no longer required:
   ruby2.7-doc sse3-support xprobe zeek-common
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.18-go golang-1.18-src hplip-data isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets jupyter-notebook libatk1.0-data
+  libbroker2 libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libgnuradio-air-modes1 libgoogle-perftools4 libhttp-server-simple-perl
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 libnautilus-extension1a libnode93
+  libopenexr25 libopenh264-6 libplacebo192 libpoppler118 libpython3.9
+  libpython3.9-minimal libpython3.9-stdlib libsane-hpaio libsvtav1enc0
+  libtcmalloc-minimal4 libwebsockets16 libwireshark15 libwiretap12 libwsutil13
+  lua-bitop lua-cjson node-ampproject-remapping node-jed node-source-map
+  node-terser pandoc pandoc-data python3-dataclasses-json
+  python3-dbus.mainloop.pyqt5 python3-flask-restx python3-ipython-genutils
+  python3-ipywidgets python3-jupyterlab-pygments python3-limiter
+  python3-mypy-extensions python3-nbclient python3-nbconvert python3-notebook
+  python3-notify2 python3-pandocfilters python3-prometheus-client
+  python3-responses python3-send2trash python3-spyse python3-terminado
+  python3-testpath python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc simple-scan sse3-support xprobe zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.18-go golang-1.18-src hplip-data isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets jupyter-notebook libatk1.0-data
+  libbroker2 libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libgnuradio-air-modes1 libgoogle-perftools4 libhttp-server-simple-perl
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 libnautilus-extension1a libnode93
+  libopenexr25 libopenh264-6 libplacebo192 libpoppler118 libpython3.9
+  libpython3.9-minimal libpython3.9-stdlib libsane-hpaio libsvtav1enc0
+  libtcmalloc-minimal4 libwebsockets16 libwireshark15 libwiretap12 libwsutil13
+  lua-bitop lua-cjson node-ampproject-remapping node-jed node-source-map
+  node-terser pandoc pandoc-data python3-dataclasses-json
+  python3-dbus.mainloop.pyqt5 python3-flask-restx python3-ipython-genutils
+  python3-ipywidgets python3-jupyterlab-pygments python3-limiter
+  python3-mypy-extensions python3-nbclient python3-nbconvert python3-notebook
+  python3-notify2 python3-pandocfilters python3-prometheus-client
+  python3-responses python3-send2trash python3-spyse python3-terminado
+  python3-testpath python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc simple-scan sse3-support xprobe zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.18-go golang-1.18-src hplip-data isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets jupyter-notebook libatk1.0-data
+  libbroker2 libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libgnuradio-air-modes1 libgoogle-perftools4 libhttp-server-simple-perl
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 libnautilus-extension1a libnode93
+  libopenexr25 libopenh264-6 libplacebo192 libpoppler118 libpython3.9
+  libpython3.9-minimal libpython3.9-stdlib libsane-hpaio libsvtav1enc0
+  libtcmalloc-minimal4 libwebsockets16 libwireshark15 libwiretap12 libwsutil13
+  lua-bitop lua-cjson node-ampproject-remapping node-jed node-source-map
+  node-terser pandoc pandoc-data python3-dataclasses-json
+  python3-dbus.mainloop.pyqt5 python3-flask-restx python3-ipython-genutils
+  python3-ipywidgets python3-jupyterlab-pygments python3-limiter
+  python3-mypy-extensions python3-nbclient python3-nbconvert python3-notebook
+  python3-notify2 python3-pandocfilters python3-prometheus-client
+  python3-responses python3-send2trash python3-spyse python3-terminado
+  python3-testpath python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc simple-scan sse3-support xprobe zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  golang-1.18-go golang-1.18-src hplip-data isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets jupyter-notebook libatk1.0-data
+  libbroker2 libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libgnuradio-air-modes1 libgoogle-perftools4 libhttp-server-simple-perl
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 libnautilus-extension1a libnode93
+  libopenexr25 libopenh264-6 libplacebo192 libpoppler118 libpython3.9
+  libpython3.9-minimal libpython3.9-stdlib libsane-hpaio libsvtav1enc0
+  libtcmalloc-minimal4 libwebsockets16 libwireshark15 libwiretap12 libwsutil13
+  lua-bitop lua-cjson node-ampproject-remapping node-jed node-source-map
+  node-terser pandoc pandoc-data python3-dataclasses-json
+  python3-dbus.mainloop.pyqt5 python3-flask-restx python3-ipython-genutils
+  python3-ipywidgets python3-jupyterlab-pygments python3-limiter
+  python3-mypy-extensions python3-nbclient python3-nbconvert python3-notebook
+  python3-notify2 python3-pandocfilters python3-prometheus-client
+  python3-responses python3-send2trash python3-spyse python3-terminado
+  python3-testpath python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc simple-scan sse3-support xprobe zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
