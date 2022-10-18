@@ -1,4 +1,285 @@
 ###(kali rolling/bookworm/Debian9.13/kali-dev/Debian11.5)
+
+################################ TEST ##############################
+
+
+deb https://ftp.up.pt/debian/ bookworm-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bookworm main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bullseye-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bullseye-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ bullseye main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ buster-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ buster-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ buster-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ buster main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ Debian8.11 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ Debian9.13 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ Debian10.13 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ Debian11.5 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ experimental main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ jessie-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ jessie main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldoldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldoldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ oldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ rc-buggy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stretch-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stretch-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/debian/ stretch main contrib non-free non-free-firmware
+
+deb-src https://ftp.up.pt/debian/ bookworm-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bookworm main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bullseye-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bullseye-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ bullseye main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ buster-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ buster-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ buster-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ buster main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ Debian8.11 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ Debian9.13 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ Debian10.13 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ Debian11.5 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ experimental main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ jessie-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ jessie main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ oldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ rc-buggy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stretch-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stretch-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/debian/ stretch main contrib non-free non-free-firmware
+
+deb-src https://ftp.up.pt/pub/debian/ bookworm-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bookworm main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bullseye-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bullseye-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ bullseye main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ buster-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ buster-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ buster-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ buster main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ Debian8.11 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ Debian9.13 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ Debian10.13 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ Debian11.5 main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ experimental main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ jessie-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ jessie main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ oldstable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ rc-buggy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stable main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stretch-backports main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stretch-updates main contrib non-free non-free-firmware
+deb-src https://ftp.up.pt/pub/debian/ stretch main contrib non-free non-free-firmware
+
+deb https://ftp.up.pt/pub/debian/ bookworm-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bookworm main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bullseye-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bullseye-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ bullseye main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ buster-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ buster-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ buster-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ buster main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ Debian8.11 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ Debian9.13 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ Debian10.13 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ Debian11.5 main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ experimental main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ jessie-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ jessie main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldoldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldoldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ oldstable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ rc-buggy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stable-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stable-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stable main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stretch-backports main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stretch-updates main contrib non-free non-free-firmware
+deb https://ftp.up.pt/pub/debian/ stretch main contrib non-free non-free-firmware
+
+deb https://ftp.de.debian.org/ Debian8.11 main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ Debian9.13 main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ Debian10.13 main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ Debian11.5 main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bookworm-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bookworm-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bookworm main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bullseye-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bullseye-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ bullseye main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ buster-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ buster-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ buster-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ buster main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ experimental main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ jessie-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ jessie main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldoldstable main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldoldstable main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldstable-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldstable-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ oldstable main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ rc-buggy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stable-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stable-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stable-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stable main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stretch-backports main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stretch-updates main contrib non-free non-free-firmware
+deb https://ftp.de.debian.org/ stretch main contrib non-free non-free-firmware
+
+deb-src https://ftp.de.debian.org/ Debian8.11 main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ Debian9.13 main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ Debian10.13 main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ Debian11.5 main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bookworm-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bookworm-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bookworm-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bookworm main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bullseye-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bullseye-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bullseye-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bullseye-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ bullseye main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ buster-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ buster-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ buster-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ buster-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ buster main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ experimental main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ jessie-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ jessie main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldoldstable main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldstable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldstable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldstable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldstable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ oldstable main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ rc-buggy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stable-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stable-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stable-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stable-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stable main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stretch-backports-sloppy main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stretch-backports main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stretch-proposed-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stretch-updates main contrib non-free non-free-firmware
+deb-src https://ftp.de.debian.org/ stretch main contrib non-free non-free-firmware
+
+####################################################################
 deb http://cz.archive.ubuntu.com/ ./
 deb https://archive.archlinux.org/ ./
 deb https://ftp.debian.org/debian/ ./
@@ -62,6 +343,10 @@ deb http://apt.insync.io/ ./
 deb-src http://apt.insync.io/ ./
 deb-src https://kali.itsec.am/ ./
 deb https://kali.itsec.am/ ./
+deb https://ftp.up.pt/debian/ ./
+deb-src https://ftp.up.pt/debian/ ./
+deb https://ftp.de.debian.org/ ./
+deb-src https://ftp.de.debian.org/ ./
 
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/ ./
 deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/ ./
@@ -200,6 +485,8 @@ deb-src https://http.kali.org/kali kali-experimental main contrib non-free
 deb https://http.kali.org/kali kali-bleeding-edge main contrib non-free
 deb http://apt.insync.io/debian bookworm non-free contrib main
 deb-src http://apt.insync.io/debian bookworm non-free contrib main
+
+
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu artful main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu bionic main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu cosmic main
@@ -272,7 +559,7 @@ deb https://kali.itsec.am/kali kali-rolling main contrib non-free
 deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free
 deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free
 deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free
-################################ TEST ##############################
+
 deb https://ftp.debian.org/debian/ Debian8.11 main contrib non-free
 deb https://ftp.debian.org/debian/ Debian9.13 main contrib non-free
 deb https://ftp.debian.org/debian/ Debian10.13 main contrib non-free
@@ -382,4 +669,7 @@ deb-src https://dl.winehq.org/wine-builds/debian/ oldstable main
 deb-src https://dl.winehq.org/wine-builds/debian/ stable main
 deb-src https://dl.winehq.org/wine-builds/debian/ stretch main
 deb-src https://dl.winehq.org/wine-builds/debian/ wheezy main
+
+
+
 ####################################################################
