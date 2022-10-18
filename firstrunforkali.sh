@@ -580,7 +580,7 @@ root soft nofile 1048576
 
 
 #sudo cp -Rf sources.list /etc/apt/sources.list	
-cp -vR updatekali.sh $HOME/updatekali.sh
+sudo cp -fvRd updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh 
 
 
@@ -619,6 +619,8 @@ sudo apt-get update  -ym
 sudo apt-get upgrade  -ym
 sudo apt-get dist-upgrade -ym
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
+sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
+update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
@@ -1331,6 +1333,7 @@ sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs g
 #sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
 apt-get full-upgrade -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
+sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -1446,6 +1449,7 @@ apt-get upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xarg
 apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
+sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
