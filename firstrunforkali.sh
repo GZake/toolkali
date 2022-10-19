@@ -259,7 +259,7 @@ sudo systemctl enable bluetooth.service
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence
 *_______________________________*
-| 1...for disk parted		|
+| 1...for auto all disk parted	|
 | 2...for Encrypted		|
 | 3...for None			|
 | 4...for update		|
@@ -324,35 +324,6 @@ sudo lsblk
 read -p "Disk parted(ex: sdb): " disk
 sudo fdisk /dev/$disk <<< $(printf "n\np\n\n\n+100G\nY\nn\ne\n\n\nn\n\n+10G\nt\n\n82\nn\n\n\nw\n")
 sudo partprobe /dev/$disk
-#n\ne\n\n\n\nY\nn\n\n+10G\nt\n\n82\nn\n\n+100G\nn\n\n\nw\n
-goto choose
-####################################
-Encrypted:
-clear
-sudo lsblk
-read -p "Encrypted disk (ex: sdb): " disk
-read -p "Num of encrypted disk (ex: ${disk}7): " num
-echo "Choosing $(disk)$(num)"
-cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
-cryptsetup luksOpen /dev/${disk}${num} my_usb
-mkfs.ext4 -L persistence /dev/mapper/my_usb
-e2label /dev/mapper/my_usb persistence
-#read -p "" tmp
-mkdir -p /mnt/my_usb
-mount /dev/mapper/my_usb /mnt/my_usb
-echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
-umount /dev/mapper/my_usb
-cryptsetup luksClose /dev/mapper/my_usb
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
-dpkg-reconfigure cryptsetup-nuke-password
-cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${num}
-openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
-goto choose
-####################################
-None:
-clear
-sudo lsblk
-read -p "Disk (ex: sdb): " disk
 read -p "Num of disk (ex: ${disk}3): " num
 read -p "Chossing ${disk}${num}"
 usb=/dev/${disk}${num}
@@ -381,6 +352,44 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${numE}
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
+#n\ne\n\n\n\nY\nn\n\n+10G\nt\n\n82\nn\n\n+100G\nn\n\n\nw\n
+goto choose
+####################################
+Encrypted:
+clear
+sudo lsblk
+read -p "Encrypted disk (ex: sdb): " disk
+read -p "Num of encrypted disk (ex: ${disk}${num}): " num
+echo "Choosing $(disk)$(num)"
+cryptsetup --verbose --verify-passphrase luksFormat /dev/${disk}${num}
+cryptsetup luksOpen /dev/${disk}${num} my_usb
+mkfs.ext4 -L persistence /dev/mapper/my_usb
+e2label /dev/mapper/my_usb persistence
+#read -p "" tmp
+mkdir -p /mnt/my_usb
+mount /dev/mapper/my_usb /mnt/my_usb
+echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
+umount /dev/mapper/my_usb
+cryptsetup luksClose /dev/mapper/my_usb
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
+dpkg-reconfigure cryptsetup-nuke-password
+cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${num}
+openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
+goto choose
+####################################
+None:
+clear
+sudo lsblk
+read -p "Disk (ex: sdb): " disk
+read -p "Num of disk (ex: ${disk}${num}): " num
+read -p "Chossing ${disk}${num}"
+usb=/dev/${disk}${num}
+sudo mkfs.ext4 -L persistence ${usb}
+usb=/dev/${disk}${num}
+sudo mkdir -p /mnt/my_usb
+sudo mount ${usb}$num /mnt/my_usb
+echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
+sudo umount ${usb}$num
 goto choose
 #####################################
 root:
