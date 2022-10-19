@@ -276,7 +276,8 @@ echo "Welcome to application auto setting and upgrade for kali live -> persisten
 "
 ####################################
 choose=561df65d1f61f
-read -p "Your choose: " choose 
+read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
+└─# " choose 
 if [ $choose -eq 1 ]
 then
 	goto diskpart
@@ -501,7 +502,8 @@ echo "             UPDATE
 *========================================*
 "
 choose1=561df65d1f61f
-read -p "Your choose: " choose1 
+read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
+└─# " choose1 
 if [ $choose1 -eq 1 ]
 then
 	goto all
