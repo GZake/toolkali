@@ -410,7 +410,8 @@ goto choose
 terminal:
 clear
 terminal=561df65d1f61f
-read -p "command (0 to exit): " terminal
+read -p "┌──($USER㉿$(hostname))-[$(pwd)/] (0 to exit)
+└─# " terminal
 sudo $terminal
 if [ $terminal -eq 0 ]
 then
