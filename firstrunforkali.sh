@@ -903,6 +903,8 @@ sudo add-apt-repository -ys ppa:ubuntu-vn/./.
 sudo add-apt-repository -ys ppa:gunnarhj/./.
 sudo add-apt-repository -ys ppa:foresto/./.
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
+#sudo apt-add-repository -ys ppa:$USER/$PPA
+#sudo apt-add-repository \'${ENTRY}\'
 sudo bash installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 
