@@ -723,7 +723,7 @@ sudo add-apt-repository -ys ppa:libreoffice/libreoffice-4-2
 sudo add-apt-repository -ys ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -ys ppa:dr-akulavich/lighttable
 sudo add-apt-repository -ys ppa:jonathonf/ffmpeg-4
-sudo add-apt-repository "deb http://archive.getdeb.net/ubuntu wily-getdeb games"
+sudo add-apt-repository -ys "deb http://archive.getdeb.net/ubuntu wily-getdeb games"
 sudo add-apt-repository -ys ppa:usarinheininga/ubuntu-plasma
 sudo add-apt-repository -ys ppa:savoury1/kde-xenial
 sudo add-apt-repository -ys ppa:*/*
