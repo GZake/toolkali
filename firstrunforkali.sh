@@ -277,7 +277,7 @@ echo "Welcome to application auto setting and upgrade for kali live -> persisten
 ####################################
 choose=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
-└─# " choose 
+└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose 
 if [ $choose -eq 1 ]
 then
 	goto diskpart
@@ -411,7 +411,7 @@ terminal:
 clear
 terminal=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/] (0 to exit)
-└─# " terminal
+└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " terminal
 $terminal
 if [ $terminal -eq 0 ]
 then
@@ -504,7 +504,7 @@ echo "             UPDATE
 "
 choose1=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
-└─# " choose1 
+└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose1 
 if [ $choose1 -eq 1 ]
 then
 	goto all
