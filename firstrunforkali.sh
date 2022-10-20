@@ -232,8 +232,6 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 cd $HOME/Documents/GitHub/toolkali/
-
-
 sudo swapon /dev/nvm*
 sudo swapon /dev/sd*
 #sudo swapon /dev/nvme0n1p5
@@ -553,9 +551,10 @@ sudo cp -f .bash_aliases ~/.bash_aliases
 
 #sudo cp -f sources.list /etc/apt/sources.list	
 
-sudo cp -f $HOME/.bashrc.bak $HOME/.bashrc
+sudo cp -f ~/.bashrc.bak ~/.bashrc
 echo "
 ulimit -u unlimited -n 1048576
+#alias update-initramfs="/usr/sbin/update-initramfs.orig.initramfs-tools"
 alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin"
 alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate"
 alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite"
@@ -567,6 +566,7 @@ smart_script
 " | sudo tee -a $HOME/.bashrc
 echo "
 ulimit -u unlimited -n 1048576
+#alias update-initramfs="/usr/sbin/update-initramfs.orig.initramfs-tools"
 alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin"
 alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate"
 alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite"
