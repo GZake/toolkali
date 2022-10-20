@@ -664,22 +664,212 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests remmina
-sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
+#sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
 sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser.list
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com bionic-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com bionic main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com focal-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com focal-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com focal main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com jammy-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com jammy-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com jammy main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com kinetic-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com kinetic-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com kinetic main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com trusty-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com trusty-security main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com trusty main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com xenial-proposed main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com xenial-updates main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com xenial main restricted universe multiverse partner"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bookworm-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bookworm main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bullseye-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bullseye main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian8.11 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian9.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian10.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian11.5 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ jessie-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ jessie main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldoldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ oldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ rc-buggy main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stretch-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stretch-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ stretch main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bookworm-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bookworm main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bullseye-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bullseye-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ bullseye main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ buster-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ buster-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ buster main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ Debian8.11 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ Debian9.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ Debian10.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ Debian11.5 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ jessie-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ jessie main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldoldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldoldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldoldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ oldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ rc-buggy main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stretch-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stretch-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/pub/debian/ stretch main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ Debian8.11 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ Debian9.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ Debian10.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ Debian11.5 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ bookworm-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ bookworm main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ bullseye-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ bullseye-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ bullseye main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ buster-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ buster-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ buster main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ jessie-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ jessie main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldoldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldoldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldoldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldoldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldoldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldstable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldstable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ oldstable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ rc-buggy main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stable-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stable-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stable main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stretch-proposed-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stretch-updates main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.de.debian.org/ stretch main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free"
+sudo add-apt-repository -ys "deb http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb http://kali.download/kali/ kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb http://kali.download/kali/ kali-rolling-updates main contrib non-free"
+sudo add-apt-repository -ys "deb http://kali.download/kali/ kali-rolling-proposed main contrib non-free"
+sudo add-apt-repository -ys "deb http://apt.insync.io/debian bookworm non-free contrib main"
+sudo add-apt-repository -ys "deb-src http://apt.insync.io/debian bookworm non-free contrib main"
+sudo add-apt-repository -ys "deb https://http.kali.org/ /kali main contrib non-free"
+sudo add-apt-repository -ys "deb https://http.kali.org/ /wheezy main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-dev main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free"
+sudo add-apt-repository -ys "deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free"
+sudo add-apt-repository -ys "deb [trusted=yes] http://deb.debian.org/debian oldstable main/debian-installer"
+sudo add-apt-repository -ys "deb-src https://http.kali.org/kali kali-dev main/debian-installer"
+sudo add-apt-repository -ys "deb https://http.kali.org/kali kali-last-snapshot main/debian-installer"
+sudo add-apt-repository -ys "deb https://http.kali.org/kali kali-debian-picks main/debian-installer"
+sudo add-apt-repository -ys "deb https://http.kali.org/kali kali-dev-only main/debian-installer"
+sudo add-apt-repository -ys "deb https://http.kali.org/ /kali main/debian-installer"
+sudo add-apt-repository -ys "deb https://http.kali.org/ /wheezy main/debian-installer"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free"
+sudo add-apt-repository -ys "deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free"
+sudo add-apt-repository -ys "deb https://http.kali.org/kali/ kali-dev-only main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free"
+sudo add-apt-repository -ys "deb https://http.kali.org/kali/ kali-dev main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://http.kali.org/kali/ kali-dev main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free"
+sudo add-apt-repository -ys "deb https://kali.itsec.am/kali kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free"
+sudo add-apt-repository -ys "deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ Debian8.11 main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ Debian9.13 main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ Debian10.13 main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ Debian11.5 main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bookworm-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bookworm-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bookworm main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bullseye-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bullseye-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ bullseye main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ buster-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ buster-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ buster main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ jessie-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ jessie main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldoldoldstable-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldoldoldstable main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldoldstable-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldoldstable-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldoldstable main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldstable-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldstable-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ oldstable main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ rc-buggy main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stable-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stable-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stable main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stretch-proposed-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stretch-updates main contrib non-free"
+sudo add-apt-repository -ys "deb https://ftp.debian.org/debian/ stretch main contrib non-free"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ bookworm main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ bullseye main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ buster main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ jessie main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ oldstable main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ stable main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ stretch main"
+sudo add-apt-repository -ys "deb https://dl.winehq.org/wine-builds/debian/ wheezy main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ bookworm main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ bullseye main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ buster main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ jessie main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ oldstable main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stable main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stretch main"
+sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ wheezy main"
 
-sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list'
-#curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
-echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublimetext.list
-echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
+
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ artful main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main'
@@ -706,11 +896,11 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge sta
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ testing main'
 #sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ wheezy main'
 #https://launchpad.net/ubuntu/+ppas
-sudo add-apt-repository ppa:numix/ppa <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/sddm <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/gdm3 <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/kde <<< $(printf "\n")
-sudo apt-add-repository ppa:blue-shell/xdm <<< $(printf "\n")
+sudo add-apt-repository -ys ppa:numix/ppa 
+sudo apt-add-repository -ys ppa:blue-shell/sddm 
+sudo apt-add-repository -ys ppa:blue-shell/gdm3 
+sudo apt-add-repository -ys ppa:blue-shell/kde 
+sudo apt-add-repository -ys ppa:blue-shell/xdm 
 sudo add-apt-repository -ys ppa:hvr/ghc
 sudo add-apt-repository -ys ppa:savoury1/display
 sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
@@ -824,89 +1014,18 @@ sudo add-apt-repository -ys ppa:elementaryos-fr-community/ppa
 sudo add-apt-repository -ys ppa:versable/elementary-update
 sudo add-apt-repository -ys ppa:tevo45/personal
 sudo add-apt-repository -ys ppa:xtradeb/play
-sudo add-apt-repository -ys ppa:xtradeb/./.
-sudo add-apt-repository -ys ppa:tevo45/./.
-sudo add-apt-repository -ys ppa:versable/./.
-sudo add-apt-repository -ys ppa:elementaryos-fr-community/./.
-sudo add-apt-repository -ys ppa:phobie/./.
-sudo add-apt-repository -ys ppa:savoury1/./.
-sudo add-apt-repository -ys ppa:samoilov-lex/./.
-sudo add-apt-repository -ys ppa:micahflee/./.
-sudo add-apt-repository -ys ppa:libreoffice/./.
-sudo add-apt-repository -ys ppa:webupd8team/./.
-sudo add-apt-repository -ys ppa:dr-akulavich/./.
-sudo add-apt-repository -ys ppa:jonathonf/./.
-sudo add-apt-repository -ys ppa:usarinheininga/./.
-sudo add-apt-repository -ys ppa:savoury1/./.
-sudo add-apt-repository -ys ppa:alexey-noskov/./.
-sudo add-apt-repository -ys ppa:plasmazilla/./.
-sudo add-apt-repository -ys ppa:oliver-traeger+launchpad/./.
-sudo add-apt-repository -ys ppa:kubuntu-ppa/./.
-sudo add-apt-repository -ys ppa:savoury1/./.
-sudo add-apt-repository -ys ppa:netrunner-os/./.
-sudo add-apt-repository -ys ppa:nrbrtx/./.
-sudo add-apt-repository -ys ppa:blue-shell/./.
-sudo add-apt-repository -ys ppa:blue-shell/./.
-sudo add-apt-repository -ys ppa:colin-duquesnoy/./.
-sudo add-apt-repository -ys ppa:jstaf/./.
-sudo add-apt-repository -ys ppa:tomtomtom/./.
-sudo add-apt-repository -ys ppa:jr/./.
-sudo add-apt-repository -ys ppa:netrunner-os/./.
-sudo add-apt-repository -ys ppa:darxus/./.
-sudo add-apt-repository -ys ppa:devacom/./.
-sudo add-apt-repository -ys ppa:nilarimogard/./.
-sudo add-apt-repository -ys ppa:shemgp/./.
-sudo add-apt-repository -ys ppa:kamalmostafa/./.
-sudo add-apt-repository -ys ppa:janvitus/./.
-sudo add-apt-repository -ys ppa:ingalex/./.
-sudo add-apt-repository -ys ppa:donk/./.
-sudo add-apt-repository -ys ppa:darklordpaunik8880/./.
-sudo add-apt-repository -ys ppa:ubuntu-sdk-team/./.
-sudo add-apt-repository -ys ppa:omniunit/./.
-sudo add-apt-repository -ys ppa:flatpak/./.
-sudo add-apt-repository -ys ppa:flatpak/./.
-sudo add-apt-repository -ys ppa:mark-pcnetspec/./.
-sudo add-apt-repository -ys ppa:savoury1/./.
-sudo add-apt-repository -ys ppa:system76/./.
-sudo add-apt-repository -ys ppa:system76/./.
-sudo add-apt-repository -ys ppa:alexlarsson/./.
-sudo add-apt-repository -ys ppa:henriqueluiz/./.
-sudo add-apt-repository -ys ppa:ubuntu-mate-dev/./.
-sudo add-apt-repository -ys ppa:snapcpp/./.
-#sudo add-apt-repository -ys ppa:ubuntu-desktop/./.
-sudo add-apt-repository -ys ppa:raharper/./.
-sudo add-apt-repository -ys ppa:hiweed-pkg/./.
-sudo add-apt-repository -ys ppa:dajhorn/./.
-sudo add-apt-repository -ys ppa:garhuy/./.
-sudo add-apt-repository -ys ppa:graphics-drivers/./.
-sudo add-apt-repository -ys ppa:kelebek333/./.
-sudo add-apt-repository -ys ppa:universal/./.
-sudo apt-add-repository -ys ppa:system76-dev/./.
-sudo add-apt-repository -ys ppa:yavdr/./.
-sudo add-apt-repository -ys ppa:netext/./.
-sudo add-apt-repository -ys ppa:gezakovacs/./.
-sudo add-apt-repository -ys ppa:swooshycueb/./.
-sudo add-apt-repository -ys ppa:mono-ubuntu/./.
-sudo add-apt-repository -ys ppa:v-kukol/./.
-sudo add-apt-repository -ys ppa:dvkbuntu/./.
-sudo add-apt-repository -ys ppa:guido-iodice/./.
-sudo add-apt-repository -ys ppa:kubuntu-ppa/./.
-sudo add-apt-repository -ys ppa:netrunner-os/./.
-sudo add-apt-repository -ys ppa:icamargo/./.
-sudo add-apt-repository -ys ppa:bedouin/./.
-sudo add-apt-repository -ys ppa:mieszkoslusarczyk/./.
-sudo add-apt-repository -ys ppa:rohangarg/./.
-sudo add-apt-repository -ys ppa:pali/./.
-sudo add-apt-repository -ys ppa:mc3man/./.
-sudo add-apt-repository -ys ppa:savoury1/./.
-sudo add-apt-repository -ys ppa:ubuntu-wine/./.
-sudo add-apt-repository -ys ppa:mozgiii/./.
-sudo add-apt-repository -ys ppa:pipelight/./.
-sudo add-apt-repository -ys ppa:gijzelaar/./.
-sudo add-apt-repository -ys ppa:ankeoque/./.
-sudo add-apt-repository -ys ppa:ubuntu-vn/./.
-sudo add-apt-repository -ys ppa:gunnarhj/./.
-sudo add-apt-repository -ys ppa:foresto/./.
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list'
+#curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublimetext.list
+echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
+
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
 #sudo apt-add-repository -ys ppa:$USER/$PPA
 #sudo apt-add-repository \'${ENTRY}\'
