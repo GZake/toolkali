@@ -14,8 +14,8 @@ cd ~/toolkali/
 echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
-sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
-sudp cp -fdv $(pwd)/update-initramfs /sbin/
+#sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
+sudo cp -fdv $(pwd)/update-initramfs /sbin/
 choose:
 clear
 sudo dpkg --add-architecture i386
@@ -665,10 +665,26 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests remmina
 #sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-beta-archive-keyring.gpg arch=amd64] https://brave-browser-apt-beta.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-beta.list
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list'
+#curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
+echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublimetext.list
+echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
+
+sudo add-apt-repository -yus ppa:ibus-backporters/./.
+#sudo apt-add-repository -ys ppa:$USER/$PPA
+#sudo apt-add-repository \'${ENTRY}\'
 sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
+
 sudo bash $(pwd)/addRep.sh
 sudo bash $(pwd)/installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
