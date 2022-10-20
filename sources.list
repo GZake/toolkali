@@ -1,5 +1,5 @@
 ###(kali rolling/bookworm/Debian9.13/kali-dev/Debian11.5)
-
+#(-proposed-updates,-updates,stable)
 ################################ TEST ##############################
 
 deb http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse partner
