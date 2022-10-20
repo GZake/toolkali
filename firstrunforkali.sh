@@ -15,6 +15,7 @@ echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
+sudp cp -fdv $(pwd)/update-initramfs /sbin/
 choose:
 clear
 sudo dpkg --add-architecture i386
