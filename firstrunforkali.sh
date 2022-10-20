@@ -412,7 +412,7 @@ clear
 terminal=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/] (0 to exit)
 └─# " terminal
-sudo $terminal
+$terminal
 if [ $terminal -eq 0 ]
 then
 	goto choose
