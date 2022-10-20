@@ -276,21 +276,6 @@ deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu xenial main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu yakkety main
 deb http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu zesty main
 
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu artful main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu bionic main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu cosmic main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu devel main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu focal main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu jammy main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu trusty main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu vivid main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu wily main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu xenial main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu yakkety main
-deb-src http://ppa.launchpad.net/snappy-dev/snapcraft-daily/ubuntu zesty main
-
-
-
 deb https://http.kali.org/kali kali-dev main/debian-installer
 
 deb https://http.kali.org/kali kali-debian-picks main contrib non-free
@@ -359,38 +344,6 @@ deb https://ftp.debian.org/debian/ stable main contrib non-free
 deb https://ftp.debian.org/debian/ stretch-proposed-updates main contrib non-free
 deb https://ftp.debian.org/debian/ stretch-updates main contrib non-free
 deb https://ftp.debian.org/debian/ stretch main contrib non-free
-
-deb-src https://ftp.debian.org/debian/ Debian8.11 main contrib non-free
-deb-src https://ftp.debian.org/debian/ Debian9.13 main contrib non-free
-deb-src https://ftp.debian.org/debian/ Debian10.13 main contrib non-free
-deb-src https://ftp.debian.org/debian/ Debian11.5 main contrib non-free
-deb-src https://ftp.debian.org/debian/ bookworm-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ bookworm-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ bookworm main contrib non-free
-deb-src https://ftp.debian.org/debian/ bullseye-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ bullseye-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ bullseye main contrib non-free
-deb-src https://ftp.debian.org/debian/ buster-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ buster-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ buster main contrib non-free
-deb-src https://ftp.debian.org/debian/ jessie-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ jessie main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldoldoldstable-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldoldoldstable main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldoldstable-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldoldstable-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldoldstable main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldstable-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldstable-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ oldstable main contrib non-free
-deb-src https://ftp.debian.org/debian/ proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ rc-buggy main contrib non-free
-deb-src https://ftp.debian.org/debian/ stable-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ stable-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ stable main contrib non-free
-deb-src https://ftp.debian.org/debian/ stretch-proposed-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ stretch-updates main contrib non-free
-deb-src https://ftp.debian.org/debian/ stretch main contrib non-free
 
 deb https://dl.winehq.org/wine-builds/debian/ bookworm main
 deb https://dl.winehq.org/wine-builds/debian/ bullseye main
