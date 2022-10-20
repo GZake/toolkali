@@ -131,6 +131,46 @@ deb-src https://download.opensuse.org/repositories/home:/npreining:/debian-vario
 deb https://http.kali.org/kali/ kali-rolling main contrib non-free
 deb-src https://http.kali.org/kali/ kali-rolling main contrib non-free
 ###################################################################
-
+deb-src http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb http://mirror.anigil.com/kali kali-rolling main contrib non-free
+deb http://mirror.anigil.com/kali kali-rolling-only main contrib non-free
+deb http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free
+deb-src http://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu/ kali-rolling main contrib non-free
+deb http://kali.download/kali/ kali-rolling main contrib non-free
+deb http://kali.download/kali/ kali-rolling-updates main contrib non-free
+deb http://kali.download/kali/ kali-rolling-proposed main contrib non-free
+deb http://apt.insync.io/debian bookworm non-free contrib main
+deb-src http://apt.insync.io/debian bookworm non-free contrib main
+deb https://http.kali.org/ /kali main contrib non-free
+deb https://http.kali.org/ /wheezy main contrib non-free
+deb http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+deb [trusted=yes] http://deb.debian.org/debian oldstable main/debian-installer
+deb-src https://http.kali.org/kali kali-dev main/debian-installer
+deb https://http.kali.org/kali kali-last-snapshot main/debian-installer
+deb https://http.kali.org/kali kali-debian-picks main/debian-installer
+deb https://http.kali.org/kali kali-dev-only main/debian-installer
+deb https://http.kali.org/ /kali main/debian-installer
+deb https://http.kali.org/ /wheezy main/debian-installer
+deb-src http://mirror.anigil.com/kali kali-bleeding-edge main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-debian-picks main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-dev-only main contrib non-free
+deb-src http://mirror.anigil.com/kali kali-last-snapshot main contrib non-free
+deb https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
+deb https://http.kali.org/kali/ kali-dev main contrib non-free
+deb-src https://http.kali.org/kali/ kali-debian-picks main contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev-only main contrib non-free
+deb-src https://http.kali.org/kali/ kali-dev main contrib non-free
+deb-src https://ftp.cn.debian.org/debian sid main contrib non-free-firmware non-free
+deb https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb https://kali.itsec.am/kali kali-rolling-only main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling main contrib non-free
+deb-src https://kali.itsec.am/kali kali-rolling-only main contrib non-free
 
 ####################################################################
