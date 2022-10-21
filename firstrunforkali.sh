@@ -426,15 +426,15 @@ cd ..
 sudo rm -fRdv $(pwd)/toolkali
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
-sudo cp -fRdv $(pwd)/ $HOME/
-sudo cp -fRdv $(pwd)/ /media/*/
-sudo cp -fRdv $(pwd)/ /media/*/*/
-sudo cp -fRdv $(pwd)/ /media/*/01D85B1D2CBD6AE0/
-sudo cp -fRdv $(pwd)/ ~/
-sudo cp -fRdv $(pwd)/ /
-sudo cp -fRdv $(pwd)/ /media/root/*/
-sudo cp -fRdv $(pwd)/ /media/kali/*/
-sudo cp -fRdv $(pwd)/ /media/SUGirl/*/
+sudo cp -fRdv $(pwd)/toolkali $HOME/
+sudo cp -fRdv $(pwd)/toolkali /media/*/
+sudo cp -fRdv $(pwd)/toolkali /media/*/*/
+sudo cp -fRdv $(pwd)/toolkali /media/*/01D85B1D2CBD6AE0/
+sudo cp -fRdv $(pwd)/toolkali ~/
+sudo cp -fRdv $(pwd)/toolkali /
+sudo cp -fRdv $(pwd)/toolkali /media/root/*/
+sudo cp -fRdv $(pwd)/toolkali /media/kali/*/
+sudo cp -fRdv $(pwd)/toolkali /media/SUGirl/*/
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
