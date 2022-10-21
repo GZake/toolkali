@@ -10,13 +10,13 @@ function goto
 }
 #measure enemy tattoo retire female nephew creek  horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #https://download3.vmware.com/software/WS-PUBTP-22H2/VMware-Workstation-Full-e.x.p-20486661.x86_64.bundle
+refresh:
 #cd ~/toolkali/
 echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
 sudo cp -fdv $(pwd)/update-initramfs /sbin/
-choose:
 clear
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
@@ -256,6 +256,7 @@ sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
+choose:
 clear
 echo "Welcome to application auto setting and upgrade for kali live -> persistence
 *_______________________________*
@@ -270,6 +271,7 @@ echo "Welcome to application auto setting and upgrade for kali live -> persisten
 | 9...for terminal		|
 | 10..for making swap		|
 | 11..for show all user		|
+| 12..for refresh		|
 | 0...for exit			|
 *_______________________________*
 
@@ -311,6 +313,9 @@ then
 elif [ $choose -eq 11 ]
 then
 	goto showuser
+elif [ $choose -eq 12 ]
+then
+	goto refresh
 elif [ $choose -eq 0 ]
 then
 	exit
