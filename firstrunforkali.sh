@@ -457,7 +457,6 @@ sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/*
 cd ..
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
-cd 
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
 sudo cp -fRdv $HOME/Documents/GitHub/toolkali/ $HOME/
 sudo cp -fRdv $HOME/toolkali/ /media/*/
