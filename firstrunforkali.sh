@@ -422,7 +422,7 @@ goto choose
 uptool:
 clear
 #cd ~
-cd $(pwd)
+cd ..
 sudo rm -fRdv $(pwd)/toolkali
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
