@@ -444,18 +444,7 @@ uptool:
 clear
 #cd ~
 #$(pwd)
-sudo rm -fRdv $HOME/toolkali 
-sudo rm -fRdv /media/*/toolkali
-sudo rm -fRdv /media/*/*/toolkali 
-sudo rm -fRdv /media/01D85B1D2CBD6AE0/toolkali/
-sudo rm -fRdv ~/toolkali/
-sudo rm -fRdv /toolkali/
-sudo rm -fRdv /media/*/*/toolkali/
-sudo rm -fRdv /media/01D85B1D2CBD6AE0/toolkali/
-sudo rm -fRdv /media/root/*/toolkali/
-sudo rm -fRdv /media/kali/*/toolkali/
-sudo rm -fRdv /media/SUGirl/*/toolkali/
-sudo rm -fRdv $(pwd)/toolkali/
+sudo rm -fRdv $(pwd)/toolkali/ 
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
 sudo cp -fRdv $(pwd)/toolkali/ $HOME/
@@ -467,7 +456,6 @@ sudo cp -fRdv $(pwd)/toolkali/ /
 sudo cp -fRdv $(pwd)/toolkali/ /media/root/*/
 sudo cp -fRdv $(pwd)/toolkali/ /media/kali/*/
 sudo cp -fRdv $(pwd)/toolkali/ /media/SUGirl/*/
-
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
