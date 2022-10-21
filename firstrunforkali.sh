@@ -440,9 +440,9 @@ sudo cp -RdfRdvv kaligittool.sh /
 sudo cp  kaligittool.sh /media $HOME/*/toolkali/
 sudo cp -fRdv kaligittool.sh /media/*/*/toolkali/
 
-sudo cp -fRdv kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
-cd ~
-cd $HOME/Documents/GitHub/toolkali
+sudo cp -fRdv kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/
+
+cd $(pwd)/toolkali
 exit
 clear
 goto choose
