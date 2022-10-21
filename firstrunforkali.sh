@@ -12,12 +12,12 @@ sudo apt-mark hold apt-avahi-discover
 #measure enemy tattoo retire female nephew creek  horror fade connect connect half expose crime wage document purity horse renew plate glide guard fiction ripple
 #https://download3.vmware.com/software/WS-PUBTP-22H2/VMware-Workstation-Full-e.x.p-20486661.x86_64.bundle
 refresh:
-cd $(pwd)/toolkali/
+cd $(pwd)/
 echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
-[[ -d ~/toolkali/ ]] || echo sudo cp -fRdv $(pwd)/toolkali/ ~/
-sudo cp -fRdv $(pwd)/toolkali/ ~/
+[[ -d ~/toolkali/ ]] || echo sudo cp -fRdv $(pwd)/ ~/
+sudo cp -fRdv $(pwd)/ ~/
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
 sudo cp -fdv $(pwd)/update-initramfs /sbin/
 clear
@@ -423,18 +423,18 @@ uptool:
 clear
 #cd ~
 #$(pwd)
-sudo rm -fRdv $(pwd)/toolkali/ 
-sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
+sudo rm -fRdv $(pwd)/toolkali
+sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
-sudo cp -fRdv $(pwd)/toolkali/ $HOME/
-sudo cp -fRdv $(pwd)/toolkali/ /media/*/
-sudo cp -fRdv $(pwd)/toolkali/ /media/*/*/
-sudo cp -fRdv $(pwd)/toolkali/ /media/*/01D85B1D2CBD6AE0/
-sudo cp -fRdv $(pwd)/toolkali/ ~/
-sudo cp -fRdv $(pwd)/toolkali/ /
-sudo cp -fRdv $(pwd)/toolkali/ /media/root/*/
-sudo cp -fRdv $(pwd)/toolkali/ /media/kali/*/
-sudo cp -fRdv $(pwd)/toolkali/ /media/SUGirl/*/
+sudo cp -fRdv $(pwd)/ $HOME/
+sudo cp -fRdv $(pwd)/ /media/*/
+sudo cp -fRdv $(pwd)/ /media/*/*/
+sudo cp -fRdv $(pwd)/ /media/*/01D85B1D2CBD6AE0/
+sudo cp -fRdv $(pwd)/ ~/
+sudo cp -fRdv $(pwd)/ /
+sudo cp -fRdv $(pwd)/ /media/root/*/
+sudo cp -fRdv $(pwd)/ /media/kali/*/
+sudo cp -fRdv $(pwd)/ /media/SUGirl/*/
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
