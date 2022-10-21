@@ -56,11 +56,11 @@ sudo swapon /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
 #############################
-sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
-sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
-sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
-sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
-sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
+#sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
+#sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+#sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
 #sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
 #sudo apt-mark unhold *plasma* 
 #sudo apt-mark unhold *kde*
@@ -642,7 +642,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests remmina
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apticron
-#sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
+sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser.list
@@ -658,6 +658,10 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge sta
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
 #sudo apt-add-repository -ys ppa:$USER/$PPA
 #sudo apt-add-repository \'${ENTRY}\'
+#sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+#sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
+#sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
 sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
@@ -705,7 +709,7 @@ sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-
+sudo cp -fdRvx /etc/apt/sources.list $(pwd)/sources.list
 if [ $choose1 -eq 2 ]
 then
 	goto uptab
