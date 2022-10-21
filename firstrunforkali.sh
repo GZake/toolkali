@@ -458,37 +458,28 @@ sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/toolkali/
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
-sudo cp -fRdv $HOME/Documents/GitHub/toolkali/ $HOME/
-sudo cp -fRdv $HOME/toolkali/ /media/*/
-sudo cp -fRdv $HOME/toolkali/ /media/*/*/
-sudo cp -fRdv $HOME/toolkali/ /media/*/01D85B1D2CBD6AE0/
-sudo cp -fRdv $HOME/toolkali/ ~/
-sudo cp -fRdv ~/toolkali/ /
-sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
-sudo cp -fRdv toolkali/ $HOME/
-sudo cp -fRdv toolkali/ /media/*/
-sudo cp -fRdv toolkali/ /media/*/*/
-sudo cp -fRdv toolkali/ /media/*/01D85B1D2CBD6AE0/
-sudo cp -fRdv toolkali/ ~/toolkali/
+sudo cp -fRdv $(pwd)/toolkali/ $HOME/
+sudo cp -fRdv $(pwd)/toolkali/ /media/*/
+sudo cp -fRdv $(pwd)/toolkali/ /media/*/*/
+sudo cp -fRdv $(pwd)/toolkali/ /media/*/01D85B1D2CBD6AE0/
+sudo cp -fRdv $(pwd)/toolkali/ ~/
+sudo cp -fRdv $(pwd)/toolkali/ /
+sudo cp -fRdv $(pwd)/toolkali/ /media/root/*/
+sudo cp -fRdv $(pwd)/toolkali/ /media/kali/*/
+sudo cp -fRdv $(pwd)/toolkali/ /media/SUGirl/*/
+
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
 sudo cp -RdfRdvv kaligittool.sh /
-sudo git clone https://github.com/GZake/toolkali.git /media/*/toolkali/
 sudo cp  kaligittool.sh /media $HOME/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/*/*/toolkali/
 sudo cp -fRdv kaligittool.sh /media/*/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/01D85B1D2CBD6AE0/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/root/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/kali/*/toolkali/
-sudo git clone https://github.com/GZake/toolkali.git /media/SUGirl/*/toolkali/
 
 sudo cp -fRdv kaligittool.sh /media $HOME/01D85B1D2CBD6AE0/toolkali/
 cd ~
 cd $HOME/Documents/GitHub/toolkali
 exit
 clear
-sudo bash $HOME/Documents/GitHub/toolkali/firstrunforkali.sh
 goto choose
 ####################################
 uptab:
