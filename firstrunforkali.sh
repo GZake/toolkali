@@ -457,20 +457,20 @@ sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/*
 cd ..
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
-sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/toolkali/
-sudo cp -fRdv $HOME/Documents/GitHub/toolkali/ $HOME/toolkali/
-sudo cp -fRdv $HOME/toolkali/ /media/*/toolkali/
-sudo cp -fRdv $HOME/toolkali/ /media/*/*/toolkali/
-sudo cp -fRdv $HOME/toolkali/ /media/*/01D85B1D2CBD6AE0/toolkali/
-sudo cp -fRdv $HOME/toolkali/ ~/toolkali/
-sudo cp -fRdv ~/toolkali/ /toolkali/
-sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/toolkali
-sudo cp -fRdv toolkali/ $HOME/toolkali/
-sudo cp -fRdv toolkali/ /media/*/toolkali/
-sudo cp -fRdv toolkali/ /media/*/*/toolkali/
-sudo cp -fRdv toolkali/ /media/*/01D85B1D2CBD6AE0/toolkali/
+cd 
+sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
+sudo cp -fRdv $HOME/Documents/GitHub/toolkali/ $HOME/
+sudo cp -fRdv $HOME/toolkali/ /media/*/
+sudo cp -fRdv $HOME/toolkali/ /media/*/*/
+sudo cp -fRdv $HOME/toolkali/ /media/*/01D85B1D2CBD6AE0/
+sudo cp -fRdv $HOME/toolkali/ ~/
+sudo cp -fRdv ~/toolkali/ /
+sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
+sudo cp -fRdv toolkali/ $HOME/
+sudo cp -fRdv toolkali/ /media/*/
+sudo cp -fRdv toolkali/ /media/*/*/
+sudo cp -fRdv toolkali/ /media/*/01D85B1D2CBD6AE0/
 sudo cp -fRdv toolkali/ ~/toolkali/
-sudo cp -fRdv toolkali/ /toolkali/
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
