@@ -456,13 +456,13 @@ sudo rm -fRdv /media/kali/*/toolkali/
 sudo rm -fRdv /media/SUGirl/*/toolkali/
 sudo rm -fRdv $(pwd)/*
 sudo git clone https://github.com/GZake/toolkali.git $(pwd)/toolkali/
-sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/toolkali
-sudo cp -fRdv toolkali/ $HOME/toolkali/
-sudo cp -fRdv toolkali/ /media/*/toolkali/
-sudo cp -fRdv toolkali/ /media/*/*/toolkali/
-sudo cp -fRdv toolkali/ /media/*/01D85B1D2CBD6AE0/toolkali/
-sudo cp -fRdv toolkali/ ~/toolkali/
-sudo cp -fRdv toolkali/ /toolkali/
+sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/toolkali/
+sudo cp -fRdv $HOME/Documents/GitHub/toolkali/ $HOME/toolkali/
+sudo cp -fRdv $HOME/toolkali/ /media/*/toolkali/
+sudo cp -fRdv $HOME/toolkali/ /media/*/*/toolkali/
+sudo cp -fRdv $HOME/toolkali/ /media/*/01D85B1D2CBD6AE0/toolkali/
+sudo cp -fRdv $HOME/toolkali/ ~/toolkali/
+sudo cp -fRdv ~/toolkali/ /toolkali/
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/toolkali
 sudo cp -fRdv toolkali/ $HOME/toolkali/
 sudo cp -fRdv toolkali/ /media/*/toolkali/
