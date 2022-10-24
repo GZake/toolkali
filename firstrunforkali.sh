@@ -17,7 +17,7 @@ echo $(pwd)
 [[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
 [[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
 [[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali
-#sudo cp -fRdv $(pwd)/ ~/
+sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
 sudo cp -fdv $(pwd)/update-initramfs /sbin/
 clear
@@ -1210,6 +1210,7 @@ sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fdv /etc/apt/trusted.gpg ~/toolkali/trusted.gpg
 #git remote add origin https://github.com/GZake/toolkali.git
 #git branch -M main
 #git push -u origin main
