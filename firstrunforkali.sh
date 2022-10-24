@@ -425,6 +425,7 @@ clear
 cd ..
 sudo rm -fRdv ~/toolkali
 sudo git clone https://github.com/GZake/toolkali.git ~/toolkali
+sudo cp -Rdv ~/toolkali/ $(pwd)/
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
 sudo cp -fRdv $(pwd)/toolkali $HOME/
 sudo cp -fRdv $(pwd)/toolkali /media/*/
