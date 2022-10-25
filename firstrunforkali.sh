@@ -14,9 +14,10 @@ sudo apt-mark hold apt-avahi-discover
 refresh:
 cd
 echo $(pwd)
-[[ -f $HOME/Downloads/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P $HOME/Downloads/
-[[ -f $HOME/Downloads/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P $HOME/Downloads/
-[[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali
+[[ -f ~/toolkali/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/toolkali/
+[[ -f ~/toolkali/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P ~/toolkali/
+[[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
+
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
 sudo cp -fdv $(pwd)/update-initramfs /sbin/
