@@ -15,7 +15,7 @@ refresh:
 cd
 echo $(pwd)
 [[ -f ~/toolkali/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/toolkali/
-[[ -f ~/toolkali/GitHubDesktop-linux-3.0.6-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.0.6-linux1/GitHubDesktop-linux-3.0.6-linux1.deb -P ~/toolkali/
+[[ -f ~/toolkali/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/toolkali/
 [[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
 
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
@@ -72,7 +72,7 @@ sudo sysctl -p
 #sudo apt-mark unhold *dm*
 #sudo apt-mark unhold *de*
 #sudo apt-mark unhold *ki*
-#sudo apt-mark unhold *cinnamon*GitHubDesktop-linux-3.0.6-linux1.deb
+#sudo apt-mark unhold *cinnamon*GitHubDesktop-linux-3.1.1-linux1.deb
 #sudo apt-mark unhold *slim*
 #sudo apt-mark unhold *wayland*
 #sudo apt-mark unhold *software*
