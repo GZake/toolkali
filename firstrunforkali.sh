@@ -16,6 +16,7 @@ cd
 echo $(pwd)
 [[ -f ~/toolkali/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/toolkali/
 [[ -f ~/toolkali/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/toolkali/
+[[ -f ~/toolkali/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/toolkali/
 [[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
 
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
