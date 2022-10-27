@@ -1,0 +1,2 @@
+deb https://fast-cdn.meetsidekick.com/builds/ ./
+deb https://sidekick-cdn-production.meetsidekick.com/builds/ ./
