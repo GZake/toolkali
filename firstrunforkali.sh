@@ -858,8 +858,10 @@ sudo add-apt-repository -ys ppa:savoury1/kde-5-80
 sudo add-apt-repository -ys ppa:savoury1/gpg
 sudo add-apt-repository -ys ppa:savoury1/vlc3
 sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-9
-
-
+sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
+sudo add-apt-repository -ys ppa:wagungs/kali-linux
+sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
+sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu1
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash $(pwd)/installppa*
