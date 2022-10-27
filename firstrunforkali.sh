@@ -916,6 +916,7 @@ sudo dpkg --configure -a | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
 
 key:
 clear
+cd
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
@@ -930,21 +931,21 @@ sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
+sudo cp -fRv $(pwd)/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $(pwd)/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $(pwd)/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release.key | sudo apt-key add -
@@ -1165,7 +1166,7 @@ curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo 
 
 
 ##########
-
+cd
 sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb 
 sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb 
 #sudo apt-key adv --refresh-keys --keyserver pgp.mit.edu -update-trustdb &
@@ -1200,18 +1201,18 @@ sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
 sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
 sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv $(pwd)/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv $(pwd)/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv $(pwd)/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
+sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
 sudo cp -fdv /etc/apt/trusted.gpg ~/toolkali/trusted.gpg
 #git remote add origin https://github.com/GZake/toolkali.git
 #git branch -M main
