@@ -659,6 +659,7 @@ sudo sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.
 #curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee -a /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/sources.list.d/sublimetext.list
 echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+echo "deb https://fast-cdn.meetsidekick.com/builds/ stable main" | sudo tee /etc/apt/sources.list.d/sidekick.list
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
 
 sudo add-apt-repository -yus ppa:ibus-backporters/./.
