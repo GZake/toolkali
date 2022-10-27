@@ -851,6 +851,15 @@ sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-7
 sudo add-apt-repository -ys ppa:system76/pop
 sudo add-apt-repository -ys ppa:system76/proposed
 sudo add-apt-repository -ys ppa:scubuntu-dev/ppa
+sudo add-apt-repository -ys ppa:kubuntu-ppa/backports
+sudo add-apt-repository -ys ppa:savoury1/display
+sudo add-apt-repository -ys ppa:savoury1/qt-5-15
+sudo add-apt-repository -ys ppa:savoury1/kde-5-80
+sudo add-apt-repository -ys ppa:savoury1/gpg
+sudo add-apt-repository -ys ppa:savoury1/vlc3
+sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-9
+
+
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash $(pwd)/installppa*
