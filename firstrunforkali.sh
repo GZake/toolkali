@@ -1679,7 +1679,7 @@ gitinstall:
 clear
 sudo dpkg -i ~/toolkali/brave-browser-dev_*
 sudo dpkg -i ~/toolkali/GitHubDesktop-linux*
-sudo dpkg -i ~/toolkali/sidekick-linux-release-x64-104.29.3.25040-9d3e9c*
+sudo dpkg -i ~/toolkali/sidekick-linux-release*
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
