@@ -648,6 +648,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apticron
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests libdvd-pkg
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bluez*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tasksel
 sudo cp -fRv ~/toolkali/sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
@@ -849,6 +850,7 @@ sudo add-apt-repository -ys ppa:savoury1/toolchain
 sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-7
 sudo add-apt-repository -ys ppa:system76/pop
 sudo add-apt-repository -ys ppa:system76/proposed
+sudo add-apt-repository -ys ppa:scubuntu-dev/ppa
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash $(pwd)/installppa*
