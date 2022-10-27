@@ -831,6 +831,22 @@ sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ o
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stable main"
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stretch main"
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ wheezy main"
+sudo add-apt-repository -ys ppa:savoury1/apt-xenial
+sudo add-apt-repository -ys ppa:savoury1/gtk-xenial
+sudo add-apt-repository -ys ppa:savoury1/qt-xenial
+sudo add-apt-repository -ys ppa:savoury1/kde-xenial
+sudo add-apt-repository -ys ppa:savoury1/ffmpeg4
+sudo add-apt-repository -ys ppa:ubuntu-desktop/gnome-3-26
+sudo add-apt-repository -ys ppa:snappy-dev/image
+sudo add-apt-repository -ys ppa:ubuntu-desktop/gnome-3-24
+sudo add-apt-repository -ys ppa:snapcpp/ppa
+sudo add-apt-repository -ys ppa:tormodvolden/ppa
+sudo add-apt-repository -ys ppa:shemgp/gnome
+sudo add-apt-repository -ys ppa:savoury1/backports
+sudo add-apt-repository -ys ppa:savoury1/toolchain
+sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-7
+sudo add-apt-repository -ys ppa:system76/pop
+sudo add-apt-repository -ys ppa:system76/proposed
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash $(pwd)/installppa*
