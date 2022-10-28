@@ -22,7 +22,7 @@ echo $(pwd)
 
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
-sudo cp -fdv $(pwd)/update-initramfs /sbin/
+sudo cp -fdv ~/toolkali/update-initramfs /sbin/
 clear
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
@@ -37,7 +37,7 @@ sudo dpkg --configure -a
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a 
 sudo apt --fix-broken install -y
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo timedatectl set-ntp on
 ulimit -s 1048576
 ulimit -u 1048576
@@ -155,11 +155,11 @@ sudo systemctl daemon-reload
 #####
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg-reconfigure libdvd-pkg  >>   $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >>   $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >>  $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >>  $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >>  $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg-reconfigure libdvd-pkg  >>   ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >>   ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo dpkg --add-architecture amd64
 #sudo dpkg --add-architecture i386
 #sudo dpkg --add-architecture arm64
@@ -205,10 +205,10 @@ sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo dpkg --configure -a  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
@@ -433,15 +433,15 @@ sudo rm -fRdv ~/toolkali
 sudo git clone https://github.com/GZake/toolkali.git ~/toolkali
 sudo cp -Rdv ~/toolkali/ $(pwd)/
 sudo cp -fRdv toolkali/ $HOME/Documents/GitHub/
-sudo cp -fRdv $(pwd)/toolkali $HOME/
-sudo cp -fRdv $(pwd)/toolkali /media/*/
-sudo cp -fRdv $(pwd)/toolkali /media/*/*/
-sudo cp -fRdv $(pwd)/toolkali /media/*/01D85B1D2CBD6AE0/
-sudo cp -fRdv $(pwd)/toolkali ~/
-sudo cp -fRdv $(pwd)/toolkali /
-sudo cp -fRdv $(pwd)/toolkali /media/root/*/
-sudo cp -fRdv $(pwd)/toolkali /media/kali/*/
-sudo cp -fRdv $(pwd)/toolkali /media/SUGirl/*/
+sudo cp -fRdv ~/toolkali/ $HOME/
+sudo cp -fRdv ~/toolkali/ /media/*/
+sudo cp -fRdv ~/toolkali/ /media/*/*/
+sudo cp -fRdv ~/toolkali/ /media/*/01D85B1D2CBD6AE0/
+sudo cp -fRdv ~/toolkali/ ~/
+sudo cp -fRdv ~/toolkali/ /
+sudo cp -fRdv ~/toolkali/ /media/root/*/
+sudo cp -fRdv ~/toolkali/ /media/kali/*/
+sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
@@ -623,7 +623,7 @@ sudo apt-get update  -ym
 sudo apt-get upgrade --dry-run -ym
 sudo apt-get dist-upgrade -ym
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
-sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
+#sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
 sudo apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | sudo xargs apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests
@@ -675,9 +675,9 @@ sudo add-apt-repository -yus ppa:ibus-backporters/./.
 #sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 #sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
 sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
-sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fdRvx ~/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
-sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
+sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* ~/toolkali/sources.list.d/
 
 sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse partner"
 sudo add-apt-repository -ys "deb http://ddebs.ubuntu.com bionic-updates main restricted universe multiverse partner"
@@ -867,7 +867,7 @@ sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu1
 
 #sudo bash $(pwd)/addRep.sh
-sudo bash $(pwd)/installppa*
+sudo bash ~/toolkali/installppa*
 sudo apt-cache policy | grep http | awk '{print $2" "$3}' | sort -u
 #sudo sed -i '/bionic restricted main$/s/^deb \[trusted=yes]/deb/' /etc/apt/sources.list
 sudo sed -i 's/http:\/\/in\./http:\/\//' /etc/apt/sources.list
@@ -876,8 +876,8 @@ find /etc/apt -name '*.list' -exec bash -c 'echo -e "\n$1\n"; cat -n "$1"' _ '{}
 #sudo cat sources.list | sudo tee /etc/apt/sources.list
 #sudo cp -f sourcesAdd.list /etc/apt/sources.list.d/
 sudo cp -fdRv /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
-sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
-sudo cp -fdRv $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
+sudo cp -fdRv $HOME/Documents/GitHub/toolkali/sources.list.d/* ~/toolkali/sources.list.d/
+sudo cp -fdRv ~/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 #sudo cp -fdRv $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
 sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
@@ -893,22 +893,22 @@ sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-sudo cp -fRv $(pwd)/*.gpg /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.asc /usr/share/keyrings/
-sudo cp -fRv $(pwd)/*.keyring /usr/share/keyrings/
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
+sudo cp -fRv ~/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-sudo cp -fdRvx /etc/apt/sources.list $(pwd)/sources.list
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
+#sudo cp -fdRvx /etc/apt/sources.list ~/toolkali/sources.list
 if [ $choose1 -eq 2 ]
 then
 	goto uptab
@@ -928,7 +928,7 @@ sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -966,21 +966,21 @@ sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.gpg /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.asc /usr/share/keyrings/
 sudo cp -fRv $HOME/Documents/GitHub/toolkali/*.keyring /usr/share/keyrings/
 
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
-sudo cp -fRv $(pwd)/toolkali/*.gpg /usr/share/keyrings/
-sudo cp -fRv $(pwd)/toolkali/*.asc /usr/share/keyrings/
-sudo cp -fRv $(pwd)/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
+sudo cp -fRv ~/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04/Release.key | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release.key | sudo apt-key add -
@@ -1233,21 +1233,21 @@ sudo cp -fRv /usr/share/keyrings/* /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/* /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/* $HOME/Documents/GitHub/toolkali/
 
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)
-sudo cp -fRv $(pwd)/toolkali/*.gpg /usr/share/keyrings/
-sudo cp -fRv $(pwd)/toolkali/*.asc /usr/share/keyrings/
-sudo cp -fRv $(pwd)/toolkali/*.keyring /usr/share/keyrings/
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
+sudo cp -fRv ~/toolkali/*.gpg /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.asc /usr/share/keyrings/
+sudo cp -fRv ~/toolkali/*.keyring /usr/share/keyrings/
 sudo cp -fRv /usr/share/keyrings/*.gpg /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.asc /etc/apt/trusted.gpg.d/
 sudo cp -fRv /usr/share/keyrings/*.keyring /etc/apt/trusted.gpg.d/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.gpg /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.asc /var/lib/apt/lists/
 sudo cp -fRv /etc/apt/trusted.gpg.d/*.keyring /var/lib/apt/lists/
-sudo cp -fRv /var/lib/apt/lists/*.gpg $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.asc $(pwd)/toolkali/
-sudo cp -fRv /var/lib/apt/lists/*.keyring $(pwd)/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.gpg ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.asc ~/toolkali/
+sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
 sudo cp -fdv /etc/apt/trusted.gpg ~/toolkali/trusted.gpg
 #git remote add origin https://github.com/GZake/toolkali.git
 #git branch -M main
@@ -1306,11 +1306,11 @@ sudo dpkg --add-architecture ia64
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 #telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
@@ -1322,7 +1322,7 @@ sudo apt-get dist-upgrade -y #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs g
 #sudo echo "InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY DC3D600CDEF74BB" |sudo tee /home/SUGirl/Desktop/test.txt | grep "NO_PUBKEY" | awk '{print  $16}'| sudo xargs apt-key adv --recv-keys
 apt-get full-upgrade --dry-run -ym | grep "Ign:" | sudo tee -a ~/Desktop/ign.txt
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
-sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
+#sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -1374,8 +1374,8 @@ echo"DONE"
 ##################################
  
 
-sudo bash $(pwd)/list-symbols-packages-v2* -p $(pidof yelp)
-sudo bash $(pwd)/list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
+sudo bash ~/toolkali/list-symbols-packages-v2* -p $(pidof yelp)
+sudo bash ~/toolkali/list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
 
 if [ $choose1 -eq 7 ]
 then
@@ -1430,7 +1430,7 @@ sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
+dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 #telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1438,7 +1438,7 @@ apt-get upgrade --dry-run -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs 
 apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
-sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover $(pwd)/apt-avahi-discover
+#sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture arm64
@@ -1504,7 +1504,7 @@ echo"DONE"
 #######################need############################
 need:
 clear
-sudo bash $(pwd)/need.sh #| sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo bash ~/toolkali/need.sh #| sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1704,25 +1704,25 @@ bak:
 clear
 #cd $HOME/toolkali/
 #git add
-sudo cp -fRdv .bashrc $(pwd)/.bashrc.bak
+sudo cp -fRdv .bashrc ~/toolkali/.bashrc.bak
 sudo cp -fRdv .bashrc .bashrc.bak
-sudo cp -fRdv /etc/skel/.zshrc $(pwd)/.zshrc.bak
+sudo cp -fRdv /etc/skel/.zshrc ~/toolkali/.zshrc.bak
 sudo cp -fRdv /etc/skel/.zshrc $HOME/.zshrc.bak
 sudo cp -fRdv /etc/skel/.zshrc ~/.zshrc.bak
 sudo cp -fRdv $HOME/.bashrc $HOME/.bashrc.bak
 sudo cp -fRdv /etc/skel/.bashrc $HOME/.bashrc.bak1
 sudo cp -fRdv /etc/skel/.bashrc /etc/skel/.bashrc.bak1
-sudo cp -fRdv /etc/sysctl.conf $(pwd)/sysctl.conf.bak
+sudo cp -fRdv /etc/sysctl.conf ~/toolkali/sysctl.conf.bak
 sudo cp -fRdv /etc/sysctl.conf /etc/sysctl.conf.bak
-sudo cp -fRdv /etc/fstab $(pwd)/fstab.bak
+sudo cp -fRdv /etc/fstab ~/toolkali/fstab.bak
 sudo cp -fRdv /etc/fstab /etc/fstab.bak
-sudo cp -fRdv /etc/crontab $(pwd)/crontab.bak
+sudo cp -fRdv /etc/crontab ~/toolkali/crontab.bak
 sudo cp -fRdv /etc/crontab /etc/crontab.bak
-sudo cp -fRdv /etc/rc.local $(pwd)/rc.local.bak
+sudo cp -fRdv /etc/rc.local ~/toolkali/rc.local.bak
 sudo cp -fRdv /etc/rc.local /etc/rc.local.bak
-sudo cp -fRdv /etc/security/limits.conf $(pwd)/limits.conf.bak
+sudo cp -fRdv /etc/security/limits.conf ~/toolkali/limits.conf.bak
 sudo cp -fRdv /etc/security/limits.conf /etc/security/limits.conf.bak
-sudo cp -fRdv /etc/modprobe.d/nvidia-blacklists-nouveau.conf $(pwd)/nvidia-blacklists-nouveau.conf.bak
+sudo cp -fRdv /etc/modprobe.d/nvidia-blacklists-nouveau.conf ~/toolkali/nvidia-blacklists-nouveau.conf.bak
 sudo cp -fRdv /etc/modprobe.d/nvidia-blacklists-nouveau.conf /etc/modprobe.d/nvidia-blacklists-nouveau.conf.bak
 sudo parallel cp -vfxR $HOME/.bashrc ::: $HOME /media/kali/*/ /media/*/*/
 sudo parallel cp -vfxR /etc/sysctl.conf ::: $HOME /media/kali/*/ /media/*/*/
