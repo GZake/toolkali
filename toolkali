@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # include this boilerplate
 function goto
@@ -18,6 +17,7 @@ echo $(pwd)
 [[ -f ~/toolkali/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/toolkali/
 [[ -f ~/toolkali/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/toolkali/
 [[ -f ~/toolkali/log/log_$(date "+%d_%h_%y").txt ]] || sudo touch ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+[[ -f /sbin/toolkali ]] || sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 [[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
 
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
@@ -74,7 +74,7 @@ sudo sysctl -p
 #sudo apt-mark unhold *dm*
 #sudo apt-mark unhold *de*
 #sudo apt-mark unhold *ki*
-#sudo apt-mark unhold *cinnamon*GitHubDesktop-linux-3.1.1-linux1.deb
+#sudo apt-mark unhold *cinnamon*
 #sudo apt-mark unhold *slim*
 #sudo apt-mark unhold *wayland*
 #sudo apt-mark unhold *software*
@@ -211,7 +211,7 @@ sudo dpkg --configure -a  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo apt --fix-broken install -y  >> $(pwd)/log/log_$(date "+%d_%h_%y").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
-sudo parallel cp -vfxR firstrunforkali* ::: $HOME /media/kali/*/ /media/*/*/
+sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kde-plasma-desktop
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kde-standard
