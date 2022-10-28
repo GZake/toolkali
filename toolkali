@@ -442,6 +442,7 @@ sudo cp -fRdv ~/toolkali/ /
 sudo cp -fRdv ~/toolkali/ /media/root/*/
 sudo cp -fRdv ~/toolkali/ /media/kali/*/
 sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
+sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
 sudo cp -fRdv kaligittool.sh ~
