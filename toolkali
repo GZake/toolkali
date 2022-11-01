@@ -13,9 +13,9 @@ sudo apt-mark hold apt-avahi-discover
 refresh:
 cd
 echo $(pwd)
-[[ -f ~/toolkali/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/toolkali/
-[[ -f ~/toolkali/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/toolkali/
-[[ -f ~/toolkali/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/toolkali/
+[[ -f ~/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/
+[[ -f ~/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/
+[[ -f ~/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/
 [[ -f ~/toolkali/log/log_$(date "+%d_%h_%y").txt ]] || sudo touch ~/toolkali/log/log_$(date "+%d_%h_%y").txt
 [[ -f /sbin/toolkali ]] || sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 # md5sum /sbin/ |awk '{print $1}'
@@ -443,6 +443,7 @@ sudo cp -fRdv ~/toolkali/ /
 sudo cp -fRdv ~/toolkali/ /media/root/*/
 sudo cp -fRdv ~/toolkali/ /media/kali/*/
 sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
+sudo cp -fRdv ~/toolkali/ /run/*/*/*/*/toolkali/
 sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
@@ -1695,9 +1696,9 @@ reboot
 
 gitinstall:
 clear
-sudo dpkg -i ~/toolkali/brave-browser-dev_*
-sudo dpkg -i ~/toolkali/GitHubDesktop-linux*
-sudo dpkg -i ~/toolkali/sidekick-linux-release*
+sudo dpkg -i ~/brave-browser-dev_*
+sudo dpkg -i ~/GitHubDesktop-linux*
+sudo dpkg -i ~/sidekick-linux-release*
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
