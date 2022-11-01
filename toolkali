@@ -13,10 +13,10 @@ sudo apt-mark hold apt-avahi-discover
 refresh:
 cd
 echo $(pwd)
-[[ -f ~/toolkali/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/toolkali/
-[[ -f ~/toolkali/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/toolkali/
-[[ -f ~/toolkali/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/toolkali/
-[[ -f ~/toolkali/log/log_$(date "+%d_%h_%y").txt ]] || sudo touch ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+[[ -f ~/brave-browser-dev_1.45.96_amd64.deb ]] || sudo wget https://github.com/brave/brave-browser/releases/download/v1.45.96/brave-browser-dev_1.45.96_amd64.deb -P ~/
+[[ -f ~/GitHubDesktop-linux-3.1.1-linux1.deb ]] || sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb -P ~/
+[[ -f ~/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb ]] || https://fast-cdn.meetsidekick.com/builds/sidekick-linux-release-x64-104.29.3.25040-9d3e9c3.deb -P ~/
+[[ -f ~/toolkali/log/log_$(date "+%y_%h_%d").txt ]] || sudo touch ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 [[ -f /sbin/toolkali ]] || sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 # md5sum /sbin/ |awk '{print $1}'
 [[ -d ~/toolkali/ ]] || sudo git clone https://github.com/GZake/toolkali.git ~/toolkali/
@@ -38,7 +38,7 @@ sudo dpkg --configure -a
 sudo apt --fix-broken install -y
 sudo dpkg --configure -a 
 sudo apt --fix-broken install -y
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo timedatectl set-ntp on
 ulimit -s 1048576
 ulimit -u 1048576
@@ -156,11 +156,11 @@ sudo systemctl daemon-reload
 #####
 #pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
 awk '{print $1}' /proc/sys/fs/file-nr
-sudo dpkg-reconfigure libdvd-pkg  >>   ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >>   ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg-reconfigure libdvd-pkg  >>   ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo dpkg --configure -a  >>   ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo dpkg --configure -a  >>  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt --fix-broken install -y  >>  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo dpkg --add-architecture amd64
 #sudo dpkg --add-architecture i386
 #sudo dpkg --add-architecture arm64
@@ -206,10 +206,10 @@ sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 #dpkg --print-foreign-architectures
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
-sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
-sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
@@ -443,6 +443,7 @@ sudo cp -fRdv ~/toolkali/ /
 sudo cp -fRdv ~/toolkali/ /media/root/*/
 sudo cp -fRdv ~/toolkali/ /media/kali/*/
 sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
+sudo cp -fRdv ~/toolkali/ /run/*/*/*/*/toolkali/
 sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
@@ -930,7 +931,7 @@ sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
-sudo dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 
 
 #sudo chmod -Rv 775 $HOME &
@@ -1308,11 +1309,11 @@ sudo dpkg --add-architecture ia64
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
-sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
 sudo apt-get update  -ym
-sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 #telnet towel.blinkenlights.nl&
 sudo apt-key update -ym
@@ -1432,7 +1433,7 @@ sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
 sudo apt --fix-broken install -y 
 sudo apt-get update --fix-missing -y 
-dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%d_%h_%y").txt
+dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 #telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
@@ -1506,7 +1507,7 @@ echo"DONE"
 #######################need############################
 need:
 clear
-sudo bash ~/toolkali/need.sh #| sudo tee -a $(pwd)/log/log_$(date "+%d_%h_%y").txt
+sudo bash ~/toolkali/need.sh #| sudo tee -a $(pwd)/log/log_$(date "+%y_%h_%d").txt
 if [ $choose1 -eq 6 ]
 then
 	goto uptab
@@ -1695,9 +1696,9 @@ reboot
 
 gitinstall:
 clear
-sudo dpkg -i ~/toolkali/brave-browser-dev_*
-sudo dpkg -i ~/toolkali/GitHubDesktop-linux*
-sudo dpkg -i ~/toolkali/sidekick-linux-release*
+sudo dpkg -i ~/brave-browser-dev_*
+sudo dpkg -i ~/GitHubDesktop-linux*
+sudo dpkg -i ~/sidekick-linux-release*
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 

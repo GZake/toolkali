@@ -1,0 +1,348 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-runtime3.10.3 libgoogle-perftools4
+  libgsm1-dev libhamlib4 libhidapi-libusb0 libhttp-server-simple-perl libiio0
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0
+  libmirisdr0 libnautilus-extension1a libnode93 libopenexr25 libopenh264-6
+  libosmosdr0 libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 106 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-runtime3.10.3 libgoogle-perftools4
+  libgsm1-dev libhamlib4 libhidapi-libusb0 libhttp-server-simple-perl libiio0
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0
+  libmirisdr0 libnautilus-extension1a libnode93 libopenexr25 libopenh264-6
+  libosmosdr0 libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 106 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-runtime3.10.3 libgoogle-perftools4
+  libgsm1-dev libhamlib4 libhidapi-libusb0 libhttp-server-simple-perl libiio0
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0
+  libmirisdr0 libnautilus-extension1a libnode93 libopenexr25 libopenh264-6
+  libosmosdr0 libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 106 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-runtime3.10.3 libgoogle-perftools4
+  libgsm1-dev libhamlib4 libhidapi-libusb0 libhttp-server-simple-perl libiio0
+  libilmbase25 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-requirejs libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm liblerc3 liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0
+  libmirisdr0 libnautilus-extension1a libnode93 libopenexr25 libopenh264-6
+  libosmosdr0 libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 106 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libflac8 libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4
+  libgoogle-perftools4 libgs9-common libgsm1-dev libhamlib4 libhidapi-libusb0
+  libhttp-server-simple-perl libiio0 libilmbase25 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-requirejs
+  libjs-requirejs-text libjs-terser libjs-text-encoding libjs-xterm liblerc3
+  liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0 libmirisdr0
+  libnautilus-extension1a libnode93 libopenexr25 libopenh264-6 libosmosdr0
+  libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libflac8 libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4
+  libgoogle-perftools4 libgs9-common libgsm1-dev libhamlib4 libhidapi-libusb0
+  libhttp-server-simple-perl libiio0 libilmbase25 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-requirejs
+  libjs-requirejs-text libjs-terser libjs-text-encoding libjs-xterm liblerc3
+  liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0 libmirisdr0
+  libnautilus-extension1a libnode93 libopenexr25 libopenh264-6 libosmosdr0
+  libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libflac8 libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4
+  libgoogle-perftools4 libgs9-common libgsm1-dev libhamlib4 libhidapi-libusb0
+  libhttp-server-simple-perl libiio0 libilmbase25 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-requirejs
+  libjs-requirejs-text libjs-terser libjs-text-encoding libjs-xterm liblerc3
+  liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0 libmirisdr0
+  libnautilus-extension1a libnode93 libopenexr25 libopenh264-6 libosmosdr0
+  libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bladerf castxml catch2 golang-1.18-go golang-1.18-src isa-support
+  jupyter-core jupyter-nbextension-jupyter-js-widgets jupyter-notebook
+  libad9361-0 libairspy0 libairspyhf1 libatk1.0-data libbladerf2 libbroker2
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libcppunit-1.15-0 libcppunit-dev libeigen3-dev libflac8 libfmt-dev libfmt8
+  libfreesrp0 libglfw3 libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2
+  libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4
+  libgoogle-perftools4 libgs9-common libgsm1-dev libhamlib4 libhidapi-libusb0
+  libhttp-server-simple-perl libiio0 libilmbase25 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-requirejs
+  libjs-requirejs-text libjs-terser libjs-text-encoding libjs-xterm liblerc3
+  liblimesuite20.10-1 liblimesuite22.09-1 liblms7compact0 libmirisdr0
+  libnautilus-extension1a libnode93 libopenexr25 libopenh264-6 libosmosdr0
+  libplacebo192 libpoppler118 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqwt-qt5-6 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libsvtav1enc0 libtcmalloc-minimal4 libtecla1 libthrift-0.16.0
+  libthrift-0.17.0 libthrift-dev libuhd4.1.0 libuhd4.2.0 libusb3380-0
+  libvolk2-bin libvolk2-dev libvolk2.5 libwebsockets16 libwireshark15
+  libwiretap12 libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxtrx0
+  libxtrxdsp0 libxtrxll0 limesuite-udev lua-bitop lua-cjson
+  node-ampproject-remapping node-jed node-source-map node-terser pandoc
+  pandoc-data pybind11-dev python3-dataclasses-json python3-flask-restx
+  python3-ipython-genutils python3-ipywidgets python3-jupyterlab-pygments
+  python3-limiter python3-mypy-extensions python3-nbclient python3-nbconvert
+  python3-notebook python3-pandocfilters python3-prometheus-client
+  python3-pygccxml python3-pyqt5.qwt python3-responses python3-schema
+  python3-send2trash python3-spyse python3-terminado python3-testpath
+  python3-thrift python3-token-bucket python3-typing-inspect
+  python3-widgetsnbextension python3.9 python3.9-minimal ruby2.7 ruby2.7-dev
+  ruby2.7-doc soapyosmo-common0.8 soapysdr-tools soapysdr0.8-module-airspy
+  soapysdr0.8-module-all soapysdr0.8-module-audio soapysdr0.8-module-bladerf
+  soapysdr0.8-module-hackrf soapysdr0.8-module-lms7 soapysdr0.8-module-mirisdr
+  soapysdr0.8-module-osmosdr soapysdr0.8-module-redpitaya
+  soapysdr0.8-module-remote soapysdr0.8-module-rfspace
+  soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd sse3-support xprobe
+  xtrx-dkms zeek-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
