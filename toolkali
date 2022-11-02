@@ -665,8 +665,7 @@ echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/s
 echo "deb https://fast-cdn.meetsidekick.com/builds/ ./" | sudo tee /etc/apt/sources.list.d/sidekick.list
 echo "deb https://sidekick-cdn-production.meetsidekick.com/builds/ ./" | sudo tee -a /etc/apt/sources.list.d/sidekick.list
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
-
-sudo add-apt-repository -yus ppa:ibus-backporters/./.
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #sudo apt-add-repository -ys ppa:$USER/$PPA
 #sudo apt-add-repository \'${ENTRY}\'
 #sudo cp -fdRvx $HOME/toolkali/sources.list.d/* /etc/apt/sources.list.d/
@@ -865,6 +864,7 @@ sudo add-apt-repository -ys ppa:wagungs/kali-linux
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu1
 sudo apt-add-repository -ys ppa:remmina-ppa-team/remmina-next
+sudo add-apt-repository -yus ppa:ibus-backporters/./.
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash ~/toolkali/installppa*
