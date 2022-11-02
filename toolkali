@@ -443,7 +443,8 @@ sudo cp -fRdv ~/toolkali/ /
 sudo cp -fRdv ~/toolkali/ /media/root/*/
 sudo cp -fRdv ~/toolkali/ /media/kali/*/
 sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
-sudo cp -fRdv ~/toolkali/ /run/*/*/*/*/toolkali/
+#sudo cp -fRdv ~/toolkali/ /run/*/*/*/*/toolkali/
+sudo cp -fRdv ~/toolkali/ /run/live/persistence/*/rw/toolkali/
 sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
@@ -861,6 +862,7 @@ sudo add-apt-repository -ys ppa:miroslavets90/karimovich-fumiyanov
 sudo add-apt-repository -ys ppa:wagungs/kali-linux
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu
 sudo add-apt-repository -ys ppa:darklordpaunik8880/kalibuntu1
+sudo apt-add-repository -ys ppa:remmina-ppa-team/remmina-next
 
 #sudo bash $(pwd)/addRep.sh
 sudo bash ~/toolkali/installppa*
