@@ -47,7 +47,6 @@ ulimit -i 1048576
 ulimit -q 1048576
 ulimit -Sn unlimited
 ulimit -n 1048576
-ulimit -p unlimited
 ulimit -c unlimited
 ulimit -i unlimited
 ulimit -l unlimited
@@ -527,7 +526,7 @@ sudo cp -f .bash_aliases ~/.bash_aliases
 
 #sudo cp -f sources.list /etc/apt/sources.list	
 
-sudo cp -f ~/.bashrc.bak ~/.bashrc
+sudo cp -f ~/toolkali/.bashrc.bak ~/.bashrc
 echo "
 ulimit -u unlimited -n 1048576
 #alias update-initramfs="/usr/sbin/update-initramfs.orig.initramfs-tools"
@@ -539,30 +538,30 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 smart_script
-" | sudo tee -a $HOME/.bashrc
-echo "
-ulimit -u unlimited -n 1048576
-#alias update-initramfs="/usr/sbin/update-initramfs.orig.initramfs-tools"
-alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dolphin"
-alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate"
-alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite"
-#ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-smart_script
-" | sudo tee -a .bashrc
+" | sudo tee -a ~/.bashrc
+#echo "
+#ulimit -u unlimited -n 1048576
+##alias update-initramfs="/usr/sbin/update-initramfs.orig.initramfs-tools"
+#alias dolroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true d#olphin"
+#alias kateroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true #kate"
+#alias kwriteroot="pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=tru#e kwrite"
+##ibus
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export QT_IM_MODULE=ibus
+#smart_script
+#" | sudo tee -a .bashrc
 
 
 sudo chmod 700 dolroot
 sudo chmod 700 kateroot
 sudo chmod 700 kwriteroot
-sudo cp -f /etc/sysctl.conf.bak /etc/sysctl.conf
+sudo cp -f ~/toolkali/sysctl.conf.bak /etc/sysctl.conf
 echo "
 vm.swappiness=100
 fs.file-max=2147483647
 " | sudo tee -a /etc/sysctl.conf
-sudo cp -f /etc/fstab.bak /etc/fstab
+sudo cp -f ~/toolkali/fstab.bak /etc/fstab
 echo "
 /dev/nvm* none swap sw 0 0
 /dev/sd* none swap sw 0 0
@@ -578,7 +577,7 @@ echo "
 
 echo 100 >> /proc/sys/vm/swappiness
 
-sudo cp -f /etc/security/limits.conf.bak /etc/security/limits.conf
+sudo cp -f ~/toolkali/limits.conf.bak /etc/security/limits.conf
 echo "
 * hard nofile 1048576
 * soft nofile 1048576
@@ -592,11 +591,11 @@ sudo cp -fvRd updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh 
 
 
-sudo cp -f /etc/crontab.bak /etc/crontab 
+sudo cp -f ~/toolkali/crontab.bak /etc/crontab
 echo "
 @reboot sudo bash  $HOME/updatekali.sh
 " | sudo tee -a /etc/crontab
-sudo cp -f /etc/rc.local.bak /etc/rc.local
+sudo cp -f ~/toolkali/rc.local.bak /etc/rc.local
 echo "
 ulimit -s 1048576
 ulimit -u 1048576
@@ -1704,7 +1703,7 @@ bak:
 clear
 #cd $HOME/toolkali/
 #git add
-sudo cp -fRdv .bashrc ~/toolkali/.bashrc.bak
+sudo cp -fRdv ~/.bashrc ~/toolkali/.bashrc.bak
 sudo cp -fRdv .bashrc .bashrc.bak
 sudo cp -fRdv /etc/skel/.zshrc ~/toolkali/.zshrc.bak
 sudo cp -fRdv /etc/skel/.zshrc $HOME/.zshrc.bak
