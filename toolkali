@@ -221,8 +221,8 @@ sudo dpkg-reconfigure sddm
 #cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 #cd $HOME/Documents/GitHub/toolkali/
-sudo swapon /dev/nvm*
-sudo swapon /dev/sd*
+sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 100 /dev/sd*
 #sudo swapon /dev/nvme0n1p5
 #sudo swapon /dev/sda4
 #sudo swapon /dev/sdb4
