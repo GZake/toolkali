@@ -23,7 +23,7 @@ echo $(pwd)
 
 sudo cp -fdv ~/toolkali/trusted.gpg /etc/apt/trusted.gpg
 #sudo cp -fRdv $(pwd)/apt-avahi-discover /usr/share/squid-deb-proxy-client/apt-avahi-discover
-sudo cp -fdv ~/toolkali/update-initramfs /sbin/
+sudo cp -fdv ~/toolkali/update-initramfs /sbin/update-initramfs
 clear
 sudo dpkg --add-architecture i386
 sudo dpkg --add-architecture amd64
@@ -33,10 +33,10 @@ sudo dpkg --add-architecture all
 sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
 sudo dpkg --add-architecture DEP-11
-sudo dpkg-reconfigure libdvd-pkg 
-sudo dpkg --configure -a 
+sudo dpkg-reconfigure libdvd-pkg
+sudo dpkg --configure -a
 sudo apt --fix-broken install -y
-sudo dpkg --configure -a 
+sudo dpkg --configure -a
 sudo apt --fix-broken install -y
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo timedatectl set-ntp on
@@ -54,9 +54,9 @@ ulimit -s unlimited
 ulimit -u unlimited -n 1048576
 sudo sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo swapon /dev/nvm*
-sudo swapon /dev/sd*
-sudo swapon /media/root/*/*swapfile*
+sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 100 /dev/sd*
+sudo swapon --priority 100 /media/root/*/*swapfile*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
 #############################
@@ -66,7 +66,7 @@ sudo sysctl -p
 #sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 #sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
 #sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
-#sudo apt-mark unhold *plasma* 
+#sudo apt-mark unhold *plasma*
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
 #sudo apt-mark unhold *gnome*
@@ -133,20 +133,20 @@ sudo apt-mark hold wine1.6
 [ ! -f $HOME/Documents/GitHub/toolkali/ ] || sudo git clone https://github.com/LionSec/katoolin.git $HOME/Documents/GitHub/toolkali/
 cp katoolin/katoolin.py /usr/bin/katoolin
 chmod +x /usr/bin/katoolin
-sudo chmod -Rv 777 /var/cache/apt/archives/ 
+sudo chmod -Rv 777 /var/cache/apt/archives/
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
 sudo chown -Rv _apt:root /var/lib/apt/lists/
-sudo chmod -Rv 777 /var/cache/apt/archives/* 
+sudo chmod -Rv 777 /var/cache/apt/archives/*
 sudo chown -Rv _apt:root /var/cache/apt/archives/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
 
-sudo chmod -Rv 777 /var/lib/apt/lists/ 
+sudo chmod -Rv 777 /var/lib/apt/lists/
 sudo chown -Rv _apt:root /var/lib/apt/lists/
 sudo chmod -Rv 777 /var/lib/apt/lists/
 sudo chown -Rv _apt:root /var/lib/apt/lists/
-sudo chmod -Rv 777 /var/lib/apt/lists/* 
+sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
 sudo chmod -Rv 777 /var/lib/apt/lists/*
 sudo chown -Rv _apt:root /var/lib/apt/lists/*
@@ -154,7 +154,7 @@ sudo service packagekit restart
 sudo systemctl daemon-reload
 #####
 #####
-#pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null 
+#pushd ~ 1>/dev/null; pwd ; popd 1>/dev/null
 awk '{print $1}' /proc/sys/fs/file-nr
 sudo dpkg-reconfigure libdvd-pkg  >>   ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo dpkg --configure -a  >>   ~/toolkali/log/log_$(date "+%y_%h_%d").txt
@@ -191,13 +191,13 @@ sudo dpkg --add-architecture amd64
 #sudo dpkg --add-architecture mipsr6
 #sudo dpkg --add-architecture mipsr6el
 #sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
+#sudo dpkg --add-architecture or1k
+#sudo dpkg --add-architecture powerpc
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
 #sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
+#sudo dpkg --add-architecture sh3eb
 #sudo dpkg --add-architecture sh4
 #sudo dpkg --add-architecture sh4eb
 #sudo dpkg --add-architecture sparc
@@ -210,14 +210,14 @@ sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress 
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel* #status=progress
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  parallel
 sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kde-plasma-desktop
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kde-standard
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kde-full
-sudo dpkg-reconfigure sddm 
+sudo dpkg-reconfigure sddm
 #cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 #cd $HOME/Documents/GitHub/toolkali/
@@ -266,7 +266,7 @@ echo "Welcome to application auto setting and upgrade for kali live -> persisten
 ####################################
 choose=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
-└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose 
+└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose
 if [ $choose -eq 1 ]
 then
 	goto diskpart
@@ -277,7 +277,7 @@ elif [ $choose -eq 3 ]
 then
 	goto None
 elif [ $choose -eq 4 ]
-then	
+then
 	goto uptab
 elif [ $choose -eq 5 ]
 then
@@ -293,7 +293,7 @@ then
 	goto uptool
 elif [ $choose -eq 9 ]
 then
-	goto terminal	
+	goto terminal
 elif [ $choose -eq 10 ]
 then
 	goto mkswap
@@ -478,7 +478,7 @@ echo "             UPDATE
 "
 choose1=561df65d1f61f
 read -p "┌──($USER㉿$(hostname))-[$(pwd)/]
-└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose1 
+└─$([[ $EUID -eq 0 ]] && echo "#" || echo "$") " choose1
 if [ $choose1 -eq 1 ]
 then
 	goto all
@@ -512,7 +512,7 @@ then
 else
 	echo Wrong
 	goto uptab
-	
+
 fi
 
 
@@ -525,7 +525,7 @@ sudo cp -f .bash_aliases ~/.bash_aliases
 #########################################################################################
 #########################################################################################
 
-#sudo cp -f sources.list /etc/apt/sources.list	
+#sudo cp -f sources.list /etc/apt/sources.list
 
 sudo cp -f ~/toolkali/.bashrc.bak ~/.bashrc
 echo "
@@ -562,22 +562,24 @@ echo "
 vm.swappiness=100
 fs.file-max=2147483647
 " | sudo tee -a /etc/sysctl.conf
+
 sudo cp -f ~/toolkali/fstab.bak /etc/fstab
 echo "
-/dev/nvm* swap swap sw 0 0
-/dev/sd* swap swap sw 0 0
-/dev/nvme0n1p5 swap swap sw 0 0
-/dev/sda4 swap swap sw 0 0
-/dev/sdb4 swap swap sw 0 0
-/dev/sdc4 swap swap sw 0 0
-/dev/sda5 swap swap sw 0 0
-/dev/sdb5 swap swap sw 0 0
-/dev/sdc5 swap swap sw 0 0
-/media/root/*/*swapfile* swap swap sw 0 0
+/dev/nvm* swap swap sw, pri=100 0 0
+/dev/sd* swap swap sw, pri=100 0 0
+/dev/nvme0n1p5 swap swap sw, pri=100 0 0
+/dev/sda4 swap swap sw, pri=100 0 0
+/dev/sdb4 swap swap sw, pri=100 0 0
+/dev/sdc4 swap swap sw, pri=100 0 0
+/dev/sda5 swap swap sw, pri=100 0 0
+/dev/sdb5 swap swap sw, pri=100 0 0
+/dev/sdc5 swap swap sw, pri=100 0 0
+/media/root/*/*swapfile* swap swap sw, pri=100 0 0
 " | sudo tee -a /etc/fstab
 
-
 echo 100 >> /proc/sys/vm/swappiness
+sudo sysctl vm.swappiness=100
+sudo sysctl -p
 
 sudo cp -f ~/toolkali/limits.conf.bak /etc/security/limits.conf
 echo "
@@ -588,9 +590,9 @@ root soft nofile 1048576
 " | sudo tee -a /etc/security/limits.conf
 
 
-#sudo cp -Rf sources.list /etc/apt/sources.list	
+#sudo cp -Rf sources.list /etc/apt/sources.list
 sudo cp -fvRd updatekali.sh $HOME/updatekali.sh
-sudo chmod 777 -R -v updatekali.sh 
+sudo chmod 777 -R -v updatekali.sh
 
 
 sudo cp -f ~/toolkali/crontab.bak /etc/crontab
@@ -614,8 +616,8 @@ ulimit -s unlimited
 ulimit -u unlimited -n 1048576
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo swapon /dev/nvm*
-sudo swapon /dev/sd*
+sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 100 /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
@@ -627,6 +629,7 @@ exit(0)
 sudo apt-get update  -ym
 sudo apt-get upgrade --dry-run -ym
 sudo apt-get dist-upgrade -ym
+sudo cp -fdv ~/toolkali/update-initramfs /sbin/update-initramfs
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 #sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
@@ -652,6 +655,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tasksel
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests flatpak
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests swapspace
 sudo cp -fRv ~/toolkali/sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg arch=amd64] https://brave-browser-apt-nightly.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-nightly.list
@@ -920,8 +924,8 @@ clear
 #sudo chmod -Rv 777 /var/cache/apt/archives/partial/
 #echo"
 #"
-#sudo chown -Rv root:root /var/cache/apt/archives/ 
-sudo chmod -Rv 777 /var/cache/apt/archives/ 
+#sudo chown -Rv root:root /var/cache/apt/archives/
+sudo chmod -Rv 777 /var/cache/apt/archives/
 sudo chown -Rv _apt:root /var/cache/apt/archives/
 sudo chmod -Rv 777 /var/lib/apt/lists/
 sudo chown -Rv _apt:root /var/lib/apt/lists/
@@ -1088,7 +1092,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5FB20FDD4
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 83FBA1751378B444
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2836CB0A8AC93F7A
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F1831DDAFC42E99D
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FB01CC26162506E7	
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys FB01CC26162506E7
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2CC98497A1231595
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 82BB6851C64F6880
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F9C79330C476DD6B
@@ -1106,7 +1110,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9DA31620334BD75D9DCB49F368818C72E52529D4
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16564973
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117
-sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6 
+sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5A9A06AEF9CB8DB0
@@ -1174,7 +1178,7 @@ sudo rm -f microsoft.gpg
 rm -f /usr/share/keyrings/microsoft.gpg
 #sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | sudo xargs gpg | sudo xargs apt-key add - | sudo xargs addgpg-apt | sudo awk '{ system("gpg "$21) }' | sudo awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 #sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("gpg "$21) }' &
-#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg & 
+#sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg &
 #sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("addgpg-apt "$21) }' &
 #sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ print $21 }' | xargs addgpg-apt &
 #sudo apt-get update -y | grep "NO_PUBKEY" | awk '{ system("apt-key adv "$21) }' &
@@ -1196,15 +1200,15 @@ sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY| sudo gpg --dearmor -
 
 
 
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
 
 
 
 
 ##########
 cd
-sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb 
-sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb 
+sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com -update-trustdb
+sudo apt-key adv --refresh-keys --keyserver keys.openpgp.org -update-trustdb
 #sudo apt-key adv --refresh-keys --keyserver pgp.mit.edu -update-trustdb &
 #sudo apt-key adv --refresh-keys --keyserver keyring.debian.org -update-trustdb &
 #sudo apt-key adv --refresh-keys --keyserver attester.flowcrypt.com -update-trustdb &
@@ -1285,13 +1289,13 @@ sudo dpkg --remove-architecture mipsel
 sudo dpkg --remove-architecture mipsr6
 sudo dpkg --remove-architecture mipsr6el
 sudo dpkg --remove-architecture nios2
-sudo dpkg --remove-architecture or1k 
-sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture or1k
+sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
 sudo dpkg --remove-architecture sh3
-sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh3eb
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
@@ -1306,10 +1310,10 @@ sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt --fix-broken install -y 
+sudo apt --fix-broken install -y
 sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
-sudo apt --fix-broken install -y 
-sudo apt-get update --fix-missing -y 
+sudo apt --fix-broken install -y
+sudo apt-get update --fix-missing -y
 sudo apt-get update  -ym
 sudo dpkg --configure -a | sudo tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
@@ -1357,13 +1361,13 @@ sudo dpkg --add-architecture ia64
 #sudo dpkg --add-architecture mipsr6
 #sudo dpkg --add-architecture mipsr6el
 #sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
+#sudo dpkg --add-architecture or1k
+#sudo dpkg --add-architecture powerpc
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
 #sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
+#sudo dpkg --add-architecture sh3eb
 #sudo dpkg --add-architecture sh4
 #sudo dpkg --add-architecture sh4eb
 #sudo dpkg --add-architecture sparc
@@ -1373,10 +1377,10 @@ sudo dpkg --add-architecture $(dpkg --print-architecture)
 echo"DONE"
 
 ##################################
- 
+
 
 sudo bash ~/toolkali/list-symbols-packages-v2* -p $(pidof yelp)
-sudo bash ~/toolkali/list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install 
+sudo bash ~/toolkali/list-symbols-packages-v2* -t -p $(pidof yelp) 2>/dev/null | xargs -d $'\n' sudo apt-get install
 
 if [ $choose1 -eq 7 ]
 then
@@ -1408,13 +1412,13 @@ sudo dpkg --remove-architecture mipsel
 sudo dpkg --remove-architecture mipsr6
 sudo dpkg --remove-architecture mipsr6el
 sudo dpkg --remove-architecture nios2
-sudo dpkg --remove-architecture or1k 
-sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture or1k
+sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
 sudo dpkg --remove-architecture sh3
-sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh3eb
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
@@ -1429,15 +1433,15 @@ sudo dpkg --add-architecture arc
 sudo dpkg --add-architecture ia64
 sudo dpkg --add-architecture DEP-11
 sudo dpkg --add-architecture $(dpkg --print-architecture)
-sudo apt --fix-broken install -y 
-sudo apt-get update --fix-missing -y 
+sudo apt --fix-broken install -y
+sudo apt-get update --fix-missing -y
 dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #firefox https://www.youtube.com/watch?v=dQw4w9WgXcQ &
 #telnet towel.blinkenlights.nl&
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get upgrade --dry-run -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-update-rc.d ssh stop 20 0 1 2 3 4 5 6 S 
+update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 #sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 sudo dpkg --add-architecture i386
@@ -1474,13 +1478,13 @@ sudo dpkg --add-architecture DEP-11
 #sudo dpkg --add-architecture mipsr6
 #sudo dpkg --add-architecture mipsr6el
 #sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
+#sudo dpkg --add-architecture or1k
+#sudo dpkg --add-architecture powerpc
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
 #sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
+#sudo dpkg --add-architecture sh3eb
 #sudo dpkg --add-architecture sh4
 #sudo dpkg --add-architecture sh4eb
 #sudo dpkg --add-architecture sparc
@@ -1539,13 +1543,13 @@ sudo dpkg --remove-architecture mipsel
 sudo dpkg --remove-architecture mipsr6
 sudo dpkg --remove-architecture mipsr6el
 sudo dpkg --remove-architecture nios2
-sudo dpkg --remove-architecture or1k 
-sudo dpkg --remove-architecture powerpc 
+sudo dpkg --remove-architecture or1k
+sudo dpkg --remove-architecture powerpc
 sudo dpkg --remove-architecture powerpcel
 sudo dpkg --remove-architecture ppc64
 sudo dpkg --remove-architecture riscv64
 sudo dpkg --remove-architecture sh3
-sudo dpkg --remove-architecture sh3eb 
+sudo dpkg --remove-architecture sh3eb
 sudo dpkg --remove-architecture sh4
 sudo dpkg --remove-architecture sh4eb
 sudo dpkg --remove-architecture sparc
@@ -1570,7 +1574,7 @@ echo "▀▀███▀▀▀▀███▀  ▀██████████
 echo "  ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███       ";
 echo "  ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███▌    ▄ ";
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
-echo "                                         ▀                                                                            ▀         ";                         
+echo "                                         ▀                                                                            ▀         ";
 
 echo "
 1 for Install
@@ -1579,7 +1583,7 @@ echo "
 0 for back
 "
 choosehk=561df65d1f61f
-read -p "Your choose: " choosehk 
+read -p "Your choose: " choosehk
 if [ $choosehk -eq 1 ]
 then
 	goto inhk
@@ -1638,13 +1642,13 @@ sudo dpkg --add-architecture ia64
 #sudo dpkg --add-architecture mipsr6
 #sudo dpkg --add-architecture mipsr6el
 #sudo dpkg --add-architecture nios2
-#sudo dpkg --add-architecture or1k 
-#sudo dpkg --add-architecture powerpc 
+#sudo dpkg --add-architecture or1k
+#sudo dpkg --add-architecture powerpc
 #sudo dpkg --add-architecture powerpcel
 #sudo dpkg --add-architecture ppc64
 #sudo dpkg --add-architecture riscv64
 #sudo dpkg --add-architecture sh3
-#sudo dpkg --add-architecture sh3eb 
+#sudo dpkg --add-architecture sh3eb
 #sudo dpkg --add-architecture sh4
 #sudo dpkg --add-architecture sh4eb
 #sudo dpkg --add-architecture sparc
@@ -1662,7 +1666,7 @@ gui:
 clear
 sudo bash gui.sh
 echo "Dơ you want to install all deb?"
-read -p "Your choose (y/n): " choose2 
+read -p "Your choose (y/n): " choose2
 if [ $choose2 -eq y ]
 then
 	goto yup
@@ -1737,4 +1741,4 @@ then
 	goto uptab
 fi
 
-	
+
