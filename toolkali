@@ -56,6 +56,7 @@ sudo sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
 sudo swapon /dev/nvm*
 sudo swapon /dev/sd*
+sudo swapon /media/root/*/*swapfile*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
 #############################
@@ -563,15 +564,16 @@ fs.file-max=2147483647
 " | sudo tee -a /etc/sysctl.conf
 sudo cp -f ~/toolkali/fstab.bak /etc/fstab
 echo "
-/dev/nvm* none swap sw 0 0
-/dev/sd* none swap sw 0 0
-/dev/nvme0n1p5 none swap sw 0 0
-/dev/sda4 none swap sw 0 0
-/dev/sdb4 none swap sw 0 0
-/dev/sdc4 none swap sw 0 0
-/dev/sda5 none swap sw 0 0
-/dev/sdb5 none swap sw 0 0
-/dev/sdc5 none swap sw 0 0
+/dev/nvm* swap swap sw 0 0
+/dev/sd* swap swap sw 0 0
+/dev/nvme0n1p5 swap swap sw 0 0
+/dev/sda4 swap swap sw 0 0
+/dev/sdb4 swap swap sw 0 0
+/dev/sdc4 swap swap sw 0 0
+/dev/sda5 swap swap sw 0 0
+/dev/sdb5 swap swap sw 0 0
+/dev/sdc5 swap swap sw 0 0
+/media/root/*/*swapfile* swap swap sw 0 0
 " | sudo tee -a /etc/fstab
 
 
