@@ -1,7 +1,7 @@
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on 
 sudo service packagekit restart
-sudo apt-mark hold wine1.6
+#sudo apt-mark hold wine1.6
 
 #sudo apt-get  -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
 
@@ -32,8 +32,8 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gcc make perl
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests winehq-stable
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests winetricks winbind samba smbclient winetricks 
-git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan $HOME/toolkali/
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+git clone https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan ~/toolkali/Fast-Google-Dorks-Scan
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests sysvinit-core
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gdm3
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ufw
@@ -50,7 +50,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests molly-guard
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests finit-sysv
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bfh-container
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests playonlinux
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bootlogd
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
@@ -58,7 +58,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python-software-properties
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3-software-properties
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-gtk
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests steam-devices
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  \
   libgl1-mesa-dri:amd64 \
@@ -71,7 +71,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests eopkg
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests wakeonlan
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests freerdp
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests xrdp
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests alien
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests microsoft-edge-stable
@@ -98,7 +98,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests dnf
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests flameshot
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests alsa-base alsa-tools alsa-tools-gui alsa-utils alsa-oss alsamixergui libalsaplayer0
@@ -109,7 +109,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-tweak-tool
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests xserver-xorg-core-dbg
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests debian-goodies
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnupg2 curl
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests anydesk
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests libc++
@@ -121,22 +121,22 @@ sudo apt update --fix-missing -y | tee -a /root/Desktop/log_$(date "+%d_%m_%y").
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests wine32
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests wine64
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests lib32z1 lib32ncurses5
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 wget "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x64.deb"
 sudo dpkg -i "VNC-Viewer-6.22.315-Linux-x64.deb"
 wget "https://discord.com/api/download?platform=linux&format=deb"
 sudo dpkg -i "download?platform=linux&format=deb"
 wget "https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
 sudo dpkg -i viber.deb
-sudo apt --fix-broken install -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 find-dbgsym-packages [core_path|running_pid|binary_path]
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
 sudo cp /usr/lib/libicu*.so.61* /usr/lib
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 #sudo bash updatekali.sh
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo dpkg --configure -a | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests snap
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests snapd
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
@@ -150,7 +150,7 @@ sudo snap install electronic-chat
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-center
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests spotify-client
-#sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+#sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests grub-efi
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests packaging-dev sbuild apt-file gitk git-lfs myrepos
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests flameshot
@@ -161,7 +161,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests pulseaudio
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-core
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-tweak
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-tweak-tool
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests xserver-xorg-core-dbg
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests debian-goodies
@@ -176,7 +176,7 @@ sudo systemctl enable xrdp
 sudo systemctl enable xrdp-sesman
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synergy
 sudo dpkg -i "download?platform=linux&format=deb"
-sudo apt --fix-broken install -y | tee -a $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo dpkg -i viber.deb
 curl -Lo /icu-61.1-1-x86_64.pkg.tar.xz https://archive.archlinux.org/packages/i/icu/icu-61.1-1-x86_64.pkg.tar.xz
 tar --wildcards --no-anchored --warning=none -xf /icu-61.1-1-x86_64.pkg.tar.xz *libicudata.so.61* *libicui18n.so.61* *libicuuc.so.61*
@@ -215,8 +215,8 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 #sudo rm -fRvd /tmp/apt-dpkg-install-QpG6h2/*wine*
 #sudo rm -fRvd /var/cache/apt/archives/*wine*
 #sudo rm -fRvd /usr/lib/x86_64-linux-gnu/*wine*/
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt update --fix-missing -y | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kali-tools-information-gathering
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kali-tools-vulnerability
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kali-tools-web
@@ -371,9 +371,9 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *dm*
 sudo dpkg -P i3lock*
 sudo dpkg -P i3lock
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt update --fix-missing -y | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo dpkg --configure -a | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 cd /var/cache/apt/archives/ ###########################################################
 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kubuntu-desktop
@@ -650,8 +650,8 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synergy*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *synergy*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests yadm*
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt update --fix-missing -y | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 
 
 
@@ -666,9 +666,9 @@ sudo systemctl start snapd.socket snapd apparmor
 find-dbgsym-packages [core_path|running_pid|binary_path]
 sudo apt-get -d --download-only install -y ibus-unikey*
 sudo apt-get -d --download-only install -y ibus-unikey
-sudo apt --fix-broken install -y | tee  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo apt update --fix-missing -y | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
-sudo dpkg --configure -a | tee -a  $HOME/Desktop/log_$(date "+%d_%m_%y").txt
+sudo apt --fix-broken install -y | tee  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo apt update --fix-missing -y | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo dpkg --configure -a | tee -a  ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests i3wm*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *i3wm*
