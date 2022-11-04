@@ -3,10 +3,10 @@ smart_script(){
     # if there's no SCRIPT_LOG_FILE exported yet
     if [ -z "$SCRIPT_LOG_FILE" ]; then
         # make folder paths
-        logdirparent=~/log_Tool
-        logdirraw=raw/$(date "+%d_%h_%y")
+        logdirparent=~/toolkali/log/
+        logdirraw=raw/$(date "+%y_%h_%d")
         logdir=$logdirparent/$logdirraw
-        logfile=$logdir/$(date "+%d_%h_%y").$$.rawlog
+        logfile=$logdir/log_$(date "+%y_%h_%d").txt.$$.rawlog
 
         # if no folder exist - make one
         if [ ! -d $logdir ]; then
