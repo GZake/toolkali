@@ -200,548 +200,464 @@ Errors were encountered while processing:
 needrestart is being skipped since dpkg has failed
 Ign:1 https://security.kali.org ./ InRelease
 Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
-Ign:3 https://ftp.cn.debian.org/debian sid InRelease
-Ign:4 https://httpredir.debian.org ./ InRelease
-Ign:5 https://ftp.debian.org/debian ./ InRelease
-Ign:6 https://ftp.de.debian.org ./ InRelease
+Ign:3 https://ftp.debian.org/debian ./ InRelease
+Ign:4 https://ftp.cn.debian.org/debian sid InRelease
+Ign:5 https://ftp.de.debian.org ./ InRelease
+Ign:6 https://httpredir.debian.org ./ InRelease
 Ign:7 https://ftp.debian.org/debian Debian8.11 InRelease
 Get:8 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04 ./ InRelease [1.604 B]
-Ign:9 https://kali.itsec.am ./ InRelease
+Ign:9 https://archive.archlinux.org ./ InRelease
+Ign:10 https://kali.itsec.am ./ InRelease
 Ign:1 https://security.kali.org ./ InRelease
-Ign:10 https://http.kali.org/kali ./ InRelease
-Err:11 https://httpredir.debian.org ./ Release
+Get:11 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04 ./ InRelease [1.604 B]
+Err:12 https://httpredir.debian.org ./ Release
   404  Not Found [IP: 151.101.78.132 443]
-Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
-Ign:13 https://ftp.debian.org/debian Debian9.13 InRelease
-Ign:14 https://archive.archlinux.org ./ InRelease
-Ign:16 https://http.kali.org ./ InRelease
-Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
-Err:17 https://archive.archlinux.org ./ Release
+Ign:13 https://http.kali.org/kali ./ InRelease
+Err:14 https://archive.archlinux.org ./ Release
   404  Not Found [IP: 49.12.124.107 443]
-Hit:18 https://ftp.debian.org/debian Debian10.13 InRelease
-Ign:3 https://ftp.cn.debian.org/debian sid InRelease
-Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
-Hit:21 https://ftp.debian.org/debian Debian11.5 InRelease
-Get:22 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04 ./ InRelease [1.604 B]
-Ign:23 https://http.kali.org /kali InRelease
-Ign:24 https://ftp.up.pt/debian ./ InRelease
-Hit:25 https://kali.itsec.am/kali kali-rolling InRelease
-Get:26 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10 ./ InRelease [1.596 B]
-Hit:27 https://ftp.debian.org/debian bookworm-proposed-updates InRelease
-Ign:28 https://http.kali.org /wheezy InRelease
-Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
-Get:30 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11 ./ InRelease [1.596 B]
-Hit:31 https://ftp.debian.org/debian bookworm-updates InRelease
-Hit:32 https://ftp.up.pt/debian bookworm-proposed-updates InRelease
-Get:33 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10 ./ InRelease [1.604 B]
-Hit:35 https://ftp.up.pt/debian bookworm-updates InRelease
-Get:36 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04 ./ InRelease [1.604 B]
-Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
-Hit:38 https://ftp.debian.org/debian bookworm InRelease
-Get:39 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable ./ InRelease [1.620 B]
-Hit:41 https://kali.itsec.am/kali kali-rolling-only InRelease
-Hit:42 https://ftp.up.pt/debian bookworm InRelease
-Ign:1 https://security.kali.org ./ InRelease
-Hit:43 https://ftp.debian.org/debian bullseye-proposed-updates InRelease
-Ign:44 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ InRelease
-Hit:45 https://ftp.debian.org/debian bullseye-updates InRelease
-Ign:47 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ InRelease
-Hit:48 https://ftp.up.pt/debian bullseye-proposed-updates InRelease
-Hit:49 https://ftp.debian.org/debian bullseye InRelease
-Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
+Ign:15 https://ftp.de.debian.org Debian8.11 InRelease
+Get:16 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10 ./ InRelease [1.596 B]
+Ign:17 https://ftp.debian.org/debian Debian9.13 InRelease
+Ign:19 https://http.kali.org ./ InRelease
+Get:20 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11 ./ InRelease [1.596 B]
 Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
-Hit:51 https://ftp.debian.org/debian buster-proposed-updates InRelease
-Ign:3 https://ftp.cn.debian.org/debian sid InRelease
-Hit:53 https://ftp.up.pt/debian bullseye-updates InRelease
-Hit:54 https://ftp.debian.org/debian buster-updates InRelease
-Get:55 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11 ./ InRelease [1.603 B]
-Hit:56 https://ftp.debian.org/debian buster InRelease
-Err:57 https://http.kali.org/kali ./ Release
+Hit:21 https://ftp.debian.org/debian Debian10.13 InRelease
+Ign:22 https://ftp.up.pt/debian ./ InRelease
+Get:23 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10 ./ InRelease [1.604 B]
+Ign:4 https://ftp.cn.debian.org/debian sid InRelease
+Ign:25 https://ftp.de.debian.org Debian9.13 InRelease
+Hit:26 https://ftp.debian.org/debian Debian11.5 InRelease
+Get:27 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04 ./ InRelease [1.604 B]
+Ign:28 https://http.kali.org /kali InRelease
+Get:29 https://kali.itsec.am/kali kali-rolling InRelease [30,6 kB]
+Hit:30 https://ftp.up.pt/debian bookworm-proposed-updates InRelease
+Get:31 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable ./ InRelease [1.620 B]
+Hit:32 https://ftp.debian.org/debian bookworm-proposed-updates InRelease
+Ign:33 https://http.kali.org /wheezy InRelease
+Ign:34 https://ftp.de.debian.org Debian10.13 InRelease
+Ign:35 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ InRelease
+Hit:36 https://ftp.up.pt/debian bookworm-updates InRelease
+Ign:37 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ InRelease
+Hit:39 https://ftp.up.pt/debian bookworm InRelease
+Hit:40 https://ftp.debian.org/debian bookworm-updates InRelease
+Get:41 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11 ./ InRelease [1.603 B]
+Ign:42 https://ftp.de.debian.org Debian11.5 InRelease
+Get:44 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11 ./ InRelease [1.596 B]
+Ign:1 https://security.kali.org ./ InRelease
+Hit:45 https://kali.itsec.am/kali kali-rolling-only InRelease
+Hit:46 https://ftp.up.pt/debian bullseye-proposed-updates InRelease
+Hit:47 https://ftp.debian.org/debian bookworm InRelease
+Get:48 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11 ./ InRelease [1.612 B]
+Get:50 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11 ./ InRelease [1.597 B]
+Ign:51 https://ftp.de.debian.org bookworm-updates InRelease
+Hit:52 https://ftp.up.pt/debian bullseye-updates InRelease
+Ign:54 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ InRelease
+Hit:55 https://ftp.debian.org/debian bullseye-proposed-updates InRelease
+Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
+Ign:4 https://ftp.cn.debian.org/debian sid InRelease
+Hit:56 https://ftp.up.pt/debian bullseye InRelease
+Ign:57 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ InRelease
+Err:58 https://http.kali.org/kali ./ Release
   404  Not Found [IP: 192.99.200.113 443]
-Err:58 https://kali.itsec.am ./ Release
-  404  Not Found [IP: 31.47.196.154 443]
-Hit:59 https://ftp.up.pt/debian bullseye InRelease
+Hit:59 https://ftp.debian.org/debian bullseye-updates InRelease
 Ign:60 https://ftp.de.debian.org bookworm InRelease
-Hit:61 https://ftp.debian.org/debian jessie-updates InRelease
-Get:62 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11 ./ InRelease [1.596 B]
-Ign:63 https://ftp.debian.org/debian jessie InRelease
-Err:64 https://http.kali.org ./ Release
+Get:61 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11 ./ InRelease [1.599 B]
+Err:62 https://kali.itsec.am ./ Release
+  404  Not Found [IP: 31.47.196.154 443]
+Err:63 https://http.kali.org ./ Release
   404  Not Found [IP: 192.99.200.113 443]
-Get:65 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11 ./ InRelease [1.612 B]
-Hit:66 https://ftp.up.pt/debian buster-proposed-updates InRelease
-Ign:67 http://ftp.debian.org ./ InRelease
-Err:68 https://http.kali.org /kali Release
+Hit:64 https://ftp.up.pt/debian buster-proposed-updates InRelease
+Hit:65 https://ftp.debian.org/debian bullseye InRelease
+Err:66 https://http.kali.org /kali Release
   404  Not Found [IP: 192.99.200.113 443]
-Get:69 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11 ./ InRelease [1.597 B]
-Ign:70 http://security.debian.org/debian-security ./ InRelease
-Ign:71 http://kali.cs.nctu.edu.tw/kali ./ InRelease
-Ign:72 http://archive.ubuntu.com/ubuntu ./ InRelease
-Hit:73 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
+Hit:67 https://ftp.debian.org/debian buster-proposed-updates InRelease
+Hit:68 https://ftp.up.pt/debian buster-updates InRelease
+Hit:69 https://ftp.debian.org/debian buster-updates InRelease
+Get:70 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10 ./ InRelease [1.550 B]
+Hit:71 https://ftp.debian.org/debian buster InRelease
+Ign:72 http://ftp.debian.org ./ InRelease
+Ign:73 http://cdn-fastly.deb.debian.org/debian-ports ./ InRelease
 Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
-Hit:75 https://ftp.up.pt/debian buster-updates InRelease
-Err:76 https://http.kali.org /wheezy Release
+Err:75 https://http.kali.org /wheezy Release
   404  Not Found [IP: 192.99.200.113 443]
-Ign:77 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ InRelease
-Ign:78 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ InRelease
-Ign:79 https://ftp.debian.org/debian oldoldoldstable InRelease
-Ign:80 http://deb.debian.org/debian ./ InRelease
-Hit:81 https://ftp.up.pt/debian buster InRelease
-Ign:82 http://kali.download ./ InRelease
-Ign:83 http://cz.archive.ubuntu.com ./ InRelease
-Ign:84 http://cdn-fastly.deb.debian.org/debian-ports ./ InRelease
-Hit:85 http://kali.download/kali kali-rolling InRelease
-Hit:86 https://ftp.debian.org/debian oldoldstable-proposed-updates InRelease
-Get:87 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11 ./ InRelease [1.599 B]
-Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
-Ign:89 https://ftp.up.pt/debian Debian8.11 InRelease
-Get:90 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10 ./ InRelease [1.550 B]
-Hit:91 https://ftp.debian.org/debian oldoldstable-updates InRelease
-Ign:92 http://ftp-stud.hs-esslingen.de ./ InRelease
+Hit:76 https://ftp.debian.org/debian jessie-updates InRelease
+Get:77 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11 ./ InRelease [1.550 B]
+Hit:78 https://ftp.up.pt/debian buster InRelease
+Get:79 https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11 ./ InRelease [1.573 B]
+Ign:80 http://security.debian.org/debian-security ./ InRelease
+Ign:81 http://kali.download ./ InRelease
+Ign:82 http://ftp-stud.hs-esslingen.de ./ InRelease
+Ign:83 http://kali.cs.nctu.edu.tw/kali ./ InRelease
+Ign:84 http://archive.ubuntu.com/ubuntu ./ InRelease
+Get:85 http://kali.download/kali kali-rolling InRelease [30,6 kB]
+Ign:86 https://ftp.up.pt/debian Debian8.11 InRelease
+Ign:87 https://ftp.de.debian.org bullseye-updates InRelease
+Ign:88 https://download.opensuse.org ./ InRelease
+Ign:89 https://ftp.debian.org/debian jessie InRelease
+Ign:90 http://deb.debian.org/debian ./ InRelease
+Ign:92 http://cz.archive.ubuntu.com ./ InRelease
+Ign:93 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ InRelease
 Ign:94 https://ftp.up.pt/debian Debian9.13 InRelease
-Get:95 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11 ./ InRelease [1.550 B]
+Ign:95 https://download.opensuse.org/repositories ./ InRelease
 Ign:96 https://ftp.de.debian.org bullseye InRelease
-Ign:97 https://ftp.debian.org/debian oldoldstable InRelease
+Hit:97 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
 Hit:98 https://ftp.up.pt/debian Debian10.13 InRelease
-Hit:99 https://ftp.debian.org/debian oldstable-proposed-updates InRelease
-Hit:100 https://ftp.up.pt/debian Debian11.5 InRelease
-Get:101 https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11 ./ InRelease [1.573 B]
-Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
-Ign:103 https://download.opensuse.org ./ InRelease
-Ign:104 http://ua.archive.ubuntu.com ./ InRelease
-Hit:105 https://ftp.debian.org/debian oldstable-updates InRelease
-Hit:106 https://ftp.up.pt/debian jessie-updates InRelease
-Ign:107 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ InRelease
-Hit:108 https://ftp.debian.org/debian oldstable InRelease
-Ign:109 https://download.opensuse.org/repositories ./ InRelease
-Ign:110 https://ftp.up.pt/debian jessie InRelease
-Ign:111 https://ftp.de.debian.org buster-updates InRelease
+Ign:99 https://download.opensuse.org/repositories/home: ./ InRelease
+Ign:100 https://download.opensuse.org/repositories/home:/npreining: ./ InRelease
+Ign:101 https://ftp.debian.org/debian oldoldoldstable InRelease
+Hit:102 https://ftp.up.pt/debian Debian11.5 InRelease
+Ign:103 https://ftp.de.debian.org buster-proposed-updates InRelease
+Hit:104 https://ftp.debian.org/debian oldoldstable-proposed-updates InRelease
+Hit:105 https://ftp.up.pt/debian jessie-updates InRelease
+Ign:106 http://ua.archive.ubuntu.com ./ InRelease
+Hit:107 https://ftp.debian.org/debian oldoldstable-updates InRelease
+Ign:108 https://ftp.up.pt/debian jessie InRelease
+Ign:109 https://ftp.de.debian.org buster-updates InRelease
+Ign:110 https://ftp.debian.org/debian oldoldstable InRelease
 Err:1 https://security.kali.org ./ InRelease
   Could not resolve 'security.kali.org'
-Ign:112 https://download.opensuse.org/repositories/home: ./ InRelease
-Hit:113 https://ftp.debian.org/debian proposed-updates InRelease
-Hit:114 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
-Ign:115 https://download.opensuse.org/repositories/home:/npreining: ./ InRelease
-Ign:116 https://ftp.de.debian.org buster InRelease
-Ign:117 https://ftp.up.pt/debian oldoldoldstable InRelease
-Hit:118 https://ftp.debian.org/debian rc-buggy InRelease
+Hit:111 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
+Hit:112 https://ftp.debian.org/debian oldstable-proposed-updates InRelease
+Ign:113 https://ftp.de.debian.org buster InRelease
+Ign:114 https://ftp.up.pt/debian oldoldoldstable InRelease
+Hit:115 https://ftp.debian.org/debian oldstable-updates InRelease
+Hit:116 https://ftp.up.pt/debian oldoldstable-proposed-updates InRelease
 Err:2 https://ftp.cn.debian.org/debian ./ InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 45.125.0.6 443]
-Err:3 https://ftp.cn.debian.org/debian sid InRelease
+Hit:117 https://ftp.debian.org/debian oldstable InRelease
+Err:4 https://ftp.cn.debian.org/debian sid InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 45.125.0.6 443]
-Hit:119 https://ftp.debian.org/debian stable-proposed-updates InRelease
-Hit:120 https://ftp.up.pt/debian oldoldstable-proposed-updates InRelease
-Ign:121 https://ftp.de.debian.org jessie-updates InRelease
-Hit:122 https://ftp.up.pt/debian oldoldstable-updates InRelease
-Hit:123 https://ftp.debian.org/debian stable-updates InRelease
-Err:124 http://ftp.debian.org ./ Release
+Ign:118 https://ftp.de.debian.org jessie-updates InRelease
+Ign:119 https://deb.torproject.org ./ InRelease
+Hit:120 https://ftp.up.pt/debian oldoldstable-updates InRelease
+Hit:121 https://ftp.debian.org/debian proposed-updates InRelease
+Ign:122 https://ftp.up.pt/debian oldoldstable InRelease
+Hit:123 https://ftp.debian.org/debian rc-buggy InRelease
+Ign:124 https://ftp.de.debian.org jessie InRelease
+Hit:125 https://ftp.debian.org/debian stable-proposed-updates InRelease
+Hit:126 https://ftp.debian.org/debian stable-updates InRelease
+Hit:127 https://ftp.up.pt/debian oldstable-proposed-updates InRelease
+Ign:128 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Hit:129 https://ftp.debian.org/debian stable InRelease
+Err:130 http://ftp.debian.org ./ Release
   404  Not found [IP: 151.101.78.132 80]
-Ign:125 https://ftp.up.pt/debian oldoldstable InRelease
-Hit:126 https://ftp.debian.org/debian stable InRelease
-Ign:127 https://ftp.de.debian.org jessie InRelease
-Hit:128 https://ftp.debian.org/debian stretch-proposed-updates InRelease
-Hit:129 https://ftp.debian.org/debian stretch-updates InRelease
-Hit:130 https://ftp.up.pt/debian oldstable-proposed-updates InRelease
-Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
-Ign:132 https://ftp.debian.org/debian stretch InRelease
-Err:133 http://kali.cs.nctu.edu.tw/kali ./ Release
-  404  Not Found [IP: 140.113.17.5 80]
-Ign:134 http://security.debian.org ./ InRelease
-Err:135 http://archive.ubuntu.com/ubuntu ./ Release
-  404  Not Found [IP: 91.189.91.38 80]
-Hit:136 https://ftp.up.pt/debian oldstable-updates InRelease
-Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
-Hit:138 https://ftp.up.pt/debian oldstable InRelease
-Ign:139 http://deb.debian.org/debian-debug ./ InRelease
-Err:140 https://ftp.debian.org/debian ./ Release
+Hit:131 https://ftp.up.pt/debian oldstable-updates InRelease
+Ign:132 http://cdn-fastly.deb.debian.org ./ InRelease
+Hit:134 https://ftp.debian.org/debian stretch-proposed-updates InRelease
+Hit:136 https://ftp.debian.org/debian stretch-updates InRelease
+Ign:137 https://ftp.debian.org/debian stretch InRelease
+Ign:138 https://ftp.de.debian.org oldoldoldstable InRelease
+Hit:139 https://ftp.up.pt/debian oldstable InRelease
+Hit:140 https://dl.winehq.org/wine-builds/debian bookworm InRelease
+Hit:141 https://dl.winehq.org/wine-builds/debian bullseye InRelease
+Hit:142 https://dl.winehq.org/wine-builds/debian buster InRelease
+Hit:143 https://dl.winehq.org/wine-builds/debian jessie InRelease
+Err:144 https://ftp.debian.org/debian ./ Release
   404  Not Found [IP: 151.101.78.132 443]
-Ign:141 http://cz.archive.ubuntu.com/ubuntu ./ InRelease
-Ign:142 http://kali.download/kali kali-rolling-updates InRelease
-Ign:143 http://cdn-fastly.deb.debian.org ./ InRelease
-Hit:144 https://ftp.up.pt/debian proposed-updates InRelease
-Hit:145 https://ftp.debian.org/debian Debian8.11 Release
-Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
-Ign:148 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar InRelease
-Hit:149 https://ftp.debian.org/debian Debian9.13 Release
-Hit:150 https://ftp.up.pt/debian rc-buggy InRelease
-Hit:151 https://ftp.debian.org/debian jessie Release
-Hit:152 https://ftp.up.pt/debian stable-proposed-updates InRelease
-Hit:153 https://ftp.debian.org/debian oldoldoldstable Release
-Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
-Hit:155 https://ftp.up.pt/debian stable-updates InRelease
-Err:156 http://ua.archive.ubuntu.com ./ Release
+Hit:145 https://dl.winehq.org/wine-builds/debian oldstable InRelease
+Get:146 https://dl.winehq.org/wine-builds/debian stable InRelease [8.045 B]
+Ign:147 http://security.debian.org ./ InRelease
+Err:148 http://kali.cs.nctu.edu.tw/kali ./ Release
+  404  Not Found [IP: 140.113.17.5 80]
+Ign:149 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar InRelease
+Err:150 http://archive.ubuntu.com/ubuntu ./ Release
+  404  Not Found [IP: 91.189.91.39 80]
+Hit:151 https://dl.winehq.org/wine-builds/debian stretch InRelease
+Hit:152 https://dl.winehq.org/wine-builds/debian wheezy InRelease
+Hit:153 https://ftp.up.pt/debian proposed-updates InRelease
+Ign:154 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Hit:155 https://ftp.debian.org/debian Debian8.11 Release
+Hit:156 https://brave-browser-apt-beta.s3.brave.com stable InRelease
+Ign:157 http://cz.archive.ubuntu.com/ubuntu ./ InRelease
+Ign:158 http://deb.debian.org/debian-debug ./ InRelease
+Hit:159 https://ftp.up.pt/debian rc-buggy InRelease
+Hit:160 https://brave-browser-apt-dev.s3.brave.com stable InRelease
+Hit:161 https://ftp.debian.org/debian Debian9.13 Release
+Hit:162 https://ftp.up.pt/debian stable-proposed-updates InRelease
+Get:163 https://kali.itsec.am/kali kali-rolling/main Sources [15,1 MB]
+Ign:164 https://ftp.de.debian.org oldoldstable-updates InRelease
+Hit:165 https://ftp.debian.org/debian jessie Release
+Hit:166 https://brave-browser-apt-nightly.s3.brave.com stable InRelease
+Err:167 http://ua.archive.ubuntu.com ./ Release
   404  Not Found [IP: 77.120.62.8 80]
-Hit:157 https://ftp.debian.org/debian oldoldstable Release
-Hit:158 https://ftp.up.pt/debian stable InRelease
-Ign:159 https://ftp.de.debian.org oldoldstable InRelease
-Hit:160 https://ftp.debian.org/debian stretch Release
-Hit:161 https://ftp.up.pt/debian stretch-proposed-updates InRelease
-Hit:162 https://ftp.up.pt/debian stretch-updates InRelease
-Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
-Ign:164 https://ftp.up.pt/debian stretch InRelease
-Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
-Hit:166 https://ftp.up.pt/pub/debian bookworm-proposed-updates InRelease
-Hit:167 https://ftp.up.pt/pub/debian bookworm-updates InRelease
-Ign:168 https://ftp.de.debian.org oldstable InRelease
-Hit:169 https://ftp.up.pt/pub/debian bookworm InRelease
-Err:61 https://ftp.debian.org/debian jessie-updates InRelease
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Hit:170 https://ftp.up.pt/pub/debian bullseye-proposed-updates InRelease
-Ign:171 https://ftp.de.debian.org proposed-updates InRelease
-Hit:172 https://ftp.up.pt/pub/debian bullseye-updates InRelease
-Hit:173 https://ftp.up.pt/pub/debian bullseye InRelease
-Ign:174 https://ftp.de.debian.org rc-buggy InRelease
-Err:175 http://security.debian.org/debian-security ./ Release
+Hit:168 https://ftp.up.pt/debian stable-updates InRelease
+Hit:169 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Hit:170 https://ftp.debian.org/debian oldoldoldstable Release
+Hit:171 https://ftp.up.pt/debian stable InRelease
+Ign:172 https://ftp.de.debian.org oldoldstable InRelease
+Hit:173 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:174 https://ftp.debian.org/debian oldoldstable Release
+Hit:175 https://ftp.debian.org/debian stretch Release
+Hit:176 https://ftp.up.pt/debian stretch-proposed-updates InRelease
+Ign:177 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Hit:178 https://ftp.up.pt/debian stretch-updates InRelease
+Ign:179 https://ftp.up.pt/debian stretch InRelease
+Ign:180 https://ftp.de.debian.org oldstable-updates InRelease
+Ign:181 https://fast-cdn.meetsidekick.com/builds ./ InRelease
+Hit:182 https://ftp.up.pt/pub/debian bookworm-proposed-updates InRelease
+Hit:183 https://ftp.up.pt/pub/debian bookworm-updates InRelease
+Ign:184 https://ftp.de.debian.org oldstable InRelease
+Hit:185 https://ftp.up.pt/pub/debian bookworm InRelease
+Hit:186 https://ftp.up.pt/pub/debian bullseye-proposed-updates InRelease
+Ign:187 https://ftp.de.debian.org proposed-updates InRelease
+Err:188 https://sidekick-cdn-production.meetsidekick.com/builds ./ InRelease
+  403  Forbidden [IP: 107.155.6.130 443]
+Hit:189 https://ftp.up.pt/pub/debian bullseye-updates InRelease
+Ign:190 https://ftp.de.debian.org rc-buggy InRelease
+Hit:191 https://ftp.up.pt/pub/debian bullseye InRelease
+Err:192 http://cdn-fastly.deb.debian.org/debian-ports ./ Release
   404  Not Found [IP: 151.101.78.132 80]
-Hit:176 https://ftp.up.pt/pub/debian buster-proposed-updates InRelease
-Err:177 http://security.debian.org ./ Release
+Hit:193 https://ftp.up.pt/pub/debian buster-proposed-updates InRelease
+Ign:194 https://ftp.de.debian.org stable-proposed-updates InRelease
+Hit:195 https://download.sublimetext.com apt/dev/ InRelease
+Err:196 http://security.debian.org/debian-security ./ Release
   404  Not Found [IP: 151.101.78.132 80]
-Ign:178 http://deb.debian.org/debian-ports ./ InRelease
-Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
-Ign:180 http://kali.download/kali kali-rolling-proposed InRelease
-Err:181 http://cdn-fastly.deb.debian.org/debian-ports ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Hit:182 https://ftp.up.pt/pub/debian buster-updates InRelease
-Ign:183 http://deb.debian.org/debian-security ./ InRelease
-Ign:184 http://deb.debian.org ./ InRelease
-Ign:185 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar InRelease
-Err:186 http://kali.download ./ Release
-  404  Not Found [IP: 104.18.103.100 80]
-Err:73 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Hit:187 https://ftp.up.pt/pub/debian buster InRelease
-Hit:188 http://deb.debian.org/debian oldstable InRelease
-Err:189 http://cz.archive.ubuntu.com ./ Release
+Ign:197 http://kali.download/kali kali-rolling-updates InRelease
+Err:198 http://cz.archive.ubuntu.com ./ Release
   404  Not Found [IP: 217.31.202.63 80]
-Err:190 http://cdn-fastly.deb.debian.org ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Ign:191 https://ftp.de.debian.org stable-updates InRelease
-Err:192 http://kali.download/kali kali-rolling-updates Release
-  404  Not Found [IP: 104.18.103.100 80]
-Err:193 http://deb.debian.org/debian ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Ign:194 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar InRelease
-Ign:195 http://repo.steampowered.com ./ InRelease
-Err:196 http://kali.download/kali kali-rolling-proposed Release
-  404  Not Found [IP: 104.18.103.100 80]
-Err:197 http://cz.archive.ubuntu.com/ubuntu ./ Release
-  404  Not Found [IP: 217.31.202.63 80]
-Err:198 http://deb.debian.org/debian-debug ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Ign:199 https://ftp.up.pt/pub/debian Debian8.11 InRelease
-Err:200 http://deb.debian.org/debian-ports ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Ign:201 https://ftp.de.debian.org stable InRelease
-Ign:202 https://deb.torproject.org ./ InRelease
-Ign:203 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar InRelease
-Err:204 http://deb.debian.org/debian-security ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Ign:205 https://ftp.up.pt/pub/debian Debian9.13 InRelease
-Err:206 http://deb.debian.org ./ Release
-  404  Not Found [IP: 151.101.78.132 80]
-Hit:207 https://ftp.up.pt/pub/debian Debian10.13 InRelease
-Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
-Ign:209 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar InRelease
-Ign:210 http://ddebs.ubuntu.com ./ InRelease
+Ign:199 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar InRelease
+Hit:200 https://ftp.up.pt/pub/debian buster-updates InRelease
+Ign:201 http://repo.steampowered.com ./ InRelease
+Hit:202 https://packages.wazuh.com/4.x/apt stable InRelease
+Hit:203 https://ftp.up.pt/pub/debian buster InRelease
+Ign:204 http://deb.debian.org/debian-ports ./ InRelease
+Ign:205 https://ftp.de.debian.org stable-updates InRelease
+Ign:206 https://ftp.de.debian.org stable InRelease
+Ign:207 https://ftp.up.pt/pub/debian Debian8.11 InRelease
+Ign:208 https://ftp.up.pt/pub/debian Debian9.13 InRelease
+Ign:209 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Hit:210 https://ftp.up.pt/pub/debian Debian10.13 InRelease
 Hit:211 https://ftp.up.pt/pub/debian Debian11.5 InRelease
-Ign:212 http://dl.winehq.org ./ InRelease
-Ign:213 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic InRelease
-Ign:214 https://ftp.de.debian.org stretch-updates InRelease
-Hit:215 https://ftp.up.pt/pub/debian jessie-updates InRelease
-Ign:216 https://ftp.up.pt/pub/debian jessie InRelease
-Ign:217 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar InRelease
-Ign:219 https://ftp.de.debian.org stretch InRelease
-Hit:220 https://dl.winehq.org/wine-builds/debian bookworm InRelease
-Hit:221 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
-Hit:222 https://dl.winehq.org/wine-builds/debian bullseye InRelease
-Hit:223 https://dl.winehq.org/wine-builds/debian buster InRelease
-Hit:224 https://dl.winehq.org/wine-builds/debian jessie InRelease
-Hit:225 https://dl.winehq.org/wine-builds/debian oldstable InRelease
-Ign:226 http://deb.playonlinux.com ./ InRelease
-Get:227 https://dl.winehq.org/wine-builds/debian stable InRelease [8.045 B]
-Hit:228 https://dl.winehq.org/wine-builds/debian stretch InRelease
-Ign:229 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic InRelease
-Hit:230 https://dl.winehq.org/wine-builds/debian wheezy InRelease
-Ign:231 https://ftp.up.pt/pub/debian oldoldoldstable InRelease
-Ign:6 https://ftp.de.debian.org ./ InRelease
-Hit:232 https://brave-browser-apt-beta.s3.brave.com stable InRelease
-Hit:233 https://ftp.up.pt/pub/debian oldoldstable-proposed-updates InRelease
-Ign:234 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar InRelease
-Ign:235 http://apt.postgresql.org ./ InRelease
-Hit:236 https://ftp.up.pt/pub/debian oldoldstable-updates InRelease
-Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
-Ign:237 http://ppa.launchpad.net/savoury1/display/ubuntu lunar InRelease
-Ign:238 https://ftp.up.pt/pub/debian oldoldstable InRelease
-Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
-Hit:239 https://brave-browser-apt-dev.s3.brave.com stable InRelease
-Hit:240 https://ftp.up.pt/pub/debian oldstable-proposed-updates InRelease
-Ign:241 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic InRelease
-Hit:242 https://brave-browser-apt-nightly.s3.brave.com stable InRelease
-Err:106 https://ftp.up.pt/debian jessie-updates InRelease
+Ign:212 https://ftp.de.debian.org stretch-updates InRelease
+Hit:213 https://ftp.up.pt/pub/debian jessie-updates InRelease
+Hit:24 https://mirror.anigil.com/kali kali-rolling InRelease
+Ign:214 https://ftp.up.pt/pub/debian jessie InRelease
+Ign:215 https://ftp.de.debian.org stretch InRelease
+Hit:216 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
+Err:217 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:5 https://ftp.de.debian.org ./ InRelease
+Ign:218 https://ftp.up.pt/pub/debian oldoldoldstable InRelease
+Err:219 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Hit:220 https://ftp.up.pt/pub/debian oldoldstable-proposed-updates InRelease
+Hit:38 https://mirror.anigil.com/kali kali-dev InRelease
+Hit:43 https://mirror.anigil.com/kali kali-last-snapshot InRelease
+Hit:49 https://mirror.anigil.com/kali kali-debian-picks InRelease
+Ign:15 https://ftp.de.debian.org Debian8.11 InRelease
+Hit:53 https://mirror.anigil.com/kali kali-dev-only InRelease
+Hit:221 https://ftp.up.pt/pub/debian oldoldstable-updates InRelease
+Ign:222 https://ftp.up.pt/pub/debian oldoldstable InRelease
+Err:223 http://cdn-fastly.deb.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:25 https://ftp.de.debian.org Debian9.13 InRelease
+Hit:224 https://ftp.up.pt/pub/debian oldstable-proposed-updates InRelease
+Err:225 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Err:226 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Err:227 http://security.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:228 http://kali.download/kali kali-rolling-proposed InRelease
+Err:229 http://cz.archive.ubuntu.com/ubuntu ./ Release
+  404  Not Found [IP: 217.31.202.63 80]
+Hit:230 https://ftp.up.pt/pub/debian oldstable-updates InRelease
+Ign:34 https://ftp.de.debian.org Debian10.13 InRelease
+Err:231 https://download.opensuse.org ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Hit:232 https://ftp.up.pt/pub/debian oldstable InRelease
+Ign:233 http://deb.debian.org/debian-security ./ InRelease
+Ign:234 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar InRelease
+Err:235 http://kali.download ./ Release
+  404  Not Found [IP: 104.18.102.100 80]
+Err:236 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:237 http://ddebs.ubuntu.com ./ InRelease
+Ign:238 http://deb.debian.org ./ InRelease
+Err:76 https://ftp.debian.org/debian jessie-updates InRelease
   The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Hit:243 https://ftp.up.pt/pub/debian oldstable-updates InRelease
-Ign:244 http://extras.ubuntu.com ./ InRelease
-Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
-Hit:245 https://brave-browser-apt-release.s3.brave.com stable InRelease
-Ign:246 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar InRelease
-Hit:247 https://ftp.up.pt/pub/debian oldstable InRelease
-Hit:248 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:249 https://ftp.up.pt/pub/debian proposed-updates InRelease
-Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
-Ign:250 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic InRelease
-Err:114 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Hit:251 https://ftp.up.pt/pub/debian rc-buggy InRelease
-Ign:253 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar InRelease
-Ign:254 http://packages.microsoft.com ./ InRelease
-Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
-Hit:255 https://ftp.up.pt/pub/debian stable-proposed-updates InRelease
-Ign:256 https://fast-cdn.meetsidekick.com/builds ./ InRelease
-Hit:257 https://ftp.up.pt/pub/debian stable-updates InRelease
-Ign:258 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar InRelease
+Err:239 https://download.opensuse.org/repositories ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:42 https://ftp.de.debian.org Debian11.5 InRelease
+Ign:240 http://dl.winehq.org ./ InRelease
+Err:241 http://kali.download/kali kali-rolling-updates Release
+  404  Not Found [IP: 104.18.102.100 80]
+Hit:242 https://ftp.up.pt/pub/debian proposed-updates InRelease
+Hit:243 http://deb.debian.org/debian oldstable InRelease
+Err:244 https://download.opensuse.org/repositories/home: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:245 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar InRelease
+Err:246 http://kali.download/kali kali-rolling-proposed Release
+  404  Not Found [IP: 104.18.102.100 80]
+Hit:247 https://ftp.up.pt/pub/debian rc-buggy InRelease
+Err:248 https://download.opensuse.org/repositories/home:/npreining: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Err:249 http://deb.debian.org/debian ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Get:250 https://kali.itsec.am/kali kali-rolling/non-free Sources [132 kB]
+Ign:51 https://ftp.de.debian.org bookworm-updates InRelease
+Hit:251 https://ftp.up.pt/pub/debian stable-proposed-updates InRelease
+Ign:252 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar InRelease
+Err:253 http://deb.debian.org/debian-debug ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:254 http://deb.playonlinux.com ./ InRelease
+Hit:255 https://ftp.up.pt/pub/debian stable-updates InRelease
+Err:256 http://deb.debian.org/debian-ports ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
 Ign:60 https://ftp.de.debian.org bookworm InRelease
-Hit:259 https://ftp.up.pt/pub/debian stable InRelease
-Ign:260 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar InRelease
-Ign:261 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ InRelease
+Ign:257 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic InRelease
+Hit:258 https://ftp.up.pt/pub/debian stable InRelease
+Err:259 https://deb.torproject.org ./ Release
+  404  Not Found [IP: 95.216.163.36 443]
+Err:260 http://deb.debian.org/debian-security ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Err:261 http://deb.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Err:97 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
 Hit:262 https://ftp.up.pt/pub/debian stretch-proposed-updates InRelease
 Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
-Hit:263 https://ftp.up.pt/pub/debian stretch-updates InRelease
-Err:264 https://sidekick-cdn-production.meetsidekick.com/builds ./ InRelease
-  403  Forbidden [IP: 107.155.6.130 443]
-Ign:265 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic InRelease
-Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
-Ign:266 http://apt.insync.io ./ InRelease
-Ign:267 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar InRelease
+Ign:263 http://apt.postgresql.org ./ InRelease
+Ign:264 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar InRelease
+Hit:265 https://ftp.up.pt/pub/debian stretch-updates InRelease
+Ign:133 https://archive.mariadb.org ./ InRelease
+Get:266 https://kali.itsec.am/kali kali-rolling/main arm64 Packages [18,5 MB]
+Ign:267 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic InRelease
+Ign:87 https://ftp.de.debian.org bullseye-updates InRelease
 Ign:268 https://ftp.up.pt/pub/debian stretch InRelease
+Ign:269 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar InRelease
+Ign:270 http://extras.ubuntu.com ./ InRelease
 Ign:96 https://ftp.de.debian.org bullseye InRelease
-Err:269 https://ftp.up.pt/debian ./ Release
+Err:271 https://ftp.up.pt/debian ./ Release
   404  Not Found [IP: 193.137.29.15 443]
-Ign:270 http://ftp-stud.hs-esslingen.de/debian-security ./ InRelease
-Ign:271 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar InRelease
-Hit:272 https://download.sublimetext.com apt/dev/ InRelease
+Err:105 https://ftp.up.pt/debian jessie-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Ign:272 http://ppa.launchpad.net/savoury1/display/ubuntu lunar InRelease
 Hit:273 https://ftp.up.pt/debian Debian8.11 Release
-Ign:274 http://ftp-stud.hs-esslingen.de/debian ./ InRelease
-Hit:275 https://packages.wazuh.com/4.x/apt stable InRelease
-Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
-Ign:276 http://ftp-stud.hs-esslingen.de/ubuntu ./ InRelease
-Ign:277 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic InRelease
-Hit:278 https://ftp.up.pt/debian Debian9.13 Release
-Hit:279 http://mirror.anigil.com/kali kali-rolling InRelease
-Hit:280 http://mirror.anigil.com/kali kali-rolling-only InRelease
-Hit:281 https://ftp.up.pt/debian jessie Release
-Ign:111 https://ftp.de.debian.org buster-updates InRelease
-Ign:282 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar InRelease
-Hit:284 https://ftp.up.pt/debian oldoldoldstable Release
-Get:285 http://apt.insync.io/debian bookworm InRelease [5.538 B]
-Err:286 https://ftp.debian.org/debian Debian8.11 Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Ign:116 https://ftp.de.debian.org buster InRelease
-Ign:287 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar InRelease
-Hit:288 http://mirror.anigil.com/kali kali-bleeding-edge InRelease
-Hit:289 https://ftp.up.pt/debian oldoldstable Release
-Hit:290 http://mirror.anigil.com/kali kali-debian-picks InRelease
-Hit:291 http://mirror.anigil.com/kali kali-dev InRelease
-Hit:293 https://ftp.up.pt/debian stretch Release
-Hit:294 http://mirror.anigil.com/kali kali-dev-only InRelease
-Ign:295 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic InRelease
-Ign:121 https://ftp.de.debian.org jessie-updates InRelease
-Hit:296 http://mirror.anigil.com/kali kali-last-snapshot InRelease
-Hit:297 https://ftp.up.pt/pub/debian Debian8.11 Release
-Err:298 https://ftp.debian.org/debian jessie Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Ign:299 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar InRelease
-Hit:300 https://ftp.up.pt/pub/debian Debian9.13 Release
-Hit:19 https://mirror.anigil.com/kali kali-rolling InRelease
-Ign:127 https://ftp.de.debian.org jessie InRelease
-Hit:34 https://mirror.anigil.com/kali kali-dev InRelease
-Hit:40 https://mirror.anigil.com/kali kali-last-snapshot InRelease
-Ign:301 http://ddebs.ubuntu.com bionic-proposed InRelease
-Hit:302 https://ftp.up.pt/pub/debian jessie Release
-Ign:303 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic InRelease
-Err:304 https://ftp.debian.org/debian oldoldoldstable Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Hit:305 https://ftp.up.pt/pub/debian oldoldoldstable Release
-Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
-Ign:306 http://ddebs.ubuntu.com bionic-updates InRelease
-Ign:307 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar InRelease
-Hit:308 https://ftp.up.pt/pub/debian oldoldstable Release
-Err:309 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:310 http://ddebs.ubuntu.com bionic InRelease
-Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
-Hit:312 https://ftp.up.pt/pub/debian stretch Release
-Ign:313 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar InRelease
-Ign:314 http://ddebs.ubuntu.com focal-proposed InRelease
-Hit:46 https://mirror.anigil.com/kali kali-debian-picks InRelease
-Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
-Ign:315 http://ddebs.ubuntu.com focal-updates InRelease
-Ign:316 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic InRelease
-Ign:318 http://ddebs.ubuntu.com focal InRelease
-Err:319 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
-Ign:320 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar InRelease
-Hit:52 https://mirror.anigil.com/kali kali-dev-only InRelease
-Ign:321 http://ddebs.ubuntu.com jammy-proposed InRelease
-Ign:322 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic InRelease
-Ign:159 https://ftp.de.debian.org oldoldstable InRelease
-Ign:323 http://ddebs.ubuntu.com jammy-updates InRelease
-Ign:324 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar InRelease
-Err:325 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
+Ign:103 https://ftp.de.debian.org buster-proposed-updates InRelease
+Ign:135 https://tracker.debian.org ./ InRelease
+Hit:274 https://ftp.up.pt/debian Debian9.13 Release
+Ign:275 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic InRelease
+Err:111 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Ign:277 http://packages.microsoft.com ./ InRelease
+Hit:278 https://ftp.up.pt/debian jessie Release
+Ign:109 https://ftp.de.debian.org buster-updates InRelease
+Ign:279 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar InRelease
+Hit:280 https://ftp.up.pt/debian oldoldoldstable Release
+Ign:113 https://ftp.de.debian.org buster InRelease
+Ign:281 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic InRelease
+Hit:282 https://ftp.up.pt/debian oldoldstable Release
+Err:283 https://fast-cdn.meetsidekick.com/builds ./ Release
+  404  Not Found [IP: 13.224.250.122 443]
+Ign:284 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ InRelease
+Hit:285 https://ftp.up.pt/debian stretch Release
+Ign:286 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar InRelease
+Ign:118 https://ftp.de.debian.org jessie-updates InRelease
+Hit:287 https://ftp.up.pt/pub/debian Debian8.11 Release
+Ign:288 http://apt.insync.io ./ InRelease
+Ign:289 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar InRelease
+Hit:290 https://ftp.up.pt/pub/debian Debian9.13 Release
+Ign:124 https://ftp.de.debian.org jessie InRelease
+Ign:18 https://ppa.launchpadcontent.net ./ InRelease
+Ign:91 http://ppa.launchpad.net ./ InRelease
+Hit:291 https://ftp.up.pt/pub/debian jessie Release
+Ign:292 http://ftp-stud.hs-esslingen.de/debian-security ./ InRelease
+Ign:293 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar InRelease
+Ign:128 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Ign:294 http://ftp-stud.hs-esslingen.de/debian ./ InRelease
+Hit:295 https://ftp.up.pt/pub/debian oldoldoldstable Release
+Ign:296 http://ftp-stud.hs-esslingen.de/ubuntu ./ InRelease
+Ign:297 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic InRelease
+Hit:298 https://ftp.up.pt/pub/debian oldoldstable Release
+Hit:299 http://mirror.anigil.com/kali kali-rolling InRelease
+Ign:138 https://ftp.de.debian.org oldoldoldstable InRelease
+Hit:301 http://mirror.anigil.com/kali kali-rolling-only InRelease
+Hit:302 https://ftp.up.pt/pub/debian stretch Release
+Ign:303 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar InRelease
+Get:306 http://apt.insync.io/debian bookworm InRelease [5.538 B]
+Ign:154 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Hit:307 http://mirror.anigil.com/kali kali-bleeding-edge InRelease
+Hit:308 http://mirror.anigil.com/kali kali-debian-picks InRelease
+Ign:309 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar InRelease
+Hit:310 http://mirror.anigil.com/kali kali-dev InRelease
+Hit:311 http://mirror.anigil.com/kali kali-dev-only InRelease
+Hit:312 http://mirror.anigil.com/kali kali-last-snapshot InRelease
+Ign:164 https://ftp.de.debian.org oldoldstable-updates InRelease
+Ign:313 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic InRelease
+Ign:314 http://ddebs.ubuntu.com bionic-proposed InRelease
+Ign:172 https://ftp.de.debian.org oldoldstable InRelease
+Ign:315 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar InRelease
+Ign:316 http://ddebs.ubuntu.com bionic-updates InRelease
+Ign:317 http://ddebs.ubuntu.com bionic InRelease
+Ign:318 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar InRelease
+Ign:319 http://ddebs.ubuntu.com focal-proposed InRelease
+Ign:177 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Ign:320 http://ddebs.ubuntu.com focal-updates InRelease
+Ign:321 http://ddebs.ubuntu.com focal InRelease
+Ign:322 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic InRelease
+Ign:180 https://ftp.de.debian.org oldstable-updates InRelease
+Ign:323 http://ddebs.ubuntu.com jammy-proposed InRelease
+Ign:324 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar InRelease
+Ign:325 http://ddebs.ubuntu.com jammy-updates InRelease
+Ign:184 https://ftp.de.debian.org oldstable InRelease
 Ign:326 http://ddebs.ubuntu.com jammy InRelease
-Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
-Err:327 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Err:328 https://download.opensuse.org ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:329 http://ddebs.ubuntu.com kinetic-proposed InRelease
-Ign:330 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic InRelease
-Err:331 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
-Ign:332 http://ddebs.ubuntu.com kinetic-updates InRelease
-Err:333 https://download.opensuse.org/repositories ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:334 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar InRelease
-Err:335 https://download.opensuse.org/repositories/home: ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:336 http://ddebs.ubuntu.com kinetic InRelease
-Err:337 https://download.opensuse.org/repositories/home:/npreining: ./ Release
-  404  Not Found [IP: 195.135.221.134 443]
-Ign:168 https://ftp.de.debian.org oldstable InRelease
-Ign:338 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic InRelease
-Ign:339 http://ddebs.ubuntu.com trusty-proposed InRelease
-Ign:171 https://ftp.de.debian.org proposed-updates InRelease
-Ign:340 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar InRelease
-Ign:146 https://archive.mariadb.org ./ InRelease
-Ign:341 http://ddebs.ubuntu.com trusty-security InRelease
-Ign:174 https://ftp.de.debian.org rc-buggy InRelease
-Ign:342 http://ddebs.ubuntu.com trusty-updates InRelease
-Ign:343 http://ppa.launchpad.net/system76/pop/ubuntu kinetic InRelease
-Ign:344 http://ddebs.ubuntu.com trusty InRelease
-Ign:345 http://ppa.launchpad.net/system76/pop/ubuntu lunar InRelease
-Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
-Err:346 https://deb.torproject.org ./ Release
-  404  Not Found [IP: 95.216.163.36 443]
-Ign:347 http://ddebs.ubuntu.com xenial-proposed InRelease
-Err:215 https://ftp.up.pt/pub/debian jessie-updates InRelease
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Ign:348 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic InRelease
-Ign:191 https://ftp.de.debian.org stable-updates InRelease
-Ign:349 http://ddebs.ubuntu.com xenial-updates InRelease
-Ign:350 http://ppa.launchpad.net/system76/proposed/ubuntu lunar InRelease
-Err:221 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
-Ign:351 http://ddebs.ubuntu.com xenial InRelease
-Ign:201 https://ftp.de.debian.org stable InRelease
-Hit:352 http://deb.anydesk.com all InRelease
-Ign:353 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic InRelease
-Ign:218 https://tracker.debian.org ./ InRelease
-Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
-Hit:354 http://repository.spotify.com stable InRelease
-Ign:355 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar InRelease
-Ign:214 https://ftp.de.debian.org stretch-updates InRelease
-Ign:356 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic InRelease
-Err:357 http://ftp-stud.hs-esslingen.de ./ Release
-  404  Not Found [IP: 129.143.116.10 80]
-Ign:219 https://ftp.de.debian.org stretch InRelease
-Ign:358 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar InRelease
-Err:359 http://repo.steampowered.com ./ Release
-  404  Not Found [IP: 104.17.152.86 80]
-Ign:6 https://ftp.de.debian.org ./ InRelease
-Ign:360 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic InRelease
-Err:361 http://ddebs.ubuntu.com ./ Release
-  404  Not Found [IP: 185.125.190.18 80]
-Err:362 http://dl.winehq.org ./ Release
-  404  Not Found [IP: 151.101.130.217 80]
-Err:363 https://fast-cdn.meetsidekick.com/builds ./ Release
-  404  Not Found [IP: 13.224.250.11 443]
-Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
-Ign:364 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar InRelease
-Err:365 http://deb.playonlinux.com ./ Release
-  404  Not Found [IP: 51.254.71.191 80]
-Err:366 http://apt.postgresql.org ./ Release
-  404  Not Found [IP: 217.196.149.55 80]
-Ign:283 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling InRelease
-Ign:367 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar InRelease
-Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
-Err:368 http://extras.ubuntu.com ./ Release
-  404  Not Found [IP: 185.125.190.36 80]
-Err:369 http://packages.microsoft.com ./ Release
-  404  Not Found [IP: 40.65.182.21 80]
-Err:370 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
-Err:371 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ Release
-  404  Not Found [IP: 145.220.21.40 80]
-Err:372 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:15 https://ppa.launchpadcontent.net ./ InRelease
-Ign:93 http://ppa.launchpad.net ./ InRelease
-Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
-Err:373 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
-Err:375 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:60 https://ftp.de.debian.org bookworm InRelease
-Err:377 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
-Err:378 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
-Err:379 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:380 https://ftp.up.pt/debian Debian8.11 Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Ign:96 https://ftp.de.debian.org bullseye InRelease
-Err:381 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:383 http://apt.insync.io ./ Release
-  404  Not Found [IP: 156.146.56.166 80]
-Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
-Err:384 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:385 http://ftp-stud.hs-esslingen.de/debian-security ./ Release
-  404  Not Found [IP: 129.143.116.10 80]
-Err:386 http://ppa.launchpad.net/savoury1/display/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:111 https://ftp.de.debian.org buster-updates InRelease
-Err:387 http://ftp-stud.hs-esslingen.de/debian ./ Release
-  404  Not Found [IP: 129.143.116.10 80]
-Err:388 https://ftp.up.pt/debian jessie Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Err:389 http://ftp-stud.hs-esslingen.de/ubuntu ./ Release
-  404  Not Found [IP: 129.143.116.10 80]
-Err:390 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:376 https://tracker.debian.org ./ Release
+Ign:327 http://ddebs.ubuntu.com kinetic-proposed InRelease
+Ign:304 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling InRelease
+Ign:328 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic InRelease
+Ign:329 http://ddebs.ubuntu.com kinetic-updates InRelease
+Ign:187 https://ftp.de.debian.org proposed-updates InRelease
+Ign:330 http://ddebs.ubuntu.com kinetic InRelease
+Ign:331 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar InRelease
+Ign:332 http://ddebs.ubuntu.com trusty-proposed InRelease
+Ign:190 https://ftp.de.debian.org rc-buggy InRelease
+Ign:333 http://ddebs.ubuntu.com trusty-security InRelease
+Ign:334 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar InRelease
+Ign:335 http://ddebs.ubuntu.com trusty-updates InRelease
+Get:336 https://kali.itsec.am/kali kali-rolling/main amd64 Packages [18,7 MB]
+Ign:337 http://ddebs.ubuntu.com trusty InRelease
+Ign:338 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic InRelease
+Ign:194 https://ftp.de.debian.org stable-proposed-updates InRelease
+Err:305 https://tracker.debian.org ./ Release
   404  Not Found [IP: 209.87.16.64 443]
-Ign:116 https://ftp.de.debian.org buster InRelease
-Err:391 https://ftp.up.pt/debian oldoldoldstable Release.gpg
+Ign:339 http://ddebs.ubuntu.com xenial-proposed InRelease
+Ign:340 http://ddebs.ubuntu.com xenial-updates InRelease
+Ign:341 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar InRelease
+Ign:205 https://ftp.de.debian.org stable-updates InRelease
+Ign:342 http://ddebs.ubuntu.com xenial InRelease
+Ign:343 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic InRelease
+Hit:344 http://deb.anydesk.com all InRelease
+Get:345 http://kali.download/kali kali-rolling/main i386 Packages [18,5 MB]
+Ign:346 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar InRelease
+Hit:347 http://repository.spotify.com stable InRelease
+Ign:348 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic InRelease
+Err:349 http://ftp-stud.hs-esslingen.de ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Ign:350 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar InRelease
+Ign:206 https://ftp.de.debian.org stable InRelease
+Ign:351 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic InRelease
+Err:352 http://repo.steampowered.com ./ Release
+  404  Not Found [IP: 104.17.141.86 80]
+Err:353 https://ftp.debian.org/debian Debian8.11 Release.gpg
   The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Hit:392 http://ddebs.ubuntu.com bionic-proposed Release
-Err:393 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:394 http://ddebs.ubuntu.com bionic-updates Release [34,7 kB]
-Ign:121 https://ftp.de.debian.org jessie-updates InRelease
-Err:395 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:397 http://ddebs.ubuntu.com bionic Release [34,7 kB]
-Ign:127 https://ftp.de.debian.org jessie InRelease
-Ign:252 http://private-ppa.launchpad.net ./ InRelease
-Err:398 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:399 http://ddebs.ubuntu.com focal-proposed Release [40,5 kB]
-Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
-Err:400 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Hit:401 http://ddebs.ubuntu.com focal-updates Release
-Get:374 https://ppa.launchpadcontent.net ./ Release [16,4 kB]
-Get:403 http://ddebs.ubuntu.com focal Release [40,4 kB]
-Get:404 https://dl.winehq.org/wine-builds/debian stable/main Sources [90,7 kB]
-Err:404 https://dl.winehq.org/wine-builds/debian stable/main Sources
+Ign:209 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Get:354 http://kali.download/kali kali-rolling/main arm64 Packages [18,5 MB]
+Ign:355 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar InRelease
+Err:356 http://ddebs.ubuntu.com ./ Release
+  404  Not Found [IP: 91.189.91.49 80]
+Err:357 http://dl.winehq.org ./ Release
+  404  Not Found [IP: 151.101.130.217 80]
+Ign:212 https://ftp.de.debian.org stretch-updates InRelease
+Ign:358 http://ppa.launchpad.net/system76/pop/ubuntu kinetic InRelease
+Err:359 http://deb.playonlinux.com ./ Release
+  404  Not Found [IP: 51.254.71.191 80]
+Get:300 https://ppa.launchpadcontent.net ./ Release [16,4 kB]
+Ign:215 https://ftp.de.debian.org stretch InRelease
+Err:361 http://apt.postgresql.org ./ Release
+  404  Not Found [IP: 72.32.157.246 80]
+Ign:276 http://private-ppa.launchpad.net ./ InRelease
+Get:362 https://dl.winehq.org/wine-builds/debian stable/main Sources [90,7 kB]
+Err:362 https://dl.winehq.org/wine-builds/debian stable/main Sources
   File has unexpected size (89776 != 90740). Mirror sync in progress? [IP: 151.101.194.217 443]
   Hashes of expected file:
    - Filesize:90740 [weak]
@@ -750,188 +666,288 @@ Err:404 https://dl.winehq.org/wine-builds/debian stable/main Sources
    - SHA1:b00fb9624466ff05a04dff43aac6442f1bba7329 [weak]
    - MD5Sum:2816655ef6a50f3b065087dbc81c3be5 [weak]
   Release file created at: Tue, 01 Nov 2022 17:30:00 +0000
-Err:405 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
-Get:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages [545 kB]
-Get:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages [545 kB]
-Err:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages
+Err:364 https://ftp.debian.org/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Get:365 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages [555 kB]
+Get:365 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages [555 kB]
+Err:365 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages
   
-Get:408 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages [555 kB]
-Err:408 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages
+Get:367 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages [545 kB]
+Err:367 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages
   
-Get:409 http://ddebs.ubuntu.com jammy-proposed Release [40,5 kB]
-Err:410 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:411 http://ddebs.ubuntu.com jammy-updates Release [40,5 kB]
-Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
-Err:412 https://ftp.up.pt/pub/debian Debian8.11 Release.gpg
+Get:368 http://kali.download/kali kali-rolling/main amd64 Packages [18,7 MB]
+Err:369 http://extras.ubuntu.com ./ Release
+  404  Not Found [IP: 185.125.190.36 80]
+Err:370 http://packages.microsoft.com ./ Release
+  404  Not Found [IP: 40.65.182.21 80]
+Ign:5 https://ftp.de.debian.org ./ InRelease
+Err:372 https://ftp.debian.org/debian oldoldoldstable Release.gpg
   The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Get:414 http://ddebs.ubuntu.com jammy Release [40,4 kB]
-Err:415 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
-Get:417 http://ddebs.ubuntu.com kinetic-proposed Release [40,5 kB]
-Err:418 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:419 http://ddebs.ubuntu.com kinetic-updates Release [40,5 kB]
-Ign:159 https://ftp.de.debian.org oldoldstable InRelease
-Err:420 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Get:421 http://ddebs.ubuntu.com kinetic Release [40,4 kB]
-Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
-Get:422 http://ddebs.ubuntu.com trusty-proposed Release [34,8 kB]
-Err:423 https://ftp.up.pt/pub/debian jessie Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Err:424 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:426 https://ftp.up.pt/pub/debian oldoldoldstable Release.gpg
-  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
-Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
-Err:427 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:413 https://ppa.launchpadcontent.net ./ Release.gpg
-Get:430 http://ddebs.ubuntu.com trusty-security Release [23,1 kB]
-Err:431 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:168 https://ftp.de.debian.org oldstable InRelease
-Err:425 https://archive.mariadb.org ./ Release
+Err:373 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ Release
+  404  Not Found [IP: 145.220.21.40 80]
+Ign:15 https://ftp.de.debian.org Debian8.11 InRelease
+Err:363 https://archive.mariadb.org ./ Release
   404  Not Found [IP: 138.201.152.105 443]
-Err:432 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar Release
+Err:374 http://apt.insync.io ./ Release
+  404  Not Found [IP: 156.146.56.166 80]
+Ign:25 https://ftp.de.debian.org Debian9.13 InRelease
+Err:376 http://ftp-stud.hs-esslingen.de/debian-security ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Get:377 http://kali.download/kali kali-rolling/main arm64 Contents (deb) [42,1 MB]
+Err:378 http://ftp-stud.hs-esslingen.de/debian ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Ign:379 http://ppa.launchpad.net/system76/pop/ubuntu lunar InRelease
+Err:381 http://ftp-stud.hs-esslingen.de/ubuntu ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Ign:382 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic InRelease
+Get:383 http://ddebs.ubuntu.com bionic-proposed Release [34,7 kB]
+Ign:34 https://ftp.de.debian.org Debian10.13 InRelease
+Ign:384 http://ppa.launchpad.net/system76/proposed/ubuntu lunar InRelease
+Ign:42 https://ftp.de.debian.org Debian11.5 InRelease
+Ign:385 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic InRelease
+Hit:386 http://ddebs.ubuntu.com bionic-updates Release
+Ign:387 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar InRelease
+Ign:371 https://ppa.launchpadcontent.net ./ Release.gpg
+Get:388 http://ddebs.ubuntu.com bionic Release [34,7 kB]
+Ign:51 https://ftp.de.debian.org bookworm-updates InRelease
+Ign:389 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic InRelease
+Hit:390 http://ddebs.ubuntu.com focal-proposed Release
+Hit:391 http://ddebs.ubuntu.com focal-updates Release
+Ign:60 https://ftp.de.debian.org bookworm InRelease
+Ign:392 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar InRelease
+Get:393 http://ddebs.ubuntu.com focal Release [40,4 kB]
+Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
+Ign:394 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic InRelease
+Get:395 http://ddebs.ubuntu.com jammy-proposed Release [40,5 kB]
+Get:396 http://kali.download/kali kali-rolling/main i386 Contents (deb) [41,6 MB]
+Ign:397 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar InRelease
+Ign:87 https://ftp.de.debian.org bullseye-updates InRelease
+Ign:398 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar InRelease
+Ign:96 https://ftp.de.debian.org bullseye InRelease
+Hit:399 http://ddebs.ubuntu.com jammy-updates Release
+Err:400 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Ign:171 https://ftp.de.debian.org proposed-updates InRelease
-Get:433 http://ddebs.ubuntu.com trusty-updates Release [34,8 kB]
-Err:434 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic Release
+Get:401 http://ddebs.ubuntu.com jammy Release [40,4 kB]
+Err:402 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Ign:174 https://ftp.de.debian.org rc-buggy InRelease
-Err:435 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar Release
+Err:403 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:436 http://ddebs.ubuntu.com trusty Release [35,7 kB]
-Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
-Err:439 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar Release
+Ign:103 https://ftp.de.debian.org buster-proposed-updates InRelease
+Get:404 http://ddebs.ubuntu.com kinetic-proposed Release [40,5 kB]
+Err:405 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:440 http://ddebs.ubuntu.com xenial-proposed Release [40,5 kB]
-Ign:191 https://ftp.de.debian.org stable-updates InRelease
-Err:442 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic Release
+Err:213 https://ftp.up.pt/pub/debian jessie-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Err:406 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:444 http://ddebs.ubuntu.com xenial-updates Release [40,5 kB]
-Ign:201 https://ftp.de.debian.org stable InRelease
-Err:445 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
-Get:447 http://ddebs.ubuntu.com xenial Release [40,4 kB]
-Err:449 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic Release
-  404  Not Found [IP: 185.125.190.52 80]
-Ign:214 https://ftp.de.debian.org stretch-updates InRelease
-Err:452 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:451 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling Release
+Get:408 http://ddebs.ubuntu.com kinetic-updates Release [40,5 kB]
+Err:216 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Err:407 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling Release
   404  Not Found [IP: 138.201.152.105 443]
-Err:455 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic Release
+Err:409 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Ign:219 https://ftp.de.debian.org stretch InRelease
-Err:458 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar Release
+Ign:109 https://ftp.de.debian.org buster-updates InRelease
+Get:410 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [43,0 MB]
+Err:411 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:459 http://ddebs.ubuntu.com bionic Release.gpg [819 B]
-Err:6 https://ftp.de.debian.org ./ InRelease
+Ign:113 https://ftp.de.debian.org buster InRelease
+Err:412 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:413 http://ddebs.ubuntu.com kinetic Release [40,4 kB]
+Ign:118 https://ftp.de.debian.org jessie-updates InRelease
+Err:414 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:124 https://ftp.de.debian.org jessie InRelease
+Err:415 http://ppa.launchpad.net/savoury1/display/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:416 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:417 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:418 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:419 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:420 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:422 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:423 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:424 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:425 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:426 http://ddebs.ubuntu.com trusty-proposed Release [34,8 kB]
+Ign:128 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Ign:138 https://ftp.de.debian.org oldoldoldstable InRelease
+Ign:154 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Ign:164 https://ftp.de.debian.org oldoldstable-updates InRelease
+Ign:172 https://ftp.de.debian.org oldoldstable InRelease
+Ign:177 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Ign:180 https://ftp.de.debian.org oldstable-updates InRelease
+Ign:184 https://ftp.de.debian.org oldstable InRelease
+Ign:187 https://ftp.de.debian.org proposed-updates InRelease
+Ign:190 https://ftp.de.debian.org rc-buggy InRelease
+Get:427 http://ddebs.ubuntu.com trusty-security Release [23,1 kB]
+Err:428 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:194 https://ftp.de.debian.org stable-proposed-updates InRelease
+Get:429 http://ddebs.ubuntu.com trusty-updates Release [34,8 kB]
+Ign:205 https://ftp.de.debian.org stable-updates InRelease
+Ign:206 https://ftp.de.debian.org stable InRelease
+Err:430 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:431 http://ddebs.ubuntu.com trusty Release [35,7 kB]
+Get:432 http://kali.download/kali kali-rolling/non-free amd64 Packages [235 kB]
+Get:433 http://kali.download/kali kali-rolling/non-free i386 Packages [190 kB]
+Get:434 http://ddebs.ubuntu.com xenial-proposed Release [40,5 kB]
+Ign:209 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Err:435 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:421 http://ppa.launchpad.net ./ Release [16,4 kB]
+Ign:212 https://ftp.de.debian.org stretch-updates InRelease
+Err:436 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:437 http://ddebs.ubuntu.com xenial-updates Release [40,5 kB]
+Ign:215 https://ftp.de.debian.org stretch InRelease
+Err:438 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:439 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:5 https://ftp.de.debian.org ./ InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:461 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic Release
+Get:440 http://ddebs.ubuntu.com xenial Release [40,4 kB]
+Err:441 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:462 http://ddebs.ubuntu.com focal Release.gpg [819 B]
-Err:12 https://ftp.de.debian.org Debian8.11 InRelease
+Err:15 https://ftp.de.debian.org Debian8.11 InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Get:463 http://ddebs.ubuntu.com jammy Release.gpg [833 B]
-Err:464 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar Release
+Err:442 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Err:20 https://ftp.de.debian.org Debian9.13 InRelease
+Err:25 https://ftp.de.debian.org Debian9.13 InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Get:465 http://ddebs.ubuntu.com trusty-proposed Release.gpg [819 B]
-Err:466 http://ppa.launchpad.net/system76/pop/ubuntu kinetic Release
+Err:443 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:467 http://ddebs.ubuntu.com trusty-security Release.gpg [198 B]
-Err:29 https://ftp.de.debian.org Debian10.13 InRelease
+Err:34 https://ftp.de.debian.org Debian10.13 InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:468 http://ppa.launchpad.net/system76/pop/ubuntu lunar Release
+Err:444 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Ign:467 http://ddebs.ubuntu.com trusty-security Release.gpg
-Err:37 https://ftp.de.debian.org Debian11.5 InRelease
+Err:42 https://ftp.de.debian.org Debian11.5 InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:469 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic Release
+Err:445 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:454 http://private-ppa.launchpad.net ./ Release [16,4 kB]
-Err:470 http://ppa.launchpad.net/system76/proposed/ubuntu lunar Release
-  404  Not Found [IP: 185.125.190.52 80]
-Err:50 https://ftp.de.debian.org bookworm-updates InRelease
+Err:446 https://ftp.up.pt/debian Debian8.11 Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:51 https://ftp.de.debian.org bookworm-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:471 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic Release
+Err:447 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
 Err:60 https://ftp.de.debian.org bookworm InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:472 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar Release
+Err:449 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:450 https://ftp.up.pt/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:451 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
 Err:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:473 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic Release
+Err:452 https://ftp.up.pt/debian oldoldoldstable Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:454 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Err:88 https://ftp.de.debian.org bullseye-updates InRelease
+Err:87 https://ftp.de.debian.org bullseye-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:474 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar Release
+Err:457 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
 Err:96 https://ftp.de.debian.org bullseye InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:475 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic Release
+Err:458 https://ftp.up.pt/pub/debian Debian8.11 Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:459 http://ppa.launchpad.net/system76/pop/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Err:102 https://ftp.de.debian.org buster-proposed-updates InRelease
+Err:103 https://ftp.de.debian.org buster-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:476 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar Release
+Err:461 http://ppa.launchpad.net/system76/pop/ubuntu lunar Release
   404  Not Found [IP: 185.125.190.52 80]
-Err:111 https://ftp.de.debian.org buster-updates InRelease
+Err:462 https://ftp.up.pt/pub/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:109 https://ftp.de.debian.org buster-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:477 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar Release
+Err:463 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:478 http://ddebs.ubuntu.com trusty-updates Release.gpg [819 B]
-Err:116 https://ftp.de.debian.org buster InRelease
+Err:464 https://ftp.up.pt/pub/debian oldoldoldstable Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:113 https://ftp.de.debian.org buster InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:121 https://ftp.de.debian.org jessie-updates InRelease
+Err:466 http://ppa.launchpad.net/system76/proposed/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:467 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:118 https://ftp.de.debian.org jessie-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:127 https://ftp.de.debian.org jessie InRelease
+Get:455 http://private-ppa.launchpad.net ./ Release [16,4 kB]
+Err:468 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:124 https://ftp.de.debian.org jessie InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Err:470 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:128 https://ftp.de.debian.org oldoldoldstable-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:137 https://ftp.de.debian.org oldoldoldstable InRelease
+Err:471 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:138 https://ftp.de.debian.org oldoldoldstable InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Err:472 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:473 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:154 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:154 https://ftp.de.debian.org oldoldstable-updates InRelease
+Get:474 http://ddebs.ubuntu.com bionic Release.gpg [819 B]
+Err:475 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:164 https://ftp.de.debian.org oldoldstable-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:159 https://ftp.de.debian.org oldoldstable InRelease
+Err:172 https://ftp.de.debian.org oldoldstable InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Get:479 http://ddebs.ubuntu.com trusty Release.gpg [819 B]
-Err:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Err:177 https://ftp.de.debian.org oldstable-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:165 https://ftp.de.debian.org oldstable-updates InRelease
+Err:180 https://ftp.de.debian.org oldstable-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:168 https://ftp.de.debian.org oldstable InRelease
+Get:478 https://kali.itsec.am/kali kali-rolling/main i386 Packages [18,5 MB]
+Err:184 https://ftp.de.debian.org oldstable InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Get:480 http://ppa.launchpad.net ./ Release [16,4 kB]
-Err:171 https://ftp.de.debian.org proposed-updates InRelease
+Err:187 https://ftp.de.debian.org proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:174 https://ftp.de.debian.org rc-buggy InRelease
+Err:190 https://ftp.de.debian.org rc-buggy InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:179 https://ftp.de.debian.org stable-proposed-updates InRelease
+Err:194 https://ftp.de.debian.org stable-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:191 https://ftp.de.debian.org stable-updates InRelease
+Err:205 https://ftp.de.debian.org stable-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:201 https://ftp.de.debian.org stable InRelease
+Get:481 http://ddebs.ubuntu.com focal Release.gpg [819 B]
+Err:206 https://ftp.de.debian.org stable InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Err:209 https://ftp.de.debian.org stretch-proposed-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Get:481 http://ddebs.ubuntu.com xenial Release.gpg [819 B]
-Err:214 https://ftp.de.debian.org stretch-updates InRelease
+Err:212 https://ftp.de.debian.org stretch-updates InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Err:219 https://ftp.de.debian.org stretch InRelease
+Err:215 https://ftp.de.debian.org stretch InRelease
   Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
-Ign:482 http://ppa.launchpad.net ./ Release.gpg
-Ign:483 http://private-ppa.launchpad.net ./ Release.gpg
-Reading package lists...
-Processing triggers for kali-menu (2022.4.1) ...
+Get:485 http://ddebs.ubuntu.com jammy Release.gpg [833 B]
+Ign:483 http://ppa.launchpad.net ./ Release.gpg
+Get:491 https://kali.itsec.am/kali kali-rolling/main arm64 Contents (deb) [42,1 MB]
+Get:492 http://ddebs.ubuntu.com trusty-proposed Release.gpg [819 B]
+Get:493 http://ddebs.ubuntu.com trusty-security Release.gpg [198 B]
+Ign:493 http://ddebs.ubuntu.com trusty-security Release.gpg
+Get:494 http://ddebs.ubuntu.com trusty-updates Release.gpg [819 B]
+Get:495 http://ddebs.ubuntu.com trusty Release.gpg [819 B]
+Get:496 http://ddebs.ubuntu.com xenial Release.gpg [819 B]
+Ign:497 http://private-ppa.launchpad.net ./ Release.gpg
+Get:498 https://kali.itsec.am/kali kali-rolling/main amd64 Contents (deb) [43,0 MB]
+Get:499 https://kali.itsec.am/kali kali-rolling/main i386 Contents (deb) [41,6 MB]
+Get:500 https://kali.itsec.am/kali kali-rolling/non-free amd64 Packages [235 kB]
+Get:501 https://kali.itsec.am/kali kali-rolling/non-free i386 Packages [190 kB]
