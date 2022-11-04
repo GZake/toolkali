@@ -44,10 +44,10 @@ set -e
 #		exit 0
 #	fi
 #else
-	# non-live system
+#	 non-live system
 	/usr/sbin/update-initramfs.orig.initramfs-tools "${@}"
-
-	exit "${?}"
+#
+#	exit "${?}"
 #fi
 
 #case "${_READ_WRITE}" in

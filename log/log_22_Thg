@@ -1,604 +1,34 @@
 Reading package lists...
 Building dependency tree...
 Reading state information...
+Correcting dependencies... Done
 The following packages were automatically installed and are no longer required:
-  appstream-util aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 auctex
-  avahi-utils bladerf blhc castxml catch2 chktex cl-swank clisp clisp-doc
-  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
-  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
-  clisp-module-pcre clisp-module-postgresql clisp-module-zlib
-  dotnet-apphost-pack-6.0 dotnet-hostfxr-6.0 dotnet-runtime-6.0
-  dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0 dvidvi
-  dvipng exif extra-cmake-modules fakechroot finger fish-common fonts-wine
-  genext2fs gir1.2-ayatanaappindicator3-0.1 gir1.2-glib-2.0:i386
-  gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0 gir1.2-vte-2.91 gir1.2-xfconf-0
-  golang-1.18-go golang-1.18-src gpsd-tools greenbone-security-assistant
-  gvmd-common hplip-data hyperspec iputils-tracepath ir-keytable isa-support
-  isympy-common isympy3 jupyter-core jupyter-nbextension-jupyter-js-widgets
-  kismet-capture-nrf-51822 kismet-capture-nrf-52840 kismet-capture-nxp-kw41z
-  kismet-capture-rz-killerbee kismet-capture-ti-cc-2531
-  kismet-capture-ti-cc-2540 kismet-capture-ubertooth-one lacheck latexdiff
-  latexmk lcdf-typetools ldmtool libad9361-0 libadns1 libairspy0 libairspyhf1
-  libapache2-mod-php libappstream-glib8 libapt-inst2.0 libapt-pkg5.0
-  libatk1.0-data libauparse0 libbde1 libbit-vector-perl libbladerf2
-  libboolean-perl libboost-context1.74.0 libbroker2 libbtbb1 libcache-perl
-  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17 libcapi20-3
-  libcarp-clan-perl libclang-cpp11 libclass-errorhandler-perl
+  appstream-util avahi-utils blhc exif extra-cmake-modules fakechroot
+  fish-common fonts-wine genext2fs gir1.2-glib-2.0:i386 gir1.2-gtkspell3-3.0
+  golang-1.18-go golang-1.18-src greenbone-security-assistant hplip-data
+  iputils-tracepath ir-keytable isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets ldmtool libadns1 libappstream-glib8
+  libapt-inst2.0 libapt-pkg5.0 libassuan-dev libatk1.0-data libaudit-dev
+  libauparse0 libbde1 libboolean-perl libboost-context1.74.0
+  libboost-program-options-dev libboost-test-dev libboost-thread-dev
+  libbroker2 libcache-perl libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcap-ng-dev libcapi20-3 libclang-cpp11 libclass-errorhandler-perl
   libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
-  libconfig++9v5:i386 libcppunit-1.15-0 libcppunit-dev libcreg1
-  libcrypt-rc4-perl libdate-calc-perl libdate-calc-xs-perl
-  libdatetime-format-flexible-perl libdatetime-format-mail-perl
-  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
-  libdigest-perl-md5-perl libeigen3-dev libesedb1 libevt1 libevtx1
-  libfakechroot libfeed-find-perl libffado2:i386 libffcall1b
-  libfile-nfslock-perl libflac++10 libfmt-dev libfmt8 libfontbox-java
-  libfreesrp0 libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2
-  libfvde1 libfwnt1 libfwsi1 libgarcon-gtk3-1-0 libgirepository-1.0-1:i386
-  libgirepository1.0-doc libglfw3 libglibmm-2.4-1v5:i386
-  libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3
-  libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4 libgoogle-perftools4
-  libgs9-common libgsm1-dev libgtkspell3-3-0 libguestfs-hfsplus libguestfs-jfs
-  libguestfs-nilfs libguestfs-reiserfs libguestfs-rescue libguestfs-rsync
-  libguestfs-xfs libguestfs0 libgvm21 libhamlib4 libheap-perl
-  libhidapi-libusb0 libhiredis0.14 libhttp-server-simple-perl libi2c-dev:i386
-  libi2c0:i386 libiec61883-0:i386 libiio0 libirman0 libjs-backbone
-  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
-  libjs-jquery-typeahead libjs-marked libjs-moment libjs-prettify
-  libjs-requirejs libjs-requirejs-text libjs-skeleton libjs-terser
-  libjs-text-encoding libjs-xterm libkeybinder-3.0-0 libkf5attica-dev
-  libkf5attica-doc libkf5auth-dev libkf5auth-dev-bin libkf5auth-doc
-  libkf5bookmarks-doc libkf5codecs-dev libkf5codecs-doc libkf5completion-dev
-  libkf5completion-doc libkf5config-dev libkf5config-dev-bin libkf5config-doc
-  libkf5configwidgets-doc libkf5coreaddons-dev libkf5coreaddons-dev-bin
-  libkf5coreaddons-doc libkf5dbusaddons-dev libkf5dbusaddons-doc
-  libkf5globalaccel-dev libkf5globalaccel-doc libkf5guiaddons-dev
-  libkf5guiaddons-doc libkf5i18n-doc libkf5iconthemes-bin libkf5iconthemes-doc
-  libkf5itemviews-dev libkf5itemviews-doc libkf5jobwidgets-dev
-  libkf5jobwidgets-doc libkf5kio-doc libkf5package-dev libkf5package-doc
-  libkf5plasma-doc libkf5pulseaudioqt3 libkf5service-doc libkf5solid-dev
-  libkf5solid-doc libkf5torrent6abi2 libkf5widgetsaddons-dev
-  libkf5widgetsaddons-doc libkf5windowsystem-dev libkf5windowsystem-doc
-  libkf5xmlgui-bin libkf5xmlgui-doc liblbfgsb0 libldm-1.0-0 liblerc3
-  libleveldb1d liblimesuite20.10-1 liblimesuite22.09-1 liblirc0
-  liblms7compact0 liblnk1 libluksde1 liblwp-authen-wsse-perl libmirisdr0
-  libmodi1 libmodule-util-perl libmono-2.0-dev libmono-cairo4.0-cil
-  libmono-cecil-private-cil libmono-cil-dev libmono-codecontracts4.0-cil
-  libmono-compilerservices-symbolwriter4.0-cil libmono-cscompmgd0.0-cil
-  libmono-csharp4.0c-cil libmono-custommarshalers4.0-cil
-  libmono-data-tds4.0-cil libmono-db2-1.0-cil libmono-debugger-soft4.0a-cil
-  libmono-http4.0-cil libmono-management4.0-cil
-  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
-  libmono-microsoft-build-engine4.0-cil
-  libmono-microsoft-build-framework4.0-cil
-  libmono-microsoft-build-tasks-v4.0-4.0-cil
-  libmono-microsoft-build-utilities-v4.0-4.0-cil
-  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
-  libmono-microsoft-visualc10.0-cil
-  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
-  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
-  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
-  libmono-system-componentmodel-composition4.0-cil
-  libmono-system-configuration-install4.0-cil
-  libmono-system-data-datasetextensions4.0-cil
-  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
-  libmono-system-data-services-client4.0-cil
-  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
-  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
-  libmono-system-identitymodel-selectors4.0-cil
-  libmono-system-identitymodel4.0-cil
-  libmono-system-io-compression-filesystem4.0-cil
-  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
-  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
-  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
-  libmono-system-net-http-formatting4.0-cil
-  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
-  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
-  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
-  libmono-system-reactive-experimental2.2-cil
-  libmono-system-reactive-interfaces2.2-cil
-  libmono-system-reactive-linq2.2-cil
-  libmono-system-reactive-observable-aliases0.0-cil
-  libmono-system-reactive-platformservices2.2-cil
-  libmono-system-reactive-providers2.2-cil
-  libmono-system-reactive-runtime-remoting2.2-cil
-  libmono-system-reactive-windows-forms2.2-cil
-  libmono-system-reactive-windows-threading2.2-cil
-  libmono-system-reflection-context4.0-cil
-  libmono-system-runtime-caching4.0-cil
-  libmono-system-runtime-durableinstancing4.0-cil
-  libmono-system-runtime-serialization4.0-cil
-  libmono-system-servicemodel-activation4.0-cil
-  libmono-system-servicemodel-discovery4.0-cil
-  libmono-system-servicemodel-internals0.0-cil
-  libmono-system-servicemodel-routing4.0-cil
-  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
-  libmono-system-serviceprocess4.0-cil
-  libmono-system-threading-tasks-dataflow4.0-cil
-  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
-  libmono-system-web-extensions-design4.0-cil
-  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
-  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
-  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
-  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
-  libmono-system-web-routing4.0-cil
-  libmono-system-web-webpages-deployment2.0-cil
-  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
-  libmono-system-windows-forms-datavisualization4.0a-cil
-  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
-  libmono-system-workflow-componentmodel4.0-cil
-  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
-  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
-  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
-  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
-  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libnautilus-extension1a
-  libncursesw6:i386 libndpi4.2 libnode93 libnunit-cil-dev
-  libnunit-console-runner2.6.3-cil libnunit-core-interfaces2.6.3-cil
-  libnunit-core2.6.3-cil libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil
-  libnunit-util2.6.3-cil libnvpair3linux liboath0 libodpic4
-  libole-storage-lite-perl libolecf1 libopenh264-6 libopusfile0 libosmosdr0
-  libpari-gmp-tls8 libparse-recdescent-perl libpdfbox-java libperl5.34
-  libplacebo192 libpoppler118 libportmidi0 libpython3-all-dev
-  libpython3-stdlib:i386 libpython3.10-minimal:i386 libpython3.10-stdlib:i386
-  libpython3.9 libpython3.9-minimal libpython3.9-stdlib libqcow1
-  libqt5location5 libqt5positioningquick5 libqt5quicktest5
-  libqt5remoteobjects5 libqt5websockets5 libqt6core6 libqt6dbus6 libqt6gui6
-  libqt6network6 libqt6opengl6 libqt6openglwidgets6 libqt6printsupport6
-  libqt6sql6 libqt6sql6-sqlite libqt6test6 libqt6widgets6 libqt6xml6
-  libqwt-qt5-6 libradcli4 libradosstriper1 libraw1394-11:i386 libregf1 librgw2
-  librizin-common librizin0 libsane-hpaio libscca1 libsdl2-image-2.0-0
-  libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libsigc++-2.0-0v5:i386 libsigscan1
-  libsmdev1 libsmraw1 libsoapysdr0.8 libspdlog-dev libspdlog1.10
-  libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl libsquashfs1
-  libsvm3 libsvtav1enc0 libtcl8.6:i386 libtcmalloc-minimal4 libtecla1
-  libthrift-0.16.0 libthrift-0.17.0 libthrift-dev libtinfo-dev libtk8.6:i386
-  libtree-sitter0 libts0 libubertooth1 libuhd4.1.0 libuhd4.2.0 libuhd4.3.0
-  liburi-fetch-perl libusb3380-0 libuutil3linux libvirt0 libvkd3d-shader1
-  libvkd3d1 libvolk2-bin libvolk2-dev libvolk2.5 libvsgpt1 libvshadow1
-  libvslvm1 libwebsockets16 libwhereami0 libwine libwireshark15 libwiretap12
-  libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libx86-1:i386
-  libxapian-dev libxcomp3 libxdo3 libxfce4ui-utils libxml++2.6-2v5:i386
-  libxml-atom-perl libxml-feed-perl libxml-libxslt-perl libxml-rss-perl
-  libxsimd-dev libxtrx0 libxtrxdsp0 libxtrxll0 libz-mingw-w64 libz3-dev
-  libzfs4linux libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
-  light-locker limesuite-udev lirc-compat-remotes lirc-doc lirc-drv-irman
-  llvm-11 llvm-11-linker-tools llvm-11-runtime lsscsi lua-bitop lua-cjson
-  mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
-  node-ampproject-remapping node-jed node-source-map node-terser numba-doc
-  nvme-cli nxproxy openvas-scanner oracle-instantclient-basic
-  oracle-instantclient-devel pandoc pandoc-data pdfminer-data
-  perl-modules-5.34 php-json preview-latex-style proot proxmark3-firmwares
-  ps2eps purifyeps pybind11-dev python-funcsigs-doc python-matplotlib-data
-  python-odf-doc python-pastedeploy-tpl python-pecan-doc python-tables-data
-  python-tinycss2-common python-waitress-doc python-webtest-doc
-  python-zstandard-doc python3-adblockparser python3-advancedhttpserver
-  python3-aeidon python3-aiocmd python3-aioconsole python3-aiofiles
-  python3-aiomultiprocess python3-aiowinreg python3-ajpy python3-alabaster
-  python3-altgraph python3-amqp python3-aniso8601 python3-anyio
-  python3-anyjson python3-apispec python3-appdirs python3-apscheduler
-  python3-arrow python3-asciitree python3-asgiref python3-asteval
-  python3-asttokens python3-async-lru python3-asysocks python3-backcall
-  python3-backoff python3-beniget python3-bidict python3-billiard
-  python3-bleach python3-bluepy python3-boltons python3-bottle
-  python3-bytecode python3-cached-property python3-cachetools python3-censys
-  python3-ceph-argparse python3-cerberus python3-cfscrape python3-cheroot
-  python3-cherrypy-cors python3-cherrypy3 python3-cli-helpers
-  python3-click-didyoumean python3-click-plugins python3-click-repl
-  python3-cloudscraper python3-cmd2 python3-colorlog python3-commonmark
-  python3-construct python3-cpe python3-cssselect2 python3-ctypescrypto
-  python3-cvss python3-cycler python3-dataclasses-json python3-debconf
-  python3-dhcplib python3-diff-match-patch python3-django
-  python3-django-appconf python3-django-auditlog python3-django-crispy-forms
-  python3-django-crum python3-django-dbbackup python3-django-environ
-  python3-django-extensions python3-django-extra-views
-  python3-django-fieldsignals python3-django-filters python3-django-guardian
-  python3-django-multiselectfield python3-django-polymorphic
-  python3-django-ratelimit python3-django-restframework-guardian
-  python3-django-split-settings python3-django-tagging python3-django-tagulous
-  python3-django-watson python3-djangorestframework python3-dnslib
-  python3-docker python3-dockerpty python3-docopt python3-dotenv
-  python3-dropbox python3-dsnap python3-easyprocess python3-elasticsearch
-  python3-email-validator python3-emailahoy3 python3-engineio
-  python3-entrypoints python3-et-xmlfile python3-executing python3-exifread
-  python3-fake-factory python3-fake-useragent
-  python3-faraday-agent-parameters-types python3-fastapi python3-fasteners
-  python3-fastjsonschema python3-feedparser python3-filedepot python3-fleep
-  python3-freezegun python3-fs python3-funcsigs python3-gast python3-geojson
-  python3-gps3 python3-graphene python3-graphql-core python3-graphql-relay
-  python3-graphviz python3-gunicorn python3-h2 python3-hpack python3-html2text
-  python3-httpagentparser python3-httpcore python3-httpx python3-hupper
-  python3-hypercorn python3-hyperframe python3-icalendar python3-icmplib
-  python3-imagesize python3-imapclient python3-infinity python3-inflection
-  python3-ipwhois python3-ipy python3-ipython python3-ipython-genutils
-  python3-isc-dhcp-leases python3-iso8601 python3-itsdangerous python3-itypes
-  python3-jaraco.collections python3-jaraco.context python3-jaraco.functools
-  python3-jaraco.text python3-jdcal python3-jedi python3-joblib
-  python3-json-log-formatter python3-jupyter-core python3-jupyterlab-pygments
-  python3-kaitaistruct python3-kombu python3-ldapdomaindump python3-limiter
-  python3-lml python3-log-symbols python3-loguru python3-logutils
-  python3-macholib python3-magic-ahupp python3-manuf python3-marshmallow
-  python3-marshmallow-enum python3-matplotlib-inline python3-metaconfig
-  python3-minidump python3-minikerberos python3-mistune0 python3-monotonic
-  python3-mpmath python3-msldap python3-multipart python3-mypy-extensions
-  python3-neo4j python3-neobolt python3-neotime python3-nest-asyncio
-  python3-networkx python3-nmap python3-notmuch python3-nplusone python3-odf
-  python3-opengl python3-openid python3-oscrypto python3-packageurl
-  python3-pandocfilters python3-parso python3-paste python3-pastedeploy
-  python3-pastescript python3-pathspec python3-pbkdf2 python3-pem
-  python3-pendulum python3-pexpect python3-pgpy-doc python3-phonenumbers
-  python3-phply python3-pickleshare python3-plaster
-  python3-plaster-pastedeploy python3-portend python3-prettytable
-  python3-priority python3-prometheus-client python3-promise
-  python3-prompt-toolkit python3-psycopg3 python3-ptyprocess
-  python3-publicsuffix2 python3-publicsuffixlist python3-pure-eval
-  python3-py-sneakers python3-pybeam python3-pycountry python3-pydantic
-  python3-pydispatch python3-pydot python3-pyee python3-pyexcel
-  python3-pyexcel-io python3-pyexcel-ods python3-pyexcel-text
-  python3-pyexcel-xls python3-pyexploitdb python3-pygccxml python3-pygeoip
-  python3-pyinotify python3-pyinstaller python3-pylnk3 python3-pyminifier
-  python3-pymysql python3-pyotp python3-pyperclip python3-pyppeteer
-  python3-pyric python3-pysmi python3-pytz-deprecation-shim python3-pytzdata
-  python3-pyuserinput python3-pyvirtualdisplay python3-repoze.lru
-  python3-responses python3-retrying python3-rfc3986 python3-rich
-  python3-routes python3-rule-engine python3-rx python3-schema python3-secure
-  python3-securesystemslib python3-send2trash python3-sgmllib3k
-  python3-simple-rest-client python3-simplegeneric python3-simplekv
-  python3-singledispatch python3-slugify python3-smb python3-snowballstemmer
-  python3-socketio python3-speaklater python3-spinners python3-spyse
-  python3-sqlparse python3-stack-data python3-starlette python3-status
-  python3-stem python3-stone python3-sympy python3-syslog-rfc5424-formatter
-  python3-tempita python3-tempora python3-tenacity python3-terminaltables
-  python3-testpath python3-texttable python3-tinycss2 python3-tinydb
-  python3-titlecase python3-tls-parser python3-token-bucket python3-tomli-w
-  python3-torrequest python3-traitlets python3-translationstring
-  python3-typing-inspect python3-tzlocal python3-unicodecsv python3-unidecode
-  python3-usb python3-uvicorn python3-vadersentiment python3-venusian
-  python3-vine python3-vobject python3-waitress python3-wcwidth
-  python3-websocket python3-websockets python3-werkzeug python3-wget
-  python3-winacl python3-wtforms python3-xlrd python3-xlsxwriter
-  python3-xlutils python3-xlwt python3-yaswfp python3-zc.lockfile
-  python3-zlib-wrapper python3-zope.deprecation python3.9 python3.9-minimal
-  qt6-base-dev-tools qt6-gtk-platformtheme qt6-qpa-plugins
-  qt6-translations-l10n qtdeclarative5-dev qtdeclarative5-dev-tools
-  qtscript5-dev ruby2.7 ruby2.7-dev ruby2.7-doc rwho rwhod scrub
-  semodule-utils setserial slime soapyosmo-common0.8 soapysdr-tools
-  soapysdr0.8-module-airspy soapysdr0.8-module-all soapysdr0.8-module-audio
-  soapysdr0.8-module-bladerf soapysdr0.8-module-hackrf soapysdr0.8-module-lms7
-  soapysdr0.8-module-mirisdr soapysdr0.8-module-osmosdr
-  soapysdr0.8-module-redpitaya soapysdr0.8-module-remote
-  soapysdr0.8-module-rfspace soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd
-  sphinx-common sqsh squashfs-tools-ng sse3-support supermin syslinux
-  tango-icon-theme texlive-font-utils texlive-metapost texlive-metapost-doc
-  translate-toolkit-doc ubertooth-firmware unicode-data uwsgi-core
-  uwsgi-plugin-python3 vkd3d-compiler wine64 xapian-doc xapian-examples
-  xdotool xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfdesktop4
-  xfdesktop4-data xiccd xindy xindy-rules xprobe xtrx-dkms zeek-common
-  zfs-dkms
-Use 'sudo apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following packages were automatically installed and are no longer required:
-  appstream-util aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 auctex
-  avahi-utils bladerf blhc castxml catch2 chktex cl-swank clisp clisp-doc
-  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
-  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
-  clisp-module-pcre clisp-module-postgresql clisp-module-zlib
-  dotnet-apphost-pack-6.0 dotnet-hostfxr-6.0 dotnet-runtime-6.0
-  dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0 dvidvi
-  dvipng exif extra-cmake-modules fakechroot finger fish-common fonts-wine
-  genext2fs gir1.2-ayatanaappindicator3-0.1 gir1.2-glib-2.0:i386
-  gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0 gir1.2-vte-2.91 gir1.2-xfconf-0
-  golang-1.18-go golang-1.18-src gpsd-tools greenbone-security-assistant
-  gvmd-common hplip-data hyperspec iputils-tracepath ir-keytable isa-support
-  isympy-common isympy3 jupyter-core jupyter-nbextension-jupyter-js-widgets
-  kismet-capture-nrf-51822 kismet-capture-nrf-52840 kismet-capture-nxp-kw41z
-  kismet-capture-rz-killerbee kismet-capture-ti-cc-2531
-  kismet-capture-ti-cc-2540 kismet-capture-ubertooth-one lacheck latexdiff
-  latexmk lcdf-typetools ldmtool libad9361-0 libadns1 libairspy0 libairspyhf1
-  libapache2-mod-php libappstream-glib8 libapt-inst2.0 libapt-pkg5.0
-  libatk1.0-data libauparse0 libbde1 libbit-vector-perl libbladerf2
-  libboolean-perl libboost-context1.74.0 libbroker2 libbtbb1 libcache-perl
-  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17 libcapi20-3
-  libcarp-clan-perl libclang-cpp11 libclass-errorhandler-perl
-  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
-  libconfig++9v5:i386 libcppunit-1.15-0 libcppunit-dev libcreg1
-  libcrypt-rc4-perl libdate-calc-perl libdate-calc-xs-perl
-  libdatetime-format-flexible-perl libdatetime-format-mail-perl
-  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
-  libdigest-perl-md5-perl libeigen3-dev libesedb1 libevt1 libevtx1
-  libfakechroot libfeed-find-perl libffado2:i386 libffcall1b
-  libfile-nfslock-perl libflac++10 libfmt-dev libfmt8 libfontbox-java
-  libfreesrp0 libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2
-  libfvde1 libfwnt1 libfwsi1 libgarcon-gtk3-1-0 libgirepository-1.0-1:i386
-  libgirepository1.0-doc libglfw3 libglibmm-2.4-1v5:i386
-  libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3
-  libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4 libgoogle-perftools4
-  libgs9-common libgsm1-dev libgtkspell3-3-0 libguestfs-hfsplus libguestfs-jfs
-  libguestfs-nilfs libguestfs-reiserfs libguestfs-rescue libguestfs-rsync
-  libguestfs-xfs libguestfs0 libgvm21 libhamlib4 libheap-perl
-  libhidapi-libusb0 libhiredis0.14 libhttp-server-simple-perl libi2c-dev:i386
-  libi2c0:i386 libiec61883-0:i386 libiio0 libirman0 libjs-backbone
-  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
-  libjs-jquery-typeahead libjs-marked libjs-moment libjs-prettify
-  libjs-requirejs libjs-requirejs-text libjs-skeleton libjs-terser
-  libjs-text-encoding libjs-xterm libkeybinder-3.0-0 libkf5attica-dev
-  libkf5attica-doc libkf5auth-dev libkf5auth-dev-bin libkf5auth-doc
-  libkf5bookmarks-doc libkf5codecs-dev libkf5codecs-doc libkf5completion-dev
-  libkf5completion-doc libkf5config-dev libkf5config-dev-bin libkf5config-doc
-  libkf5configwidgets-doc libkf5coreaddons-dev libkf5coreaddons-dev-bin
-  libkf5coreaddons-doc libkf5dbusaddons-dev libkf5dbusaddons-doc
-  libkf5globalaccel-dev libkf5globalaccel-doc libkf5guiaddons-dev
-  libkf5guiaddons-doc libkf5i18n-doc libkf5iconthemes-bin libkf5iconthemes-doc
-  libkf5itemviews-dev libkf5itemviews-doc libkf5jobwidgets-dev
-  libkf5jobwidgets-doc libkf5kio-doc libkf5package-dev libkf5package-doc
-  libkf5plasma-doc libkf5pulseaudioqt3 libkf5service-doc libkf5solid-dev
-  libkf5solid-doc libkf5torrent6abi2 libkf5widgetsaddons-dev
-  libkf5widgetsaddons-doc libkf5windowsystem-dev libkf5windowsystem-doc
-  libkf5xmlgui-bin libkf5xmlgui-doc liblbfgsb0 libldm-1.0-0 liblerc3
-  libleveldb1d liblimesuite20.10-1 liblimesuite22.09-1 liblirc0
-  liblms7compact0 liblnk1 libluksde1 liblwp-authen-wsse-perl libmirisdr0
-  libmodi1 libmodule-util-perl libmono-2.0-dev libmono-cairo4.0-cil
-  libmono-cecil-private-cil libmono-cil-dev libmono-codecontracts4.0-cil
-  libmono-compilerservices-symbolwriter4.0-cil libmono-cscompmgd0.0-cil
-  libmono-csharp4.0c-cil libmono-custommarshalers4.0-cil
-  libmono-data-tds4.0-cil libmono-db2-1.0-cil libmono-debugger-soft4.0a-cil
-  libmono-http4.0-cil libmono-management4.0-cil
-  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
-  libmono-microsoft-build-engine4.0-cil
-  libmono-microsoft-build-framework4.0-cil
-  libmono-microsoft-build-tasks-v4.0-4.0-cil
-  libmono-microsoft-build-utilities-v4.0-4.0-cil
-  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
-  libmono-microsoft-visualc10.0-cil
-  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
-  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
-  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
-  libmono-system-componentmodel-composition4.0-cil
-  libmono-system-configuration-install4.0-cil
-  libmono-system-data-datasetextensions4.0-cil
-  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
-  libmono-system-data-services-client4.0-cil
-  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
-  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
-  libmono-system-identitymodel-selectors4.0-cil
-  libmono-system-identitymodel4.0-cil
-  libmono-system-io-compression-filesystem4.0-cil
-  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
-  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
-  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
-  libmono-system-net-http-formatting4.0-cil
-  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
-  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
-  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
-  libmono-system-reactive-experimental2.2-cil
-  libmono-system-reactive-interfaces2.2-cil
-  libmono-system-reactive-linq2.2-cil
-  libmono-system-reactive-observable-aliases0.0-cil
-  libmono-system-reactive-platformservices2.2-cil
-  libmono-system-reactive-providers2.2-cil
-  libmono-system-reactive-runtime-remoting2.2-cil
-  libmono-system-reactive-windows-forms2.2-cil
-  libmono-system-reactive-windows-threading2.2-cil
-  libmono-system-reflection-context4.0-cil
-  libmono-system-runtime-caching4.0-cil
-  libmono-system-runtime-durableinstancing4.0-cil
-  libmono-system-runtime-serialization4.0-cil
-  libmono-system-servicemodel-activation4.0-cil
-  libmono-system-servicemodel-discovery4.0-cil
-  libmono-system-servicemodel-internals0.0-cil
-  libmono-system-servicemodel-routing4.0-cil
-  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
-  libmono-system-serviceprocess4.0-cil
-  libmono-system-threading-tasks-dataflow4.0-cil
-  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
-  libmono-system-web-extensions-design4.0-cil
-  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
-  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
-  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
-  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
-  libmono-system-web-routing4.0-cil
-  libmono-system-web-webpages-deployment2.0-cil
-  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
-  libmono-system-windows-forms-datavisualization4.0a-cil
-  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
-  libmono-system-workflow-componentmodel4.0-cil
-  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
-  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
-  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
-  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
-  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libnautilus-extension1a
-  libncursesw6:i386 libndpi4.2 libnode93 libnunit-cil-dev
-  libnunit-console-runner2.6.3-cil libnunit-core-interfaces2.6.3-cil
-  libnunit-core2.6.3-cil libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil
-  libnunit-util2.6.3-cil libnvpair3linux liboath0 libodpic4
-  libole-storage-lite-perl libolecf1 libopenh264-6 libopusfile0 libosmosdr0
-  libpari-gmp-tls8 libparse-recdescent-perl libpdfbox-java libperl5.34
-  libplacebo192 libpoppler118 libportmidi0 libpython3-all-dev
-  libpython3-stdlib:i386 libpython3.10-minimal:i386 libpython3.10-stdlib:i386
-  libpython3.9 libpython3.9-minimal libpython3.9-stdlib libqcow1
-  libqt5location5 libqt5positioningquick5 libqt5quicktest5
-  libqt5remoteobjects5 libqt5websockets5 libqt6core6 libqt6dbus6 libqt6gui6
-  libqt6network6 libqt6opengl6 libqt6openglwidgets6 libqt6printsupport6
-  libqt6sql6 libqt6sql6-sqlite libqt6test6 libqt6widgets6 libqt6xml6
-  libqwt-qt5-6 libradcli4 libradosstriper1 libraw1394-11:i386 libregf1 librgw2
-  librizin-common librizin0 libsane-hpaio libscca1 libsdl2-image-2.0-0
-  libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libsigc++-2.0-0v5:i386 libsigscan1
-  libsmdev1 libsmraw1 libsoapysdr0.8 libspdlog-dev libspdlog1.10
-  libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl libsquashfs1
-  libsvm3 libsvtav1enc0 libtcl8.6:i386 libtcmalloc-minimal4 libtecla1
-  libthrift-0.16.0 libthrift-0.17.0 libthrift-dev libtinfo-dev libtk8.6:i386
-  libtree-sitter0 libts0 libubertooth1 libuhd4.1.0 libuhd4.2.0 libuhd4.3.0
-  liburi-fetch-perl libusb3380-0 libuutil3linux libvirt0 libvkd3d-shader1
-  libvkd3d1 libvolk2-bin libvolk2-dev libvolk2.5 libvsgpt1 libvshadow1
-  libvslvm1 libwebsockets16 libwhereami0 libwine libwireshark15 libwiretap12
-  libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libx86-1:i386
-  libxapian-dev libxcomp3 libxdo3 libxfce4ui-utils libxml++2.6-2v5:i386
-  libxml-atom-perl libxml-feed-perl libxml-libxslt-perl libxml-rss-perl
-  libxsimd-dev libxtrx0 libxtrxdsp0 libxtrxll0 libz-mingw-w64 libz3-dev
-  libzfs4linux libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
-  light-locker limesuite-udev lirc-compat-remotes lirc-doc lirc-drv-irman
-  llvm-11 llvm-11-linker-tools llvm-11-runtime lsscsi lua-bitop lua-cjson
-  mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
-  node-ampproject-remapping node-jed node-source-map node-terser numba-doc
-  nvme-cli nxproxy openvas-scanner oracle-instantclient-basic
-  oracle-instantclient-devel pandoc pandoc-data pdfminer-data
-  perl-modules-5.34 php-json preview-latex-style proot proxmark3-firmwares
-  ps2eps purifyeps pybind11-dev python-funcsigs-doc python-matplotlib-data
-  python-odf-doc python-pastedeploy-tpl python-pecan-doc python-tables-data
-  python-tinycss2-common python-waitress-doc python-webtest-doc
-  python-zstandard-doc python3-adblockparser python3-advancedhttpserver
-  python3-aeidon python3-aiocmd python3-aioconsole python3-aiofiles
-  python3-aiomultiprocess python3-aiowinreg python3-ajpy python3-alabaster
-  python3-altgraph python3-amqp python3-aniso8601 python3-anyio
-  python3-anyjson python3-apispec python3-appdirs python3-apscheduler
-  python3-arrow python3-asciitree python3-asgiref python3-asteval
-  python3-asttokens python3-async-lru python3-asysocks python3-backcall
-  python3-backoff python3-beniget python3-bidict python3-billiard
-  python3-bleach python3-bluepy python3-boltons python3-bottle
-  python3-bytecode python3-cached-property python3-cachetools python3-censys
-  python3-ceph-argparse python3-cerberus python3-cfscrape python3-cheroot
-  python3-cherrypy-cors python3-cherrypy3 python3-cli-helpers
-  python3-click-didyoumean python3-click-plugins python3-click-repl
-  python3-cloudscraper python3-cmd2 python3-colorlog python3-commonmark
-  python3-construct python3-cpe python3-cssselect2 python3-ctypescrypto
-  python3-cvss python3-cycler python3-dataclasses-json python3-debconf
-  python3-dhcplib python3-diff-match-patch python3-django
-  python3-django-appconf python3-django-auditlog python3-django-crispy-forms
-  python3-django-crum python3-django-dbbackup python3-django-environ
-  python3-django-extensions python3-django-extra-views
-  python3-django-fieldsignals python3-django-filters python3-django-guardian
-  python3-django-multiselectfield python3-django-polymorphic
-  python3-django-ratelimit python3-django-restframework-guardian
-  python3-django-split-settings python3-django-tagging python3-django-tagulous
-  python3-django-watson python3-djangorestframework python3-dnslib
-  python3-docker python3-dockerpty python3-docopt python3-dotenv
-  python3-dropbox python3-dsnap python3-easyprocess python3-elasticsearch
-  python3-email-validator python3-emailahoy3 python3-engineio
-  python3-entrypoints python3-et-xmlfile python3-executing python3-exifread
-  python3-fake-factory python3-fake-useragent
-  python3-faraday-agent-parameters-types python3-fastapi python3-fasteners
-  python3-fastjsonschema python3-feedparser python3-filedepot python3-fleep
-  python3-freezegun python3-fs python3-funcsigs python3-gast python3-geojson
-  python3-gps3 python3-graphene python3-graphql-core python3-graphql-relay
-  python3-graphviz python3-gunicorn python3-h2 python3-hpack python3-html2text
-  python3-httpagentparser python3-httpcore python3-httpx python3-hupper
-  python3-hypercorn python3-hyperframe python3-icalendar python3-icmplib
-  python3-imagesize python3-imapclient python3-infinity python3-inflection
-  python3-ipwhois python3-ipy python3-ipython python3-ipython-genutils
-  python3-isc-dhcp-leases python3-iso8601 python3-itsdangerous python3-itypes
-  python3-jaraco.collections python3-jaraco.context python3-jaraco.functools
-  python3-jaraco.text python3-jdcal python3-jedi python3-joblib
-  python3-json-log-formatter python3-jupyter-core python3-jupyterlab-pygments
-  python3-kaitaistruct python3-kombu python3-ldapdomaindump python3-limiter
-  python3-lml python3-log-symbols python3-loguru python3-logutils
-  python3-macholib python3-magic-ahupp python3-manuf python3-marshmallow
-  python3-marshmallow-enum python3-matplotlib-inline python3-metaconfig
-  python3-minidump python3-minikerberos python3-mistune0 python3-monotonic
-  python3-mpmath python3-msldap python3-multipart python3-mypy-extensions
-  python3-neo4j python3-neobolt python3-neotime python3-nest-asyncio
-  python3-networkx python3-nmap python3-notmuch python3-nplusone python3-odf
-  python3-opengl python3-openid python3-oscrypto python3-packageurl
-  python3-pandocfilters python3-parso python3-paste python3-pastedeploy
-  python3-pastescript python3-pathspec python3-pbkdf2 python3-pem
-  python3-pendulum python3-pexpect python3-pgpy-doc python3-phonenumbers
-  python3-phply python3-pickleshare python3-plaster
-  python3-plaster-pastedeploy python3-portend python3-prettytable
-  python3-priority python3-prometheus-client python3-promise
-  python3-prompt-toolkit python3-psycopg3 python3-ptyprocess
-  python3-publicsuffix2 python3-publicsuffixlist python3-pure-eval
-  python3-py-sneakers python3-pybeam python3-pycountry python3-pydantic
-  python3-pydispatch python3-pydot python3-pyee python3-pyexcel
-  python3-pyexcel-io python3-pyexcel-ods python3-pyexcel-text
-  python3-pyexcel-xls python3-pyexploitdb python3-pygccxml python3-pygeoip
-  python3-pyinotify python3-pyinstaller python3-pylnk3 python3-pyminifier
-  python3-pymysql python3-pyotp python3-pyperclip python3-pyppeteer
-  python3-pyric python3-pysmi python3-pytz-deprecation-shim python3-pytzdata
-  python3-pyuserinput python3-pyvirtualdisplay python3-repoze.lru
-  python3-responses python3-retrying python3-rfc3986 python3-rich
-  python3-routes python3-rule-engine python3-rx python3-schema python3-secure
-  python3-securesystemslib python3-send2trash python3-sgmllib3k
-  python3-simple-rest-client python3-simplegeneric python3-simplekv
-  python3-singledispatch python3-slugify python3-smb python3-snowballstemmer
-  python3-socketio python3-speaklater python3-spinners python3-spyse
-  python3-sqlparse python3-stack-data python3-starlette python3-status
-  python3-stem python3-stone python3-sympy python3-syslog-rfc5424-formatter
-  python3-tempita python3-tempora python3-tenacity python3-terminaltables
-  python3-testpath python3-texttable python3-tinycss2 python3-tinydb
-  python3-titlecase python3-tls-parser python3-token-bucket python3-tomli-w
-  python3-torrequest python3-traitlets python3-translationstring
-  python3-typing-inspect python3-tzlocal python3-unicodecsv python3-unidecode
-  python3-usb python3-uvicorn python3-vadersentiment python3-venusian
-  python3-vine python3-vobject python3-waitress python3-wcwidth
-  python3-websocket python3-websockets python3-werkzeug python3-wget
-  python3-winacl python3-wtforms python3-xlrd python3-xlsxwriter
-  python3-xlutils python3-xlwt python3-yaswfp python3-zc.lockfile
-  python3-zlib-wrapper python3-zope.deprecation python3.9 python3.9-minimal
-  qt6-base-dev-tools qt6-gtk-platformtheme qt6-qpa-plugins
-  qt6-translations-l10n qtdeclarative5-dev qtdeclarative5-dev-tools
-  qtscript5-dev ruby2.7 ruby2.7-dev ruby2.7-doc rwho rwhod scrub
-  semodule-utils setserial slime soapyosmo-common0.8 soapysdr-tools
-  soapysdr0.8-module-airspy soapysdr0.8-module-all soapysdr0.8-module-audio
-  soapysdr0.8-module-bladerf soapysdr0.8-module-hackrf soapysdr0.8-module-lms7
-  soapysdr0.8-module-mirisdr soapysdr0.8-module-osmosdr
-  soapysdr0.8-module-redpitaya soapysdr0.8-module-remote
-  soapysdr0.8-module-rfspace soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd
-  sphinx-common sqsh squashfs-tools-ng sse3-support supermin syslinux
-  tango-icon-theme texlive-font-utils texlive-metapost texlive-metapost-doc
-  translate-toolkit-doc ubertooth-firmware unicode-data uwsgi-core
-  uwsgi-plugin-python3 vkd3d-compiler wine64 xapian-doc xapian-examples
-  xdotool xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfdesktop4
-  xfdesktop4-data xiccd xindy xindy-rules xprobe xtrx-dkms zeek-common
-  zfs-dkms
-Use 'sudo apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following packages were automatically installed and are no longer required:
-  appstream-util aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 auctex
-  avahi-utils bladerf blhc castxml catch2 chktex cl-swank clisp clisp-doc
-  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
-  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
-  clisp-module-pcre clisp-module-postgresql clisp-module-zlib
-  dotnet-apphost-pack-6.0 dotnet-hostfxr-6.0 dotnet-runtime-6.0
-  dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0 dvidvi
-  dvipng exif extra-cmake-modules fakechroot finger fish-common fonts-wine
-  genext2fs gir1.2-glib-2.0:i386 gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0
-  gir1.2-vte-2.91 golang-1.18-go golang-1.18-src gpsd-tools
-  greenbone-security-assistant gvmd-common hplip-data hyperspec
-  iputils-tracepath ir-keytable isa-support isympy-common isympy3 jupyter-core
-  jupyter-nbextension-jupyter-js-widgets kismet-capture-nrf-51822
-  kismet-capture-nrf-52840 kismet-capture-nxp-kw41z
-  kismet-capture-rz-killerbee kismet-capture-ti-cc-2531
-  kismet-capture-ti-cc-2540 kismet-capture-ubertooth-one lacheck latexdiff
-  latexmk lcdf-typetools ldmtool libad9361-0 libadns1 libairspy0 libairspyhf1
-  libapache2-mod-php libappstream-glib8 libapt-inst2.0 libapt-pkg5.0
-  libatk1.0-data libauparse0 libbde1 libbit-vector-perl libbladerf2
-  libboolean-perl libboost-context1.74.0 libbroker2 libbtbb1 libcache-perl
-  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17 libcapi20-3
-  libcarp-clan-perl libclang-cpp11 libclass-errorhandler-perl
-  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
-  libconfig++9v5:i386 libcppunit-1.15-0 libcppunit-dev libcreg1
-  libcrypt-rc4-perl libdate-calc-perl libdate-calc-xs-perl
-  libdatetime-format-flexible-perl libdatetime-format-mail-perl
-  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
-  libdigest-perl-md5-perl libeigen3-dev libesedb1 libevt1 libevtx1
-  libfakechroot libfeed-find-perl libffado2:i386 libffcall1b
-  libfile-nfslock-perl libflac++10 libfmt-dev libfmt8 libfontbox-java
-  libfreesrp0 libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2
-  libfvde1 libfwnt1 libfwsi1 libgirepository-1.0-1:i386 libgirepository1.0-doc
-  libglfw3 libglibmm-2.4-1v5:i386 libgnuradio-iqbalance3.9.0
-  libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4
-  libgnuradio-runtime3.10.4 libgoogle-perftools4 libgs9-common libgsm1-dev
-  libgtkspell3-3-0 libguestfs-hfsplus libguestfs-jfs libguestfs-nilfs
-  libguestfs-reiserfs libguestfs-rescue libguestfs-rsync libguestfs-xfs
-  libguestfs0 libgvm21 libhamlib4 libheap-perl libhidapi-libusb0
-  libhiredis0.14 libhttp-server-simple-perl libi2c-dev:i386 libi2c0:i386
-  libiec61883-0:i386 libiio0 libirman0 libjs-backbone libjs-bootstrap-tour
-  libjs-codemirror libjs-es6-promise libjs-jed libjs-jquery-typeahead
-  libjs-marked libjs-moment libjs-prettify libjs-requirejs
-  libjs-requirejs-text libjs-skeleton libjs-terser libjs-text-encoding
+  libconfig++9v5:i386 libcreg1 libdatetime-format-flexible-perl
+  libdatetime-format-mail-perl libdatetime-format-natural-perl
+  libdatetime-format-w3cdtf-perl libesedb1 libevt1 libevtx1 libfakechroot
+  libfeed-find-perl libffado2:i386 libfile-nfslock-perl libflac++10 libfmt8
+  libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsverity-dev libfsxfs1
+  libfuzzy2 libfvde1 libfwnt1 libfwsi1 libgcrypt20-dev libgcrypt20-doc
+  libgirepository-1.0-1:i386 libgirepository1.0-doc libglibmm-2.4-1v5:i386
+  libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3 libgoogle-perftools4
+  libgpg-error-dev libgpgme-dev libgs9-common libgtkspell3-3-0
+  libguestfs-hfsplus libguestfs-jfs libguestfs-nilfs libguestfs-reiserfs
+  libguestfs-rescue libguestfs-rsync libguestfs-xfs libguestfs0 libheap-perl
+  libhttp-server-simple-perl libi2c-dev:i386 libi2c0:i386 libiec61883-0:i386
+  libirman0 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-prettify libjs-requirejs-text libjs-terser libjs-text-encoding
   libjs-xterm libkf5attica-dev libkf5attica-doc libkf5auth-dev
   libkf5auth-dev-bin libkf5auth-doc libkf5bookmarks-doc libkf5codecs-dev
   libkf5codecs-doc libkf5completion-dev libkf5completion-doc libkf5config-dev
@@ -611,10 +41,9 @@ The following packages were automatically installed and are no longer required:
   libkf5package-dev libkf5package-doc libkf5plasma-doc libkf5pulseaudioqt3
   libkf5service-doc libkf5solid-dev libkf5solid-doc libkf5torrent6abi2
   libkf5widgetsaddons-dev libkf5widgetsaddons-doc libkf5windowsystem-dev
-  libkf5windowsystem-doc libkf5xmlgui-bin libkf5xmlgui-doc liblbfgsb0
-  libldm-1.0-0 liblerc3 libleveldb1d liblimesuite20.10-1 liblimesuite22.09-1
-  liblirc0 liblms7compact0 liblnk1 libluksde1 liblwp-authen-wsse-perl
-  libmirisdr0 libmodi1 libmodule-util-perl libmono-2.0-dev
+  libkf5windowsystem-doc libkf5xmlgui-bin libkf5xmlgui-doc libldm-1.0-0
+  liblerc3 libleveldb1d liblimesuite20.10-1 liblirc0 liblnk1 libluksde1
+  liblwp-authen-wsse-perl libmodi1 libmodule-util-perl libmono-2.0-dev
   libmono-cairo4.0-cil libmono-cecil-private-cil libmono-cil-dev
   libmono-codecontracts4.0-cil libmono-compilerservices-symbolwriter4.0-cil
   libmono-cscompmgd0.0-cil libmono-csharp4.0c-cil
@@ -683,145 +112,826 @@ The following packages were automatically installed and are no longer required:
   libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
   libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
   libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
-  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libnautilus-extension1a
-  libncursesw6:i386 libndpi4.2 libnode93 libnunit-cil-dev
-  libnunit-console-runner2.6.3-cil libnunit-core-interfaces2.6.3-cil
-  libnunit-core2.6.3-cil libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil
-  libnunit-util2.6.3-cil libnvpair3linux liboath0 libodpic4
-  libole-storage-lite-perl libolecf1 libopenh264-6 libopusfile0 libosmosdr0
-  libpari-gmp-tls8 libparse-recdescent-perl libpdfbox-java libperl5.34
-  libplacebo192 libpoppler118 libportmidi0 libpython3-all-dev
-  libpython3-stdlib:i386 libpython3.10-minimal:i386 libpython3.10-stdlib:i386
-  libpython3.9 libpython3.9-minimal libpython3.9-stdlib libqcow1
-  libqt5location5 libqt5positioningquick5 libqt5quicktest5
-  libqt5remoteobjects5 libqt5websockets5 libqt6core6 libqt6dbus6 libqt6gui6
-  libqt6network6 libqt6opengl6 libqt6openglwidgets6 libqt6printsupport6
-  libqt6sql6 libqt6sql6-sqlite libqt6test6 libqt6widgets6 libqt6xml6
-  libqwt-qt5-6 libradcli4 libradosstriper1 libraw1394-11:i386 libregf1 librgw2
-  librizin-common librizin0 libsane-hpaio libscca1 libsdl2-image-2.0-0
-  libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libsigc++-2.0-0v5:i386 libsigscan1
-  libsmdev1 libsmraw1 libsoapysdr0.8 libspdlog-dev libspdlog1.10
-  libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl libsquashfs1
-  libsvm3 libsvtav1enc0 libtcl8.6:i386 libtcmalloc-minimal4 libtecla1
-  libthrift-0.16.0 libthrift-0.17.0 libthrift-dev libtinfo-dev libtk8.6:i386
-  libtree-sitter0 libts0 libubertooth1 libuhd4.1.0 libuhd4.2.0 libuhd4.3.0
-  liburi-fetch-perl libusb3380-0 libuutil3linux libvirt0 libvkd3d-shader1
-  libvkd3d1 libvolk2-bin libvolk2-dev libvolk2.5 libvsgpt1 libvshadow1
-  libvslvm1 libwebsockets16 libwhereami0 libwine libwireshark15 libwiretap12
-  libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libx86-1:i386
-  libxapian-dev libxcomp3 libxml++2.6-2v5:i386 libxml-atom-perl
-  libxml-feed-perl libxml-libxslt-perl libxml-rss-perl libxsimd-dev libxtrx0
-  libxtrxdsp0 libxtrxll0 libz-mingw-w64 libz3-dev libzfs4linux
+  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libncursesw6:i386 libndpi4.2
+  libnode93 libnunit-cil-dev libnunit-console-runner2.6.3-cil
+  libnunit-core-interfaces2.6.3-cil libnunit-core2.6.3-cil
+  libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil libnunit-util2.6.3-cil
+  libnvpair3linux liboath0 libodpic4 libolecf1 libopenh264-6 libplacebo192
+  libpopt-dev libproxy-dev libpython3-stdlib:i386 libpython3.10-minimal:i386
+  libpython3.10-stdlib:i386 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqcow1 libqt5quicktest5 libradosstriper1
+  libraw1394-11:i386 libregf1 librgw2 librpm-dev libsane-hpaio libscca1
+  libsigc++-2.0-0v5:i386 libsigscan1 libsmdev1 libsmraw1 libsolv-dev
+  libsolvext-dev libsquashfs1 libsvtav1enc0 libtcl8.6:i386
+  libtcmalloc-minimal4 libthrift-0.16.0 libtinfo-dev libtk8.6:i386 libudev-dev
+  libuhd4.1.0 libuhd4.2.0 liburi-fetch-perl libuutil3linux libvirt0
+  libvkd3d-shader1 libvkd3d1 libvsgpt1 libvshadow1 libvslvm1 libwebsockets16
+  libwine libwireshark15 libwiretap12 libwsutil13 libx86-1:i386 libxapian-dev
+  libxcomp3 libxml++2.6-2v5:i386 libxml-atom-perl libxml-feed-perl
+  libxml-libxslt-perl libxml-rss-perl libz-mingw-w64 libz3-dev libzfs4linux
   libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
-  limesuite-udev lirc-compat-remotes lirc-doc lirc-drv-irman llvm-11
-  llvm-11-linker-tools llvm-11-runtime lsscsi lua-bitop lua-cjson
+  lirc-compat-remotes lirc-doc lirc-drv-irman lsscsi lua-bitop lua-cjson
   mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
-  node-ampproject-remapping node-jed node-source-map node-terser numba-doc
-  nvme-cli nxproxy openvas-scanner oracle-instantclient-basic
-  oracle-instantclient-devel pandoc pandoc-data pdfminer-data
-  perl-modules-5.34 php-json preview-latex-style proot proxmark3-firmwares
-  ps2eps purifyeps pybind11-dev python-funcsigs-doc python-matplotlib-data
-  python-odf-doc python-pastedeploy-tpl python-pecan-doc python-tables-data
-  python-tinycss2-common python-waitress-doc python-webtest-doc
-  python-zstandard-doc python3-adblockparser python3-advancedhttpserver
-  python3-aeidon python3-aiocmd python3-aioconsole python3-aiofiles
-  python3-aiomultiprocess python3-aiowinreg python3-ajpy python3-alabaster
-  python3-altgraph python3-amqp python3-aniso8601 python3-anyio
-  python3-anyjson python3-apispec python3-appdirs python3-apscheduler
-  python3-arrow python3-asciitree python3-asgiref python3-asteval
-  python3-asttokens python3-async-lru python3-asysocks python3-backcall
-  python3-backoff python3-beniget python3-bidict python3-billiard
-  python3-bleach python3-bluepy python3-boltons python3-bottle
-  python3-bytecode python3-cached-property python3-cachetools python3-censys
-  python3-ceph-argparse python3-cerberus python3-cfscrape python3-cheroot
-  python3-cherrypy-cors python3-cherrypy3 python3-cli-helpers
-  python3-click-didyoumean python3-click-plugins python3-click-repl
-  python3-cloudscraper python3-cmd2 python3-colorlog python3-commonmark
-  python3-construct python3-cpe python3-cssselect2 python3-ctypescrypto
-  python3-cvss python3-cycler python3-dataclasses-json python3-debconf
-  python3-dhcplib python3-diff-match-patch python3-django
-  python3-django-appconf python3-django-auditlog python3-django-crispy-forms
-  python3-django-crum python3-django-dbbackup python3-django-environ
-  python3-django-extensions python3-django-extra-views
-  python3-django-fieldsignals python3-django-filters python3-django-guardian
+  node-ampproject-remapping node-jed node-terser nvme-cli nxproxy
+  oracle-instantclient-devel pandoc pandoc-data pdfminer-data php-json proot
+  python-pecan-doc python-tinycss2-common python-waitress-doc
+  python-webtest-doc python-zstandard-doc python3-aeidon python3-amqp
+  python3-anyjson python3-asteval python3-async-lru python3-billiard
+  python3-cachetools python3-ceph-argparse python3-cerberus python3-cfscrape
+  python3-click-didyoumean python3-click-repl python3-cloudscraper
+  python3-colorlog python3-construct python3-cpe python3-cssselect2
+  python3-ctypescrypto python3-dataclasses-json python3-debconf
+  python3-dhcplib python3-diff-match-patch python3-django-appconf
+  python3-django-auditlog python3-django-crispy-forms python3-django-crum
+  python3-django-dbbackup python3-django-environ python3-django-extensions
+  python3-django-extra-views python3-django-fieldsignals
+  python3-django-filters python3-django-guardian
   python3-django-multiselectfield python3-django-polymorphic
   python3-django-ratelimit python3-django-restframework-guardian
   python3-django-split-settings python3-django-tagging python3-django-tagulous
-  python3-django-watson python3-djangorestframework python3-dnslib
-  python3-docker python3-dockerpty python3-docopt python3-dotenv
-  python3-dropbox python3-dsnap python3-easyprocess python3-elasticsearch
-  python3-email-validator python3-emailahoy3 python3-engineio
-  python3-entrypoints python3-et-xmlfile python3-executing python3-exifread
-  python3-fake-factory python3-fake-useragent
-  python3-faraday-agent-parameters-types python3-fastapi python3-fasteners
-  python3-fastjsonschema python3-feedparser python3-filedepot python3-fleep
-  python3-freezegun python3-fs python3-funcsigs python3-gast python3-geojson
-  python3-gps3 python3-graphene python3-graphql-core python3-graphql-relay
-  python3-graphviz python3-gunicorn python3-h2 python3-hpack python3-html2text
-  python3-httpagentparser python3-httpcore python3-httpx python3-hupper
-  python3-hypercorn python3-hyperframe python3-icalendar python3-icmplib
-  python3-imagesize python3-imapclient python3-infinity python3-inflection
-  python3-ipwhois python3-ipy python3-ipython python3-ipython-genutils
-  python3-isc-dhcp-leases python3-iso8601 python3-itsdangerous python3-itypes
-  python3-jaraco.collections python3-jaraco.context python3-jaraco.functools
-  python3-jaraco.text python3-jdcal python3-jedi python3-joblib
-  python3-json-log-formatter python3-jupyter-core python3-jupyterlab-pygments
-  python3-kaitaistruct python3-kombu python3-ldapdomaindump python3-limiter
-  python3-lml python3-log-symbols python3-loguru python3-logutils
-  python3-macholib python3-magic-ahupp python3-manuf python3-marshmallow
-  python3-marshmallow-enum python3-matplotlib-inline python3-metaconfig
-  python3-minidump python3-minikerberos python3-mistune0 python3-monotonic
-  python3-mpmath python3-msldap python3-multipart python3-mypy-extensions
-  python3-neo4j python3-neobolt python3-neotime python3-nest-asyncio
-  python3-networkx python3-nmap python3-notmuch python3-nplusone python3-odf
-  python3-opengl python3-openid python3-oscrypto python3-packageurl
-  python3-pandocfilters python3-parso python3-paste python3-pastedeploy
-  python3-pastescript python3-pathspec python3-pbkdf2 python3-pem
-  python3-pendulum python3-pgpy-doc python3-phonenumbers python3-phply
-  python3-pickleshare python3-plaster python3-plaster-pastedeploy
-  python3-portend python3-prettytable python3-priority
-  python3-prometheus-client python3-promise python3-prompt-toolkit
-  python3-psycopg3 python3-publicsuffix2 python3-publicsuffixlist
-  python3-pure-eval python3-py-sneakers python3-pybeam python3-pycountry
-  python3-pydantic python3-pydispatch python3-pydot python3-pyee
-  python3-pyexcel python3-pyexcel-io python3-pyexcel-ods python3-pyexcel-text
-  python3-pyexcel-xls python3-pyexploitdb python3-pygccxml python3-pygeoip
-  python3-pyinotify python3-pyinstaller python3-pylnk3 python3-pyminifier
-  python3-pymysql python3-pyotp python3-pyperclip python3-pyppeteer
-  python3-pyric python3-pysmi python3-pytz-deprecation-shim python3-pytzdata
-  python3-pyuserinput python3-pyvirtualdisplay python3-repoze.lru
-  python3-responses python3-retrying python3-rfc3986 python3-rich
-  python3-routes python3-rule-engine python3-rx python3-schema python3-secure
-  python3-securesystemslib python3-send2trash python3-sgmllib3k
-  python3-simple-rest-client python3-simplegeneric python3-simplekv
-  python3-singledispatch python3-slugify python3-smb python3-snowballstemmer
-  python3-socketio python3-speaklater python3-spinners python3-spyse
-  python3-sqlparse python3-stack-data python3-starlette python3-status
-  python3-stem python3-stone python3-sympy python3-syslog-rfc5424-formatter
-  python3-tempita python3-tempora python3-tenacity python3-terminaltables
-  python3-testpath python3-texttable python3-tinycss2 python3-tinydb
-  python3-titlecase python3-tls-parser python3-token-bucket python3-tomli-w
-  python3-torrequest python3-traitlets python3-translationstring
-  python3-typing-inspect python3-tzlocal python3-unicodecsv python3-unidecode
-  python3-usb python3-uvicorn python3-vadersentiment python3-venusian
-  python3-vine python3-vobject python3-waitress python3-wcwidth
-  python3-websocket python3-websockets python3-werkzeug python3-wget
-  python3-winacl python3-wtforms python3-xlrd python3-xlsxwriter
-  python3-xlutils python3-xlwt python3-yaswfp python3-zc.lockfile
-  python3-zlib-wrapper python3-zope.deprecation python3.9 python3.9-minimal
-  qt6-base-dev-tools qt6-gtk-platformtheme qt6-qpa-plugins
-  qt6-translations-l10n qtdeclarative5-dev qtdeclarative5-dev-tools
-  qtscript5-dev ruby2.7 ruby2.7-dev ruby2.7-doc rwho rwhod scrub
-  semodule-utils setserial slime soapyosmo-common0.8 soapysdr-tools
-  soapysdr0.8-module-airspy soapysdr0.8-module-all soapysdr0.8-module-audio
-  soapysdr0.8-module-bladerf soapysdr0.8-module-hackrf soapysdr0.8-module-lms7
-  soapysdr0.8-module-mirisdr soapysdr0.8-module-osmosdr
-  soapysdr0.8-module-redpitaya soapysdr0.8-module-remote
-  soapysdr0.8-module-rfspace soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd
-  sphinx-common sqsh squashfs-tools-ng sse3-support supermin syslinux
-  texlive-font-utils texlive-metapost texlive-metapost-doc
-  translate-toolkit-doc ubertooth-firmware unicode-data uwsgi-core
-  uwsgi-plugin-python3 vkd3d-compiler wine64 xapian-doc xapian-examples xindy
-  xindy-rules xprobe xtrx-dkms zeek-common zfs-dkms
+  python3-django-watson python3-djangorestframework python3-docker
+  python3-dockerpty python3-dsnap python3-easyprocess python3-elasticsearch
+  python3-emailahoy3 python3-fake-factory python3-fake-useragent
+  python3-fasteners python3-fleep python3-freezegun python3-gps3
+  python3-gunicorn python3-hypercorn python3-icmplib python3-imapclient
+  python3-infinity python3-inflection python3-isc-dhcp-leases python3-iso8601
+  python3-itypes python3-json-log-formatter python3-jupyterlab-pygments
+  python3-kombu python3-limiter python3-lml python3-loguru python3-logutils
+  python3-magic-ahupp python3-manuf python3-marshmallow-enum
+  python3-metaconfig python3-monotonic python3-mypy-extensions python3-nmap
+  python3-notmuch python3-openid python3-oscrypto python3-packageurl
+  python3-pandocfilters python3-pathspec python3-pbkdf2 python3-pem
+  python3-pgpy-doc python3-phply python3-priority python3-prometheus-client
+  python3-pybeam python3-pycountry python3-pyexcel python3-pyexcel-io
+  python3-pyexcel-ods python3-pyexcel-text python3-pyexcel-xls python3-pygeoip
+  python3-pyric python3-pyuserinput python3-pyvirtualdisplay python3-responses
+  python3-securesystemslib python3-send2trash python3-simplegeneric
+  python3-singledispatch python3-smb python3-spyse python3-stem
+  python3-testpath python3-tinycss2 python3-tinydb python3-titlecase
+  python3-token-bucket python3-tomli-w python3-torrequest
+  python3-typing-inspect python3-usb python3-vadersentiment python3-vine
+  python3-vobject python3-waitress python3-wget python3.9 python3.9-minimal
+  qtdeclarative5-dev qtdeclarative5-dev-tools qtscript5-dev ruby2.7
+  ruby2.7-dev ruby2.7-doc scrub semodule-utils squashfs-tools-ng sse3-support
+  supermin syslinux translate-toolkit-doc uwsgi-core uwsgi-plugin-python3
+  vkd3d-compiler wine64 xapian-doc xapian-examples xprobe zeek-common zfs-dkms
 Use 'sudo apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
+The following additional packages will be installed:
+  python-pytest
+Suggested packages:
+  python-mock
+The following NEW packages will be installed:
+  python-pytest
+0 upgraded, 1 newly installed, 0 to remove and 313 not upgraded.
+2 not fully installed or removed.
+Need to get 0 B/243 kB of archives.
+After this operation, 867 kB of additional disk space will be used.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 1658129 files and directories currently installed.)
+Preparing to unpack .../python-pytest_3.10.1-2_all.deb ...
+Unpacking python-pytest (3.10.1-2) ...
+dpkg: error processing archive /var/cache/apt/archives/python-pytest_3.10.1-2_all.deb (--unpack):
+ trying to overwrite '/usr/bin/pytest', which is also in package python3-pytest 7.1.2-4
+dpkg-deb: error: paste subprocess was killed by signal (Broken pipe)
+Errors were encountered while processing:
+ /var/cache/apt/archives/python-pytest_3.10.1-2_all.deb
+======  How can you help?  (doc: https://wiki.debian.org/how-can-i-help ) ======
+
+-----  Show old opportunities as well as new ones: how-can-i-help --old  -----
+needrestart is being skipped since dpkg has failed
+Ign:1 https://security.kali.org ./ InRelease
+Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
+Ign:3 https://ftp.cn.debian.org/debian sid InRelease
+Ign:4 https://httpredir.debian.org ./ InRelease
+Ign:5 https://ftp.debian.org/debian ./ InRelease
+Ign:6 https://ftp.de.debian.org ./ InRelease
+Ign:7 https://ftp.debian.org/debian Debian8.11 InRelease
+Get:8 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.04 ./ InRelease [1.604 B]
+Ign:9 https://kali.itsec.am ./ InRelease
+Ign:1 https://security.kali.org ./ InRelease
+Ign:10 https://http.kali.org/kali ./ InRelease
+Err:11 https://httpredir.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 443]
+Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
+Ign:13 https://ftp.debian.org/debian Debian9.13 InRelease
+Ign:14 https://archive.archlinux.org ./ InRelease
+Ign:16 https://http.kali.org ./ InRelease
+Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
+Err:17 https://archive.archlinux.org ./ Release
+  404  Not Found [IP: 49.12.124.107 443]
+Hit:18 https://ftp.debian.org/debian Debian10.13 InRelease
+Ign:3 https://ftp.cn.debian.org/debian sid InRelease
+Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
+Hit:21 https://ftp.debian.org/debian Debian11.5 InRelease
+Get:22 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.04 ./ InRelease [1.604 B]
+Ign:23 https://http.kali.org /kali InRelease
+Ign:24 https://ftp.up.pt/debian ./ InRelease
+Hit:25 https://kali.itsec.am/kali kali-rolling InRelease
+Get:26 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_10 ./ InRelease [1.596 B]
+Hit:27 https://ftp.debian.org/debian bookworm-proposed-updates InRelease
+Ign:28 https://http.kali.org /wheezy InRelease
+Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
+Get:30 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_11 ./ InRelease [1.596 B]
+Hit:31 https://ftp.debian.org/debian bookworm-updates InRelease
+Hit:32 https://ftp.up.pt/debian bookworm-proposed-updates InRelease
+Get:33 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_20.10 ./ InRelease [1.604 B]
+Hit:35 https://ftp.up.pt/debian bookworm-updates InRelease
+Get:36 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04 ./ InRelease [1.604 B]
+Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
+Hit:38 https://ftp.debian.org/debian bookworm InRelease
+Get:39 https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_Unstable ./ InRelease [1.620 B]
+Hit:41 https://kali.itsec.am/kali kali-rolling-only InRelease
+Hit:42 https://ftp.up.pt/debian bookworm InRelease
+Ign:1 https://security.kali.org ./ InRelease
+Hit:43 https://ftp.debian.org/debian bullseye-proposed-updates InRelease
+Ign:44 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ InRelease
+Hit:45 https://ftp.debian.org/debian bullseye-updates InRelease
+Ign:47 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ InRelease
+Hit:48 https://ftp.up.pt/debian bullseye-proposed-updates InRelease
+Hit:49 https://ftp.debian.org/debian bullseye InRelease
+Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
+Ign:2 https://ftp.cn.debian.org/debian ./ InRelease
+Hit:51 https://ftp.debian.org/debian buster-proposed-updates InRelease
+Ign:3 https://ftp.cn.debian.org/debian sid InRelease
+Hit:53 https://ftp.up.pt/debian bullseye-updates InRelease
+Hit:54 https://ftp.debian.org/debian buster-updates InRelease
+Get:55 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2204/Debian_11 ./ InRelease [1.603 B]
+Hit:56 https://ftp.debian.org/debian buster InRelease
+Err:57 https://http.kali.org/kali ./ Release
+  404  Not Found [IP: 192.99.200.113 443]
+Err:58 https://kali.itsec.am ./ Release
+  404  Not Found [IP: 31.47.196.154 443]
+Hit:59 https://ftp.up.pt/debian bullseye InRelease
+Ign:60 https://ftp.de.debian.org bookworm InRelease
+Hit:61 https://ftp.debian.org/debian jessie-updates InRelease
+Get:62 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/frameworks/Debian_11 ./ InRelease [1.596 B]
+Ign:63 https://ftp.debian.org/debian jessie InRelease
+Err:64 https://http.kali.org ./ Release
+  404  Not Found [IP: 192.99.200.113 443]
+Get:65 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other-deps/Debian_11 ./ InRelease [1.612 B]
+Hit:66 https://ftp.up.pt/debian buster-proposed-updates InRelease
+Ign:67 http://ftp.debian.org ./ InRelease
+Err:68 https://http.kali.org /kali Release
+  404  Not Found [IP: 192.99.200.113 443]
+Get:69 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/other/Debian_11 ./ InRelease [1.597 B]
+Ign:70 http://security.debian.org/debian-security ./ InRelease
+Ign:71 http://kali.cs.nctu.edu.tw/kali ./ InRelease
+Ign:72 http://archive.ubuntu.com/ubuntu ./ InRelease
+Hit:73 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
+Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
+Hit:75 https://ftp.up.pt/debian buster-updates InRelease
+Err:76 https://http.kali.org /wheezy Release
+  404  Not Found [IP: 192.99.200.113 443]
+Ign:77 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ InRelease
+Ign:78 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ InRelease
+Ign:79 https://ftp.debian.org/debian oldoldoldstable InRelease
+Ign:80 http://deb.debian.org/debian ./ InRelease
+Hit:81 https://ftp.up.pt/debian buster InRelease
+Ign:82 http://kali.download ./ InRelease
+Ign:83 http://cz.archive.ubuntu.com ./ InRelease
+Ign:84 http://cdn-fastly.deb.debian.org/debian-ports ./ InRelease
+Hit:85 http://kali.download/kali kali-rolling InRelease
+Hit:86 https://ftp.debian.org/debian oldoldstable-proposed-updates InRelease
+Get:87 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_11 ./ InRelease [1.599 B]
+Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
+Ign:89 https://ftp.up.pt/debian Debian8.11 InRelease
+Get:90 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_10 ./ InRelease [1.550 B]
+Hit:91 https://ftp.debian.org/debian oldoldstable-updates InRelease
+Ign:92 http://ftp-stud.hs-esslingen.de ./ InRelease
+Ign:94 https://ftp.up.pt/debian Debian9.13 InRelease
+Get:95 https://download.opensuse.org/repositories/home:/npreining:/debian-unison/Debian_11 ./ InRelease [1.550 B]
+Ign:96 https://ftp.de.debian.org bullseye InRelease
+Ign:97 https://ftp.debian.org/debian oldoldstable InRelease
+Hit:98 https://ftp.up.pt/debian Debian10.13 InRelease
+Hit:99 https://ftp.debian.org/debian oldstable-proposed-updates InRelease
+Hit:100 https://ftp.up.pt/debian Debian11.5 InRelease
+Get:101 https://download.opensuse.org/repositories/home:/npreining:/debian-various/Debian_11 ./ InRelease [1.573 B]
+Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
+Ign:103 https://download.opensuse.org ./ InRelease
+Ign:104 http://ua.archive.ubuntu.com ./ InRelease
+Hit:105 https://ftp.debian.org/debian oldstable-updates InRelease
+Hit:106 https://ftp.up.pt/debian jessie-updates InRelease
+Ign:107 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ InRelease
+Hit:108 https://ftp.debian.org/debian oldstable InRelease
+Ign:109 https://download.opensuse.org/repositories ./ InRelease
+Ign:110 https://ftp.up.pt/debian jessie InRelease
+Ign:111 https://ftp.de.debian.org buster-updates InRelease
+Err:1 https://security.kali.org ./ InRelease
+  Could not resolve 'security.kali.org'
+Ign:112 https://download.opensuse.org/repositories/home: ./ InRelease
+Hit:113 https://ftp.debian.org/debian proposed-updates InRelease
+Hit:114 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
+Ign:115 https://download.opensuse.org/repositories/home:/npreining: ./ InRelease
+Ign:116 https://ftp.de.debian.org buster InRelease
+Ign:117 https://ftp.up.pt/debian oldoldoldstable InRelease
+Hit:118 https://ftp.debian.org/debian rc-buggy InRelease
+Err:2 https://ftp.cn.debian.org/debian ./ InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 45.125.0.6 443]
+Err:3 https://ftp.cn.debian.org/debian sid InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 45.125.0.6 443]
+Hit:119 https://ftp.debian.org/debian stable-proposed-updates InRelease
+Hit:120 https://ftp.up.pt/debian oldoldstable-proposed-updates InRelease
+Ign:121 https://ftp.de.debian.org jessie-updates InRelease
+Hit:122 https://ftp.up.pt/debian oldoldstable-updates InRelease
+Hit:123 https://ftp.debian.org/debian stable-updates InRelease
+Err:124 http://ftp.debian.org ./ Release
+  404  Not found [IP: 151.101.78.132 80]
+Ign:125 https://ftp.up.pt/debian oldoldstable InRelease
+Hit:126 https://ftp.debian.org/debian stable InRelease
+Ign:127 https://ftp.de.debian.org jessie InRelease
+Hit:128 https://ftp.debian.org/debian stretch-proposed-updates InRelease
+Hit:129 https://ftp.debian.org/debian stretch-updates InRelease
+Hit:130 https://ftp.up.pt/debian oldstable-proposed-updates InRelease
+Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Ign:132 https://ftp.debian.org/debian stretch InRelease
+Err:133 http://kali.cs.nctu.edu.tw/kali ./ Release
+  404  Not Found [IP: 140.113.17.5 80]
+Ign:134 http://security.debian.org ./ InRelease
+Err:135 http://archive.ubuntu.com/ubuntu ./ Release
+  404  Not Found [IP: 91.189.91.38 80]
+Hit:136 https://ftp.up.pt/debian oldstable-updates InRelease
+Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
+Hit:138 https://ftp.up.pt/debian oldstable InRelease
+Ign:139 http://deb.debian.org/debian-debug ./ InRelease
+Err:140 https://ftp.debian.org/debian ./ Release
+  404  Not Found [IP: 151.101.78.132 443]
+Ign:141 http://cz.archive.ubuntu.com/ubuntu ./ InRelease
+Ign:142 http://kali.download/kali kali-rolling-updates InRelease
+Ign:143 http://cdn-fastly.deb.debian.org ./ InRelease
+Hit:144 https://ftp.up.pt/debian proposed-updates InRelease
+Hit:145 https://ftp.debian.org/debian Debian8.11 Release
+Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Ign:148 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar InRelease
+Hit:149 https://ftp.debian.org/debian Debian9.13 Release
+Hit:150 https://ftp.up.pt/debian rc-buggy InRelease
+Hit:151 https://ftp.debian.org/debian jessie Release
+Hit:152 https://ftp.up.pt/debian stable-proposed-updates InRelease
+Hit:153 https://ftp.debian.org/debian oldoldoldstable Release
+Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
+Hit:155 https://ftp.up.pt/debian stable-updates InRelease
+Err:156 http://ua.archive.ubuntu.com ./ Release
+  404  Not Found [IP: 77.120.62.8 80]
+Hit:157 https://ftp.debian.org/debian oldoldstable Release
+Hit:158 https://ftp.up.pt/debian stable InRelease
+Ign:159 https://ftp.de.debian.org oldoldstable InRelease
+Hit:160 https://ftp.debian.org/debian stretch Release
+Hit:161 https://ftp.up.pt/debian stretch-proposed-updates InRelease
+Hit:162 https://ftp.up.pt/debian stretch-updates InRelease
+Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Ign:164 https://ftp.up.pt/debian stretch InRelease
+Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
+Hit:166 https://ftp.up.pt/pub/debian bookworm-proposed-updates InRelease
+Hit:167 https://ftp.up.pt/pub/debian bookworm-updates InRelease
+Ign:168 https://ftp.de.debian.org oldstable InRelease
+Hit:169 https://ftp.up.pt/pub/debian bookworm InRelease
+Err:61 https://ftp.debian.org/debian jessie-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Hit:170 https://ftp.up.pt/pub/debian bullseye-proposed-updates InRelease
+Ign:171 https://ftp.de.debian.org proposed-updates InRelease
+Hit:172 https://ftp.up.pt/pub/debian bullseye-updates InRelease
+Hit:173 https://ftp.up.pt/pub/debian bullseye InRelease
+Ign:174 https://ftp.de.debian.org rc-buggy InRelease
+Err:175 http://security.debian.org/debian-security ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Hit:176 https://ftp.up.pt/pub/debian buster-proposed-updates InRelease
+Err:177 http://security.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:178 http://deb.debian.org/debian-ports ./ InRelease
+Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
+Ign:180 http://kali.download/kali kali-rolling-proposed InRelease
+Err:181 http://cdn-fastly.deb.debian.org/debian-ports ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Hit:182 https://ftp.up.pt/pub/debian buster-updates InRelease
+Ign:183 http://deb.debian.org/debian-security ./ InRelease
+Ign:184 http://deb.debian.org ./ InRelease
+Ign:185 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar InRelease
+Err:186 http://kali.download ./ Release
+  404  Not Found [IP: 104.18.103.100 80]
+Err:73 https://ftp.debian.org/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Hit:187 https://ftp.up.pt/pub/debian buster InRelease
+Hit:188 http://deb.debian.org/debian oldstable InRelease
+Err:189 http://cz.archive.ubuntu.com ./ Release
+  404  Not Found [IP: 217.31.202.63 80]
+Err:190 http://cdn-fastly.deb.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:191 https://ftp.de.debian.org stable-updates InRelease
+Err:192 http://kali.download/kali kali-rolling-updates Release
+  404  Not Found [IP: 104.18.103.100 80]
+Err:193 http://deb.debian.org/debian ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:194 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar InRelease
+Ign:195 http://repo.steampowered.com ./ InRelease
+Err:196 http://kali.download/kali kali-rolling-proposed Release
+  404  Not Found [IP: 104.18.103.100 80]
+Err:197 http://cz.archive.ubuntu.com/ubuntu ./ Release
+  404  Not Found [IP: 217.31.202.63 80]
+Err:198 http://deb.debian.org/debian-debug ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:199 https://ftp.up.pt/pub/debian Debian8.11 InRelease
+Err:200 http://deb.debian.org/debian-ports ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:201 https://ftp.de.debian.org stable InRelease
+Ign:202 https://deb.torproject.org ./ InRelease
+Ign:203 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar InRelease
+Err:204 http://deb.debian.org/debian-security ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Ign:205 https://ftp.up.pt/pub/debian Debian9.13 InRelease
+Err:206 http://deb.debian.org ./ Release
+  404  Not Found [IP: 151.101.78.132 80]
+Hit:207 https://ftp.up.pt/pub/debian Debian10.13 InRelease
+Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Ign:209 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar InRelease
+Ign:210 http://ddebs.ubuntu.com ./ InRelease
+Hit:211 https://ftp.up.pt/pub/debian Debian11.5 InRelease
+Ign:212 http://dl.winehq.org ./ InRelease
+Ign:213 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic InRelease
+Ign:214 https://ftp.de.debian.org stretch-updates InRelease
+Hit:215 https://ftp.up.pt/pub/debian jessie-updates InRelease
+Ign:216 https://ftp.up.pt/pub/debian jessie InRelease
+Ign:217 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar InRelease
+Ign:219 https://ftp.de.debian.org stretch InRelease
+Hit:220 https://dl.winehq.org/wine-builds/debian bookworm InRelease
+Hit:221 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
+Hit:222 https://dl.winehq.org/wine-builds/debian bullseye InRelease
+Hit:223 https://dl.winehq.org/wine-builds/debian buster InRelease
+Hit:224 https://dl.winehq.org/wine-builds/debian jessie InRelease
+Hit:225 https://dl.winehq.org/wine-builds/debian oldstable InRelease
+Ign:226 http://deb.playonlinux.com ./ InRelease
+Get:227 https://dl.winehq.org/wine-builds/debian stable InRelease [8.045 B]
+Hit:228 https://dl.winehq.org/wine-builds/debian stretch InRelease
+Ign:229 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic InRelease
+Hit:230 https://dl.winehq.org/wine-builds/debian wheezy InRelease
+Ign:231 https://ftp.up.pt/pub/debian oldoldoldstable InRelease
+Ign:6 https://ftp.de.debian.org ./ InRelease
+Hit:232 https://brave-browser-apt-beta.s3.brave.com stable InRelease
+Hit:233 https://ftp.up.pt/pub/debian oldoldstable-proposed-updates InRelease
+Ign:234 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar InRelease
+Ign:235 http://apt.postgresql.org ./ InRelease
+Hit:236 https://ftp.up.pt/pub/debian oldoldstable-updates InRelease
+Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
+Ign:237 http://ppa.launchpad.net/savoury1/display/ubuntu lunar InRelease
+Ign:238 https://ftp.up.pt/pub/debian oldoldstable InRelease
+Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
+Hit:239 https://brave-browser-apt-dev.s3.brave.com stable InRelease
+Hit:240 https://ftp.up.pt/pub/debian oldstable-proposed-updates InRelease
+Ign:241 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic InRelease
+Hit:242 https://brave-browser-apt-nightly.s3.brave.com stable InRelease
+Err:106 https://ftp.up.pt/debian jessie-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Hit:243 https://ftp.up.pt/pub/debian oldstable-updates InRelease
+Ign:244 http://extras.ubuntu.com ./ InRelease
+Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
+Hit:245 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Ign:246 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar InRelease
+Hit:247 https://ftp.up.pt/pub/debian oldstable InRelease
+Hit:248 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:249 https://ftp.up.pt/pub/debian proposed-updates InRelease
+Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
+Ign:250 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic InRelease
+Err:114 https://ftp.up.pt/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Hit:251 https://ftp.up.pt/pub/debian rc-buggy InRelease
+Ign:253 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar InRelease
+Ign:254 http://packages.microsoft.com ./ InRelease
+Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
+Hit:255 https://ftp.up.pt/pub/debian stable-proposed-updates InRelease
+Ign:256 https://fast-cdn.meetsidekick.com/builds ./ InRelease
+Hit:257 https://ftp.up.pt/pub/debian stable-updates InRelease
+Ign:258 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar InRelease
+Ign:60 https://ftp.de.debian.org bookworm InRelease
+Hit:259 https://ftp.up.pt/pub/debian stable InRelease
+Ign:260 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar InRelease
+Ign:261 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ InRelease
+Hit:262 https://ftp.up.pt/pub/debian stretch-proposed-updates InRelease
+Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
+Hit:263 https://ftp.up.pt/pub/debian stretch-updates InRelease
+Err:264 https://sidekick-cdn-production.meetsidekick.com/builds ./ InRelease
+  403  Forbidden [IP: 107.155.6.130 443]
+Ign:265 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic InRelease
+Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
+Ign:266 http://apt.insync.io ./ InRelease
+Ign:267 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar InRelease
+Ign:268 https://ftp.up.pt/pub/debian stretch InRelease
+Ign:96 https://ftp.de.debian.org bullseye InRelease
+Err:269 https://ftp.up.pt/debian ./ Release
+  404  Not Found [IP: 193.137.29.15 443]
+Ign:270 http://ftp-stud.hs-esslingen.de/debian-security ./ InRelease
+Ign:271 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar InRelease
+Hit:272 https://download.sublimetext.com apt/dev/ InRelease
+Hit:273 https://ftp.up.pt/debian Debian8.11 Release
+Ign:274 http://ftp-stud.hs-esslingen.de/debian ./ InRelease
+Hit:275 https://packages.wazuh.com/4.x/apt stable InRelease
+Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
+Ign:276 http://ftp-stud.hs-esslingen.de/ubuntu ./ InRelease
+Ign:277 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic InRelease
+Hit:278 https://ftp.up.pt/debian Debian9.13 Release
+Hit:279 http://mirror.anigil.com/kali kali-rolling InRelease
+Hit:280 http://mirror.anigil.com/kali kali-rolling-only InRelease
+Hit:281 https://ftp.up.pt/debian jessie Release
+Ign:111 https://ftp.de.debian.org buster-updates InRelease
+Ign:282 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar InRelease
+Hit:284 https://ftp.up.pt/debian oldoldoldstable Release
+Get:285 http://apt.insync.io/debian bookworm InRelease [5.538 B]
+Err:286 https://ftp.debian.org/debian Debian8.11 Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Ign:116 https://ftp.de.debian.org buster InRelease
+Ign:287 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar InRelease
+Hit:288 http://mirror.anigil.com/kali kali-bleeding-edge InRelease
+Hit:289 https://ftp.up.pt/debian oldoldstable Release
+Hit:290 http://mirror.anigil.com/kali kali-debian-picks InRelease
+Hit:291 http://mirror.anigil.com/kali kali-dev InRelease
+Hit:293 https://ftp.up.pt/debian stretch Release
+Hit:294 http://mirror.anigil.com/kali kali-dev-only InRelease
+Ign:295 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic InRelease
+Ign:121 https://ftp.de.debian.org jessie-updates InRelease
+Hit:296 http://mirror.anigil.com/kali kali-last-snapshot InRelease
+Hit:297 https://ftp.up.pt/pub/debian Debian8.11 Release
+Err:298 https://ftp.debian.org/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Ign:299 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar InRelease
+Hit:300 https://ftp.up.pt/pub/debian Debian9.13 Release
+Hit:19 https://mirror.anigil.com/kali kali-rolling InRelease
+Ign:127 https://ftp.de.debian.org jessie InRelease
+Hit:34 https://mirror.anigil.com/kali kali-dev InRelease
+Hit:40 https://mirror.anigil.com/kali kali-last-snapshot InRelease
+Ign:301 http://ddebs.ubuntu.com bionic-proposed InRelease
+Hit:302 https://ftp.up.pt/pub/debian jessie Release
+Ign:303 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic InRelease
+Err:304 https://ftp.debian.org/debian oldoldoldstable Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Hit:305 https://ftp.up.pt/pub/debian oldoldoldstable Release
+Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Ign:306 http://ddebs.ubuntu.com bionic-updates InRelease
+Ign:307 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar InRelease
+Hit:308 https://ftp.up.pt/pub/debian oldoldstable Release
+Err:309 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2108/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:310 http://ddebs.ubuntu.com bionic InRelease
+Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
+Hit:312 https://ftp.up.pt/pub/debian stretch Release
+Ign:313 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar InRelease
+Ign:314 http://ddebs.ubuntu.com focal-proposed InRelease
+Hit:46 https://mirror.anigil.com/kali kali-debian-picks InRelease
+Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Ign:315 http://ddebs.ubuntu.com focal-updates InRelease
+Ign:316 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic InRelease
+Ign:318 http://ddebs.ubuntu.com focal InRelease
+Err:319 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/apps2112/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
+Ign:320 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar InRelease
+Hit:52 https://mirror.anigil.com/kali kali-dev-only InRelease
+Ign:321 http://ddebs.ubuntu.com jammy-proposed InRelease
+Ign:322 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic InRelease
+Ign:159 https://ftp.de.debian.org oldoldstable InRelease
+Ign:323 http://ddebs.ubuntu.com jammy-updates InRelease
+Ign:324 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar InRelease
+Err:325 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma522/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:326 http://ddebs.ubuntu.com jammy InRelease
+Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Err:327 https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma523/Debian_11 ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Err:328 https://download.opensuse.org ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:329 http://ddebs.ubuntu.com kinetic-proposed InRelease
+Ign:330 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic InRelease
+Err:331 https://download.opensuse.org/repositories/home:/npreining:/debian-kde: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
+Ign:332 http://ddebs.ubuntu.com kinetic-updates InRelease
+Err:333 https://download.opensuse.org/repositories ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:334 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar InRelease
+Err:335 https://download.opensuse.org/repositories/home: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:336 http://ddebs.ubuntu.com kinetic InRelease
+Err:337 https://download.opensuse.org/repositories/home:/npreining: ./ Release
+  404  Not Found [IP: 195.135.221.134 443]
+Ign:168 https://ftp.de.debian.org oldstable InRelease
+Ign:338 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic InRelease
+Ign:339 http://ddebs.ubuntu.com trusty-proposed InRelease
+Ign:171 https://ftp.de.debian.org proposed-updates InRelease
+Ign:340 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar InRelease
+Ign:146 https://archive.mariadb.org ./ InRelease
+Ign:341 http://ddebs.ubuntu.com trusty-security InRelease
+Ign:174 https://ftp.de.debian.org rc-buggy InRelease
+Ign:342 http://ddebs.ubuntu.com trusty-updates InRelease
+Ign:343 http://ppa.launchpad.net/system76/pop/ubuntu kinetic InRelease
+Ign:344 http://ddebs.ubuntu.com trusty InRelease
+Ign:345 http://ppa.launchpad.net/system76/pop/ubuntu lunar InRelease
+Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
+Err:346 https://deb.torproject.org ./ Release
+  404  Not Found [IP: 95.216.163.36 443]
+Ign:347 http://ddebs.ubuntu.com xenial-proposed InRelease
+Err:215 https://ftp.up.pt/pub/debian jessie-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Ign:348 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic InRelease
+Ign:191 https://ftp.de.debian.org stable-updates InRelease
+Ign:349 http://ddebs.ubuntu.com xenial-updates InRelease
+Ign:350 http://ppa.launchpad.net/system76/proposed/ubuntu lunar InRelease
+Err:221 https://ftp.up.pt/pub/debian oldoldoldstable-updates InRelease
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+Ign:351 http://ddebs.ubuntu.com xenial InRelease
+Ign:201 https://ftp.de.debian.org stable InRelease
+Hit:352 http://deb.anydesk.com all InRelease
+Ign:353 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic InRelease
+Ign:218 https://tracker.debian.org ./ InRelease
+Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Hit:354 http://repository.spotify.com stable InRelease
+Ign:355 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar InRelease
+Ign:214 https://ftp.de.debian.org stretch-updates InRelease
+Ign:356 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic InRelease
+Err:357 http://ftp-stud.hs-esslingen.de ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Ign:219 https://ftp.de.debian.org stretch InRelease
+Ign:358 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar InRelease
+Err:359 http://repo.steampowered.com ./ Release
+  404  Not Found [IP: 104.17.152.86 80]
+Ign:6 https://ftp.de.debian.org ./ InRelease
+Ign:360 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic InRelease
+Err:361 http://ddebs.ubuntu.com ./ Release
+  404  Not Found [IP: 185.125.190.18 80]
+Err:362 http://dl.winehq.org ./ Release
+  404  Not Found [IP: 151.101.130.217 80]
+Err:363 https://fast-cdn.meetsidekick.com/builds ./ Release
+  404  Not Found [IP: 13.224.250.11 443]
+Ign:12 https://ftp.de.debian.org Debian8.11 InRelease
+Ign:364 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar InRelease
+Err:365 http://deb.playonlinux.com ./ Release
+  404  Not Found [IP: 51.254.71.191 80]
+Err:366 http://apt.postgresql.org ./ Release
+  404  Not Found [IP: 217.196.149.55 80]
+Ign:283 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling InRelease
+Ign:367 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar InRelease
+Ign:20 https://ftp.de.debian.org Debian9.13 InRelease
+Err:368 http://extras.ubuntu.com ./ Release
+  404  Not Found [IP: 185.125.190.36 80]
+Err:369 http://packages.microsoft.com ./ Release
+  404  Not Found [IP: 40.65.182.21 80]
+Err:370 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:29 https://ftp.de.debian.org Debian10.13 InRelease
+Err:371 http://ftp.nluug.nl/db/mariadb/repo/10.3/debian ./ Release
+  404  Not Found [IP: 145.220.21.40 80]
+Err:372 http://ppa.launchpad.net/darklordpaunik8880/kalibuntu1/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:15 https://ppa.launchpadcontent.net ./ InRelease
+Ign:93 http://ppa.launchpad.net ./ InRelease
+Ign:37 https://ftp.de.debian.org Debian11.5 InRelease
+Err:373 http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:50 https://ftp.de.debian.org bookworm-updates InRelease
+Err:375 http://ppa.launchpad.net/miroslavets90/karimovich-fumiyanov/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:60 https://ftp.de.debian.org bookworm InRelease
+Err:377 http://ppa.launchpad.net/remmina-ppa-team/remmina-next/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
+Err:378 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:88 https://ftp.de.debian.org bullseye-updates InRelease
+Err:379 http://ppa.launchpad.net/savoury1/apt-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:380 https://ftp.up.pt/debian Debian8.11 Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Ign:96 https://ftp.de.debian.org bullseye InRelease
+Err:381 http://ppa.launchpad.net/savoury1/backports/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:383 http://apt.insync.io ./ Release
+  404  Not Found [IP: 156.146.56.166 80]
+Ign:102 https://ftp.de.debian.org buster-proposed-updates InRelease
+Err:384 http://ppa.launchpad.net/savoury1/backports/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:385 http://ftp-stud.hs-esslingen.de/debian-security ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Err:386 http://ppa.launchpad.net/savoury1/display/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:111 https://ftp.de.debian.org buster-updates InRelease
+Err:387 http://ftp-stud.hs-esslingen.de/debian ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Err:388 https://ftp.up.pt/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:389 http://ftp-stud.hs-esslingen.de/ubuntu ./ Release
+  404  Not Found [IP: 129.143.116.10 80]
+Err:390 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:376 https://tracker.debian.org ./ Release
+  404  Not Found [IP: 209.87.16.64 443]
+Ign:116 https://ftp.de.debian.org buster InRelease
+Err:391 https://ftp.up.pt/debian oldoldoldstable Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Hit:392 http://ddebs.ubuntu.com bionic-proposed Release
+Err:393 http://ppa.launchpad.net/savoury1/ffmpeg4/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:394 http://ddebs.ubuntu.com bionic-updates Release [34,7 kB]
+Ign:121 https://ftp.de.debian.org jessie-updates InRelease
+Err:395 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:397 http://ddebs.ubuntu.com bionic Release [34,7 kB]
+Ign:127 https://ftp.de.debian.org jessie InRelease
+Ign:252 http://private-ppa.launchpad.net ./ InRelease
+Err:398 http://ppa.launchpad.net/savoury1/gcc-defaults-7/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:399 http://ddebs.ubuntu.com focal-proposed Release [40,5 kB]
+Ign:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+Err:400 http://ppa.launchpad.net/savoury1/gcc-defaults-9/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Hit:401 http://ddebs.ubuntu.com focal-updates Release
+Get:374 https://ppa.launchpadcontent.net ./ Release [16,4 kB]
+Get:403 http://ddebs.ubuntu.com focal Release [40,4 kB]
+Get:404 https://dl.winehq.org/wine-builds/debian stable/main Sources [90,7 kB]
+Err:404 https://dl.winehq.org/wine-builds/debian stable/main Sources
+  File has unexpected size (89776 != 90740). Mirror sync in progress? [IP: 151.101.194.217 443]
+  Hashes of expected file:
+   - Filesize:90740 [weak]
+   - SHA512:90ea0e4de60bc61c9314457783824e0101fc6df6d564b15e5e82dd38373ec140699664c1356218e28dd8eeeb411aaaf2920207e48f4fad6623ee7e82de30c8cb
+   - SHA256:84272638de523c78ff00965a0a776fa8668d053fbaebf0457dd3e77e6012f270
+   - SHA1:b00fb9624466ff05a04dff43aac6442f1bba7329 [weak]
+   - MD5Sum:2816655ef6a50f3b065087dbc81c3be5 [weak]
+  Release file created at: Tue, 01 Nov 2022 17:30:00 +0000
+Err:405 http://ppa.launchpad.net/savoury1/gpg/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:137 https://ftp.de.debian.org oldoldoldstable InRelease
+Get:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages [545 kB]
+Get:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages [545 kB]
+Err:406 https://dl.winehq.org/wine-builds/debian stable/main amd64 Packages
+  
+Get:408 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages [555 kB]
+Err:408 https://dl.winehq.org/wine-builds/debian stable/main i386 Packages
+  
+Get:409 http://ddebs.ubuntu.com jammy-proposed Release [40,5 kB]
+Err:410 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:411 http://ddebs.ubuntu.com jammy-updates Release [40,5 kB]
+Ign:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+Err:412 https://ftp.up.pt/pub/debian Debian8.11 Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Get:414 http://ddebs.ubuntu.com jammy Release [40,4 kB]
+Err:415 http://ppa.launchpad.net/savoury1/gtk-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:154 https://ftp.de.debian.org oldoldstable-updates InRelease
+Get:417 http://ddebs.ubuntu.com kinetic-proposed Release [40,5 kB]
+Err:418 http://ppa.launchpad.net/savoury1/kde-5-80/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:419 http://ddebs.ubuntu.com kinetic-updates Release [40,5 kB]
+Ign:159 https://ftp.de.debian.org oldoldstable InRelease
+Err:420 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:421 http://ddebs.ubuntu.com kinetic Release [40,4 kB]
+Ign:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+Get:422 http://ddebs.ubuntu.com trusty-proposed Release [34,8 kB]
+Err:423 https://ftp.up.pt/pub/debian jessie Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Err:424 http://ppa.launchpad.net/savoury1/kde-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:426 https://ftp.up.pt/pub/debian oldoldoldstable Release.gpg
+  The following signatures were invalid: REVKEYSIG 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org> EXPKEYSIG CBF8D6FD518E17E1 Jessie Stable Release Key <debian-release@lists.debian.org> 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1
+Ign:165 https://ftp.de.debian.org oldstable-updates InRelease
+Err:427 http://ppa.launchpad.net/savoury1/qt-5-15/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:413 https://ppa.launchpadcontent.net ./ Release.gpg
+Get:430 http://ddebs.ubuntu.com trusty-security Release [23,1 kB]
+Err:431 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:168 https://ftp.de.debian.org oldstable InRelease
+Err:425 https://archive.mariadb.org ./ Release
+  404  Not Found [IP: 138.201.152.105 443]
+Err:432 http://ppa.launchpad.net/savoury1/qt-xenial/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:171 https://ftp.de.debian.org proposed-updates InRelease
+Get:433 http://ddebs.ubuntu.com trusty-updates Release [34,8 kB]
+Err:434 http://ppa.launchpad.net/savoury1/toolchain/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:174 https://ftp.de.debian.org rc-buggy InRelease
+Err:435 http://ppa.launchpad.net/savoury1/toolchain/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:436 http://ddebs.ubuntu.com trusty Release [35,7 kB]
+Ign:179 https://ftp.de.debian.org stable-proposed-updates InRelease
+Err:439 http://ppa.launchpad.net/savoury1/vlc3/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:440 http://ddebs.ubuntu.com xenial-proposed Release [40,5 kB]
+Ign:191 https://ftp.de.debian.org stable-updates InRelease
+Err:442 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:444 http://ddebs.ubuntu.com xenial-updates Release [40,5 kB]
+Ign:201 https://ftp.de.debian.org stable InRelease
+Err:445 http://ppa.launchpad.net/scubuntu-dev/ppa/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
+Get:447 http://ddebs.ubuntu.com xenial Release [40,4 kB]
+Err:449 http://ppa.launchpad.net/shemgp/gnome/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:214 https://ftp.de.debian.org stretch-updates InRelease
+Err:452 http://ppa.launchpad.net/shemgp/gnome/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:451 https://archive.mariadb.org/mariadb-10.5.9/repo/ubuntu kali-rolling Release
+  404  Not Found [IP: 138.201.152.105 443]
+Err:455 http://ppa.launchpad.net/snapcpp/ppa/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:219 https://ftp.de.debian.org stretch InRelease
+Err:458 http://ppa.launchpad.net/snapcpp/ppa/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:459 http://ddebs.ubuntu.com bionic Release.gpg [819 B]
+Err:6 https://ftp.de.debian.org ./ InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:461 http://ppa.launchpad.net/snappy-dev/image/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:462 http://ddebs.ubuntu.com focal Release.gpg [819 B]
+Err:12 https://ftp.de.debian.org Debian8.11 InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Get:463 http://ddebs.ubuntu.com jammy Release.gpg [833 B]
+Err:464 http://ppa.launchpad.net/snappy-dev/image/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:20 https://ftp.de.debian.org Debian9.13 InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Get:465 http://ddebs.ubuntu.com trusty-proposed Release.gpg [819 B]
+Err:466 http://ppa.launchpad.net/system76/pop/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:467 http://ddebs.ubuntu.com trusty-security Release.gpg [198 B]
+Err:29 https://ftp.de.debian.org Debian10.13 InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:468 http://ppa.launchpad.net/system76/pop/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Ign:467 http://ddebs.ubuntu.com trusty-security Release.gpg
+Err:37 https://ftp.de.debian.org Debian11.5 InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:469 http://ppa.launchpad.net/system76/proposed/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:454 http://private-ppa.launchpad.net ./ Release [16,4 kB]
+Err:470 http://ppa.launchpad.net/system76/proposed/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:50 https://ftp.de.debian.org bookworm-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:471 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:60 https://ftp.de.debian.org bookworm InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:472 http://ppa.launchpad.net/tormodvolden/ppa/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:74 https://ftp.de.debian.org bullseye-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:473 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:88 https://ftp.de.debian.org bullseye-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:474 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-24/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:96 https://ftp.de.debian.org bullseye InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:475 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu kinetic Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:102 https://ftp.de.debian.org buster-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:476 http://ppa.launchpad.net/ubuntu-desktop/gnome-3-26/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Err:111 https://ftp.de.debian.org buster-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:477 http://ppa.launchpad.net/wagungs/kali-linux/ubuntu lunar Release
+  404  Not Found [IP: 185.125.190.52 80]
+Get:478 http://ddebs.ubuntu.com trusty-updates Release.gpg [819 B]
+Err:116 https://ftp.de.debian.org buster InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:121 https://ftp.de.debian.org jessie-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:127 https://ftp.de.debian.org jessie InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:131 https://ftp.de.debian.org oldoldoldstable-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:137 https://ftp.de.debian.org oldoldoldstable InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:147 https://ftp.de.debian.org oldoldstable-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:154 https://ftp.de.debian.org oldoldstable-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:159 https://ftp.de.debian.org oldoldstable InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Get:479 http://ddebs.ubuntu.com trusty Release.gpg [819 B]
+Err:163 https://ftp.de.debian.org oldstable-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:165 https://ftp.de.debian.org oldstable-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:168 https://ftp.de.debian.org oldstable InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Get:480 http://ppa.launchpad.net ./ Release [16,4 kB]
+Err:171 https://ftp.de.debian.org proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:174 https://ftp.de.debian.org rc-buggy InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:179 https://ftp.de.debian.org stable-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:191 https://ftp.de.debian.org stable-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:201 https://ftp.de.debian.org stable InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:208 https://ftp.de.debian.org stretch-proposed-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Get:481 http://ddebs.ubuntu.com xenial Release.gpg [819 B]
+Err:214 https://ftp.de.debian.org stretch-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Err:219 https://ftp.de.debian.org stretch InRelease
+  Certificate verification failed: The certificate is NOT trusted. The name in the certificate does not match the expected.  Could not handshake: Error in the certificate verification. [IP: 141.76.2.4 443]
+Ign:482 http://ppa.launchpad.net ./ Release.gpg
+Ign:483 http://private-ppa.launchpad.net ./ Release.gpg
+Reading package lists...
+Processing triggers for kali-menu (2022.4.1) ...
