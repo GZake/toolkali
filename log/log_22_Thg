@@ -275,3 +275,553 @@ The following packages were automatically installed and are no longer required:
   zfs-dkms
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  appstream-util aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 auctex
+  avahi-utils bladerf blhc castxml catch2 chktex cl-swank clisp clisp-doc
+  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
+  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
+  clisp-module-pcre clisp-module-postgresql clisp-module-zlib
+  dotnet-apphost-pack-6.0 dotnet-hostfxr-6.0 dotnet-runtime-6.0
+  dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0 dvidvi
+  dvipng exif extra-cmake-modules fakechroot finger fish-common fonts-wine
+  genext2fs gir1.2-ayatanaappindicator3-0.1 gir1.2-glib-2.0:i386
+  gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0 gir1.2-vte-2.91 gir1.2-xfconf-0
+  golang-1.18-go golang-1.18-src gpsd-tools greenbone-security-assistant
+  gvmd-common hplip-data hyperspec iputils-tracepath ir-keytable isa-support
+  isympy-common isympy3 jupyter-core jupyter-nbextension-jupyter-js-widgets
+  kismet-capture-nrf-51822 kismet-capture-nrf-52840 kismet-capture-nxp-kw41z
+  kismet-capture-rz-killerbee kismet-capture-ti-cc-2531
+  kismet-capture-ti-cc-2540 kismet-capture-ubertooth-one lacheck latexdiff
+  latexmk lcdf-typetools ldmtool libad9361-0 libadns1 libairspy0 libairspyhf1
+  libapache2-mod-php libappstream-glib8 libapt-inst2.0 libapt-pkg5.0
+  libatk1.0-data libauparse0 libbde1 libbit-vector-perl libbladerf2
+  libboolean-perl libboost-context1.74.0 libbroker2 libbtbb1 libcache-perl
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17 libcapi20-3
+  libcarp-clan-perl libclang-cpp11 libclass-errorhandler-perl
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libconfig++9v5:i386 libcppunit-1.15-0 libcppunit-dev libcreg1
+  libcrypt-rc4-perl libdate-calc-perl libdate-calc-xs-perl
+  libdatetime-format-flexible-perl libdatetime-format-mail-perl
+  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
+  libdigest-perl-md5-perl libeigen3-dev libesedb1 libevt1 libevtx1
+  libfakechroot libfeed-find-perl libffado2:i386 libffcall1b
+  libfile-nfslock-perl libflac++10 libfmt-dev libfmt8 libfontbox-java
+  libfreesrp0 libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2
+  libfvde1 libfwnt1 libfwsi1 libgarcon-gtk3-1-0 libgirepository-1.0-1:i386
+  libgirepository1.0-doc libglfw3 libglibmm-2.4-1v5:i386
+  libgnuradio-iqbalance3.9.0 libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3
+  libgnuradio-pmt3.10.4 libgnuradio-runtime3.10.4 libgoogle-perftools4
+  libgs9-common libgsm1-dev libgtkspell3-3-0 libguestfs-hfsplus libguestfs-jfs
+  libguestfs-nilfs libguestfs-reiserfs libguestfs-rescue libguestfs-rsync
+  libguestfs-xfs libguestfs0 libgvm21 libhamlib4 libheap-perl
+  libhidapi-libusb0 libhiredis0.14 libhttp-server-simple-perl libi2c-dev:i386
+  libi2c0:i386 libiec61883-0:i386 libiio0 libirman0 libjs-backbone
+  libjs-bootstrap-tour libjs-codemirror libjs-es6-promise libjs-jed
+  libjs-jquery-typeahead libjs-marked libjs-moment libjs-prettify
+  libjs-requirejs libjs-requirejs-text libjs-skeleton libjs-terser
+  libjs-text-encoding libjs-xterm libkeybinder-3.0-0 libkf5attica-dev
+  libkf5attica-doc libkf5auth-dev libkf5auth-dev-bin libkf5auth-doc
+  libkf5bookmarks-doc libkf5codecs-dev libkf5codecs-doc libkf5completion-dev
+  libkf5completion-doc libkf5config-dev libkf5config-dev-bin libkf5config-doc
+  libkf5configwidgets-doc libkf5coreaddons-dev libkf5coreaddons-dev-bin
+  libkf5coreaddons-doc libkf5dbusaddons-dev libkf5dbusaddons-doc
+  libkf5globalaccel-dev libkf5globalaccel-doc libkf5guiaddons-dev
+  libkf5guiaddons-doc libkf5i18n-doc libkf5iconthemes-bin libkf5iconthemes-doc
+  libkf5itemviews-dev libkf5itemviews-doc libkf5jobwidgets-dev
+  libkf5jobwidgets-doc libkf5kio-doc libkf5package-dev libkf5package-doc
+  libkf5plasma-doc libkf5pulseaudioqt3 libkf5service-doc libkf5solid-dev
+  libkf5solid-doc libkf5torrent6abi2 libkf5widgetsaddons-dev
+  libkf5widgetsaddons-doc libkf5windowsystem-dev libkf5windowsystem-doc
+  libkf5xmlgui-bin libkf5xmlgui-doc liblbfgsb0 libldm-1.0-0 liblerc3
+  libleveldb1d liblimesuite20.10-1 liblimesuite22.09-1 liblirc0
+  liblms7compact0 liblnk1 libluksde1 liblwp-authen-wsse-perl libmirisdr0
+  libmodi1 libmodule-util-perl libmono-2.0-dev libmono-cairo4.0-cil
+  libmono-cecil-private-cil libmono-cil-dev libmono-codecontracts4.0-cil
+  libmono-compilerservices-symbolwriter4.0-cil libmono-cscompmgd0.0-cil
+  libmono-csharp4.0c-cil libmono-custommarshalers4.0-cil
+  libmono-data-tds4.0-cil libmono-db2-1.0-cil libmono-debugger-soft4.0a-cil
+  libmono-http4.0-cil libmono-management4.0-cil
+  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
+  libmono-microsoft-build-engine4.0-cil
+  libmono-microsoft-build-framework4.0-cil
+  libmono-microsoft-build-tasks-v4.0-4.0-cil
+  libmono-microsoft-build-utilities-v4.0-4.0-cil
+  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
+  libmono-microsoft-visualc10.0-cil
+  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
+  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
+  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
+  libmono-system-componentmodel-composition4.0-cil
+  libmono-system-configuration-install4.0-cil
+  libmono-system-data-datasetextensions4.0-cil
+  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
+  libmono-system-data-services-client4.0-cil
+  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
+  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
+  libmono-system-identitymodel-selectors4.0-cil
+  libmono-system-identitymodel4.0-cil
+  libmono-system-io-compression-filesystem4.0-cil
+  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
+  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
+  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
+  libmono-system-net-http-formatting4.0-cil
+  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
+  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
+  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
+  libmono-system-reactive-experimental2.2-cil
+  libmono-system-reactive-interfaces2.2-cil
+  libmono-system-reactive-linq2.2-cil
+  libmono-system-reactive-observable-aliases0.0-cil
+  libmono-system-reactive-platformservices2.2-cil
+  libmono-system-reactive-providers2.2-cil
+  libmono-system-reactive-runtime-remoting2.2-cil
+  libmono-system-reactive-windows-forms2.2-cil
+  libmono-system-reactive-windows-threading2.2-cil
+  libmono-system-reflection-context4.0-cil
+  libmono-system-runtime-caching4.0-cil
+  libmono-system-runtime-durableinstancing4.0-cil
+  libmono-system-runtime-serialization4.0-cil
+  libmono-system-servicemodel-activation4.0-cil
+  libmono-system-servicemodel-discovery4.0-cil
+  libmono-system-servicemodel-internals0.0-cil
+  libmono-system-servicemodel-routing4.0-cil
+  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
+  libmono-system-serviceprocess4.0-cil
+  libmono-system-threading-tasks-dataflow4.0-cil
+  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
+  libmono-system-web-extensions-design4.0-cil
+  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
+  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
+  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
+  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
+  libmono-system-web-routing4.0-cil
+  libmono-system-web-webpages-deployment2.0-cil
+  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
+  libmono-system-windows-forms-datavisualization4.0a-cil
+  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
+  libmono-system-workflow-componentmodel4.0-cil
+  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
+  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
+  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
+  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
+  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libnautilus-extension1a
+  libncursesw6:i386 libndpi4.2 libnode93 libnunit-cil-dev
+  libnunit-console-runner2.6.3-cil libnunit-core-interfaces2.6.3-cil
+  libnunit-core2.6.3-cil libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil
+  libnunit-util2.6.3-cil libnvpair3linux liboath0 libodpic4
+  libole-storage-lite-perl libolecf1 libopenh264-6 libopusfile0 libosmosdr0
+  libpari-gmp-tls8 libparse-recdescent-perl libpdfbox-java libperl5.34
+  libplacebo192 libpoppler118 libportmidi0 libpython3-all-dev
+  libpython3-stdlib:i386 libpython3.10-minimal:i386 libpython3.10-stdlib:i386
+  libpython3.9 libpython3.9-minimal libpython3.9-stdlib libqcow1
+  libqt5location5 libqt5positioningquick5 libqt5quicktest5
+  libqt5remoteobjects5 libqt5websockets5 libqt6core6 libqt6dbus6 libqt6gui6
+  libqt6network6 libqt6opengl6 libqt6openglwidgets6 libqt6printsupport6
+  libqt6sql6 libqt6sql6-sqlite libqt6test6 libqt6widgets6 libqt6xml6
+  libqwt-qt5-6 libradcli4 libradosstriper1 libraw1394-11:i386 libregf1 librgw2
+  librizin-common librizin0 libsane-hpaio libscca1 libsdl2-image-2.0-0
+  libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libsigc++-2.0-0v5:i386 libsigscan1
+  libsmdev1 libsmraw1 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl libsquashfs1
+  libsvm3 libsvtav1enc0 libtcl8.6:i386 libtcmalloc-minimal4 libtecla1
+  libthrift-0.16.0 libthrift-0.17.0 libthrift-dev libtinfo-dev libtk8.6:i386
+  libtree-sitter0 libts0 libubertooth1 libuhd4.1.0 libuhd4.2.0 libuhd4.3.0
+  liburi-fetch-perl libusb3380-0 libuutil3linux libvirt0 libvkd3d-shader1
+  libvkd3d1 libvolk2-bin libvolk2-dev libvolk2.5 libvsgpt1 libvshadow1
+  libvslvm1 libwebsockets16 libwhereami0 libwine libwireshark15 libwiretap12
+  libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libx86-1:i386
+  libxapian-dev libxcomp3 libxdo3 libxfce4ui-utils libxml++2.6-2v5:i386
+  libxml-atom-perl libxml-feed-perl libxml-libxslt-perl libxml-rss-perl
+  libxsimd-dev libxtrx0 libxtrxdsp0 libxtrxll0 libz-mingw-w64 libz3-dev
+  libzfs4linux libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
+  light-locker limesuite-udev lirc-compat-remotes lirc-doc lirc-drv-irman
+  llvm-11 llvm-11-linker-tools llvm-11-runtime lsscsi lua-bitop lua-cjson
+  mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
+  node-ampproject-remapping node-jed node-source-map node-terser numba-doc
+  nvme-cli nxproxy openvas-scanner oracle-instantclient-basic
+  oracle-instantclient-devel pandoc pandoc-data pdfminer-data
+  perl-modules-5.34 php-json preview-latex-style proot proxmark3-firmwares
+  ps2eps purifyeps pybind11-dev python-funcsigs-doc python-matplotlib-data
+  python-odf-doc python-pastedeploy-tpl python-pecan-doc python-tables-data
+  python-tinycss2-common python-waitress-doc python-webtest-doc
+  python-zstandard-doc python3-adblockparser python3-advancedhttpserver
+  python3-aeidon python3-aiocmd python3-aioconsole python3-aiofiles
+  python3-aiomultiprocess python3-aiowinreg python3-ajpy python3-alabaster
+  python3-altgraph python3-amqp python3-aniso8601 python3-anyio
+  python3-anyjson python3-apispec python3-appdirs python3-apscheduler
+  python3-arrow python3-asciitree python3-asgiref python3-asteval
+  python3-asttokens python3-async-lru python3-asysocks python3-backcall
+  python3-backoff python3-beniget python3-bidict python3-billiard
+  python3-bleach python3-bluepy python3-boltons python3-bottle
+  python3-bytecode python3-cached-property python3-cachetools python3-censys
+  python3-ceph-argparse python3-cerberus python3-cfscrape python3-cheroot
+  python3-cherrypy-cors python3-cherrypy3 python3-cli-helpers
+  python3-click-didyoumean python3-click-plugins python3-click-repl
+  python3-cloudscraper python3-cmd2 python3-colorlog python3-commonmark
+  python3-construct python3-cpe python3-cssselect2 python3-ctypescrypto
+  python3-cvss python3-cycler python3-dataclasses-json python3-debconf
+  python3-dhcplib python3-diff-match-patch python3-django
+  python3-django-appconf python3-django-auditlog python3-django-crispy-forms
+  python3-django-crum python3-django-dbbackup python3-django-environ
+  python3-django-extensions python3-django-extra-views
+  python3-django-fieldsignals python3-django-filters python3-django-guardian
+  python3-django-multiselectfield python3-django-polymorphic
+  python3-django-ratelimit python3-django-restframework-guardian
+  python3-django-split-settings python3-django-tagging python3-django-tagulous
+  python3-django-watson python3-djangorestframework python3-dnslib
+  python3-docker python3-dockerpty python3-docopt python3-dotenv
+  python3-dropbox python3-dsnap python3-easyprocess python3-elasticsearch
+  python3-email-validator python3-emailahoy3 python3-engineio
+  python3-entrypoints python3-et-xmlfile python3-executing python3-exifread
+  python3-fake-factory python3-fake-useragent
+  python3-faraday-agent-parameters-types python3-fastapi python3-fasteners
+  python3-fastjsonschema python3-feedparser python3-filedepot python3-fleep
+  python3-freezegun python3-fs python3-funcsigs python3-gast python3-geojson
+  python3-gps3 python3-graphene python3-graphql-core python3-graphql-relay
+  python3-graphviz python3-gunicorn python3-h2 python3-hpack python3-html2text
+  python3-httpagentparser python3-httpcore python3-httpx python3-hupper
+  python3-hypercorn python3-hyperframe python3-icalendar python3-icmplib
+  python3-imagesize python3-imapclient python3-infinity python3-inflection
+  python3-ipwhois python3-ipy python3-ipython python3-ipython-genutils
+  python3-isc-dhcp-leases python3-iso8601 python3-itsdangerous python3-itypes
+  python3-jaraco.collections python3-jaraco.context python3-jaraco.functools
+  python3-jaraco.text python3-jdcal python3-jedi python3-joblib
+  python3-json-log-formatter python3-jupyter-core python3-jupyterlab-pygments
+  python3-kaitaistruct python3-kombu python3-ldapdomaindump python3-limiter
+  python3-lml python3-log-symbols python3-loguru python3-logutils
+  python3-macholib python3-magic-ahupp python3-manuf python3-marshmallow
+  python3-marshmallow-enum python3-matplotlib-inline python3-metaconfig
+  python3-minidump python3-minikerberos python3-mistune0 python3-monotonic
+  python3-mpmath python3-msldap python3-multipart python3-mypy-extensions
+  python3-neo4j python3-neobolt python3-neotime python3-nest-asyncio
+  python3-networkx python3-nmap python3-notmuch python3-nplusone python3-odf
+  python3-opengl python3-openid python3-oscrypto python3-packageurl
+  python3-pandocfilters python3-parso python3-paste python3-pastedeploy
+  python3-pastescript python3-pathspec python3-pbkdf2 python3-pem
+  python3-pendulum python3-pexpect python3-pgpy-doc python3-phonenumbers
+  python3-phply python3-pickleshare python3-plaster
+  python3-plaster-pastedeploy python3-portend python3-prettytable
+  python3-priority python3-prometheus-client python3-promise
+  python3-prompt-toolkit python3-psycopg3 python3-ptyprocess
+  python3-publicsuffix2 python3-publicsuffixlist python3-pure-eval
+  python3-py-sneakers python3-pybeam python3-pycountry python3-pydantic
+  python3-pydispatch python3-pydot python3-pyee python3-pyexcel
+  python3-pyexcel-io python3-pyexcel-ods python3-pyexcel-text
+  python3-pyexcel-xls python3-pyexploitdb python3-pygccxml python3-pygeoip
+  python3-pyinotify python3-pyinstaller python3-pylnk3 python3-pyminifier
+  python3-pymysql python3-pyotp python3-pyperclip python3-pyppeteer
+  python3-pyric python3-pysmi python3-pytz-deprecation-shim python3-pytzdata
+  python3-pyuserinput python3-pyvirtualdisplay python3-repoze.lru
+  python3-responses python3-retrying python3-rfc3986 python3-rich
+  python3-routes python3-rule-engine python3-rx python3-schema python3-secure
+  python3-securesystemslib python3-send2trash python3-sgmllib3k
+  python3-simple-rest-client python3-simplegeneric python3-simplekv
+  python3-singledispatch python3-slugify python3-smb python3-snowballstemmer
+  python3-socketio python3-speaklater python3-spinners python3-spyse
+  python3-sqlparse python3-stack-data python3-starlette python3-status
+  python3-stem python3-stone python3-sympy python3-syslog-rfc5424-formatter
+  python3-tempita python3-tempora python3-tenacity python3-terminaltables
+  python3-testpath python3-texttable python3-tinycss2 python3-tinydb
+  python3-titlecase python3-tls-parser python3-token-bucket python3-tomli-w
+  python3-torrequest python3-traitlets python3-translationstring
+  python3-typing-inspect python3-tzlocal python3-unicodecsv python3-unidecode
+  python3-usb python3-uvicorn python3-vadersentiment python3-venusian
+  python3-vine python3-vobject python3-waitress python3-wcwidth
+  python3-websocket python3-websockets python3-werkzeug python3-wget
+  python3-winacl python3-wtforms python3-xlrd python3-xlsxwriter
+  python3-xlutils python3-xlwt python3-yaswfp python3-zc.lockfile
+  python3-zlib-wrapper python3-zope.deprecation python3.9 python3.9-minimal
+  qt6-base-dev-tools qt6-gtk-platformtheme qt6-qpa-plugins
+  qt6-translations-l10n qtdeclarative5-dev qtdeclarative5-dev-tools
+  qtscript5-dev ruby2.7 ruby2.7-dev ruby2.7-doc rwho rwhod scrub
+  semodule-utils setserial slime soapyosmo-common0.8 soapysdr-tools
+  soapysdr0.8-module-airspy soapysdr0.8-module-all soapysdr0.8-module-audio
+  soapysdr0.8-module-bladerf soapysdr0.8-module-hackrf soapysdr0.8-module-lms7
+  soapysdr0.8-module-mirisdr soapysdr0.8-module-osmosdr
+  soapysdr0.8-module-redpitaya soapysdr0.8-module-remote
+  soapysdr0.8-module-rfspace soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd
+  sphinx-common sqsh squashfs-tools-ng sse3-support supermin syslinux
+  tango-icon-theme texlive-font-utils texlive-metapost texlive-metapost-doc
+  translate-toolkit-doc ubertooth-firmware unicode-data uwsgi-core
+  uwsgi-plugin-python3 vkd3d-compiler wine64 xapian-doc xapian-examples
+  xdotool xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfdesktop4
+  xfdesktop4-data xiccd xindy xindy-rules xprobe xtrx-dkms zeek-common
+  zfs-dkms
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  appstream-util aspnetcore-runtime-6.0 aspnetcore-targeting-pack-6.0 auctex
+  avahi-utils bladerf blhc castxml catch2 chktex cl-swank clisp clisp-doc
+  clisp-module-berkeley-db clisp-module-clx clisp-module-dbus
+  clisp-module-fastcgi clisp-module-gdbm clisp-module-libsvm clisp-module-pari
+  clisp-module-pcre clisp-module-postgresql clisp-module-zlib
+  dotnet-apphost-pack-6.0 dotnet-hostfxr-6.0 dotnet-runtime-6.0
+  dotnet-runtime-deps-6.0 dotnet-sdk-6.0 dotnet-targeting-pack-6.0 dvidvi
+  dvipng exif extra-cmake-modules fakechroot finger fish-common fonts-wine
+  genext2fs gir1.2-glib-2.0:i386 gir1.2-gtksource-3.0 gir1.2-gtkspell3-3.0
+  gir1.2-vte-2.91 golang-1.18-go golang-1.18-src gpsd-tools
+  greenbone-security-assistant gvmd-common hplip-data hyperspec
+  iputils-tracepath ir-keytable isa-support isympy-common isympy3 jupyter-core
+  jupyter-nbextension-jupyter-js-widgets kismet-capture-nrf-51822
+  kismet-capture-nrf-52840 kismet-capture-nxp-kw41z
+  kismet-capture-rz-killerbee kismet-capture-ti-cc-2531
+  kismet-capture-ti-cc-2540 kismet-capture-ubertooth-one lacheck latexdiff
+  latexmk lcdf-typetools ldmtool libad9361-0 libadns1 libairspy0 libairspyhf1
+  libapache2-mod-php libappstream-glib8 libapt-inst2.0 libapt-pkg5.0
+  libatk1.0-data libauparse0 libbde1 libbit-vector-perl libbladerf2
+  libboolean-perl libboost-context1.74.0 libbroker2 libbtbb1 libcache-perl
+  libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17 libcapi20-3
+  libcarp-clan-perl libclang-cpp11 libclass-errorhandler-perl
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libconfig++9v5:i386 libcppunit-1.15-0 libcppunit-dev libcreg1
+  libcrypt-rc4-perl libdate-calc-perl libdate-calc-xs-perl
+  libdatetime-format-flexible-perl libdatetime-format-mail-perl
+  libdatetime-format-natural-perl libdatetime-format-w3cdtf-perl
+  libdigest-perl-md5-perl libeigen3-dev libesedb1 libevt1 libevtx1
+  libfakechroot libfeed-find-perl libffado2:i386 libffcall1b
+  libfile-nfslock-perl libflac++10 libfmt-dev libfmt8 libfontbox-java
+  libfreesrp0 libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsxfs1 libfuzzy2
+  libfvde1 libfwnt1 libfwsi1 libgirepository-1.0-1:i386 libgirepository1.0-doc
+  libglfw3 libglibmm-2.4-1v5:i386 libgnuradio-iqbalance3.9.0
+  libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3 libgnuradio-pmt3.10.4
+  libgnuradio-runtime3.10.4 libgoogle-perftools4 libgs9-common libgsm1-dev
+  libgtkspell3-3-0 libguestfs-hfsplus libguestfs-jfs libguestfs-nilfs
+  libguestfs-reiserfs libguestfs-rescue libguestfs-rsync libguestfs-xfs
+  libguestfs0 libgvm21 libhamlib4 libheap-perl libhidapi-libusb0
+  libhiredis0.14 libhttp-server-simple-perl libi2c-dev:i386 libi2c0:i386
+  libiec61883-0:i386 libiio0 libirman0 libjs-backbone libjs-bootstrap-tour
+  libjs-codemirror libjs-es6-promise libjs-jed libjs-jquery-typeahead
+  libjs-marked libjs-moment libjs-prettify libjs-requirejs
+  libjs-requirejs-text libjs-skeleton libjs-terser libjs-text-encoding
+  libjs-xterm libkf5attica-dev libkf5attica-doc libkf5auth-dev
+  libkf5auth-dev-bin libkf5auth-doc libkf5bookmarks-doc libkf5codecs-dev
+  libkf5codecs-doc libkf5completion-dev libkf5completion-doc libkf5config-dev
+  libkf5config-dev-bin libkf5config-doc libkf5configwidgets-doc
+  libkf5coreaddons-dev libkf5coreaddons-dev-bin libkf5coreaddons-doc
+  libkf5dbusaddons-dev libkf5dbusaddons-doc libkf5globalaccel-dev
+  libkf5globalaccel-doc libkf5guiaddons-dev libkf5guiaddons-doc libkf5i18n-doc
+  libkf5iconthemes-bin libkf5iconthemes-doc libkf5itemviews-dev
+  libkf5itemviews-doc libkf5jobwidgets-dev libkf5jobwidgets-doc libkf5kio-doc
+  libkf5package-dev libkf5package-doc libkf5plasma-doc libkf5pulseaudioqt3
+  libkf5service-doc libkf5solid-dev libkf5solid-doc libkf5torrent6abi2
+  libkf5widgetsaddons-dev libkf5widgetsaddons-doc libkf5windowsystem-dev
+  libkf5windowsystem-doc libkf5xmlgui-bin libkf5xmlgui-doc liblbfgsb0
+  libldm-1.0-0 liblerc3 libleveldb1d liblimesuite20.10-1 liblimesuite22.09-1
+  liblirc0 liblms7compact0 liblnk1 libluksde1 liblwp-authen-wsse-perl
+  libmirisdr0 libmodi1 libmodule-util-perl libmono-2.0-dev
+  libmono-cairo4.0-cil libmono-cecil-private-cil libmono-cil-dev
+  libmono-codecontracts4.0-cil libmono-compilerservices-symbolwriter4.0-cil
+  libmono-cscompmgd0.0-cil libmono-csharp4.0c-cil
+  libmono-custommarshalers4.0-cil libmono-data-tds4.0-cil libmono-db2-1.0-cil
+  libmono-debugger-soft4.0a-cil libmono-http4.0-cil libmono-management4.0-cil
+  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
+  libmono-microsoft-build-engine4.0-cil
+  libmono-microsoft-build-framework4.0-cil
+  libmono-microsoft-build-tasks-v4.0-4.0-cil
+  libmono-microsoft-build-utilities-v4.0-4.0-cil
+  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
+  libmono-microsoft-visualc10.0-cil
+  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
+  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
+  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
+  libmono-system-componentmodel-composition4.0-cil
+  libmono-system-configuration-install4.0-cil
+  libmono-system-data-datasetextensions4.0-cil
+  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
+  libmono-system-data-services-client4.0-cil
+  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
+  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
+  libmono-system-identitymodel-selectors4.0-cil
+  libmono-system-identitymodel4.0-cil
+  libmono-system-io-compression-filesystem4.0-cil
+  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
+  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
+  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
+  libmono-system-net-http-formatting4.0-cil
+  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
+  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
+  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
+  libmono-system-reactive-experimental2.2-cil
+  libmono-system-reactive-interfaces2.2-cil
+  libmono-system-reactive-linq2.2-cil
+  libmono-system-reactive-observable-aliases0.0-cil
+  libmono-system-reactive-platformservices2.2-cil
+  libmono-system-reactive-providers2.2-cil
+  libmono-system-reactive-runtime-remoting2.2-cil
+  libmono-system-reactive-windows-forms2.2-cil
+  libmono-system-reactive-windows-threading2.2-cil
+  libmono-system-reflection-context4.0-cil
+  libmono-system-runtime-caching4.0-cil
+  libmono-system-runtime-durableinstancing4.0-cil
+  libmono-system-runtime-serialization4.0-cil
+  libmono-system-servicemodel-activation4.0-cil
+  libmono-system-servicemodel-discovery4.0-cil
+  libmono-system-servicemodel-internals0.0-cil
+  libmono-system-servicemodel-routing4.0-cil
+  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
+  libmono-system-serviceprocess4.0-cil
+  libmono-system-threading-tasks-dataflow4.0-cil
+  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
+  libmono-system-web-extensions-design4.0-cil
+  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
+  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
+  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
+  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
+  libmono-system-web-routing4.0-cil
+  libmono-system-web-webpages-deployment2.0-cil
+  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
+  libmono-system-windows-forms-datavisualization4.0a-cil
+  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
+  libmono-system-workflow-componentmodel4.0-cil
+  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
+  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
+  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
+  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
+  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libnautilus-extension1a
+  libncursesw6:i386 libndpi4.2 libnode93 libnunit-cil-dev
+  libnunit-console-runner2.6.3-cil libnunit-core-interfaces2.6.3-cil
+  libnunit-core2.6.3-cil libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil
+  libnunit-util2.6.3-cil libnvpair3linux liboath0 libodpic4
+  libole-storage-lite-perl libolecf1 libopenh264-6 libopusfile0 libosmosdr0
+  libpari-gmp-tls8 libparse-recdescent-perl libpdfbox-java libperl5.34
+  libplacebo192 libpoppler118 libportmidi0 libpython3-all-dev
+  libpython3-stdlib:i386 libpython3.10-minimal:i386 libpython3.10-stdlib:i386
+  libpython3.9 libpython3.9-minimal libpython3.9-stdlib libqcow1
+  libqt5location5 libqt5positioningquick5 libqt5quicktest5
+  libqt5remoteobjects5 libqt5websockets5 libqt6core6 libqt6dbus6 libqt6gui6
+  libqt6network6 libqt6opengl6 libqt6openglwidgets6 libqt6printsupport6
+  libqt6sql6 libqt6sql6-sqlite libqt6test6 libqt6widgets6 libqt6xml6
+  libqwt-qt5-6 libradcli4 libradosstriper1 libraw1394-11:i386 libregf1 librgw2
+  librizin-common librizin0 libsane-hpaio libscca1 libsdl2-image-2.0-0
+  libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0 libsigc++-2.0-0v5:i386 libsigscan1
+  libsmdev1 libsmraw1 libsoapysdr0.8 libspdlog-dev libspdlog1.10
+  libspreadsheet-parseexcel-perl libspreadsheet-writeexcel-perl libsquashfs1
+  libsvm3 libsvtav1enc0 libtcl8.6:i386 libtcmalloc-minimal4 libtecla1
+  libthrift-0.16.0 libthrift-0.17.0 libthrift-dev libtinfo-dev libtk8.6:i386
+  libtree-sitter0 libts0 libubertooth1 libuhd4.1.0 libuhd4.2.0 libuhd4.3.0
+  liburi-fetch-perl libusb3380-0 libuutil3linux libvirt0 libvkd3d-shader1
+  libvkd3d1 libvolk2-bin libvolk2-dev libvolk2.5 libvsgpt1 libvshadow1
+  libvslvm1 libwebsockets16 libwhereami0 libwine libwireshark15 libwiretap12
+  libwsutil13 libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libx86-1:i386
+  libxapian-dev libxcomp3 libxml++2.6-2v5:i386 libxml-atom-perl
+  libxml-feed-perl libxml-libxslt-perl libxml-rss-perl libxsimd-dev libxtrx0
+  libxtrxdsp0 libxtrxll0 libz-mingw-w64 libz3-dev libzfs4linux
+  libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
+  limesuite-udev lirc-compat-remotes lirc-doc lirc-drv-irman llvm-11
+  llvm-11-linker-tools llvm-11-runtime lsscsi lua-bitop lua-cjson
+  mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
+  node-ampproject-remapping node-jed node-source-map node-terser numba-doc
+  nvme-cli nxproxy openvas-scanner oracle-instantclient-basic
+  oracle-instantclient-devel pandoc pandoc-data pdfminer-data
+  perl-modules-5.34 php-json preview-latex-style proot proxmark3-firmwares
+  ps2eps purifyeps pybind11-dev python-funcsigs-doc python-matplotlib-data
+  python-odf-doc python-pastedeploy-tpl python-pecan-doc python-tables-data
+  python-tinycss2-common python-waitress-doc python-webtest-doc
+  python-zstandard-doc python3-adblockparser python3-advancedhttpserver
+  python3-aeidon python3-aiocmd python3-aioconsole python3-aiofiles
+  python3-aiomultiprocess python3-aiowinreg python3-ajpy python3-alabaster
+  python3-altgraph python3-amqp python3-aniso8601 python3-anyio
+  python3-anyjson python3-apispec python3-appdirs python3-apscheduler
+  python3-arrow python3-asciitree python3-asgiref python3-asteval
+  python3-asttokens python3-async-lru python3-asysocks python3-backcall
+  python3-backoff python3-beniget python3-bidict python3-billiard
+  python3-bleach python3-bluepy python3-boltons python3-bottle
+  python3-bytecode python3-cached-property python3-cachetools python3-censys
+  python3-ceph-argparse python3-cerberus python3-cfscrape python3-cheroot
+  python3-cherrypy-cors python3-cherrypy3 python3-cli-helpers
+  python3-click-didyoumean python3-click-plugins python3-click-repl
+  python3-cloudscraper python3-cmd2 python3-colorlog python3-commonmark
+  python3-construct python3-cpe python3-cssselect2 python3-ctypescrypto
+  python3-cvss python3-cycler python3-dataclasses-json python3-debconf
+  python3-dhcplib python3-diff-match-patch python3-django
+  python3-django-appconf python3-django-auditlog python3-django-crispy-forms
+  python3-django-crum python3-django-dbbackup python3-django-environ
+  python3-django-extensions python3-django-extra-views
+  python3-django-fieldsignals python3-django-filters python3-django-guardian
+  python3-django-multiselectfield python3-django-polymorphic
+  python3-django-ratelimit python3-django-restframework-guardian
+  python3-django-split-settings python3-django-tagging python3-django-tagulous
+  python3-django-watson python3-djangorestframework python3-dnslib
+  python3-docker python3-dockerpty python3-docopt python3-dotenv
+  python3-dropbox python3-dsnap python3-easyprocess python3-elasticsearch
+  python3-email-validator python3-emailahoy3 python3-engineio
+  python3-entrypoints python3-et-xmlfile python3-executing python3-exifread
+  python3-fake-factory python3-fake-useragent
+  python3-faraday-agent-parameters-types python3-fastapi python3-fasteners
+  python3-fastjsonschema python3-feedparser python3-filedepot python3-fleep
+  python3-freezegun python3-fs python3-funcsigs python3-gast python3-geojson
+  python3-gps3 python3-graphene python3-graphql-core python3-graphql-relay
+  python3-graphviz python3-gunicorn python3-h2 python3-hpack python3-html2text
+  python3-httpagentparser python3-httpcore python3-httpx python3-hupper
+  python3-hypercorn python3-hyperframe python3-icalendar python3-icmplib
+  python3-imagesize python3-imapclient python3-infinity python3-inflection
+  python3-ipwhois python3-ipy python3-ipython python3-ipython-genutils
+  python3-isc-dhcp-leases python3-iso8601 python3-itsdangerous python3-itypes
+  python3-jaraco.collections python3-jaraco.context python3-jaraco.functools
+  python3-jaraco.text python3-jdcal python3-jedi python3-joblib
+  python3-json-log-formatter python3-jupyter-core python3-jupyterlab-pygments
+  python3-kaitaistruct python3-kombu python3-ldapdomaindump python3-limiter
+  python3-lml python3-log-symbols python3-loguru python3-logutils
+  python3-macholib python3-magic-ahupp python3-manuf python3-marshmallow
+  python3-marshmallow-enum python3-matplotlib-inline python3-metaconfig
+  python3-minidump python3-minikerberos python3-mistune0 python3-monotonic
+  python3-mpmath python3-msldap python3-multipart python3-mypy-extensions
+  python3-neo4j python3-neobolt python3-neotime python3-nest-asyncio
+  python3-networkx python3-nmap python3-notmuch python3-nplusone python3-odf
+  python3-opengl python3-openid python3-oscrypto python3-packageurl
+  python3-pandocfilters python3-parso python3-paste python3-pastedeploy
+  python3-pastescript python3-pathspec python3-pbkdf2 python3-pem
+  python3-pendulum python3-pgpy-doc python3-phonenumbers python3-phply
+  python3-pickleshare python3-plaster python3-plaster-pastedeploy
+  python3-portend python3-prettytable python3-priority
+  python3-prometheus-client python3-promise python3-prompt-toolkit
+  python3-psycopg3 python3-publicsuffix2 python3-publicsuffixlist
+  python3-pure-eval python3-py-sneakers python3-pybeam python3-pycountry
+  python3-pydantic python3-pydispatch python3-pydot python3-pyee
+  python3-pyexcel python3-pyexcel-io python3-pyexcel-ods python3-pyexcel-text
+  python3-pyexcel-xls python3-pyexploitdb python3-pygccxml python3-pygeoip
+  python3-pyinotify python3-pyinstaller python3-pylnk3 python3-pyminifier
+  python3-pymysql python3-pyotp python3-pyperclip python3-pyppeteer
+  python3-pyric python3-pysmi python3-pytz-deprecation-shim python3-pytzdata
+  python3-pyuserinput python3-pyvirtualdisplay python3-repoze.lru
+  python3-responses python3-retrying python3-rfc3986 python3-rich
+  python3-routes python3-rule-engine python3-rx python3-schema python3-secure
+  python3-securesystemslib python3-send2trash python3-sgmllib3k
+  python3-simple-rest-client python3-simplegeneric python3-simplekv
+  python3-singledispatch python3-slugify python3-smb python3-snowballstemmer
+  python3-socketio python3-speaklater python3-spinners python3-spyse
+  python3-sqlparse python3-stack-data python3-starlette python3-status
+  python3-stem python3-stone python3-sympy python3-syslog-rfc5424-formatter
+  python3-tempita python3-tempora python3-tenacity python3-terminaltables
+  python3-testpath python3-texttable python3-tinycss2 python3-tinydb
+  python3-titlecase python3-tls-parser python3-token-bucket python3-tomli-w
+  python3-torrequest python3-traitlets python3-translationstring
+  python3-typing-inspect python3-tzlocal python3-unicodecsv python3-unidecode
+  python3-usb python3-uvicorn python3-vadersentiment python3-venusian
+  python3-vine python3-vobject python3-waitress python3-wcwidth
+  python3-websocket python3-websockets python3-werkzeug python3-wget
+  python3-winacl python3-wtforms python3-xlrd python3-xlsxwriter
+  python3-xlutils python3-xlwt python3-yaswfp python3-zc.lockfile
+  python3-zlib-wrapper python3-zope.deprecation python3.9 python3.9-minimal
+  qt6-base-dev-tools qt6-gtk-platformtheme qt6-qpa-plugins
+  qt6-translations-l10n qtdeclarative5-dev qtdeclarative5-dev-tools
+  qtscript5-dev ruby2.7 ruby2.7-dev ruby2.7-doc rwho rwhod scrub
+  semodule-utils setserial slime soapyosmo-common0.8 soapysdr-tools
+  soapysdr0.8-module-airspy soapysdr0.8-module-all soapysdr0.8-module-audio
+  soapysdr0.8-module-bladerf soapysdr0.8-module-hackrf soapysdr0.8-module-lms7
+  soapysdr0.8-module-mirisdr soapysdr0.8-module-osmosdr
+  soapysdr0.8-module-redpitaya soapysdr0.8-module-remote
+  soapysdr0.8-module-rfspace soapysdr0.8-module-rtlsdr soapysdr0.8-module-uhd
+  sphinx-common sqsh squashfs-tools-ng sse3-support supermin syslinux
+  texlive-font-utils texlive-metapost texlive-metapost-doc
+  translate-toolkit-doc ubertooth-firmware unicode-data uwsgi-core
+  uwsgi-plugin-python3 vkd3d-compiler wine64 xapian-doc xapian-examples xindy
+  xindy-rules xprobe xtrx-dkms zeek-common zfs-dkms
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 190 not upgraded.
