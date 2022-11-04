@@ -702,7 +702,7 @@ echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://
 echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
 echo "deb https://fast-cdn.meetsidekick.com/builds/ ./" | sudo tee /etc/apt/sources.list.d/sidekick.list
 echo "deb https://sidekick-cdn-production.meetsidekick.com/builds/ ./" | sudo tee -a /etc/apt/sources.list.d/sidekick.list
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-stable.list'
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #sudo apt-add-repository -ys ppa:$USER/$PPA
 #sudo apt-add-repository \'${ENTRY}\'
@@ -742,7 +742,7 @@ sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bullseye-updates main
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ bullseye main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster-proposed-updates main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster-updates main contrib non-free non-free-firmware"
-sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian8.11 main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian9.13 main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian10.13 main contrib non-free non-free-firmware"
