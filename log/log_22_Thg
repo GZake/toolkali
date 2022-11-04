@@ -1349,3 +1349,204 @@ Errors were encountered while processing:
 ======  How can you help?  (doc: https://wiki.debian.org/how-can-i-help ) ======
 
 -----  Show old opportunities as well as new ones: how-can-i-help --old  -----
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Correcting dependencies... Done
+The following packages were automatically installed and are no longer required:
+  appstream-util avahi-utils blhc exif extra-cmake-modules fakechroot
+  fish-common fonts-wine genext2fs gir1.2-glib-2.0:i386 gir1.2-gtkspell3-3.0
+  golang-1.18-go golang-1.18-src greenbone-security-assistant hplip-data
+  iputils-tracepath ir-keytable isa-support jupyter-core
+  jupyter-nbextension-jupyter-js-widgets ldmtool libadns1 libappstream-glib8
+  libapt-inst2.0 libapt-pkg5.0 libassuan-dev libatk1.0-data libaudit-dev
+  libauparse0 libbde1 libboolean-perl libboost-context1.74.0
+  libboost-program-options-dev libboost-test-dev libboost-thread-dev
+  libbroker2 libcache-perl libcaf-core0.17 libcaf-io0.17 libcaf-openssl0.17
+  libcap-ng-dev libcapi20-3 libclang-cpp11 libclass-errorhandler-perl
+  libcmark-gfm-extensions0.29.0.gfm.3 libcmark-gfm0.29.0.gfm.3
+  libconfig++9v5:i386 libcreg1 libdatetime-format-flexible-perl
+  libdatetime-format-mail-perl libdatetime-format-natural-perl
+  libdatetime-format-w3cdtf-perl libesedb1 libevt1 libevtx1 libfakechroot
+  libfeed-find-perl libffado2:i386 libfile-nfslock-perl libflac++10 libfmt8
+  libfsapfs1 libfsext1 libfshfs1 libfsntfs1 libfsverity-dev libfsxfs1
+  libfuzzy2 libfvde1 libfwnt1 libfwsi1 libgcrypt20-dev libgcrypt20-doc
+  libgirepository-1.0-1:i386 libgirepository1.0-doc libglibmm-2.4-1v5:i386
+  libgnuradio-pmt3.10.2 libgnuradio-pmt3.10.3 libgoogle-perftools4
+  libgpg-error-dev libgpgme-dev libgs9-common libgtkspell3-3-0
+  libguestfs-hfsplus libguestfs-jfs libguestfs-nilfs libguestfs-reiserfs
+  libguestfs-rescue libguestfs-rsync libguestfs-xfs libguestfs0 libheap-perl
+  libhttp-server-simple-perl libi2c-dev:i386 libi2c0:i386 libiec61883-0:i386
+  libirman0 libjs-backbone libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-jed libjs-jquery-typeahead libjs-marked libjs-moment
+  libjs-prettify libjs-requirejs-text libjs-terser libjs-text-encoding
+  libjs-xterm libkf5attica-dev libkf5attica-doc libkf5auth-dev
+  libkf5auth-dev-bin libkf5auth-doc libkf5bookmarks-doc libkf5codecs-dev
+  libkf5codecs-doc libkf5completion-dev libkf5completion-doc libkf5config-dev
+  libkf5config-dev-bin libkf5config-doc libkf5configwidgets-doc
+  libkf5coreaddons-dev libkf5coreaddons-dev-bin libkf5coreaddons-doc
+  libkf5dbusaddons-dev libkf5dbusaddons-doc libkf5globalaccel-dev
+  libkf5globalaccel-doc libkf5guiaddons-dev libkf5guiaddons-doc libkf5i18n-doc
+  libkf5iconthemes-bin libkf5iconthemes-doc libkf5itemviews-dev
+  libkf5itemviews-doc libkf5jobwidgets-dev libkf5jobwidgets-doc libkf5kio-doc
+  libkf5package-dev libkf5package-doc libkf5plasma-doc libkf5pulseaudioqt3
+  libkf5service-doc libkf5solid-dev libkf5solid-doc libkf5torrent6abi2
+  libkf5widgetsaddons-dev libkf5widgetsaddons-doc libkf5windowsystem-dev
+  libkf5windowsystem-doc libkf5xmlgui-bin libkf5xmlgui-doc libldm-1.0-0
+  liblerc3 libleveldb1d liblimesuite20.10-1 liblirc0 liblnk1 libluksde1
+  liblwp-authen-wsse-perl libmodi1 libmodule-util-perl libmono-2.0-dev
+  libmono-cairo4.0-cil libmono-cecil-private-cil libmono-cil-dev
+  libmono-codecontracts4.0-cil libmono-compilerservices-symbolwriter4.0-cil
+  libmono-cscompmgd0.0-cil libmono-csharp4.0c-cil
+  libmono-custommarshalers4.0-cil libmono-data-tds4.0-cil libmono-db2-1.0-cil
+  libmono-debugger-soft4.0a-cil libmono-http4.0-cil libmono-management4.0-cil
+  libmono-messaging-rabbitmq4.0-cil libmono-messaging4.0-cil
+  libmono-microsoft-build-engine4.0-cil
+  libmono-microsoft-build-framework4.0-cil
+  libmono-microsoft-build-tasks-v4.0-4.0-cil
+  libmono-microsoft-build-utilities-v4.0-4.0-cil
+  libmono-microsoft-build4.0-cil libmono-microsoft-csharp4.0-cil
+  libmono-microsoft-visualc10.0-cil
+  libmono-microsoft-web-infrastructure1.0-cil libmono-oracle4.0-cil
+  libmono-peapi4.0a-cil libmono-rabbitmq4.0-cil libmono-relaxng4.0-cil
+  libmono-sharpzip4.84-cil libmono-simd4.0-cil libmono-smdiagnostics0.0-cil
+  libmono-system-componentmodel-composition4.0-cil
+  libmono-system-configuration-install4.0-cil
+  libmono-system-data-datasetextensions4.0-cil
+  libmono-system-data-entity4.0-cil libmono-system-data-linq4.0-cil
+  libmono-system-data-services-client4.0-cil
+  libmono-system-data-services4.0-cil libmono-system-deployment4.0-cil
+  libmono-system-drawing-design4.0-cil libmono-system-dynamic4.0-cil
+  libmono-system-identitymodel-selectors4.0-cil
+  libmono-system-identitymodel4.0-cil
+  libmono-system-io-compression-filesystem4.0-cil
+  libmono-system-io-compression4.0-cil libmono-system-json-microsoft4.0-cil
+  libmono-system-json4.0-cil libmono-system-ldap-protocols4.0-cil
+  libmono-system-management4.0-cil libmono-system-messaging4.0-cil
+  libmono-system-net-http-formatting4.0-cil
+  libmono-system-net-http-webrequest4.0-cil libmono-system-net-http4.0-cil
+  libmono-system-net4.0-cil libmono-system-numerics-vectors4.0-cil
+  libmono-system-reactive-core2.2-cil libmono-system-reactive-debugger2.2-cil
+  libmono-system-reactive-experimental2.2-cil
+  libmono-system-reactive-interfaces2.2-cil
+  libmono-system-reactive-linq2.2-cil
+  libmono-system-reactive-observable-aliases0.0-cil
+  libmono-system-reactive-platformservices2.2-cil
+  libmono-system-reactive-providers2.2-cil
+  libmono-system-reactive-runtime-remoting2.2-cil
+  libmono-system-reactive-windows-forms2.2-cil
+  libmono-system-reactive-windows-threading2.2-cil
+  libmono-system-reflection-context4.0-cil
+  libmono-system-runtime-caching4.0-cil
+  libmono-system-runtime-durableinstancing4.0-cil
+  libmono-system-runtime-serialization4.0-cil
+  libmono-system-servicemodel-activation4.0-cil
+  libmono-system-servicemodel-discovery4.0-cil
+  libmono-system-servicemodel-internals0.0-cil
+  libmono-system-servicemodel-routing4.0-cil
+  libmono-system-servicemodel-web4.0-cil libmono-system-servicemodel4.0a-cil
+  libmono-system-serviceprocess4.0-cil
+  libmono-system-threading-tasks-dataflow4.0-cil
+  libmono-system-web-abstractions4.0-cil libmono-system-web-dynamicdata4.0-cil
+  libmono-system-web-extensions-design4.0-cil
+  libmono-system-web-extensions4.0-cil libmono-system-web-http-selfhost4.0-cil
+  libmono-system-web-http-webhost4.0-cil libmono-system-web-http4.0-cil
+  libmono-system-web-mobile4.0-cil libmono-system-web-mvc3.0-cil
+  libmono-system-web-razor2.0-cil libmono-system-web-regularexpressions4.0-cil
+  libmono-system-web-routing4.0-cil
+  libmono-system-web-webpages-deployment2.0-cil
+  libmono-system-web-webpages-razor2.0-cil libmono-system-web-webpages2.0-cil
+  libmono-system-windows-forms-datavisualization4.0a-cil
+  libmono-system-windows4.0-cil libmono-system-workflow-activities4.0-cil
+  libmono-system-workflow-componentmodel4.0-cil
+  libmono-system-workflow-runtime4.0-cil libmono-system-xaml4.0-cil
+  libmono-system-xml-linq4.0-cil libmono-system-xml-serialization4.0-cil
+  libmono-tasklets4.0-cil libmono-webmatrix-data4.0-cil
+  libmono-windowsbase4.0-cil libmono-xbuild-tasks4.0-cil libmonosgen-2.0-1
+  libmonosgen-2.0-dev libmpdec3:i386 libmsiecf1 libncursesw6:i386 libndpi4.2
+  libnode93 libnunit-cil-dev libnunit-console-runner2.6.3-cil
+  libnunit-core-interfaces2.6.3-cil libnunit-core2.6.3-cil
+  libnunit-framework2.6.3-cil libnunit-mocks2.6.3-cil libnunit-util2.6.3-cil
+  libnvpair3linux liboath0 libodpic4 libolecf1 libopenh264-6 libplacebo192
+  libpopt-dev libproxy-dev libpython3-stdlib:i386 libpython3.10-minimal:i386
+  libpython3.10-stdlib:i386 libpython3.9 libpython3.9-minimal
+  libpython3.9-stdlib libqcow1 libqt5quicktest5 libradosstriper1
+  libraw1394-11:i386 libregf1 librgw2 librpm-dev libsane-hpaio libscca1
+  libsigc++-2.0-0v5:i386 libsigscan1 libsmdev1 libsmraw1 libsolv-dev
+  libsolvext-dev libsquashfs1 libsvtav1enc0 libtcl8.6:i386
+  libtcmalloc-minimal4 libthrift-0.16.0 libtinfo-dev libtk8.6:i386 libudev-dev
+  libuhd4.1.0 libuhd4.2.0 liburi-fetch-perl libuutil3linux libvirt0
+  libvkd3d-shader1 libvkd3d1 libvsgpt1 libvshadow1 libvslvm1 libwebsockets16
+  libwine libwireshark15 libwiretap12 libwsutil13 libx86-1:i386 libxapian-dev
+  libxcomp3 libxml++2.6-2v5:i386 libxml-atom-perl libxml-feed-perl
+  libxml-libxslt-perl libxml-rss-perl libz-mingw-w64 libz3-dev libzfs4linux
+  libzita-alsa-pcmi0:i386 libzita-resampler1:i386 libzpool5linux
+  lirc-compat-remotes lirc-doc lirc-drv-irman lsscsi lua-bitop lua-cjson
+  mingw-w64-tools mono-csharp-shell mono-devel mono-mcs mono-xbuild
+  node-ampproject-remapping node-jed node-terser nvme-cli nxproxy
+  oracle-instantclient-devel pandoc pandoc-data pdfminer-data php-json proot
+  python-pecan-doc python-tinycss2-common python-waitress-doc
+  python-webtest-doc python-zstandard-doc python3-aeidon python3-amqp
+  python3-anyjson python3-asteval python3-async-lru python3-billiard
+  python3-cachetools python3-ceph-argparse python3-cerberus python3-cfscrape
+  python3-click-didyoumean python3-click-repl python3-cloudscraper
+  python3-colorlog python3-construct python3-cpe python3-cssselect2
+  python3-ctypescrypto python3-dataclasses-json python3-debconf
+  python3-dhcplib python3-diff-match-patch python3-django-appconf
+  python3-django-auditlog python3-django-crispy-forms python3-django-crum
+  python3-django-dbbackup python3-django-environ python3-django-extensions
+  python3-django-extra-views python3-django-fieldsignals
+  python3-django-filters python3-django-guardian
+  python3-django-multiselectfield python3-django-polymorphic
+  python3-django-ratelimit python3-django-restframework-guardian
+  python3-django-split-settings python3-django-tagging python3-django-tagulous
+  python3-django-watson python3-djangorestframework python3-docker
+  python3-dockerpty python3-dsnap python3-easyprocess python3-elasticsearch
+  python3-emailahoy3 python3-fake-factory python3-fake-useragent
+  python3-fasteners python3-fleep python3-freezegun python3-gps3
+  python3-gunicorn python3-hypercorn python3-icmplib python3-imapclient
+  python3-infinity python3-inflection python3-isc-dhcp-leases python3-iso8601
+  python3-itypes python3-json-log-formatter python3-jupyterlab-pygments
+  python3-kombu python3-limiter python3-lml python3-loguru python3-logutils
+  python3-magic-ahupp python3-manuf python3-marshmallow-enum
+  python3-metaconfig python3-monotonic python3-mypy-extensions python3-nmap
+  python3-notmuch python3-openid python3-oscrypto python3-packageurl
+  python3-pandocfilters python3-pathspec python3-pbkdf2 python3-pem
+  python3-pgpy-doc python3-phply python3-priority python3-prometheus-client
+  python3-pybeam python3-pycountry python3-pyexcel python3-pyexcel-io
+  python3-pyexcel-ods python3-pyexcel-text python3-pyexcel-xls python3-pygeoip
+  python3-pyric python3-pyuserinput python3-pyvirtualdisplay python3-responses
+  python3-securesystemslib python3-send2trash python3-simplegeneric
+  python3-singledispatch python3-smb python3-spyse python3-stem
+  python3-testpath python3-tinycss2 python3-tinydb python3-titlecase
+  python3-token-bucket python3-tomli-w python3-torrequest
+  python3-typing-inspect python3-usb python3-vadersentiment python3-vine
+  python3-vobject python3-waitress python3-wget python3.9 python3.9-minimal
+  qtdeclarative5-dev qtdeclarative5-dev-tools qtscript5-dev ruby2.7
+  ruby2.7-dev ruby2.7-doc scrub semodule-utils squashfs-tools-ng sse3-support
+  supermin syslinux translate-toolkit-doc uwsgi-core uwsgi-plugin-python3
+  vkd3d-compiler wine64 xapian-doc xapian-examples xprobe zeek-common zfs-dkms
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  python-pytest
+Suggested packages:
+  python-mock
+The following NEW packages will be installed:
+  python-pytest
+0 upgraded, 1 newly installed, 0 to remove and 323 not upgraded.
+2 not fully installed or removed.
+Need to get 243 kB of archives.
+After this operation, 867 kB of additional disk space will be used.
+Get:1 https://ftp.debian.org/debian buster/main amd64 python-pytest all 3.10.1-2 [243 kB]
+Fetched 243 kB in 1s (375 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 1658130 files and directories currently installed.)
+Preparing to unpack .../python-pytest_3.10.1-2_all.deb ...
+Unpacking python-pytest (3.10.1-2) ...
+dpkg: error processing archive /var/cache/apt/archives/python-pytest_3.10.1-2_all.deb (--unpack):
+ trying to overwrite '/usr/bin/pytest', which is also in package python3-pytest 7.1.2-4
+dpkg-deb: error: paste subprocess was killed by signal (Broken pipe)
+Errors were encountered while processing:
+ /var/cache/apt/archives/python-pytest_3.10.1-2_all.deb
+======  How can you help?  (doc: https://wiki.debian.org/how-can-i-help ) ======
+
+-----  Show old opportunities as well as new ones: how-can-i-help --old  -----
