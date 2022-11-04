@@ -745,7 +745,7 @@ sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster-updates main c
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ buster contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian8.11 main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian9.13 main contrib non-free non-free-firmware"
-sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian10.13 main contrib non-free non-free-firmware"
+sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian10.13 contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ Debian11.5 main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ jessie-updates main contrib non-free non-free-firmware"
 sudo add-apt-repository -ys "deb https://ftp.up.pt/debian/ jessie main contrib non-free non-free-firmware"
