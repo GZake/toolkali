@@ -55,7 +55,7 @@ ulimit -s unlimited
 ulimit -u unlimited -n 1048576
 sudo sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 32767 /dev/nvm*
 sudo swapon --priority 100 /dev/sd*
 sudo swapon --priority 100 /media/root/*/*swapfile*
 sudo sysctl vm.swappiness=100
@@ -241,11 +241,14 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests rapiddisk
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests swapspace
+sudo update-rc.d ssh stop -f  20 0 1 2 3 4 5 6 S
+sudo systemctl start swapspace.service
+sudo systemctl enable swapspace.service
 sudo dpkg-reconfigure gdm3
 #cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 #cd $HOME/Documents/GitHub/toolkali/
-sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 32767 /dev/nvm*
 sudo swapon --priority 100 /dev/sd*
 #sudo swapon /dev/nvme0n1p5
 #sudo swapon /dev/sda4
@@ -598,7 +601,7 @@ sudo cp -f ~/toolkali/fstab.bak /etc/fstab
 echo "
 /dev/nvm* none swap sw, pri=100 0 0
 /dev/sd* none swap sw, pri=100 0 0
-/dev/nvme0n1p5 none swap sw, pri=100 0 0
+/dev/nvme0n1p5 none swap sw, pri=32767 0 0
 /dev/sda4 none swap sw, pri=100 0 0
 /dev/sdb4 none swap sw, pri=100 0 0
 /dev/sdc4 none swap sw, pri=100 0 0
@@ -647,7 +650,7 @@ ulimit -s unlimited
 ulimit -u unlimited -n 1048576
 sysctl -w fs.file-max=2147483647
 fs.file-max = 2147483647
-sudo swapon --priority 100 /dev/nvm*
+sudo swapon --priority 32767 /dev/nvm*
 sudo swapon --priority 100 /dev/sd*
 sudo sysctl vm.swappiness=100
 sudo sysctl -p
@@ -688,6 +691,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests rapiddisk
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests swapspace
+sudo systemctl start swapspace.service
 sudo systemctl enable swapspace.service
 sudo cp -fRv ~/toolkali/sources.list /etc/apt/sources.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-dev-archive-keyring.gpg arch=amd64] https://brave-browser-apt-dev.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-dev.list
@@ -1474,7 +1478,7 @@ dpkg --configure -a | sudo tee -a ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 apt-get update -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get upgrade --dry-run -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
 apt-get dist-upgrade -y  #| grep "NO_PUBKEY" | awk '{ print $21 }' | xargs gpg | xargs apt-key add - | xargs addgpg-apt | awk '{ system("gpg "$21) }' | awk '{ print $21 }'| awk '{ print $21 }' | xargs apt-key adv | awk '{ system("apt-key add - "$21) }'
-update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
+sudo update-rc.d ssh stop -f  20 0 1 2 3 4 5 6 S
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 #sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 sudo dpkg --add-architecture i386
