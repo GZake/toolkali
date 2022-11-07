@@ -244,7 +244,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fy
 sudo update-rc.d ssh stop -f  20 0 1 2 3 4 5 6 S
 sudo systemctl start swapspace.service
 sudo systemctl enable swapspace.service
-sudo dpkg-reconfigure gdm3
+sudo dpkg-reconfigure sddm
 #cd $HOME
 sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 #cd $HOME/Documents/GitHub/toolkali/
@@ -599,16 +599,16 @@ fs.file-max=2147483647
 
 sudo cp -f ~/toolkali/fstab.bak /etc/fstab
 echo "
-/dev/nvm* none swap sw, pri=100 0 0
-/dev/sd* none swap sw, pri=100 0 0
-/dev/nvme0n1p5 none swap sw, pri=32767 0 0
-/dev/sda4 none swap sw, pri=100 0 0
-/dev/sdb4 none swap sw, pri=100 0 0
-/dev/sdc4 none swap sw, pri=100 0 0
-/dev/sda5 none swap sw, pri=100 0 0
-/dev/sdb5 none swap sw, pri=100 0 0
-/dev/sdc5 none swap sw, pri=100 0 0
-/media/root/*/*swapfile* none swap sw, pri=100 0 0
+/dev/nvm* none swap sw 0 0
+/dev/sd* none swap sw 0 0
+/dev/nvme0n1p5 none swap sw 0 0
+/dev/sda4 none swap sw 0 0
+/dev/sdb4 none swap sw 0 0
+/dev/sdc4 none swap sw 0 0
+/dev/sda5 none swap sw 0 0
+/dev/sdb5 none swap sw 0 0
+/dev/sdc5 none swap sw 0 0
+/media/root/*/*swapfile* none swap sw 0 0
 " | sudo tee -a /etc/fstab
 
 echo 100 >> /proc/sys/vm/swappiness
