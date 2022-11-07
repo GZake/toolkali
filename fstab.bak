@@ -1,3 +1,6 @@
 overlay / overlay rw 0 0
-tmpfs /tmp tmpfs nosuid,nodev 0 0
+#tmpfs /tmp tmpfs nosuid,nodev 0 0
+tmpfs /tmp tmpfs rw,noexec,nodev,nosuid,relatime 0 0
+#tmpfs /media/ssd/tmpLinux/ tmpfs rw,noexec,nodev,nosuid,size=20G,relatime 0 0
+#tmpfs /tmp tmpfs defaults,rw,nosuid,nodev,noexec,relatime 0 0
 

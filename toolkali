@@ -625,6 +625,8 @@ root soft nofile 1048576
 " | sudo tee -a /etc/security/limits.conf
 
 
+#mkdir /media/ssd/
+#sudo mount /dev/nvme0n1p3 /media/ssd/
 #sudo cp -Rf sources.list /etc/apt/sources.list
 sudo cp -fvRd updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh
@@ -688,7 +690,7 @@ sudo apt-get dist-upgrade -ym
 sudo cp -fdv ~/toolkali/update-initramfs /sbin/update-initramfs
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 #sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
-update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
+sudo update-rc.d ssh stop -f 20 0 1 2 3 4 5 6 S
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
 sudo apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | sudo xargs apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
@@ -1753,7 +1755,7 @@ if [ $choose1 -eq 5 ]
 then
 	goto uptab
 fi
-update-rc.d ssh stop 20 0 1 2 3 4 5 6 S
+sudo update-rc.d ssh stop -f 20 0 1 2 3 4 5 6 S
 poweroff
 logout
 exit(0)
