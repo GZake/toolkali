@@ -40,6 +40,7 @@ sudo apt --fix-broken install -y
 sudo dpkg --configure -a
 sudo apt --fix-broken install -y
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
+sudo timedatectl set-ntp true
 sudo timedatectl set-ntp on
 ulimit -s 1048576
 ulimit -u 1048576
@@ -654,6 +655,7 @@ echo "
 @reboot sudo sysctl -p
 @reboot apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 @reboot sudo timedatectl set-timezone Asia/Ho_Chi_Minh
+@reboot sudo timedatectl set-ntp true
 @reboot sudo timedatectl set-ntp on
 @reboot sudo github-desktop --no-sandbox
 " | sudo tee -a /etc/crontab
@@ -679,6 +681,7 @@ sudo sysctl vm.swappiness=100
 sudo sysctl -p
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
+sudo timedatectl set-ntp true
 sudo timedatectl set-ntp on
 sudo github-desktop --no-sandbox
 #exit(0)
