@@ -642,7 +642,6 @@ ulimit -i 1048576
 ulimit -q 1048576
 ulimit -Sn unlimited
 ulimit -n 1048576
-ulimit -p unlimited
 ulimit -c unlimited
 ulimit -i unlimited
 ulimit -l unlimited
@@ -657,7 +656,7 @@ sudo sysctl -p
 apparmor_parser -r /var/lib/snapd/apparmor/profiles/*
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp on
-exit(0)
+#exit(0)
 " | sudo tee -a /etc/rc.local
 
 sudo apt-get update  -ym
