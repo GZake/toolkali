@@ -877,6 +877,7 @@ sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ o
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stable main"
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ stretch main"
 sudo add-apt-repository -ys "deb-src https://dl.winehq.org/wine-builds/debian/ wheezy main"
+sudo add-apt-repository -ys "deb http://ftp.de.debian.org/debian/ sid main"
 sudo add-apt-repository -ys ppa:savoury1/apt-xenial
 sudo add-apt-repository -ys ppa:savoury1/gtk-xenial
 sudo add-apt-repository -ys ppa:savoury1/qt-xenial
