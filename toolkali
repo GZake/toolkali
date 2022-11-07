@@ -629,10 +629,11 @@ sudo cp -fvRd updatekali.sh $HOME/updatekali.sh
 sudo chmod 777 -R -v updatekali.sh
 
 
-sudo cp -f ~/toolkali/crontab.bak /etc/crontab
-echo "
-@reboot sudo bash  $HOME/updatekali.sh
-" | sudo tee -a /etc/crontab
+#sudo cp -f ~/toolkali/crontab.bak /etc/crontab
+#echo "
+#@reboot sudo bash  $HOME/updatekali.sh
+#" | sudo tee -a /etc/crontab
+
 sudo cp -f ~/toolkali/rc.local.bak /etc/rc.local
 echo "
 ulimit -s 1048576
