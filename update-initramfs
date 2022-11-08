@@ -85,7 +85,7 @@
 				mv $f ${f%.new}
 			fi
 		done
-		;;
+#		;;
 
 	#false)
 	#	echo "I: update-initramfs is disabled (live system is running on read-only media)."
