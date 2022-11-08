@@ -685,7 +685,7 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp true
 sudo timedatectl set-ntp on
 sudo github-desktop --no-sandbox
-#exit(0)
+exit(0)
 " | sudo tee -a /etc/rc.local
 
 sudo apt-get update  -ym
