@@ -484,7 +484,7 @@ sudo cp -fRdv ~/toolkali/ /media/root/*/
 sudo cp -fRdv ~/toolkali/ /media/kali/*/
 sudo cp -fRdv ~/toolkali/ /media/SUGirl/*/
 #sudo cp -fRdv ~/toolkali/ /run/*/*/*/*/toolkali/
-sudo cp -fRdv ~/toolkali/ /run/live/persistence/*/rw/toolkali/
+sudo cp -fRdv ~/toolkali/ /run/live/persistence/*/rw/
 sudo cp -fdv ~/toolkali/toolkali /sbin/toolkali
 sudo cp -fRdv kaligittool.sh $HOME/toolkali/kaligittool.sh
 sudo cp -fRdv kaligittool.sh $HOME
@@ -664,6 +664,7 @@ echo "
 @reboot sudo github-desktop --no-sandbox
 @reboot sudo prospect-mail --no-sandbox
 @reboot sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
+#@reboot sudo cp -fRdv ~/toolkali/ /run/live/persistence/sdb6/rw/
 " | sudo tee -a /etc/crontab
 
 sudo cp -f ~/toolkali/rc.local.bak /etc/rc.local
@@ -692,6 +693,7 @@ sudo timedatectl set-ntp on
 sudo github-desktop --no-sandbox
 sudo prospect-mail --no-sandbox
 sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
+#sudo cp -fRdv ~/toolkali/ /run/live/persistence/sdb6/rw/
 exit(0)
 " | sudo tee -a /etc/rc.local
 
