@@ -60,6 +60,7 @@ sudo swapon --priority 32767 /dev/nvm*
 sudo swapon --priority 100 /dev/sd*
 sudo swapon --priority 100 /media/root/*/*swapfile*
 sudo sysctl vm.swappiness=100
+sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
 sudo sysctl -p
 #############################
 #sudo cp -fdRvx $(pwd)/sources.list /etc/apt/sources.list
@@ -253,6 +254,7 @@ sudo parallel cp -vfxR $HOME/toolkali/ ::: $HOME /media/kali/*/ /media/*/*/
 #cd $HOME/Documents/GitHub/toolkali/
 sudo swapon --priority 32767 /dev/nvm*
 sudo swapon --priority 100 /dev/sd*
+sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
 #sudo swapon /dev/nvme0n1p5
 #sudo swapon /dev/sda4
 #sudo swapon /dev/sdb4
@@ -268,6 +270,7 @@ sudo swapon --priority 100 /dev/sd*
 #sudo swapon /dev/sda3
 #sudo swapon /dev/sdb3
 #sudo swapon /dev/sdc3
+sudo swapon --priority 100 /media/root/*/*swapfile*
 sudo sysctl vm.swappiness=100
 sudo sysctl fs.file-max=2147483647
 sudo sysctl -p
@@ -659,6 +662,8 @@ echo "
 @reboot sudo timedatectl set-ntp true
 @reboot sudo timedatectl set-ntp on
 @reboot sudo github-desktop --no-sandbox
+@reboot sudo prospect-mail --no-sandbox
+@reboot sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
 " | sudo tee -a /etc/crontab
 
 sudo cp -f ~/toolkali/rc.local.bak /etc/rc.local
@@ -685,6 +690,8 @@ sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp true
 sudo timedatectl set-ntp on
 sudo github-desktop --no-sandbox
+sudo prospect-mail --no-sandbox
+sudo mount -o rw,noexec,nodev,nosuid,relatime,remount,size=20G /tmp
 exit(0)
 " | sudo tee -a /etc/rc.local
 
