@@ -1776,9 +1776,9 @@ reboot
 
 gitinstall:
 clear
-sudo dpkg -i ~/brave-browser-dev_*
-sudo dpkg -i ~/GitHubDesktop-linux*
-sudo dpkg -i ~/sidekick-linux-release*
+sudo dpkg -i --force-all --force-overwrite ~/brave-browser-dev_*
+sudo dpkg -i --force-all --force-overwrite ~/GitHubDesktop-linux*
+sudo dpkg -i --force-all --force-overwrite ~/sidekick-linux-release*
 sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
