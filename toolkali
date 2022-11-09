@@ -223,6 +223,7 @@ sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-plasma-desktop
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-standard
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-full
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests neofetch
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-https
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-tor
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
@@ -716,6 +717,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-*
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests aptitude
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ibus-unikey
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests neofetch
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests brave-browser-dev
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kate
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests synaptic
