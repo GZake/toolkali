@@ -288,6 +288,25 @@ clear
 #┗━
 
 echo "Welcome to application auto setting and upgrade for kali live -> persistence
+..............
+            ..,;:ccc,.
+          ......''';lxO.
+.....''''..........,:ld;
+           .';;;:::;,,.x,
+      ..'''.            0Xxoc:,.  ...
+  ....                ,ONkc;,;cokOdc',.
+ .                   OMo           ':ddo.
+                    dMc               :OO;
+                    0M.                 .:o.
+                    ;Wd
+                     ;XO,
+                       ,d0Odlc;,..
+                           ..',;:cdOOd::,.
+                                    .:d;.':;.
+                                       'd,  .'
+                                         ;l   ..
+                                          .o
+ 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 1...for auto all disk parted	┃
 ┃ 2...for Encrypted		┃
@@ -504,7 +523,27 @@ goto choose
 ####################################
 uptab:
 clear
-echo "             UPDATE
+echo "
+..............
+            ..,;:ccc,.
+          ......''';lxO.
+.....''''..........,:ld;
+           .';;;:::;,,.x,
+      ..'''.            0Xxoc:,.  ...
+  ....                ,ONkc;,;cokOdc',.
+ .                   OMo           ':ddo.
+                    dMc               :OO;
+                    0M.                 .:o.
+                    ;Wd
+                     ;XO,
+                       ,d0Odlc;,..
+                           ..',;:cdOOd::,.
+                                    .:d;.':;.
+                                       'd,  .'
+                                         ;l   ..
+                                          .o
+ 
+		UPDATE
 *========================================*
 ||1 for all				||
 ||2 for add repo, other,...		||
