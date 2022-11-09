@@ -68,7 +68,7 @@ sudo sysctl -p
 #sudo cp -fdRvx $(pwd)/sources.list.d/* /etc/apt/sources.list.d/
 #sudo cp -fdRvx /etc/apt/sources.list.d/* $HOME/Documents/GitHub/toolkali/sources.list.d/
 #sudo cp -fdRvx $HOME/Documents/GitHub/toolkali/sources.list.d/* $(pwd)/sources.list.d/
-#sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
+#sudo apt-get -o dir::cache='/var/cache/apt/archives/' -o Debug::NoLocking=1 install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey*
 #sudo apt-mark unhold *plasma*
 #sudo apt-mark unhold *kde*
 #sudo apt-mark unhold *pkg*
@@ -213,41 +213,39 @@ sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo dpkg --configure -a  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
 sudo apt --fix-broken install -y  >> ~/toolkali/log/log_$(date "+%y_%h_%d").txt
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ntp
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests systemd-timesyncd
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests chrony
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests parallel* #status=progress
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests parallel
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ntp
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests systemd-timesyncd
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests chrony
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests parallel* #status=progress
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests parallel
 sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
-#sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ssdm
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-plasma-desktop
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-standard
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-full
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests neofetch
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-https
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-tor
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests aptitude
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ibus-unikey
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests brave-browser-dev
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kate
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests synaptic
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests remmina cmake intltool   libgtk-3-dev libssh-dev libavahi-ui-gtk3-dev libvte-2.90-dev libxkbfile-dev
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests initramfs-tools
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests linux-initramfs-tool
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests software-properties-kde
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests software-properties-common
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apticron
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests libdvd-pkg
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests bluez*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests bluet*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests tasksel
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests flatpak
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests rapiddisk
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests swapspace
+#sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kde-plasma-desktop
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kde-standard
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kde-full
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests aptitude
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests remmina cmake intltool   libgtk-3-dev libssh-dev libavahi-ui-gtk3-dev libvte-2.90-dev libxkbfile-dev
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests initramfs-tools
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests linux-initramfs-tool
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-kde
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apticron
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests libdvd-pkg
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bluez*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bluet*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tasksel
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests flatpak
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests rapiddisk
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests swapspace
 sudo update-rc.d ssh stop -f  20 0 1 2 3 4 5 6 S
 sudo systemctl start swapspace.service
 sudo systemctl enable swapspace.service
@@ -384,7 +382,7 @@ mount /dev/mapper/my_usb /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 umount /dev/mapper/my_usb
 cryptsetup luksClose /dev/mapper/my_usb
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests cryptsetup-nuke-password
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${numE}
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
@@ -407,7 +405,7 @@ mount /dev/mapper/my_usb /mnt/my_usb
 echo "/ union" | sudo tee /mnt/my_usb/persistence.conf
 umount /dev/mapper/my_usb
 cryptsetup luksClose /dev/mapper/my_usb
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests cryptsetup-nuke-password
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests cryptsetup-nuke-password
 dpkg-reconfigure cryptsetup-nuke-password
 cryptsetup luksHeaderBackup --header-backup-file luksheader.back /dev/${disk}${num}
 openssl enc -e -aes-256-cbc -in luksheader.back -out luksheader.back.enc
@@ -430,7 +428,7 @@ goto choose
 #####################################
 root:
 clear
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests  kali-root-login
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  kali-root-login
 sudo passwd root <<< $(printf "113006\n113006\n")
 username=SUGirl$(date "+%d%m%y")
 echo $username
@@ -707,35 +705,34 @@ sudo cp -fdv ~/toolkali/update-initramfs /sbin/update-initramfs
 sudo /usr/sbin/update-initramfs.orig.initramfs-tools -u -k all
 #sudo cp -fRdv /usr/share/squid-deb-proxy-client/apt-avahi-discover ~/toolkali/apt-avahi-discover
 sudo update-rc.d ssh stop -f 20 0 1 2 3 4 5 6 S
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests *xargs*
-sudo apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | sudo xargs apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-https
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests systemd-timesyncd
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests chrony
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ntp
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-tor
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apt-transport-*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests aptitude
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ibus-unikey
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests neofetch
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests brave-browser-dev
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kate
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests synaptic
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests remmina
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests initramfs-tools
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests linux-initramfs-tool
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests software-properties-kde
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests software-properties-common
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests apticron
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests libdvd-pkg
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests bluez*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests bluet*
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests tasksel
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests flatpak
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests rapiddisk
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests swapspace
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests *xargs*
+sudo apt show PACKAGES 2>&1 | sed -nr '/^(Suggests|Package): /{s///;s/( \|[^,]+)?,//g;p}' | sudo xargs apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-https
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests systemd-timesyncd
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests chrony
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ntp
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-tor
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tor deb.torproject.org-keyring
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apt-transport-*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests aptitude
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests ibus-unikey
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests brave-browser-dev
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kate
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests synaptic
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests remmina
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests initramfs-tools
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests linux-initramfs-tool
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-kde
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests software-properties-common
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests apticron
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests libdvd-pkg
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bluez*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests bluet*
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests tasksel
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests flatpak
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests gnome-software-plugin-flatpak
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests rapiddisk
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests swapspace
 sudo systemctl start swapspace.service
 sudo systemctl enable swapspace.service
 sudo cp -fRv ~/toolkali/sources.list /etc/apt/sources.list
@@ -1142,9 +1139,9 @@ sudo cp -fRv /var/lib/apt/lists/*.keyring ~/toolkali/
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Testing/Release.key.gpg | sudo apt-key add -
 #wget -O- -q https://download.opensuse.org/repositories/home:/npreining:/debian-kde:/plasma524/Debian_Unstable/Release.key.gpg | sudo apt-key add -
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests  launchpad-getkeys
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests  launchpad-getkeys
 sudo launchpad-getkeys
-sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests y-ppa-manager
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests y-ppa-manager
 
 ##########
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys *
@@ -1272,7 +1269,7 @@ rm -f /usr/share/keyrings/microsoft.gpg
 #gpg --full-generate-key <<< $(printf "1\n\n\ny\nSUGirl\nsugirl@duck.com\n\no\nSUGirl@Bae0611\nSUGirl@Bae0611")
 
 
-sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1  -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kali-archive-keyring
+sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1  -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests kali-archive-keyring
 
 sudo apt install apt-transport-https curl -y -f
 
@@ -1784,7 +1781,7 @@ clear
 sudo dpkg -i --force-all --force-overwrite ~/brave-browser-dev_*
 sudo dpkg -i --force-all --force-overwrite ~/GitHubDesktop-linux*
 sudo dpkg -i --force-all --force-overwrite ~/sidekick-linux-release*
-sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -fym --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
+sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
 
