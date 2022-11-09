@@ -220,6 +220,7 @@ sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o 
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests parallel
 sudo parallel cp -vfxR toolkali* ::: $HOME /media/kali/*/ /media/*/*/
 #sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests  linux-headers-$(uname -r)
+sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests ssdm
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-plasma-desktop
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-standard
 sudo apt-get install -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1ange-held-packages --show-progress --install-suggests kde-full
