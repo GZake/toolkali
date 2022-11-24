@@ -1824,7 +1824,7 @@ clear
 sudo dpkg -i --force-all --force-overwrite ~/brave-browser-dev_*
 sudo dpkg -i --force-all --force-overwrite ~/GitHubDesktop-linux*
 sudo dpkg -i --force-all --force-overwrite ~/sidekick-linux-release*
-sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
+#sudo apt-get reinstall -o APT::Install-Recommends=1 -o APT::Install-Suggests=1 -o APT::Get::Compile=1 -o APT::Get::List-Cleanup=1 -o APT::Get::Show-Versions=1 -o  APT::Get::allow=1 -o  APT::Ignore-Hold=1 -fymV --ignore-hold --install-recommends --allow-change-held-packages --show-progress --install-suggests python3
 goto uptab
 
 
