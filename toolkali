@@ -984,6 +984,7 @@ sudo add-apt-repository -ys ppa:kubuntu-ppa/backports
 sudo add-apt-repository -ys ppa:savoury1/display
 sudo add-apt-repository -ys ppa:savoury1/qt-5-15
 sudo add-apt-repository -ys ppa:savoury1/kde-5-80
+sudo add-apt-repository -ys ppa:micahflee/ppa
 sudo add-apt-repository -ys ppa:savoury1/gpg
 sudo add-apt-repository -ys ppa:savoury1/vlc3
 sudo add-apt-repository -ys ppa:savoury1/gcc-defaults-9
